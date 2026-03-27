@@ -1,0 +1,63 @@
+
+#nullable enable
+
+namespace DId
+{
+    /// <summary>
+    /// 
+    /// </summary>
+    public sealed partial class StreamAudioScript
+    {
+        /// <summary>
+        /// The type of the script.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("type")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::DId.JsonConverters.StreamAudioScriptTypeJsonConverter))]
+        public global::DId.StreamAudioScriptType Type { get; set; }
+
+        /// <summary>
+        /// The URL of the audio file which will be used by the actor.<br/>
+        /// File size is limit to 15MB.<br/>
+        /// Example: https://path.to/audio.mp3
+        /// </summary>
+        /// <example>https://path.to/audio.mp3</example>
+        [global::System.Text.Json.Serialization.JsonPropertyName("audio_url")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string AudioUrl { get; set; }
+
+        /// <summary>
+        /// Additional properties that are not explicitly defined in the schema
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonExtensionData]
+        public global::System.Collections.Generic.IDictionary<string, object> AdditionalProperties { get; set; } = new global::System.Collections.Generic.Dictionary<string, object>();
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="StreamAudioScript" /> class.
+        /// </summary>
+        /// <param name="type">
+        /// The type of the script.
+        /// </param>
+        /// <param name="audioUrl">
+        /// The URL of the audio file which will be used by the actor.<br/>
+        /// File size is limit to 15MB.<br/>
+        /// Example: https://path.to/audio.mp3
+        /// </param>
+#if NET7_0_OR_GREATER
+        [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
+#endif
+        public StreamAudioScript(
+            string audioUrl,
+            global::DId.StreamAudioScriptType type)
+        {
+            this.AudioUrl = audioUrl ?? throw new global::System.ArgumentNullException(nameof(audioUrl));
+            this.Type = type;
+        }
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="StreamAudioScript" /> class.
+        /// </summary>
+        public StreamAudioScript()
+        {
+        }
+    }
+}

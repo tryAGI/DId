@@ -1,0 +1,53 @@
+#nullable enable
+
+namespace DId.JsonConverters
+{
+    /// <inheritdoc />
+    public sealed class GetResponseVariant1PresenterExpressiveAvatarVoiceElevenLabsAccessJsonConverter : global::System.Text.Json.Serialization.JsonConverter<global::DId.GetResponseVariant1PresenterExpressiveAvatarVoiceElevenLabsAccess>
+    {
+        /// <inheritdoc />
+        public override global::DId.GetResponseVariant1PresenterExpressiveAvatarVoiceElevenLabsAccess Read(
+            ref global::System.Text.Json.Utf8JsonReader reader,
+            global::System.Type typeToConvert,
+            global::System.Text.Json.JsonSerializerOptions options)
+        {
+            switch (reader.TokenType)
+            {
+                case global::System.Text.Json.JsonTokenType.String:
+                {
+                    var stringValue = reader.GetString();
+                    if (stringValue != null)
+                    {
+                        return global::DId.GetResponseVariant1PresenterExpressiveAvatarVoiceElevenLabsAccessExtensions.ToEnum(stringValue) ?? default;
+                    }
+                    
+                    break;
+                }
+                case global::System.Text.Json.JsonTokenType.Number:
+                {
+                    var numValue = reader.GetInt32();
+                    return (global::DId.GetResponseVariant1PresenterExpressiveAvatarVoiceElevenLabsAccess)numValue;
+                }
+                case global::System.Text.Json.JsonTokenType.Null:
+                {
+                    return default(global::DId.GetResponseVariant1PresenterExpressiveAvatarVoiceElevenLabsAccess);
+                }
+                default:
+                    throw new global::System.ArgumentOutOfRangeException(nameof(reader));
+            }
+
+            return default;
+        }
+
+        /// <inheritdoc />
+        public override void Write(
+            global::System.Text.Json.Utf8JsonWriter writer,
+            global::DId.GetResponseVariant1PresenterExpressiveAvatarVoiceElevenLabsAccess value,
+            global::System.Text.Json.JsonSerializerOptions options)
+        {
+            writer = writer ?? throw new global::System.ArgumentNullException(nameof(writer));
+
+            writer.WriteStringValue(global::DId.GetResponseVariant1PresenterExpressiveAvatarVoiceElevenLabsAccessExtensions.ToValueString(value));
+        }
+    }
+}

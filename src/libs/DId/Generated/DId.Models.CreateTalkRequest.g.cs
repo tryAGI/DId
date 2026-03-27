@@ -1,0 +1,128 @@
+
+#pragma warning disable CS0618 // Type or member is obsolete
+
+#nullable enable
+
+namespace DId
+{
+    /// <summary>
+    /// 
+    /// </summary>
+    public sealed partial class CreateTalkRequest
+    {
+        /// <summary>
+        /// The URL of the source image to be animated by the driver video, or a selection from the list of provided<br/>
+        /// studio actors.<br/>
+        /// Default Value: https://d-id-public-bucket.s3.us-west-2.amazonaws.com/alice.jpg<br/>
+        /// Example: https://path.to.directory/image.jpg
+        /// </summary>
+        /// <example>https://path.to.directory/image.jpg</example>
+        [global::System.Text.Json.Serialization.JsonPropertyName("source_url")]
+        public string? SourceUrl { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("script")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::DId.JsonConverters.AnyOfJsonConverter<global::DId.CreateTalkRequestScriptVariant1, global::DId.CreateTalkRequestScriptVariant2>))]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required global::DId.AnyOf<global::DId.CreateTalkRequestScriptVariant1, global::DId.CreateTalkRequestScriptVariant2> Script { get; set; }
+
+        /// <summary>
+        /// Advanced configuration options
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("config")]
+        public global::DId.CreateTalkRequestConfig? Config { get; set; }
+
+        /// <summary>
+        /// Non-sensitive custom data that will be added to the talk response and webhook
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("user_data")]
+        public string? UserData { get; set; }
+
+        /// <summary>
+        /// The name of the talk video
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("name")]
+        public string? Name { get; set; }
+
+        /// <summary>
+        /// A webhook URL for sending the payload including animate details<br/>
+        /// In a case of empty value, the webhook will not be triggered<br/>
+        /// Example: https://host.domain.tld/to/webhook
+        /// </summary>
+        /// <example>https://host.domain.tld/to/webhook</example>
+        [global::System.Text.Json.Serialization.JsonPropertyName("webhook")]
+        public string? Webhook { get; set; }
+
+        /// <summary>
+        /// The URL of the talk video, if not provided use default destination.<br/>
+        /// Example: https://path.to.directory/
+        /// </summary>
+        /// <example>https://path.to.directory/</example>
+        [global::System.Text.Json.Serialization.JsonPropertyName("result_url")]
+        public string? ResultUrl { get; set; }
+
+        /// <summary>
+        /// Additional properties that are not explicitly defined in the schema
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonExtensionData]
+        public global::System.Collections.Generic.IDictionary<string, object> AdditionalProperties { get; set; } = new global::System.Collections.Generic.Dictionary<string, object>();
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="CreateTalkRequest" /> class.
+        /// </summary>
+        /// <param name="sourceUrl">
+        /// The URL of the source image to be animated by the driver video, or a selection from the list of provided<br/>
+        /// studio actors.<br/>
+        /// Default Value: https://d-id-public-bucket.s3.us-west-2.amazonaws.com/alice.jpg<br/>
+        /// Example: https://path.to.directory/image.jpg
+        /// </param>
+        /// <param name="script"></param>
+        /// <param name="config">
+        /// Advanced configuration options
+        /// </param>
+        /// <param name="userData">
+        /// Non-sensitive custom data that will be added to the talk response and webhook
+        /// </param>
+        /// <param name="name">
+        /// The name of the talk video
+        /// </param>
+        /// <param name="webhook">
+        /// A webhook URL for sending the payload including animate details<br/>
+        /// In a case of empty value, the webhook will not be triggered<br/>
+        /// Example: https://host.domain.tld/to/webhook
+        /// </param>
+        /// <param name="resultUrl">
+        /// The URL of the talk video, if not provided use default destination.<br/>
+        /// Example: https://path.to.directory/
+        /// </param>
+#if NET7_0_OR_GREATER
+        [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
+#endif
+        public CreateTalkRequest(
+            global::DId.AnyOf<global::DId.CreateTalkRequestScriptVariant1, global::DId.CreateTalkRequestScriptVariant2> script,
+            string? sourceUrl,
+            global::DId.CreateTalkRequestConfig? config,
+            string? userData,
+            string? name,
+            string? webhook,
+            string? resultUrl)
+        {
+            this.Script = script;
+            this.SourceUrl = sourceUrl;
+            this.Config = config;
+            this.UserData = userData;
+            this.Name = name;
+            this.Webhook = webhook;
+            this.ResultUrl = resultUrl;
+        }
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="CreateTalkRequest" /> class.
+        /// </summary>
+        public CreateTalkRequest()
+        {
+        }
+    }
+}

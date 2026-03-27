@@ -1,0 +1,60 @@
+#nullable enable
+
+namespace DId.JsonConverters
+{
+    /// <inheritdoc />
+    public sealed class AgentCreateDtoPresenterExpressiveAvatarTypeNullableJsonConverter : global::System.Text.Json.Serialization.JsonConverter<global::DId.AgentCreateDtoPresenterExpressiveAvatarType?>
+    {
+        /// <inheritdoc />
+        public override global::DId.AgentCreateDtoPresenterExpressiveAvatarType? Read(
+            ref global::System.Text.Json.Utf8JsonReader reader,
+            global::System.Type typeToConvert,
+            global::System.Text.Json.JsonSerializerOptions options)
+        {
+            switch (reader.TokenType)
+            {
+                case global::System.Text.Json.JsonTokenType.String:
+                {
+                    var stringValue = reader.GetString();
+                    if (stringValue != null)
+                    {
+                        return global::DId.AgentCreateDtoPresenterExpressiveAvatarTypeExtensions.ToEnum(stringValue);
+                    }
+                    
+                    break;
+                }
+                case global::System.Text.Json.JsonTokenType.Number:
+                {
+                    var numValue = reader.GetInt32();
+                    return (global::DId.AgentCreateDtoPresenterExpressiveAvatarType)numValue;
+                }
+                case global::System.Text.Json.JsonTokenType.Null:
+                {
+                    return default(global::DId.AgentCreateDtoPresenterExpressiveAvatarType?);
+                }
+                default:
+                    throw new global::System.ArgumentOutOfRangeException(nameof(reader));
+            }
+
+            return default;
+        }
+
+        /// <inheritdoc />
+        public override void Write(
+            global::System.Text.Json.Utf8JsonWriter writer,
+            global::DId.AgentCreateDtoPresenterExpressiveAvatarType? value,
+            global::System.Text.Json.JsonSerializerOptions options)
+        {
+            writer = writer ?? throw new global::System.ArgumentNullException(nameof(writer));
+
+            if (value == null)
+            {
+                writer.WriteNullValue();
+            }
+            else
+            {
+                writer.WriteStringValue(global::DId.AgentCreateDtoPresenterExpressiveAvatarTypeExtensions.ToValueString(value.Value));
+            }
+        }
+    }
+}

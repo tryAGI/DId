@@ -1,0 +1,460 @@
+
+#nullable enable
+
+namespace DId
+{
+    public partial class ImagesClient
+    {
+        partial void PrepareUploadAnImageArguments(
+            global::System.Net.Http.HttpClient httpClient,
+            global::DId.UploadAnImageRequest request);
+        partial void PrepareUploadAnImageRequest(
+            global::System.Net.Http.HttpClient httpClient,
+            global::System.Net.Http.HttpRequestMessage httpRequestMessage,
+            global::DId.UploadAnImageRequest request);
+        partial void ProcessUploadAnImageResponse(
+            global::System.Net.Http.HttpClient httpClient,
+            global::System.Net.Http.HttpResponseMessage httpResponseMessage);
+
+        partial void ProcessUploadAnImageResponseContent(
+            global::System.Net.Http.HttpClient httpClient,
+            global::System.Net.Http.HttpResponseMessage httpResponseMessage,
+            ref string content);
+
+        /// <summary>
+        /// Upload image<br/>
+        /// Upload an image to a temporary storage before creating an animation.<br/>
+        /// The image is uploaded using multipart/form-data. the filename directive is optional and if provided should contain up to 50 valid characters long.<br/>
+        /// Valid characters: a-z A-Z 0-9 . _ -<br/>
+        /// Supported mime types: image/jpeg,image/png<br/>
+        /// Storage duration: 24-48H
+        /// </summary>
+        /// <param name="request"></param>
+        /// <param name="cancellationToken">The token to cancel the operation with</param>
+        /// <exception cref="global::DId.ApiException"></exception>
+        public async global::System.Threading.Tasks.Task<global::DId.UploadAnImageResponse> UploadAnImageAsync(
+
+            global::DId.UploadAnImageRequest request,
+            global::System.Threading.CancellationToken cancellationToken = default)
+        {
+            request = request ?? throw new global::System.ArgumentNullException(nameof(request));
+
+            PrepareArguments(
+                client: HttpClient);
+            PrepareUploadAnImageArguments(
+                httpClient: HttpClient,
+                request: request);
+
+            var __pathBuilder = new global::DId.PathBuilder(
+                path: "/images",
+                baseUri: HttpClient.BaseAddress); 
+            var __path = __pathBuilder.ToString();
+            using var __httpRequest = new global::System.Net.Http.HttpRequestMessage(
+                method: global::System.Net.Http.HttpMethod.Post,
+                requestUri: new global::System.Uri(__path, global::System.UriKind.RelativeOrAbsolute));
+#if NET6_0_OR_GREATER
+            __httpRequest.Version = global::System.Net.HttpVersion.Version11;
+            __httpRequest.VersionPolicy = global::System.Net.Http.HttpVersionPolicy.RequestVersionOrHigher;
+#endif
+
+            foreach (var __authorization in Authorizations)
+            {
+                if (__authorization.Type == "Http" ||
+                    __authorization.Type == "OAuth2")
+                {
+                    __httpRequest.Headers.Authorization = new global::System.Net.Http.Headers.AuthenticationHeaderValue(
+                        scheme: __authorization.Name,
+                        parameter: __authorization.Value);
+                }
+                else if (__authorization.Type == "ApiKey" &&
+                         __authorization.Location == "Header")
+                {
+                    __httpRequest.Headers.Add(__authorization.Name, __authorization.Value);
+                }
+            }
+            using var __httpRequestContent = new global::System.Net.Http.MultipartFormDataContent();
+            if (request.Image != default)
+            {
+
+                var __contentImage = new global::System.Net.Http.ByteArrayContent(request.Image ?? global::System.Array.Empty<byte>());
+                __httpRequestContent.Add(
+                    content: __contentImage,
+                    name: "\"image\"",
+                    fileName: request.Imagename != null ? $"\"{request.Imagename}\"" : string.Empty);
+                if (__contentImage.Headers.ContentDisposition != null)
+                {
+                    __contentImage.Headers.ContentDisposition.FileNameStar = null;
+                }
+            } 
+            if (request.DetectFaces != default)
+            {
+
+                __httpRequestContent.Add(
+                    content: new global::System.Net.Http.StringContent($"{request.DetectFaces}"),
+                    name: "\"detect_faces\"");
+            } 
+            if (request.Metadata != default)
+            {
+
+                __httpRequestContent.Add(
+                    content: new global::System.Net.Http.StringContent($"{request.Metadata}"),
+                    name: "\"metadata\"");
+            } 
+            if (request.SourceUrl != default)
+            {
+
+                __httpRequestContent.Add(
+                    content: new global::System.Net.Http.StringContent($"{request.SourceUrl}"),
+                    name: "\"source_url\"");
+            } 
+            if (request.ResultUrl != default)
+            {
+
+                __httpRequestContent.Add(
+                    content: new global::System.Net.Http.StringContent($"{request.ResultUrl}"),
+                    name: "\"result_url\"");
+            }
+            __httpRequest.Content = __httpRequestContent;
+
+            PrepareRequest(
+                client: HttpClient,
+                request: __httpRequest);
+            PrepareUploadAnImageRequest(
+                httpClient: HttpClient,
+                httpRequestMessage: __httpRequest,
+                request: request);
+
+            using var __response = await HttpClient.SendAsync(
+                request: __httpRequest,
+                completionOption: global::System.Net.Http.HttpCompletionOption.ResponseContentRead,
+                cancellationToken: cancellationToken).ConfigureAwait(false);
+
+            ProcessResponse(
+                client: HttpClient,
+                response: __response);
+            ProcessUploadAnImageResponse(
+                httpClient: HttpClient,
+                httpResponseMessage: __response);
+            // BadRequestError | InvalidFileSizeError | InvalidImageResolutionError
+            if ((int)__response.StatusCode == 400)
+            {
+                string? __content_400 = null;
+                global::System.Exception? __exception_400 = null;
+                global::DId.UploadAnImageResponse2? __value_400 = null;
+                try
+                {
+                    if (ReadResponseAsString)
+                    {
+                        __content_400 = await __response.Content.ReadAsStringAsync(cancellationToken).ConfigureAwait(false);
+                        __value_400 = global::DId.UploadAnImageResponse2.FromJson(__content_400, JsonSerializerContext);
+                    }
+                    else
+                    {
+                        __content_400 = await __response.Content.ReadAsStringAsync(cancellationToken).ConfigureAwait(false);
+
+                        __value_400 = global::DId.UploadAnImageResponse2.FromJson(__content_400, JsonSerializerContext);
+                    }
+                }
+                catch (global::System.Exception __ex)
+                {
+                    __exception_400 = __ex;
+                }
+
+                throw new global::DId.ApiException<global::DId.UploadAnImageResponse2>(
+                    message: __content_400 ?? __response.ReasonPhrase ?? string.Empty,
+                    innerException: __exception_400,
+                    statusCode: __response.StatusCode)
+                {
+                    ResponseBody = __content_400,
+                    ResponseObject = __value_400,
+                    ResponseHeaders = global::System.Linq.Enumerable.ToDictionary(
+                        __response.Headers,
+                        h => h.Key,
+                        h => h.Value),
+                };
+            }
+            // AuthorizationError
+            if ((int)__response.StatusCode == 401)
+            {
+                string? __content_401 = null;
+                global::System.Exception? __exception_401 = null;
+                global::DId.UploadAnImageResponse3? __value_401 = null;
+                try
+                {
+                    if (ReadResponseAsString)
+                    {
+                        __content_401 = await __response.Content.ReadAsStringAsync(cancellationToken).ConfigureAwait(false);
+                        __value_401 = global::DId.UploadAnImageResponse3.FromJson(__content_401, JsonSerializerContext);
+                    }
+                    else
+                    {
+                        __content_401 = await __response.Content.ReadAsStringAsync(cancellationToken).ConfigureAwait(false);
+
+                        __value_401 = global::DId.UploadAnImageResponse3.FromJson(__content_401, JsonSerializerContext);
+                    }
+                }
+                catch (global::System.Exception __ex)
+                {
+                    __exception_401 = __ex;
+                }
+
+                throw new global::DId.ApiException<global::DId.UploadAnImageResponse3>(
+                    message: __content_401 ?? __response.ReasonPhrase ?? string.Empty,
+                    innerException: __exception_401,
+                    statusCode: __response.StatusCode)
+                {
+                    ResponseBody = __content_401,
+                    ResponseObject = __value_401,
+                    ResponseHeaders = global::System.Linq.Enumerable.ToDictionary(
+                        __response.Headers,
+                        h => h.Key,
+                        h => h.Value),
+                };
+            }
+            // InsufficientCreditsError
+            if ((int)__response.StatusCode == 402)
+            {
+                string? __content_402 = null;
+                global::System.Exception? __exception_402 = null;
+                global::DId.UploadAnImageResponse4? __value_402 = null;
+                try
+                {
+                    if (ReadResponseAsString)
+                    {
+                        __content_402 = await __response.Content.ReadAsStringAsync(cancellationToken).ConfigureAwait(false);
+                        __value_402 = global::DId.UploadAnImageResponse4.FromJson(__content_402, JsonSerializerContext);
+                    }
+                    else
+                    {
+                        __content_402 = await __response.Content.ReadAsStringAsync(cancellationToken).ConfigureAwait(false);
+
+                        __value_402 = global::DId.UploadAnImageResponse4.FromJson(__content_402, JsonSerializerContext);
+                    }
+                }
+                catch (global::System.Exception __ex)
+                {
+                    __exception_402 = __ex;
+                }
+
+                throw new global::DId.ApiException<global::DId.UploadAnImageResponse4>(
+                    message: __content_402 ?? __response.ReasonPhrase ?? string.Empty,
+                    innerException: __exception_402,
+                    statusCode: __response.StatusCode)
+                {
+                    ResponseBody = __content_402,
+                    ResponseObject = __value_402,
+                    ResponseHeaders = global::System.Linq.Enumerable.ToDictionary(
+                        __response.Headers,
+                        h => h.Key,
+                        h => h.Value),
+                };
+            }
+            // UnsupportedMimeTypeError
+            if ((int)__response.StatusCode == 415)
+            {
+                string? __content_415 = null;
+                global::System.Exception? __exception_415 = null;
+                global::DId.UploadAnImageResponse5? __value_415 = null;
+                try
+                {
+                    if (ReadResponseAsString)
+                    {
+                        __content_415 = await __response.Content.ReadAsStringAsync(cancellationToken).ConfigureAwait(false);
+                        __value_415 = global::DId.UploadAnImageResponse5.FromJson(__content_415, JsonSerializerContext);
+                    }
+                    else
+                    {
+                        __content_415 = await __response.Content.ReadAsStringAsync(cancellationToken).ConfigureAwait(false);
+
+                        __value_415 = global::DId.UploadAnImageResponse5.FromJson(__content_415, JsonSerializerContext);
+                    }
+                }
+                catch (global::System.Exception __ex)
+                {
+                    __exception_415 = __ex;
+                }
+
+                throw new global::DId.ApiException<global::DId.UploadAnImageResponse5>(
+                    message: __content_415 ?? __response.ReasonPhrase ?? string.Empty,
+                    innerException: __exception_415,
+                    statusCode: __response.StatusCode)
+                {
+                    ResponseBody = __content_415,
+                    ResponseObject = __value_415,
+                    ResponseHeaders = global::System.Linq.Enumerable.ToDictionary(
+                        __response.Headers,
+                        h => h.Key,
+                        h => h.Value),
+                };
+            }
+            // ImageModerationError | CelebrityRecognizedError
+            if ((int)__response.StatusCode == 451)
+            {
+                string? __content_451 = null;
+                global::System.Exception? __exception_451 = null;
+                global::DId.UploadAnImageResponse6? __value_451 = null;
+                try
+                {
+                    if (ReadResponseAsString)
+                    {
+                        __content_451 = await __response.Content.ReadAsStringAsync(cancellationToken).ConfigureAwait(false);
+                        __value_451 = global::DId.UploadAnImageResponse6.FromJson(__content_451, JsonSerializerContext);
+                    }
+                    else
+                    {
+                        __content_451 = await __response.Content.ReadAsStringAsync(cancellationToken).ConfigureAwait(false);
+
+                        __value_451 = global::DId.UploadAnImageResponse6.FromJson(__content_451, JsonSerializerContext);
+                    }
+                }
+                catch (global::System.Exception __ex)
+                {
+                    __exception_451 = __ex;
+                }
+
+                throw new global::DId.ApiException<global::DId.UploadAnImageResponse6>(
+                    message: __content_451 ?? __response.ReasonPhrase ?? string.Empty,
+                    innerException: __exception_451,
+                    statusCode: __response.StatusCode)
+                {
+                    ResponseBody = __content_451,
+                    ResponseObject = __value_451,
+                    ResponseHeaders = global::System.Linq.Enumerable.ToDictionary(
+                        __response.Headers,
+                        h => h.Key,
+                        h => h.Value),
+                };
+            }
+
+            if (ReadResponseAsString)
+            {
+                var __content = await __response.Content.ReadAsStringAsync(
+#if NET5_0_OR_GREATER
+                    cancellationToken
+#endif
+                ).ConfigureAwait(false);
+
+                ProcessResponseContent(
+                    client: HttpClient,
+                    response: __response,
+                    content: ref __content);
+                ProcessUploadAnImageResponseContent(
+                    httpClient: HttpClient,
+                    httpResponseMessage: __response,
+                    content: ref __content);
+
+                try
+                {
+                    __response.EnsureSuccessStatusCode();
+
+                    return
+                        global::DId.UploadAnImageResponse.FromJson(__content, JsonSerializerContext) ??
+                        throw new global::System.InvalidOperationException($"Response deserialization failed for \"{__content}\" ");
+                }
+                catch (global::System.Exception __ex)
+                {
+                    throw new global::DId.ApiException(
+                        message: __content ?? __response.ReasonPhrase ?? string.Empty,
+                        innerException: __ex,
+                        statusCode: __response.StatusCode)
+                    {
+                        ResponseBody = __content,
+                        ResponseHeaders = global::System.Linq.Enumerable.ToDictionary(
+                            __response.Headers,
+                            h => h.Key,
+                            h => h.Value),
+                    };
+                }
+            }
+            else
+            {
+                try
+                {
+                    __response.EnsureSuccessStatusCode();
+
+                    using var __content = await __response.Content.ReadAsStreamAsync(
+#if NET5_0_OR_GREATER
+                        cancellationToken
+#endif
+                    ).ConfigureAwait(false);
+
+                    return
+                        await global::DId.UploadAnImageResponse.FromJsonStreamAsync(__content, JsonSerializerContext).ConfigureAwait(false) ??
+                        throw new global::System.InvalidOperationException("Response deserialization failed.");
+                }
+                catch (global::System.Exception __ex)
+                {
+                    string? __content = null;
+                    try
+                    {
+                        __content = await __response.Content.ReadAsStringAsync(
+#if NET5_0_OR_GREATER
+                            cancellationToken
+#endif
+                        ).ConfigureAwait(false);
+                    }
+                    catch (global::System.Exception)
+                    {
+                    }
+
+                    throw new global::DId.ApiException(
+                        message: __content ?? __response.ReasonPhrase ?? string.Empty,
+                        innerException: __ex,
+                        statusCode: __response.StatusCode)
+                    {
+                        ResponseBody = __content,
+                        ResponseHeaders = global::System.Linq.Enumerable.ToDictionary(
+                            __response.Headers,
+                            h => h.Key,
+                            h => h.Value),
+                    };
+                }
+            }
+        }
+        /// <summary>
+        /// Upload image<br/>
+        /// Upload an image to a temporary storage before creating an animation.<br/>
+        /// The image is uploaded using multipart/form-data. the filename directive is optional and if provided should contain up to 50 valid characters long.<br/>
+        /// Valid characters: a-z A-Z 0-9 . _ -<br/>
+        /// Supported mime types: image/jpeg,image/png<br/>
+        /// Storage duration: 24-48H
+        /// </summary>
+        /// <param name="image">
+        /// The binary data of the image
+        /// </param>
+        /// <param name="imagename">
+        /// The binary data of the image
+        /// </param>
+        /// <param name="detectFaces"></param>
+        /// <param name="metadata"></param>
+        /// <param name="sourceUrl"></param>
+        /// <param name="resultUrl">
+        /// A URL to upload the image to. If provided, the image will be uploaded to this URL instead of the default bucket. Should be an https presigned URL. S3 presigned urls should have the putObject permission with content type matching the uploaded image.
+        /// </param>
+        /// <param name="cancellationToken">The token to cancel the operation with</param>
+        /// <exception cref="global::System.InvalidOperationException"></exception>
+        public async global::System.Threading.Tasks.Task<global::DId.UploadAnImageResponse> UploadAnImageAsync(
+            byte[]? image = default,
+            string? imagename = default,
+            string? detectFaces = default,
+            string? metadata = default,
+            string? sourceUrl = default,
+            string? resultUrl = default,
+            global::System.Threading.CancellationToken cancellationToken = default)
+        {
+            var __request = new global::DId.UploadAnImageRequest
+            {
+                Image = image,
+                Imagename = imagename,
+                DetectFaces = detectFaces,
+                Metadata = metadata,
+                SourceUrl = sourceUrl,
+                ResultUrl = resultUrl,
+            };
+
+            return await UploadAnImageAsync(
+                request: __request,
+                cancellationToken: cancellationToken).ConfigureAwait(false);
+        }
+    }
+}

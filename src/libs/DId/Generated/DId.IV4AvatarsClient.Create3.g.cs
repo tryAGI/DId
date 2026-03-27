@@ -1,0 +1,61 @@
+#nullable enable
+
+namespace DId
+{
+    public partial interface IV4AvatarsClient
+    {
+        /// <summary>
+        /// Create a Video
+        /// </summary>
+        /// <param name="xApiKeyExternal"></param>
+        /// <param name="request"></param>
+        /// <param name="cancellationToken">The token to cancel the operation with</param>
+        /// <exception cref="global::DId.ApiException"></exception>
+        global::System.Threading.Tasks.Task<global::DId.AllOf<global::DId.Create3ResponseVariant1, global::DId.Create3ResponseVariant2>> Create3Async(
+
+            global::DId.Create3Request request,
+            string? xApiKeyExternal = default,
+            global::System.Threading.CancellationToken cancellationToken = default);
+        /// <summary>
+        /// Create a Video
+        /// </summary>
+        /// <param name="xApiKeyExternal"></param>
+        /// <param name="name">
+        /// The name of the video<br/>
+        /// Example: my_expressive_video
+        /// </param>
+        /// <param name="avatarId">
+        /// The id of the avatar of the video<br/>
+        /// Example: public_dan@abcefg
+        /// </param>
+        /// <param name="sentimentId">
+        /// The chosen sentiment id of the video<br/>
+        /// Example: snt_IIjpTS
+        /// </param>
+        /// <param name="config"></param>
+        /// <param name="background"></param>
+        /// <param name="userData"></param>
+        /// <param name="persist"></param>
+        /// <param name="resultUrl">
+        /// The result url of the video. Cannot be provided together with config.result_format.<br/>
+        /// Example: https://example.com/result.mp4
+        /// </param>
+        /// <param name="webhook"></param>
+        /// <param name="script"></param>
+        /// <param name="cancellationToken">The token to cancel the operation with</param>
+        /// <exception cref="global::System.InvalidOperationException"></exception>
+        global::System.Threading.Tasks.Task<global::DId.AllOf<global::DId.Create3ResponseVariant1, global::DId.Create3ResponseVariant2>> Create3Async(
+            string avatarId,
+            global::DId.AnyOf<global::DId.Create3RequestScriptVariant1, global::DId.Create3RequestScriptVariant2> script,
+            string? xApiKeyExternal = default,
+            string? name = default,
+            string? sentimentId = default,
+            global::DId.Create3RequestConfig? config = default,
+            global::DId.AnyOf<global::DId.Create3RequestBackgroundVariant1, global::DId.Create3RequestBackgroundVariant2>? background = default,
+            string? userData = default,
+            bool? persist = default,
+            string? resultUrl = default,
+            string? webhook = default,
+            global::System.Threading.CancellationToken cancellationToken = default);
+    }
+}

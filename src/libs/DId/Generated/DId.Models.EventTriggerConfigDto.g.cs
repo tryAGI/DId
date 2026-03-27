@@ -1,0 +1,45 @@
+
+#nullable enable
+
+namespace DId
+{
+    /// <summary>
+    /// 
+    /// </summary>
+    public sealed partial class EventTriggerConfigDto
+    {
+        /// <summary>
+        /// Webhooks executed when the event occurs.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("webhooks")]
+        public global::System.Collections.Generic.IList<global::DId.EventTriggerConfigDtoWebhook>? Webhooks { get; set; }
+
+        /// <summary>
+        /// Additional properties that are not explicitly defined in the schema
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonExtensionData]
+        public global::System.Collections.Generic.IDictionary<string, object> AdditionalProperties { get; set; } = new global::System.Collections.Generic.Dictionary<string, object>();
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="EventTriggerConfigDto" /> class.
+        /// </summary>
+        /// <param name="webhooks">
+        /// Webhooks executed when the event occurs.
+        /// </param>
+#if NET7_0_OR_GREATER
+        [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
+#endif
+        public EventTriggerConfigDto(
+            global::System.Collections.Generic.IList<global::DId.EventTriggerConfigDtoWebhook>? webhooks)
+        {
+            this.Webhooks = webhooks;
+        }
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="EventTriggerConfigDto" /> class.
+        /// </summary>
+        public EventTriggerConfigDto()
+        {
+        }
+    }
+}

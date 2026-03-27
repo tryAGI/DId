@@ -1,0 +1,53 @@
+#nullable enable
+
+namespace DId.JsonConverters
+{
+    /// <inheritdoc />
+    public sealed class UpdateBearerAuthSecretRequestDtoTypeJsonConverter : global::System.Text.Json.Serialization.JsonConverter<global::DId.UpdateBearerAuthSecretRequestDtoType>
+    {
+        /// <inheritdoc />
+        public override global::DId.UpdateBearerAuthSecretRequestDtoType Read(
+            ref global::System.Text.Json.Utf8JsonReader reader,
+            global::System.Type typeToConvert,
+            global::System.Text.Json.JsonSerializerOptions options)
+        {
+            switch (reader.TokenType)
+            {
+                case global::System.Text.Json.JsonTokenType.String:
+                {
+                    var stringValue = reader.GetString();
+                    if (stringValue != null)
+                    {
+                        return global::DId.UpdateBearerAuthSecretRequestDtoTypeExtensions.ToEnum(stringValue) ?? default;
+                    }
+                    
+                    break;
+                }
+                case global::System.Text.Json.JsonTokenType.Number:
+                {
+                    var numValue = reader.GetInt32();
+                    return (global::DId.UpdateBearerAuthSecretRequestDtoType)numValue;
+                }
+                case global::System.Text.Json.JsonTokenType.Null:
+                {
+                    return default(global::DId.UpdateBearerAuthSecretRequestDtoType);
+                }
+                default:
+                    throw new global::System.ArgumentOutOfRangeException(nameof(reader));
+            }
+
+            return default;
+        }
+
+        /// <inheritdoc />
+        public override void Write(
+            global::System.Text.Json.Utf8JsonWriter writer,
+            global::DId.UpdateBearerAuthSecretRequestDtoType value,
+            global::System.Text.Json.JsonSerializerOptions options)
+        {
+            writer = writer ?? throw new global::System.ArgumentNullException(nameof(writer));
+
+            writer.WriteStringValue(global::DId.UpdateBearerAuthSecretRequestDtoTypeExtensions.ToValueString(value));
+        }
+    }
+}

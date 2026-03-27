@@ -1,0 +1,17 @@
+#nullable enable
+
+namespace DId
+{
+    public partial interface IScenesExpressAvatarsClient
+    {
+        /// <summary>
+        /// Get a specific scene
+        /// </summary>
+        /// <param name="id"></param>
+        /// <param name="cancellationToken">The token to cancel the operation with</param>
+        /// <exception cref="global::DId.ApiException"></exception>
+        global::System.Threading.Tasks.Task<global::DId.Get1Response> Get1Async(
+            string id,
+            global::System.Threading.CancellationToken cancellationToken = default);
+    }
+}

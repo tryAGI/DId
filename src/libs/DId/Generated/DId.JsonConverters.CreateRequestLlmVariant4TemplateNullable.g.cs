@@ -1,0 +1,60 @@
+#nullable enable
+
+namespace DId.JsonConverters
+{
+    /// <inheritdoc />
+    public sealed class CreateRequestLlmVariant4TemplateNullableJsonConverter : global::System.Text.Json.Serialization.JsonConverter<global::DId.CreateRequestLlmVariant4Template?>
+    {
+        /// <inheritdoc />
+        public override global::DId.CreateRequestLlmVariant4Template? Read(
+            ref global::System.Text.Json.Utf8JsonReader reader,
+            global::System.Type typeToConvert,
+            global::System.Text.Json.JsonSerializerOptions options)
+        {
+            switch (reader.TokenType)
+            {
+                case global::System.Text.Json.JsonTokenType.String:
+                {
+                    var stringValue = reader.GetString();
+                    if (stringValue != null)
+                    {
+                        return global::DId.CreateRequestLlmVariant4TemplateExtensions.ToEnum(stringValue);
+                    }
+                    
+                    break;
+                }
+                case global::System.Text.Json.JsonTokenType.Number:
+                {
+                    var numValue = reader.GetInt32();
+                    return (global::DId.CreateRequestLlmVariant4Template)numValue;
+                }
+                case global::System.Text.Json.JsonTokenType.Null:
+                {
+                    return default(global::DId.CreateRequestLlmVariant4Template?);
+                }
+                default:
+                    throw new global::System.ArgumentOutOfRangeException(nameof(reader));
+            }
+
+            return default;
+        }
+
+        /// <inheritdoc />
+        public override void Write(
+            global::System.Text.Json.Utf8JsonWriter writer,
+            global::DId.CreateRequestLlmVariant4Template? value,
+            global::System.Text.Json.JsonSerializerOptions options)
+        {
+            writer = writer ?? throw new global::System.ArgumentNullException(nameof(writer));
+
+            if (value == null)
+            {
+                writer.WriteNullValue();
+            }
+            else
+            {
+                writer.WriteStringValue(global::DId.CreateRequestLlmVariant4TemplateExtensions.ToValueString(value.Value));
+            }
+        }
+    }
+}

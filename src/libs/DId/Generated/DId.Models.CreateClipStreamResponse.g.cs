@@ -1,0 +1,63 @@
+
+#nullable enable
+
+namespace DId
+{
+    /// <summary>
+    /// 
+    /// </summary>
+    public sealed partial class CreateClipStreamResponse
+    {
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("duration")]
+        public double? Duration { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("session_id")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string SessionId { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("status")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string Status { get; set; }
+
+        /// <summary>
+        /// Additional properties that are not explicitly defined in the schema
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonExtensionData]
+        public global::System.Collections.Generic.IDictionary<string, object> AdditionalProperties { get; set; } = new global::System.Collections.Generic.Dictionary<string, object>();
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="CreateClipStreamResponse" /> class.
+        /// </summary>
+        /// <param name="duration"></param>
+        /// <param name="sessionId"></param>
+        /// <param name="status"></param>
+#if NET7_0_OR_GREATER
+        [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
+#endif
+        public CreateClipStreamResponse(
+            string sessionId,
+            string status,
+            double? duration)
+        {
+            this.SessionId = sessionId ?? throw new global::System.ArgumentNullException(nameof(sessionId));
+            this.Status = status ?? throw new global::System.ArgumentNullException(nameof(status));
+            this.Duration = duration;
+        }
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="CreateClipStreamResponse" /> class.
+        /// </summary>
+        public CreateClipStreamResponse()
+        {
+        }
+    }
+}

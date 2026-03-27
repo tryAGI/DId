@@ -1,0 +1,60 @@
+#nullable enable
+
+namespace DId.JsonConverters
+{
+    /// <inheritdoc />
+    public sealed class LLMConfigGoogleTemplateNullableJsonConverter : global::System.Text.Json.Serialization.JsonConverter<global::DId.LLMConfigGoogleTemplate?>
+    {
+        /// <inheritdoc />
+        public override global::DId.LLMConfigGoogleTemplate? Read(
+            ref global::System.Text.Json.Utf8JsonReader reader,
+            global::System.Type typeToConvert,
+            global::System.Text.Json.JsonSerializerOptions options)
+        {
+            switch (reader.TokenType)
+            {
+                case global::System.Text.Json.JsonTokenType.String:
+                {
+                    var stringValue = reader.GetString();
+                    if (stringValue != null)
+                    {
+                        return global::DId.LLMConfigGoogleTemplateExtensions.ToEnum(stringValue);
+                    }
+                    
+                    break;
+                }
+                case global::System.Text.Json.JsonTokenType.Number:
+                {
+                    var numValue = reader.GetInt32();
+                    return (global::DId.LLMConfigGoogleTemplate)numValue;
+                }
+                case global::System.Text.Json.JsonTokenType.Null:
+                {
+                    return default(global::DId.LLMConfigGoogleTemplate?);
+                }
+                default:
+                    throw new global::System.ArgumentOutOfRangeException(nameof(reader));
+            }
+
+            return default;
+        }
+
+        /// <inheritdoc />
+        public override void Write(
+            global::System.Text.Json.Utf8JsonWriter writer,
+            global::DId.LLMConfigGoogleTemplate? value,
+            global::System.Text.Json.JsonSerializerOptions options)
+        {
+            writer = writer ?? throw new global::System.ArgumentNullException(nameof(writer));
+
+            if (value == null)
+            {
+                writer.WriteNullValue();
+            }
+            else
+            {
+                writer.WriteStringValue(global::DId.LLMConfigGoogleTemplateExtensions.ToValueString(value.Value));
+            }
+        }
+    }
+}

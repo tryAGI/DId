@@ -1,0 +1,53 @@
+
+#nullable enable
+
+namespace DId
+{
+    /// <summary>
+    /// 
+    /// </summary>
+    public sealed partial class AvatarsSettings
+    {
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("express_slots")]
+        public double? ExpressSlots { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("premiumplus_slots")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required double PremiumplusSlots { get; set; }
+
+        /// <summary>
+        /// Additional properties that are not explicitly defined in the schema
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonExtensionData]
+        public global::System.Collections.Generic.IDictionary<string, object> AdditionalProperties { get; set; } = new global::System.Collections.Generic.Dictionary<string, object>();
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="AvatarsSettings" /> class.
+        /// </summary>
+        /// <param name="expressSlots"></param>
+        /// <param name="premiumplusSlots"></param>
+#if NET7_0_OR_GREATER
+        [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
+#endif
+        public AvatarsSettings(
+            double premiumplusSlots,
+            double? expressSlots)
+        {
+            this.PremiumplusSlots = premiumplusSlots;
+            this.ExpressSlots = expressSlots;
+        }
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="AvatarsSettings" /> class.
+        /// </summary>
+        public AvatarsSettings()
+        {
+        }
+    }
+}

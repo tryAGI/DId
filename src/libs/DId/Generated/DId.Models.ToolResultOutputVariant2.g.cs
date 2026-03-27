@@ -1,0 +1,54 @@
+
+#nullable enable
+
+namespace DId
+{
+    /// <summary>
+    /// 
+    /// </summary>
+    public sealed partial class ToolResultOutputVariant2
+    {
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("value")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::DId.JsonConverters.JSONValueJsonConverter))]
+        public global::DId.JSONValue? Value { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("type")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::DId.JsonConverters.ToolResultOutputVariant2TypeJsonConverter))]
+        public global::DId.ToolResultOutputVariant2Type Type { get; set; }
+
+        /// <summary>
+        /// Additional properties that are not explicitly defined in the schema
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonExtensionData]
+        public global::System.Collections.Generic.IDictionary<string, object> AdditionalProperties { get; set; } = new global::System.Collections.Generic.Dictionary<string, object>();
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="ToolResultOutputVariant2" /> class.
+        /// </summary>
+        /// <param name="value"></param>
+        /// <param name="type"></param>
+#if NET7_0_OR_GREATER
+        [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
+#endif
+        public ToolResultOutputVariant2(
+            global::DId.JSONValue? value,
+            global::DId.ToolResultOutputVariant2Type type)
+        {
+            this.Value = value;
+            this.Type = type;
+        }
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="ToolResultOutputVariant2" /> class.
+        /// </summary>
+        public ToolResultOutputVariant2()
+        {
+        }
+    }
+}

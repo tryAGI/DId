@@ -1,0 +1,113 @@
+
+#nullable enable
+
+namespace DId
+{
+    /// <summary>
+    /// 
+    /// </summary>
+    public sealed partial class CustomBasicKeyConfig
+    {
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("type")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::DId.JsonConverters.CustomBasicKeyConfigTypeJsonConverter))]
+        public global::DId.CustomBasicKeyConfigType Type { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("url")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string Url { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("streaming")]
+        public bool? Streaming { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("max_messages")]
+        public double? MaxMessages { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("headers")]
+        public global::System.Collections.Generic.Dictionary<string, string>? Headers { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("supports_sentiment")]
+        public bool? SupportsSentiment { get; set; }
+
+        /// <summary>
+        /// External API_KEY for D-ID to use
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("key")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string Key { get; set; }
+
+        /// <summary>
+        /// The version of the API to use (Optional)
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("version")]
+        public string? Version { get; set; }
+
+        /// <summary>
+        /// Additional properties that are not explicitly defined in the schema
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonExtensionData]
+        public global::System.Collections.Generic.IDictionary<string, object> AdditionalProperties { get; set; } = new global::System.Collections.Generic.Dictionary<string, object>();
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="CustomBasicKeyConfig" /> class.
+        /// </summary>
+        /// <param name="type"></param>
+        /// <param name="url"></param>
+        /// <param name="streaming"></param>
+        /// <param name="maxMessages"></param>
+        /// <param name="headers"></param>
+        /// <param name="supportsSentiment"></param>
+        /// <param name="key">
+        /// External API_KEY for D-ID to use
+        /// </param>
+        /// <param name="version">
+        /// The version of the API to use (Optional)
+        /// </param>
+#if NET7_0_OR_GREATER
+        [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
+#endif
+        public CustomBasicKeyConfig(
+            string url,
+            string key,
+            global::DId.CustomBasicKeyConfigType type,
+            bool? streaming,
+            double? maxMessages,
+            global::System.Collections.Generic.Dictionary<string, string>? headers,
+            bool? supportsSentiment,
+            string? version)
+        {
+            this.Url = url ?? throw new global::System.ArgumentNullException(nameof(url));
+            this.Key = key ?? throw new global::System.ArgumentNullException(nameof(key));
+            this.Type = type;
+            this.Streaming = streaming;
+            this.MaxMessages = maxMessages;
+            this.Headers = headers;
+            this.SupportsSentiment = supportsSentiment;
+            this.Version = version;
+        }
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="CustomBasicKeyConfig" /> class.
+        /// </summary>
+        public CustomBasicKeyConfig()
+        {
+        }
+    }
+}

@@ -1,0 +1,83 @@
+
+#nullable enable
+
+namespace DId
+{
+    /// <summary>
+    /// 
+    /// </summary>
+    public sealed partial class CreateSceneResponseDto
+    {
+        /// <summary>
+        /// The ID of the scene
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("id")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string Id { get; set; }
+
+        /// <summary>
+        /// An identifier of this scene
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("object")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::DId.JsonConverters.CreateSceneResponseDtoObjectJsonConverter))]
+        public global::DId.CreateSceneResponseDtoObject Object { get; set; }
+
+        /// <summary>
+        /// Video creation time as iso-8601 string
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("created_at")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string CreatedAt { get; set; }
+
+        /// <summary>
+        /// The status of the scene
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("status")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::DId.JsonConverters.CreateSceneResponseDtoStatusJsonConverter))]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required global::DId.CreateSceneResponseDtoStatus Status { get; set; }
+
+        /// <summary>
+        /// Additional properties that are not explicitly defined in the schema
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonExtensionData]
+        public global::System.Collections.Generic.IDictionary<string, object> AdditionalProperties { get; set; } = new global::System.Collections.Generic.Dictionary<string, object>();
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="CreateSceneResponseDto" /> class.
+        /// </summary>
+        /// <param name="id">
+        /// The ID of the scene
+        /// </param>
+        /// <param name="object">
+        /// An identifier of this scene
+        /// </param>
+        /// <param name="createdAt">
+        /// Video creation time as iso-8601 string
+        /// </param>
+        /// <param name="status">
+        /// The status of the scene
+        /// </param>
+#if NET7_0_OR_GREATER
+        [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
+#endif
+        public CreateSceneResponseDto(
+            string id,
+            string createdAt,
+            global::DId.CreateSceneResponseDtoStatus status,
+            global::DId.CreateSceneResponseDtoObject @object)
+        {
+            this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
+            this.CreatedAt = createdAt ?? throw new global::System.ArgumentNullException(nameof(createdAt));
+            this.Status = status;
+            this.Object = @object;
+        }
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="CreateSceneResponseDto" /> class.
+        /// </summary>
+        public CreateSceneResponseDto()
+        {
+        }
+    }
+}

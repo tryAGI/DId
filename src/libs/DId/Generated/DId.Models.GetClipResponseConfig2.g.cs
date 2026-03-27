@@ -1,0 +1,73 @@
+
+#nullable enable
+
+namespace DId
+{
+    /// <summary>
+    /// The configuration that used to process the clip
+    /// </summary>
+    public sealed partial class GetClipResponseConfig2
+    {
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("logo")]
+        public global::DId.GetClipResponseConfigLogo2? Logo { get; set; }
+
+        /// <summary>
+        /// File format of the animated result<br/>
+        /// Default Value: mp4
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("result_format")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::DId.JsonConverters.GetClipResponseConfigResultFormat2JsonConverter))]
+        public global::DId.GetClipResponseConfigResultFormat2? ResultFormat { get; set; }
+
+        /// <summary>
+        /// The output resolution sets the maximum height or width of the output video.<br/>
+        /// The aspect ratio is preserved from the source image.<br/>
+        /// Example: 1080
+        /// </summary>
+        /// <example>1080</example>
+        [global::System.Text.Json.Serialization.JsonPropertyName("output_resolution")]
+        public double? OutputResolution { get; set; }
+
+        /// <summary>
+        /// Additional properties that are not explicitly defined in the schema
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonExtensionData]
+        public global::System.Collections.Generic.IDictionary<string, object> AdditionalProperties { get; set; } = new global::System.Collections.Generic.Dictionary<string, object>();
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="GetClipResponseConfig2" /> class.
+        /// </summary>
+        /// <param name="logo"></param>
+        /// <param name="resultFormat">
+        /// File format of the animated result<br/>
+        /// Default Value: mp4
+        /// </param>
+        /// <param name="outputResolution">
+        /// The output resolution sets the maximum height or width of the output video.<br/>
+        /// The aspect ratio is preserved from the source image.<br/>
+        /// Example: 1080
+        /// </param>
+#if NET7_0_OR_GREATER
+        [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
+#endif
+        public GetClipResponseConfig2(
+            global::DId.GetClipResponseConfigLogo2? logo,
+            global::DId.GetClipResponseConfigResultFormat2? resultFormat,
+            double? outputResolution)
+        {
+            this.Logo = logo;
+            this.ResultFormat = resultFormat;
+            this.OutputResolution = outputResolution;
+        }
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="GetClipResponseConfig2" /> class.
+        /// </summary>
+        public GetClipResponseConfig2()
+        {
+        }
+    }
+}
