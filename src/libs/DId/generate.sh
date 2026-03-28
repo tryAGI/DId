@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
+# OpenAPI spec: locally maintained, extracted from https://docs.d-id.com/reference/ (multiple specs merged)
+
 dotnet tool install --global autosdk.cli --prerelease
 rm -rf Generated
 
