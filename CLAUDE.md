@@ -23,7 +23,7 @@ var client = new DIdClient(apiKey); // DID_API_KEY env var
 ## Key Files
 
 - `src/libs/DId/openapi.json` — **Locally maintained** merged OpenAPI spec (no stable public URL)
-- `src/libs/DId/generate.sh` — Fixes auth (injects bearer securityScheme, removes per-operation security), runs autosdk
+- `src/libs/DId/generate.sh` — Runs autosdk with `--security-scheme Http:Header:Bearer`
 - `src/libs/DId/Generated/` — **Never edit** — auto-generated code (~8k files)
 - `src/libs/DId/Extensions/DIdClient.Tools.cs` — MEAI `AIFunction` tools (CreateTalk, GetTalk, ListTalks, ListAgents, GetCredits, ListVoices)
 - `src/tests/IntegrationTests/Tests.cs` — Test helper with bearer auth
@@ -34,7 +34,7 @@ var client = new DIdClient(apiKey); // DID_API_KEY env var
 - **No stable public OpenAPI spec** — extracted from `docs.d-id.com/reference` embedded data
 - 4 specs merged into one: videos, realtime, resources, legacy
 - 42 schema names normalized (dots/hyphens replaced)
-- `generate.sh` injects `bearer` security scheme and removes per-operation `security` blocks (top-level bearer covers all endpoints)
+- `--security-scheme Http:Header:Bearer` handles top-level auth (overrides per-operation security blocks)
 - Uses `--exclude-deprecated-operations` flag
 
 ## Sub-client Pattern
