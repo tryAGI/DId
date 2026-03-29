@@ -122,6 +122,18 @@ namespace DId
         /// <param name="agentId">
         /// The id of the agent that the export will run for
         /// </param>
+        /// <param name="createdBy">
+        /// Who created the export
+        /// </param>
+        /// <param name="createdAt">
+        /// When the export was created
+        /// </param>
+        /// <param name="status">
+        /// Indicates full partial or failed export
+        /// </param>
+        /// <param name="exportId"></param>
+        /// <param name="ownerId"></param>
+        /// <param name="modified"></param>
         /// <param name="from">
         /// The start of the time range for the export.  If not provided, the export will start from the beginning of the agent's data<br/>
         /// Example: 2024-05-15T12:00:00Z
@@ -132,15 +144,6 @@ namespace DId
         /// </param>
         /// <param name="persistentChats">
         /// Determines if the export should fetch persistent chats. Defaults to true.
-        /// </param>
-        /// <param name="createdBy">
-        /// Who created the export
-        /// </param>
-        /// <param name="createdAt">
-        /// When the export was created
-        /// </param>
-        /// <param name="status">
-        /// Indicates full partial or failed export
         /// </param>
         /// <param name="completedAt">
         /// When the export was completed
@@ -157,9 +160,6 @@ namespace DId
         /// <param name="totalFilesSize">
         /// The total size of the files in the export
         /// </param>
-        /// <param name="exportId"></param>
-        /// <param name="ownerId"></param>
-        /// <param name="modified"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -181,20 +181,20 @@ namespace DId
             double? totalFilesSize)
         {
             this.AgentId = agentId ?? throw new global::System.ArgumentNullException(nameof(agentId));
-            this.CreatedBy = createdBy ?? throw new global::System.ArgumentNullException(nameof(createdBy));
-            this.CreatedAt = createdAt ?? throw new global::System.ArgumentNullException(nameof(createdAt));
-            this.Status = status;
-            this.ExportId = exportId ?? throw new global::System.ArgumentNullException(nameof(exportId));
-            this.OwnerId = ownerId ?? throw new global::System.ArgumentNullException(nameof(ownerId));
-            this.Modified = modified ?? throw new global::System.ArgumentNullException(nameof(modified));
             this.From = from;
             this.To = to;
             this.PersistentChats = persistentChats;
+            this.CreatedBy = createdBy ?? throw new global::System.ArgumentNullException(nameof(createdBy));
+            this.CreatedAt = createdAt ?? throw new global::System.ArgumentNullException(nameof(createdAt));
+            this.Status = status;
             this.CompletedAt = completedAt;
             this.Result = result;
             this.Error = error;
             this.TotalFilesCount = totalFilesCount;
             this.TotalFilesSize = totalFilesSize;
+            this.ExportId = exportId ?? throw new global::System.ArgumentNullException(nameof(exportId));
+            this.OwnerId = ownerId ?? throw new global::System.ArgumentNullException(nameof(ownerId));
+            this.Modified = modified ?? throw new global::System.ArgumentNullException(nameof(modified));
         }
 
         /// <summary>

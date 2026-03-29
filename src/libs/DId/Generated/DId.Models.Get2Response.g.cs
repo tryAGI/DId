@@ -140,14 +140,6 @@ namespace DId
         /// <param name="ownerId">
         /// The id of the owner of the expressive video
         /// </param>
-        /// <param name="name">
-        /// The name of the video<br/>
-        /// Example: my_expressive_video
-        /// </param>
-        /// <param name="thumbnailUrl">
-        /// The thumbnail url of the video<br/>
-        /// Example: https://example.com/thumbnail.png
-        /// </param>
         /// <param name="status"></param>
         /// <param name="createdAt">
         /// The date the video was created<br/>
@@ -156,6 +148,18 @@ namespace DId
         /// <param name="avatarId">
         /// The id of the avatar of the video<br/>
         /// Example: public_dan@abcefg
+        /// </param>
+        /// <param name="createdBy">
+        /// The id of the user who created the expressive video<br/>
+        /// Example: user_id
+        /// </param>
+        /// <param name="name">
+        /// The name of the video<br/>
+        /// Example: my_expressive_video
+        /// </param>
+        /// <param name="thumbnailUrl">
+        /// The thumbnail url of the video<br/>
+        /// Example: https://example.com/thumbnail.png
         /// </param>
         /// <param name="sentimentId">
         /// The chosen sentiment id of the video<br/>
@@ -167,10 +171,6 @@ namespace DId
         /// Example: https://example.com/result.mp4
         /// </param>
         /// <param name="webhook"></param>
-        /// <param name="createdBy">
-        /// The id of the user who created the expressive video<br/>
-        /// Example: user_id
-        /// </param>
         /// <param name="completedAt"></param>
         /// <param name="error"></param>
         /// <param name="subtitlesUrl"></param>
@@ -198,16 +198,16 @@ namespace DId
         {
             this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
             this.OwnerId = ownerId ?? throw new global::System.ArgumentNullException(nameof(ownerId));
+            this.Name = name;
+            this.ThumbnailUrl = thumbnailUrl;
             this.Status = status;
             this.CreatedAt = createdAt ?? throw new global::System.ArgumentNullException(nameof(createdAt));
             this.AvatarId = avatarId ?? throw new global::System.ArgumentNullException(nameof(avatarId));
-            this.CreatedBy = createdBy ?? throw new global::System.ArgumentNullException(nameof(createdBy));
-            this.Name = name;
-            this.ThumbnailUrl = thumbnailUrl;
             this.SentimentId = sentimentId;
             this.UserData = userData;
             this.ResultUrl = resultUrl;
             this.Webhook = webhook;
+            this.CreatedBy = createdBy ?? throw new global::System.ArgumentNullException(nameof(createdBy));
             this.CompletedAt = completedAt;
             this.Error = error;
             this.SubtitlesUrl = subtitlesUrl;

@@ -137,21 +137,21 @@ namespace DId
         /// <param name="messages"></param>
         /// <param name="agentId"></param>
         /// <param name="externalId"></param>
+        /// <param name="plan"></param>
+        /// <param name="id"></param>
+        /// <param name="ownerId"></param>
+        /// <param name="createdAt"></param>
+        /// <param name="modifiedAt"></param>
         /// <param name="origin"></param>
         /// <param name="chatMode"></param>
         /// <param name="messageCount"></param>
         /// <param name="persistMessages"></param>
-        /// <param name="plan"></param>
         /// <param name="durationMinutes"></param>
         /// <param name="detailsUrl"></param>
         /// <param name="agent"></param>
         /// <param name="insights"></param>
         /// <param name="region"></param>
         /// <param name="livekitSessionId"></param>
-        /// <param name="id"></param>
-        /// <param name="ownerId"></param>
-        /// <param name="createdAt"></param>
-        /// <param name="modifiedAt"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -178,21 +178,21 @@ namespace DId
             this.Messages = messages ?? throw new global::System.ArgumentNullException(nameof(messages));
             this.AgentId = agentId ?? throw new global::System.ArgumentNullException(nameof(agentId));
             this.ExternalId = externalId ?? throw new global::System.ArgumentNullException(nameof(externalId));
-            this.Plan = plan;
-            this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
-            this.OwnerId = ownerId ?? throw new global::System.ArgumentNullException(nameof(ownerId));
-            this.CreatedAt = createdAt ?? throw new global::System.ArgumentNullException(nameof(createdAt));
-            this.ModifiedAt = modifiedAt ?? throw new global::System.ArgumentNullException(nameof(modifiedAt));
             this.Origin = origin;
             this.ChatMode = chatMode;
             this.MessageCount = messageCount;
             this.PersistMessages = persistMessages;
+            this.Plan = plan;
             this.DurationMinutes = durationMinutes;
             this.DetailsUrl = detailsUrl;
             this.Agent = agent;
             this.Insights = insights;
             this.Region = region;
             this.LivekitSessionId = livekitSessionId;
+            this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
+            this.OwnerId = ownerId ?? throw new global::System.ArgumentNullException(nameof(ownerId));
+            this.CreatedAt = createdAt ?? throw new global::System.ArgumentNullException(nameof(createdAt));
+            this.ModifiedAt = modifiedAt ?? throw new global::System.ArgumentNullException(nameof(modifiedAt));
         }
 
         /// <summary>

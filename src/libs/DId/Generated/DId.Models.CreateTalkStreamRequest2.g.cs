@@ -75,8 +75,8 @@ namespace DId
         /// <summary>
         /// Initializes a new instance of the <see cref="CreateTalkStreamRequest2" /> class.
         /// </summary>
-        /// <param name="sessionId"></param>
         /// <param name="script"></param>
+        /// <param name="sessionId"></param>
         /// <param name="config">
         /// Advanced configuration options.
         /// </param>
@@ -105,8 +105,8 @@ namespace DId
             double? audioOptimization,
             object? metadata)
         {
-            this.Script = script;
             this.SessionId = sessionId;
+            this.Script = script;
             this.Config = config;
             this.UserData = userData;
             this.Name = name;

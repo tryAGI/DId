@@ -90,13 +90,14 @@ namespace DId
         /// <summary>
         /// Initializes a new instance of the <see cref="CreateExpressiveRequestDto" /> class.
         /// </summary>
-        /// <param name="name">
-        /// The name of the video<br/>
-        /// Example: my_expressive_video
-        /// </param>
         /// <param name="avatarId">
         /// The id of the avatar of the video<br/>
         /// Example: public_dan@abcefg
+        /// </param>
+        /// <param name="script"></param>
+        /// <param name="name">
+        /// The name of the video<br/>
+        /// Example: my_expressive_video
         /// </param>
         /// <param name="sentimentId">
         /// The chosen sentiment id of the video<br/>
@@ -111,7 +112,6 @@ namespace DId
         /// Example: https://example.com/result.mp4
         /// </param>
         /// <param name="webhook"></param>
-        /// <param name="script"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -127,9 +127,8 @@ namespace DId
             string? resultUrl,
             string? webhook)
         {
-            this.AvatarId = avatarId ?? throw new global::System.ArgumentNullException(nameof(avatarId));
-            this.Script = script;
             this.Name = name;
+            this.AvatarId = avatarId ?? throw new global::System.ArgumentNullException(nameof(avatarId));
             this.SentimentId = sentimentId;
             this.Config = config;
             this.Background = background;
@@ -137,6 +136,7 @@ namespace DId
             this.Persist = persist;
             this.ResultUrl = resultUrl;
             this.Webhook = webhook;
+            this.Script = script;
         }
 
         /// <summary>

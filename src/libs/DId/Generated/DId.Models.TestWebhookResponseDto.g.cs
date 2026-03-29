@@ -53,6 +53,7 @@ namespace DId
         /// <param name="success">
         /// Whether the webhook call succeeded (2xx status code)
         /// </param>
+        /// <param name="requestPayload"></param>
         /// <param name="statusCode">
         /// HTTP status code returned by the webhook
         /// </param>
@@ -62,7 +63,6 @@ namespace DId
         /// <param name="errorMessage">
         /// Error message (if failed)
         /// </param>
-        /// <param name="requestPayload"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -74,10 +74,10 @@ namespace DId
             string? errorMessage)
         {
             this.Success = success;
-            this.RequestPayload = requestPayload;
             this.StatusCode = statusCode;
             this.ResponseData = responseData;
             this.ErrorMessage = errorMessage;
+            this.RequestPayload = requestPayload;
         }
 
         /// <summary>

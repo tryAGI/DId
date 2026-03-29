@@ -79,11 +79,11 @@ namespace DId
         /// </summary>
         /// <param name="id"></param>
         /// <param name="status"></param>
-        /// <param name="generatedAt"></param>
         /// <param name="modifiedAt"></param>
-        /// <param name="proofreading"></param>
         /// <param name="locale"></param>
         /// <param name="language"></param>
+        /// <param name="generatedAt"></param>
+        /// <param name="proofreading"></param>
         /// <param name="customVoiceId"></param>
         /// <param name="transcriptions"></param>
 #if NET7_0_OR_GREATER
@@ -102,11 +102,11 @@ namespace DId
         {
             this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
             this.Status = status;
+            this.GeneratedAt = generatedAt;
             this.ModifiedAt = modifiedAt ?? throw new global::System.ArgumentNullException(nameof(modifiedAt));
+            this.Proofreading = proofreading;
             this.Locale = locale ?? throw new global::System.ArgumentNullException(nameof(locale));
             this.Language = language ?? throw new global::System.ArgumentNullException(nameof(language));
-            this.GeneratedAt = generatedAt;
-            this.Proofreading = proofreading;
             this.CustomVoiceId = customVoiceId;
             this.Transcriptions = transcriptions;
         }

@@ -30,10 +30,10 @@ namespace DId
         /// <summary>
         /// Initializes a new instance of the <see cref="GetExpressivesResponse" /> class.
         /// </summary>
+        /// <param name="expressives"></param>
         /// <param name="token">
         /// The pagination token for the next page of expressives
         /// </param>
-        /// <param name="expressives"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -41,8 +41,8 @@ namespace DId
             global::System.Collections.Generic.IList<global::DId.GetExpressivesResponseExpressive> expressives,
             string? token)
         {
-            this.Expressives = expressives ?? throw new global::System.ArgumentNullException(nameof(expressives));
             this.Token = token;
+            this.Expressives = expressives ?? throw new global::System.ArgumentNullException(nameof(expressives));
         }
 
         /// <summary>

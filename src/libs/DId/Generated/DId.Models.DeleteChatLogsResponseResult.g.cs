@@ -30,8 +30,8 @@ namespace DId
         /// <summary>
         /// Initializes a new instance of the <see cref="DeleteChatLogsResponseResult" /> class.
         /// </summary>
-        /// <param name="token"></param>
         /// <param name="resultUrl"></param>
+        /// <param name="token"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -39,8 +39,8 @@ namespace DId
             string resultUrl,
             string? token)
         {
-            this.ResultUrl = resultUrl ?? throw new global::System.ArgumentNullException(nameof(resultUrl));
             this.Token = token;
+            this.ResultUrl = resultUrl ?? throw new global::System.ArgumentNullException(nameof(resultUrl));
         }
 
         /// <summary>

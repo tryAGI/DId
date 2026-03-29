@@ -70,13 +70,13 @@ namespace DId
         /// <summary>
         /// Initializes a new instance of the <see cref="CreateTalkRequest" /> class.
         /// </summary>
+        /// <param name="script"></param>
         /// <param name="sourceUrl">
         /// The URL of the source image to be animated by the driver video, or a selection from the list of provided<br/>
         /// studio actors.<br/>
         /// Default Value: https://d-id-public-bucket.s3.us-west-2.amazonaws.com/alice.jpg<br/>
         /// Example: https://path.to.directory/image.jpg
         /// </param>
-        /// <param name="script"></param>
         /// <param name="config">
         /// Advanced configuration options
         /// </param>
@@ -107,8 +107,8 @@ namespace DId
             string? webhook,
             string? resultUrl)
         {
-            this.Script = script;
             this.SourceUrl = sourceUrl;
+            this.Script = script;
             this.Config = config;
             this.UserData = userData;
             this.Name = name;

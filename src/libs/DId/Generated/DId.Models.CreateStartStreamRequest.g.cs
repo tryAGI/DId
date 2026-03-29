@@ -31,12 +31,12 @@ namespace DId
         /// <summary>
         /// Initializes a new instance of the <see cref="CreateStartStreamRequest" /> class.
         /// </summary>
+        /// <param name="answer">
+        /// Jsep answer object used to create a peer connection
+        /// </param>
         /// <param name="sessionId">
         /// Session identifier information, should be returned in the body of all streaming requests (from the response<br/>
         /// of the POST /streams)
-        /// </param>
-        /// <param name="answer">
-        /// Jsep answer object used to create a peer connection
         /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
@@ -45,8 +45,8 @@ namespace DId
             global::DId.CreateStartStreamRequestAnswer answer,
             string? sessionId)
         {
-            this.Answer = answer ?? throw new global::System.ArgumentNullException(nameof(answer));
             this.SessionId = sessionId;
+            this.Answer = answer ?? throw new global::System.ArgumentNullException(nameof(answer));
         }
 
         /// <summary>

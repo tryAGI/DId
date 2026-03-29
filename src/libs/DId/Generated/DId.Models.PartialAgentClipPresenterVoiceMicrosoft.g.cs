@@ -47,11 +47,11 @@ namespace DId
         /// <summary>
         /// Initializes a new instance of the <see cref="PartialAgentClipPresenterVoiceMicrosoft" /> class.
         /// </summary>
-        /// <param name="type"></param>
         /// <param name="voiceId">
         /// Voice ID selected from the list of available voices.&lt;/br&gt;Retrieve available options from the GET /voices endpoint.<br/>
         /// Example: en-US-JennyNeural
         /// </param>
+        /// <param name="type"></param>
         /// <param name="voiceConfig">
         /// Voice customization options
         /// </param>
@@ -68,8 +68,8 @@ namespace DId
             global::DId.PartialAgentClipPresenterVoiceMicrosoftVoiceConfig? voiceConfig,
             string? language)
         {
-            this.VoiceId = voiceId ?? throw new global::System.ArgumentNullException(nameof(voiceId));
             this.Type = type;
+            this.VoiceId = voiceId ?? throw new global::System.ArgumentNullException(nameof(voiceId));
             this.VoiceConfig = voiceConfig;
             this.Language = language;
         }

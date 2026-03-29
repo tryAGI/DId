@@ -49,6 +49,10 @@ namespace DId
         /// <summary>
         /// Initializes a new instance of the <see cref="PutMemoryItemDto" /> class.
         /// </summary>
+        /// <param name="data">
+        /// The memory content (max 150 characters).<br/>
+        /// Example: User prefers dark mode and metric units
+        /// </param>
         /// <param name="id">
         /// Unique identifier. Auto-generated if omitted.<br/>
         /// Example: mi_abc123def4567
@@ -61,10 +65,6 @@ namespace DId
         /// Priority for eviction (default used if omitted). Higher values are kept longer.<br/>
         /// Default Value: 0
         /// </param>
-        /// <param name="data">
-        /// The memory content (max 150 characters).<br/>
-        /// Example: User prefers dark mode and metric units
-        /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -74,10 +74,10 @@ namespace DId
             string? createdAt,
             double? priority)
         {
-            this.Data = data ?? throw new global::System.ArgumentNullException(nameof(data));
             this.Id = id;
             this.CreatedAt = createdAt;
             this.Priority = priority;
+            this.Data = data ?? throw new global::System.ArgumentNullException(nameof(data));
         }
 
         /// <summary>

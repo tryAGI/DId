@@ -59,9 +59,6 @@ namespace DId
         /// <param name="id">
         /// The id of the expression
         /// </param>
-        /// <param name="previewUrl">
-        /// The preview talking url of the avatar
-        /// </param>
         /// <param name="sentiment">
         /// The sentiment of the avatar's expression<br/>
         /// Example: happy
@@ -69,6 +66,9 @@ namespace DId
         /// <param name="description">
         /// The description of the avatar's expression<br/>
         /// Example: An enthusiastic, expressive avatar full of charm and personality.”
+        /// </param>
+        /// <param name="previewUrl">
+        /// The preview talking url of the avatar
         /// </param>
         /// <param name="voice">
         /// The voice of the expression
@@ -84,9 +84,9 @@ namespace DId
             global::DId.AnyOf<global::DId.PickExpressiveAvatarExpressionExpressionPublicAllowedAttributesVoiceMicrosoft, global::DId.PickExpressiveAvatarExpressionExpressionPublicAllowedAttributesVoiceElevenLabs, global::DId.PickExpressiveAvatarExpressionExpressionPublicAllowedAttributesVoiceAmazon, global::DId.PickExpressiveAvatarExpressionExpressionPublicAllowedAttributesVoiceGoogle, global::DId.PickExpressiveAvatarExpressionExpressionPublicAllowedAttributesVoiceOpenAI>? voice)
         {
             this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
+            this.PreviewUrl = previewUrl;
             this.Sentiment = sentiment;
             this.Description = description ?? throw new global::System.ArgumentNullException(nameof(description));
-            this.PreviewUrl = previewUrl;
             this.Voice = voice;
         }
 

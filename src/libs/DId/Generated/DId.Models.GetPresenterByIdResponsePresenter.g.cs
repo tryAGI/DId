@@ -134,12 +134,6 @@ namespace DId
         /// <param name="presenterId">
         /// Example: jack-Pt27VkP3hW
         /// </param>
-        /// <param name="name">
-        /// Example: Amy
-        /// </param>
-        /// <param name="driverId">
-        /// Example: Vcq0R4a8F0
-        /// </param>
         /// <param name="gender">
         /// The gender of the presenter.<br/>
         /// male / female / other
@@ -155,6 +149,12 @@ namespace DId
         /// </param>
         /// <param name="modifiedAt">
         /// Presenter modified at
+        /// </param>
+        /// <param name="name">
+        /// Example: Amy
+        /// </param>
+        /// <param name="driverId">
+        /// Example: Vcq0R4a8F0
         /// </param>
         /// <param name="videoUrl">
         /// A short video, trimmed from the original driver in high resolution
@@ -198,13 +198,13 @@ namespace DId
             global::DId.GetPresenterByIdResponsePresenterFaceRect? faceRect)
         {
             this.PresenterId = presenterId ?? throw new global::System.ArgumentNullException(nameof(presenterId));
+            this.Name = name;
+            this.DriverId = driverId;
             this.Gender = gender ?? throw new global::System.ArgumentNullException(nameof(gender));
             this.OwnerId = ownerId ?? throw new global::System.ArgumentNullException(nameof(ownerId));
             this.PreviewUrl = previewUrl ?? throw new global::System.ArgumentNullException(nameof(previewUrl));
             this.TalkingPreviewUrl = talkingPreviewUrl ?? throw new global::System.ArgumentNullException(nameof(talkingPreviewUrl));
             this.ModifiedAt = modifiedAt ?? throw new global::System.ArgumentNullException(nameof(modifiedAt));
-            this.Name = name;
-            this.DriverId = driverId;
             this.VideoUrl = videoUrl;
             this.ThumbnailUrl = thumbnailUrl;
             this.ImageUrl = imageUrl;

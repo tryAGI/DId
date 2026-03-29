@@ -156,9 +156,6 @@ namespace DId
         /// <param name="status">
         /// The status of the avatar
         /// </param>
-        /// <param name="object">
-        /// An identifier of this avatar
-        /// </param>
         /// <param name="createdAt">
         /// Avatar creation time as iso-8601 string
         /// </param>
@@ -167,6 +164,9 @@ namespace DId
         /// </param>
         /// <param name="modifiedAt">
         /// Last modified time as iso-8601 string
+        /// </param>
+        /// <param name="object">
+        /// An identifier of this avatar
         /// </param>
         /// <param name="error">
         /// The error that failed the training process.
@@ -241,10 +241,10 @@ namespace DId
         {
             this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
             this.Status = status;
+            this.Object = @object;
             this.CreatedAt = createdAt ?? throw new global::System.ArgumentNullException(nameof(createdAt));
             this.OwnerId = ownerId ?? throw new global::System.ArgumentNullException(nameof(ownerId));
             this.ModifiedAt = modifiedAt ?? throw new global::System.ArgumentNullException(nameof(modifiedAt));
-            this.Object = @object;
             this.Error = error;
             this.StartedAt = startedAt;
             this.CompletedAt = completedAt;

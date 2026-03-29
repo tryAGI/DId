@@ -115,11 +115,11 @@ namespace DId
         /// <param name="createdAt">
         /// Translation creation time as iso-8601 string
         /// </param>
-        /// <param name="createdBy">
-        /// The user id that created the translation
-        /// </param>
         /// <param name="modifiedAt">
         /// last modified time as iso-8601 string
+        /// </param>
+        /// <param name="createdBy">
+        /// The user id that created the translation
         /// </param>
         /// <param name="resultUrl">
         /// The result url of the video
@@ -156,8 +156,8 @@ namespace DId
             this.OwnerId = ownerId ?? throw new global::System.ArgumentNullException(nameof(ownerId));
             this.Status = status;
             this.CreatedAt = createdAt ?? throw new global::System.ArgumentNullException(nameof(createdAt));
-            this.ModifiedAt = modifiedAt ?? throw new global::System.ArgumentNullException(nameof(modifiedAt));
             this.CreatedBy = createdBy;
+            this.ModifiedAt = modifiedAt ?? throw new global::System.ArgumentNullException(nameof(modifiedAt));
             this.ResultUrl = resultUrl;
             this.SubtitlesUrl = subtitlesUrl;
             this.ThumbnailUrl = thumbnailUrl;

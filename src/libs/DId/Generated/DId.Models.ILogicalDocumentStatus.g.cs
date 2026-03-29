@@ -11,703 +11,703 @@ namespace DId
         /// <summary>
         /// 
         /// </summary>
-        AgentAssetCreated,
+        AgentDivideassetCreated,
         /// <summary>
         /// 
         /// </summary>
-        AgentAssetDone,
+        AgentDivideassetDone,
         /// <summary>
         /// 
         /// </summary>
-        AgentAssetError,
+        AgentDivideassetError,
         /// <summary>
         /// 
         /// </summary>
-        AgentAssetStarted,
+        AgentDivideassetStarted,
         /// <summary>
         /// 
         /// </summary>
-        AgentCreated,
+        AgentDividecreated,
         /// <summary>
         /// 
         /// </summary>
-        AgentDone,
+        AgentDividedone,
         /// <summary>
         /// 
         /// </summary>
-        AgentError,
+        AgentDivideerror,
         /// <summary>
         /// 
         /// </summary>
-        AgentInsightsDeleted,
+        AgentDivideinsightsDividedeleted,
         /// <summary>
         /// 
         /// </summary>
-        AgentReady,
+        AgentDivideready,
         /// <summary>
         /// 
         /// </summary>
-        AgentReadyForPreprocess,
+        AgentDividereadyForPreprocess,
         /// <summary>
         /// 
         /// </summary>
-        AgentRejected,
+        AgentDividerejected,
         /// <summary>
         /// 
         /// </summary>
-        AgentStarted,
+        AgentDividestarted,
         /// <summary>
         /// 
         /// </summary>
-        AnimateTaskCreated,
+        AnimateTaskDividecreated,
         /// <summary>
         /// 
         /// </summary>
-        AnimateCreated,
+        AnimateDividecreated,
         /// <summary>
         /// 
         /// </summary>
-        AnimateDone,
+        AnimateDividedone,
         /// <summary>
         /// 
         /// </summary>
-        AnimateError,
+        AnimateDivideerror,
         /// <summary>
         /// 
         /// </summary>
-        AnimatePostDone,
+        AnimateDividepostDone,
         /// <summary>
         /// 
         /// </summary>
-        AnimatePostError,
+        AnimateDividepostError,
         /// <summary>
         /// 
         /// </summary>
-        AnimateStarted,
+        AnimateDividestarted,
         /// <summary>
         /// 
         /// </summary>
-        AudioRejected,
+        AudioDividerejected,
         /// <summary>
         /// 
         /// </summary>
-        ChatDataDeleted,
+        ChatDividedataDeleted,
         /// <summary>
         /// 
         /// </summary>
-        ChatMessagesAdded,
+        ChatDividemessagesAdded,
         /// <summary>
         /// 
         /// </summary>
-        ChatProgress,
+        ChatDivideprogress,
         /// <summary>
         /// 
         /// </summary>
-        ChatSpeak,
+        ChatDividespeak,
         /// <summary>
         /// 
         /// </summary>
-        ChatsInvoiceFailed,
+        ChatsDivideinvoiceDividefailed,
         /// <summary>
         /// 
         /// </summary>
-        ChatsInvoicePaid,
+        ChatsDivideinvoiceDividepaid,
         /// <summary>
         /// 
         /// </summary>
-        ClipAvatarCreated,
+        ClipDivideavatarCreated,
         /// <summary>
         /// 
         /// </summary>
-        ClipAvatarDone,
+        ClipDivideavatarDone,
         /// <summary>
         /// 
         /// </summary>
-        ClipAvatarError,
+        ClipDivideavatarError,
         /// <summary>
         /// 
         /// </summary>
-        ClipAvatarErrorNotification,
+        ClipDivideavatarErrorNotification,
         /// <summary>
         /// 
         /// </summary>
-        ClipAvatarPostDone,
+        ClipDivideavatarPostDone,
         /// <summary>
         /// 
         /// </summary>
-        ClipAvatarProgress,
+        ClipDivideavatarProgress,
         /// <summary>
         /// 
         /// </summary>
-        ClipAvatarReady,
+        ClipDivideavatarReady,
         /// <summary>
         /// 
         /// </summary>
-        ClipAvatarRejected,
+        ClipDivideavatarRejected,
         /// <summary>
         /// 
         /// </summary>
-        ClipAvatarStarted,
+        ClipDivideavatarStarted,
         /// <summary>
         /// 
         /// </summary>
-        ClipAvatarTrainingArtifactsUpdated,
+        ClipDivideavatarTrainingArtifactsUpdated,
         /// <summary>
         /// 
         /// </summary>
-        ClipCreated,
+        ClipDividecreated,
         /// <summary>
         /// 
         /// </summary>
-        ClipDeleted,
+        ClipDividedeleted,
         /// <summary>
         /// 
         /// </summary>
-        ClipDone,
+        ClipDividedone,
         /// <summary>
         /// 
         /// </summary>
-        ClipError,
+        ClipDivideerror,
         /// <summary>
         /// 
         /// </summary>
-        ClipPostDone,
+        ClipDividepostDone,
         /// <summary>
         /// 
         /// </summary>
-        ClipPostError,
+        ClipDividepostError,
         /// <summary>
         /// 
         /// </summary>
-        ClipRejected,
+        ClipDividerejected,
         /// <summary>
         /// 
         /// </summary>
-        ClipStarted,
+        ClipDividestarted,
         /// <summary>
         /// 
         /// </summary>
-        ClipStreamCreated,
+        ClipDividestreamDividecreated,
         /// <summary>
         /// 
         /// </summary>
-        ClipStreamDone,
+        ClipDividestreamDividedone,
         /// <summary>
         /// 
         /// </summary>
-        ClipStreamError,
+        ClipDividestreamDivideerror,
         /// <summary>
         /// 
         /// </summary>
-        ClipStreamPostDone,
+        ClipDividestreamDividepostDone,
         /// <summary>
         /// 
         /// </summary>
-        ClipStreamPostError,
+        ClipDividestreamDividepostError,
         /// <summary>
         /// 
         /// </summary>
-        ClipStreamRejected,
+        ClipDividestreamDividerejected,
         /// <summary>
         /// 
         /// </summary>
-        ClipStreamStarted,
+        ClipDividestreamDividestarted,
         /// <summary>
         /// 
         /// </summary>
-        ClipV2Created,
+        ClipDividev2Created,
         /// <summary>
         /// 
         /// </summary>
-        ConsentsDone,
+        ConsentsDividedone,
         /// <summary>
         /// 
         /// </summary>
-        ConsentsError,
+        ConsentsDivideerror,
         /// <summary>
         /// 
         /// </summary>
-        ConsentsRejected,
+        ConsentsDividerejected,
         /// <summary>
         /// 
         /// </summary>
-        ConsentsStartValidation,
+        ConsentsDividestartValidation,
         /// <summary>
         /// 
         /// </summary>
-        CreditsCharge,
+        CreditsDividecharge,
         /// <summary>
         /// 
         /// </summary>
-        DocumentCreated,
+        DocumentDividecreated,
         /// <summary>
         /// 
         /// </summary>
-        DocumentDone,
+        DocumentDividedone,
         /// <summary>
         /// 
         /// </summary>
-        DocumentError,
+        DocumentDivideerror,
         /// <summary>
         /// 
         /// </summary>
-        DocumentProcessed,
+        DocumentDivideprocessed,
         /// <summary>
         /// 
         /// </summary>
-        DocumentRejected,
+        DocumentDividerejected,
         /// <summary>
         /// 
         /// </summary>
-        ExportCreated,
+        ExportDividecreated,
         /// <summary>
         /// 
         /// </summary>
-        ExportDeleted,
+        ExportDividedeleted,
         /// <summary>
         /// 
         /// </summary>
-        ExportDone,
+        ExportDividedone,
         /// <summary>
         /// 
         /// </summary>
-        ExportError,
+        ExportDivideerror,
         /// <summary>
         /// 
         /// </summary>
-        ExportPartial,
+        ExportDividepartial,
         /// <summary>
         /// 
         /// </summary>
-        ExportStarted,
+        ExportDividestarted,
         /// <summary>
         /// 
         /// </summary>
-        ExpressiveAvatarTrained,
+        ExpressiveDivideavatarTrained,
         /// <summary>
         /// 
         /// </summary>
-        ExpressiveCreated,
+        ExpressiveDividecreated,
         /// <summary>
         /// 
         /// </summary>
-        ExpressiveDone,
+        ExpressiveDividedone,
         /// <summary>
         /// 
         /// </summary>
-        ExpressiveError,
+        ExpressiveDivideerror,
         /// <summary>
         /// 
         /// </summary>
-        ExpressivePostDone,
+        ExpressiveDividepostDone,
         /// <summary>
         /// 
         /// </summary>
-        ExpressivePostError,
+        ExpressiveDividepostError,
         /// <summary>
         /// 
         /// </summary>
-        ExpressiveRejected,
+        ExpressiveDividerejected,
         /// <summary>
         /// 
         /// </summary>
-        ExpressiveStarted,
+        ExpressiveDividestarted,
         /// <summary>
         /// 
         /// </summary>
-        ExpressiveStreamDone,
+        ExpressiveDividestreamDividedone,
         /// <summary>
         /// 
         /// </summary>
-        ImageRejected,
+        ImageDividerejected,
         /// <summary>
         /// 
         /// </summary>
-        InvoiceFailed,
+        InvoiceDividefailed,
         /// <summary>
         /// 
         /// </summary>
-        InvoicePaid,
+        InvoiceDividepaid,
         /// <summary>
         /// 
         /// </summary>
-        KnowledgeDone,
+        KnowledgeDividedone,
         /// <summary>
         /// 
         /// </summary>
-        KnowledgeError,
+        KnowledgeDivideerror,
         /// <summary>
         /// 
         /// </summary>
-        KnowledgeProcessing,
+        KnowledgeDivideprocessing,
         /// <summary>
         /// 
         /// </summary>
-        OrganizationCreated,
+        OrganizationDividecreated,
         /// <summary>
         /// 
         /// </summary>
-        OrganizationDeleted,
+        OrganizationDividedeleted,
         /// <summary>
         /// 
         /// </summary>
-        OrganizationMemberAdded,
+        OrganizationDividememberAdded,
         /// <summary>
         /// 
         /// </summary>
-        ProjectDeleted,
+        ProjectDividedeleted,
         /// <summary>
         /// 
         /// </summary>
-        ProjectDone,
+        ProjectDividedone,
         /// <summary>
         /// 
         /// </summary>
-        ProjectError,
+        ProjectDivideerror,
         /// <summary>
         /// 
         /// </summary>
-        ProjectPostDone,
+        ProjectDividepostDone,
         /// <summary>
         /// 
         /// </summary>
-        ProjectReady,
+        ProjectDivideready,
         /// <summary>
         /// 
         /// </summary>
-        ProjectRejected,
+        ProjectDividerejected,
         /// <summary>
         /// 
         /// </summary>
-        ProjectStarted,
+        ProjectDividestarted,
         /// <summary>
         /// 
         /// </summary>
-        RenderCreated,
+        RenderDividecreated,
         /// <summary>
         /// 
         /// </summary>
-        RenderDone,
+        RenderDividedone,
         /// <summary>
         /// 
         /// </summary>
-        RenderError,
+        RenderDivideerror,
         /// <summary>
         /// 
         /// </summary>
-        RenderStarted,
+        RenderDividestarted,
         /// <summary>
         /// 
         /// </summary>
-        SceneAvatarCreated,
+        SceneDivideavatarCreated,
         /// <summary>
         /// 
         /// </summary>
-        SceneAvatarDone,
+        SceneDivideavatarDone,
         /// <summary>
         /// 
         /// </summary>
-        SceneAvatarError,
+        SceneDivideavatarError,
         /// <summary>
         /// 
         /// </summary>
-        SceneAvatarItemCreated,
+        SceneDivideavatarItemCreated,
         /// <summary>
         /// 
         /// </summary>
-        SceneAvatarPostDone,
+        SceneDivideavatarPostDone,
         /// <summary>
         /// 
         /// </summary>
-        SceneAvatarPostError,
+        SceneDivideavatarPostError,
         /// <summary>
         /// 
         /// </summary>
-        SceneAvatarStarted,
+        SceneDivideavatarStarted,
         /// <summary>
         /// 
         /// </summary>
-        SceneAvatarTrainingStarted,
+        SceneDivideavatarTrainingStarted,
         /// <summary>
         /// 
         /// </summary>
-        SceneAvatarValidationsDone,
+        SceneDivideavatarValidationsDone,
         /// <summary>
         /// 
         /// </summary>
-        SceneAvatarValidationsError,
+        SceneDivideavatarValidationsError,
         /// <summary>
         /// 
         /// </summary>
-        SceneCreated,
+        SceneDividecreated,
         /// <summary>
         /// 
         /// </summary>
-        SceneDone,
+        SceneDividedone,
         /// <summary>
         /// 
         /// </summary>
-        SceneError,
+        SceneDivideerror,
         /// <summary>
         /// 
         /// </summary>
-        ScenePostDone,
+        SceneDividepostDone,
         /// <summary>
         /// 
         /// </summary>
-        ScenePostError,
+        SceneDividepostError,
         /// <summary>
         /// 
         /// </summary>
-        SceneStarted,
+        SceneDividestarted,
         /// <summary>
         /// 
         /// </summary>
-        ScenesAvatarsFileUploaded,
+        ScenesDivideavatarsFileUploaded,
         /// <summary>
         /// 
         /// </summary>
-        StreamVideoDone,
+        StreamVideoDividedone,
         /// <summary>
         /// 
         /// </summary>
-        StreamVideoError,
+        StreamVideoDivideerror,
         /// <summary>
         /// 
         /// </summary>
-        StreamVideoRejected,
+        StreamVideoDividerejected,
         /// <summary>
         /// 
         /// </summary>
-        StreamVideoStarted,
+        StreamVideoDividestarted,
         /// <summary>
         /// 
         /// </summary>
-        StreamDone,
+        StreamDividedone,
         /// <summary>
         /// 
         /// </summary>
-        TalkCreated,
+        TalkDividecreated,
         /// <summary>
         /// 
         /// </summary>
-        TalkDeleted,
+        TalkDividedeleted,
         /// <summary>
         /// 
         /// </summary>
-        TalkDone,
+        TalkDividedone,
         /// <summary>
         /// 
         /// </summary>
-        TalkError,
+        TalkDivideerror,
         /// <summary>
         /// 
         /// </summary>
-        TalkPostDone,
+        TalkDividepostDone,
         /// <summary>
         /// 
         /// </summary>
-        TalkPostError,
+        TalkDividepostError,
         /// <summary>
         /// 
         /// </summary>
-        TalkRejected,
+        TalkDividerejected,
         /// <summary>
         /// 
         /// </summary>
-        TalkStarted,
+        TalkDividestarted,
         /// <summary>
         /// 
         /// </summary>
-        TalkStreamCreated,
+        TalkDividestreamDividecreated,
         /// <summary>
         /// 
         /// </summary>
-        TalkStreamDone,
+        TalkDividestreamDividedone,
         /// <summary>
         /// 
         /// </summary>
-        TalkStreamError,
+        TalkDividestreamDivideerror,
         /// <summary>
         /// 
         /// </summary>
-        TalkStreamPostDone,
+        TalkDividestreamDividepostDone,
         /// <summary>
         /// 
         /// </summary>
-        TalkStreamPostError,
+        TalkDividestreamDividepostError,
         /// <summary>
         /// 
         /// </summary>
-        TalkStreamRejected,
+        TalkDividestreamDividerejected,
         /// <summary>
         /// 
         /// </summary>
-        TalkStreamStarted,
+        TalkDividestreamDividestarted,
         /// <summary>
         /// 
         /// </summary>
-        TranslationAudioDataUpdated,
+        TranslationDivideaudioDataUpdated,
         /// <summary>
         /// 
         /// </summary>
-        TranslationCelebDetectionDone,
+        TranslationDividecelebDetectionDone,
         /// <summary>
         /// 
         /// </summary>
-        TranslationCelebDetectionError,
+        TranslationDividecelebDetectionError,
         /// <summary>
         /// 
         /// </summary>
-        TranslationDeleted,
+        TranslationDividedeleted,
         /// <summary>
         /// 
         /// </summary>
-        TranslationDone,
+        TranslationDividedone,
         /// <summary>
         /// 
         /// </summary>
-        TranslationError,
+        TranslationDivideerror,
         /// <summary>
         /// 
         /// </summary>
-        TranslationFileUploaded,
+        TranslationDividefileUploaded,
         /// <summary>
         /// 
         /// </summary>
-        TranslationGroupDone,
+        TranslationDividegroupDone,
         /// <summary>
         /// 
         /// </summary>
-        TranslationGroupError,
+        TranslationDividegroupError,
         /// <summary>
         /// 
         /// </summary>
-        TranslationGroupPartialDone,
+        TranslationDividegroupPartialDone,
         /// <summary>
         /// 
         /// </summary>
-        TranslationGroupPartialError,
+        TranslationDividegroupPartialError,
         /// <summary>
         /// 
         /// </summary>
-        TranslationGroupPostDone,
+        TranslationDividegroupPostDone,
         /// <summary>
         /// 
         /// </summary>
-        TranslationGroupPostError,
+        TranslationDividegroupPostError,
         /// <summary>
         /// 
         /// </summary>
-        TranslationGroupStarted,
+        TranslationDividegroupStarted,
         /// <summary>
         /// 
         /// </summary>
-        TranslationItemCreated,
+        TranslationDivideitemCreated,
         /// <summary>
         /// 
         /// </summary>
-        TranslationPostDone,
+        TranslationDividepostDone,
         /// <summary>
         /// 
         /// </summary>
-        TranslationPostError,
+        TranslationDividepostError,
         /// <summary>
         /// 
         /// </summary>
-        TranslationReady,
+        TranslationDivideready,
         /// <summary>
         /// 
         /// </summary>
-        TranslationSpeechDone,
+        TranslationDividespeechDone,
         /// <summary>
         /// 
         /// </summary>
-        TranslationSpeechError,
+        TranslationDividespeechError,
         /// <summary>
         /// 
         /// </summary>
-        TranslationStarted,
+        TranslationDividestarted,
         /// <summary>
         /// 
         /// </summary>
-        TranslationSubtitlesDone,
+        TranslationDividesubtitlesDone,
         /// <summary>
         /// 
         /// </summary>
-        TriggerToolResult,
+        TriggerDividetoolDivideresult,
         /// <summary>
         /// 
         /// </summary>
-        TriggerWebhookDone,
+        TriggerDividewebhookDividedone,
         /// <summary>
         /// 
         /// </summary>
-        TriggerWebhookError,
+        TriggerDividewebhookDivideerror,
         /// <summary>
         /// 
         /// </summary>
-        UserAccountMerged,
+        UserDivideaccountMerged,
         /// <summary>
         /// 
         /// </summary>
-        UserAccountMergedManually,
+        UserDivideaccountMergedManually,
         /// <summary>
         /// 
         /// </summary>
-        UserApiKeyCreated,
+        UserDivideapiKeyCreated,
         /// <summary>
         /// 
         /// </summary>
-        UserDeleted,
+        UserDividedeleted,
         /// <summary>
         /// 
         /// </summary>
-        UserFirstVisit,
+        UserDividefirstVisit,
         /// <summary>
         /// 
         /// </summary>
-        UserRegistered,
+        UserDivideregistered,
         /// <summary>
         /// 
         /// </summary>
-        UserSubscriptionCreated,
+        UserDividesubscriptionCreated,
         /// <summary>
         /// 
         /// </summary>
-        UserSubscriptionDeleted,
+        UserDividesubscriptionDeleted,
         /// <summary>
         /// 
         /// </summary>
-        UserSubscriptionRenewed,
+        UserDividesubscriptionRenewed,
         /// <summary>
         /// 
         /// </summary>
-        UserSubscriptionTransferred,
+        UserDividesubscriptionTransferred,
         /// <summary>
         /// 
         /// </summary>
-        UserSubscriptionUpdated,
+        UserDividesubscriptionUpdated,
         /// <summary>
         /// 
         /// </summary>
-        UserSubscriptionWillEnd,
+        UserDividesubscriptionWillEnd,
         /// <summary>
         /// 
         /// </summary>
-        UserUpdated,
+        UserDivideupdated,
         /// <summary>
         /// 
         /// </summary>
-        VoiceDone,
+        VoiceDividedone,
         /// <summary>
         /// 
         /// </summary>
-        VoiceError,
+        VoiceDivideerror,
         /// <summary>
         /// 
         /// </summary>
-        VoiceRejected,
+        VoiceDividerejected,
     }
 
     /// <summary>
@@ -722,181 +722,181 @@ namespace DId
         {
             return value switch
             {
-                ILogicalDocumentStatus.AgentAssetCreated => "agent/asset-created",
-                ILogicalDocumentStatus.AgentAssetDone => "agent/asset-done",
-                ILogicalDocumentStatus.AgentAssetError => "agent/asset-error",
-                ILogicalDocumentStatus.AgentAssetStarted => "agent/asset-started",
-                ILogicalDocumentStatus.AgentCreated => "agent/created",
-                ILogicalDocumentStatus.AgentDone => "agent/done",
-                ILogicalDocumentStatus.AgentError => "agent/error",
-                ILogicalDocumentStatus.AgentInsightsDeleted => "agent/insights/deleted",
-                ILogicalDocumentStatus.AgentReady => "agent/ready",
-                ILogicalDocumentStatus.AgentReadyForPreprocess => "agent/ready-for-preprocess",
-                ILogicalDocumentStatus.AgentRejected => "agent/rejected",
-                ILogicalDocumentStatus.AgentStarted => "agent/started",
-                ILogicalDocumentStatus.AnimateTaskCreated => "animate-task/created",
-                ILogicalDocumentStatus.AnimateCreated => "animate/created",
-                ILogicalDocumentStatus.AnimateDone => "animate/done",
-                ILogicalDocumentStatus.AnimateError => "animate/error",
-                ILogicalDocumentStatus.AnimatePostDone => "animate/post-done",
-                ILogicalDocumentStatus.AnimatePostError => "animate/post-error",
-                ILogicalDocumentStatus.AnimateStarted => "animate/started",
-                ILogicalDocumentStatus.AudioRejected => "audio/rejected",
-                ILogicalDocumentStatus.ChatDataDeleted => "chat/data-deleted",
-                ILogicalDocumentStatus.ChatMessagesAdded => "chat/messages-added",
-                ILogicalDocumentStatus.ChatProgress => "chat/progress",
-                ILogicalDocumentStatus.ChatSpeak => "chat/speak",
-                ILogicalDocumentStatus.ChatsInvoiceFailed => "chats/invoice/failed",
-                ILogicalDocumentStatus.ChatsInvoicePaid => "chats/invoice/paid",
-                ILogicalDocumentStatus.ClipAvatarCreated => "clip/avatar-created",
-                ILogicalDocumentStatus.ClipAvatarDone => "clip/avatar-done",
-                ILogicalDocumentStatus.ClipAvatarError => "clip/avatar-error",
-                ILogicalDocumentStatus.ClipAvatarErrorNotification => "clip/avatar-error-notification",
-                ILogicalDocumentStatus.ClipAvatarPostDone => "clip/avatar-post-done",
-                ILogicalDocumentStatus.ClipAvatarProgress => "clip/avatar-progress",
-                ILogicalDocumentStatus.ClipAvatarReady => "clip/avatar-ready",
-                ILogicalDocumentStatus.ClipAvatarRejected => "clip/avatar-rejected",
-                ILogicalDocumentStatus.ClipAvatarStarted => "clip/avatar-started",
-                ILogicalDocumentStatus.ClipAvatarTrainingArtifactsUpdated => "clip/avatar-training-artifacts-updated",
-                ILogicalDocumentStatus.ClipCreated => "clip/created",
-                ILogicalDocumentStatus.ClipDeleted => "clip/deleted",
-                ILogicalDocumentStatus.ClipDone => "clip/done",
-                ILogicalDocumentStatus.ClipError => "clip/error",
-                ILogicalDocumentStatus.ClipPostDone => "clip/post-done",
-                ILogicalDocumentStatus.ClipPostError => "clip/post-error",
-                ILogicalDocumentStatus.ClipRejected => "clip/rejected",
-                ILogicalDocumentStatus.ClipStarted => "clip/started",
-                ILogicalDocumentStatus.ClipStreamCreated => "clip/stream/created",
-                ILogicalDocumentStatus.ClipStreamDone => "clip/stream/done",
-                ILogicalDocumentStatus.ClipStreamError => "clip/stream/error",
-                ILogicalDocumentStatus.ClipStreamPostDone => "clip/stream/post-done",
-                ILogicalDocumentStatus.ClipStreamPostError => "clip/stream/post-error",
-                ILogicalDocumentStatus.ClipStreamRejected => "clip/stream/rejected",
-                ILogicalDocumentStatus.ClipStreamStarted => "clip/stream/started",
-                ILogicalDocumentStatus.ClipV2Created => "clip/v2-created",
-                ILogicalDocumentStatus.ConsentsDone => "consents/done",
-                ILogicalDocumentStatus.ConsentsError => "consents/error",
-                ILogicalDocumentStatus.ConsentsRejected => "consents/rejected",
-                ILogicalDocumentStatus.ConsentsStartValidation => "consents/start-validation",
-                ILogicalDocumentStatus.CreditsCharge => "credits/charge",
-                ILogicalDocumentStatus.DocumentCreated => "document/created",
-                ILogicalDocumentStatus.DocumentDone => "document/done",
-                ILogicalDocumentStatus.DocumentError => "document/error",
-                ILogicalDocumentStatus.DocumentProcessed => "document/processed",
-                ILogicalDocumentStatus.DocumentRejected => "document/rejected",
-                ILogicalDocumentStatus.ExportCreated => "export/created",
-                ILogicalDocumentStatus.ExportDeleted => "export/deleted",
-                ILogicalDocumentStatus.ExportDone => "export/done",
-                ILogicalDocumentStatus.ExportError => "export/error",
-                ILogicalDocumentStatus.ExportPartial => "export/partial",
-                ILogicalDocumentStatus.ExportStarted => "export/started",
-                ILogicalDocumentStatus.ExpressiveAvatarTrained => "expressive/avatar-trained",
-                ILogicalDocumentStatus.ExpressiveCreated => "expressive/created",
-                ILogicalDocumentStatus.ExpressiveDone => "expressive/done",
-                ILogicalDocumentStatus.ExpressiveError => "expressive/error",
-                ILogicalDocumentStatus.ExpressivePostDone => "expressive/post-done",
-                ILogicalDocumentStatus.ExpressivePostError => "expressive/post-error",
-                ILogicalDocumentStatus.ExpressiveRejected => "expressive/rejected",
-                ILogicalDocumentStatus.ExpressiveStarted => "expressive/started",
-                ILogicalDocumentStatus.ExpressiveStreamDone => "expressive/stream/done",
-                ILogicalDocumentStatus.ImageRejected => "image/rejected",
-                ILogicalDocumentStatus.InvoiceFailed => "invoice/failed",
-                ILogicalDocumentStatus.InvoicePaid => "invoice/paid",
-                ILogicalDocumentStatus.KnowledgeDone => "knowledge/done",
-                ILogicalDocumentStatus.KnowledgeError => "knowledge/error",
-                ILogicalDocumentStatus.KnowledgeProcessing => "knowledge/processing",
-                ILogicalDocumentStatus.OrganizationCreated => "organization/created",
-                ILogicalDocumentStatus.OrganizationDeleted => "organization/deleted",
-                ILogicalDocumentStatus.OrganizationMemberAdded => "organization/member-added",
-                ILogicalDocumentStatus.ProjectDeleted => "project/deleted",
-                ILogicalDocumentStatus.ProjectDone => "project/done",
-                ILogicalDocumentStatus.ProjectError => "project/error",
-                ILogicalDocumentStatus.ProjectPostDone => "project/post-done",
-                ILogicalDocumentStatus.ProjectReady => "project/ready",
-                ILogicalDocumentStatus.ProjectRejected => "project/rejected",
-                ILogicalDocumentStatus.ProjectStarted => "project/started",
-                ILogicalDocumentStatus.RenderCreated => "render/created",
-                ILogicalDocumentStatus.RenderDone => "render/done",
-                ILogicalDocumentStatus.RenderError => "render/error",
-                ILogicalDocumentStatus.RenderStarted => "render/started",
-                ILogicalDocumentStatus.SceneAvatarCreated => "scene/avatar-created",
-                ILogicalDocumentStatus.SceneAvatarDone => "scene/avatar-done",
-                ILogicalDocumentStatus.SceneAvatarError => "scene/avatar-error",
-                ILogicalDocumentStatus.SceneAvatarItemCreated => "scene/avatar-item-created",
-                ILogicalDocumentStatus.SceneAvatarPostDone => "scene/avatar-post-done",
-                ILogicalDocumentStatus.SceneAvatarPostError => "scene/avatar-post-error",
-                ILogicalDocumentStatus.SceneAvatarStarted => "scene/avatar-started",
-                ILogicalDocumentStatus.SceneAvatarTrainingStarted => "scene/avatar-training-started",
-                ILogicalDocumentStatus.SceneAvatarValidationsDone => "scene/avatar-validations-done",
-                ILogicalDocumentStatus.SceneAvatarValidationsError => "scene/avatar-validations-error",
-                ILogicalDocumentStatus.SceneCreated => "scene/created",
-                ILogicalDocumentStatus.SceneDone => "scene/done",
-                ILogicalDocumentStatus.SceneError => "scene/error",
-                ILogicalDocumentStatus.ScenePostDone => "scene/post-done",
-                ILogicalDocumentStatus.ScenePostError => "scene/post-error",
-                ILogicalDocumentStatus.SceneStarted => "scene/started",
-                ILogicalDocumentStatus.ScenesAvatarsFileUploaded => "scenes/avatars-file-uploaded",
-                ILogicalDocumentStatus.StreamVideoDone => "stream-video/done",
-                ILogicalDocumentStatus.StreamVideoError => "stream-video/error",
-                ILogicalDocumentStatus.StreamVideoRejected => "stream-video/rejected",
-                ILogicalDocumentStatus.StreamVideoStarted => "stream-video/started",
-                ILogicalDocumentStatus.StreamDone => "stream/done",
-                ILogicalDocumentStatus.TalkCreated => "talk/created",
-                ILogicalDocumentStatus.TalkDeleted => "talk/deleted",
-                ILogicalDocumentStatus.TalkDone => "talk/done",
-                ILogicalDocumentStatus.TalkError => "talk/error",
-                ILogicalDocumentStatus.TalkPostDone => "talk/post-done",
-                ILogicalDocumentStatus.TalkPostError => "talk/post-error",
-                ILogicalDocumentStatus.TalkRejected => "talk/rejected",
-                ILogicalDocumentStatus.TalkStarted => "talk/started",
-                ILogicalDocumentStatus.TalkStreamCreated => "talk/stream/created",
-                ILogicalDocumentStatus.TalkStreamDone => "talk/stream/done",
-                ILogicalDocumentStatus.TalkStreamError => "talk/stream/error",
-                ILogicalDocumentStatus.TalkStreamPostDone => "talk/stream/post-done",
-                ILogicalDocumentStatus.TalkStreamPostError => "talk/stream/post-error",
-                ILogicalDocumentStatus.TalkStreamRejected => "talk/stream/rejected",
-                ILogicalDocumentStatus.TalkStreamStarted => "talk/stream/started",
-                ILogicalDocumentStatus.TranslationAudioDataUpdated => "translation/audio-data-updated",
-                ILogicalDocumentStatus.TranslationCelebDetectionDone => "translation/celeb-detection-done",
-                ILogicalDocumentStatus.TranslationCelebDetectionError => "translation/celeb-detection-error",
-                ILogicalDocumentStatus.TranslationDeleted => "translation/deleted",
-                ILogicalDocumentStatus.TranslationDone => "translation/done",
-                ILogicalDocumentStatus.TranslationError => "translation/error",
-                ILogicalDocumentStatus.TranslationFileUploaded => "translation/file-uploaded",
-                ILogicalDocumentStatus.TranslationGroupDone => "translation/group-done",
-                ILogicalDocumentStatus.TranslationGroupError => "translation/group-error",
-                ILogicalDocumentStatus.TranslationGroupPartialDone => "translation/group-partial-done",
-                ILogicalDocumentStatus.TranslationGroupPartialError => "translation/group-partial-error",
-                ILogicalDocumentStatus.TranslationGroupPostDone => "translation/group-post-done",
-                ILogicalDocumentStatus.TranslationGroupPostError => "translation/group-post-error",
-                ILogicalDocumentStatus.TranslationGroupStarted => "translation/group-started",
-                ILogicalDocumentStatus.TranslationItemCreated => "translation/item-created",
-                ILogicalDocumentStatus.TranslationPostDone => "translation/post-done",
-                ILogicalDocumentStatus.TranslationPostError => "translation/post-error",
-                ILogicalDocumentStatus.TranslationReady => "translation/ready",
-                ILogicalDocumentStatus.TranslationSpeechDone => "translation/speech-done",
-                ILogicalDocumentStatus.TranslationSpeechError => "translation/speech-error",
-                ILogicalDocumentStatus.TranslationStarted => "translation/started",
-                ILogicalDocumentStatus.TranslationSubtitlesDone => "translation/subtitles-done",
-                ILogicalDocumentStatus.TriggerToolResult => "trigger/tool/result",
-                ILogicalDocumentStatus.TriggerWebhookDone => "trigger/webhook/done",
-                ILogicalDocumentStatus.TriggerWebhookError => "trigger/webhook/error",
-                ILogicalDocumentStatus.UserAccountMerged => "user/account-merged",
-                ILogicalDocumentStatus.UserAccountMergedManually => "user/account-merged-manually",
-                ILogicalDocumentStatus.UserApiKeyCreated => "user/api-key-created",
-                ILogicalDocumentStatus.UserDeleted => "user/deleted",
-                ILogicalDocumentStatus.UserFirstVisit => "user/first-visit",
-                ILogicalDocumentStatus.UserRegistered => "user/registered",
-                ILogicalDocumentStatus.UserSubscriptionCreated => "user/subscription-created",
-                ILogicalDocumentStatus.UserSubscriptionDeleted => "user/subscription-deleted",
-                ILogicalDocumentStatus.UserSubscriptionRenewed => "user/subscription-renewed",
-                ILogicalDocumentStatus.UserSubscriptionTransferred => "user/subscription-transferred",
-                ILogicalDocumentStatus.UserSubscriptionUpdated => "user/subscription-updated",
-                ILogicalDocumentStatus.UserSubscriptionWillEnd => "user/subscription-will-end",
-                ILogicalDocumentStatus.UserUpdated => "user/updated",
-                ILogicalDocumentStatus.VoiceDone => "voice/done",
-                ILogicalDocumentStatus.VoiceError => "voice/error",
-                ILogicalDocumentStatus.VoiceRejected => "voice/rejected",
+                ILogicalDocumentStatus.AgentDivideassetCreated => "agent/asset-created",
+                ILogicalDocumentStatus.AgentDivideassetDone => "agent/asset-done",
+                ILogicalDocumentStatus.AgentDivideassetError => "agent/asset-error",
+                ILogicalDocumentStatus.AgentDivideassetStarted => "agent/asset-started",
+                ILogicalDocumentStatus.AgentDividecreated => "agent/created",
+                ILogicalDocumentStatus.AgentDividedone => "agent/done",
+                ILogicalDocumentStatus.AgentDivideerror => "agent/error",
+                ILogicalDocumentStatus.AgentDivideinsightsDividedeleted => "agent/insights/deleted",
+                ILogicalDocumentStatus.AgentDivideready => "agent/ready",
+                ILogicalDocumentStatus.AgentDividereadyForPreprocess => "agent/ready-for-preprocess",
+                ILogicalDocumentStatus.AgentDividerejected => "agent/rejected",
+                ILogicalDocumentStatus.AgentDividestarted => "agent/started",
+                ILogicalDocumentStatus.AnimateTaskDividecreated => "animate-task/created",
+                ILogicalDocumentStatus.AnimateDividecreated => "animate/created",
+                ILogicalDocumentStatus.AnimateDividedone => "animate/done",
+                ILogicalDocumentStatus.AnimateDivideerror => "animate/error",
+                ILogicalDocumentStatus.AnimateDividepostDone => "animate/post-done",
+                ILogicalDocumentStatus.AnimateDividepostError => "animate/post-error",
+                ILogicalDocumentStatus.AnimateDividestarted => "animate/started",
+                ILogicalDocumentStatus.AudioDividerejected => "audio/rejected",
+                ILogicalDocumentStatus.ChatDividedataDeleted => "chat/data-deleted",
+                ILogicalDocumentStatus.ChatDividemessagesAdded => "chat/messages-added",
+                ILogicalDocumentStatus.ChatDivideprogress => "chat/progress",
+                ILogicalDocumentStatus.ChatDividespeak => "chat/speak",
+                ILogicalDocumentStatus.ChatsDivideinvoiceDividefailed => "chats/invoice/failed",
+                ILogicalDocumentStatus.ChatsDivideinvoiceDividepaid => "chats/invoice/paid",
+                ILogicalDocumentStatus.ClipDivideavatarCreated => "clip/avatar-created",
+                ILogicalDocumentStatus.ClipDivideavatarDone => "clip/avatar-done",
+                ILogicalDocumentStatus.ClipDivideavatarError => "clip/avatar-error",
+                ILogicalDocumentStatus.ClipDivideavatarErrorNotification => "clip/avatar-error-notification",
+                ILogicalDocumentStatus.ClipDivideavatarPostDone => "clip/avatar-post-done",
+                ILogicalDocumentStatus.ClipDivideavatarProgress => "clip/avatar-progress",
+                ILogicalDocumentStatus.ClipDivideavatarReady => "clip/avatar-ready",
+                ILogicalDocumentStatus.ClipDivideavatarRejected => "clip/avatar-rejected",
+                ILogicalDocumentStatus.ClipDivideavatarStarted => "clip/avatar-started",
+                ILogicalDocumentStatus.ClipDivideavatarTrainingArtifactsUpdated => "clip/avatar-training-artifacts-updated",
+                ILogicalDocumentStatus.ClipDividecreated => "clip/created",
+                ILogicalDocumentStatus.ClipDividedeleted => "clip/deleted",
+                ILogicalDocumentStatus.ClipDividedone => "clip/done",
+                ILogicalDocumentStatus.ClipDivideerror => "clip/error",
+                ILogicalDocumentStatus.ClipDividepostDone => "clip/post-done",
+                ILogicalDocumentStatus.ClipDividepostError => "clip/post-error",
+                ILogicalDocumentStatus.ClipDividerejected => "clip/rejected",
+                ILogicalDocumentStatus.ClipDividestarted => "clip/started",
+                ILogicalDocumentStatus.ClipDividestreamDividecreated => "clip/stream/created",
+                ILogicalDocumentStatus.ClipDividestreamDividedone => "clip/stream/done",
+                ILogicalDocumentStatus.ClipDividestreamDivideerror => "clip/stream/error",
+                ILogicalDocumentStatus.ClipDividestreamDividepostDone => "clip/stream/post-done",
+                ILogicalDocumentStatus.ClipDividestreamDividepostError => "clip/stream/post-error",
+                ILogicalDocumentStatus.ClipDividestreamDividerejected => "clip/stream/rejected",
+                ILogicalDocumentStatus.ClipDividestreamDividestarted => "clip/stream/started",
+                ILogicalDocumentStatus.ClipDividev2Created => "clip/v2-created",
+                ILogicalDocumentStatus.ConsentsDividedone => "consents/done",
+                ILogicalDocumentStatus.ConsentsDivideerror => "consents/error",
+                ILogicalDocumentStatus.ConsentsDividerejected => "consents/rejected",
+                ILogicalDocumentStatus.ConsentsDividestartValidation => "consents/start-validation",
+                ILogicalDocumentStatus.CreditsDividecharge => "credits/charge",
+                ILogicalDocumentStatus.DocumentDividecreated => "document/created",
+                ILogicalDocumentStatus.DocumentDividedone => "document/done",
+                ILogicalDocumentStatus.DocumentDivideerror => "document/error",
+                ILogicalDocumentStatus.DocumentDivideprocessed => "document/processed",
+                ILogicalDocumentStatus.DocumentDividerejected => "document/rejected",
+                ILogicalDocumentStatus.ExportDividecreated => "export/created",
+                ILogicalDocumentStatus.ExportDividedeleted => "export/deleted",
+                ILogicalDocumentStatus.ExportDividedone => "export/done",
+                ILogicalDocumentStatus.ExportDivideerror => "export/error",
+                ILogicalDocumentStatus.ExportDividepartial => "export/partial",
+                ILogicalDocumentStatus.ExportDividestarted => "export/started",
+                ILogicalDocumentStatus.ExpressiveDivideavatarTrained => "expressive/avatar-trained",
+                ILogicalDocumentStatus.ExpressiveDividecreated => "expressive/created",
+                ILogicalDocumentStatus.ExpressiveDividedone => "expressive/done",
+                ILogicalDocumentStatus.ExpressiveDivideerror => "expressive/error",
+                ILogicalDocumentStatus.ExpressiveDividepostDone => "expressive/post-done",
+                ILogicalDocumentStatus.ExpressiveDividepostError => "expressive/post-error",
+                ILogicalDocumentStatus.ExpressiveDividerejected => "expressive/rejected",
+                ILogicalDocumentStatus.ExpressiveDividestarted => "expressive/started",
+                ILogicalDocumentStatus.ExpressiveDividestreamDividedone => "expressive/stream/done",
+                ILogicalDocumentStatus.ImageDividerejected => "image/rejected",
+                ILogicalDocumentStatus.InvoiceDividefailed => "invoice/failed",
+                ILogicalDocumentStatus.InvoiceDividepaid => "invoice/paid",
+                ILogicalDocumentStatus.KnowledgeDividedone => "knowledge/done",
+                ILogicalDocumentStatus.KnowledgeDivideerror => "knowledge/error",
+                ILogicalDocumentStatus.KnowledgeDivideprocessing => "knowledge/processing",
+                ILogicalDocumentStatus.OrganizationDividecreated => "organization/created",
+                ILogicalDocumentStatus.OrganizationDividedeleted => "organization/deleted",
+                ILogicalDocumentStatus.OrganizationDividememberAdded => "organization/member-added",
+                ILogicalDocumentStatus.ProjectDividedeleted => "project/deleted",
+                ILogicalDocumentStatus.ProjectDividedone => "project/done",
+                ILogicalDocumentStatus.ProjectDivideerror => "project/error",
+                ILogicalDocumentStatus.ProjectDividepostDone => "project/post-done",
+                ILogicalDocumentStatus.ProjectDivideready => "project/ready",
+                ILogicalDocumentStatus.ProjectDividerejected => "project/rejected",
+                ILogicalDocumentStatus.ProjectDividestarted => "project/started",
+                ILogicalDocumentStatus.RenderDividecreated => "render/created",
+                ILogicalDocumentStatus.RenderDividedone => "render/done",
+                ILogicalDocumentStatus.RenderDivideerror => "render/error",
+                ILogicalDocumentStatus.RenderDividestarted => "render/started",
+                ILogicalDocumentStatus.SceneDivideavatarCreated => "scene/avatar-created",
+                ILogicalDocumentStatus.SceneDivideavatarDone => "scene/avatar-done",
+                ILogicalDocumentStatus.SceneDivideavatarError => "scene/avatar-error",
+                ILogicalDocumentStatus.SceneDivideavatarItemCreated => "scene/avatar-item-created",
+                ILogicalDocumentStatus.SceneDivideavatarPostDone => "scene/avatar-post-done",
+                ILogicalDocumentStatus.SceneDivideavatarPostError => "scene/avatar-post-error",
+                ILogicalDocumentStatus.SceneDivideavatarStarted => "scene/avatar-started",
+                ILogicalDocumentStatus.SceneDivideavatarTrainingStarted => "scene/avatar-training-started",
+                ILogicalDocumentStatus.SceneDivideavatarValidationsDone => "scene/avatar-validations-done",
+                ILogicalDocumentStatus.SceneDivideavatarValidationsError => "scene/avatar-validations-error",
+                ILogicalDocumentStatus.SceneDividecreated => "scene/created",
+                ILogicalDocumentStatus.SceneDividedone => "scene/done",
+                ILogicalDocumentStatus.SceneDivideerror => "scene/error",
+                ILogicalDocumentStatus.SceneDividepostDone => "scene/post-done",
+                ILogicalDocumentStatus.SceneDividepostError => "scene/post-error",
+                ILogicalDocumentStatus.SceneDividestarted => "scene/started",
+                ILogicalDocumentStatus.ScenesDivideavatarsFileUploaded => "scenes/avatars-file-uploaded",
+                ILogicalDocumentStatus.StreamVideoDividedone => "stream-video/done",
+                ILogicalDocumentStatus.StreamVideoDivideerror => "stream-video/error",
+                ILogicalDocumentStatus.StreamVideoDividerejected => "stream-video/rejected",
+                ILogicalDocumentStatus.StreamVideoDividestarted => "stream-video/started",
+                ILogicalDocumentStatus.StreamDividedone => "stream/done",
+                ILogicalDocumentStatus.TalkDividecreated => "talk/created",
+                ILogicalDocumentStatus.TalkDividedeleted => "talk/deleted",
+                ILogicalDocumentStatus.TalkDividedone => "talk/done",
+                ILogicalDocumentStatus.TalkDivideerror => "talk/error",
+                ILogicalDocumentStatus.TalkDividepostDone => "talk/post-done",
+                ILogicalDocumentStatus.TalkDividepostError => "talk/post-error",
+                ILogicalDocumentStatus.TalkDividerejected => "talk/rejected",
+                ILogicalDocumentStatus.TalkDividestarted => "talk/started",
+                ILogicalDocumentStatus.TalkDividestreamDividecreated => "talk/stream/created",
+                ILogicalDocumentStatus.TalkDividestreamDividedone => "talk/stream/done",
+                ILogicalDocumentStatus.TalkDividestreamDivideerror => "talk/stream/error",
+                ILogicalDocumentStatus.TalkDividestreamDividepostDone => "talk/stream/post-done",
+                ILogicalDocumentStatus.TalkDividestreamDividepostError => "talk/stream/post-error",
+                ILogicalDocumentStatus.TalkDividestreamDividerejected => "talk/stream/rejected",
+                ILogicalDocumentStatus.TalkDividestreamDividestarted => "talk/stream/started",
+                ILogicalDocumentStatus.TranslationDivideaudioDataUpdated => "translation/audio-data-updated",
+                ILogicalDocumentStatus.TranslationDividecelebDetectionDone => "translation/celeb-detection-done",
+                ILogicalDocumentStatus.TranslationDividecelebDetectionError => "translation/celeb-detection-error",
+                ILogicalDocumentStatus.TranslationDividedeleted => "translation/deleted",
+                ILogicalDocumentStatus.TranslationDividedone => "translation/done",
+                ILogicalDocumentStatus.TranslationDivideerror => "translation/error",
+                ILogicalDocumentStatus.TranslationDividefileUploaded => "translation/file-uploaded",
+                ILogicalDocumentStatus.TranslationDividegroupDone => "translation/group-done",
+                ILogicalDocumentStatus.TranslationDividegroupError => "translation/group-error",
+                ILogicalDocumentStatus.TranslationDividegroupPartialDone => "translation/group-partial-done",
+                ILogicalDocumentStatus.TranslationDividegroupPartialError => "translation/group-partial-error",
+                ILogicalDocumentStatus.TranslationDividegroupPostDone => "translation/group-post-done",
+                ILogicalDocumentStatus.TranslationDividegroupPostError => "translation/group-post-error",
+                ILogicalDocumentStatus.TranslationDividegroupStarted => "translation/group-started",
+                ILogicalDocumentStatus.TranslationDivideitemCreated => "translation/item-created",
+                ILogicalDocumentStatus.TranslationDividepostDone => "translation/post-done",
+                ILogicalDocumentStatus.TranslationDividepostError => "translation/post-error",
+                ILogicalDocumentStatus.TranslationDivideready => "translation/ready",
+                ILogicalDocumentStatus.TranslationDividespeechDone => "translation/speech-done",
+                ILogicalDocumentStatus.TranslationDividespeechError => "translation/speech-error",
+                ILogicalDocumentStatus.TranslationDividestarted => "translation/started",
+                ILogicalDocumentStatus.TranslationDividesubtitlesDone => "translation/subtitles-done",
+                ILogicalDocumentStatus.TriggerDividetoolDivideresult => "trigger/tool/result",
+                ILogicalDocumentStatus.TriggerDividewebhookDividedone => "trigger/webhook/done",
+                ILogicalDocumentStatus.TriggerDividewebhookDivideerror => "trigger/webhook/error",
+                ILogicalDocumentStatus.UserDivideaccountMerged => "user/account-merged",
+                ILogicalDocumentStatus.UserDivideaccountMergedManually => "user/account-merged-manually",
+                ILogicalDocumentStatus.UserDivideapiKeyCreated => "user/api-key-created",
+                ILogicalDocumentStatus.UserDividedeleted => "user/deleted",
+                ILogicalDocumentStatus.UserDividefirstVisit => "user/first-visit",
+                ILogicalDocumentStatus.UserDivideregistered => "user/registered",
+                ILogicalDocumentStatus.UserDividesubscriptionCreated => "user/subscription-created",
+                ILogicalDocumentStatus.UserDividesubscriptionDeleted => "user/subscription-deleted",
+                ILogicalDocumentStatus.UserDividesubscriptionRenewed => "user/subscription-renewed",
+                ILogicalDocumentStatus.UserDividesubscriptionTransferred => "user/subscription-transferred",
+                ILogicalDocumentStatus.UserDividesubscriptionUpdated => "user/subscription-updated",
+                ILogicalDocumentStatus.UserDividesubscriptionWillEnd => "user/subscription-will-end",
+                ILogicalDocumentStatus.UserDivideupdated => "user/updated",
+                ILogicalDocumentStatus.VoiceDividedone => "voice/done",
+                ILogicalDocumentStatus.VoiceDivideerror => "voice/error",
+                ILogicalDocumentStatus.VoiceDividerejected => "voice/rejected",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
             };
         }
@@ -907,181 +907,181 @@ namespace DId
         {
             return value switch
             {
-                "agent/asset-created" => ILogicalDocumentStatus.AgentAssetCreated,
-                "agent/asset-done" => ILogicalDocumentStatus.AgentAssetDone,
-                "agent/asset-error" => ILogicalDocumentStatus.AgentAssetError,
-                "agent/asset-started" => ILogicalDocumentStatus.AgentAssetStarted,
-                "agent/created" => ILogicalDocumentStatus.AgentCreated,
-                "agent/done" => ILogicalDocumentStatus.AgentDone,
-                "agent/error" => ILogicalDocumentStatus.AgentError,
-                "agent/insights/deleted" => ILogicalDocumentStatus.AgentInsightsDeleted,
-                "agent/ready" => ILogicalDocumentStatus.AgentReady,
-                "agent/ready-for-preprocess" => ILogicalDocumentStatus.AgentReadyForPreprocess,
-                "agent/rejected" => ILogicalDocumentStatus.AgentRejected,
-                "agent/started" => ILogicalDocumentStatus.AgentStarted,
-                "animate-task/created" => ILogicalDocumentStatus.AnimateTaskCreated,
-                "animate/created" => ILogicalDocumentStatus.AnimateCreated,
-                "animate/done" => ILogicalDocumentStatus.AnimateDone,
-                "animate/error" => ILogicalDocumentStatus.AnimateError,
-                "animate/post-done" => ILogicalDocumentStatus.AnimatePostDone,
-                "animate/post-error" => ILogicalDocumentStatus.AnimatePostError,
-                "animate/started" => ILogicalDocumentStatus.AnimateStarted,
-                "audio/rejected" => ILogicalDocumentStatus.AudioRejected,
-                "chat/data-deleted" => ILogicalDocumentStatus.ChatDataDeleted,
-                "chat/messages-added" => ILogicalDocumentStatus.ChatMessagesAdded,
-                "chat/progress" => ILogicalDocumentStatus.ChatProgress,
-                "chat/speak" => ILogicalDocumentStatus.ChatSpeak,
-                "chats/invoice/failed" => ILogicalDocumentStatus.ChatsInvoiceFailed,
-                "chats/invoice/paid" => ILogicalDocumentStatus.ChatsInvoicePaid,
-                "clip/avatar-created" => ILogicalDocumentStatus.ClipAvatarCreated,
-                "clip/avatar-done" => ILogicalDocumentStatus.ClipAvatarDone,
-                "clip/avatar-error" => ILogicalDocumentStatus.ClipAvatarError,
-                "clip/avatar-error-notification" => ILogicalDocumentStatus.ClipAvatarErrorNotification,
-                "clip/avatar-post-done" => ILogicalDocumentStatus.ClipAvatarPostDone,
-                "clip/avatar-progress" => ILogicalDocumentStatus.ClipAvatarProgress,
-                "clip/avatar-ready" => ILogicalDocumentStatus.ClipAvatarReady,
-                "clip/avatar-rejected" => ILogicalDocumentStatus.ClipAvatarRejected,
-                "clip/avatar-started" => ILogicalDocumentStatus.ClipAvatarStarted,
-                "clip/avatar-training-artifacts-updated" => ILogicalDocumentStatus.ClipAvatarTrainingArtifactsUpdated,
-                "clip/created" => ILogicalDocumentStatus.ClipCreated,
-                "clip/deleted" => ILogicalDocumentStatus.ClipDeleted,
-                "clip/done" => ILogicalDocumentStatus.ClipDone,
-                "clip/error" => ILogicalDocumentStatus.ClipError,
-                "clip/post-done" => ILogicalDocumentStatus.ClipPostDone,
-                "clip/post-error" => ILogicalDocumentStatus.ClipPostError,
-                "clip/rejected" => ILogicalDocumentStatus.ClipRejected,
-                "clip/started" => ILogicalDocumentStatus.ClipStarted,
-                "clip/stream/created" => ILogicalDocumentStatus.ClipStreamCreated,
-                "clip/stream/done" => ILogicalDocumentStatus.ClipStreamDone,
-                "clip/stream/error" => ILogicalDocumentStatus.ClipStreamError,
-                "clip/stream/post-done" => ILogicalDocumentStatus.ClipStreamPostDone,
-                "clip/stream/post-error" => ILogicalDocumentStatus.ClipStreamPostError,
-                "clip/stream/rejected" => ILogicalDocumentStatus.ClipStreamRejected,
-                "clip/stream/started" => ILogicalDocumentStatus.ClipStreamStarted,
-                "clip/v2-created" => ILogicalDocumentStatus.ClipV2Created,
-                "consents/done" => ILogicalDocumentStatus.ConsentsDone,
-                "consents/error" => ILogicalDocumentStatus.ConsentsError,
-                "consents/rejected" => ILogicalDocumentStatus.ConsentsRejected,
-                "consents/start-validation" => ILogicalDocumentStatus.ConsentsStartValidation,
-                "credits/charge" => ILogicalDocumentStatus.CreditsCharge,
-                "document/created" => ILogicalDocumentStatus.DocumentCreated,
-                "document/done" => ILogicalDocumentStatus.DocumentDone,
-                "document/error" => ILogicalDocumentStatus.DocumentError,
-                "document/processed" => ILogicalDocumentStatus.DocumentProcessed,
-                "document/rejected" => ILogicalDocumentStatus.DocumentRejected,
-                "export/created" => ILogicalDocumentStatus.ExportCreated,
-                "export/deleted" => ILogicalDocumentStatus.ExportDeleted,
-                "export/done" => ILogicalDocumentStatus.ExportDone,
-                "export/error" => ILogicalDocumentStatus.ExportError,
-                "export/partial" => ILogicalDocumentStatus.ExportPartial,
-                "export/started" => ILogicalDocumentStatus.ExportStarted,
-                "expressive/avatar-trained" => ILogicalDocumentStatus.ExpressiveAvatarTrained,
-                "expressive/created" => ILogicalDocumentStatus.ExpressiveCreated,
-                "expressive/done" => ILogicalDocumentStatus.ExpressiveDone,
-                "expressive/error" => ILogicalDocumentStatus.ExpressiveError,
-                "expressive/post-done" => ILogicalDocumentStatus.ExpressivePostDone,
-                "expressive/post-error" => ILogicalDocumentStatus.ExpressivePostError,
-                "expressive/rejected" => ILogicalDocumentStatus.ExpressiveRejected,
-                "expressive/started" => ILogicalDocumentStatus.ExpressiveStarted,
-                "expressive/stream/done" => ILogicalDocumentStatus.ExpressiveStreamDone,
-                "image/rejected" => ILogicalDocumentStatus.ImageRejected,
-                "invoice/failed" => ILogicalDocumentStatus.InvoiceFailed,
-                "invoice/paid" => ILogicalDocumentStatus.InvoicePaid,
-                "knowledge/done" => ILogicalDocumentStatus.KnowledgeDone,
-                "knowledge/error" => ILogicalDocumentStatus.KnowledgeError,
-                "knowledge/processing" => ILogicalDocumentStatus.KnowledgeProcessing,
-                "organization/created" => ILogicalDocumentStatus.OrganizationCreated,
-                "organization/deleted" => ILogicalDocumentStatus.OrganizationDeleted,
-                "organization/member-added" => ILogicalDocumentStatus.OrganizationMemberAdded,
-                "project/deleted" => ILogicalDocumentStatus.ProjectDeleted,
-                "project/done" => ILogicalDocumentStatus.ProjectDone,
-                "project/error" => ILogicalDocumentStatus.ProjectError,
-                "project/post-done" => ILogicalDocumentStatus.ProjectPostDone,
-                "project/ready" => ILogicalDocumentStatus.ProjectReady,
-                "project/rejected" => ILogicalDocumentStatus.ProjectRejected,
-                "project/started" => ILogicalDocumentStatus.ProjectStarted,
-                "render/created" => ILogicalDocumentStatus.RenderCreated,
-                "render/done" => ILogicalDocumentStatus.RenderDone,
-                "render/error" => ILogicalDocumentStatus.RenderError,
-                "render/started" => ILogicalDocumentStatus.RenderStarted,
-                "scene/avatar-created" => ILogicalDocumentStatus.SceneAvatarCreated,
-                "scene/avatar-done" => ILogicalDocumentStatus.SceneAvatarDone,
-                "scene/avatar-error" => ILogicalDocumentStatus.SceneAvatarError,
-                "scene/avatar-item-created" => ILogicalDocumentStatus.SceneAvatarItemCreated,
-                "scene/avatar-post-done" => ILogicalDocumentStatus.SceneAvatarPostDone,
-                "scene/avatar-post-error" => ILogicalDocumentStatus.SceneAvatarPostError,
-                "scene/avatar-started" => ILogicalDocumentStatus.SceneAvatarStarted,
-                "scene/avatar-training-started" => ILogicalDocumentStatus.SceneAvatarTrainingStarted,
-                "scene/avatar-validations-done" => ILogicalDocumentStatus.SceneAvatarValidationsDone,
-                "scene/avatar-validations-error" => ILogicalDocumentStatus.SceneAvatarValidationsError,
-                "scene/created" => ILogicalDocumentStatus.SceneCreated,
-                "scene/done" => ILogicalDocumentStatus.SceneDone,
-                "scene/error" => ILogicalDocumentStatus.SceneError,
-                "scene/post-done" => ILogicalDocumentStatus.ScenePostDone,
-                "scene/post-error" => ILogicalDocumentStatus.ScenePostError,
-                "scene/started" => ILogicalDocumentStatus.SceneStarted,
-                "scenes/avatars-file-uploaded" => ILogicalDocumentStatus.ScenesAvatarsFileUploaded,
-                "stream-video/done" => ILogicalDocumentStatus.StreamVideoDone,
-                "stream-video/error" => ILogicalDocumentStatus.StreamVideoError,
-                "stream-video/rejected" => ILogicalDocumentStatus.StreamVideoRejected,
-                "stream-video/started" => ILogicalDocumentStatus.StreamVideoStarted,
-                "stream/done" => ILogicalDocumentStatus.StreamDone,
-                "talk/created" => ILogicalDocumentStatus.TalkCreated,
-                "talk/deleted" => ILogicalDocumentStatus.TalkDeleted,
-                "talk/done" => ILogicalDocumentStatus.TalkDone,
-                "talk/error" => ILogicalDocumentStatus.TalkError,
-                "talk/post-done" => ILogicalDocumentStatus.TalkPostDone,
-                "talk/post-error" => ILogicalDocumentStatus.TalkPostError,
-                "talk/rejected" => ILogicalDocumentStatus.TalkRejected,
-                "talk/started" => ILogicalDocumentStatus.TalkStarted,
-                "talk/stream/created" => ILogicalDocumentStatus.TalkStreamCreated,
-                "talk/stream/done" => ILogicalDocumentStatus.TalkStreamDone,
-                "talk/stream/error" => ILogicalDocumentStatus.TalkStreamError,
-                "talk/stream/post-done" => ILogicalDocumentStatus.TalkStreamPostDone,
-                "talk/stream/post-error" => ILogicalDocumentStatus.TalkStreamPostError,
-                "talk/stream/rejected" => ILogicalDocumentStatus.TalkStreamRejected,
-                "talk/stream/started" => ILogicalDocumentStatus.TalkStreamStarted,
-                "translation/audio-data-updated" => ILogicalDocumentStatus.TranslationAudioDataUpdated,
-                "translation/celeb-detection-done" => ILogicalDocumentStatus.TranslationCelebDetectionDone,
-                "translation/celeb-detection-error" => ILogicalDocumentStatus.TranslationCelebDetectionError,
-                "translation/deleted" => ILogicalDocumentStatus.TranslationDeleted,
-                "translation/done" => ILogicalDocumentStatus.TranslationDone,
-                "translation/error" => ILogicalDocumentStatus.TranslationError,
-                "translation/file-uploaded" => ILogicalDocumentStatus.TranslationFileUploaded,
-                "translation/group-done" => ILogicalDocumentStatus.TranslationGroupDone,
-                "translation/group-error" => ILogicalDocumentStatus.TranslationGroupError,
-                "translation/group-partial-done" => ILogicalDocumentStatus.TranslationGroupPartialDone,
-                "translation/group-partial-error" => ILogicalDocumentStatus.TranslationGroupPartialError,
-                "translation/group-post-done" => ILogicalDocumentStatus.TranslationGroupPostDone,
-                "translation/group-post-error" => ILogicalDocumentStatus.TranslationGroupPostError,
-                "translation/group-started" => ILogicalDocumentStatus.TranslationGroupStarted,
-                "translation/item-created" => ILogicalDocumentStatus.TranslationItemCreated,
-                "translation/post-done" => ILogicalDocumentStatus.TranslationPostDone,
-                "translation/post-error" => ILogicalDocumentStatus.TranslationPostError,
-                "translation/ready" => ILogicalDocumentStatus.TranslationReady,
-                "translation/speech-done" => ILogicalDocumentStatus.TranslationSpeechDone,
-                "translation/speech-error" => ILogicalDocumentStatus.TranslationSpeechError,
-                "translation/started" => ILogicalDocumentStatus.TranslationStarted,
-                "translation/subtitles-done" => ILogicalDocumentStatus.TranslationSubtitlesDone,
-                "trigger/tool/result" => ILogicalDocumentStatus.TriggerToolResult,
-                "trigger/webhook/done" => ILogicalDocumentStatus.TriggerWebhookDone,
-                "trigger/webhook/error" => ILogicalDocumentStatus.TriggerWebhookError,
-                "user/account-merged" => ILogicalDocumentStatus.UserAccountMerged,
-                "user/account-merged-manually" => ILogicalDocumentStatus.UserAccountMergedManually,
-                "user/api-key-created" => ILogicalDocumentStatus.UserApiKeyCreated,
-                "user/deleted" => ILogicalDocumentStatus.UserDeleted,
-                "user/first-visit" => ILogicalDocumentStatus.UserFirstVisit,
-                "user/registered" => ILogicalDocumentStatus.UserRegistered,
-                "user/subscription-created" => ILogicalDocumentStatus.UserSubscriptionCreated,
-                "user/subscription-deleted" => ILogicalDocumentStatus.UserSubscriptionDeleted,
-                "user/subscription-renewed" => ILogicalDocumentStatus.UserSubscriptionRenewed,
-                "user/subscription-transferred" => ILogicalDocumentStatus.UserSubscriptionTransferred,
-                "user/subscription-updated" => ILogicalDocumentStatus.UserSubscriptionUpdated,
-                "user/subscription-will-end" => ILogicalDocumentStatus.UserSubscriptionWillEnd,
-                "user/updated" => ILogicalDocumentStatus.UserUpdated,
-                "voice/done" => ILogicalDocumentStatus.VoiceDone,
-                "voice/error" => ILogicalDocumentStatus.VoiceError,
-                "voice/rejected" => ILogicalDocumentStatus.VoiceRejected,
+                "agent/asset-created" => ILogicalDocumentStatus.AgentDivideassetCreated,
+                "agent/asset-done" => ILogicalDocumentStatus.AgentDivideassetDone,
+                "agent/asset-error" => ILogicalDocumentStatus.AgentDivideassetError,
+                "agent/asset-started" => ILogicalDocumentStatus.AgentDivideassetStarted,
+                "agent/created" => ILogicalDocumentStatus.AgentDividecreated,
+                "agent/done" => ILogicalDocumentStatus.AgentDividedone,
+                "agent/error" => ILogicalDocumentStatus.AgentDivideerror,
+                "agent/insights/deleted" => ILogicalDocumentStatus.AgentDivideinsightsDividedeleted,
+                "agent/ready" => ILogicalDocumentStatus.AgentDivideready,
+                "agent/ready-for-preprocess" => ILogicalDocumentStatus.AgentDividereadyForPreprocess,
+                "agent/rejected" => ILogicalDocumentStatus.AgentDividerejected,
+                "agent/started" => ILogicalDocumentStatus.AgentDividestarted,
+                "animate-task/created" => ILogicalDocumentStatus.AnimateTaskDividecreated,
+                "animate/created" => ILogicalDocumentStatus.AnimateDividecreated,
+                "animate/done" => ILogicalDocumentStatus.AnimateDividedone,
+                "animate/error" => ILogicalDocumentStatus.AnimateDivideerror,
+                "animate/post-done" => ILogicalDocumentStatus.AnimateDividepostDone,
+                "animate/post-error" => ILogicalDocumentStatus.AnimateDividepostError,
+                "animate/started" => ILogicalDocumentStatus.AnimateDividestarted,
+                "audio/rejected" => ILogicalDocumentStatus.AudioDividerejected,
+                "chat/data-deleted" => ILogicalDocumentStatus.ChatDividedataDeleted,
+                "chat/messages-added" => ILogicalDocumentStatus.ChatDividemessagesAdded,
+                "chat/progress" => ILogicalDocumentStatus.ChatDivideprogress,
+                "chat/speak" => ILogicalDocumentStatus.ChatDividespeak,
+                "chats/invoice/failed" => ILogicalDocumentStatus.ChatsDivideinvoiceDividefailed,
+                "chats/invoice/paid" => ILogicalDocumentStatus.ChatsDivideinvoiceDividepaid,
+                "clip/avatar-created" => ILogicalDocumentStatus.ClipDivideavatarCreated,
+                "clip/avatar-done" => ILogicalDocumentStatus.ClipDivideavatarDone,
+                "clip/avatar-error" => ILogicalDocumentStatus.ClipDivideavatarError,
+                "clip/avatar-error-notification" => ILogicalDocumentStatus.ClipDivideavatarErrorNotification,
+                "clip/avatar-post-done" => ILogicalDocumentStatus.ClipDivideavatarPostDone,
+                "clip/avatar-progress" => ILogicalDocumentStatus.ClipDivideavatarProgress,
+                "clip/avatar-ready" => ILogicalDocumentStatus.ClipDivideavatarReady,
+                "clip/avatar-rejected" => ILogicalDocumentStatus.ClipDivideavatarRejected,
+                "clip/avatar-started" => ILogicalDocumentStatus.ClipDivideavatarStarted,
+                "clip/avatar-training-artifacts-updated" => ILogicalDocumentStatus.ClipDivideavatarTrainingArtifactsUpdated,
+                "clip/created" => ILogicalDocumentStatus.ClipDividecreated,
+                "clip/deleted" => ILogicalDocumentStatus.ClipDividedeleted,
+                "clip/done" => ILogicalDocumentStatus.ClipDividedone,
+                "clip/error" => ILogicalDocumentStatus.ClipDivideerror,
+                "clip/post-done" => ILogicalDocumentStatus.ClipDividepostDone,
+                "clip/post-error" => ILogicalDocumentStatus.ClipDividepostError,
+                "clip/rejected" => ILogicalDocumentStatus.ClipDividerejected,
+                "clip/started" => ILogicalDocumentStatus.ClipDividestarted,
+                "clip/stream/created" => ILogicalDocumentStatus.ClipDividestreamDividecreated,
+                "clip/stream/done" => ILogicalDocumentStatus.ClipDividestreamDividedone,
+                "clip/stream/error" => ILogicalDocumentStatus.ClipDividestreamDivideerror,
+                "clip/stream/post-done" => ILogicalDocumentStatus.ClipDividestreamDividepostDone,
+                "clip/stream/post-error" => ILogicalDocumentStatus.ClipDividestreamDividepostError,
+                "clip/stream/rejected" => ILogicalDocumentStatus.ClipDividestreamDividerejected,
+                "clip/stream/started" => ILogicalDocumentStatus.ClipDividestreamDividestarted,
+                "clip/v2-created" => ILogicalDocumentStatus.ClipDividev2Created,
+                "consents/done" => ILogicalDocumentStatus.ConsentsDividedone,
+                "consents/error" => ILogicalDocumentStatus.ConsentsDivideerror,
+                "consents/rejected" => ILogicalDocumentStatus.ConsentsDividerejected,
+                "consents/start-validation" => ILogicalDocumentStatus.ConsentsDividestartValidation,
+                "credits/charge" => ILogicalDocumentStatus.CreditsDividecharge,
+                "document/created" => ILogicalDocumentStatus.DocumentDividecreated,
+                "document/done" => ILogicalDocumentStatus.DocumentDividedone,
+                "document/error" => ILogicalDocumentStatus.DocumentDivideerror,
+                "document/processed" => ILogicalDocumentStatus.DocumentDivideprocessed,
+                "document/rejected" => ILogicalDocumentStatus.DocumentDividerejected,
+                "export/created" => ILogicalDocumentStatus.ExportDividecreated,
+                "export/deleted" => ILogicalDocumentStatus.ExportDividedeleted,
+                "export/done" => ILogicalDocumentStatus.ExportDividedone,
+                "export/error" => ILogicalDocumentStatus.ExportDivideerror,
+                "export/partial" => ILogicalDocumentStatus.ExportDividepartial,
+                "export/started" => ILogicalDocumentStatus.ExportDividestarted,
+                "expressive/avatar-trained" => ILogicalDocumentStatus.ExpressiveDivideavatarTrained,
+                "expressive/created" => ILogicalDocumentStatus.ExpressiveDividecreated,
+                "expressive/done" => ILogicalDocumentStatus.ExpressiveDividedone,
+                "expressive/error" => ILogicalDocumentStatus.ExpressiveDivideerror,
+                "expressive/post-done" => ILogicalDocumentStatus.ExpressiveDividepostDone,
+                "expressive/post-error" => ILogicalDocumentStatus.ExpressiveDividepostError,
+                "expressive/rejected" => ILogicalDocumentStatus.ExpressiveDividerejected,
+                "expressive/started" => ILogicalDocumentStatus.ExpressiveDividestarted,
+                "expressive/stream/done" => ILogicalDocumentStatus.ExpressiveDividestreamDividedone,
+                "image/rejected" => ILogicalDocumentStatus.ImageDividerejected,
+                "invoice/failed" => ILogicalDocumentStatus.InvoiceDividefailed,
+                "invoice/paid" => ILogicalDocumentStatus.InvoiceDividepaid,
+                "knowledge/done" => ILogicalDocumentStatus.KnowledgeDividedone,
+                "knowledge/error" => ILogicalDocumentStatus.KnowledgeDivideerror,
+                "knowledge/processing" => ILogicalDocumentStatus.KnowledgeDivideprocessing,
+                "organization/created" => ILogicalDocumentStatus.OrganizationDividecreated,
+                "organization/deleted" => ILogicalDocumentStatus.OrganizationDividedeleted,
+                "organization/member-added" => ILogicalDocumentStatus.OrganizationDividememberAdded,
+                "project/deleted" => ILogicalDocumentStatus.ProjectDividedeleted,
+                "project/done" => ILogicalDocumentStatus.ProjectDividedone,
+                "project/error" => ILogicalDocumentStatus.ProjectDivideerror,
+                "project/post-done" => ILogicalDocumentStatus.ProjectDividepostDone,
+                "project/ready" => ILogicalDocumentStatus.ProjectDivideready,
+                "project/rejected" => ILogicalDocumentStatus.ProjectDividerejected,
+                "project/started" => ILogicalDocumentStatus.ProjectDividestarted,
+                "render/created" => ILogicalDocumentStatus.RenderDividecreated,
+                "render/done" => ILogicalDocumentStatus.RenderDividedone,
+                "render/error" => ILogicalDocumentStatus.RenderDivideerror,
+                "render/started" => ILogicalDocumentStatus.RenderDividestarted,
+                "scene/avatar-created" => ILogicalDocumentStatus.SceneDivideavatarCreated,
+                "scene/avatar-done" => ILogicalDocumentStatus.SceneDivideavatarDone,
+                "scene/avatar-error" => ILogicalDocumentStatus.SceneDivideavatarError,
+                "scene/avatar-item-created" => ILogicalDocumentStatus.SceneDivideavatarItemCreated,
+                "scene/avatar-post-done" => ILogicalDocumentStatus.SceneDivideavatarPostDone,
+                "scene/avatar-post-error" => ILogicalDocumentStatus.SceneDivideavatarPostError,
+                "scene/avatar-started" => ILogicalDocumentStatus.SceneDivideavatarStarted,
+                "scene/avatar-training-started" => ILogicalDocumentStatus.SceneDivideavatarTrainingStarted,
+                "scene/avatar-validations-done" => ILogicalDocumentStatus.SceneDivideavatarValidationsDone,
+                "scene/avatar-validations-error" => ILogicalDocumentStatus.SceneDivideavatarValidationsError,
+                "scene/created" => ILogicalDocumentStatus.SceneDividecreated,
+                "scene/done" => ILogicalDocumentStatus.SceneDividedone,
+                "scene/error" => ILogicalDocumentStatus.SceneDivideerror,
+                "scene/post-done" => ILogicalDocumentStatus.SceneDividepostDone,
+                "scene/post-error" => ILogicalDocumentStatus.SceneDividepostError,
+                "scene/started" => ILogicalDocumentStatus.SceneDividestarted,
+                "scenes/avatars-file-uploaded" => ILogicalDocumentStatus.ScenesDivideavatarsFileUploaded,
+                "stream-video/done" => ILogicalDocumentStatus.StreamVideoDividedone,
+                "stream-video/error" => ILogicalDocumentStatus.StreamVideoDivideerror,
+                "stream-video/rejected" => ILogicalDocumentStatus.StreamVideoDividerejected,
+                "stream-video/started" => ILogicalDocumentStatus.StreamVideoDividestarted,
+                "stream/done" => ILogicalDocumentStatus.StreamDividedone,
+                "talk/created" => ILogicalDocumentStatus.TalkDividecreated,
+                "talk/deleted" => ILogicalDocumentStatus.TalkDividedeleted,
+                "talk/done" => ILogicalDocumentStatus.TalkDividedone,
+                "talk/error" => ILogicalDocumentStatus.TalkDivideerror,
+                "talk/post-done" => ILogicalDocumentStatus.TalkDividepostDone,
+                "talk/post-error" => ILogicalDocumentStatus.TalkDividepostError,
+                "talk/rejected" => ILogicalDocumentStatus.TalkDividerejected,
+                "talk/started" => ILogicalDocumentStatus.TalkDividestarted,
+                "talk/stream/created" => ILogicalDocumentStatus.TalkDividestreamDividecreated,
+                "talk/stream/done" => ILogicalDocumentStatus.TalkDividestreamDividedone,
+                "talk/stream/error" => ILogicalDocumentStatus.TalkDividestreamDivideerror,
+                "talk/stream/post-done" => ILogicalDocumentStatus.TalkDividestreamDividepostDone,
+                "talk/stream/post-error" => ILogicalDocumentStatus.TalkDividestreamDividepostError,
+                "talk/stream/rejected" => ILogicalDocumentStatus.TalkDividestreamDividerejected,
+                "talk/stream/started" => ILogicalDocumentStatus.TalkDividestreamDividestarted,
+                "translation/audio-data-updated" => ILogicalDocumentStatus.TranslationDivideaudioDataUpdated,
+                "translation/celeb-detection-done" => ILogicalDocumentStatus.TranslationDividecelebDetectionDone,
+                "translation/celeb-detection-error" => ILogicalDocumentStatus.TranslationDividecelebDetectionError,
+                "translation/deleted" => ILogicalDocumentStatus.TranslationDividedeleted,
+                "translation/done" => ILogicalDocumentStatus.TranslationDividedone,
+                "translation/error" => ILogicalDocumentStatus.TranslationDivideerror,
+                "translation/file-uploaded" => ILogicalDocumentStatus.TranslationDividefileUploaded,
+                "translation/group-done" => ILogicalDocumentStatus.TranslationDividegroupDone,
+                "translation/group-error" => ILogicalDocumentStatus.TranslationDividegroupError,
+                "translation/group-partial-done" => ILogicalDocumentStatus.TranslationDividegroupPartialDone,
+                "translation/group-partial-error" => ILogicalDocumentStatus.TranslationDividegroupPartialError,
+                "translation/group-post-done" => ILogicalDocumentStatus.TranslationDividegroupPostDone,
+                "translation/group-post-error" => ILogicalDocumentStatus.TranslationDividegroupPostError,
+                "translation/group-started" => ILogicalDocumentStatus.TranslationDividegroupStarted,
+                "translation/item-created" => ILogicalDocumentStatus.TranslationDivideitemCreated,
+                "translation/post-done" => ILogicalDocumentStatus.TranslationDividepostDone,
+                "translation/post-error" => ILogicalDocumentStatus.TranslationDividepostError,
+                "translation/ready" => ILogicalDocumentStatus.TranslationDivideready,
+                "translation/speech-done" => ILogicalDocumentStatus.TranslationDividespeechDone,
+                "translation/speech-error" => ILogicalDocumentStatus.TranslationDividespeechError,
+                "translation/started" => ILogicalDocumentStatus.TranslationDividestarted,
+                "translation/subtitles-done" => ILogicalDocumentStatus.TranslationDividesubtitlesDone,
+                "trigger/tool/result" => ILogicalDocumentStatus.TriggerDividetoolDivideresult,
+                "trigger/webhook/done" => ILogicalDocumentStatus.TriggerDividewebhookDividedone,
+                "trigger/webhook/error" => ILogicalDocumentStatus.TriggerDividewebhookDivideerror,
+                "user/account-merged" => ILogicalDocumentStatus.UserDivideaccountMerged,
+                "user/account-merged-manually" => ILogicalDocumentStatus.UserDivideaccountMergedManually,
+                "user/api-key-created" => ILogicalDocumentStatus.UserDivideapiKeyCreated,
+                "user/deleted" => ILogicalDocumentStatus.UserDividedeleted,
+                "user/first-visit" => ILogicalDocumentStatus.UserDividefirstVisit,
+                "user/registered" => ILogicalDocumentStatus.UserDivideregistered,
+                "user/subscription-created" => ILogicalDocumentStatus.UserDividesubscriptionCreated,
+                "user/subscription-deleted" => ILogicalDocumentStatus.UserDividesubscriptionDeleted,
+                "user/subscription-renewed" => ILogicalDocumentStatus.UserDividesubscriptionRenewed,
+                "user/subscription-transferred" => ILogicalDocumentStatus.UserDividesubscriptionTransferred,
+                "user/subscription-updated" => ILogicalDocumentStatus.UserDividesubscriptionUpdated,
+                "user/subscription-will-end" => ILogicalDocumentStatus.UserDividesubscriptionWillEnd,
+                "user/updated" => ILogicalDocumentStatus.UserDivideupdated,
+                "voice/done" => ILogicalDocumentStatus.VoiceDividedone,
+                "voice/error" => ILogicalDocumentStatus.VoiceDivideerror,
+                "voice/rejected" => ILogicalDocumentStatus.VoiceDividerejected,
                 _ => null,
             };
         }

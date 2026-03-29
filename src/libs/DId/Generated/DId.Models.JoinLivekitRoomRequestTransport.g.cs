@@ -45,7 +45,6 @@ namespace DId
         /// <summary>
         /// Initializes a new instance of the <see cref="JoinLivekitRoomRequestTransport" /> class.
         /// </summary>
-        /// <param name="provider"></param>
         /// <param name="roomName">
         /// Name of the existing LiveKit room
         /// </param>
@@ -55,6 +54,7 @@ namespace DId
         /// <param name="token">
         /// Room token for the participant
         /// </param>
+        /// <param name="provider"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -64,10 +64,10 @@ namespace DId
             string token,
             global::DId.JoinLivekitRoomRequestTransportProvider provider)
         {
+            this.Provider = provider;
             this.RoomName = roomName ?? throw new global::System.ArgumentNullException(nameof(roomName));
             this.ServerUrl = serverUrl ?? throw new global::System.ArgumentNullException(nameof(serverUrl));
             this.Token = token ?? throw new global::System.ArgumentNullException(nameof(token));
-            this.Provider = provider;
         }
 
         /// <summary>

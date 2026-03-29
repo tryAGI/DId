@@ -56,9 +56,9 @@ namespace DId
         /// <summary>
         /// Initializes a new instance of the <see cref="IMessage" /> class.
         /// </summary>
-        /// <param name="id"></param>
         /// <param name="role"></param>
         /// <param name="content"></param>
+        /// <param name="id"></param>
         /// <param name="name"></param>
         /// <param name="createdAt"></param>
         /// <param name="toolResults"></param>
@@ -73,9 +73,9 @@ namespace DId
             string? createdAt,
             global::System.Collections.Generic.IList<global::DId.ToolResult>? toolResults)
         {
+            this.Id = id;
             this.Role = role;
             this.Content = content ?? throw new global::System.ArgumentNullException(nameof(content));
-            this.Id = id;
             this.Name = name;
             this.CreatedAt = createdAt;
             this.ToolResults = toolResults;

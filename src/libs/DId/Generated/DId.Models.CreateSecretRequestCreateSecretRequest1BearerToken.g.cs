@@ -41,12 +41,12 @@ namespace DId
         /// <summary>
         /// Initializes a new instance of the <see cref="CreateSecretRequestCreateSecretRequest1BearerToken" /> class.
         /// </summary>
-        /// <param name="type">
-        /// The authentication type for the secret.
-        /// </param>
         /// <param name="provider">
         /// The provider/credential name chosen by the user<br/>
         /// Example: My Production API Key
+        /// </param>
+        /// <param name="type">
+        /// The authentication type for the secret.
         /// </param>
         /// <param name="token">
         /// The bearer token for authentication.<br/>
@@ -60,8 +60,8 @@ namespace DId
             global::DId.CreateSecretRequestCreateSecretRequest1BearerTokenType type,
             string? token)
         {
-            this.Provider = provider ?? throw new global::System.ArgumentNullException(nameof(provider));
             this.Type = type;
+            this.Provider = provider ?? throw new global::System.ArgumentNullException(nameof(provider));
             this.Token = token;
         }
 

@@ -45,11 +45,11 @@ namespace DId
         /// <summary>
         /// Initializes a new instance of the <see cref="TestWebhookRequestDto" /> class.
         /// </summary>
-        /// <param name="eventType"></param>
         /// <param name="url">
         /// a valid url that starts with http or https with regex<br/>
         /// Example: https://example.com
         /// </param>
+        /// <param name="eventType"></param>
         /// <param name="auth">
         /// Authentication configuration for tools and webhooks (processed/stored)
         /// </param>
@@ -63,8 +63,8 @@ namespace DId
             global::DId.TestWebhookRequestDtoAuth? auth,
             global::System.Collections.Generic.Dictionary<string, string>? headers)
         {
-            this.Url = url ?? throw new global::System.ArgumentNullException(nameof(url));
             this.EventType = eventType;
+            this.Url = url ?? throw new global::System.ArgumentNullException(nameof(url));
             this.Auth = auth;
             this.Headers = headers;
         }

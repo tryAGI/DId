@@ -31,11 +31,11 @@ namespace DId
         /// <summary>
         /// Initializes a new instance of the <see cref="CreateStreamResponseJsep2" /> class.
         /// </summary>
-        /// <param name="type">
-        /// The session description object describes the initial proposal in an offer/answer exchange.
-        /// </param>
         /// <param name="sdp">
         /// Describe the media communication sessions to accept the session the is being negotiated
+        /// </param>
+        /// <param name="type">
+        /// The session description object describes the initial proposal in an offer/answer exchange.
         /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
@@ -44,8 +44,8 @@ namespace DId
             string sdp,
             global::DId.CreateStreamResponseJsepType2 type)
         {
-            this.Sdp = sdp ?? throw new global::System.ArgumentNullException(nameof(sdp));
             this.Type = type;
+            this.Sdp = sdp ?? throw new global::System.ArgumentNullException(nameof(sdp));
         }
 
         /// <summary>

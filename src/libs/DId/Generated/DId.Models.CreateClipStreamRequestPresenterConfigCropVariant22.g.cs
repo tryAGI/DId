@@ -33,13 +33,13 @@ namespace DId
         /// <summary>
         /// Initializes a new instance of the <see cref="CreateClipStreamRequestPresenterConfigCropVariant22" /> class.
         /// </summary>
-        /// <param name="type">
-        /// The type of the crop.
-        /// </param>
         /// <param name="rectangle">
         /// A set of numbers between 0 and 1 representing the top, left, right and bottom of the crop.<br/>
         /// Each number correlates to the distance from the top left corner of the image, relative the the image width.<br/>
         /// For example, right: 0.75 means that the right side of the crop is 75% of the image width from the left side.
+        /// </param>
+        /// <param name="type">
+        /// The type of the crop.
         /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
@@ -48,8 +48,8 @@ namespace DId
             global::DId.CreateClipStreamRequestPresenterConfigCropVariant2Rectangle2 rectangle,
             global::DId.CreateClipStreamRequestPresenterConfigCropVariant2Type2 type)
         {
-            this.Rectangle = rectangle ?? throw new global::System.ArgumentNullException(nameof(rectangle));
             this.Type = type;
+            this.Rectangle = rectangle ?? throw new global::System.ArgumentNullException(nameof(rectangle));
         }
 
         /// <summary>

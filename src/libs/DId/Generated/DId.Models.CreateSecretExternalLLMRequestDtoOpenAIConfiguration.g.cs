@@ -67,10 +67,6 @@ namespace DId
         /// <summary>
         /// Initializes a new instance of the <see cref="CreateSecretExternalLLMRequestDtoOpenAIConfiguration" /> class.
         /// </summary>
-        /// <param name="apiKey">
-        /// The API key for OpenAI/Azure OpenAI authentication.<br/>
-        /// Example: sk-1234567890abcdef
-        /// </param>
         /// <param name="model">
         /// The OpenAI model to use<br/>
         /// Example: gpt-4
@@ -82,6 +78,10 @@ namespace DId
         /// <param name="isStreaming">
         /// Whether to use streaming for LLM responses<br/>
         /// Example: true
+        /// </param>
+        /// <param name="apiKey">
+        /// The API key for OpenAI/Azure OpenAI authentication.<br/>
+        /// Example: sk-1234567890abcdef
         /// </param>
         /// <param name="maxMessages">
         /// Maximum number of messages to include in the conversation<br/>
@@ -101,10 +101,10 @@ namespace DId
             double? maxMessages,
             global::DId.CreateSecretExternalLLMRequestDtoOpenAIConfigurationProvider provider)
         {
+            this.ApiKey = apiKey;
             this.Model = model ?? throw new global::System.ArgumentNullException(nameof(model));
             this.Endpoint = endpoint ?? throw new global::System.ArgumentNullException(nameof(endpoint));
             this.IsStreaming = isStreaming;
-            this.ApiKey = apiKey;
             this.MaxMessages = maxMessages;
             this.Provider = provider;
         }

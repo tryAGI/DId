@@ -71,6 +71,9 @@ namespace DId
         /// <param name="description">
         /// Asset description for LLM context (10-500 characters)
         /// </param>
+        /// <param name="id">
+        /// Asset ID. Required for existing assets.
+        /// </param>
         /// <param name="name">
         /// Optional customer-facing name for the asset
         /// </param>
@@ -80,9 +83,6 @@ namespace DId
         /// <param name="thumbnailUrl">
         /// Optional thumbnail URL from ephemeral bucket (for video assets)<br/>
         /// Example: s3://bucket-name/path/to/image.jpg
-        /// </param>
-        /// <param name="id">
-        /// Asset ID. Required for existing assets.
         /// </param>
         /// <param name="sourceUrl">
         /// Source URL from ephemeral bucket. Optional - only provide when replacing the file.
@@ -101,10 +101,10 @@ namespace DId
         {
             this.MimeType = mimeType;
             this.Description = description ?? throw new global::System.ArgumentNullException(nameof(description));
-            this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
             this.Name = name;
             this.Tags = tags;
             this.ThumbnailUrl = thumbnailUrl;
+            this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
             this.SourceUrl = sourceUrl;
         }
 

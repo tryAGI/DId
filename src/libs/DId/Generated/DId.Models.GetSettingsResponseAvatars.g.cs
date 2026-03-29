@@ -30,8 +30,8 @@ namespace DId
         /// <summary>
         /// Initializes a new instance of the <see cref="GetSettingsResponseAvatars" /> class.
         /// </summary>
-        /// <param name="expressSlots"></param>
         /// <param name="premiumplusSlots"></param>
+        /// <param name="expressSlots"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -39,8 +39,8 @@ namespace DId
             double premiumplusSlots,
             double? expressSlots)
         {
-            this.PremiumplusSlots = premiumplusSlots;
             this.ExpressSlots = expressSlots;
+            this.PremiumplusSlots = premiumplusSlots;
         }
 
         /// <summary>

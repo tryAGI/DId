@@ -160,6 +160,17 @@ namespace DId
         /// </param>
         /// <param name="avatarId"></param>
         /// <param name="status"></param>
+        /// <param name="subtitlesUrl">
+        /// URL for the scene subtitles.
+        /// </param>
+        /// <param name="thumbnailUrl">
+        /// URL for the scene thumbnail.
+        /// </param>
+        /// <param name="error">
+        /// The error that failed the scene process.
+        /// </param>
+        /// <param name="webhook"></param>
+        /// <param name="userData"></param>
         /// <param name="audioUrl">
         /// The URL of the audio file which will be used by the avatar<br/>
         /// Example: https://path.to/audio.mp3
@@ -178,20 +189,9 @@ namespace DId
         /// Video completion time as iso-8601 string
         /// </param>
         /// <param name="config"></param>
-        /// <param name="subtitlesUrl">
-        /// URL for the scene subtitles.
-        /// </param>
-        /// <param name="thumbnailUrl">
-        /// URL for the scene thumbnail.
-        /// </param>
         /// <param name="name">
         /// The name of the scene
         /// </param>
-        /// <param name="error">
-        /// The error that failed the scene process.
-        /// </param>
-        /// <param name="webhook"></param>
-        /// <param name="userData"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -223,18 +223,18 @@ namespace DId
             this.CreatedBy = createdBy ?? throw new global::System.ArgumentNullException(nameof(createdBy));
             this.AvatarId = avatarId ?? throw new global::System.ArgumentNullException(nameof(avatarId));
             this.Status = status;
-            this.SubtitlesUrl = subtitlesUrl ?? throw new global::System.ArgumentNullException(nameof(subtitlesUrl));
-            this.ThumbnailUrl = thumbnailUrl ?? throw new global::System.ArgumentNullException(nameof(thumbnailUrl));
-            this.Error = error ?? throw new global::System.ArgumentNullException(nameof(error));
-            this.Webhook = webhook ?? throw new global::System.ArgumentNullException(nameof(webhook));
-            this.UserData = userData ?? throw new global::System.ArgumentNullException(nameof(userData));
             this.AudioUrl = audioUrl;
             this.ResultUrl = resultUrl;
             this.PendingUrl = pendingUrl;
             this.StartedAt = startedAt;
             this.CompletedAt = completedAt;
             this.Config = config;
+            this.SubtitlesUrl = subtitlesUrl ?? throw new global::System.ArgumentNullException(nameof(subtitlesUrl));
+            this.ThumbnailUrl = thumbnailUrl ?? throw new global::System.ArgumentNullException(nameof(thumbnailUrl));
             this.Name = name;
+            this.Error = error ?? throw new global::System.ArgumentNullException(nameof(error));
+            this.Webhook = webhook ?? throw new global::System.ArgumentNullException(nameof(webhook));
+            this.UserData = userData ?? throw new global::System.ArgumentNullException(nameof(userData));
         }
 
         /// <summary>

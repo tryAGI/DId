@@ -44,7 +44,6 @@ namespace DId
         /// <summary>
         /// Initializes a new instance of the <see cref="InitStreamResponse" /> class.
         /// </summary>
-        /// <param name="sessionId"></param>
         /// <param name="id">
         /// Id of the stream - should be returned as *path parameter* in all streaming request to the same stream
         /// </param>
@@ -54,6 +53,7 @@ namespace DId
         /// <param name="iceServers">
         /// ICE servers used to create a peer connection
         /// </param>
+        /// <param name="sessionId"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -63,10 +63,10 @@ namespace DId
             global::System.Collections.Generic.IList<global::DId.InitStreamResponseIceServer> iceServers,
             string? sessionId)
         {
+            this.SessionId = sessionId;
             this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
             this.Jsep = jsep ?? throw new global::System.ArgumentNullException(nameof(jsep));
             this.IceServers = iceServers ?? throw new global::System.ArgumentNullException(nameof(iceServers));
-            this.SessionId = sessionId;
         }
 
         /// <summary>

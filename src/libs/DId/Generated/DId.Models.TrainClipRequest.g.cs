@@ -59,11 +59,11 @@ namespace DId
         /// <param name="sourceUrl">
         /// The source URL of the clip video to train, the video must be longer than 3 minutes and have a resolution higher than 0.5 megapixels.
         /// </param>
-        /// <param name="name">
-        /// A name for the avatar
-        /// </param>
         /// <param name="gender">
         /// The gender of the presenter
+        /// </param>
+        /// <param name="name">
+        /// A name for the avatar
         /// </param>
         /// <param name="consentId">
         /// Id of the related consent for the clip
@@ -86,8 +86,8 @@ namespace DId
             global::DId.TrainClipRequestConfig? config)
         {
             this.SourceUrl = sourceUrl ?? throw new global::System.ArgumentNullException(nameof(sourceUrl));
-            this.Gender = gender;
             this.Name = name;
+            this.Gender = gender;
             this.ConsentId = consentId;
             this.Webhook = webhook;
             this.Config = config;

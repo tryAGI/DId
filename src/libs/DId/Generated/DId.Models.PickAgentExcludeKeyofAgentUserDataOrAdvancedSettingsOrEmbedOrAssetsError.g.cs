@@ -37,9 +37,9 @@ namespace DId
         /// <summary>
         /// Initializes a new instance of the <see cref="PickAgentExcludeKeyofAgentUserDataOrAdvancedSettingsOrEmbedOrAssetsError" /> class.
         /// </summary>
-        /// <param name="details"></param>
         /// <param name="description"></param>
         /// <param name="kind"></param>
+        /// <param name="details"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -48,9 +48,9 @@ namespace DId
             string kind,
             string? details)
         {
+            this.Details = details;
             this.Description = description ?? throw new global::System.ArgumentNullException(nameof(description));
             this.Kind = kind ?? throw new global::System.ArgumentNullException(nameof(kind));
-            this.Details = details;
         }
 
         /// <summary>

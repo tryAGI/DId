@@ -49,14 +49,14 @@ namespace DId
         /// <param name="id">
         /// The ID of the clip
         /// </param>
-        /// <param name="object">
-        /// An identifier of this clip
-        /// </param>
         /// <param name="createdAt">
         /// Clip creation time as iso-8601 string
         /// </param>
         /// <param name="status">
         /// The status of the clip
+        /// </param>
+        /// <param name="object">
+        /// An identifier of this clip
         /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
@@ -68,9 +68,9 @@ namespace DId
             global::DId.CreateClipResponseObject2 @object)
         {
             this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
+            this.Object = @object;
             this.CreatedAt = createdAt ?? throw new global::System.ArgumentNullException(nameof(createdAt));
             this.Status = status;
-            this.Object = @object;
         }
 
         /// <summary>

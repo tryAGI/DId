@@ -102,13 +102,13 @@ namespace DId
         /// <param name="name">
         /// Name of knowledge
         /// </param>
-        /// <param name="status">
-        /// Status of entity
-        /// </param>
         /// <param name="id"></param>
         /// <param name="ownerId"></param>
         /// <param name="createdAt"></param>
         /// <param name="modifiedAt"></param>
+        /// <param name="status">
+        /// Status of entity
+        /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -127,11 +127,11 @@ namespace DId
             this.Description = description ?? throw new global::System.ArgumentNullException(nameof(description));
             this.CreatedBy = createdBy ?? throw new global::System.ArgumentNullException(nameof(createdBy));
             this.Name = name ?? throw new global::System.ArgumentNullException(nameof(name));
+            this.Status = status;
             this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
             this.OwnerId = ownerId ?? throw new global::System.ArgumentNullException(nameof(ownerId));
             this.CreatedAt = createdAt ?? throw new global::System.ArgumentNullException(nameof(createdAt));
             this.ModifiedAt = modifiedAt ?? throw new global::System.ArgumentNullException(nameof(modifiedAt));
-            this.Status = status;
         }
 
         /// <summary>

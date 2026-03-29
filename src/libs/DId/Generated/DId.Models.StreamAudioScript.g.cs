@@ -34,13 +34,13 @@ namespace DId
         /// <summary>
         /// Initializes a new instance of the <see cref="StreamAudioScript" /> class.
         /// </summary>
-        /// <param name="type">
-        /// The type of the script.
-        /// </param>
         /// <param name="audioUrl">
         /// The URL of the audio file which will be used by the actor.<br/>
         /// File size is limit to 15MB.<br/>
         /// Example: https://path.to/audio.mp3
+        /// </param>
+        /// <param name="type">
+        /// The type of the script.
         /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
@@ -49,8 +49,8 @@ namespace DId
             string audioUrl,
             global::DId.StreamAudioScriptType type)
         {
-            this.AudioUrl = audioUrl ?? throw new global::System.ArgumentNullException(nameof(audioUrl));
             this.Type = type;
+            this.AudioUrl = audioUrl ?? throw new global::System.ArgumentNullException(nameof(audioUrl));
         }
 
         /// <summary>
