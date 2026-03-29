@@ -53,17 +53,17 @@ namespace DId
         /// <summary>
         /// Initializes a new instance of the <see cref="DeleteResponseVariant1PresenterPhotoAvatar" /> class.
         /// </summary>
-        /// <param name="type">
-        /// Presenter type
-        /// </param>
-        /// <param name="voice">
-        /// Voice provider for text-to-speech.
-        /// </param>
         /// <param name="sourceUrl">
         /// Image URL used to create the avatar.
         /// </param>
         /// <param name="thumbnail">
         /// Preview image URL for the avatar.
+        /// </param>
+        /// <param name="type">
+        /// Presenter type
+        /// </param>
+        /// <param name="voice">
+        /// Voice provider for text-to-speech.
         /// </param>
         /// <param name="stitch">
         /// Controls the output framing.&lt;br/&gt;<br/>
@@ -80,10 +80,10 @@ namespace DId
             global::DId.AnyOf<global::DId.DeleteResponseVariant1PresenterPhotoAvatarVoiceMicrosoft, global::DId.DeleteResponseVariant1PresenterPhotoAvatarVoiceElevenLabs, global::DId.DeleteResponseVariant1PresenterPhotoAvatarVoiceOpenAI>? voice,
             bool? stitch)
         {
-            this.SourceUrl = sourceUrl ?? throw new global::System.ArgumentNullException(nameof(sourceUrl));
-            this.Thumbnail = thumbnail ?? throw new global::System.ArgumentNullException(nameof(thumbnail));
             this.Type = type;
             this.Voice = voice;
+            this.SourceUrl = sourceUrl ?? throw new global::System.ArgumentNullException(nameof(sourceUrl));
+            this.Thumbnail = thumbnail ?? throw new global::System.ArgumentNullException(nameof(thumbnail));
             this.Stitch = stitch;
         }
 

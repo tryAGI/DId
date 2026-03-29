@@ -44,14 +44,14 @@ namespace DId
         /// <summary>
         /// Initializes a new instance of the <see cref="ListMyAgentsResponseAgentVariant1PresenterExpressiveAvatar" /> class.
         /// </summary>
+        /// <param name="presenterId">
+        /// Id of avatar that will be shown for user
+        /// </param>
         /// <param name="type">
         /// Presenter type
         /// </param>
         /// <param name="voice">
         /// Voice provider for text-to-speech.
-        /// </param>
-        /// <param name="presenterId">
-        /// Id of avatar that will be shown for user
         /// </param>
         /// <param name="background">
         /// presenter background config
@@ -65,9 +65,9 @@ namespace DId
             global::DId.AnyOf<global::DId.ListMyAgentsResponseAgentVariant1PresenterExpressiveAvatarVoiceMicrosoft, global::DId.ListMyAgentsResponseAgentVariant1PresenterExpressiveAvatarVoiceElevenLabs, global::DId.ListMyAgentsResponseAgentVariant1PresenterExpressiveAvatarVoiceOpenAI>? voice,
             global::DId.ListMyAgentsResponseAgentVariant1PresenterExpressiveAvatarBackground? background)
         {
-            this.PresenterId = presenterId ?? throw new global::System.ArgumentNullException(nameof(presenterId));
             this.Type = type;
             this.Voice = voice;
+            this.PresenterId = presenterId ?? throw new global::System.ArgumentNullException(nameof(presenterId));
             this.Background = background;
         }
 

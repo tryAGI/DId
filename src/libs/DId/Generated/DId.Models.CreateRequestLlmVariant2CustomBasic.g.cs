@@ -68,15 +68,15 @@ namespace DId
         /// <summary>
         /// Initializes a new instance of the <see cref="CreateRequestLlmVariant2CustomBasic" /> class.
         /// </summary>
-        /// <param name="type"></param>
         /// <param name="url"></param>
+        /// <param name="key">
+        /// External API_KEY for D-ID to use
+        /// </param>
+        /// <param name="type"></param>
         /// <param name="streaming"></param>
         /// <param name="maxMessages"></param>
         /// <param name="headers"></param>
         /// <param name="supportsSentiment"></param>
-        /// <param name="key">
-        /// External API_KEY for D-ID to use
-        /// </param>
         /// <param name="version">
         /// The version of the API to use (Optional)
         /// </param>
@@ -93,13 +93,13 @@ namespace DId
             bool? supportsSentiment,
             string? version)
         {
-            this.Url = url ?? throw new global::System.ArgumentNullException(nameof(url));
-            this.Key = key ?? throw new global::System.ArgumentNullException(nameof(key));
             this.Type = type;
+            this.Url = url ?? throw new global::System.ArgumentNullException(nameof(url));
             this.Streaming = streaming;
             this.MaxMessages = maxMessages;
             this.Headers = headers;
             this.SupportsSentiment = supportsSentiment;
+            this.Key = key ?? throw new global::System.ArgumentNullException(nameof(key));
             this.Version = version;
         }
 

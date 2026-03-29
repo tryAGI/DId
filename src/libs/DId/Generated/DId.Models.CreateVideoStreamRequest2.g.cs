@@ -31,8 +31,8 @@ namespace DId
         /// <summary>
         /// Initializes a new instance of the <see cref="CreateVideoStreamRequest2" /> class.
         /// </summary>
-        /// <param name="sessionId"></param>
         /// <param name="script"></param>
+        /// <param name="sessionId"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -40,8 +40,8 @@ namespace DId
             global::DId.AnyOf<global::DId.CreateVideoStreamRequestScriptText2, global::DId.CreateVideoStreamRequestScriptAudio2> script,
             string? sessionId)
         {
-            this.Script = script;
             this.SessionId = sessionId;
+            this.Script = script;
         }
 
         /// <summary>

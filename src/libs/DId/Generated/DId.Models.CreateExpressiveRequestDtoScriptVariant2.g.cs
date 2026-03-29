@@ -42,18 +42,18 @@ namespace DId
         /// <summary>
         /// Initializes a new instance of the <see cref="CreateExpressiveRequestDtoScriptVariant2" /> class.
         /// </summary>
+        /// <param name="audioUrl">
+        /// The URL of the audio file which will be used by the actor.<br/>
+        /// File size is limited to 15MB.<br/>
+        /// Audio length is limited 5 minutes for clips and 10 minutes for talks.<br/>
+        /// Example: https://path.to/audio.mp3
+        /// </param>
         /// <param name="type">
         /// The type of the script.
         /// </param>
         /// <param name="subtitles">
         /// Should subtitles be created.<br/>
         /// Default Value: false
-        /// </param>
-        /// <param name="audioUrl">
-        /// The URL of the audio file which will be used by the actor.<br/>
-        /// File size is limited to 15MB.<br/>
-        /// Audio length is limited 5 minutes for clips and 10 minutes for talks.<br/>
-        /// Example: https://path.to/audio.mp3
         /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
@@ -63,9 +63,9 @@ namespace DId
             global::DId.CreateExpressiveRequestDtoScriptVariant2Type type,
             bool? subtitles)
         {
-            this.AudioUrl = audioUrl ?? throw new global::System.ArgumentNullException(nameof(audioUrl));
             this.Type = type;
             this.Subtitles = subtitles;
+            this.AudioUrl = audioUrl ?? throw new global::System.ArgumentNullException(nameof(audioUrl));
         }
 
         /// <summary>

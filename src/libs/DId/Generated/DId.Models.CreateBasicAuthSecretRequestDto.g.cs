@@ -50,9 +50,6 @@ namespace DId
         /// <summary>
         /// Initializes a new instance of the <see cref="CreateBasicAuthSecretRequestDto" /> class.
         /// </summary>
-        /// <param name="type">
-        /// The authentication type for the secret.
-        /// </param>
         /// <param name="provider">
         /// The provider/credential name chosen by the user<br/>
         /// Example: My Production API Key
@@ -60,6 +57,9 @@ namespace DId
         /// <param name="username">
         /// The username for basic authentication.<br/>
         /// Example: myuser
+        /// </param>
+        /// <param name="type">
+        /// The authentication type for the secret.
         /// </param>
         /// <param name="password">
         /// The password for basic authentication.<br/>
@@ -74,9 +74,9 @@ namespace DId
             global::DId.CreateBasicAuthSecretRequestDtoType type,
             string? password)
         {
+            this.Type = type;
             this.Provider = provider ?? throw new global::System.ArgumentNullException(nameof(provider));
             this.Username = username ?? throw new global::System.ArgumentNullException(nameof(username));
-            this.Type = type;
             this.Password = password;
         }
 

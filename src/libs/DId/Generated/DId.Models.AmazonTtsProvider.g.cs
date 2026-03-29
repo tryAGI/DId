@@ -42,11 +42,11 @@ namespace DId
         /// <summary>
         /// Initializes a new instance of the <see cref="AmazonTtsProvider" /> class.
         /// </summary>
-        /// <param name="type"></param>
         /// <param name="voiceId">
         /// Voice ID selected from the list of available voices.&lt;/br&gt;Retrieve available options from the GET /voices endpoint.<br/>
         /// Example: Joanna
         /// </param>
+        /// <param name="type"></param>
         /// <param name="language">
         /// Voice customization options. To save the language of the selected agent voice<br/>
         /// Example: English (United States)
@@ -59,8 +59,8 @@ namespace DId
             global::DId.AmazonTtsProviderType type,
             string? language)
         {
-            this.VoiceId = voiceId;
             this.Type = type;
+            this.VoiceId = voiceId;
             this.Language = language;
         }
 

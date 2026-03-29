@@ -77,8 +77,8 @@ namespace DId
         /// </summary>
         /// <param name="id"></param>
         /// <param name="mimeType"></param>
-        /// <param name="cdnUrl"></param>
         /// <param name="description"></param>
+        /// <param name="cdnUrl"></param>
         /// <param name="name"></param>
         /// <param name="tags"></param>
         /// <param name="thumbnailUrl"></param>
@@ -100,8 +100,8 @@ namespace DId
         {
             this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
             this.MimeType = mimeType ?? throw new global::System.ArgumentNullException(nameof(mimeType));
-            this.Description = description ?? throw new global::System.ArgumentNullException(nameof(description));
             this.CdnUrl = cdnUrl;
+            this.Description = description ?? throw new global::System.ArgumentNullException(nameof(description));
             this.Name = name;
             this.Tags = tags;
             this.ThumbnailUrl = thumbnailUrl;

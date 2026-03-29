@@ -97,9 +97,6 @@ namespace DId
         /// <param name="externalId">
         /// An external identifier
         /// </param>
-        /// <param name="messageId">
-        /// The ID of the message to rate
-        /// </param>
         /// <param name="chatId">
         /// The ID of the chat containing the message
         /// </param>
@@ -111,6 +108,9 @@ namespace DId
         /// <param name="ownerId"></param>
         /// <param name="createdAt"></param>
         /// <param name="modifiedAt"></param>
+        /// <param name="messageId">
+        /// The ID of the message to rate
+        /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -129,13 +129,13 @@ namespace DId
             this.AgentId = agentId ?? throw new global::System.ArgumentNullException(nameof(agentId));
             this.KnowledgeId = knowledgeId ?? throw new global::System.ArgumentNullException(nameof(knowledgeId));
             this.ExternalId = externalId ?? throw new global::System.ArgumentNullException(nameof(externalId));
+            this.MessageId = messageId;
             this.ChatId = chatId ?? throw new global::System.ArgumentNullException(nameof(chatId));
             this.Score = score;
             this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
             this.OwnerId = ownerId ?? throw new global::System.ArgumentNullException(nameof(ownerId));
             this.CreatedAt = createdAt ?? throw new global::System.ArgumentNullException(nameof(createdAt));
             this.ModifiedAt = modifiedAt ?? throw new global::System.ArgumentNullException(nameof(modifiedAt));
-            this.MessageId = messageId;
         }
 
         /// <summary>

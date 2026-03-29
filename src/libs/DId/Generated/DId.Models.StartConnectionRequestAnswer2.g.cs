@@ -32,12 +32,12 @@ namespace DId
         /// <summary>
         /// Initializes a new instance of the <see cref="StartConnectionRequestAnswer2" /> class.
         /// </summary>
+        /// <param name="sdp">
+        /// Describe the media communication sessions to accept the session the is being negotiated
+        /// </param>
         /// <param name="type">
         /// The SDP contained in the sdp property is the definitive choice in the exchange. In other words, this session<br/>
         /// description describes the agreed-upon configuration, and is being sent to finalize negotiation.
-        /// </param>
-        /// <param name="sdp">
-        /// Describe the media communication sessions to accept the session the is being negotiated
         /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
@@ -46,8 +46,8 @@ namespace DId
             string sdp,
             global::DId.StartConnectionRequestAnswerType2 type)
         {
-            this.Sdp = sdp ?? throw new global::System.ArgumentNullException(nameof(sdp));
             this.Type = type;
+            this.Sdp = sdp ?? throw new global::System.ArgumentNullException(nameof(sdp));
         }
 
         /// <summary>

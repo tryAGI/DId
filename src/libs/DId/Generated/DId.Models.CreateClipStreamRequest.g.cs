@@ -104,8 +104,8 @@ namespace DId
         /// <summary>
         /// Initializes a new instance of the <see cref="CreateClipStreamRequest" /> class.
         /// </summary>
-        /// <param name="sessionId"></param>
         /// <param name="script"></param>
+        /// <param name="sessionId"></param>
         /// <param name="config">
         /// Advanced configuration options.
         /// </param>
@@ -142,8 +142,8 @@ namespace DId
             string? resultUrl,
             object? metadata)
         {
-            this.Script = script;
             this.SessionId = sessionId;
+            this.Script = script;
             this.Config = config;
             this.CreatedBy = createdBy;
             this.PresenterConfig = presenterConfig;

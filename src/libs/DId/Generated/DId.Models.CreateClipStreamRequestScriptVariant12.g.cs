@@ -48,16 +48,16 @@ namespace DId
         /// <summary>
         /// Initializes a new instance of the <see cref="CreateClipStreamRequestScriptVariant12" /> class.
         /// </summary>
+        /// <param name="input">
+        /// The input text that will be synthesized to an audio file.<br/>
+        /// Note that each provider has its own limitations on the text length.<br/>
+        /// Example: This is an example text
+        /// </param>
         /// <param name="type">
         /// The type of the script.
         /// </param>
         /// <param name="provider">
         /// text-to-speech provider from list of supported providers. default is microsoft tts
-        /// </param>
-        /// <param name="input">
-        /// The input text that will be synthesized to an audio file.<br/>
-        /// Note that each provider has its own limitations on the text length.<br/>
-        /// Example: This is an example text
         /// </param>
         /// <param name="ssml">
         /// Is the text provided in ssml form.<br/>
@@ -72,9 +72,9 @@ namespace DId
             global::DId.AnyOf<global::DId.CreateClipStreamRequestScriptVariant1ProviderMicrosoft2, global::DId.CreateClipStreamRequestScriptVariant1ProviderElevenLabs2, global::DId.CreateClipStreamRequestScriptVariant1ProviderOpenAI2>? provider,
             bool? ssml)
         {
-            this.Input = input ?? throw new global::System.ArgumentNullException(nameof(input));
             this.Type = type;
             this.Provider = provider;
+            this.Input = input ?? throw new global::System.ArgumentNullException(nameof(input));
             this.Ssml = ssml;
         }
 

@@ -128,16 +128,16 @@ namespace DId
         /// <param name="title">
         /// Title to display
         /// </param>
+        /// <param name="id"></param>
+        /// <param name="ownerId"></param>
+        /// <param name="createdAt"></param>
+        /// <param name="modifiedAt"></param>
         /// <param name="error">
         /// Object in case of if error appears
         /// </param>
         /// <param name="webhook">
         /// Callback to call when the document is uploaded
         /// </param>
-        /// <param name="id"></param>
-        /// <param name="ownerId"></param>
-        /// <param name="createdAt"></param>
-        /// <param name="modifiedAt"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -163,12 +163,12 @@ namespace DId
             this.CreatedBy = createdBy ?? throw new global::System.ArgumentNullException(nameof(createdBy));
             this.Status = status;
             this.Title = title ?? throw new global::System.ArgumentNullException(nameof(title));
+            this.Error = error;
+            this.Webhook = webhook;
             this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
             this.OwnerId = ownerId ?? throw new global::System.ArgumentNullException(nameof(ownerId));
             this.CreatedAt = createdAt ?? throw new global::System.ArgumentNullException(nameof(createdAt));
             this.ModifiedAt = modifiedAt ?? throw new global::System.ArgumentNullException(nameof(modifiedAt));
-            this.Error = error;
-            this.Webhook = webhook;
         }
 
         /// <summary>

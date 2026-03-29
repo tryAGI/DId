@@ -100,9 +100,6 @@ namespace DId
         /// <param name="createdAt">
         /// Group creation time as iso-8601 string
         /// </param>
-        /// <param name="generatedAt">
-        /// The time when a draft translation group was generated as iso-8601 string
-        /// </param>
         /// <param name="targetLanguages">
         /// The langugages that the video is translated to
         /// </param>
@@ -114,6 +111,9 @@ namespace DId
         /// </param>
         /// <param name="name">
         /// The name of the group
+        /// </param>
+        /// <param name="generatedAt">
+        /// The time when a draft translation group was generated as iso-8601 string
         /// </param>
         /// <param name="thumbnailUrl">
         /// The thumbnail url of the video
@@ -143,11 +143,11 @@ namespace DId
             this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
             this.OwnerId = ownerId ?? throw new global::System.ArgumentNullException(nameof(ownerId));
             this.CreatedAt = createdAt ?? throw new global::System.ArgumentNullException(nameof(createdAt));
+            this.GeneratedAt = generatedAt;
             this.TargetLanguages = targetLanguages ?? throw new global::System.ArgumentNullException(nameof(targetLanguages));
             this.ModifiedAt = modifiedAt ?? throw new global::System.ArgumentNullException(nameof(modifiedAt));
             this.Status = status;
             this.Name = name ?? throw new global::System.ArgumentNullException(nameof(name));
-            this.GeneratedAt = generatedAt;
             this.ThumbnailUrl = thumbnailUrl;
             this.ErrorKind = errorKind;
             this.Translations = translations;

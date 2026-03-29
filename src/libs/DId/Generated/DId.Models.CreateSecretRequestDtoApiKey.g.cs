@@ -49,12 +49,12 @@ namespace DId
         /// <summary>
         /// Initializes a new instance of the <see cref="CreateSecretRequestDtoApiKey" /> class.
         /// </summary>
-        /// <param name="type">
-        /// The authentication type for the secret.
-        /// </param>
         /// <param name="provider">
         /// The provider/credential name chosen by the user<br/>
         /// Example: My Production API Key
+        /// </param>
+        /// <param name="type">
+        /// The authentication type for the secret.
         /// </param>
         /// <param name="apiKey">
         /// The API key for authentication.<br/>
@@ -73,8 +73,8 @@ namespace DId
             string? apiKey,
             string? headerName)
         {
-            this.Provider = provider ?? throw new global::System.ArgumentNullException(nameof(provider));
             this.Type = type;
+            this.Provider = provider ?? throw new global::System.ArgumentNullException(nameof(provider));
             this.ApiKey = apiKey;
             this.HeaderName = headerName;
         }

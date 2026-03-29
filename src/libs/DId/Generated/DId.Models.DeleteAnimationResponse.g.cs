@@ -118,23 +118,23 @@ namespace DId
         /// <param name="sourceUrl">
         /// The URL of the source image to be animated by the driver video. Image type of .jpg | .png
         /// </param>
-        /// <param name="driverUrl">
-        /// The URL of the driver video to drive the animation, if not provided a driver video will be selected for you from the predefined DriversBank
-        /// </param>
         /// <param name="createdAt">
         /// Animation creation time as iso-8601 string
-        /// </param>
-        /// <param name="createdBy">
-        /// The user id of the user that created the animation
-        /// </param>
-        /// <param name="startedAt">
-        /// Animation start time as iso-8601 string
         /// </param>
         /// <param name="modifiedAt">
         /// last modified time as iso-8601 string
         /// </param>
         /// <param name="status">
         /// The status of the animation
+        /// </param>
+        /// <param name="driverUrl">
+        /// The URL of the driver video to drive the animation, if not provided a driver video will be selected for you from the predefined DriversBank
+        /// </param>
+        /// <param name="createdBy">
+        /// The user id of the user that created the animation
+        /// </param>
+        /// <param name="startedAt">
+        /// Animation start time as iso-8601 string
         /// </param>
         /// <param name="resultUrl">
         /// s3 uri to the resulting video
@@ -173,12 +173,12 @@ namespace DId
             this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
             this.UserId = userId ?? throw new global::System.ArgumentNullException(nameof(userId));
             this.SourceUrl = sourceUrl ?? throw new global::System.ArgumentNullException(nameof(sourceUrl));
-            this.CreatedAt = createdAt ?? throw new global::System.ArgumentNullException(nameof(createdAt));
-            this.ModifiedAt = modifiedAt ?? throw new global::System.ArgumentNullException(nameof(modifiedAt));
-            this.Status = status;
             this.DriverUrl = driverUrl;
+            this.CreatedAt = createdAt ?? throw new global::System.ArgumentNullException(nameof(createdAt));
             this.CreatedBy = createdBy;
             this.StartedAt = startedAt;
+            this.ModifiedAt = modifiedAt ?? throw new global::System.ArgumentNullException(nameof(modifiedAt));
+            this.Status = status;
             this.ResultUrl = resultUrl;
             this.Metadata = metadata;
             this.Error = error;

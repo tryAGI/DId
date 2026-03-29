@@ -52,11 +52,11 @@ namespace DId
         /// <param name="status">
         /// The status of the avatar
         /// </param>
-        /// <param name="object">
-        /// An identifier of this avatar
-        /// </param>
         /// <param name="createdAt">
         /// Avatar creation time as iso-8601 string
+        /// </param>
+        /// <param name="object">
+        /// An identifier of this avatar
         /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
@@ -69,8 +69,8 @@ namespace DId
         {
             this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
             this.Status = status;
-            this.CreatedAt = createdAt ?? throw new global::System.ArgumentNullException(nameof(createdAt));
             this.Object = @object;
+            this.CreatedAt = createdAt ?? throw new global::System.ArgumentNullException(nameof(createdAt));
         }
 
         /// <summary>

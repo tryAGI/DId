@@ -92,14 +92,14 @@ namespace DId
         /// <param name="ownerId"></param>
         /// <param name="id"></param>
         /// <param name="createdBy"></param>
-        /// <param name="email"></param>
         /// <param name="product"></param>
+        /// <param name="credits"></param>
+        /// <param name="createdAt"></param>
+        /// <param name="email"></param>
         /// <param name="entityType"></param>
         /// <param name="agentId"></param>
-        /// <param name="credits"></param>
         /// <param name="source"></param>
         /// <param name="duration"></param>
-        /// <param name="createdAt"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -119,14 +119,14 @@ namespace DId
             this.OwnerId = ownerId ?? throw new global::System.ArgumentNullException(nameof(ownerId));
             this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
             this.CreatedBy = createdBy ?? throw new global::System.ArgumentNullException(nameof(createdBy));
-            this.Product = product ?? throw new global::System.ArgumentNullException(nameof(product));
-            this.Credits = credits;
-            this.CreatedAt = createdAt ?? throw new global::System.ArgumentNullException(nameof(createdAt));
             this.Email = email;
+            this.Product = product ?? throw new global::System.ArgumentNullException(nameof(product));
             this.EntityType = entityType;
             this.AgentId = agentId;
+            this.Credits = credits;
             this.Source = source;
             this.Duration = duration;
+            this.CreatedAt = createdAt ?? throw new global::System.ArgumentNullException(nameof(createdAt));
         }
 
         /// <summary>

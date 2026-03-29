@@ -127,18 +127,21 @@ namespace DId
         /// <param name="ownerId">
         /// Unique identifier of the owner that submitted the clip
         /// </param>
+        /// <param name="createdAt">
+        /// Clip creation time as iso-8601 string
+        /// </param>
+        /// <param name="modifiedAt">
+        /// last modified time as iso-8601 string
+        /// </param>
+        /// <param name="status">
+        /// The status of the clip
+        /// </param>
         /// <param name="audioUrl">
         /// The URL of the audio file which will be used by the actor<br/>
         /// Example: https://path.to/audio.mp3
         /// </param>
-        /// <param name="createdAt">
-        /// Clip creation time as iso-8601 string
-        /// </param>
         /// <param name="createdBy">
         /// The user id that created the clip
-        /// </param>
-        /// <param name="modifiedAt">
-        /// last modified time as iso-8601 string
         /// </param>
         /// <param name="startedAt">
         /// Clip start time as iso-8601 string
@@ -148,9 +151,6 @@ namespace DId
         /// </param>
         /// <param name="config">
         /// The configuration that used to process the clip
-        /// </param>
-        /// <param name="status">
-        /// The status of the clip
         /// </param>
         /// <param name="resultUrl">
         /// The result url of the clip
@@ -193,14 +193,14 @@ namespace DId
         {
             this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
             this.OwnerId = ownerId ?? throw new global::System.ArgumentNullException(nameof(ownerId));
-            this.CreatedAt = createdAt ?? throw new global::System.ArgumentNullException(nameof(createdAt));
-            this.ModifiedAt = modifiedAt ?? throw new global::System.ArgumentNullException(nameof(modifiedAt));
-            this.Status = status;
             this.AudioUrl = audioUrl;
+            this.CreatedAt = createdAt ?? throw new global::System.ArgumentNullException(nameof(createdAt));
             this.CreatedBy = createdBy;
+            this.ModifiedAt = modifiedAt ?? throw new global::System.ArgumentNullException(nameof(modifiedAt));
             this.StartedAt = startedAt;
             this.CompletedAt = completedAt;
             this.Config = config;
+            this.Status = status;
             this.ResultUrl = resultUrl;
             this.PresenterId = presenterId;
             this.DriverId = driverId;

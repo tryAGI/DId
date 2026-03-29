@@ -115,11 +115,11 @@ namespace DId
         /// <param name="name"></param>
         /// <param name="gender"></param>
         /// <param name="access"></param>
-        /// <param name="language"></param>
-        /// <param name="config"></param>
         /// <param name="provider"></param>
         /// <param name="languages"></param>
         /// <param name="styles"></param>
+        /// <param name="language"></param>
+        /// <param name="config"></param>
         /// <param name="description"></param>
         /// <param name="age"></param>
         /// <param name="useCase"></param>
@@ -148,11 +148,11 @@ namespace DId
             this.Name = name ?? throw new global::System.ArgumentNullException(nameof(name));
             this.Gender = gender ?? throw new global::System.ArgumentNullException(nameof(gender));
             this.Access = access;
+            this.Language = language;
+            this.Config = config;
             this.Provider = provider;
             this.Languages = languages ?? throw new global::System.ArgumentNullException(nameof(languages));
             this.Styles = styles ?? throw new global::System.ArgumentNullException(nameof(styles));
-            this.Language = language;
-            this.Config = config;
             this.Description = description;
             this.Age = age;
             this.UseCase = useCase;

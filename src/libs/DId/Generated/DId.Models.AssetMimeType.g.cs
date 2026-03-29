@@ -11,43 +11,43 @@ namespace DId
         /// <summary>
         /// 
         /// </summary>
-        ImageGif,
+        ImageDividegif,
         /// <summary>
         /// 
         /// </summary>
-        ImageJpeg,
+        ImageDividejpeg,
         /// <summary>
         /// 
         /// </summary>
-        ImageJpg,
+        ImageDividejpg,
         /// <summary>
         /// 
         /// </summary>
-        ImagePng,
+        ImageDividepng,
         /// <summary>
         /// 
         /// </summary>
-        ImageWebp,
+        ImageDividewebp,
         /// <summary>
         /// 
         /// </summary>
-        VideoMatroska,
+        VideoDividematroska,
         /// <summary>
         /// 
         /// </summary>
-        VideoMp4,
+        VideoDividemp4,
         /// <summary>
         /// 
         /// </summary>
-        VideoQuicktime,
+        VideoDividequicktime,
         /// <summary>
         /// 
         /// </summary>
-        VideoWebm,
+        VideoDividewebm,
         /// <summary>
         /// 
         /// </summary>
-        VideoXMatroska,
+        VideoDividexMatroska,
     }
 
     /// <summary>
@@ -62,16 +62,16 @@ namespace DId
         {
             return value switch
             {
-                AssetMimeType.ImageGif => "image/gif",
-                AssetMimeType.ImageJpeg => "image/jpeg",
-                AssetMimeType.ImageJpg => "image/jpg",
-                AssetMimeType.ImagePng => "image/png",
-                AssetMimeType.ImageWebp => "image/webp",
-                AssetMimeType.VideoMatroska => "video/matroska",
-                AssetMimeType.VideoMp4 => "video/mp4",
-                AssetMimeType.VideoQuicktime => "video/quicktime",
-                AssetMimeType.VideoWebm => "video/webm",
-                AssetMimeType.VideoXMatroska => "video/x-matroska",
+                AssetMimeType.ImageDividegif => "image/gif",
+                AssetMimeType.ImageDividejpeg => "image/jpeg",
+                AssetMimeType.ImageDividejpg => "image/jpg",
+                AssetMimeType.ImageDividepng => "image/png",
+                AssetMimeType.ImageDividewebp => "image/webp",
+                AssetMimeType.VideoDividematroska => "video/matroska",
+                AssetMimeType.VideoDividemp4 => "video/mp4",
+                AssetMimeType.VideoDividequicktime => "video/quicktime",
+                AssetMimeType.VideoDividewebm => "video/webm",
+                AssetMimeType.VideoDividexMatroska => "video/x-matroska",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
             };
         }
@@ -82,16 +82,16 @@ namespace DId
         {
             return value switch
             {
-                "image/gif" => AssetMimeType.ImageGif,
-                "image/jpeg" => AssetMimeType.ImageJpeg,
-                "image/jpg" => AssetMimeType.ImageJpg,
-                "image/png" => AssetMimeType.ImagePng,
-                "image/webp" => AssetMimeType.ImageWebp,
-                "video/matroska" => AssetMimeType.VideoMatroska,
-                "video/mp4" => AssetMimeType.VideoMp4,
-                "video/quicktime" => AssetMimeType.VideoQuicktime,
-                "video/webm" => AssetMimeType.VideoWebm,
-                "video/x-matroska" => AssetMimeType.VideoXMatroska,
+                "image/gif" => AssetMimeType.ImageDividegif,
+                "image/jpeg" => AssetMimeType.ImageDividejpeg,
+                "image/jpg" => AssetMimeType.ImageDividejpg,
+                "image/png" => AssetMimeType.ImageDividepng,
+                "image/webp" => AssetMimeType.ImageDividewebp,
+                "video/matroska" => AssetMimeType.VideoDividematroska,
+                "video/mp4" => AssetMimeType.VideoDividemp4,
+                "video/quicktime" => AssetMimeType.VideoDividequicktime,
+                "video/webm" => AssetMimeType.VideoDividewebm,
+                "video/x-matroska" => AssetMimeType.VideoDividexMatroska,
                 _ => null,
             };
         }

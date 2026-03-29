@@ -71,9 +71,9 @@ namespace DId
         /// </summary>
         /// <param name="id"></param>
         /// <param name="agentId"></param>
-        /// <param name="agent"></param>
         /// <param name="userId"></param>
         /// <param name="startTime"></param>
+        /// <param name="agent"></param>
         /// <param name="durationMinutes"></param>
         /// <param name="insights"></param>
         /// <param name="region"></param>
@@ -92,9 +92,9 @@ namespace DId
         {
             this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
             this.AgentId = agentId ?? throw new global::System.ArgumentNullException(nameof(agentId));
+            this.Agent = agent;
             this.UserId = userId ?? throw new global::System.ArgumentNullException(nameof(userId));
             this.StartTime = startTime ?? throw new global::System.ArgumentNullException(nameof(startTime));
-            this.Agent = agent;
             this.DurationMinutes = durationMinutes;
             this.Insights = insights;
             this.Region = region;

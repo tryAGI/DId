@@ -30,8 +30,8 @@ namespace DId
         /// <summary>
         /// Initializes a new instance of the <see cref="GetResponseVariant2" /> class.
         /// </summary>
-        /// <param name="metadata"></param>
         /// <param name="embed"></param>
+        /// <param name="metadata"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -39,8 +39,8 @@ namespace DId
             bool embed,
             global::DId.GetResponseVariant2Metadata? metadata)
         {
-            this.Embed = embed;
             this.Metadata = metadata;
+            this.Embed = embed;
         }
 
         /// <summary>

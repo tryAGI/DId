@@ -37,9 +37,9 @@ namespace DId
         /// <summary>
         /// Initializes a new instance of the <see cref="CreateClipStreamResponse" /> class.
         /// </summary>
-        /// <param name="duration"></param>
         /// <param name="sessionId"></param>
         /// <param name="status"></param>
+        /// <param name="duration"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -48,9 +48,9 @@ namespace DId
             string status,
             double? duration)
         {
+            this.Duration = duration;
             this.SessionId = sessionId ?? throw new global::System.ArgumentNullException(nameof(sessionId));
             this.Status = status ?? throw new global::System.ArgumentNullException(nameof(status));
-            this.Duration = duration;
         }
 
         /// <summary>

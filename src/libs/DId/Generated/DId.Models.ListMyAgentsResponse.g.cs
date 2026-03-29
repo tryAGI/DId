@@ -30,8 +30,8 @@ namespace DId
         /// <summary>
         /// Initializes a new instance of the <see cref="ListMyAgentsResponse" /> class.
         /// </summary>
-        /// <param name="token"></param>
         /// <param name="agents"></param>
+        /// <param name="token"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -39,8 +39,8 @@ namespace DId
             global::System.Collections.Generic.IList<global::DId.AllOf<global::DId.ListMyAgentsResponseAgentVariant1, global::DId.ListMyAgentsResponseAgentVariant2>> agents,
             string? token)
         {
-            this.Agents = agents ?? throw new global::System.ArgumentNullException(nameof(agents));
             this.Token = token;
+            this.Agents = agents ?? throw new global::System.ArgumentNullException(nameof(agents));
         }
 
         /// <summary>

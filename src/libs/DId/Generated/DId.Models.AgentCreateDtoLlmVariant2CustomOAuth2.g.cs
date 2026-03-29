@@ -76,15 +76,15 @@ namespace DId
         /// <summary>
         /// Initializes a new instance of the <see cref="AgentCreateDtoLlmVariant2CustomOAuth2" /> class.
         /// </summary>
-        /// <param name="type"></param>
         /// <param name="url"></param>
+        /// <param name="clientId"></param>
+        /// <param name="clientSecret"></param>
+        /// <param name="tokenUrl"></param>
+        /// <param name="type"></param>
         /// <param name="streaming"></param>
         /// <param name="maxMessages"></param>
         /// <param name="headers"></param>
         /// <param name="supportsSentiment"></param>
-        /// <param name="clientId"></param>
-        /// <param name="clientSecret"></param>
-        /// <param name="tokenUrl"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -99,15 +99,15 @@ namespace DId
             global::System.Collections.Generic.Dictionary<string, string>? headers,
             bool? supportsSentiment)
         {
-            this.Url = url ?? throw new global::System.ArgumentNullException(nameof(url));
-            this.ClientId = clientId ?? throw new global::System.ArgumentNullException(nameof(clientId));
-            this.ClientSecret = clientSecret ?? throw new global::System.ArgumentNullException(nameof(clientSecret));
-            this.TokenUrl = tokenUrl ?? throw new global::System.ArgumentNullException(nameof(tokenUrl));
             this.Type = type;
+            this.Url = url ?? throw new global::System.ArgumentNullException(nameof(url));
             this.Streaming = streaming;
             this.MaxMessages = maxMessages;
             this.Headers = headers;
             this.SupportsSentiment = supportsSentiment;
+            this.ClientId = clientId ?? throw new global::System.ArgumentNullException(nameof(clientId));
+            this.ClientSecret = clientSecret ?? throw new global::System.ArgumentNullException(nameof(clientSecret));
+            this.TokenUrl = tokenUrl ?? throw new global::System.ArgumentNullException(nameof(tokenUrl));
         }
 
         /// <summary>

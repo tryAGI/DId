@@ -11,43 +11,43 @@ namespace DId
         /// <summary>
         /// 
         /// </summary>
-        ImageGif,
+        ImageDividegif,
         /// <summary>
         /// 
         /// </summary>
-        ImageJpeg,
+        ImageDividejpeg,
         /// <summary>
         /// 
         /// </summary>
-        ImageJpg,
+        ImageDividejpg,
         /// <summary>
         /// 
         /// </summary>
-        ImagePng,
+        ImageDividepng,
         /// <summary>
         /// 
         /// </summary>
-        ImageWebp,
+        ImageDividewebp,
         /// <summary>
         /// 
         /// </summary>
-        VideoMatroska,
+        VideoDividematroska,
         /// <summary>
         /// 
         /// </summary>
-        VideoMp4,
+        VideoDividemp4,
         /// <summary>
         /// 
         /// </summary>
-        VideoQuicktime,
+        VideoDividequicktime,
         /// <summary>
         /// 
         /// </summary>
-        VideoWebm,
+        VideoDividewebm,
         /// <summary>
         /// 
         /// </summary>
-        VideoXMatroska,
+        VideoDividexMatroska,
     }
 
     /// <summary>
@@ -62,16 +62,16 @@ namespace DId
         {
             return value switch
             {
-                AssetCreateDtoMimeType.ImageGif => "image/gif",
-                AssetCreateDtoMimeType.ImageJpeg => "image/jpeg",
-                AssetCreateDtoMimeType.ImageJpg => "image/jpg",
-                AssetCreateDtoMimeType.ImagePng => "image/png",
-                AssetCreateDtoMimeType.ImageWebp => "image/webp",
-                AssetCreateDtoMimeType.VideoMatroska => "video/matroska",
-                AssetCreateDtoMimeType.VideoMp4 => "video/mp4",
-                AssetCreateDtoMimeType.VideoQuicktime => "video/quicktime",
-                AssetCreateDtoMimeType.VideoWebm => "video/webm",
-                AssetCreateDtoMimeType.VideoXMatroska => "video/x-matroska",
+                AssetCreateDtoMimeType.ImageDividegif => "image/gif",
+                AssetCreateDtoMimeType.ImageDividejpeg => "image/jpeg",
+                AssetCreateDtoMimeType.ImageDividejpg => "image/jpg",
+                AssetCreateDtoMimeType.ImageDividepng => "image/png",
+                AssetCreateDtoMimeType.ImageDividewebp => "image/webp",
+                AssetCreateDtoMimeType.VideoDividematroska => "video/matroska",
+                AssetCreateDtoMimeType.VideoDividemp4 => "video/mp4",
+                AssetCreateDtoMimeType.VideoDividequicktime => "video/quicktime",
+                AssetCreateDtoMimeType.VideoDividewebm => "video/webm",
+                AssetCreateDtoMimeType.VideoDividexMatroska => "video/x-matroska",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
             };
         }
@@ -82,16 +82,16 @@ namespace DId
         {
             return value switch
             {
-                "image/gif" => AssetCreateDtoMimeType.ImageGif,
-                "image/jpeg" => AssetCreateDtoMimeType.ImageJpeg,
-                "image/jpg" => AssetCreateDtoMimeType.ImageJpg,
-                "image/png" => AssetCreateDtoMimeType.ImagePng,
-                "image/webp" => AssetCreateDtoMimeType.ImageWebp,
-                "video/matroska" => AssetCreateDtoMimeType.VideoMatroska,
-                "video/mp4" => AssetCreateDtoMimeType.VideoMp4,
-                "video/quicktime" => AssetCreateDtoMimeType.VideoQuicktime,
-                "video/webm" => AssetCreateDtoMimeType.VideoWebm,
-                "video/x-matroska" => AssetCreateDtoMimeType.VideoXMatroska,
+                "image/gif" => AssetCreateDtoMimeType.ImageDividegif,
+                "image/jpeg" => AssetCreateDtoMimeType.ImageDividejpeg,
+                "image/jpg" => AssetCreateDtoMimeType.ImageDividejpg,
+                "image/png" => AssetCreateDtoMimeType.ImageDividepng,
+                "image/webp" => AssetCreateDtoMimeType.ImageDividewebp,
+                "video/matroska" => AssetCreateDtoMimeType.VideoDividematroska,
+                "video/mp4" => AssetCreateDtoMimeType.VideoDividemp4,
+                "video/quicktime" => AssetCreateDtoMimeType.VideoDividequicktime,
+                "video/webm" => AssetCreateDtoMimeType.VideoDividewebm,
+                "video/x-matroska" => AssetCreateDtoMimeType.VideoDividexMatroska,
                 _ => null,
             };
         }

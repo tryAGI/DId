@@ -32,10 +32,10 @@ namespace DId
         /// <summary>
         /// Initializes a new instance of the <see cref="Create3RequestBackgroundVariant1" /> class.
         /// </summary>
-        /// <param name="type"></param>
         /// <param name="value">
         /// Example: #47ffff
         /// </param>
+        /// <param name="type"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -43,8 +43,8 @@ namespace DId
             string value,
             global::DId.Create3RequestBackgroundVariant1Type type)
         {
-            this.Value = value ?? throw new global::System.ArgumentNullException(nameof(value));
             this.Type = type;
+            this.Value = value ?? throw new global::System.ArgumentNullException(nameof(value));
         }
 
         /// <summary>

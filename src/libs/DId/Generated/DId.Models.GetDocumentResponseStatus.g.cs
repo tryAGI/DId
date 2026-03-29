@@ -11,703 +11,703 @@ namespace DId
         /// <summary>
         /// 
         /// </summary>
-        AgentAssetCreated,
+        AgentDivideassetCreated,
         /// <summary>
         /// 
         /// </summary>
-        AgentAssetDone,
+        AgentDivideassetDone,
         /// <summary>
         /// 
         /// </summary>
-        AgentAssetError,
+        AgentDivideassetError,
         /// <summary>
         /// 
         /// </summary>
-        AgentAssetStarted,
+        AgentDivideassetStarted,
         /// <summary>
         /// 
         /// </summary>
-        AgentCreated,
+        AgentDividecreated,
         /// <summary>
         /// 
         /// </summary>
-        AgentDone,
+        AgentDividedone,
         /// <summary>
         /// 
         /// </summary>
-        AgentError,
+        AgentDivideerror,
         /// <summary>
         /// 
         /// </summary>
-        AgentInsightsDeleted,
+        AgentDivideinsightsDividedeleted,
         /// <summary>
         /// 
         /// </summary>
-        AgentReady,
+        AgentDivideready,
         /// <summary>
         /// 
         /// </summary>
-        AgentReadyForPreprocess,
+        AgentDividereadyForPreprocess,
         /// <summary>
         /// 
         /// </summary>
-        AgentRejected,
+        AgentDividerejected,
         /// <summary>
         /// 
         /// </summary>
-        AgentStarted,
+        AgentDividestarted,
         /// <summary>
         /// 
         /// </summary>
-        AnimateTaskCreated,
+        AnimateTaskDividecreated,
         /// <summary>
         /// 
         /// </summary>
-        AnimateCreated,
+        AnimateDividecreated,
         /// <summary>
         /// 
         /// </summary>
-        AnimateDone,
+        AnimateDividedone,
         /// <summary>
         /// 
         /// </summary>
-        AnimateError,
+        AnimateDivideerror,
         /// <summary>
         /// 
         /// </summary>
-        AnimatePostDone,
+        AnimateDividepostDone,
         /// <summary>
         /// 
         /// </summary>
-        AnimatePostError,
+        AnimateDividepostError,
         /// <summary>
         /// 
         /// </summary>
-        AnimateStarted,
+        AnimateDividestarted,
         /// <summary>
         /// 
         /// </summary>
-        AudioRejected,
+        AudioDividerejected,
         /// <summary>
         /// 
         /// </summary>
-        ChatDataDeleted,
+        ChatDividedataDeleted,
         /// <summary>
         /// 
         /// </summary>
-        ChatMessagesAdded,
+        ChatDividemessagesAdded,
         /// <summary>
         /// 
         /// </summary>
-        ChatProgress,
+        ChatDivideprogress,
         /// <summary>
         /// 
         /// </summary>
-        ChatSpeak,
+        ChatDividespeak,
         /// <summary>
         /// 
         /// </summary>
-        ChatsInvoiceFailed,
+        ChatsDivideinvoiceDividefailed,
         /// <summary>
         /// 
         /// </summary>
-        ChatsInvoicePaid,
+        ChatsDivideinvoiceDividepaid,
         /// <summary>
         /// 
         /// </summary>
-        ClipAvatarCreated,
+        ClipDivideavatarCreated,
         /// <summary>
         /// 
         /// </summary>
-        ClipAvatarDone,
+        ClipDivideavatarDone,
         /// <summary>
         /// 
         /// </summary>
-        ClipAvatarError,
+        ClipDivideavatarError,
         /// <summary>
         /// 
         /// </summary>
-        ClipAvatarErrorNotification,
+        ClipDivideavatarErrorNotification,
         /// <summary>
         /// 
         /// </summary>
-        ClipAvatarPostDone,
+        ClipDivideavatarPostDone,
         /// <summary>
         /// 
         /// </summary>
-        ClipAvatarProgress,
+        ClipDivideavatarProgress,
         /// <summary>
         /// 
         /// </summary>
-        ClipAvatarReady,
+        ClipDivideavatarReady,
         /// <summary>
         /// 
         /// </summary>
-        ClipAvatarRejected,
+        ClipDivideavatarRejected,
         /// <summary>
         /// 
         /// </summary>
-        ClipAvatarStarted,
+        ClipDivideavatarStarted,
         /// <summary>
         /// 
         /// </summary>
-        ClipAvatarTrainingArtifactsUpdated,
+        ClipDivideavatarTrainingArtifactsUpdated,
         /// <summary>
         /// 
         /// </summary>
-        ClipCreated,
+        ClipDividecreated,
         /// <summary>
         /// 
         /// </summary>
-        ClipDeleted,
+        ClipDividedeleted,
         /// <summary>
         /// 
         /// </summary>
-        ClipDone,
+        ClipDividedone,
         /// <summary>
         /// 
         /// </summary>
-        ClipError,
+        ClipDivideerror,
         /// <summary>
         /// 
         /// </summary>
-        ClipPostDone,
+        ClipDividepostDone,
         /// <summary>
         /// 
         /// </summary>
-        ClipPostError,
+        ClipDividepostError,
         /// <summary>
         /// 
         /// </summary>
-        ClipRejected,
+        ClipDividerejected,
         /// <summary>
         /// 
         /// </summary>
-        ClipStarted,
+        ClipDividestarted,
         /// <summary>
         /// 
         /// </summary>
-        ClipStreamCreated,
+        ClipDividestreamDividecreated,
         /// <summary>
         /// 
         /// </summary>
-        ClipStreamDone,
+        ClipDividestreamDividedone,
         /// <summary>
         /// 
         /// </summary>
-        ClipStreamError,
+        ClipDividestreamDivideerror,
         /// <summary>
         /// 
         /// </summary>
-        ClipStreamPostDone,
+        ClipDividestreamDividepostDone,
         /// <summary>
         /// 
         /// </summary>
-        ClipStreamPostError,
+        ClipDividestreamDividepostError,
         /// <summary>
         /// 
         /// </summary>
-        ClipStreamRejected,
+        ClipDividestreamDividerejected,
         /// <summary>
         /// 
         /// </summary>
-        ClipStreamStarted,
+        ClipDividestreamDividestarted,
         /// <summary>
         /// 
         /// </summary>
-        ClipV2Created,
+        ClipDividev2Created,
         /// <summary>
         /// 
         /// </summary>
-        ConsentsDone,
+        ConsentsDividedone,
         /// <summary>
         /// 
         /// </summary>
-        ConsentsError,
+        ConsentsDivideerror,
         /// <summary>
         /// 
         /// </summary>
-        ConsentsRejected,
+        ConsentsDividerejected,
         /// <summary>
         /// 
         /// </summary>
-        ConsentsStartValidation,
+        ConsentsDividestartValidation,
         /// <summary>
         /// 
         /// </summary>
-        CreditsCharge,
+        CreditsDividecharge,
         /// <summary>
         /// 
         /// </summary>
-        DocumentCreated,
+        DocumentDividecreated,
         /// <summary>
         /// 
         /// </summary>
-        DocumentDone,
+        DocumentDividedone,
         /// <summary>
         /// 
         /// </summary>
-        DocumentError,
+        DocumentDivideerror,
         /// <summary>
         /// 
         /// </summary>
-        DocumentProcessed,
+        DocumentDivideprocessed,
         /// <summary>
         /// 
         /// </summary>
-        DocumentRejected,
+        DocumentDividerejected,
         /// <summary>
         /// 
         /// </summary>
-        ExportCreated,
+        ExportDividecreated,
         /// <summary>
         /// 
         /// </summary>
-        ExportDeleted,
+        ExportDividedeleted,
         /// <summary>
         /// 
         /// </summary>
-        ExportDone,
+        ExportDividedone,
         /// <summary>
         /// 
         /// </summary>
-        ExportError,
+        ExportDivideerror,
         /// <summary>
         /// 
         /// </summary>
-        ExportPartial,
+        ExportDividepartial,
         /// <summary>
         /// 
         /// </summary>
-        ExportStarted,
+        ExportDividestarted,
         /// <summary>
         /// 
         /// </summary>
-        ExpressiveAvatarTrained,
+        ExpressiveDivideavatarTrained,
         /// <summary>
         /// 
         /// </summary>
-        ExpressiveCreated,
+        ExpressiveDividecreated,
         /// <summary>
         /// 
         /// </summary>
-        ExpressiveDone,
+        ExpressiveDividedone,
         /// <summary>
         /// 
         /// </summary>
-        ExpressiveError,
+        ExpressiveDivideerror,
         /// <summary>
         /// 
         /// </summary>
-        ExpressivePostDone,
+        ExpressiveDividepostDone,
         /// <summary>
         /// 
         /// </summary>
-        ExpressivePostError,
+        ExpressiveDividepostError,
         /// <summary>
         /// 
         /// </summary>
-        ExpressiveRejected,
+        ExpressiveDividerejected,
         /// <summary>
         /// 
         /// </summary>
-        ExpressiveStarted,
+        ExpressiveDividestarted,
         /// <summary>
         /// 
         /// </summary>
-        ExpressiveStreamDone,
+        ExpressiveDividestreamDividedone,
         /// <summary>
         /// 
         /// </summary>
-        ImageRejected,
+        ImageDividerejected,
         /// <summary>
         /// 
         /// </summary>
-        InvoiceFailed,
+        InvoiceDividefailed,
         /// <summary>
         /// 
         /// </summary>
-        InvoicePaid,
+        InvoiceDividepaid,
         /// <summary>
         /// 
         /// </summary>
-        KnowledgeDone,
+        KnowledgeDividedone,
         /// <summary>
         /// 
         /// </summary>
-        KnowledgeError,
+        KnowledgeDivideerror,
         /// <summary>
         /// 
         /// </summary>
-        KnowledgeProcessing,
+        KnowledgeDivideprocessing,
         /// <summary>
         /// 
         /// </summary>
-        OrganizationCreated,
+        OrganizationDividecreated,
         /// <summary>
         /// 
         /// </summary>
-        OrganizationDeleted,
+        OrganizationDividedeleted,
         /// <summary>
         /// 
         /// </summary>
-        OrganizationMemberAdded,
+        OrganizationDividememberAdded,
         /// <summary>
         /// 
         /// </summary>
-        ProjectDeleted,
+        ProjectDividedeleted,
         /// <summary>
         /// 
         /// </summary>
-        ProjectDone,
+        ProjectDividedone,
         /// <summary>
         /// 
         /// </summary>
-        ProjectError,
+        ProjectDivideerror,
         /// <summary>
         /// 
         /// </summary>
-        ProjectPostDone,
+        ProjectDividepostDone,
         /// <summary>
         /// 
         /// </summary>
-        ProjectReady,
+        ProjectDivideready,
         /// <summary>
         /// 
         /// </summary>
-        ProjectRejected,
+        ProjectDividerejected,
         /// <summary>
         /// 
         /// </summary>
-        ProjectStarted,
+        ProjectDividestarted,
         /// <summary>
         /// 
         /// </summary>
-        RenderCreated,
+        RenderDividecreated,
         /// <summary>
         /// 
         /// </summary>
-        RenderDone,
+        RenderDividedone,
         /// <summary>
         /// 
         /// </summary>
-        RenderError,
+        RenderDivideerror,
         /// <summary>
         /// 
         /// </summary>
-        RenderStarted,
+        RenderDividestarted,
         /// <summary>
         /// 
         /// </summary>
-        SceneAvatarCreated,
+        SceneDivideavatarCreated,
         /// <summary>
         /// 
         /// </summary>
-        SceneAvatarDone,
+        SceneDivideavatarDone,
         /// <summary>
         /// 
         /// </summary>
-        SceneAvatarError,
+        SceneDivideavatarError,
         /// <summary>
         /// 
         /// </summary>
-        SceneAvatarItemCreated,
+        SceneDivideavatarItemCreated,
         /// <summary>
         /// 
         /// </summary>
-        SceneAvatarPostDone,
+        SceneDivideavatarPostDone,
         /// <summary>
         /// 
         /// </summary>
-        SceneAvatarPostError,
+        SceneDivideavatarPostError,
         /// <summary>
         /// 
         /// </summary>
-        SceneAvatarStarted,
+        SceneDivideavatarStarted,
         /// <summary>
         /// 
         /// </summary>
-        SceneAvatarTrainingStarted,
+        SceneDivideavatarTrainingStarted,
         /// <summary>
         /// 
         /// </summary>
-        SceneAvatarValidationsDone,
+        SceneDivideavatarValidationsDone,
         /// <summary>
         /// 
         /// </summary>
-        SceneAvatarValidationsError,
+        SceneDivideavatarValidationsError,
         /// <summary>
         /// 
         /// </summary>
-        SceneCreated,
+        SceneDividecreated,
         /// <summary>
         /// 
         /// </summary>
-        SceneDone,
+        SceneDividedone,
         /// <summary>
         /// 
         /// </summary>
-        SceneError,
+        SceneDivideerror,
         /// <summary>
         /// 
         /// </summary>
-        ScenePostDone,
+        SceneDividepostDone,
         /// <summary>
         /// 
         /// </summary>
-        ScenePostError,
+        SceneDividepostError,
         /// <summary>
         /// 
         /// </summary>
-        SceneStarted,
+        SceneDividestarted,
         /// <summary>
         /// 
         /// </summary>
-        ScenesAvatarsFileUploaded,
+        ScenesDivideavatarsFileUploaded,
         /// <summary>
         /// 
         /// </summary>
-        StreamVideoDone,
+        StreamVideoDividedone,
         /// <summary>
         /// 
         /// </summary>
-        StreamVideoError,
+        StreamVideoDivideerror,
         /// <summary>
         /// 
         /// </summary>
-        StreamVideoRejected,
+        StreamVideoDividerejected,
         /// <summary>
         /// 
         /// </summary>
-        StreamVideoStarted,
+        StreamVideoDividestarted,
         /// <summary>
         /// 
         /// </summary>
-        StreamDone,
+        StreamDividedone,
         /// <summary>
         /// 
         /// </summary>
-        TalkCreated,
+        TalkDividecreated,
         /// <summary>
         /// 
         /// </summary>
-        TalkDeleted,
+        TalkDividedeleted,
         /// <summary>
         /// 
         /// </summary>
-        TalkDone,
+        TalkDividedone,
         /// <summary>
         /// 
         /// </summary>
-        TalkError,
+        TalkDivideerror,
         /// <summary>
         /// 
         /// </summary>
-        TalkPostDone,
+        TalkDividepostDone,
         /// <summary>
         /// 
         /// </summary>
-        TalkPostError,
+        TalkDividepostError,
         /// <summary>
         /// 
         /// </summary>
-        TalkRejected,
+        TalkDividerejected,
         /// <summary>
         /// 
         /// </summary>
-        TalkStarted,
+        TalkDividestarted,
         /// <summary>
         /// 
         /// </summary>
-        TalkStreamCreated,
+        TalkDividestreamDividecreated,
         /// <summary>
         /// 
         /// </summary>
-        TalkStreamDone,
+        TalkDividestreamDividedone,
         /// <summary>
         /// 
         /// </summary>
-        TalkStreamError,
+        TalkDividestreamDivideerror,
         /// <summary>
         /// 
         /// </summary>
-        TalkStreamPostDone,
+        TalkDividestreamDividepostDone,
         /// <summary>
         /// 
         /// </summary>
-        TalkStreamPostError,
+        TalkDividestreamDividepostError,
         /// <summary>
         /// 
         /// </summary>
-        TalkStreamRejected,
+        TalkDividestreamDividerejected,
         /// <summary>
         /// 
         /// </summary>
-        TalkStreamStarted,
+        TalkDividestreamDividestarted,
         /// <summary>
         /// 
         /// </summary>
-        TranslationAudioDataUpdated,
+        TranslationDivideaudioDataUpdated,
         /// <summary>
         /// 
         /// </summary>
-        TranslationCelebDetectionDone,
+        TranslationDividecelebDetectionDone,
         /// <summary>
         /// 
         /// </summary>
-        TranslationCelebDetectionError,
+        TranslationDividecelebDetectionError,
         /// <summary>
         /// 
         /// </summary>
-        TranslationDeleted,
+        TranslationDividedeleted,
         /// <summary>
         /// 
         /// </summary>
-        TranslationDone,
+        TranslationDividedone,
         /// <summary>
         /// 
         /// </summary>
-        TranslationError,
+        TranslationDivideerror,
         /// <summary>
         /// 
         /// </summary>
-        TranslationFileUploaded,
+        TranslationDividefileUploaded,
         /// <summary>
         /// 
         /// </summary>
-        TranslationGroupDone,
+        TranslationDividegroupDone,
         /// <summary>
         /// 
         /// </summary>
-        TranslationGroupError,
+        TranslationDividegroupError,
         /// <summary>
         /// 
         /// </summary>
-        TranslationGroupPartialDone,
+        TranslationDividegroupPartialDone,
         /// <summary>
         /// 
         /// </summary>
-        TranslationGroupPartialError,
+        TranslationDividegroupPartialError,
         /// <summary>
         /// 
         /// </summary>
-        TranslationGroupPostDone,
+        TranslationDividegroupPostDone,
         /// <summary>
         /// 
         /// </summary>
-        TranslationGroupPostError,
+        TranslationDividegroupPostError,
         /// <summary>
         /// 
         /// </summary>
-        TranslationGroupStarted,
+        TranslationDividegroupStarted,
         /// <summary>
         /// 
         /// </summary>
-        TranslationItemCreated,
+        TranslationDivideitemCreated,
         /// <summary>
         /// 
         /// </summary>
-        TranslationPostDone,
+        TranslationDividepostDone,
         /// <summary>
         /// 
         /// </summary>
-        TranslationPostError,
+        TranslationDividepostError,
         /// <summary>
         /// 
         /// </summary>
-        TranslationReady,
+        TranslationDivideready,
         /// <summary>
         /// 
         /// </summary>
-        TranslationSpeechDone,
+        TranslationDividespeechDone,
         /// <summary>
         /// 
         /// </summary>
-        TranslationSpeechError,
+        TranslationDividespeechError,
         /// <summary>
         /// 
         /// </summary>
-        TranslationStarted,
+        TranslationDividestarted,
         /// <summary>
         /// 
         /// </summary>
-        TranslationSubtitlesDone,
+        TranslationDividesubtitlesDone,
         /// <summary>
         /// 
         /// </summary>
-        TriggerToolResult,
+        TriggerDividetoolDivideresult,
         /// <summary>
         /// 
         /// </summary>
-        TriggerWebhookDone,
+        TriggerDividewebhookDividedone,
         /// <summary>
         /// 
         /// </summary>
-        TriggerWebhookError,
+        TriggerDividewebhookDivideerror,
         /// <summary>
         /// 
         /// </summary>
-        UserAccountMerged,
+        UserDivideaccountMerged,
         /// <summary>
         /// 
         /// </summary>
-        UserAccountMergedManually,
+        UserDivideaccountMergedManually,
         /// <summary>
         /// 
         /// </summary>
-        UserApiKeyCreated,
+        UserDivideapiKeyCreated,
         /// <summary>
         /// 
         /// </summary>
-        UserDeleted,
+        UserDividedeleted,
         /// <summary>
         /// 
         /// </summary>
-        UserFirstVisit,
+        UserDividefirstVisit,
         /// <summary>
         /// 
         /// </summary>
-        UserRegistered,
+        UserDivideregistered,
         /// <summary>
         /// 
         /// </summary>
-        UserSubscriptionCreated,
+        UserDividesubscriptionCreated,
         /// <summary>
         /// 
         /// </summary>
-        UserSubscriptionDeleted,
+        UserDividesubscriptionDeleted,
         /// <summary>
         /// 
         /// </summary>
-        UserSubscriptionRenewed,
+        UserDividesubscriptionRenewed,
         /// <summary>
         /// 
         /// </summary>
-        UserSubscriptionTransferred,
+        UserDividesubscriptionTransferred,
         /// <summary>
         /// 
         /// </summary>
-        UserSubscriptionUpdated,
+        UserDividesubscriptionUpdated,
         /// <summary>
         /// 
         /// </summary>
-        UserSubscriptionWillEnd,
+        UserDividesubscriptionWillEnd,
         /// <summary>
         /// 
         /// </summary>
-        UserUpdated,
+        UserDivideupdated,
         /// <summary>
         /// 
         /// </summary>
-        VoiceDone,
+        VoiceDividedone,
         /// <summary>
         /// 
         /// </summary>
-        VoiceError,
+        VoiceDivideerror,
         /// <summary>
         /// 
         /// </summary>
-        VoiceRejected,
+        VoiceDividerejected,
     }
 
     /// <summary>
@@ -722,181 +722,181 @@ namespace DId
         {
             return value switch
             {
-                GetDocumentResponseStatus.AgentAssetCreated => "agent/asset-created",
-                GetDocumentResponseStatus.AgentAssetDone => "agent/asset-done",
-                GetDocumentResponseStatus.AgentAssetError => "agent/asset-error",
-                GetDocumentResponseStatus.AgentAssetStarted => "agent/asset-started",
-                GetDocumentResponseStatus.AgentCreated => "agent/created",
-                GetDocumentResponseStatus.AgentDone => "agent/done",
-                GetDocumentResponseStatus.AgentError => "agent/error",
-                GetDocumentResponseStatus.AgentInsightsDeleted => "agent/insights/deleted",
-                GetDocumentResponseStatus.AgentReady => "agent/ready",
-                GetDocumentResponseStatus.AgentReadyForPreprocess => "agent/ready-for-preprocess",
-                GetDocumentResponseStatus.AgentRejected => "agent/rejected",
-                GetDocumentResponseStatus.AgentStarted => "agent/started",
-                GetDocumentResponseStatus.AnimateTaskCreated => "animate-task/created",
-                GetDocumentResponseStatus.AnimateCreated => "animate/created",
-                GetDocumentResponseStatus.AnimateDone => "animate/done",
-                GetDocumentResponseStatus.AnimateError => "animate/error",
-                GetDocumentResponseStatus.AnimatePostDone => "animate/post-done",
-                GetDocumentResponseStatus.AnimatePostError => "animate/post-error",
-                GetDocumentResponseStatus.AnimateStarted => "animate/started",
-                GetDocumentResponseStatus.AudioRejected => "audio/rejected",
-                GetDocumentResponseStatus.ChatDataDeleted => "chat/data-deleted",
-                GetDocumentResponseStatus.ChatMessagesAdded => "chat/messages-added",
-                GetDocumentResponseStatus.ChatProgress => "chat/progress",
-                GetDocumentResponseStatus.ChatSpeak => "chat/speak",
-                GetDocumentResponseStatus.ChatsInvoiceFailed => "chats/invoice/failed",
-                GetDocumentResponseStatus.ChatsInvoicePaid => "chats/invoice/paid",
-                GetDocumentResponseStatus.ClipAvatarCreated => "clip/avatar-created",
-                GetDocumentResponseStatus.ClipAvatarDone => "clip/avatar-done",
-                GetDocumentResponseStatus.ClipAvatarError => "clip/avatar-error",
-                GetDocumentResponseStatus.ClipAvatarErrorNotification => "clip/avatar-error-notification",
-                GetDocumentResponseStatus.ClipAvatarPostDone => "clip/avatar-post-done",
-                GetDocumentResponseStatus.ClipAvatarProgress => "clip/avatar-progress",
-                GetDocumentResponseStatus.ClipAvatarReady => "clip/avatar-ready",
-                GetDocumentResponseStatus.ClipAvatarRejected => "clip/avatar-rejected",
-                GetDocumentResponseStatus.ClipAvatarStarted => "clip/avatar-started",
-                GetDocumentResponseStatus.ClipAvatarTrainingArtifactsUpdated => "clip/avatar-training-artifacts-updated",
-                GetDocumentResponseStatus.ClipCreated => "clip/created",
-                GetDocumentResponseStatus.ClipDeleted => "clip/deleted",
-                GetDocumentResponseStatus.ClipDone => "clip/done",
-                GetDocumentResponseStatus.ClipError => "clip/error",
-                GetDocumentResponseStatus.ClipPostDone => "clip/post-done",
-                GetDocumentResponseStatus.ClipPostError => "clip/post-error",
-                GetDocumentResponseStatus.ClipRejected => "clip/rejected",
-                GetDocumentResponseStatus.ClipStarted => "clip/started",
-                GetDocumentResponseStatus.ClipStreamCreated => "clip/stream/created",
-                GetDocumentResponseStatus.ClipStreamDone => "clip/stream/done",
-                GetDocumentResponseStatus.ClipStreamError => "clip/stream/error",
-                GetDocumentResponseStatus.ClipStreamPostDone => "clip/stream/post-done",
-                GetDocumentResponseStatus.ClipStreamPostError => "clip/stream/post-error",
-                GetDocumentResponseStatus.ClipStreamRejected => "clip/stream/rejected",
-                GetDocumentResponseStatus.ClipStreamStarted => "clip/stream/started",
-                GetDocumentResponseStatus.ClipV2Created => "clip/v2-created",
-                GetDocumentResponseStatus.ConsentsDone => "consents/done",
-                GetDocumentResponseStatus.ConsentsError => "consents/error",
-                GetDocumentResponseStatus.ConsentsRejected => "consents/rejected",
-                GetDocumentResponseStatus.ConsentsStartValidation => "consents/start-validation",
-                GetDocumentResponseStatus.CreditsCharge => "credits/charge",
-                GetDocumentResponseStatus.DocumentCreated => "document/created",
-                GetDocumentResponseStatus.DocumentDone => "document/done",
-                GetDocumentResponseStatus.DocumentError => "document/error",
-                GetDocumentResponseStatus.DocumentProcessed => "document/processed",
-                GetDocumentResponseStatus.DocumentRejected => "document/rejected",
-                GetDocumentResponseStatus.ExportCreated => "export/created",
-                GetDocumentResponseStatus.ExportDeleted => "export/deleted",
-                GetDocumentResponseStatus.ExportDone => "export/done",
-                GetDocumentResponseStatus.ExportError => "export/error",
-                GetDocumentResponseStatus.ExportPartial => "export/partial",
-                GetDocumentResponseStatus.ExportStarted => "export/started",
-                GetDocumentResponseStatus.ExpressiveAvatarTrained => "expressive/avatar-trained",
-                GetDocumentResponseStatus.ExpressiveCreated => "expressive/created",
-                GetDocumentResponseStatus.ExpressiveDone => "expressive/done",
-                GetDocumentResponseStatus.ExpressiveError => "expressive/error",
-                GetDocumentResponseStatus.ExpressivePostDone => "expressive/post-done",
-                GetDocumentResponseStatus.ExpressivePostError => "expressive/post-error",
-                GetDocumentResponseStatus.ExpressiveRejected => "expressive/rejected",
-                GetDocumentResponseStatus.ExpressiveStarted => "expressive/started",
-                GetDocumentResponseStatus.ExpressiveStreamDone => "expressive/stream/done",
-                GetDocumentResponseStatus.ImageRejected => "image/rejected",
-                GetDocumentResponseStatus.InvoiceFailed => "invoice/failed",
-                GetDocumentResponseStatus.InvoicePaid => "invoice/paid",
-                GetDocumentResponseStatus.KnowledgeDone => "knowledge/done",
-                GetDocumentResponseStatus.KnowledgeError => "knowledge/error",
-                GetDocumentResponseStatus.KnowledgeProcessing => "knowledge/processing",
-                GetDocumentResponseStatus.OrganizationCreated => "organization/created",
-                GetDocumentResponseStatus.OrganizationDeleted => "organization/deleted",
-                GetDocumentResponseStatus.OrganizationMemberAdded => "organization/member-added",
-                GetDocumentResponseStatus.ProjectDeleted => "project/deleted",
-                GetDocumentResponseStatus.ProjectDone => "project/done",
-                GetDocumentResponseStatus.ProjectError => "project/error",
-                GetDocumentResponseStatus.ProjectPostDone => "project/post-done",
-                GetDocumentResponseStatus.ProjectReady => "project/ready",
-                GetDocumentResponseStatus.ProjectRejected => "project/rejected",
-                GetDocumentResponseStatus.ProjectStarted => "project/started",
-                GetDocumentResponseStatus.RenderCreated => "render/created",
-                GetDocumentResponseStatus.RenderDone => "render/done",
-                GetDocumentResponseStatus.RenderError => "render/error",
-                GetDocumentResponseStatus.RenderStarted => "render/started",
-                GetDocumentResponseStatus.SceneAvatarCreated => "scene/avatar-created",
-                GetDocumentResponseStatus.SceneAvatarDone => "scene/avatar-done",
-                GetDocumentResponseStatus.SceneAvatarError => "scene/avatar-error",
-                GetDocumentResponseStatus.SceneAvatarItemCreated => "scene/avatar-item-created",
-                GetDocumentResponseStatus.SceneAvatarPostDone => "scene/avatar-post-done",
-                GetDocumentResponseStatus.SceneAvatarPostError => "scene/avatar-post-error",
-                GetDocumentResponseStatus.SceneAvatarStarted => "scene/avatar-started",
-                GetDocumentResponseStatus.SceneAvatarTrainingStarted => "scene/avatar-training-started",
-                GetDocumentResponseStatus.SceneAvatarValidationsDone => "scene/avatar-validations-done",
-                GetDocumentResponseStatus.SceneAvatarValidationsError => "scene/avatar-validations-error",
-                GetDocumentResponseStatus.SceneCreated => "scene/created",
-                GetDocumentResponseStatus.SceneDone => "scene/done",
-                GetDocumentResponseStatus.SceneError => "scene/error",
-                GetDocumentResponseStatus.ScenePostDone => "scene/post-done",
-                GetDocumentResponseStatus.ScenePostError => "scene/post-error",
-                GetDocumentResponseStatus.SceneStarted => "scene/started",
-                GetDocumentResponseStatus.ScenesAvatarsFileUploaded => "scenes/avatars-file-uploaded",
-                GetDocumentResponseStatus.StreamVideoDone => "stream-video/done",
-                GetDocumentResponseStatus.StreamVideoError => "stream-video/error",
-                GetDocumentResponseStatus.StreamVideoRejected => "stream-video/rejected",
-                GetDocumentResponseStatus.StreamVideoStarted => "stream-video/started",
-                GetDocumentResponseStatus.StreamDone => "stream/done",
-                GetDocumentResponseStatus.TalkCreated => "talk/created",
-                GetDocumentResponseStatus.TalkDeleted => "talk/deleted",
-                GetDocumentResponseStatus.TalkDone => "talk/done",
-                GetDocumentResponseStatus.TalkError => "talk/error",
-                GetDocumentResponseStatus.TalkPostDone => "talk/post-done",
-                GetDocumentResponseStatus.TalkPostError => "talk/post-error",
-                GetDocumentResponseStatus.TalkRejected => "talk/rejected",
-                GetDocumentResponseStatus.TalkStarted => "talk/started",
-                GetDocumentResponseStatus.TalkStreamCreated => "talk/stream/created",
-                GetDocumentResponseStatus.TalkStreamDone => "talk/stream/done",
-                GetDocumentResponseStatus.TalkStreamError => "talk/stream/error",
-                GetDocumentResponseStatus.TalkStreamPostDone => "talk/stream/post-done",
-                GetDocumentResponseStatus.TalkStreamPostError => "talk/stream/post-error",
-                GetDocumentResponseStatus.TalkStreamRejected => "talk/stream/rejected",
-                GetDocumentResponseStatus.TalkStreamStarted => "talk/stream/started",
-                GetDocumentResponseStatus.TranslationAudioDataUpdated => "translation/audio-data-updated",
-                GetDocumentResponseStatus.TranslationCelebDetectionDone => "translation/celeb-detection-done",
-                GetDocumentResponseStatus.TranslationCelebDetectionError => "translation/celeb-detection-error",
-                GetDocumentResponseStatus.TranslationDeleted => "translation/deleted",
-                GetDocumentResponseStatus.TranslationDone => "translation/done",
-                GetDocumentResponseStatus.TranslationError => "translation/error",
-                GetDocumentResponseStatus.TranslationFileUploaded => "translation/file-uploaded",
-                GetDocumentResponseStatus.TranslationGroupDone => "translation/group-done",
-                GetDocumentResponseStatus.TranslationGroupError => "translation/group-error",
-                GetDocumentResponseStatus.TranslationGroupPartialDone => "translation/group-partial-done",
-                GetDocumentResponseStatus.TranslationGroupPartialError => "translation/group-partial-error",
-                GetDocumentResponseStatus.TranslationGroupPostDone => "translation/group-post-done",
-                GetDocumentResponseStatus.TranslationGroupPostError => "translation/group-post-error",
-                GetDocumentResponseStatus.TranslationGroupStarted => "translation/group-started",
-                GetDocumentResponseStatus.TranslationItemCreated => "translation/item-created",
-                GetDocumentResponseStatus.TranslationPostDone => "translation/post-done",
-                GetDocumentResponseStatus.TranslationPostError => "translation/post-error",
-                GetDocumentResponseStatus.TranslationReady => "translation/ready",
-                GetDocumentResponseStatus.TranslationSpeechDone => "translation/speech-done",
-                GetDocumentResponseStatus.TranslationSpeechError => "translation/speech-error",
-                GetDocumentResponseStatus.TranslationStarted => "translation/started",
-                GetDocumentResponseStatus.TranslationSubtitlesDone => "translation/subtitles-done",
-                GetDocumentResponseStatus.TriggerToolResult => "trigger/tool/result",
-                GetDocumentResponseStatus.TriggerWebhookDone => "trigger/webhook/done",
-                GetDocumentResponseStatus.TriggerWebhookError => "trigger/webhook/error",
-                GetDocumentResponseStatus.UserAccountMerged => "user/account-merged",
-                GetDocumentResponseStatus.UserAccountMergedManually => "user/account-merged-manually",
-                GetDocumentResponseStatus.UserApiKeyCreated => "user/api-key-created",
-                GetDocumentResponseStatus.UserDeleted => "user/deleted",
-                GetDocumentResponseStatus.UserFirstVisit => "user/first-visit",
-                GetDocumentResponseStatus.UserRegistered => "user/registered",
-                GetDocumentResponseStatus.UserSubscriptionCreated => "user/subscription-created",
-                GetDocumentResponseStatus.UserSubscriptionDeleted => "user/subscription-deleted",
-                GetDocumentResponseStatus.UserSubscriptionRenewed => "user/subscription-renewed",
-                GetDocumentResponseStatus.UserSubscriptionTransferred => "user/subscription-transferred",
-                GetDocumentResponseStatus.UserSubscriptionUpdated => "user/subscription-updated",
-                GetDocumentResponseStatus.UserSubscriptionWillEnd => "user/subscription-will-end",
-                GetDocumentResponseStatus.UserUpdated => "user/updated",
-                GetDocumentResponseStatus.VoiceDone => "voice/done",
-                GetDocumentResponseStatus.VoiceError => "voice/error",
-                GetDocumentResponseStatus.VoiceRejected => "voice/rejected",
+                GetDocumentResponseStatus.AgentDivideassetCreated => "agent/asset-created",
+                GetDocumentResponseStatus.AgentDivideassetDone => "agent/asset-done",
+                GetDocumentResponseStatus.AgentDivideassetError => "agent/asset-error",
+                GetDocumentResponseStatus.AgentDivideassetStarted => "agent/asset-started",
+                GetDocumentResponseStatus.AgentDividecreated => "agent/created",
+                GetDocumentResponseStatus.AgentDividedone => "agent/done",
+                GetDocumentResponseStatus.AgentDivideerror => "agent/error",
+                GetDocumentResponseStatus.AgentDivideinsightsDividedeleted => "agent/insights/deleted",
+                GetDocumentResponseStatus.AgentDivideready => "agent/ready",
+                GetDocumentResponseStatus.AgentDividereadyForPreprocess => "agent/ready-for-preprocess",
+                GetDocumentResponseStatus.AgentDividerejected => "agent/rejected",
+                GetDocumentResponseStatus.AgentDividestarted => "agent/started",
+                GetDocumentResponseStatus.AnimateTaskDividecreated => "animate-task/created",
+                GetDocumentResponseStatus.AnimateDividecreated => "animate/created",
+                GetDocumentResponseStatus.AnimateDividedone => "animate/done",
+                GetDocumentResponseStatus.AnimateDivideerror => "animate/error",
+                GetDocumentResponseStatus.AnimateDividepostDone => "animate/post-done",
+                GetDocumentResponseStatus.AnimateDividepostError => "animate/post-error",
+                GetDocumentResponseStatus.AnimateDividestarted => "animate/started",
+                GetDocumentResponseStatus.AudioDividerejected => "audio/rejected",
+                GetDocumentResponseStatus.ChatDividedataDeleted => "chat/data-deleted",
+                GetDocumentResponseStatus.ChatDividemessagesAdded => "chat/messages-added",
+                GetDocumentResponseStatus.ChatDivideprogress => "chat/progress",
+                GetDocumentResponseStatus.ChatDividespeak => "chat/speak",
+                GetDocumentResponseStatus.ChatsDivideinvoiceDividefailed => "chats/invoice/failed",
+                GetDocumentResponseStatus.ChatsDivideinvoiceDividepaid => "chats/invoice/paid",
+                GetDocumentResponseStatus.ClipDivideavatarCreated => "clip/avatar-created",
+                GetDocumentResponseStatus.ClipDivideavatarDone => "clip/avatar-done",
+                GetDocumentResponseStatus.ClipDivideavatarError => "clip/avatar-error",
+                GetDocumentResponseStatus.ClipDivideavatarErrorNotification => "clip/avatar-error-notification",
+                GetDocumentResponseStatus.ClipDivideavatarPostDone => "clip/avatar-post-done",
+                GetDocumentResponseStatus.ClipDivideavatarProgress => "clip/avatar-progress",
+                GetDocumentResponseStatus.ClipDivideavatarReady => "clip/avatar-ready",
+                GetDocumentResponseStatus.ClipDivideavatarRejected => "clip/avatar-rejected",
+                GetDocumentResponseStatus.ClipDivideavatarStarted => "clip/avatar-started",
+                GetDocumentResponseStatus.ClipDivideavatarTrainingArtifactsUpdated => "clip/avatar-training-artifacts-updated",
+                GetDocumentResponseStatus.ClipDividecreated => "clip/created",
+                GetDocumentResponseStatus.ClipDividedeleted => "clip/deleted",
+                GetDocumentResponseStatus.ClipDividedone => "clip/done",
+                GetDocumentResponseStatus.ClipDivideerror => "clip/error",
+                GetDocumentResponseStatus.ClipDividepostDone => "clip/post-done",
+                GetDocumentResponseStatus.ClipDividepostError => "clip/post-error",
+                GetDocumentResponseStatus.ClipDividerejected => "clip/rejected",
+                GetDocumentResponseStatus.ClipDividestarted => "clip/started",
+                GetDocumentResponseStatus.ClipDividestreamDividecreated => "clip/stream/created",
+                GetDocumentResponseStatus.ClipDividestreamDividedone => "clip/stream/done",
+                GetDocumentResponseStatus.ClipDividestreamDivideerror => "clip/stream/error",
+                GetDocumentResponseStatus.ClipDividestreamDividepostDone => "clip/stream/post-done",
+                GetDocumentResponseStatus.ClipDividestreamDividepostError => "clip/stream/post-error",
+                GetDocumentResponseStatus.ClipDividestreamDividerejected => "clip/stream/rejected",
+                GetDocumentResponseStatus.ClipDividestreamDividestarted => "clip/stream/started",
+                GetDocumentResponseStatus.ClipDividev2Created => "clip/v2-created",
+                GetDocumentResponseStatus.ConsentsDividedone => "consents/done",
+                GetDocumentResponseStatus.ConsentsDivideerror => "consents/error",
+                GetDocumentResponseStatus.ConsentsDividerejected => "consents/rejected",
+                GetDocumentResponseStatus.ConsentsDividestartValidation => "consents/start-validation",
+                GetDocumentResponseStatus.CreditsDividecharge => "credits/charge",
+                GetDocumentResponseStatus.DocumentDividecreated => "document/created",
+                GetDocumentResponseStatus.DocumentDividedone => "document/done",
+                GetDocumentResponseStatus.DocumentDivideerror => "document/error",
+                GetDocumentResponseStatus.DocumentDivideprocessed => "document/processed",
+                GetDocumentResponseStatus.DocumentDividerejected => "document/rejected",
+                GetDocumentResponseStatus.ExportDividecreated => "export/created",
+                GetDocumentResponseStatus.ExportDividedeleted => "export/deleted",
+                GetDocumentResponseStatus.ExportDividedone => "export/done",
+                GetDocumentResponseStatus.ExportDivideerror => "export/error",
+                GetDocumentResponseStatus.ExportDividepartial => "export/partial",
+                GetDocumentResponseStatus.ExportDividestarted => "export/started",
+                GetDocumentResponseStatus.ExpressiveDivideavatarTrained => "expressive/avatar-trained",
+                GetDocumentResponseStatus.ExpressiveDividecreated => "expressive/created",
+                GetDocumentResponseStatus.ExpressiveDividedone => "expressive/done",
+                GetDocumentResponseStatus.ExpressiveDivideerror => "expressive/error",
+                GetDocumentResponseStatus.ExpressiveDividepostDone => "expressive/post-done",
+                GetDocumentResponseStatus.ExpressiveDividepostError => "expressive/post-error",
+                GetDocumentResponseStatus.ExpressiveDividerejected => "expressive/rejected",
+                GetDocumentResponseStatus.ExpressiveDividestarted => "expressive/started",
+                GetDocumentResponseStatus.ExpressiveDividestreamDividedone => "expressive/stream/done",
+                GetDocumentResponseStatus.ImageDividerejected => "image/rejected",
+                GetDocumentResponseStatus.InvoiceDividefailed => "invoice/failed",
+                GetDocumentResponseStatus.InvoiceDividepaid => "invoice/paid",
+                GetDocumentResponseStatus.KnowledgeDividedone => "knowledge/done",
+                GetDocumentResponseStatus.KnowledgeDivideerror => "knowledge/error",
+                GetDocumentResponseStatus.KnowledgeDivideprocessing => "knowledge/processing",
+                GetDocumentResponseStatus.OrganizationDividecreated => "organization/created",
+                GetDocumentResponseStatus.OrganizationDividedeleted => "organization/deleted",
+                GetDocumentResponseStatus.OrganizationDividememberAdded => "organization/member-added",
+                GetDocumentResponseStatus.ProjectDividedeleted => "project/deleted",
+                GetDocumentResponseStatus.ProjectDividedone => "project/done",
+                GetDocumentResponseStatus.ProjectDivideerror => "project/error",
+                GetDocumentResponseStatus.ProjectDividepostDone => "project/post-done",
+                GetDocumentResponseStatus.ProjectDivideready => "project/ready",
+                GetDocumentResponseStatus.ProjectDividerejected => "project/rejected",
+                GetDocumentResponseStatus.ProjectDividestarted => "project/started",
+                GetDocumentResponseStatus.RenderDividecreated => "render/created",
+                GetDocumentResponseStatus.RenderDividedone => "render/done",
+                GetDocumentResponseStatus.RenderDivideerror => "render/error",
+                GetDocumentResponseStatus.RenderDividestarted => "render/started",
+                GetDocumentResponseStatus.SceneDivideavatarCreated => "scene/avatar-created",
+                GetDocumentResponseStatus.SceneDivideavatarDone => "scene/avatar-done",
+                GetDocumentResponseStatus.SceneDivideavatarError => "scene/avatar-error",
+                GetDocumentResponseStatus.SceneDivideavatarItemCreated => "scene/avatar-item-created",
+                GetDocumentResponseStatus.SceneDivideavatarPostDone => "scene/avatar-post-done",
+                GetDocumentResponseStatus.SceneDivideavatarPostError => "scene/avatar-post-error",
+                GetDocumentResponseStatus.SceneDivideavatarStarted => "scene/avatar-started",
+                GetDocumentResponseStatus.SceneDivideavatarTrainingStarted => "scene/avatar-training-started",
+                GetDocumentResponseStatus.SceneDivideavatarValidationsDone => "scene/avatar-validations-done",
+                GetDocumentResponseStatus.SceneDivideavatarValidationsError => "scene/avatar-validations-error",
+                GetDocumentResponseStatus.SceneDividecreated => "scene/created",
+                GetDocumentResponseStatus.SceneDividedone => "scene/done",
+                GetDocumentResponseStatus.SceneDivideerror => "scene/error",
+                GetDocumentResponseStatus.SceneDividepostDone => "scene/post-done",
+                GetDocumentResponseStatus.SceneDividepostError => "scene/post-error",
+                GetDocumentResponseStatus.SceneDividestarted => "scene/started",
+                GetDocumentResponseStatus.ScenesDivideavatarsFileUploaded => "scenes/avatars-file-uploaded",
+                GetDocumentResponseStatus.StreamVideoDividedone => "stream-video/done",
+                GetDocumentResponseStatus.StreamVideoDivideerror => "stream-video/error",
+                GetDocumentResponseStatus.StreamVideoDividerejected => "stream-video/rejected",
+                GetDocumentResponseStatus.StreamVideoDividestarted => "stream-video/started",
+                GetDocumentResponseStatus.StreamDividedone => "stream/done",
+                GetDocumentResponseStatus.TalkDividecreated => "talk/created",
+                GetDocumentResponseStatus.TalkDividedeleted => "talk/deleted",
+                GetDocumentResponseStatus.TalkDividedone => "talk/done",
+                GetDocumentResponseStatus.TalkDivideerror => "talk/error",
+                GetDocumentResponseStatus.TalkDividepostDone => "talk/post-done",
+                GetDocumentResponseStatus.TalkDividepostError => "talk/post-error",
+                GetDocumentResponseStatus.TalkDividerejected => "talk/rejected",
+                GetDocumentResponseStatus.TalkDividestarted => "talk/started",
+                GetDocumentResponseStatus.TalkDividestreamDividecreated => "talk/stream/created",
+                GetDocumentResponseStatus.TalkDividestreamDividedone => "talk/stream/done",
+                GetDocumentResponseStatus.TalkDividestreamDivideerror => "talk/stream/error",
+                GetDocumentResponseStatus.TalkDividestreamDividepostDone => "talk/stream/post-done",
+                GetDocumentResponseStatus.TalkDividestreamDividepostError => "talk/stream/post-error",
+                GetDocumentResponseStatus.TalkDividestreamDividerejected => "talk/stream/rejected",
+                GetDocumentResponseStatus.TalkDividestreamDividestarted => "talk/stream/started",
+                GetDocumentResponseStatus.TranslationDivideaudioDataUpdated => "translation/audio-data-updated",
+                GetDocumentResponseStatus.TranslationDividecelebDetectionDone => "translation/celeb-detection-done",
+                GetDocumentResponseStatus.TranslationDividecelebDetectionError => "translation/celeb-detection-error",
+                GetDocumentResponseStatus.TranslationDividedeleted => "translation/deleted",
+                GetDocumentResponseStatus.TranslationDividedone => "translation/done",
+                GetDocumentResponseStatus.TranslationDivideerror => "translation/error",
+                GetDocumentResponseStatus.TranslationDividefileUploaded => "translation/file-uploaded",
+                GetDocumentResponseStatus.TranslationDividegroupDone => "translation/group-done",
+                GetDocumentResponseStatus.TranslationDividegroupError => "translation/group-error",
+                GetDocumentResponseStatus.TranslationDividegroupPartialDone => "translation/group-partial-done",
+                GetDocumentResponseStatus.TranslationDividegroupPartialError => "translation/group-partial-error",
+                GetDocumentResponseStatus.TranslationDividegroupPostDone => "translation/group-post-done",
+                GetDocumentResponseStatus.TranslationDividegroupPostError => "translation/group-post-error",
+                GetDocumentResponseStatus.TranslationDividegroupStarted => "translation/group-started",
+                GetDocumentResponseStatus.TranslationDivideitemCreated => "translation/item-created",
+                GetDocumentResponseStatus.TranslationDividepostDone => "translation/post-done",
+                GetDocumentResponseStatus.TranslationDividepostError => "translation/post-error",
+                GetDocumentResponseStatus.TranslationDivideready => "translation/ready",
+                GetDocumentResponseStatus.TranslationDividespeechDone => "translation/speech-done",
+                GetDocumentResponseStatus.TranslationDividespeechError => "translation/speech-error",
+                GetDocumentResponseStatus.TranslationDividestarted => "translation/started",
+                GetDocumentResponseStatus.TranslationDividesubtitlesDone => "translation/subtitles-done",
+                GetDocumentResponseStatus.TriggerDividetoolDivideresult => "trigger/tool/result",
+                GetDocumentResponseStatus.TriggerDividewebhookDividedone => "trigger/webhook/done",
+                GetDocumentResponseStatus.TriggerDividewebhookDivideerror => "trigger/webhook/error",
+                GetDocumentResponseStatus.UserDivideaccountMerged => "user/account-merged",
+                GetDocumentResponseStatus.UserDivideaccountMergedManually => "user/account-merged-manually",
+                GetDocumentResponseStatus.UserDivideapiKeyCreated => "user/api-key-created",
+                GetDocumentResponseStatus.UserDividedeleted => "user/deleted",
+                GetDocumentResponseStatus.UserDividefirstVisit => "user/first-visit",
+                GetDocumentResponseStatus.UserDivideregistered => "user/registered",
+                GetDocumentResponseStatus.UserDividesubscriptionCreated => "user/subscription-created",
+                GetDocumentResponseStatus.UserDividesubscriptionDeleted => "user/subscription-deleted",
+                GetDocumentResponseStatus.UserDividesubscriptionRenewed => "user/subscription-renewed",
+                GetDocumentResponseStatus.UserDividesubscriptionTransferred => "user/subscription-transferred",
+                GetDocumentResponseStatus.UserDividesubscriptionUpdated => "user/subscription-updated",
+                GetDocumentResponseStatus.UserDividesubscriptionWillEnd => "user/subscription-will-end",
+                GetDocumentResponseStatus.UserDivideupdated => "user/updated",
+                GetDocumentResponseStatus.VoiceDividedone => "voice/done",
+                GetDocumentResponseStatus.VoiceDivideerror => "voice/error",
+                GetDocumentResponseStatus.VoiceDividerejected => "voice/rejected",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
             };
         }
@@ -907,181 +907,181 @@ namespace DId
         {
             return value switch
             {
-                "agent/asset-created" => GetDocumentResponseStatus.AgentAssetCreated,
-                "agent/asset-done" => GetDocumentResponseStatus.AgentAssetDone,
-                "agent/asset-error" => GetDocumentResponseStatus.AgentAssetError,
-                "agent/asset-started" => GetDocumentResponseStatus.AgentAssetStarted,
-                "agent/created" => GetDocumentResponseStatus.AgentCreated,
-                "agent/done" => GetDocumentResponseStatus.AgentDone,
-                "agent/error" => GetDocumentResponseStatus.AgentError,
-                "agent/insights/deleted" => GetDocumentResponseStatus.AgentInsightsDeleted,
-                "agent/ready" => GetDocumentResponseStatus.AgentReady,
-                "agent/ready-for-preprocess" => GetDocumentResponseStatus.AgentReadyForPreprocess,
-                "agent/rejected" => GetDocumentResponseStatus.AgentRejected,
-                "agent/started" => GetDocumentResponseStatus.AgentStarted,
-                "animate-task/created" => GetDocumentResponseStatus.AnimateTaskCreated,
-                "animate/created" => GetDocumentResponseStatus.AnimateCreated,
-                "animate/done" => GetDocumentResponseStatus.AnimateDone,
-                "animate/error" => GetDocumentResponseStatus.AnimateError,
-                "animate/post-done" => GetDocumentResponseStatus.AnimatePostDone,
-                "animate/post-error" => GetDocumentResponseStatus.AnimatePostError,
-                "animate/started" => GetDocumentResponseStatus.AnimateStarted,
-                "audio/rejected" => GetDocumentResponseStatus.AudioRejected,
-                "chat/data-deleted" => GetDocumentResponseStatus.ChatDataDeleted,
-                "chat/messages-added" => GetDocumentResponseStatus.ChatMessagesAdded,
-                "chat/progress" => GetDocumentResponseStatus.ChatProgress,
-                "chat/speak" => GetDocumentResponseStatus.ChatSpeak,
-                "chats/invoice/failed" => GetDocumentResponseStatus.ChatsInvoiceFailed,
-                "chats/invoice/paid" => GetDocumentResponseStatus.ChatsInvoicePaid,
-                "clip/avatar-created" => GetDocumentResponseStatus.ClipAvatarCreated,
-                "clip/avatar-done" => GetDocumentResponseStatus.ClipAvatarDone,
-                "clip/avatar-error" => GetDocumentResponseStatus.ClipAvatarError,
-                "clip/avatar-error-notification" => GetDocumentResponseStatus.ClipAvatarErrorNotification,
-                "clip/avatar-post-done" => GetDocumentResponseStatus.ClipAvatarPostDone,
-                "clip/avatar-progress" => GetDocumentResponseStatus.ClipAvatarProgress,
-                "clip/avatar-ready" => GetDocumentResponseStatus.ClipAvatarReady,
-                "clip/avatar-rejected" => GetDocumentResponseStatus.ClipAvatarRejected,
-                "clip/avatar-started" => GetDocumentResponseStatus.ClipAvatarStarted,
-                "clip/avatar-training-artifacts-updated" => GetDocumentResponseStatus.ClipAvatarTrainingArtifactsUpdated,
-                "clip/created" => GetDocumentResponseStatus.ClipCreated,
-                "clip/deleted" => GetDocumentResponseStatus.ClipDeleted,
-                "clip/done" => GetDocumentResponseStatus.ClipDone,
-                "clip/error" => GetDocumentResponseStatus.ClipError,
-                "clip/post-done" => GetDocumentResponseStatus.ClipPostDone,
-                "clip/post-error" => GetDocumentResponseStatus.ClipPostError,
-                "clip/rejected" => GetDocumentResponseStatus.ClipRejected,
-                "clip/started" => GetDocumentResponseStatus.ClipStarted,
-                "clip/stream/created" => GetDocumentResponseStatus.ClipStreamCreated,
-                "clip/stream/done" => GetDocumentResponseStatus.ClipStreamDone,
-                "clip/stream/error" => GetDocumentResponseStatus.ClipStreamError,
-                "clip/stream/post-done" => GetDocumentResponseStatus.ClipStreamPostDone,
-                "clip/stream/post-error" => GetDocumentResponseStatus.ClipStreamPostError,
-                "clip/stream/rejected" => GetDocumentResponseStatus.ClipStreamRejected,
-                "clip/stream/started" => GetDocumentResponseStatus.ClipStreamStarted,
-                "clip/v2-created" => GetDocumentResponseStatus.ClipV2Created,
-                "consents/done" => GetDocumentResponseStatus.ConsentsDone,
-                "consents/error" => GetDocumentResponseStatus.ConsentsError,
-                "consents/rejected" => GetDocumentResponseStatus.ConsentsRejected,
-                "consents/start-validation" => GetDocumentResponseStatus.ConsentsStartValidation,
-                "credits/charge" => GetDocumentResponseStatus.CreditsCharge,
-                "document/created" => GetDocumentResponseStatus.DocumentCreated,
-                "document/done" => GetDocumentResponseStatus.DocumentDone,
-                "document/error" => GetDocumentResponseStatus.DocumentError,
-                "document/processed" => GetDocumentResponseStatus.DocumentProcessed,
-                "document/rejected" => GetDocumentResponseStatus.DocumentRejected,
-                "export/created" => GetDocumentResponseStatus.ExportCreated,
-                "export/deleted" => GetDocumentResponseStatus.ExportDeleted,
-                "export/done" => GetDocumentResponseStatus.ExportDone,
-                "export/error" => GetDocumentResponseStatus.ExportError,
-                "export/partial" => GetDocumentResponseStatus.ExportPartial,
-                "export/started" => GetDocumentResponseStatus.ExportStarted,
-                "expressive/avatar-trained" => GetDocumentResponseStatus.ExpressiveAvatarTrained,
-                "expressive/created" => GetDocumentResponseStatus.ExpressiveCreated,
-                "expressive/done" => GetDocumentResponseStatus.ExpressiveDone,
-                "expressive/error" => GetDocumentResponseStatus.ExpressiveError,
-                "expressive/post-done" => GetDocumentResponseStatus.ExpressivePostDone,
-                "expressive/post-error" => GetDocumentResponseStatus.ExpressivePostError,
-                "expressive/rejected" => GetDocumentResponseStatus.ExpressiveRejected,
-                "expressive/started" => GetDocumentResponseStatus.ExpressiveStarted,
-                "expressive/stream/done" => GetDocumentResponseStatus.ExpressiveStreamDone,
-                "image/rejected" => GetDocumentResponseStatus.ImageRejected,
-                "invoice/failed" => GetDocumentResponseStatus.InvoiceFailed,
-                "invoice/paid" => GetDocumentResponseStatus.InvoicePaid,
-                "knowledge/done" => GetDocumentResponseStatus.KnowledgeDone,
-                "knowledge/error" => GetDocumentResponseStatus.KnowledgeError,
-                "knowledge/processing" => GetDocumentResponseStatus.KnowledgeProcessing,
-                "organization/created" => GetDocumentResponseStatus.OrganizationCreated,
-                "organization/deleted" => GetDocumentResponseStatus.OrganizationDeleted,
-                "organization/member-added" => GetDocumentResponseStatus.OrganizationMemberAdded,
-                "project/deleted" => GetDocumentResponseStatus.ProjectDeleted,
-                "project/done" => GetDocumentResponseStatus.ProjectDone,
-                "project/error" => GetDocumentResponseStatus.ProjectError,
-                "project/post-done" => GetDocumentResponseStatus.ProjectPostDone,
-                "project/ready" => GetDocumentResponseStatus.ProjectReady,
-                "project/rejected" => GetDocumentResponseStatus.ProjectRejected,
-                "project/started" => GetDocumentResponseStatus.ProjectStarted,
-                "render/created" => GetDocumentResponseStatus.RenderCreated,
-                "render/done" => GetDocumentResponseStatus.RenderDone,
-                "render/error" => GetDocumentResponseStatus.RenderError,
-                "render/started" => GetDocumentResponseStatus.RenderStarted,
-                "scene/avatar-created" => GetDocumentResponseStatus.SceneAvatarCreated,
-                "scene/avatar-done" => GetDocumentResponseStatus.SceneAvatarDone,
-                "scene/avatar-error" => GetDocumentResponseStatus.SceneAvatarError,
-                "scene/avatar-item-created" => GetDocumentResponseStatus.SceneAvatarItemCreated,
-                "scene/avatar-post-done" => GetDocumentResponseStatus.SceneAvatarPostDone,
-                "scene/avatar-post-error" => GetDocumentResponseStatus.SceneAvatarPostError,
-                "scene/avatar-started" => GetDocumentResponseStatus.SceneAvatarStarted,
-                "scene/avatar-training-started" => GetDocumentResponseStatus.SceneAvatarTrainingStarted,
-                "scene/avatar-validations-done" => GetDocumentResponseStatus.SceneAvatarValidationsDone,
-                "scene/avatar-validations-error" => GetDocumentResponseStatus.SceneAvatarValidationsError,
-                "scene/created" => GetDocumentResponseStatus.SceneCreated,
-                "scene/done" => GetDocumentResponseStatus.SceneDone,
-                "scene/error" => GetDocumentResponseStatus.SceneError,
-                "scene/post-done" => GetDocumentResponseStatus.ScenePostDone,
-                "scene/post-error" => GetDocumentResponseStatus.ScenePostError,
-                "scene/started" => GetDocumentResponseStatus.SceneStarted,
-                "scenes/avatars-file-uploaded" => GetDocumentResponseStatus.ScenesAvatarsFileUploaded,
-                "stream-video/done" => GetDocumentResponseStatus.StreamVideoDone,
-                "stream-video/error" => GetDocumentResponseStatus.StreamVideoError,
-                "stream-video/rejected" => GetDocumentResponseStatus.StreamVideoRejected,
-                "stream-video/started" => GetDocumentResponseStatus.StreamVideoStarted,
-                "stream/done" => GetDocumentResponseStatus.StreamDone,
-                "talk/created" => GetDocumentResponseStatus.TalkCreated,
-                "talk/deleted" => GetDocumentResponseStatus.TalkDeleted,
-                "talk/done" => GetDocumentResponseStatus.TalkDone,
-                "talk/error" => GetDocumentResponseStatus.TalkError,
-                "talk/post-done" => GetDocumentResponseStatus.TalkPostDone,
-                "talk/post-error" => GetDocumentResponseStatus.TalkPostError,
-                "talk/rejected" => GetDocumentResponseStatus.TalkRejected,
-                "talk/started" => GetDocumentResponseStatus.TalkStarted,
-                "talk/stream/created" => GetDocumentResponseStatus.TalkStreamCreated,
-                "talk/stream/done" => GetDocumentResponseStatus.TalkStreamDone,
-                "talk/stream/error" => GetDocumentResponseStatus.TalkStreamError,
-                "talk/stream/post-done" => GetDocumentResponseStatus.TalkStreamPostDone,
-                "talk/stream/post-error" => GetDocumentResponseStatus.TalkStreamPostError,
-                "talk/stream/rejected" => GetDocumentResponseStatus.TalkStreamRejected,
-                "talk/stream/started" => GetDocumentResponseStatus.TalkStreamStarted,
-                "translation/audio-data-updated" => GetDocumentResponseStatus.TranslationAudioDataUpdated,
-                "translation/celeb-detection-done" => GetDocumentResponseStatus.TranslationCelebDetectionDone,
-                "translation/celeb-detection-error" => GetDocumentResponseStatus.TranslationCelebDetectionError,
-                "translation/deleted" => GetDocumentResponseStatus.TranslationDeleted,
-                "translation/done" => GetDocumentResponseStatus.TranslationDone,
-                "translation/error" => GetDocumentResponseStatus.TranslationError,
-                "translation/file-uploaded" => GetDocumentResponseStatus.TranslationFileUploaded,
-                "translation/group-done" => GetDocumentResponseStatus.TranslationGroupDone,
-                "translation/group-error" => GetDocumentResponseStatus.TranslationGroupError,
-                "translation/group-partial-done" => GetDocumentResponseStatus.TranslationGroupPartialDone,
-                "translation/group-partial-error" => GetDocumentResponseStatus.TranslationGroupPartialError,
-                "translation/group-post-done" => GetDocumentResponseStatus.TranslationGroupPostDone,
-                "translation/group-post-error" => GetDocumentResponseStatus.TranslationGroupPostError,
-                "translation/group-started" => GetDocumentResponseStatus.TranslationGroupStarted,
-                "translation/item-created" => GetDocumentResponseStatus.TranslationItemCreated,
-                "translation/post-done" => GetDocumentResponseStatus.TranslationPostDone,
-                "translation/post-error" => GetDocumentResponseStatus.TranslationPostError,
-                "translation/ready" => GetDocumentResponseStatus.TranslationReady,
-                "translation/speech-done" => GetDocumentResponseStatus.TranslationSpeechDone,
-                "translation/speech-error" => GetDocumentResponseStatus.TranslationSpeechError,
-                "translation/started" => GetDocumentResponseStatus.TranslationStarted,
-                "translation/subtitles-done" => GetDocumentResponseStatus.TranslationSubtitlesDone,
-                "trigger/tool/result" => GetDocumentResponseStatus.TriggerToolResult,
-                "trigger/webhook/done" => GetDocumentResponseStatus.TriggerWebhookDone,
-                "trigger/webhook/error" => GetDocumentResponseStatus.TriggerWebhookError,
-                "user/account-merged" => GetDocumentResponseStatus.UserAccountMerged,
-                "user/account-merged-manually" => GetDocumentResponseStatus.UserAccountMergedManually,
-                "user/api-key-created" => GetDocumentResponseStatus.UserApiKeyCreated,
-                "user/deleted" => GetDocumentResponseStatus.UserDeleted,
-                "user/first-visit" => GetDocumentResponseStatus.UserFirstVisit,
-                "user/registered" => GetDocumentResponseStatus.UserRegistered,
-                "user/subscription-created" => GetDocumentResponseStatus.UserSubscriptionCreated,
-                "user/subscription-deleted" => GetDocumentResponseStatus.UserSubscriptionDeleted,
-                "user/subscription-renewed" => GetDocumentResponseStatus.UserSubscriptionRenewed,
-                "user/subscription-transferred" => GetDocumentResponseStatus.UserSubscriptionTransferred,
-                "user/subscription-updated" => GetDocumentResponseStatus.UserSubscriptionUpdated,
-                "user/subscription-will-end" => GetDocumentResponseStatus.UserSubscriptionWillEnd,
-                "user/updated" => GetDocumentResponseStatus.UserUpdated,
-                "voice/done" => GetDocumentResponseStatus.VoiceDone,
-                "voice/error" => GetDocumentResponseStatus.VoiceError,
-                "voice/rejected" => GetDocumentResponseStatus.VoiceRejected,
+                "agent/asset-created" => GetDocumentResponseStatus.AgentDivideassetCreated,
+                "agent/asset-done" => GetDocumentResponseStatus.AgentDivideassetDone,
+                "agent/asset-error" => GetDocumentResponseStatus.AgentDivideassetError,
+                "agent/asset-started" => GetDocumentResponseStatus.AgentDivideassetStarted,
+                "agent/created" => GetDocumentResponseStatus.AgentDividecreated,
+                "agent/done" => GetDocumentResponseStatus.AgentDividedone,
+                "agent/error" => GetDocumentResponseStatus.AgentDivideerror,
+                "agent/insights/deleted" => GetDocumentResponseStatus.AgentDivideinsightsDividedeleted,
+                "agent/ready" => GetDocumentResponseStatus.AgentDivideready,
+                "agent/ready-for-preprocess" => GetDocumentResponseStatus.AgentDividereadyForPreprocess,
+                "agent/rejected" => GetDocumentResponseStatus.AgentDividerejected,
+                "agent/started" => GetDocumentResponseStatus.AgentDividestarted,
+                "animate-task/created" => GetDocumentResponseStatus.AnimateTaskDividecreated,
+                "animate/created" => GetDocumentResponseStatus.AnimateDividecreated,
+                "animate/done" => GetDocumentResponseStatus.AnimateDividedone,
+                "animate/error" => GetDocumentResponseStatus.AnimateDivideerror,
+                "animate/post-done" => GetDocumentResponseStatus.AnimateDividepostDone,
+                "animate/post-error" => GetDocumentResponseStatus.AnimateDividepostError,
+                "animate/started" => GetDocumentResponseStatus.AnimateDividestarted,
+                "audio/rejected" => GetDocumentResponseStatus.AudioDividerejected,
+                "chat/data-deleted" => GetDocumentResponseStatus.ChatDividedataDeleted,
+                "chat/messages-added" => GetDocumentResponseStatus.ChatDividemessagesAdded,
+                "chat/progress" => GetDocumentResponseStatus.ChatDivideprogress,
+                "chat/speak" => GetDocumentResponseStatus.ChatDividespeak,
+                "chats/invoice/failed" => GetDocumentResponseStatus.ChatsDivideinvoiceDividefailed,
+                "chats/invoice/paid" => GetDocumentResponseStatus.ChatsDivideinvoiceDividepaid,
+                "clip/avatar-created" => GetDocumentResponseStatus.ClipDivideavatarCreated,
+                "clip/avatar-done" => GetDocumentResponseStatus.ClipDivideavatarDone,
+                "clip/avatar-error" => GetDocumentResponseStatus.ClipDivideavatarError,
+                "clip/avatar-error-notification" => GetDocumentResponseStatus.ClipDivideavatarErrorNotification,
+                "clip/avatar-post-done" => GetDocumentResponseStatus.ClipDivideavatarPostDone,
+                "clip/avatar-progress" => GetDocumentResponseStatus.ClipDivideavatarProgress,
+                "clip/avatar-ready" => GetDocumentResponseStatus.ClipDivideavatarReady,
+                "clip/avatar-rejected" => GetDocumentResponseStatus.ClipDivideavatarRejected,
+                "clip/avatar-started" => GetDocumentResponseStatus.ClipDivideavatarStarted,
+                "clip/avatar-training-artifacts-updated" => GetDocumentResponseStatus.ClipDivideavatarTrainingArtifactsUpdated,
+                "clip/created" => GetDocumentResponseStatus.ClipDividecreated,
+                "clip/deleted" => GetDocumentResponseStatus.ClipDividedeleted,
+                "clip/done" => GetDocumentResponseStatus.ClipDividedone,
+                "clip/error" => GetDocumentResponseStatus.ClipDivideerror,
+                "clip/post-done" => GetDocumentResponseStatus.ClipDividepostDone,
+                "clip/post-error" => GetDocumentResponseStatus.ClipDividepostError,
+                "clip/rejected" => GetDocumentResponseStatus.ClipDividerejected,
+                "clip/started" => GetDocumentResponseStatus.ClipDividestarted,
+                "clip/stream/created" => GetDocumentResponseStatus.ClipDividestreamDividecreated,
+                "clip/stream/done" => GetDocumentResponseStatus.ClipDividestreamDividedone,
+                "clip/stream/error" => GetDocumentResponseStatus.ClipDividestreamDivideerror,
+                "clip/stream/post-done" => GetDocumentResponseStatus.ClipDividestreamDividepostDone,
+                "clip/stream/post-error" => GetDocumentResponseStatus.ClipDividestreamDividepostError,
+                "clip/stream/rejected" => GetDocumentResponseStatus.ClipDividestreamDividerejected,
+                "clip/stream/started" => GetDocumentResponseStatus.ClipDividestreamDividestarted,
+                "clip/v2-created" => GetDocumentResponseStatus.ClipDividev2Created,
+                "consents/done" => GetDocumentResponseStatus.ConsentsDividedone,
+                "consents/error" => GetDocumentResponseStatus.ConsentsDivideerror,
+                "consents/rejected" => GetDocumentResponseStatus.ConsentsDividerejected,
+                "consents/start-validation" => GetDocumentResponseStatus.ConsentsDividestartValidation,
+                "credits/charge" => GetDocumentResponseStatus.CreditsDividecharge,
+                "document/created" => GetDocumentResponseStatus.DocumentDividecreated,
+                "document/done" => GetDocumentResponseStatus.DocumentDividedone,
+                "document/error" => GetDocumentResponseStatus.DocumentDivideerror,
+                "document/processed" => GetDocumentResponseStatus.DocumentDivideprocessed,
+                "document/rejected" => GetDocumentResponseStatus.DocumentDividerejected,
+                "export/created" => GetDocumentResponseStatus.ExportDividecreated,
+                "export/deleted" => GetDocumentResponseStatus.ExportDividedeleted,
+                "export/done" => GetDocumentResponseStatus.ExportDividedone,
+                "export/error" => GetDocumentResponseStatus.ExportDivideerror,
+                "export/partial" => GetDocumentResponseStatus.ExportDividepartial,
+                "export/started" => GetDocumentResponseStatus.ExportDividestarted,
+                "expressive/avatar-trained" => GetDocumentResponseStatus.ExpressiveDivideavatarTrained,
+                "expressive/created" => GetDocumentResponseStatus.ExpressiveDividecreated,
+                "expressive/done" => GetDocumentResponseStatus.ExpressiveDividedone,
+                "expressive/error" => GetDocumentResponseStatus.ExpressiveDivideerror,
+                "expressive/post-done" => GetDocumentResponseStatus.ExpressiveDividepostDone,
+                "expressive/post-error" => GetDocumentResponseStatus.ExpressiveDividepostError,
+                "expressive/rejected" => GetDocumentResponseStatus.ExpressiveDividerejected,
+                "expressive/started" => GetDocumentResponseStatus.ExpressiveDividestarted,
+                "expressive/stream/done" => GetDocumentResponseStatus.ExpressiveDividestreamDividedone,
+                "image/rejected" => GetDocumentResponseStatus.ImageDividerejected,
+                "invoice/failed" => GetDocumentResponseStatus.InvoiceDividefailed,
+                "invoice/paid" => GetDocumentResponseStatus.InvoiceDividepaid,
+                "knowledge/done" => GetDocumentResponseStatus.KnowledgeDividedone,
+                "knowledge/error" => GetDocumentResponseStatus.KnowledgeDivideerror,
+                "knowledge/processing" => GetDocumentResponseStatus.KnowledgeDivideprocessing,
+                "organization/created" => GetDocumentResponseStatus.OrganizationDividecreated,
+                "organization/deleted" => GetDocumentResponseStatus.OrganizationDividedeleted,
+                "organization/member-added" => GetDocumentResponseStatus.OrganizationDividememberAdded,
+                "project/deleted" => GetDocumentResponseStatus.ProjectDividedeleted,
+                "project/done" => GetDocumentResponseStatus.ProjectDividedone,
+                "project/error" => GetDocumentResponseStatus.ProjectDivideerror,
+                "project/post-done" => GetDocumentResponseStatus.ProjectDividepostDone,
+                "project/ready" => GetDocumentResponseStatus.ProjectDivideready,
+                "project/rejected" => GetDocumentResponseStatus.ProjectDividerejected,
+                "project/started" => GetDocumentResponseStatus.ProjectDividestarted,
+                "render/created" => GetDocumentResponseStatus.RenderDividecreated,
+                "render/done" => GetDocumentResponseStatus.RenderDividedone,
+                "render/error" => GetDocumentResponseStatus.RenderDivideerror,
+                "render/started" => GetDocumentResponseStatus.RenderDividestarted,
+                "scene/avatar-created" => GetDocumentResponseStatus.SceneDivideavatarCreated,
+                "scene/avatar-done" => GetDocumentResponseStatus.SceneDivideavatarDone,
+                "scene/avatar-error" => GetDocumentResponseStatus.SceneDivideavatarError,
+                "scene/avatar-item-created" => GetDocumentResponseStatus.SceneDivideavatarItemCreated,
+                "scene/avatar-post-done" => GetDocumentResponseStatus.SceneDivideavatarPostDone,
+                "scene/avatar-post-error" => GetDocumentResponseStatus.SceneDivideavatarPostError,
+                "scene/avatar-started" => GetDocumentResponseStatus.SceneDivideavatarStarted,
+                "scene/avatar-training-started" => GetDocumentResponseStatus.SceneDivideavatarTrainingStarted,
+                "scene/avatar-validations-done" => GetDocumentResponseStatus.SceneDivideavatarValidationsDone,
+                "scene/avatar-validations-error" => GetDocumentResponseStatus.SceneDivideavatarValidationsError,
+                "scene/created" => GetDocumentResponseStatus.SceneDividecreated,
+                "scene/done" => GetDocumentResponseStatus.SceneDividedone,
+                "scene/error" => GetDocumentResponseStatus.SceneDivideerror,
+                "scene/post-done" => GetDocumentResponseStatus.SceneDividepostDone,
+                "scene/post-error" => GetDocumentResponseStatus.SceneDividepostError,
+                "scene/started" => GetDocumentResponseStatus.SceneDividestarted,
+                "scenes/avatars-file-uploaded" => GetDocumentResponseStatus.ScenesDivideavatarsFileUploaded,
+                "stream-video/done" => GetDocumentResponseStatus.StreamVideoDividedone,
+                "stream-video/error" => GetDocumentResponseStatus.StreamVideoDivideerror,
+                "stream-video/rejected" => GetDocumentResponseStatus.StreamVideoDividerejected,
+                "stream-video/started" => GetDocumentResponseStatus.StreamVideoDividestarted,
+                "stream/done" => GetDocumentResponseStatus.StreamDividedone,
+                "talk/created" => GetDocumentResponseStatus.TalkDividecreated,
+                "talk/deleted" => GetDocumentResponseStatus.TalkDividedeleted,
+                "talk/done" => GetDocumentResponseStatus.TalkDividedone,
+                "talk/error" => GetDocumentResponseStatus.TalkDivideerror,
+                "talk/post-done" => GetDocumentResponseStatus.TalkDividepostDone,
+                "talk/post-error" => GetDocumentResponseStatus.TalkDividepostError,
+                "talk/rejected" => GetDocumentResponseStatus.TalkDividerejected,
+                "talk/started" => GetDocumentResponseStatus.TalkDividestarted,
+                "talk/stream/created" => GetDocumentResponseStatus.TalkDividestreamDividecreated,
+                "talk/stream/done" => GetDocumentResponseStatus.TalkDividestreamDividedone,
+                "talk/stream/error" => GetDocumentResponseStatus.TalkDividestreamDivideerror,
+                "talk/stream/post-done" => GetDocumentResponseStatus.TalkDividestreamDividepostDone,
+                "talk/stream/post-error" => GetDocumentResponseStatus.TalkDividestreamDividepostError,
+                "talk/stream/rejected" => GetDocumentResponseStatus.TalkDividestreamDividerejected,
+                "talk/stream/started" => GetDocumentResponseStatus.TalkDividestreamDividestarted,
+                "translation/audio-data-updated" => GetDocumentResponseStatus.TranslationDivideaudioDataUpdated,
+                "translation/celeb-detection-done" => GetDocumentResponseStatus.TranslationDividecelebDetectionDone,
+                "translation/celeb-detection-error" => GetDocumentResponseStatus.TranslationDividecelebDetectionError,
+                "translation/deleted" => GetDocumentResponseStatus.TranslationDividedeleted,
+                "translation/done" => GetDocumentResponseStatus.TranslationDividedone,
+                "translation/error" => GetDocumentResponseStatus.TranslationDivideerror,
+                "translation/file-uploaded" => GetDocumentResponseStatus.TranslationDividefileUploaded,
+                "translation/group-done" => GetDocumentResponseStatus.TranslationDividegroupDone,
+                "translation/group-error" => GetDocumentResponseStatus.TranslationDividegroupError,
+                "translation/group-partial-done" => GetDocumentResponseStatus.TranslationDividegroupPartialDone,
+                "translation/group-partial-error" => GetDocumentResponseStatus.TranslationDividegroupPartialError,
+                "translation/group-post-done" => GetDocumentResponseStatus.TranslationDividegroupPostDone,
+                "translation/group-post-error" => GetDocumentResponseStatus.TranslationDividegroupPostError,
+                "translation/group-started" => GetDocumentResponseStatus.TranslationDividegroupStarted,
+                "translation/item-created" => GetDocumentResponseStatus.TranslationDivideitemCreated,
+                "translation/post-done" => GetDocumentResponseStatus.TranslationDividepostDone,
+                "translation/post-error" => GetDocumentResponseStatus.TranslationDividepostError,
+                "translation/ready" => GetDocumentResponseStatus.TranslationDivideready,
+                "translation/speech-done" => GetDocumentResponseStatus.TranslationDividespeechDone,
+                "translation/speech-error" => GetDocumentResponseStatus.TranslationDividespeechError,
+                "translation/started" => GetDocumentResponseStatus.TranslationDividestarted,
+                "translation/subtitles-done" => GetDocumentResponseStatus.TranslationDividesubtitlesDone,
+                "trigger/tool/result" => GetDocumentResponseStatus.TriggerDividetoolDivideresult,
+                "trigger/webhook/done" => GetDocumentResponseStatus.TriggerDividewebhookDividedone,
+                "trigger/webhook/error" => GetDocumentResponseStatus.TriggerDividewebhookDivideerror,
+                "user/account-merged" => GetDocumentResponseStatus.UserDivideaccountMerged,
+                "user/account-merged-manually" => GetDocumentResponseStatus.UserDivideaccountMergedManually,
+                "user/api-key-created" => GetDocumentResponseStatus.UserDivideapiKeyCreated,
+                "user/deleted" => GetDocumentResponseStatus.UserDividedeleted,
+                "user/first-visit" => GetDocumentResponseStatus.UserDividefirstVisit,
+                "user/registered" => GetDocumentResponseStatus.UserDivideregistered,
+                "user/subscription-created" => GetDocumentResponseStatus.UserDividesubscriptionCreated,
+                "user/subscription-deleted" => GetDocumentResponseStatus.UserDividesubscriptionDeleted,
+                "user/subscription-renewed" => GetDocumentResponseStatus.UserDividesubscriptionRenewed,
+                "user/subscription-transferred" => GetDocumentResponseStatus.UserDividesubscriptionTransferred,
+                "user/subscription-updated" => GetDocumentResponseStatus.UserDividesubscriptionUpdated,
+                "user/subscription-will-end" => GetDocumentResponseStatus.UserDividesubscriptionWillEnd,
+                "user/updated" => GetDocumentResponseStatus.UserDivideupdated,
+                "voice/done" => GetDocumentResponseStatus.VoiceDividedone,
+                "voice/error" => GetDocumentResponseStatus.VoiceDivideerror,
+                "voice/rejected" => GetDocumentResponseStatus.VoiceDividerejected,
                 _ => null,
             };
         }

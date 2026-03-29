@@ -48,8 +48,8 @@ namespace DId
         /// </summary>
         /// <param name="toolCallId"></param>
         /// <param name="toolName"></param>
-        /// <param name="input"></param>
         /// <param name="output"></param>
+        /// <param name="input"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -61,8 +61,8 @@ namespace DId
         {
             this.ToolCallId = toolCallId ?? throw new global::System.ArgumentNullException(nameof(toolCallId));
             this.ToolName = toolName ?? throw new global::System.ArgumentNullException(nameof(toolName));
-            this.Output = output;
             this.Input = input;
+            this.Output = output;
         }
 
         /// <summary>

@@ -83,14 +83,14 @@ namespace DId
         /// <summary>
         /// Initializes a new instance of the <see cref="CreateRequest2" /> class.
         /// </summary>
+        /// <param name="presenter">
+        /// Defines the Agent’s avatar, including its visual appearance and voice.
+        /// </param>
         /// <param name="previewName">
         /// Agent name
         /// </param>
         /// <param name="previewDescription">
         /// Description of the agent
-        /// </param>
-        /// <param name="presenter">
-        /// Defines the Agent’s avatar, including its visual appearance and voice.
         /// </param>
         /// <param name="llm">
         /// Configuration for the Large Language Model used by the Agent to generate responses.<br/>
@@ -129,9 +129,9 @@ namespace DId
             bool? embed,
             global::DId.CreateRequestTriggers? triggers)
         {
-            this.Presenter = presenter;
             this.PreviewName = previewName;
             this.PreviewDescription = previewDescription;
+            this.Presenter = presenter;
             this.Llm = llm;
             this.Knowledge = knowledge;
             this.StarterMessage = starterMessage;

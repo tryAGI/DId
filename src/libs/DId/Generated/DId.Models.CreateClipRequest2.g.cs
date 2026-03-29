@@ -90,6 +90,7 @@ namespace DId
         /// <summary>
         /// Initializes a new instance of the <see cref="CreateClipRequest2" /> class.
         /// </summary>
+        /// <param name="script"></param>
         /// <param name="presenterId">
         /// a selection from the list or provided driver ids.<br/>
         /// Default Value: jack-Pt27VkP3hW<br/>
@@ -100,7 +101,6 @@ namespace DId
         /// If not provided a driver video will be selected for you from the predefined drivers bank.<br/>
         /// Example: Vcq0R4a8F0
         /// </param>
-        /// <param name="script"></param>
         /// <param name="config">
         /// Advanced configuration options.
         /// </param>
@@ -140,9 +140,9 @@ namespace DId
             string? webhook,
             string? resultUrl)
         {
-            this.Script = script;
             this.PresenterId = presenterId;
             this.DriverId = driverId;
+            this.Script = script;
             this.Config = config;
             this.PresenterConfig = presenterConfig;
             this.Background = background;
