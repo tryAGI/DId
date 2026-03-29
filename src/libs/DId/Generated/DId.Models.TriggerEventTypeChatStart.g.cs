@@ -11,7 +11,7 @@ namespace DId
         /// <summary>
         /// 
         /// </summary>
-        ChatDividestart,
+        ChatStart,
     }
 
     /// <summary>
@@ -26,7 +26,7 @@ namespace DId
         {
             return value switch
             {
-                TriggerEventTypeChatStart.ChatDividestart => "chat/start",
+                TriggerEventTypeChatStart.ChatStart => "chat/start",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
             };
         }
@@ -37,7 +37,7 @@ namespace DId
         {
             return value switch
             {
-                "chat/start" => TriggerEventTypeChatStart.ChatDividestart,
+                "chat/start" => TriggerEventTypeChatStart.ChatStart,
                 _ => null,
             };
         }

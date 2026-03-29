@@ -11,703 +11,703 @@ namespace DId
         /// <summary>
         /// 
         /// </summary>
-        AgentDivideassetCreated,
+        AgentAssetCreated,
         /// <summary>
         /// 
         /// </summary>
-        AgentDivideassetDone,
+        AgentAssetDone,
         /// <summary>
         /// 
         /// </summary>
-        AgentDivideassetError,
+        AgentAssetError,
         /// <summary>
         /// 
         /// </summary>
-        AgentDivideassetStarted,
+        AgentAssetStarted,
         /// <summary>
         /// 
         /// </summary>
-        AgentDividecreated,
+        AgentCreated,
         /// <summary>
         /// 
         /// </summary>
-        AgentDividedone,
+        AgentDone,
         /// <summary>
         /// 
         /// </summary>
-        AgentDivideerror,
+        AgentError,
         /// <summary>
         /// 
         /// </summary>
-        AgentDivideinsightsDividedeleted,
+        AgentInsightsDeleted,
         /// <summary>
         /// 
         /// </summary>
-        AgentDivideready,
+        AgentReady,
         /// <summary>
         /// 
         /// </summary>
-        AgentDividereadyForPreprocess,
+        AgentReadyForPreprocess,
         /// <summary>
         /// 
         /// </summary>
-        AgentDividerejected,
+        AgentRejected,
         /// <summary>
         /// 
         /// </summary>
-        AgentDividestarted,
+        AgentStarted,
         /// <summary>
         /// 
         /// </summary>
-        AnimateTaskDividecreated,
+        AnimateTaskCreated,
         /// <summary>
         /// 
         /// </summary>
-        AnimateDividecreated,
+        AnimateCreated,
         /// <summary>
         /// 
         /// </summary>
-        AnimateDividedone,
+        AnimateDone,
         /// <summary>
         /// 
         /// </summary>
-        AnimateDivideerror,
+        AnimateError,
         /// <summary>
         /// 
         /// </summary>
-        AnimateDividepostDone,
+        AnimatePostDone,
         /// <summary>
         /// 
         /// </summary>
-        AnimateDividepostError,
+        AnimatePostError,
         /// <summary>
         /// 
         /// </summary>
-        AnimateDividestarted,
+        AnimateStarted,
         /// <summary>
         /// 
         /// </summary>
-        AudioDividerejected,
+        AudioRejected,
         /// <summary>
         /// 
         /// </summary>
-        ChatDividedataDeleted,
+        ChatDataDeleted,
         /// <summary>
         /// 
         /// </summary>
-        ChatDividemessagesAdded,
+        ChatMessagesAdded,
         /// <summary>
         /// 
         /// </summary>
-        ChatDivideprogress,
+        ChatProgress,
         /// <summary>
         /// 
         /// </summary>
-        ChatDividespeak,
+        ChatSpeak,
         /// <summary>
         /// 
         /// </summary>
-        ChatsDivideinvoiceDividefailed,
+        ChatsInvoiceFailed,
         /// <summary>
         /// 
         /// </summary>
-        ChatsDivideinvoiceDividepaid,
+        ChatsInvoicePaid,
         /// <summary>
         /// 
         /// </summary>
-        ClipDivideavatarCreated,
+        ClipAvatarCreated,
         /// <summary>
         /// 
         /// </summary>
-        ClipDivideavatarDone,
+        ClipAvatarDone,
         /// <summary>
         /// 
         /// </summary>
-        ClipDivideavatarError,
+        ClipAvatarError,
         /// <summary>
         /// 
         /// </summary>
-        ClipDivideavatarErrorNotification,
+        ClipAvatarErrorNotification,
         /// <summary>
         /// 
         /// </summary>
-        ClipDivideavatarPostDone,
+        ClipAvatarPostDone,
         /// <summary>
         /// 
         /// </summary>
-        ClipDivideavatarProgress,
+        ClipAvatarProgress,
         /// <summary>
         /// 
         /// </summary>
-        ClipDivideavatarReady,
+        ClipAvatarReady,
         /// <summary>
         /// 
         /// </summary>
-        ClipDivideavatarRejected,
+        ClipAvatarRejected,
         /// <summary>
         /// 
         /// </summary>
-        ClipDivideavatarStarted,
+        ClipAvatarStarted,
         /// <summary>
         /// 
         /// </summary>
-        ClipDivideavatarTrainingArtifactsUpdated,
+        ClipAvatarTrainingArtifactsUpdated,
         /// <summary>
         /// 
         /// </summary>
-        ClipDividecreated,
+        ClipCreated,
         /// <summary>
         /// 
         /// </summary>
-        ClipDividedeleted,
+        ClipDeleted,
         /// <summary>
         /// 
         /// </summary>
-        ClipDividedone,
+        ClipDone,
         /// <summary>
         /// 
         /// </summary>
-        ClipDivideerror,
+        ClipError,
         /// <summary>
         /// 
         /// </summary>
-        ClipDividepostDone,
+        ClipPostDone,
         /// <summary>
         /// 
         /// </summary>
-        ClipDividepostError,
+        ClipPostError,
         /// <summary>
         /// 
         /// </summary>
-        ClipDividerejected,
+        ClipRejected,
         /// <summary>
         /// 
         /// </summary>
-        ClipDividestarted,
+        ClipStarted,
         /// <summary>
         /// 
         /// </summary>
-        ClipDividestreamDividecreated,
+        ClipStreamCreated,
         /// <summary>
         /// 
         /// </summary>
-        ClipDividestreamDividedone,
+        ClipStreamDone,
         /// <summary>
         /// 
         /// </summary>
-        ClipDividestreamDivideerror,
+        ClipStreamError,
         /// <summary>
         /// 
         /// </summary>
-        ClipDividestreamDividepostDone,
+        ClipStreamPostDone,
         /// <summary>
         /// 
         /// </summary>
-        ClipDividestreamDividepostError,
+        ClipStreamPostError,
         /// <summary>
         /// 
         /// </summary>
-        ClipDividestreamDividerejected,
+        ClipStreamRejected,
         /// <summary>
         /// 
         /// </summary>
-        ClipDividestreamDividestarted,
+        ClipStreamStarted,
         /// <summary>
         /// 
         /// </summary>
-        ClipDividev2Created,
+        ClipV2Created,
         /// <summary>
         /// 
         /// </summary>
-        ConsentsDividedone,
+        ConsentsDone,
         /// <summary>
         /// 
         /// </summary>
-        ConsentsDivideerror,
+        ConsentsError,
         /// <summary>
         /// 
         /// </summary>
-        ConsentsDividerejected,
+        ConsentsRejected,
         /// <summary>
         /// 
         /// </summary>
-        ConsentsDividestartValidation,
+        ConsentsStartValidation,
         /// <summary>
         /// 
         /// </summary>
-        CreditsDividecharge,
+        CreditsCharge,
         /// <summary>
         /// 
         /// </summary>
-        DocumentDividecreated,
+        DocumentCreated,
         /// <summary>
         /// 
         /// </summary>
-        DocumentDividedone,
+        DocumentDone,
         /// <summary>
         /// 
         /// </summary>
-        DocumentDivideerror,
+        DocumentError,
         /// <summary>
         /// 
         /// </summary>
-        DocumentDivideprocessed,
+        DocumentProcessed,
         /// <summary>
         /// 
         /// </summary>
-        DocumentDividerejected,
+        DocumentRejected,
         /// <summary>
         /// 
         /// </summary>
-        ExportDividecreated,
+        ExportCreated,
         /// <summary>
         /// 
         /// </summary>
-        ExportDividedeleted,
+        ExportDeleted,
         /// <summary>
         /// 
         /// </summary>
-        ExportDividedone,
+        ExportDone,
         /// <summary>
         /// 
         /// </summary>
-        ExportDivideerror,
+        ExportError,
         /// <summary>
         /// 
         /// </summary>
-        ExportDividepartial,
+        ExportPartial,
         /// <summary>
         /// 
         /// </summary>
-        ExportDividestarted,
+        ExportStarted,
         /// <summary>
         /// 
         /// </summary>
-        ExpressiveDivideavatarTrained,
+        ExpressiveAvatarTrained,
         /// <summary>
         /// 
         /// </summary>
-        ExpressiveDividecreated,
+        ExpressiveCreated,
         /// <summary>
         /// 
         /// </summary>
-        ExpressiveDividedone,
+        ExpressiveDone,
         /// <summary>
         /// 
         /// </summary>
-        ExpressiveDivideerror,
+        ExpressiveError,
         /// <summary>
         /// 
         /// </summary>
-        ExpressiveDividepostDone,
+        ExpressivePostDone,
         /// <summary>
         /// 
         /// </summary>
-        ExpressiveDividepostError,
+        ExpressivePostError,
         /// <summary>
         /// 
         /// </summary>
-        ExpressiveDividerejected,
+        ExpressiveRejected,
         /// <summary>
         /// 
         /// </summary>
-        ExpressiveDividestarted,
+        ExpressiveStarted,
         /// <summary>
         /// 
         /// </summary>
-        ExpressiveDividestreamDividedone,
+        ExpressiveStreamDone,
         /// <summary>
         /// 
         /// </summary>
-        ImageDividerejected,
+        ImageRejected,
         /// <summary>
         /// 
         /// </summary>
-        InvoiceDividefailed,
+        InvoiceFailed,
         /// <summary>
         /// 
         /// </summary>
-        InvoiceDividepaid,
+        InvoicePaid,
         /// <summary>
         /// 
         /// </summary>
-        KnowledgeDividedone,
+        KnowledgeDone,
         /// <summary>
         /// 
         /// </summary>
-        KnowledgeDivideerror,
+        KnowledgeError,
         /// <summary>
         /// 
         /// </summary>
-        KnowledgeDivideprocessing,
+        KnowledgeProcessing,
         /// <summary>
         /// 
         /// </summary>
-        OrganizationDividecreated,
+        OrganizationCreated,
         /// <summary>
         /// 
         /// </summary>
-        OrganizationDividedeleted,
+        OrganizationDeleted,
         /// <summary>
         /// 
         /// </summary>
-        OrganizationDividememberAdded,
+        OrganizationMemberAdded,
         /// <summary>
         /// 
         /// </summary>
-        ProjectDividedeleted,
+        ProjectDeleted,
         /// <summary>
         /// 
         /// </summary>
-        ProjectDividedone,
+        ProjectDone,
         /// <summary>
         /// 
         /// </summary>
-        ProjectDivideerror,
+        ProjectError,
         /// <summary>
         /// 
         /// </summary>
-        ProjectDividepostDone,
+        ProjectPostDone,
         /// <summary>
         /// 
         /// </summary>
-        ProjectDivideready,
+        ProjectReady,
         /// <summary>
         /// 
         /// </summary>
-        ProjectDividerejected,
+        ProjectRejected,
         /// <summary>
         /// 
         /// </summary>
-        ProjectDividestarted,
+        ProjectStarted,
         /// <summary>
         /// 
         /// </summary>
-        RenderDividecreated,
+        RenderCreated,
         /// <summary>
         /// 
         /// </summary>
-        RenderDividedone,
+        RenderDone,
         /// <summary>
         /// 
         /// </summary>
-        RenderDivideerror,
+        RenderError,
         /// <summary>
         /// 
         /// </summary>
-        RenderDividestarted,
+        RenderStarted,
         /// <summary>
         /// 
         /// </summary>
-        SceneDivideavatarCreated,
+        SceneAvatarCreated,
         /// <summary>
         /// 
         /// </summary>
-        SceneDivideavatarDone,
+        SceneAvatarDone,
         /// <summary>
         /// 
         /// </summary>
-        SceneDivideavatarError,
+        SceneAvatarError,
         /// <summary>
         /// 
         /// </summary>
-        SceneDivideavatarItemCreated,
+        SceneAvatarItemCreated,
         /// <summary>
         /// 
         /// </summary>
-        SceneDivideavatarPostDone,
+        SceneAvatarPostDone,
         /// <summary>
         /// 
         /// </summary>
-        SceneDivideavatarPostError,
+        SceneAvatarPostError,
         /// <summary>
         /// 
         /// </summary>
-        SceneDivideavatarStarted,
+        SceneAvatarStarted,
         /// <summary>
         /// 
         /// </summary>
-        SceneDivideavatarTrainingStarted,
+        SceneAvatarTrainingStarted,
         /// <summary>
         /// 
         /// </summary>
-        SceneDivideavatarValidationsDone,
+        SceneAvatarValidationsDone,
         /// <summary>
         /// 
         /// </summary>
-        SceneDivideavatarValidationsError,
+        SceneAvatarValidationsError,
         /// <summary>
         /// 
         /// </summary>
-        SceneDividecreated,
+        SceneCreated,
         /// <summary>
         /// 
         /// </summary>
-        SceneDividedone,
+        SceneDone,
         /// <summary>
         /// 
         /// </summary>
-        SceneDivideerror,
+        SceneError,
         /// <summary>
         /// 
         /// </summary>
-        SceneDividepostDone,
+        ScenePostDone,
         /// <summary>
         /// 
         /// </summary>
-        SceneDividepostError,
+        ScenePostError,
         /// <summary>
         /// 
         /// </summary>
-        SceneDividestarted,
+        SceneStarted,
         /// <summary>
         /// 
         /// </summary>
-        ScenesDivideavatarsFileUploaded,
+        ScenesAvatarsFileUploaded,
         /// <summary>
         /// 
         /// </summary>
-        StreamVideoDividedone,
+        StreamVideoDone,
         /// <summary>
         /// 
         /// </summary>
-        StreamVideoDivideerror,
+        StreamVideoError,
         /// <summary>
         /// 
         /// </summary>
-        StreamVideoDividerejected,
+        StreamVideoRejected,
         /// <summary>
         /// 
         /// </summary>
-        StreamVideoDividestarted,
+        StreamVideoStarted,
         /// <summary>
         /// 
         /// </summary>
-        StreamDividedone,
+        StreamDone,
         /// <summary>
         /// 
         /// </summary>
-        TalkDividecreated,
+        TalkCreated,
         /// <summary>
         /// 
         /// </summary>
-        TalkDividedeleted,
+        TalkDeleted,
         /// <summary>
         /// 
         /// </summary>
-        TalkDividedone,
+        TalkDone,
         /// <summary>
         /// 
         /// </summary>
-        TalkDivideerror,
+        TalkError,
         /// <summary>
         /// 
         /// </summary>
-        TalkDividepostDone,
+        TalkPostDone,
         /// <summary>
         /// 
         /// </summary>
-        TalkDividepostError,
+        TalkPostError,
         /// <summary>
         /// 
         /// </summary>
-        TalkDividerejected,
+        TalkRejected,
         /// <summary>
         /// 
         /// </summary>
-        TalkDividestarted,
+        TalkStarted,
         /// <summary>
         /// 
         /// </summary>
-        TalkDividestreamDividecreated,
+        TalkStreamCreated,
         /// <summary>
         /// 
         /// </summary>
-        TalkDividestreamDividedone,
+        TalkStreamDone,
         /// <summary>
         /// 
         /// </summary>
-        TalkDividestreamDivideerror,
+        TalkStreamError,
         /// <summary>
         /// 
         /// </summary>
-        TalkDividestreamDividepostDone,
+        TalkStreamPostDone,
         /// <summary>
         /// 
         /// </summary>
-        TalkDividestreamDividepostError,
+        TalkStreamPostError,
         /// <summary>
         /// 
         /// </summary>
-        TalkDividestreamDividerejected,
+        TalkStreamRejected,
         /// <summary>
         /// 
         /// </summary>
-        TalkDividestreamDividestarted,
+        TalkStreamStarted,
         /// <summary>
         /// 
         /// </summary>
-        TranslationDivideaudioDataUpdated,
+        TranslationAudioDataUpdated,
         /// <summary>
         /// 
         /// </summary>
-        TranslationDividecelebDetectionDone,
+        TranslationCelebDetectionDone,
         /// <summary>
         /// 
         /// </summary>
-        TranslationDividecelebDetectionError,
+        TranslationCelebDetectionError,
         /// <summary>
         /// 
         /// </summary>
-        TranslationDividedeleted,
+        TranslationDeleted,
         /// <summary>
         /// 
         /// </summary>
-        TranslationDividedone,
+        TranslationDone,
         /// <summary>
         /// 
         /// </summary>
-        TranslationDivideerror,
+        TranslationError,
         /// <summary>
         /// 
         /// </summary>
-        TranslationDividefileUploaded,
+        TranslationFileUploaded,
         /// <summary>
         /// 
         /// </summary>
-        TranslationDividegroupDone,
+        TranslationGroupDone,
         /// <summary>
         /// 
         /// </summary>
-        TranslationDividegroupError,
+        TranslationGroupError,
         /// <summary>
         /// 
         /// </summary>
-        TranslationDividegroupPartialDone,
+        TranslationGroupPartialDone,
         /// <summary>
         /// 
         /// </summary>
-        TranslationDividegroupPartialError,
+        TranslationGroupPartialError,
         /// <summary>
         /// 
         /// </summary>
-        TranslationDividegroupPostDone,
+        TranslationGroupPostDone,
         /// <summary>
         /// 
         /// </summary>
-        TranslationDividegroupPostError,
+        TranslationGroupPostError,
         /// <summary>
         /// 
         /// </summary>
-        TranslationDividegroupStarted,
+        TranslationGroupStarted,
         /// <summary>
         /// 
         /// </summary>
-        TranslationDivideitemCreated,
+        TranslationItemCreated,
         /// <summary>
         /// 
         /// </summary>
-        TranslationDividepostDone,
+        TranslationPostDone,
         /// <summary>
         /// 
         /// </summary>
-        TranslationDividepostError,
+        TranslationPostError,
         /// <summary>
         /// 
         /// </summary>
-        TranslationDivideready,
+        TranslationReady,
         /// <summary>
         /// 
         /// </summary>
-        TranslationDividespeechDone,
+        TranslationSpeechDone,
         /// <summary>
         /// 
         /// </summary>
-        TranslationDividespeechError,
+        TranslationSpeechError,
         /// <summary>
         /// 
         /// </summary>
-        TranslationDividestarted,
+        TranslationStarted,
         /// <summary>
         /// 
         /// </summary>
-        TranslationDividesubtitlesDone,
+        TranslationSubtitlesDone,
         /// <summary>
         /// 
         /// </summary>
-        TriggerDividetoolDivideresult,
+        TriggerToolResult,
         /// <summary>
         /// 
         /// </summary>
-        TriggerDividewebhookDividedone,
+        TriggerWebhookDone,
         /// <summary>
         /// 
         /// </summary>
-        TriggerDividewebhookDivideerror,
+        TriggerWebhookError,
         /// <summary>
         /// 
         /// </summary>
-        UserDivideaccountMerged,
+        UserAccountMerged,
         /// <summary>
         /// 
         /// </summary>
-        UserDivideaccountMergedManually,
+        UserAccountMergedManually,
         /// <summary>
         /// 
         /// </summary>
-        UserDivideapiKeyCreated,
+        UserApiKeyCreated,
         /// <summary>
         /// 
         /// </summary>
-        UserDividedeleted,
+        UserDeleted,
         /// <summary>
         /// 
         /// </summary>
-        UserDividefirstVisit,
+        UserFirstVisit,
         /// <summary>
         /// 
         /// </summary>
-        UserDivideregistered,
+        UserRegistered,
         /// <summary>
         /// 
         /// </summary>
-        UserDividesubscriptionCreated,
+        UserSubscriptionCreated,
         /// <summary>
         /// 
         /// </summary>
-        UserDividesubscriptionDeleted,
+        UserSubscriptionDeleted,
         /// <summary>
         /// 
         /// </summary>
-        UserDividesubscriptionRenewed,
+        UserSubscriptionRenewed,
         /// <summary>
         /// 
         /// </summary>
-        UserDividesubscriptionTransferred,
+        UserSubscriptionTransferred,
         /// <summary>
         /// 
         /// </summary>
-        UserDividesubscriptionUpdated,
+        UserSubscriptionUpdated,
         /// <summary>
         /// 
         /// </summary>
-        UserDividesubscriptionWillEnd,
+        UserSubscriptionWillEnd,
         /// <summary>
         /// 
         /// </summary>
-        UserDivideupdated,
+        UserUpdated,
         /// <summary>
         /// 
         /// </summary>
-        VoiceDividedone,
+        VoiceDone,
         /// <summary>
         /// 
         /// </summary>
-        VoiceDivideerror,
+        VoiceError,
         /// <summary>
         /// 
         /// </summary>
-        VoiceDividerejected,
+        VoiceRejected,
     }
 
     /// <summary>
@@ -722,181 +722,181 @@ namespace DId
         {
             return value switch
             {
-                Subject.AgentDivideassetCreated => "agent/asset-created",
-                Subject.AgentDivideassetDone => "agent/asset-done",
-                Subject.AgentDivideassetError => "agent/asset-error",
-                Subject.AgentDivideassetStarted => "agent/asset-started",
-                Subject.AgentDividecreated => "agent/created",
-                Subject.AgentDividedone => "agent/done",
-                Subject.AgentDivideerror => "agent/error",
-                Subject.AgentDivideinsightsDividedeleted => "agent/insights/deleted",
-                Subject.AgentDivideready => "agent/ready",
-                Subject.AgentDividereadyForPreprocess => "agent/ready-for-preprocess",
-                Subject.AgentDividerejected => "agent/rejected",
-                Subject.AgentDividestarted => "agent/started",
-                Subject.AnimateTaskDividecreated => "animate-task/created",
-                Subject.AnimateDividecreated => "animate/created",
-                Subject.AnimateDividedone => "animate/done",
-                Subject.AnimateDivideerror => "animate/error",
-                Subject.AnimateDividepostDone => "animate/post-done",
-                Subject.AnimateDividepostError => "animate/post-error",
-                Subject.AnimateDividestarted => "animate/started",
-                Subject.AudioDividerejected => "audio/rejected",
-                Subject.ChatDividedataDeleted => "chat/data-deleted",
-                Subject.ChatDividemessagesAdded => "chat/messages-added",
-                Subject.ChatDivideprogress => "chat/progress",
-                Subject.ChatDividespeak => "chat/speak",
-                Subject.ChatsDivideinvoiceDividefailed => "chats/invoice/failed",
-                Subject.ChatsDivideinvoiceDividepaid => "chats/invoice/paid",
-                Subject.ClipDivideavatarCreated => "clip/avatar-created",
-                Subject.ClipDivideavatarDone => "clip/avatar-done",
-                Subject.ClipDivideavatarError => "clip/avatar-error",
-                Subject.ClipDivideavatarErrorNotification => "clip/avatar-error-notification",
-                Subject.ClipDivideavatarPostDone => "clip/avatar-post-done",
-                Subject.ClipDivideavatarProgress => "clip/avatar-progress",
-                Subject.ClipDivideavatarReady => "clip/avatar-ready",
-                Subject.ClipDivideavatarRejected => "clip/avatar-rejected",
-                Subject.ClipDivideavatarStarted => "clip/avatar-started",
-                Subject.ClipDivideavatarTrainingArtifactsUpdated => "clip/avatar-training-artifacts-updated",
-                Subject.ClipDividecreated => "clip/created",
-                Subject.ClipDividedeleted => "clip/deleted",
-                Subject.ClipDividedone => "clip/done",
-                Subject.ClipDivideerror => "clip/error",
-                Subject.ClipDividepostDone => "clip/post-done",
-                Subject.ClipDividepostError => "clip/post-error",
-                Subject.ClipDividerejected => "clip/rejected",
-                Subject.ClipDividestarted => "clip/started",
-                Subject.ClipDividestreamDividecreated => "clip/stream/created",
-                Subject.ClipDividestreamDividedone => "clip/stream/done",
-                Subject.ClipDividestreamDivideerror => "clip/stream/error",
-                Subject.ClipDividestreamDividepostDone => "clip/stream/post-done",
-                Subject.ClipDividestreamDividepostError => "clip/stream/post-error",
-                Subject.ClipDividestreamDividerejected => "clip/stream/rejected",
-                Subject.ClipDividestreamDividestarted => "clip/stream/started",
-                Subject.ClipDividev2Created => "clip/v2-created",
-                Subject.ConsentsDividedone => "consents/done",
-                Subject.ConsentsDivideerror => "consents/error",
-                Subject.ConsentsDividerejected => "consents/rejected",
-                Subject.ConsentsDividestartValidation => "consents/start-validation",
-                Subject.CreditsDividecharge => "credits/charge",
-                Subject.DocumentDividecreated => "document/created",
-                Subject.DocumentDividedone => "document/done",
-                Subject.DocumentDivideerror => "document/error",
-                Subject.DocumentDivideprocessed => "document/processed",
-                Subject.DocumentDividerejected => "document/rejected",
-                Subject.ExportDividecreated => "export/created",
-                Subject.ExportDividedeleted => "export/deleted",
-                Subject.ExportDividedone => "export/done",
-                Subject.ExportDivideerror => "export/error",
-                Subject.ExportDividepartial => "export/partial",
-                Subject.ExportDividestarted => "export/started",
-                Subject.ExpressiveDivideavatarTrained => "expressive/avatar-trained",
-                Subject.ExpressiveDividecreated => "expressive/created",
-                Subject.ExpressiveDividedone => "expressive/done",
-                Subject.ExpressiveDivideerror => "expressive/error",
-                Subject.ExpressiveDividepostDone => "expressive/post-done",
-                Subject.ExpressiveDividepostError => "expressive/post-error",
-                Subject.ExpressiveDividerejected => "expressive/rejected",
-                Subject.ExpressiveDividestarted => "expressive/started",
-                Subject.ExpressiveDividestreamDividedone => "expressive/stream/done",
-                Subject.ImageDividerejected => "image/rejected",
-                Subject.InvoiceDividefailed => "invoice/failed",
-                Subject.InvoiceDividepaid => "invoice/paid",
-                Subject.KnowledgeDividedone => "knowledge/done",
-                Subject.KnowledgeDivideerror => "knowledge/error",
-                Subject.KnowledgeDivideprocessing => "knowledge/processing",
-                Subject.OrganizationDividecreated => "organization/created",
-                Subject.OrganizationDividedeleted => "organization/deleted",
-                Subject.OrganizationDividememberAdded => "organization/member-added",
-                Subject.ProjectDividedeleted => "project/deleted",
-                Subject.ProjectDividedone => "project/done",
-                Subject.ProjectDivideerror => "project/error",
-                Subject.ProjectDividepostDone => "project/post-done",
-                Subject.ProjectDivideready => "project/ready",
-                Subject.ProjectDividerejected => "project/rejected",
-                Subject.ProjectDividestarted => "project/started",
-                Subject.RenderDividecreated => "render/created",
-                Subject.RenderDividedone => "render/done",
-                Subject.RenderDivideerror => "render/error",
-                Subject.RenderDividestarted => "render/started",
-                Subject.SceneDivideavatarCreated => "scene/avatar-created",
-                Subject.SceneDivideavatarDone => "scene/avatar-done",
-                Subject.SceneDivideavatarError => "scene/avatar-error",
-                Subject.SceneDivideavatarItemCreated => "scene/avatar-item-created",
-                Subject.SceneDivideavatarPostDone => "scene/avatar-post-done",
-                Subject.SceneDivideavatarPostError => "scene/avatar-post-error",
-                Subject.SceneDivideavatarStarted => "scene/avatar-started",
-                Subject.SceneDivideavatarTrainingStarted => "scene/avatar-training-started",
-                Subject.SceneDivideavatarValidationsDone => "scene/avatar-validations-done",
-                Subject.SceneDivideavatarValidationsError => "scene/avatar-validations-error",
-                Subject.SceneDividecreated => "scene/created",
-                Subject.SceneDividedone => "scene/done",
-                Subject.SceneDivideerror => "scene/error",
-                Subject.SceneDividepostDone => "scene/post-done",
-                Subject.SceneDividepostError => "scene/post-error",
-                Subject.SceneDividestarted => "scene/started",
-                Subject.ScenesDivideavatarsFileUploaded => "scenes/avatars-file-uploaded",
-                Subject.StreamVideoDividedone => "stream-video/done",
-                Subject.StreamVideoDivideerror => "stream-video/error",
-                Subject.StreamVideoDividerejected => "stream-video/rejected",
-                Subject.StreamVideoDividestarted => "stream-video/started",
-                Subject.StreamDividedone => "stream/done",
-                Subject.TalkDividecreated => "talk/created",
-                Subject.TalkDividedeleted => "talk/deleted",
-                Subject.TalkDividedone => "talk/done",
-                Subject.TalkDivideerror => "talk/error",
-                Subject.TalkDividepostDone => "talk/post-done",
-                Subject.TalkDividepostError => "talk/post-error",
-                Subject.TalkDividerejected => "talk/rejected",
-                Subject.TalkDividestarted => "talk/started",
-                Subject.TalkDividestreamDividecreated => "talk/stream/created",
-                Subject.TalkDividestreamDividedone => "talk/stream/done",
-                Subject.TalkDividestreamDivideerror => "talk/stream/error",
-                Subject.TalkDividestreamDividepostDone => "talk/stream/post-done",
-                Subject.TalkDividestreamDividepostError => "talk/stream/post-error",
-                Subject.TalkDividestreamDividerejected => "talk/stream/rejected",
-                Subject.TalkDividestreamDividestarted => "talk/stream/started",
-                Subject.TranslationDivideaudioDataUpdated => "translation/audio-data-updated",
-                Subject.TranslationDividecelebDetectionDone => "translation/celeb-detection-done",
-                Subject.TranslationDividecelebDetectionError => "translation/celeb-detection-error",
-                Subject.TranslationDividedeleted => "translation/deleted",
-                Subject.TranslationDividedone => "translation/done",
-                Subject.TranslationDivideerror => "translation/error",
-                Subject.TranslationDividefileUploaded => "translation/file-uploaded",
-                Subject.TranslationDividegroupDone => "translation/group-done",
-                Subject.TranslationDividegroupError => "translation/group-error",
-                Subject.TranslationDividegroupPartialDone => "translation/group-partial-done",
-                Subject.TranslationDividegroupPartialError => "translation/group-partial-error",
-                Subject.TranslationDividegroupPostDone => "translation/group-post-done",
-                Subject.TranslationDividegroupPostError => "translation/group-post-error",
-                Subject.TranslationDividegroupStarted => "translation/group-started",
-                Subject.TranslationDivideitemCreated => "translation/item-created",
-                Subject.TranslationDividepostDone => "translation/post-done",
-                Subject.TranslationDividepostError => "translation/post-error",
-                Subject.TranslationDivideready => "translation/ready",
-                Subject.TranslationDividespeechDone => "translation/speech-done",
-                Subject.TranslationDividespeechError => "translation/speech-error",
-                Subject.TranslationDividestarted => "translation/started",
-                Subject.TranslationDividesubtitlesDone => "translation/subtitles-done",
-                Subject.TriggerDividetoolDivideresult => "trigger/tool/result",
-                Subject.TriggerDividewebhookDividedone => "trigger/webhook/done",
-                Subject.TriggerDividewebhookDivideerror => "trigger/webhook/error",
-                Subject.UserDivideaccountMerged => "user/account-merged",
-                Subject.UserDivideaccountMergedManually => "user/account-merged-manually",
-                Subject.UserDivideapiKeyCreated => "user/api-key-created",
-                Subject.UserDividedeleted => "user/deleted",
-                Subject.UserDividefirstVisit => "user/first-visit",
-                Subject.UserDivideregistered => "user/registered",
-                Subject.UserDividesubscriptionCreated => "user/subscription-created",
-                Subject.UserDividesubscriptionDeleted => "user/subscription-deleted",
-                Subject.UserDividesubscriptionRenewed => "user/subscription-renewed",
-                Subject.UserDividesubscriptionTransferred => "user/subscription-transferred",
-                Subject.UserDividesubscriptionUpdated => "user/subscription-updated",
-                Subject.UserDividesubscriptionWillEnd => "user/subscription-will-end",
-                Subject.UserDivideupdated => "user/updated",
-                Subject.VoiceDividedone => "voice/done",
-                Subject.VoiceDivideerror => "voice/error",
-                Subject.VoiceDividerejected => "voice/rejected",
+                Subject.AgentAssetCreated => "agent/asset-created",
+                Subject.AgentAssetDone => "agent/asset-done",
+                Subject.AgentAssetError => "agent/asset-error",
+                Subject.AgentAssetStarted => "agent/asset-started",
+                Subject.AgentCreated => "agent/created",
+                Subject.AgentDone => "agent/done",
+                Subject.AgentError => "agent/error",
+                Subject.AgentInsightsDeleted => "agent/insights/deleted",
+                Subject.AgentReady => "agent/ready",
+                Subject.AgentReadyForPreprocess => "agent/ready-for-preprocess",
+                Subject.AgentRejected => "agent/rejected",
+                Subject.AgentStarted => "agent/started",
+                Subject.AnimateTaskCreated => "animate-task/created",
+                Subject.AnimateCreated => "animate/created",
+                Subject.AnimateDone => "animate/done",
+                Subject.AnimateError => "animate/error",
+                Subject.AnimatePostDone => "animate/post-done",
+                Subject.AnimatePostError => "animate/post-error",
+                Subject.AnimateStarted => "animate/started",
+                Subject.AudioRejected => "audio/rejected",
+                Subject.ChatDataDeleted => "chat/data-deleted",
+                Subject.ChatMessagesAdded => "chat/messages-added",
+                Subject.ChatProgress => "chat/progress",
+                Subject.ChatSpeak => "chat/speak",
+                Subject.ChatsInvoiceFailed => "chats/invoice/failed",
+                Subject.ChatsInvoicePaid => "chats/invoice/paid",
+                Subject.ClipAvatarCreated => "clip/avatar-created",
+                Subject.ClipAvatarDone => "clip/avatar-done",
+                Subject.ClipAvatarError => "clip/avatar-error",
+                Subject.ClipAvatarErrorNotification => "clip/avatar-error-notification",
+                Subject.ClipAvatarPostDone => "clip/avatar-post-done",
+                Subject.ClipAvatarProgress => "clip/avatar-progress",
+                Subject.ClipAvatarReady => "clip/avatar-ready",
+                Subject.ClipAvatarRejected => "clip/avatar-rejected",
+                Subject.ClipAvatarStarted => "clip/avatar-started",
+                Subject.ClipAvatarTrainingArtifactsUpdated => "clip/avatar-training-artifacts-updated",
+                Subject.ClipCreated => "clip/created",
+                Subject.ClipDeleted => "clip/deleted",
+                Subject.ClipDone => "clip/done",
+                Subject.ClipError => "clip/error",
+                Subject.ClipPostDone => "clip/post-done",
+                Subject.ClipPostError => "clip/post-error",
+                Subject.ClipRejected => "clip/rejected",
+                Subject.ClipStarted => "clip/started",
+                Subject.ClipStreamCreated => "clip/stream/created",
+                Subject.ClipStreamDone => "clip/stream/done",
+                Subject.ClipStreamError => "clip/stream/error",
+                Subject.ClipStreamPostDone => "clip/stream/post-done",
+                Subject.ClipStreamPostError => "clip/stream/post-error",
+                Subject.ClipStreamRejected => "clip/stream/rejected",
+                Subject.ClipStreamStarted => "clip/stream/started",
+                Subject.ClipV2Created => "clip/v2-created",
+                Subject.ConsentsDone => "consents/done",
+                Subject.ConsentsError => "consents/error",
+                Subject.ConsentsRejected => "consents/rejected",
+                Subject.ConsentsStartValidation => "consents/start-validation",
+                Subject.CreditsCharge => "credits/charge",
+                Subject.DocumentCreated => "document/created",
+                Subject.DocumentDone => "document/done",
+                Subject.DocumentError => "document/error",
+                Subject.DocumentProcessed => "document/processed",
+                Subject.DocumentRejected => "document/rejected",
+                Subject.ExportCreated => "export/created",
+                Subject.ExportDeleted => "export/deleted",
+                Subject.ExportDone => "export/done",
+                Subject.ExportError => "export/error",
+                Subject.ExportPartial => "export/partial",
+                Subject.ExportStarted => "export/started",
+                Subject.ExpressiveAvatarTrained => "expressive/avatar-trained",
+                Subject.ExpressiveCreated => "expressive/created",
+                Subject.ExpressiveDone => "expressive/done",
+                Subject.ExpressiveError => "expressive/error",
+                Subject.ExpressivePostDone => "expressive/post-done",
+                Subject.ExpressivePostError => "expressive/post-error",
+                Subject.ExpressiveRejected => "expressive/rejected",
+                Subject.ExpressiveStarted => "expressive/started",
+                Subject.ExpressiveStreamDone => "expressive/stream/done",
+                Subject.ImageRejected => "image/rejected",
+                Subject.InvoiceFailed => "invoice/failed",
+                Subject.InvoicePaid => "invoice/paid",
+                Subject.KnowledgeDone => "knowledge/done",
+                Subject.KnowledgeError => "knowledge/error",
+                Subject.KnowledgeProcessing => "knowledge/processing",
+                Subject.OrganizationCreated => "organization/created",
+                Subject.OrganizationDeleted => "organization/deleted",
+                Subject.OrganizationMemberAdded => "organization/member-added",
+                Subject.ProjectDeleted => "project/deleted",
+                Subject.ProjectDone => "project/done",
+                Subject.ProjectError => "project/error",
+                Subject.ProjectPostDone => "project/post-done",
+                Subject.ProjectReady => "project/ready",
+                Subject.ProjectRejected => "project/rejected",
+                Subject.ProjectStarted => "project/started",
+                Subject.RenderCreated => "render/created",
+                Subject.RenderDone => "render/done",
+                Subject.RenderError => "render/error",
+                Subject.RenderStarted => "render/started",
+                Subject.SceneAvatarCreated => "scene/avatar-created",
+                Subject.SceneAvatarDone => "scene/avatar-done",
+                Subject.SceneAvatarError => "scene/avatar-error",
+                Subject.SceneAvatarItemCreated => "scene/avatar-item-created",
+                Subject.SceneAvatarPostDone => "scene/avatar-post-done",
+                Subject.SceneAvatarPostError => "scene/avatar-post-error",
+                Subject.SceneAvatarStarted => "scene/avatar-started",
+                Subject.SceneAvatarTrainingStarted => "scene/avatar-training-started",
+                Subject.SceneAvatarValidationsDone => "scene/avatar-validations-done",
+                Subject.SceneAvatarValidationsError => "scene/avatar-validations-error",
+                Subject.SceneCreated => "scene/created",
+                Subject.SceneDone => "scene/done",
+                Subject.SceneError => "scene/error",
+                Subject.ScenePostDone => "scene/post-done",
+                Subject.ScenePostError => "scene/post-error",
+                Subject.SceneStarted => "scene/started",
+                Subject.ScenesAvatarsFileUploaded => "scenes/avatars-file-uploaded",
+                Subject.StreamVideoDone => "stream-video/done",
+                Subject.StreamVideoError => "stream-video/error",
+                Subject.StreamVideoRejected => "stream-video/rejected",
+                Subject.StreamVideoStarted => "stream-video/started",
+                Subject.StreamDone => "stream/done",
+                Subject.TalkCreated => "talk/created",
+                Subject.TalkDeleted => "talk/deleted",
+                Subject.TalkDone => "talk/done",
+                Subject.TalkError => "talk/error",
+                Subject.TalkPostDone => "talk/post-done",
+                Subject.TalkPostError => "talk/post-error",
+                Subject.TalkRejected => "talk/rejected",
+                Subject.TalkStarted => "talk/started",
+                Subject.TalkStreamCreated => "talk/stream/created",
+                Subject.TalkStreamDone => "talk/stream/done",
+                Subject.TalkStreamError => "talk/stream/error",
+                Subject.TalkStreamPostDone => "talk/stream/post-done",
+                Subject.TalkStreamPostError => "talk/stream/post-error",
+                Subject.TalkStreamRejected => "talk/stream/rejected",
+                Subject.TalkStreamStarted => "talk/stream/started",
+                Subject.TranslationAudioDataUpdated => "translation/audio-data-updated",
+                Subject.TranslationCelebDetectionDone => "translation/celeb-detection-done",
+                Subject.TranslationCelebDetectionError => "translation/celeb-detection-error",
+                Subject.TranslationDeleted => "translation/deleted",
+                Subject.TranslationDone => "translation/done",
+                Subject.TranslationError => "translation/error",
+                Subject.TranslationFileUploaded => "translation/file-uploaded",
+                Subject.TranslationGroupDone => "translation/group-done",
+                Subject.TranslationGroupError => "translation/group-error",
+                Subject.TranslationGroupPartialDone => "translation/group-partial-done",
+                Subject.TranslationGroupPartialError => "translation/group-partial-error",
+                Subject.TranslationGroupPostDone => "translation/group-post-done",
+                Subject.TranslationGroupPostError => "translation/group-post-error",
+                Subject.TranslationGroupStarted => "translation/group-started",
+                Subject.TranslationItemCreated => "translation/item-created",
+                Subject.TranslationPostDone => "translation/post-done",
+                Subject.TranslationPostError => "translation/post-error",
+                Subject.TranslationReady => "translation/ready",
+                Subject.TranslationSpeechDone => "translation/speech-done",
+                Subject.TranslationSpeechError => "translation/speech-error",
+                Subject.TranslationStarted => "translation/started",
+                Subject.TranslationSubtitlesDone => "translation/subtitles-done",
+                Subject.TriggerToolResult => "trigger/tool/result",
+                Subject.TriggerWebhookDone => "trigger/webhook/done",
+                Subject.TriggerWebhookError => "trigger/webhook/error",
+                Subject.UserAccountMerged => "user/account-merged",
+                Subject.UserAccountMergedManually => "user/account-merged-manually",
+                Subject.UserApiKeyCreated => "user/api-key-created",
+                Subject.UserDeleted => "user/deleted",
+                Subject.UserFirstVisit => "user/first-visit",
+                Subject.UserRegistered => "user/registered",
+                Subject.UserSubscriptionCreated => "user/subscription-created",
+                Subject.UserSubscriptionDeleted => "user/subscription-deleted",
+                Subject.UserSubscriptionRenewed => "user/subscription-renewed",
+                Subject.UserSubscriptionTransferred => "user/subscription-transferred",
+                Subject.UserSubscriptionUpdated => "user/subscription-updated",
+                Subject.UserSubscriptionWillEnd => "user/subscription-will-end",
+                Subject.UserUpdated => "user/updated",
+                Subject.VoiceDone => "voice/done",
+                Subject.VoiceError => "voice/error",
+                Subject.VoiceRejected => "voice/rejected",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
             };
         }
@@ -907,181 +907,181 @@ namespace DId
         {
             return value switch
             {
-                "agent/asset-created" => Subject.AgentDivideassetCreated,
-                "agent/asset-done" => Subject.AgentDivideassetDone,
-                "agent/asset-error" => Subject.AgentDivideassetError,
-                "agent/asset-started" => Subject.AgentDivideassetStarted,
-                "agent/created" => Subject.AgentDividecreated,
-                "agent/done" => Subject.AgentDividedone,
-                "agent/error" => Subject.AgentDivideerror,
-                "agent/insights/deleted" => Subject.AgentDivideinsightsDividedeleted,
-                "agent/ready" => Subject.AgentDivideready,
-                "agent/ready-for-preprocess" => Subject.AgentDividereadyForPreprocess,
-                "agent/rejected" => Subject.AgentDividerejected,
-                "agent/started" => Subject.AgentDividestarted,
-                "animate-task/created" => Subject.AnimateTaskDividecreated,
-                "animate/created" => Subject.AnimateDividecreated,
-                "animate/done" => Subject.AnimateDividedone,
-                "animate/error" => Subject.AnimateDivideerror,
-                "animate/post-done" => Subject.AnimateDividepostDone,
-                "animate/post-error" => Subject.AnimateDividepostError,
-                "animate/started" => Subject.AnimateDividestarted,
-                "audio/rejected" => Subject.AudioDividerejected,
-                "chat/data-deleted" => Subject.ChatDividedataDeleted,
-                "chat/messages-added" => Subject.ChatDividemessagesAdded,
-                "chat/progress" => Subject.ChatDivideprogress,
-                "chat/speak" => Subject.ChatDividespeak,
-                "chats/invoice/failed" => Subject.ChatsDivideinvoiceDividefailed,
-                "chats/invoice/paid" => Subject.ChatsDivideinvoiceDividepaid,
-                "clip/avatar-created" => Subject.ClipDivideavatarCreated,
-                "clip/avatar-done" => Subject.ClipDivideavatarDone,
-                "clip/avatar-error" => Subject.ClipDivideavatarError,
-                "clip/avatar-error-notification" => Subject.ClipDivideavatarErrorNotification,
-                "clip/avatar-post-done" => Subject.ClipDivideavatarPostDone,
-                "clip/avatar-progress" => Subject.ClipDivideavatarProgress,
-                "clip/avatar-ready" => Subject.ClipDivideavatarReady,
-                "clip/avatar-rejected" => Subject.ClipDivideavatarRejected,
-                "clip/avatar-started" => Subject.ClipDivideavatarStarted,
-                "clip/avatar-training-artifacts-updated" => Subject.ClipDivideavatarTrainingArtifactsUpdated,
-                "clip/created" => Subject.ClipDividecreated,
-                "clip/deleted" => Subject.ClipDividedeleted,
-                "clip/done" => Subject.ClipDividedone,
-                "clip/error" => Subject.ClipDivideerror,
-                "clip/post-done" => Subject.ClipDividepostDone,
-                "clip/post-error" => Subject.ClipDividepostError,
-                "clip/rejected" => Subject.ClipDividerejected,
-                "clip/started" => Subject.ClipDividestarted,
-                "clip/stream/created" => Subject.ClipDividestreamDividecreated,
-                "clip/stream/done" => Subject.ClipDividestreamDividedone,
-                "clip/stream/error" => Subject.ClipDividestreamDivideerror,
-                "clip/stream/post-done" => Subject.ClipDividestreamDividepostDone,
-                "clip/stream/post-error" => Subject.ClipDividestreamDividepostError,
-                "clip/stream/rejected" => Subject.ClipDividestreamDividerejected,
-                "clip/stream/started" => Subject.ClipDividestreamDividestarted,
-                "clip/v2-created" => Subject.ClipDividev2Created,
-                "consents/done" => Subject.ConsentsDividedone,
-                "consents/error" => Subject.ConsentsDivideerror,
-                "consents/rejected" => Subject.ConsentsDividerejected,
-                "consents/start-validation" => Subject.ConsentsDividestartValidation,
-                "credits/charge" => Subject.CreditsDividecharge,
-                "document/created" => Subject.DocumentDividecreated,
-                "document/done" => Subject.DocumentDividedone,
-                "document/error" => Subject.DocumentDivideerror,
-                "document/processed" => Subject.DocumentDivideprocessed,
-                "document/rejected" => Subject.DocumentDividerejected,
-                "export/created" => Subject.ExportDividecreated,
-                "export/deleted" => Subject.ExportDividedeleted,
-                "export/done" => Subject.ExportDividedone,
-                "export/error" => Subject.ExportDivideerror,
-                "export/partial" => Subject.ExportDividepartial,
-                "export/started" => Subject.ExportDividestarted,
-                "expressive/avatar-trained" => Subject.ExpressiveDivideavatarTrained,
-                "expressive/created" => Subject.ExpressiveDividecreated,
-                "expressive/done" => Subject.ExpressiveDividedone,
-                "expressive/error" => Subject.ExpressiveDivideerror,
-                "expressive/post-done" => Subject.ExpressiveDividepostDone,
-                "expressive/post-error" => Subject.ExpressiveDividepostError,
-                "expressive/rejected" => Subject.ExpressiveDividerejected,
-                "expressive/started" => Subject.ExpressiveDividestarted,
-                "expressive/stream/done" => Subject.ExpressiveDividestreamDividedone,
-                "image/rejected" => Subject.ImageDividerejected,
-                "invoice/failed" => Subject.InvoiceDividefailed,
-                "invoice/paid" => Subject.InvoiceDividepaid,
-                "knowledge/done" => Subject.KnowledgeDividedone,
-                "knowledge/error" => Subject.KnowledgeDivideerror,
-                "knowledge/processing" => Subject.KnowledgeDivideprocessing,
-                "organization/created" => Subject.OrganizationDividecreated,
-                "organization/deleted" => Subject.OrganizationDividedeleted,
-                "organization/member-added" => Subject.OrganizationDividememberAdded,
-                "project/deleted" => Subject.ProjectDividedeleted,
-                "project/done" => Subject.ProjectDividedone,
-                "project/error" => Subject.ProjectDivideerror,
-                "project/post-done" => Subject.ProjectDividepostDone,
-                "project/ready" => Subject.ProjectDivideready,
-                "project/rejected" => Subject.ProjectDividerejected,
-                "project/started" => Subject.ProjectDividestarted,
-                "render/created" => Subject.RenderDividecreated,
-                "render/done" => Subject.RenderDividedone,
-                "render/error" => Subject.RenderDivideerror,
-                "render/started" => Subject.RenderDividestarted,
-                "scene/avatar-created" => Subject.SceneDivideavatarCreated,
-                "scene/avatar-done" => Subject.SceneDivideavatarDone,
-                "scene/avatar-error" => Subject.SceneDivideavatarError,
-                "scene/avatar-item-created" => Subject.SceneDivideavatarItemCreated,
-                "scene/avatar-post-done" => Subject.SceneDivideavatarPostDone,
-                "scene/avatar-post-error" => Subject.SceneDivideavatarPostError,
-                "scene/avatar-started" => Subject.SceneDivideavatarStarted,
-                "scene/avatar-training-started" => Subject.SceneDivideavatarTrainingStarted,
-                "scene/avatar-validations-done" => Subject.SceneDivideavatarValidationsDone,
-                "scene/avatar-validations-error" => Subject.SceneDivideavatarValidationsError,
-                "scene/created" => Subject.SceneDividecreated,
-                "scene/done" => Subject.SceneDividedone,
-                "scene/error" => Subject.SceneDivideerror,
-                "scene/post-done" => Subject.SceneDividepostDone,
-                "scene/post-error" => Subject.SceneDividepostError,
-                "scene/started" => Subject.SceneDividestarted,
-                "scenes/avatars-file-uploaded" => Subject.ScenesDivideavatarsFileUploaded,
-                "stream-video/done" => Subject.StreamVideoDividedone,
-                "stream-video/error" => Subject.StreamVideoDivideerror,
-                "stream-video/rejected" => Subject.StreamVideoDividerejected,
-                "stream-video/started" => Subject.StreamVideoDividestarted,
-                "stream/done" => Subject.StreamDividedone,
-                "talk/created" => Subject.TalkDividecreated,
-                "talk/deleted" => Subject.TalkDividedeleted,
-                "talk/done" => Subject.TalkDividedone,
-                "talk/error" => Subject.TalkDivideerror,
-                "talk/post-done" => Subject.TalkDividepostDone,
-                "talk/post-error" => Subject.TalkDividepostError,
-                "talk/rejected" => Subject.TalkDividerejected,
-                "talk/started" => Subject.TalkDividestarted,
-                "talk/stream/created" => Subject.TalkDividestreamDividecreated,
-                "talk/stream/done" => Subject.TalkDividestreamDividedone,
-                "talk/stream/error" => Subject.TalkDividestreamDivideerror,
-                "talk/stream/post-done" => Subject.TalkDividestreamDividepostDone,
-                "talk/stream/post-error" => Subject.TalkDividestreamDividepostError,
-                "talk/stream/rejected" => Subject.TalkDividestreamDividerejected,
-                "talk/stream/started" => Subject.TalkDividestreamDividestarted,
-                "translation/audio-data-updated" => Subject.TranslationDivideaudioDataUpdated,
-                "translation/celeb-detection-done" => Subject.TranslationDividecelebDetectionDone,
-                "translation/celeb-detection-error" => Subject.TranslationDividecelebDetectionError,
-                "translation/deleted" => Subject.TranslationDividedeleted,
-                "translation/done" => Subject.TranslationDividedone,
-                "translation/error" => Subject.TranslationDivideerror,
-                "translation/file-uploaded" => Subject.TranslationDividefileUploaded,
-                "translation/group-done" => Subject.TranslationDividegroupDone,
-                "translation/group-error" => Subject.TranslationDividegroupError,
-                "translation/group-partial-done" => Subject.TranslationDividegroupPartialDone,
-                "translation/group-partial-error" => Subject.TranslationDividegroupPartialError,
-                "translation/group-post-done" => Subject.TranslationDividegroupPostDone,
-                "translation/group-post-error" => Subject.TranslationDividegroupPostError,
-                "translation/group-started" => Subject.TranslationDividegroupStarted,
-                "translation/item-created" => Subject.TranslationDivideitemCreated,
-                "translation/post-done" => Subject.TranslationDividepostDone,
-                "translation/post-error" => Subject.TranslationDividepostError,
-                "translation/ready" => Subject.TranslationDivideready,
-                "translation/speech-done" => Subject.TranslationDividespeechDone,
-                "translation/speech-error" => Subject.TranslationDividespeechError,
-                "translation/started" => Subject.TranslationDividestarted,
-                "translation/subtitles-done" => Subject.TranslationDividesubtitlesDone,
-                "trigger/tool/result" => Subject.TriggerDividetoolDivideresult,
-                "trigger/webhook/done" => Subject.TriggerDividewebhookDividedone,
-                "trigger/webhook/error" => Subject.TriggerDividewebhookDivideerror,
-                "user/account-merged" => Subject.UserDivideaccountMerged,
-                "user/account-merged-manually" => Subject.UserDivideaccountMergedManually,
-                "user/api-key-created" => Subject.UserDivideapiKeyCreated,
-                "user/deleted" => Subject.UserDividedeleted,
-                "user/first-visit" => Subject.UserDividefirstVisit,
-                "user/registered" => Subject.UserDivideregistered,
-                "user/subscription-created" => Subject.UserDividesubscriptionCreated,
-                "user/subscription-deleted" => Subject.UserDividesubscriptionDeleted,
-                "user/subscription-renewed" => Subject.UserDividesubscriptionRenewed,
-                "user/subscription-transferred" => Subject.UserDividesubscriptionTransferred,
-                "user/subscription-updated" => Subject.UserDividesubscriptionUpdated,
-                "user/subscription-will-end" => Subject.UserDividesubscriptionWillEnd,
-                "user/updated" => Subject.UserDivideupdated,
-                "voice/done" => Subject.VoiceDividedone,
-                "voice/error" => Subject.VoiceDivideerror,
-                "voice/rejected" => Subject.VoiceDividerejected,
+                "agent/asset-created" => Subject.AgentAssetCreated,
+                "agent/asset-done" => Subject.AgentAssetDone,
+                "agent/asset-error" => Subject.AgentAssetError,
+                "agent/asset-started" => Subject.AgentAssetStarted,
+                "agent/created" => Subject.AgentCreated,
+                "agent/done" => Subject.AgentDone,
+                "agent/error" => Subject.AgentError,
+                "agent/insights/deleted" => Subject.AgentInsightsDeleted,
+                "agent/ready" => Subject.AgentReady,
+                "agent/ready-for-preprocess" => Subject.AgentReadyForPreprocess,
+                "agent/rejected" => Subject.AgentRejected,
+                "agent/started" => Subject.AgentStarted,
+                "animate-task/created" => Subject.AnimateTaskCreated,
+                "animate/created" => Subject.AnimateCreated,
+                "animate/done" => Subject.AnimateDone,
+                "animate/error" => Subject.AnimateError,
+                "animate/post-done" => Subject.AnimatePostDone,
+                "animate/post-error" => Subject.AnimatePostError,
+                "animate/started" => Subject.AnimateStarted,
+                "audio/rejected" => Subject.AudioRejected,
+                "chat/data-deleted" => Subject.ChatDataDeleted,
+                "chat/messages-added" => Subject.ChatMessagesAdded,
+                "chat/progress" => Subject.ChatProgress,
+                "chat/speak" => Subject.ChatSpeak,
+                "chats/invoice/failed" => Subject.ChatsInvoiceFailed,
+                "chats/invoice/paid" => Subject.ChatsInvoicePaid,
+                "clip/avatar-created" => Subject.ClipAvatarCreated,
+                "clip/avatar-done" => Subject.ClipAvatarDone,
+                "clip/avatar-error" => Subject.ClipAvatarError,
+                "clip/avatar-error-notification" => Subject.ClipAvatarErrorNotification,
+                "clip/avatar-post-done" => Subject.ClipAvatarPostDone,
+                "clip/avatar-progress" => Subject.ClipAvatarProgress,
+                "clip/avatar-ready" => Subject.ClipAvatarReady,
+                "clip/avatar-rejected" => Subject.ClipAvatarRejected,
+                "clip/avatar-started" => Subject.ClipAvatarStarted,
+                "clip/avatar-training-artifacts-updated" => Subject.ClipAvatarTrainingArtifactsUpdated,
+                "clip/created" => Subject.ClipCreated,
+                "clip/deleted" => Subject.ClipDeleted,
+                "clip/done" => Subject.ClipDone,
+                "clip/error" => Subject.ClipError,
+                "clip/post-done" => Subject.ClipPostDone,
+                "clip/post-error" => Subject.ClipPostError,
+                "clip/rejected" => Subject.ClipRejected,
+                "clip/started" => Subject.ClipStarted,
+                "clip/stream/created" => Subject.ClipStreamCreated,
+                "clip/stream/done" => Subject.ClipStreamDone,
+                "clip/stream/error" => Subject.ClipStreamError,
+                "clip/stream/post-done" => Subject.ClipStreamPostDone,
+                "clip/stream/post-error" => Subject.ClipStreamPostError,
+                "clip/stream/rejected" => Subject.ClipStreamRejected,
+                "clip/stream/started" => Subject.ClipStreamStarted,
+                "clip/v2-created" => Subject.ClipV2Created,
+                "consents/done" => Subject.ConsentsDone,
+                "consents/error" => Subject.ConsentsError,
+                "consents/rejected" => Subject.ConsentsRejected,
+                "consents/start-validation" => Subject.ConsentsStartValidation,
+                "credits/charge" => Subject.CreditsCharge,
+                "document/created" => Subject.DocumentCreated,
+                "document/done" => Subject.DocumentDone,
+                "document/error" => Subject.DocumentError,
+                "document/processed" => Subject.DocumentProcessed,
+                "document/rejected" => Subject.DocumentRejected,
+                "export/created" => Subject.ExportCreated,
+                "export/deleted" => Subject.ExportDeleted,
+                "export/done" => Subject.ExportDone,
+                "export/error" => Subject.ExportError,
+                "export/partial" => Subject.ExportPartial,
+                "export/started" => Subject.ExportStarted,
+                "expressive/avatar-trained" => Subject.ExpressiveAvatarTrained,
+                "expressive/created" => Subject.ExpressiveCreated,
+                "expressive/done" => Subject.ExpressiveDone,
+                "expressive/error" => Subject.ExpressiveError,
+                "expressive/post-done" => Subject.ExpressivePostDone,
+                "expressive/post-error" => Subject.ExpressivePostError,
+                "expressive/rejected" => Subject.ExpressiveRejected,
+                "expressive/started" => Subject.ExpressiveStarted,
+                "expressive/stream/done" => Subject.ExpressiveStreamDone,
+                "image/rejected" => Subject.ImageRejected,
+                "invoice/failed" => Subject.InvoiceFailed,
+                "invoice/paid" => Subject.InvoicePaid,
+                "knowledge/done" => Subject.KnowledgeDone,
+                "knowledge/error" => Subject.KnowledgeError,
+                "knowledge/processing" => Subject.KnowledgeProcessing,
+                "organization/created" => Subject.OrganizationCreated,
+                "organization/deleted" => Subject.OrganizationDeleted,
+                "organization/member-added" => Subject.OrganizationMemberAdded,
+                "project/deleted" => Subject.ProjectDeleted,
+                "project/done" => Subject.ProjectDone,
+                "project/error" => Subject.ProjectError,
+                "project/post-done" => Subject.ProjectPostDone,
+                "project/ready" => Subject.ProjectReady,
+                "project/rejected" => Subject.ProjectRejected,
+                "project/started" => Subject.ProjectStarted,
+                "render/created" => Subject.RenderCreated,
+                "render/done" => Subject.RenderDone,
+                "render/error" => Subject.RenderError,
+                "render/started" => Subject.RenderStarted,
+                "scene/avatar-created" => Subject.SceneAvatarCreated,
+                "scene/avatar-done" => Subject.SceneAvatarDone,
+                "scene/avatar-error" => Subject.SceneAvatarError,
+                "scene/avatar-item-created" => Subject.SceneAvatarItemCreated,
+                "scene/avatar-post-done" => Subject.SceneAvatarPostDone,
+                "scene/avatar-post-error" => Subject.SceneAvatarPostError,
+                "scene/avatar-started" => Subject.SceneAvatarStarted,
+                "scene/avatar-training-started" => Subject.SceneAvatarTrainingStarted,
+                "scene/avatar-validations-done" => Subject.SceneAvatarValidationsDone,
+                "scene/avatar-validations-error" => Subject.SceneAvatarValidationsError,
+                "scene/created" => Subject.SceneCreated,
+                "scene/done" => Subject.SceneDone,
+                "scene/error" => Subject.SceneError,
+                "scene/post-done" => Subject.ScenePostDone,
+                "scene/post-error" => Subject.ScenePostError,
+                "scene/started" => Subject.SceneStarted,
+                "scenes/avatars-file-uploaded" => Subject.ScenesAvatarsFileUploaded,
+                "stream-video/done" => Subject.StreamVideoDone,
+                "stream-video/error" => Subject.StreamVideoError,
+                "stream-video/rejected" => Subject.StreamVideoRejected,
+                "stream-video/started" => Subject.StreamVideoStarted,
+                "stream/done" => Subject.StreamDone,
+                "talk/created" => Subject.TalkCreated,
+                "talk/deleted" => Subject.TalkDeleted,
+                "talk/done" => Subject.TalkDone,
+                "talk/error" => Subject.TalkError,
+                "talk/post-done" => Subject.TalkPostDone,
+                "talk/post-error" => Subject.TalkPostError,
+                "talk/rejected" => Subject.TalkRejected,
+                "talk/started" => Subject.TalkStarted,
+                "talk/stream/created" => Subject.TalkStreamCreated,
+                "talk/stream/done" => Subject.TalkStreamDone,
+                "talk/stream/error" => Subject.TalkStreamError,
+                "talk/stream/post-done" => Subject.TalkStreamPostDone,
+                "talk/stream/post-error" => Subject.TalkStreamPostError,
+                "talk/stream/rejected" => Subject.TalkStreamRejected,
+                "talk/stream/started" => Subject.TalkStreamStarted,
+                "translation/audio-data-updated" => Subject.TranslationAudioDataUpdated,
+                "translation/celeb-detection-done" => Subject.TranslationCelebDetectionDone,
+                "translation/celeb-detection-error" => Subject.TranslationCelebDetectionError,
+                "translation/deleted" => Subject.TranslationDeleted,
+                "translation/done" => Subject.TranslationDone,
+                "translation/error" => Subject.TranslationError,
+                "translation/file-uploaded" => Subject.TranslationFileUploaded,
+                "translation/group-done" => Subject.TranslationGroupDone,
+                "translation/group-error" => Subject.TranslationGroupError,
+                "translation/group-partial-done" => Subject.TranslationGroupPartialDone,
+                "translation/group-partial-error" => Subject.TranslationGroupPartialError,
+                "translation/group-post-done" => Subject.TranslationGroupPostDone,
+                "translation/group-post-error" => Subject.TranslationGroupPostError,
+                "translation/group-started" => Subject.TranslationGroupStarted,
+                "translation/item-created" => Subject.TranslationItemCreated,
+                "translation/post-done" => Subject.TranslationPostDone,
+                "translation/post-error" => Subject.TranslationPostError,
+                "translation/ready" => Subject.TranslationReady,
+                "translation/speech-done" => Subject.TranslationSpeechDone,
+                "translation/speech-error" => Subject.TranslationSpeechError,
+                "translation/started" => Subject.TranslationStarted,
+                "translation/subtitles-done" => Subject.TranslationSubtitlesDone,
+                "trigger/tool/result" => Subject.TriggerToolResult,
+                "trigger/webhook/done" => Subject.TriggerWebhookDone,
+                "trigger/webhook/error" => Subject.TriggerWebhookError,
+                "user/account-merged" => Subject.UserAccountMerged,
+                "user/account-merged-manually" => Subject.UserAccountMergedManually,
+                "user/api-key-created" => Subject.UserApiKeyCreated,
+                "user/deleted" => Subject.UserDeleted,
+                "user/first-visit" => Subject.UserFirstVisit,
+                "user/registered" => Subject.UserRegistered,
+                "user/subscription-created" => Subject.UserSubscriptionCreated,
+                "user/subscription-deleted" => Subject.UserSubscriptionDeleted,
+                "user/subscription-renewed" => Subject.UserSubscriptionRenewed,
+                "user/subscription-transferred" => Subject.UserSubscriptionTransferred,
+                "user/subscription-updated" => Subject.UserSubscriptionUpdated,
+                "user/subscription-will-end" => Subject.UserSubscriptionWillEnd,
+                "user/updated" => Subject.UserUpdated,
+                "voice/done" => Subject.VoiceDone,
+                "voice/error" => Subject.VoiceError,
+                "voice/rejected" => Subject.VoiceRejected,
                 _ => null,
             };
         }
