@@ -249,7 +249,6 @@ namespace DId
             global::DId.TrainClipRequestConfig? config = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
-
             var __request = new global::DId.TrainClipRequest
             {
                 SourceUrl = sourceUrl,

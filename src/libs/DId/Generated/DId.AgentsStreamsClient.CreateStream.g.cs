@@ -260,7 +260,6 @@ namespace DId
             global::DId.CreateStreamRequestCompatibilityMode? compatibilityMode = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
-
             var __request = new global::DId.CreateStreamRequest
             {
                 Fluent = fluent,

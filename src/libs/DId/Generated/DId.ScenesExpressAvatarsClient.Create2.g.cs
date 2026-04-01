@@ -348,7 +348,6 @@ namespace DId
             global::DId.Create2RequestBackground? background = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
-
             var __request = new global::DId.Create2Request
             {
                 AvatarId = avatarId,

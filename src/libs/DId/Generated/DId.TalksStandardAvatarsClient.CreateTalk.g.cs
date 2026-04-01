@@ -423,7 +423,6 @@ namespace DId
             string? resultUrl = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
-
             var __request = new global::DId.CreateTalkRequest2
             {
                 SourceUrl = sourceUrl,
