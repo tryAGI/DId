@@ -126,13 +126,13 @@ namespace DId.JsonConverters
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::DId.CreateStreamScriptText), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::DId.CreateStreamScriptText?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::DId.CreateStreamScriptText).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Text, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Text!, typeInfo);
             }
             else if (value.IsAudio)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::DId.CreateStreamScriptAudio), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::DId.CreateStreamScriptAudio?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::DId.CreateStreamScriptAudio).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Audio, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Audio!, typeInfo);
             }
         }
     }

@@ -305,6 +305,7 @@ namespace DId
             string left,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
+
             var __request = new global::DId.UpdateLogoRequest
             {
                 Logo = logo,

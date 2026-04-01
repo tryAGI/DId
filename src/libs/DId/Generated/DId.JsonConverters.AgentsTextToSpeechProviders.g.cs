@@ -167,19 +167,19 @@ namespace DId.JsonConverters
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::DId.AgentsTextToSpeechProvidersMicrosoft), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::DId.AgentsTextToSpeechProvidersMicrosoft?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::DId.AgentsTextToSpeechProvidersMicrosoft).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Microsoft, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Microsoft!, typeInfo);
             }
             else if (value.IsElevenLabs)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::DId.AgentsTextToSpeechProvidersElevenLabs), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::DId.AgentsTextToSpeechProvidersElevenLabs?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::DId.AgentsTextToSpeechProvidersElevenLabs).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.ElevenLabs, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.ElevenLabs!, typeInfo);
             }
             else if (value.IsOpenAI)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::DId.AgentsTextToSpeechProvidersOpenAI), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::DId.AgentsTextToSpeechProvidersOpenAI?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::DId.AgentsTextToSpeechProvidersOpenAI).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.OpenAI, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.OpenAI!, typeInfo);
             }
         }
     }
