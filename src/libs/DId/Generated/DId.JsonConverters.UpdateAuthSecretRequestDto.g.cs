@@ -166,19 +166,19 @@ namespace DId.JsonConverters
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::DId.UpdateAuthSecretRequestDtoBasicAuthentication), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::DId.UpdateAuthSecretRequestDtoBasicAuthentication?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::DId.UpdateAuthSecretRequestDtoBasicAuthentication).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.BasicAuthentication, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.BasicAuthentication!, typeInfo);
             }
             else if (value.IsBearerToken)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::DId.UpdateAuthSecretRequestDtoBearerToken), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::DId.UpdateAuthSecretRequestDtoBearerToken?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::DId.UpdateAuthSecretRequestDtoBearerToken).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.BearerToken, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.BearerToken!, typeInfo);
             }
             else if (value.IsApiKey)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::DId.UpdateAuthSecretRequestDtoApiKey), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::DId.UpdateAuthSecretRequestDtoApiKey?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::DId.UpdateAuthSecretRequestDtoApiKey).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.ApiKey, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.ApiKey!, typeInfo);
             }
         }
     }

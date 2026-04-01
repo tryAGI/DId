@@ -436,6 +436,7 @@ namespace DId
             string? resultUrl = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
+
             var __request = new global::DId.CreateClipRequest2
             {
                 PresenterId = presenterId,

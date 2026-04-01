@@ -223,6 +223,7 @@ namespace DId
         public async global::System.Threading.Tasks.Task<global::DId.CreateSecretResponse> CreateSecretAsync(
             global::System.Threading.CancellationToken cancellationToken = default)
         {
+
             var __request = new global::DId.AnyOf<global::DId.AnyOf<global::DId.CreateSecretRequestCreateSecretRequest1BasicAuthentication, global::DId.CreateSecretRequestCreateSecretRequest1BearerToken, global::DId.CreateSecretRequestCreateSecretRequest1ApiKey>?, global::DId.AnyOf<global::DId.CreateSecretRequestVariant2OpenAIConfiguration, global::DId.CreateSecretRequestVariant2Variant2>?>
             {
             };

@@ -272,6 +272,7 @@ namespace DId
             string? messageId = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
+
             var __request = new global::DId.UpdateRatingRequest
             {
                 Score = score,

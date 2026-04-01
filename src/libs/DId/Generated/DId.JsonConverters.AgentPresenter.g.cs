@@ -166,19 +166,19 @@ namespace DId.JsonConverters
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::DId.AgentPresenterPhotoAvatar), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::DId.AgentPresenterPhotoAvatar?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::DId.AgentPresenterPhotoAvatar).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PhotoAvatar, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PhotoAvatar!, typeInfo);
             }
             else if (value.IsVideoAvatar)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::DId.AgentPresenterVideoAvatar), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::DId.AgentPresenterVideoAvatar?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::DId.AgentPresenterVideoAvatar).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.VideoAvatar, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.VideoAvatar!, typeInfo);
             }
             else if (value.IsExpressiveAvatar)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::DId.AgentPresenterExpressiveAvatar), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::DId.AgentPresenterExpressiveAvatar?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::DId.AgentPresenterExpressiveAvatar).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.ExpressiveAvatar, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.ExpressiveAvatar!, typeInfo);
             }
         }
     }

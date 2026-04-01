@@ -133,13 +133,13 @@ namespace DId.JsonConverters
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::DId.UpdateSecretExternalLLMRequestDtoOpenAIConfiguration), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::DId.UpdateSecretExternalLLMRequestDtoOpenAIConfiguration?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::DId.UpdateSecretExternalLLMRequestDtoOpenAIConfiguration).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.OpenAIConfiguration, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.OpenAIConfiguration!, typeInfo);
             }
             else if (value.IsValue2)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::DId.UpdateSecretExternalLLMRequestDtoVariant2), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::DId.UpdateSecretExternalLLMRequestDtoVariant2?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::DId.UpdateSecretExternalLLMRequestDtoVariant2).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Value2, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Value2!, typeInfo);
             }
         }
     }

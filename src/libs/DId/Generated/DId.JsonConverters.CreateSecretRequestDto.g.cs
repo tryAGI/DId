@@ -164,19 +164,19 @@ namespace DId.JsonConverters
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::DId.CreateSecretRequestDtoBasicAuthentication), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::DId.CreateSecretRequestDtoBasicAuthentication?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::DId.CreateSecretRequestDtoBasicAuthentication).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.BasicAuthentication, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.BasicAuthentication!, typeInfo);
             }
             else if (value.IsBearerToken)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::DId.CreateSecretRequestDtoBearerToken), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::DId.CreateSecretRequestDtoBearerToken?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::DId.CreateSecretRequestDtoBearerToken).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.BearerToken, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.BearerToken!, typeInfo);
             }
             else if (value.IsApiKey)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::DId.CreateSecretRequestDtoApiKey), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::DId.CreateSecretRequestDtoApiKey?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::DId.CreateSecretRequestDtoApiKey).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.ApiKey, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.ApiKey!, typeInfo);
             }
         }
     }

@@ -137,13 +137,13 @@ namespace DId.JsonConverters
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::DId.CustomAuthConfigBasic), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::DId.CustomAuthConfigBasic?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::DId.CustomAuthConfigBasic).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Basic, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Basic!, typeInfo);
             }
             else if (value.IsOAuth2)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::DId.CustomAuthConfigOAuth2), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::DId.CustomAuthConfigOAuth2?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::DId.CustomAuthConfigOAuth2).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.OAuth2, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.OAuth2!, typeInfo);
             }
         }
     }

@@ -290,6 +290,7 @@ namespace DId
             string? sessionId = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
+
             var __request = new global::DId.StartConnectionRequest
             {
                 SessionId = sessionId,

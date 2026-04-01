@@ -129,13 +129,13 @@ namespace DId.JsonConverters
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::DId.PartialAgentPresenterPhotoAvatar), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::DId.PartialAgentPresenterPhotoAvatar?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::DId.PartialAgentPresenterPhotoAvatar).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PhotoAvatar, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PhotoAvatar!, typeInfo);
             }
             else if (value.IsVideoAvatar)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::DId.PartialAgentPresenterVideoAvatar), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::DId.PartialAgentPresenterVideoAvatar?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::DId.PartialAgentPresenterVideoAvatar).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.VideoAvatar, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.VideoAvatar!, typeInfo);
             }
         }
     }
