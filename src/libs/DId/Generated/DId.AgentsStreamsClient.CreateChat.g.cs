@@ -236,7 +236,6 @@ namespace DId
             bool? persist = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
-
             var __request = new global::DId.CreateChatRequest2
             {
                 Persist = persist,

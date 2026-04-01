@@ -237,7 +237,6 @@ namespace DId
             string knowledgeId,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
-
             var __request = new global::DId.AllOf<global::DId.CreateDocumentRequestVariant1, global::DId.CreateDocumentRequestVariant2>
             {
             };

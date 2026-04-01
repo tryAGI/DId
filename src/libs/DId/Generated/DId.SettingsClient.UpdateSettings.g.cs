@@ -229,7 +229,6 @@ namespace DId
             global::DId.UpdateSettingsRequestLogo? logo = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
-
             var __request = new global::DId.UpdateSettingsRequest
             {
                 AgentsInsightsIsEnabled = agentsInsightsIsEnabled,

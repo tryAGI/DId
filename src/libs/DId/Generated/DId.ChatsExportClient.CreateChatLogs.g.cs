@@ -305,7 +305,6 @@ namespace DId
         public async global::System.Threading.Tasks.Task<global::DId.CreateChatLogsResponse> CreateChatLogsAsync(
             global::System.Threading.CancellationToken cancellationToken = default)
         {
-
             var __request = new global::DId.AllOf<global::DId.CreateChatLogsRequestVariant1, global::DId.CreateChatLogsRequestVariant2>
             {
             };
