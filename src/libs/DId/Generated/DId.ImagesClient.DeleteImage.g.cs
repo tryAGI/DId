@@ -90,13 +90,13 @@ namespace DId
                     if (ReadResponseAsString)
                     {
                         __content_401 = await __response.Content.ReadAsStringAsync(cancellationToken).ConfigureAwait(false);
-                        __value_401 = global::DId.DeleteImageResponse.FromJson(__content_401, JsonSerializerContext);
+                        __value_401 = global::DId.DeleteImageResponse.FromJson(__content_401, JsonSerializerOptions);
                     }
                     else
                     {
                         __content_401 = await __response.Content.ReadAsStringAsync(cancellationToken).ConfigureAwait(false);
 
-                        __value_401 = global::DId.DeleteImageResponse.FromJson(__content_401, JsonSerializerContext);
+                        __value_401 = global::DId.DeleteImageResponse.FromJson(__content_401, JsonSerializerOptions);
                     }
                 }
                 catch (global::System.Exception __ex)
@@ -128,13 +128,13 @@ namespace DId
                     if (ReadResponseAsString)
                     {
                         __content_404 = await __response.Content.ReadAsStringAsync(cancellationToken).ConfigureAwait(false);
-                        __value_404 = global::DId.DeleteImageResponse2.FromJson(__content_404, JsonSerializerContext);
+                        __value_404 = global::DId.DeleteImageResponse2.FromJson(__content_404, JsonSerializerOptions);
                     }
                     else
                     {
                         __content_404 = await __response.Content.ReadAsStringAsync(cancellationToken).ConfigureAwait(false);
 
-                        __value_404 = global::DId.DeleteImageResponse2.FromJson(__content_404, JsonSerializerContext);
+                        __value_404 = global::DId.DeleteImageResponse2.FromJson(__content_404, JsonSerializerOptions);
                     }
                 }
                 catch (global::System.Exception __ex)

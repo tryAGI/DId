@@ -12,8 +12,7 @@ namespace DId.JsonConverters
             global::System.Type typeToConvert,
             global::System.Text.Json.JsonSerializerOptions options)
         {
-            options = options ?? throw new global::System.ArgumentNullException(nameof(options));
-            var typeInfoResolver = options.TypeInfoResolver ?? throw new global::System.InvalidOperationException("TypeInfoResolver is not set.");
+            options = options ?? throw new global::System.ArgumentNullException(nameof(options)); 
 
             using var __jsonDocument = global::System.Text.Json.JsonDocument.ParseValue(ref reader);
             var __rawJson = __jsonDocument.RootElement.GetRawText();
@@ -63,9 +62,7 @@ namespace DId.JsonConverters
                 {
                     try
                     {
-                        var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::DId.UpdatePresenterAttributesVariant1), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::DId.UpdatePresenterAttributesVariant1> ??
-                                       throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::DId.UpdatePresenterAttributesVariant1).Name}");
-                        updatePresenterAttributesVariant1 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
+                        updatePresenterAttributesVariant1 = global::System.Text.Json.JsonSerializer.Deserialize<global::DId.UpdatePresenterAttributesVariant1>(__rawJson, options);
                     }
                     catch (global::System.Text.Json.JsonException)
                     {
@@ -78,9 +75,7 @@ namespace DId.JsonConverters
                 {
                     try
                     {
-                        var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::DId.UpdatePresenterAttributesVariant2), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::DId.UpdatePresenterAttributesVariant2> ??
-                                       throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::DId.UpdatePresenterAttributesVariant2).Name}");
-                        updatePresenterAttributesVariant2 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
+                        updatePresenterAttributesVariant2 = global::System.Text.Json.JsonSerializer.Deserialize<global::DId.UpdatePresenterAttributesVariant2>(__rawJson, options);
                     }
                     catch (global::System.Text.Json.JsonException)
                     {
@@ -93,9 +88,7 @@ namespace DId.JsonConverters
                 {
                     try
                     {
-                        var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::DId.UpdatePresenterAttributesVariant3), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::DId.UpdatePresenterAttributesVariant3> ??
-                                       throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::DId.UpdatePresenterAttributesVariant3).Name}");
-                        updatePresenterAttributesVariant3 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
+                        updatePresenterAttributesVariant3 = global::System.Text.Json.JsonSerializer.Deserialize<global::DId.UpdatePresenterAttributesVariant3>(__rawJson, options);
                     }
                     catch (global::System.Text.Json.JsonException)
                     {
@@ -110,9 +103,7 @@ namespace DId.JsonConverters
             {
                 try
                 {
-                    var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::DId.UpdatePresenterAttributesVariant1), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::DId.UpdatePresenterAttributesVariant1> ??
-                                   throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::DId.UpdatePresenterAttributesVariant1).Name}");
-                    updatePresenterAttributesVariant1 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
+                    updatePresenterAttributesVariant1 = global::System.Text.Json.JsonSerializer.Deserialize<global::DId.UpdatePresenterAttributesVariant1>(__rawJson, options);
                 }
                 catch (global::System.Text.Json.JsonException)
                 {
@@ -123,9 +114,7 @@ namespace DId.JsonConverters
 
                 try
                 {
-                    var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::DId.UpdatePresenterAttributesVariant2), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::DId.UpdatePresenterAttributesVariant2> ??
-                                   throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::DId.UpdatePresenterAttributesVariant2).Name}");
-                    updatePresenterAttributesVariant2 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
+                    updatePresenterAttributesVariant2 = global::System.Text.Json.JsonSerializer.Deserialize<global::DId.UpdatePresenterAttributesVariant2>(__rawJson, options);
                 }
                 catch (global::System.Text.Json.JsonException)
                 {
@@ -136,9 +125,7 @@ namespace DId.JsonConverters
 
                 try
                 {
-                    var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::DId.UpdatePresenterAttributesVariant3), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::DId.UpdatePresenterAttributesVariant3> ??
-                                   throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::DId.UpdatePresenterAttributesVariant3).Name}");
-                    updatePresenterAttributesVariant3 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
+                    updatePresenterAttributesVariant3 = global::System.Text.Json.JsonSerializer.Deserialize<global::DId.UpdatePresenterAttributesVariant3>(__rawJson, options);
                 }
                 catch (global::System.Text.Json.JsonException)
                 {
@@ -165,26 +152,19 @@ namespace DId.JsonConverters
             global::DId.UpdatePresenterAttributes value,
             global::System.Text.Json.JsonSerializerOptions options)
         {
-            options = options ?? throw new global::System.ArgumentNullException(nameof(options));
-            var typeInfoResolver = options.TypeInfoResolver ?? throw new global::System.InvalidOperationException("TypeInfoResolver is not set.");
+            options = options ?? throw new global::System.ArgumentNullException(nameof(options)); 
 
             if (value.IsUpdatePresenterAttributesVariant1)
             {
-                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::DId.UpdatePresenterAttributesVariant1), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::DId.UpdatePresenterAttributesVariant1?> ??
-                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::DId.UpdatePresenterAttributesVariant1).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.UpdatePresenterAttributesVariant1!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.UpdatePresenterAttributesVariant1, typeof(global::DId.UpdatePresenterAttributesVariant1), options);
             }
             else if (value.IsUpdatePresenterAttributesVariant2)
             {
-                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::DId.UpdatePresenterAttributesVariant2), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::DId.UpdatePresenterAttributesVariant2?> ??
-                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::DId.UpdatePresenterAttributesVariant2).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.UpdatePresenterAttributesVariant2!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.UpdatePresenterAttributesVariant2, typeof(global::DId.UpdatePresenterAttributesVariant2), options);
             }
             else if (value.IsUpdatePresenterAttributesVariant3)
             {
-                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::DId.UpdatePresenterAttributesVariant3), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::DId.UpdatePresenterAttributesVariant3?> ??
-                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::DId.UpdatePresenterAttributesVariant3).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.UpdatePresenterAttributesVariant3!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.UpdatePresenterAttributesVariant3, typeof(global::DId.UpdatePresenterAttributesVariant3), options);
             }
         }
     }
