@@ -13,35 +13,35 @@ namespace DId
         /// 
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::DId.ChatEndEventData? Value1 { get; init; }
+        public global::DId.ChatEndEventData? ChatEnd { get; init; }
 #else
-        public global::DId.ChatEndEventData? Value1 { get; }
+        public global::DId.ChatEndEventData? ChatEnd { get; }
 #endif
 
         /// <summary>
         /// 
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Value1))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(ChatEnd))]
 #endif
-        public bool IsValue1 => Value1 != null;
+        public bool IsChatEnd => ChatEnd != null;
 
         /// <summary>
         /// 
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::DId.TriggerEventDataVariant2? Value2 { get; init; }
+        public global::DId.TriggerEventDataVariant2? TriggerEventDataVariant2 { get; init; }
 #else
-        public global::DId.TriggerEventDataVariant2? Value2 { get; }
+        public global::DId.TriggerEventDataVariant2? TriggerEventDataVariant2 { get; }
 #endif
 
         /// <summary>
         /// 
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Value2))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(TriggerEventDataVariant2))]
 #endif
-        public bool IsValue2 => Value2 != null;
+        public bool IsTriggerEventDataVariant2 => TriggerEventDataVariant2 != null;
         /// <summary>
         /// 
         /// </summary>
@@ -50,14 +50,14 @@ namespace DId
         /// <summary>
         /// 
         /// </summary>
-        public static implicit operator global::DId.ChatEndEventData?(TriggerEventData @this) => @this.Value1;
+        public static implicit operator global::DId.ChatEndEventData?(TriggerEventData @this) => @this.ChatEnd;
 
         /// <summary>
         /// 
         /// </summary>
         public TriggerEventData(global::DId.ChatEndEventData? value)
         {
-            Value1 = value;
+            ChatEnd = value;
         }
 
         /// <summary>
@@ -68,42 +68,42 @@ namespace DId
         /// <summary>
         /// 
         /// </summary>
-        public static implicit operator global::DId.TriggerEventDataVariant2?(TriggerEventData @this) => @this.Value2;
+        public static implicit operator global::DId.TriggerEventDataVariant2?(TriggerEventData @this) => @this.TriggerEventDataVariant2;
 
         /// <summary>
         /// 
         /// </summary>
         public TriggerEventData(global::DId.TriggerEventDataVariant2? value)
         {
-            Value2 = value;
+            TriggerEventDataVariant2 = value;
         }
 
         /// <summary>
         /// 
         /// </summary>
         public TriggerEventData(
-            global::DId.ChatEndEventData? value1,
-            global::DId.TriggerEventDataVariant2? value2
+            global::DId.ChatEndEventData? chatEnd,
+            global::DId.TriggerEventDataVariant2? triggerEventDataVariant2
             )
         {
-            Value1 = value1;
-            Value2 = value2;
+            ChatEnd = chatEnd;
+            TriggerEventDataVariant2 = triggerEventDataVariant2;
         }
 
         /// <summary>
         /// 
         /// </summary>
         public object? Object =>
-            Value2 as object ??
-            Value1 as object 
+            TriggerEventDataVariant2 as object ??
+            ChatEnd as object 
             ;
 
         /// <summary>
         /// 
         /// </summary>
         public override string? ToString() =>
-            Value1?.ToString() ??
-            Value2?.ToString() 
+            ChatEnd?.ToString() ??
+            TriggerEventDataVariant2?.ToString() 
             ;
 
         /// <summary>
@@ -111,15 +111,15 @@ namespace DId
         /// </summary>
         public bool Validate()
         {
-            return IsValue1 || IsValue2;
+            return IsChatEnd || IsTriggerEventDataVariant2;
         }
 
         /// <summary>
         /// 
         /// </summary>
         public TResult? Match<TResult>(
-            global::System.Func<global::DId.ChatEndEventData?, TResult>? value1 = null,
-            global::System.Func<global::DId.TriggerEventDataVariant2?, TResult>? value2 = null,
+            global::System.Func<global::DId.ChatEndEventData?, TResult>? chatEnd = null,
+            global::System.Func<global::DId.TriggerEventDataVariant2?, TResult>? triggerEventDataVariant2 = null,
             bool validate = true)
         {
             if (validate)
@@ -127,13 +127,13 @@ namespace DId
                 Validate();
             }
 
-            if (IsValue1 && value1 != null)
+            if (IsChatEnd && chatEnd != null)
             {
-                return value1(Value1!);
+                return chatEnd(ChatEnd!);
             }
-            else if (IsValue2 && value2 != null)
+            else if (IsTriggerEventDataVariant2 && triggerEventDataVariant2 != null)
             {
-                return value2(Value2!);
+                return triggerEventDataVariant2(TriggerEventDataVariant2!);
             }
 
             return default(TResult);
@@ -143,8 +143,8 @@ namespace DId
         /// 
         /// </summary>
         public void Match(
-            global::System.Action<global::DId.ChatEndEventData?>? value1 = null,
-            global::System.Action<global::DId.TriggerEventDataVariant2?>? value2 = null,
+            global::System.Action<global::DId.ChatEndEventData?>? chatEnd = null,
+            global::System.Action<global::DId.TriggerEventDataVariant2?>? triggerEventDataVariant2 = null,
             bool validate = true)
         {
             if (validate)
@@ -152,13 +152,13 @@ namespace DId
                 Validate();
             }
 
-            if (IsValue1)
+            if (IsChatEnd)
             {
-                value1?.Invoke(Value1!);
+                chatEnd?.Invoke(ChatEnd!);
             }
-            else if (IsValue2)
+            else if (IsTriggerEventDataVariant2)
             {
-                value2?.Invoke(Value2!);
+                triggerEventDataVariant2?.Invoke(TriggerEventDataVariant2!);
             }
         }
 
@@ -169,9 +169,9 @@ namespace DId
         {
             var fields = new object?[]
             {
-                Value1,
+                ChatEnd,
                 typeof(global::DId.ChatEndEventData),
-                Value2,
+                TriggerEventDataVariant2,
                 typeof(global::DId.TriggerEventDataVariant2),
             };
             const int offset = unchecked((int)2166136261);
@@ -189,8 +189,8 @@ namespace DId
         public bool Equals(TriggerEventData other)
         {
             return
-                global::System.Collections.Generic.EqualityComparer<global::DId.ChatEndEventData?>.Default.Equals(Value1, other.Value1) &&
-                global::System.Collections.Generic.EqualityComparer<global::DId.TriggerEventDataVariant2?>.Default.Equals(Value2, other.Value2) 
+                global::System.Collections.Generic.EqualityComparer<global::DId.ChatEndEventData?>.Default.Equals(ChatEnd, other.ChatEnd) &&
+                global::System.Collections.Generic.EqualityComparer<global::DId.TriggerEventDataVariant2?>.Default.Equals(TriggerEventDataVariant2, other.TriggerEventDataVariant2) 
                 ;
         }
 
