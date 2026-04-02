@@ -13,35 +13,35 @@ namespace DId
         /// 
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::DId.CreateVideoStreamResponseVariant1? Value1 { get; init; }
+        public global::DId.CreateVideoStreamResponseVariant1? CreateVideoStreamResponseVariant1 { get; init; }
 #else
-        public global::DId.CreateVideoStreamResponseVariant1? Value1 { get; }
+        public global::DId.CreateVideoStreamResponseVariant1? CreateVideoStreamResponseVariant1 { get; }
 #endif
 
         /// <summary>
         /// 
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Value1))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(CreateVideoStreamResponseVariant1))]
 #endif
-        public bool IsValue1 => Value1 != null;
+        public bool IsCreateVideoStreamResponseVariant1 => CreateVideoStreamResponseVariant1 != null;
 
         /// <summary>
         /// 
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::DId.CreateVideoStreamResponseVariant2? Value2 { get; init; }
+        public global::DId.CreateVideoStreamResponseVariant2? CreateVideoStreamResponseVariant2 { get; init; }
 #else
-        public global::DId.CreateVideoStreamResponseVariant2? Value2 { get; }
+        public global::DId.CreateVideoStreamResponseVariant2? CreateVideoStreamResponseVariant2 { get; }
 #endif
 
         /// <summary>
         /// 
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Value2))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(CreateVideoStreamResponseVariant2))]
 #endif
-        public bool IsValue2 => Value2 != null;
+        public bool IsCreateVideoStreamResponseVariant2 => CreateVideoStreamResponseVariant2 != null;
         /// <summary>
         /// 
         /// </summary>
@@ -50,14 +50,14 @@ namespace DId
         /// <summary>
         /// 
         /// </summary>
-        public static implicit operator global::DId.CreateVideoStreamResponseVariant1?(CreateVideoStreamResponse @this) => @this.Value1;
+        public static implicit operator global::DId.CreateVideoStreamResponseVariant1?(CreateVideoStreamResponse @this) => @this.CreateVideoStreamResponseVariant1;
 
         /// <summary>
         /// 
         /// </summary>
         public CreateVideoStreamResponse(global::DId.CreateVideoStreamResponseVariant1? value)
         {
-            Value1 = value;
+            CreateVideoStreamResponseVariant1 = value;
         }
 
         /// <summary>
@@ -68,42 +68,42 @@ namespace DId
         /// <summary>
         /// 
         /// </summary>
-        public static implicit operator global::DId.CreateVideoStreamResponseVariant2?(CreateVideoStreamResponse @this) => @this.Value2;
+        public static implicit operator global::DId.CreateVideoStreamResponseVariant2?(CreateVideoStreamResponse @this) => @this.CreateVideoStreamResponseVariant2;
 
         /// <summary>
         /// 
         /// </summary>
         public CreateVideoStreamResponse(global::DId.CreateVideoStreamResponseVariant2? value)
         {
-            Value2 = value;
+            CreateVideoStreamResponseVariant2 = value;
         }
 
         /// <summary>
         /// 
         /// </summary>
         public CreateVideoStreamResponse(
-            global::DId.CreateVideoStreamResponseVariant1? value1,
-            global::DId.CreateVideoStreamResponseVariant2? value2
+            global::DId.CreateVideoStreamResponseVariant1? createVideoStreamResponseVariant1,
+            global::DId.CreateVideoStreamResponseVariant2? createVideoStreamResponseVariant2
             )
         {
-            Value1 = value1;
-            Value2 = value2;
+            CreateVideoStreamResponseVariant1 = createVideoStreamResponseVariant1;
+            CreateVideoStreamResponseVariant2 = createVideoStreamResponseVariant2;
         }
 
         /// <summary>
         /// 
         /// </summary>
         public object? Object =>
-            Value2 as object ??
-            Value1 as object 
+            CreateVideoStreamResponseVariant2 as object ??
+            CreateVideoStreamResponseVariant1 as object 
             ;
 
         /// <summary>
         /// 
         /// </summary>
         public override string? ToString() =>
-            Value1?.ToString() ??
-            Value2?.ToString() 
+            CreateVideoStreamResponseVariant1?.ToString() ??
+            CreateVideoStreamResponseVariant2?.ToString() 
             ;
 
         /// <summary>
@@ -111,15 +111,15 @@ namespace DId
         /// </summary>
         public bool Validate()
         {
-            return IsValue1 && IsValue2;
+            return IsCreateVideoStreamResponseVariant1 && IsCreateVideoStreamResponseVariant2;
         }
 
         /// <summary>
         /// 
         /// </summary>
         public TResult? Match<TResult>(
-            global::System.Func<global::DId.CreateVideoStreamResponseVariant1?, TResult>? value1 = null,
-            global::System.Func<global::DId.CreateVideoStreamResponseVariant2?, TResult>? value2 = null,
+            global::System.Func<global::DId.CreateVideoStreamResponseVariant1?, TResult>? createVideoStreamResponseVariant1 = null,
+            global::System.Func<global::DId.CreateVideoStreamResponseVariant2?, TResult>? createVideoStreamResponseVariant2 = null,
             bool validate = true)
         {
             if (validate)
@@ -127,13 +127,13 @@ namespace DId
                 Validate();
             }
 
-            if (IsValue1 && value1 != null)
+            if (IsCreateVideoStreamResponseVariant1 && createVideoStreamResponseVariant1 != null)
             {
-                return value1(Value1!);
+                return createVideoStreamResponseVariant1(CreateVideoStreamResponseVariant1!);
             }
-            else if (IsValue2 && value2 != null)
+            else if (IsCreateVideoStreamResponseVariant2 && createVideoStreamResponseVariant2 != null)
             {
-                return value2(Value2!);
+                return createVideoStreamResponseVariant2(CreateVideoStreamResponseVariant2!);
             }
 
             return default(TResult);
@@ -143,8 +143,8 @@ namespace DId
         /// 
         /// </summary>
         public void Match(
-            global::System.Action<global::DId.CreateVideoStreamResponseVariant1?>? value1 = null,
-            global::System.Action<global::DId.CreateVideoStreamResponseVariant2?>? value2 = null,
+            global::System.Action<global::DId.CreateVideoStreamResponseVariant1?>? createVideoStreamResponseVariant1 = null,
+            global::System.Action<global::DId.CreateVideoStreamResponseVariant2?>? createVideoStreamResponseVariant2 = null,
             bool validate = true)
         {
             if (validate)
@@ -152,13 +152,13 @@ namespace DId
                 Validate();
             }
 
-            if (IsValue1)
+            if (IsCreateVideoStreamResponseVariant1)
             {
-                value1?.Invoke(Value1!);
+                createVideoStreamResponseVariant1?.Invoke(CreateVideoStreamResponseVariant1!);
             }
-            else if (IsValue2)
+            else if (IsCreateVideoStreamResponseVariant2)
             {
-                value2?.Invoke(Value2!);
+                createVideoStreamResponseVariant2?.Invoke(CreateVideoStreamResponseVariant2!);
             }
         }
 
@@ -169,9 +169,9 @@ namespace DId
         {
             var fields = new object?[]
             {
-                Value1,
+                CreateVideoStreamResponseVariant1,
                 typeof(global::DId.CreateVideoStreamResponseVariant1),
-                Value2,
+                CreateVideoStreamResponseVariant2,
                 typeof(global::DId.CreateVideoStreamResponseVariant2),
             };
             const int offset = unchecked((int)2166136261);
@@ -189,8 +189,8 @@ namespace DId
         public bool Equals(CreateVideoStreamResponse other)
         {
             return
-                global::System.Collections.Generic.EqualityComparer<global::DId.CreateVideoStreamResponseVariant1?>.Default.Equals(Value1, other.Value1) &&
-                global::System.Collections.Generic.EqualityComparer<global::DId.CreateVideoStreamResponseVariant2?>.Default.Equals(Value2, other.Value2) 
+                global::System.Collections.Generic.EqualityComparer<global::DId.CreateVideoStreamResponseVariant1?>.Default.Equals(CreateVideoStreamResponseVariant1, other.CreateVideoStreamResponseVariant1) &&
+                global::System.Collections.Generic.EqualityComparer<global::DId.CreateVideoStreamResponseVariant2?>.Default.Equals(CreateVideoStreamResponseVariant2, other.CreateVideoStreamResponseVariant2) 
                 ;
         }
 

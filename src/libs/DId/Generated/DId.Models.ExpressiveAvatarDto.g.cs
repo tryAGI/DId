@@ -13,35 +13,35 @@ namespace DId
         /// From T, pick a set of properties whose keys are in the union K
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::DId.ExpressiveAvatarDtoVariant1? Value1 { get; init; }
+        public global::DId.ExpressiveAvatarDtoVariant1? ExpressiveAvatarDtoVariant1 { get; init; }
 #else
-        public global::DId.ExpressiveAvatarDtoVariant1? Value1 { get; }
+        public global::DId.ExpressiveAvatarDtoVariant1? ExpressiveAvatarDtoVariant1 { get; }
 #endif
 
         /// <summary>
         /// 
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Value1))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(ExpressiveAvatarDtoVariant1))]
 #endif
-        public bool IsValue1 => Value1 != null;
+        public bool IsExpressiveAvatarDtoVariant1 => ExpressiveAvatarDtoVariant1 != null;
 
         /// <summary>
         /// Make all properties in T optional
         /// </summary>
 #if NET6_0_OR_GREATER
-        public object? Value2 { get; init; }
+        public object? ExpressiveAvatarDtoVariant2 { get; init; }
 #else
-        public object? Value2 { get; }
+        public object? ExpressiveAvatarDtoVariant2 { get; }
 #endif
 
         /// <summary>
         /// 
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Value2))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(ExpressiveAvatarDtoVariant2))]
 #endif
-        public bool IsValue2 => Value2 != null;
+        public bool IsExpressiveAvatarDtoVariant2 => ExpressiveAvatarDtoVariant2 != null;
         /// <summary>
         /// 
         /// </summary>
@@ -50,42 +50,42 @@ namespace DId
         /// <summary>
         /// 
         /// </summary>
-        public static implicit operator global::DId.ExpressiveAvatarDtoVariant1?(ExpressiveAvatarDto @this) => @this.Value1;
+        public static implicit operator global::DId.ExpressiveAvatarDtoVariant1?(ExpressiveAvatarDto @this) => @this.ExpressiveAvatarDtoVariant1;
 
         /// <summary>
         /// 
         /// </summary>
         public ExpressiveAvatarDto(global::DId.ExpressiveAvatarDtoVariant1? value)
         {
-            Value1 = value;
+            ExpressiveAvatarDtoVariant1 = value;
         }
 
         /// <summary>
         /// 
         /// </summary>
         public ExpressiveAvatarDto(
-            global::DId.ExpressiveAvatarDtoVariant1? value1,
-            object? value2
+            global::DId.ExpressiveAvatarDtoVariant1? expressiveAvatarDtoVariant1,
+            object? expressiveAvatarDtoVariant2
             )
         {
-            Value1 = value1;
-            Value2 = value2;
+            ExpressiveAvatarDtoVariant1 = expressiveAvatarDtoVariant1;
+            ExpressiveAvatarDtoVariant2 = expressiveAvatarDtoVariant2;
         }
 
         /// <summary>
         /// 
         /// </summary>
         public object? Object =>
-            Value2 as object ??
-            Value1 as object 
+            ExpressiveAvatarDtoVariant2 as object ??
+            ExpressiveAvatarDtoVariant1 as object 
             ;
 
         /// <summary>
         /// 
         /// </summary>
         public override string? ToString() =>
-            Value1?.ToString() ??
-            Value2?.ToString() 
+            ExpressiveAvatarDtoVariant1?.ToString() ??
+            ExpressiveAvatarDtoVariant2?.ToString() 
             ;
 
         /// <summary>
@@ -93,15 +93,15 @@ namespace DId
         /// </summary>
         public bool Validate()
         {
-            return IsValue1 && IsValue2;
+            return IsExpressiveAvatarDtoVariant1 && IsExpressiveAvatarDtoVariant2;
         }
 
         /// <summary>
         /// 
         /// </summary>
         public TResult? Match<TResult>(
-            global::System.Func<global::DId.ExpressiveAvatarDtoVariant1?, TResult>? value1 = null,
-            global::System.Func<object?, TResult>? value2 = null,
+            global::System.Func<global::DId.ExpressiveAvatarDtoVariant1?, TResult>? expressiveAvatarDtoVariant1 = null,
+            global::System.Func<object?, TResult>? expressiveAvatarDtoVariant2 = null,
             bool validate = true)
         {
             if (validate)
@@ -109,13 +109,13 @@ namespace DId
                 Validate();
             }
 
-            if (IsValue1 && value1 != null)
+            if (IsExpressiveAvatarDtoVariant1 && expressiveAvatarDtoVariant1 != null)
             {
-                return value1(Value1!);
+                return expressiveAvatarDtoVariant1(ExpressiveAvatarDtoVariant1!);
             }
-            else if (IsValue2 && value2 != null)
+            else if (IsExpressiveAvatarDtoVariant2 && expressiveAvatarDtoVariant2 != null)
             {
-                return value2(Value2!);
+                return expressiveAvatarDtoVariant2(ExpressiveAvatarDtoVariant2!);
             }
 
             return default(TResult);
@@ -125,8 +125,8 @@ namespace DId
         /// 
         /// </summary>
         public void Match(
-            global::System.Action<global::DId.ExpressiveAvatarDtoVariant1?>? value1 = null,
-            global::System.Action<object?>? value2 = null,
+            global::System.Action<global::DId.ExpressiveAvatarDtoVariant1?>? expressiveAvatarDtoVariant1 = null,
+            global::System.Action<object?>? expressiveAvatarDtoVariant2 = null,
             bool validate = true)
         {
             if (validate)
@@ -134,13 +134,13 @@ namespace DId
                 Validate();
             }
 
-            if (IsValue1)
+            if (IsExpressiveAvatarDtoVariant1)
             {
-                value1?.Invoke(Value1!);
+                expressiveAvatarDtoVariant1?.Invoke(ExpressiveAvatarDtoVariant1!);
             }
-            else if (IsValue2)
+            else if (IsExpressiveAvatarDtoVariant2)
             {
-                value2?.Invoke(Value2!);
+                expressiveAvatarDtoVariant2?.Invoke(ExpressiveAvatarDtoVariant2!);
             }
         }
 
@@ -151,9 +151,9 @@ namespace DId
         {
             var fields = new object?[]
             {
-                Value1,
+                ExpressiveAvatarDtoVariant1,
                 typeof(global::DId.ExpressiveAvatarDtoVariant1),
-                Value2,
+                ExpressiveAvatarDtoVariant2,
                 typeof(object),
             };
             const int offset = unchecked((int)2166136261);
@@ -171,8 +171,8 @@ namespace DId
         public bool Equals(ExpressiveAvatarDto other)
         {
             return
-                global::System.Collections.Generic.EqualityComparer<global::DId.ExpressiveAvatarDtoVariant1?>.Default.Equals(Value1, other.Value1) &&
-                global::System.Collections.Generic.EqualityComparer<object?>.Default.Equals(Value2, other.Value2) 
+                global::System.Collections.Generic.EqualityComparer<global::DId.ExpressiveAvatarDtoVariant1?>.Default.Equals(ExpressiveAvatarDtoVariant1, other.ExpressiveAvatarDtoVariant1) &&
+                global::System.Collections.Generic.EqualityComparer<object?>.Default.Equals(ExpressiveAvatarDtoVariant2, other.ExpressiveAvatarDtoVariant2) 
                 ;
         }
 

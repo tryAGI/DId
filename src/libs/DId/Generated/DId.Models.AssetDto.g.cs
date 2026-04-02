@@ -13,35 +13,35 @@ namespace DId
         /// DTO for creating a new asset
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::DId.AssetDtoVariant1? Value1 { get; init; }
+        public global::DId.AssetDtoVariant1? AssetDtoVariant1 { get; init; }
 #else
-        public global::DId.AssetDtoVariant1? Value1 { get; }
+        public global::DId.AssetDtoVariant1? AssetDtoVariant1 { get; }
 #endif
 
         /// <summary>
         /// 
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Value1))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AssetDtoVariant1))]
 #endif
-        public bool IsValue1 => Value1 != null;
+        public bool IsAssetDtoVariant1 => AssetDtoVariant1 != null;
 
         /// <summary>
         /// DTO for updating an existing asset
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::DId.AssetDtoVariant2? Value2 { get; init; }
+        public global::DId.AssetDtoVariant2? AssetDtoVariant2 { get; init; }
 #else
-        public global::DId.AssetDtoVariant2? Value2 { get; }
+        public global::DId.AssetDtoVariant2? AssetDtoVariant2 { get; }
 #endif
 
         /// <summary>
         /// 
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Value2))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AssetDtoVariant2))]
 #endif
-        public bool IsValue2 => Value2 != null;
+        public bool IsAssetDtoVariant2 => AssetDtoVariant2 != null;
         /// <summary>
         /// 
         /// </summary>
@@ -50,14 +50,14 @@ namespace DId
         /// <summary>
         /// 
         /// </summary>
-        public static implicit operator global::DId.AssetDtoVariant1?(AssetDto @this) => @this.Value1;
+        public static implicit operator global::DId.AssetDtoVariant1?(AssetDto @this) => @this.AssetDtoVariant1;
 
         /// <summary>
         /// 
         /// </summary>
         public AssetDto(global::DId.AssetDtoVariant1? value)
         {
-            Value1 = value;
+            AssetDtoVariant1 = value;
         }
 
         /// <summary>
@@ -68,42 +68,42 @@ namespace DId
         /// <summary>
         /// 
         /// </summary>
-        public static implicit operator global::DId.AssetDtoVariant2?(AssetDto @this) => @this.Value2;
+        public static implicit operator global::DId.AssetDtoVariant2?(AssetDto @this) => @this.AssetDtoVariant2;
 
         /// <summary>
         /// 
         /// </summary>
         public AssetDto(global::DId.AssetDtoVariant2? value)
         {
-            Value2 = value;
+            AssetDtoVariant2 = value;
         }
 
         /// <summary>
         /// 
         /// </summary>
         public AssetDto(
-            global::DId.AssetDtoVariant1? value1,
-            global::DId.AssetDtoVariant2? value2
+            global::DId.AssetDtoVariant1? assetDtoVariant1,
+            global::DId.AssetDtoVariant2? assetDtoVariant2
             )
         {
-            Value1 = value1;
-            Value2 = value2;
+            AssetDtoVariant1 = assetDtoVariant1;
+            AssetDtoVariant2 = assetDtoVariant2;
         }
 
         /// <summary>
         /// 
         /// </summary>
         public object? Object =>
-            Value2 as object ??
-            Value1 as object 
+            AssetDtoVariant2 as object ??
+            AssetDtoVariant1 as object 
             ;
 
         /// <summary>
         /// 
         /// </summary>
         public override string? ToString() =>
-            Value1?.ToString() ??
-            Value2?.ToString() 
+            AssetDtoVariant1?.ToString() ??
+            AssetDtoVariant2?.ToString() 
             ;
 
         /// <summary>
@@ -111,15 +111,15 @@ namespace DId
         /// </summary>
         public bool Validate()
         {
-            return IsValue1 || IsValue2;
+            return IsAssetDtoVariant1 || IsAssetDtoVariant2;
         }
 
         /// <summary>
         /// 
         /// </summary>
         public TResult? Match<TResult>(
-            global::System.Func<global::DId.AssetDtoVariant1?, TResult>? value1 = null,
-            global::System.Func<global::DId.AssetDtoVariant2?, TResult>? value2 = null,
+            global::System.Func<global::DId.AssetDtoVariant1?, TResult>? assetDtoVariant1 = null,
+            global::System.Func<global::DId.AssetDtoVariant2?, TResult>? assetDtoVariant2 = null,
             bool validate = true)
         {
             if (validate)
@@ -127,13 +127,13 @@ namespace DId
                 Validate();
             }
 
-            if (IsValue1 && value1 != null)
+            if (IsAssetDtoVariant1 && assetDtoVariant1 != null)
             {
-                return value1(Value1!);
+                return assetDtoVariant1(AssetDtoVariant1!);
             }
-            else if (IsValue2 && value2 != null)
+            else if (IsAssetDtoVariant2 && assetDtoVariant2 != null)
             {
-                return value2(Value2!);
+                return assetDtoVariant2(AssetDtoVariant2!);
             }
 
             return default(TResult);
@@ -143,8 +143,8 @@ namespace DId
         /// 
         /// </summary>
         public void Match(
-            global::System.Action<global::DId.AssetDtoVariant1?>? value1 = null,
-            global::System.Action<global::DId.AssetDtoVariant2?>? value2 = null,
+            global::System.Action<global::DId.AssetDtoVariant1?>? assetDtoVariant1 = null,
+            global::System.Action<global::DId.AssetDtoVariant2?>? assetDtoVariant2 = null,
             bool validate = true)
         {
             if (validate)
@@ -152,13 +152,13 @@ namespace DId
                 Validate();
             }
 
-            if (IsValue1)
+            if (IsAssetDtoVariant1)
             {
-                value1?.Invoke(Value1!);
+                assetDtoVariant1?.Invoke(AssetDtoVariant1!);
             }
-            else if (IsValue2)
+            else if (IsAssetDtoVariant2)
             {
-                value2?.Invoke(Value2!);
+                assetDtoVariant2?.Invoke(AssetDtoVariant2!);
             }
         }
 
@@ -169,9 +169,9 @@ namespace DId
         {
             var fields = new object?[]
             {
-                Value1,
+                AssetDtoVariant1,
                 typeof(global::DId.AssetDtoVariant1),
-                Value2,
+                AssetDtoVariant2,
                 typeof(global::DId.AssetDtoVariant2),
             };
             const int offset = unchecked((int)2166136261);
@@ -189,8 +189,8 @@ namespace DId
         public bool Equals(AssetDto other)
         {
             return
-                global::System.Collections.Generic.EqualityComparer<global::DId.AssetDtoVariant1?>.Default.Equals(Value1, other.Value1) &&
-                global::System.Collections.Generic.EqualityComparer<global::DId.AssetDtoVariant2?>.Default.Equals(Value2, other.Value2) 
+                global::System.Collections.Generic.EqualityComparer<global::DId.AssetDtoVariant1?>.Default.Equals(AssetDtoVariant1, other.AssetDtoVariant1) &&
+                global::System.Collections.Generic.EqualityComparer<global::DId.AssetDtoVariant2?>.Default.Equals(AssetDtoVariant2, other.AssetDtoVariant2) 
                 ;
         }
 

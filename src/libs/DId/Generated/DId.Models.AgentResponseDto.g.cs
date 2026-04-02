@@ -13,35 +13,35 @@ namespace DId
         /// Construct a type with the properties of T except for those in type K.
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::DId.AgentResponseDtoVariant1? Value1 { get; init; }
+        public global::DId.AgentResponseDtoVariant1? AgentResponseDtoVariant1 { get; init; }
 #else
-        public global::DId.AgentResponseDtoVariant1? Value1 { get; }
+        public global::DId.AgentResponseDtoVariant1? AgentResponseDtoVariant1 { get; }
 #endif
 
         /// <summary>
         /// 
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Value1))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AgentResponseDtoVariant1))]
 #endif
-        public bool IsValue1 => Value1 != null;
+        public bool IsAgentResponseDtoVariant1 => AgentResponseDtoVariant1 != null;
 
         /// <summary>
         /// 
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::DId.AgentResponseDtoVariant2? Value2 { get; init; }
+        public global::DId.AgentResponseDtoVariant2? AgentResponseDtoVariant2 { get; init; }
 #else
-        public global::DId.AgentResponseDtoVariant2? Value2 { get; }
+        public global::DId.AgentResponseDtoVariant2? AgentResponseDtoVariant2 { get; }
 #endif
 
         /// <summary>
         /// 
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Value2))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AgentResponseDtoVariant2))]
 #endif
-        public bool IsValue2 => Value2 != null;
+        public bool IsAgentResponseDtoVariant2 => AgentResponseDtoVariant2 != null;
         /// <summary>
         /// 
         /// </summary>
@@ -50,14 +50,14 @@ namespace DId
         /// <summary>
         /// 
         /// </summary>
-        public static implicit operator global::DId.AgentResponseDtoVariant1?(AgentResponseDto @this) => @this.Value1;
+        public static implicit operator global::DId.AgentResponseDtoVariant1?(AgentResponseDto @this) => @this.AgentResponseDtoVariant1;
 
         /// <summary>
         /// 
         /// </summary>
         public AgentResponseDto(global::DId.AgentResponseDtoVariant1? value)
         {
-            Value1 = value;
+            AgentResponseDtoVariant1 = value;
         }
 
         /// <summary>
@@ -68,42 +68,42 @@ namespace DId
         /// <summary>
         /// 
         /// </summary>
-        public static implicit operator global::DId.AgentResponseDtoVariant2?(AgentResponseDto @this) => @this.Value2;
+        public static implicit operator global::DId.AgentResponseDtoVariant2?(AgentResponseDto @this) => @this.AgentResponseDtoVariant2;
 
         /// <summary>
         /// 
         /// </summary>
         public AgentResponseDto(global::DId.AgentResponseDtoVariant2? value)
         {
-            Value2 = value;
+            AgentResponseDtoVariant2 = value;
         }
 
         /// <summary>
         /// 
         /// </summary>
         public AgentResponseDto(
-            global::DId.AgentResponseDtoVariant1? value1,
-            global::DId.AgentResponseDtoVariant2? value2
+            global::DId.AgentResponseDtoVariant1? agentResponseDtoVariant1,
+            global::DId.AgentResponseDtoVariant2? agentResponseDtoVariant2
             )
         {
-            Value1 = value1;
-            Value2 = value2;
+            AgentResponseDtoVariant1 = agentResponseDtoVariant1;
+            AgentResponseDtoVariant2 = agentResponseDtoVariant2;
         }
 
         /// <summary>
         /// 
         /// </summary>
         public object? Object =>
-            Value2 as object ??
-            Value1 as object 
+            AgentResponseDtoVariant2 as object ??
+            AgentResponseDtoVariant1 as object 
             ;
 
         /// <summary>
         /// 
         /// </summary>
         public override string? ToString() =>
-            Value1?.ToString() ??
-            Value2?.ToString() 
+            AgentResponseDtoVariant1?.ToString() ??
+            AgentResponseDtoVariant2?.ToString() 
             ;
 
         /// <summary>
@@ -111,15 +111,15 @@ namespace DId
         /// </summary>
         public bool Validate()
         {
-            return IsValue1 && IsValue2;
+            return IsAgentResponseDtoVariant1 && IsAgentResponseDtoVariant2;
         }
 
         /// <summary>
         /// 
         /// </summary>
         public TResult? Match<TResult>(
-            global::System.Func<global::DId.AgentResponseDtoVariant1?, TResult>? value1 = null,
-            global::System.Func<global::DId.AgentResponseDtoVariant2?, TResult>? value2 = null,
+            global::System.Func<global::DId.AgentResponseDtoVariant1?, TResult>? agentResponseDtoVariant1 = null,
+            global::System.Func<global::DId.AgentResponseDtoVariant2?, TResult>? agentResponseDtoVariant2 = null,
             bool validate = true)
         {
             if (validate)
@@ -127,13 +127,13 @@ namespace DId
                 Validate();
             }
 
-            if (IsValue1 && value1 != null)
+            if (IsAgentResponseDtoVariant1 && agentResponseDtoVariant1 != null)
             {
-                return value1(Value1!);
+                return agentResponseDtoVariant1(AgentResponseDtoVariant1!);
             }
-            else if (IsValue2 && value2 != null)
+            else if (IsAgentResponseDtoVariant2 && agentResponseDtoVariant2 != null)
             {
-                return value2(Value2!);
+                return agentResponseDtoVariant2(AgentResponseDtoVariant2!);
             }
 
             return default(TResult);
@@ -143,8 +143,8 @@ namespace DId
         /// 
         /// </summary>
         public void Match(
-            global::System.Action<global::DId.AgentResponseDtoVariant1?>? value1 = null,
-            global::System.Action<global::DId.AgentResponseDtoVariant2?>? value2 = null,
+            global::System.Action<global::DId.AgentResponseDtoVariant1?>? agentResponseDtoVariant1 = null,
+            global::System.Action<global::DId.AgentResponseDtoVariant2?>? agentResponseDtoVariant2 = null,
             bool validate = true)
         {
             if (validate)
@@ -152,13 +152,13 @@ namespace DId
                 Validate();
             }
 
-            if (IsValue1)
+            if (IsAgentResponseDtoVariant1)
             {
-                value1?.Invoke(Value1!);
+                agentResponseDtoVariant1?.Invoke(AgentResponseDtoVariant1!);
             }
-            else if (IsValue2)
+            else if (IsAgentResponseDtoVariant2)
             {
-                value2?.Invoke(Value2!);
+                agentResponseDtoVariant2?.Invoke(AgentResponseDtoVariant2!);
             }
         }
 
@@ -169,9 +169,9 @@ namespace DId
         {
             var fields = new object?[]
             {
-                Value1,
+                AgentResponseDtoVariant1,
                 typeof(global::DId.AgentResponseDtoVariant1),
-                Value2,
+                AgentResponseDtoVariant2,
                 typeof(global::DId.AgentResponseDtoVariant2),
             };
             const int offset = unchecked((int)2166136261);
@@ -189,8 +189,8 @@ namespace DId
         public bool Equals(AgentResponseDto other)
         {
             return
-                global::System.Collections.Generic.EqualityComparer<global::DId.AgentResponseDtoVariant1?>.Default.Equals(Value1, other.Value1) &&
-                global::System.Collections.Generic.EqualityComparer<global::DId.AgentResponseDtoVariant2?>.Default.Equals(Value2, other.Value2) 
+                global::System.Collections.Generic.EqualityComparer<global::DId.AgentResponseDtoVariant1?>.Default.Equals(AgentResponseDtoVariant1, other.AgentResponseDtoVariant1) &&
+                global::System.Collections.Generic.EqualityComparer<global::DId.AgentResponseDtoVariant2?>.Default.Equals(AgentResponseDtoVariant2, other.AgentResponseDtoVariant2) 
                 ;
         }
 
