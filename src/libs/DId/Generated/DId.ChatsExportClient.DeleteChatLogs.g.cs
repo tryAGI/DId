@@ -95,13 +95,13 @@ namespace DId
                     if (ReadResponseAsString)
                     {
                         __content_401 = await __response.Content.ReadAsStringAsync(cancellationToken).ConfigureAwait(false);
-                        __value_401 = global::DId.DeleteChatLogsResponse2.FromJson(__content_401, JsonSerializerContext);
+                        __value_401 = global::DId.DeleteChatLogsResponse2.FromJson(__content_401, JsonSerializerOptions);
                     }
                     else
                     {
                         __content_401 = await __response.Content.ReadAsStringAsync(cancellationToken).ConfigureAwait(false);
 
-                        __value_401 = global::DId.DeleteChatLogsResponse2.FromJson(__content_401, JsonSerializerContext);
+                        __value_401 = global::DId.DeleteChatLogsResponse2.FromJson(__content_401, JsonSerializerOptions);
                     }
                 }
                 catch (global::System.Exception __ex)
@@ -133,13 +133,13 @@ namespace DId
                     if (ReadResponseAsString)
                     {
                         __content_404 = await __response.Content.ReadAsStringAsync(cancellationToken).ConfigureAwait(false);
-                        __value_404 = global::DId.DeleteChatLogsResponse3.FromJson(__content_404, JsonSerializerContext);
+                        __value_404 = global::DId.DeleteChatLogsResponse3.FromJson(__content_404, JsonSerializerOptions);
                     }
                     else
                     {
                         __content_404 = await __response.Content.ReadAsStringAsync(cancellationToken).ConfigureAwait(false);
 
-                        __value_404 = global::DId.DeleteChatLogsResponse3.FromJson(__content_404, JsonSerializerContext);
+                        __value_404 = global::DId.DeleteChatLogsResponse3.FromJson(__content_404, JsonSerializerOptions);
                     }
                 }
                 catch (global::System.Exception __ex)
@@ -183,7 +183,7 @@ namespace DId
                     __response.EnsureSuccessStatusCode();
 
                     return
-                        global::DId.DeleteChatLogsResponse.FromJson(__content, JsonSerializerContext) ??
+                        global::DId.DeleteChatLogsResponse.FromJson(__content, JsonSerializerOptions) ??
                         throw new global::System.InvalidOperationException($"Response deserialization failed for \"{__content}\" ");
                 }
                 catch (global::System.Exception __ex)
@@ -214,7 +214,7 @@ namespace DId
                     ).ConfigureAwait(false);
 
                     return
-                        await global::DId.DeleteChatLogsResponse.FromJsonStreamAsync(__content, JsonSerializerContext).ConfigureAwait(false) ??
+                        await global::DId.DeleteChatLogsResponse.FromJsonStreamAsync(__content, JsonSerializerOptions).ConfigureAwait(false) ??
                         throw new global::System.InvalidOperationException("Response deserialization failed.");
                 }
                 catch (global::System.Exception __ex)

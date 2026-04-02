@@ -12,8 +12,7 @@ namespace DId.JsonConverters
             global::System.Type typeToConvert,
             global::System.Text.Json.JsonSerializerOptions options)
         {
-            options = options ?? throw new global::System.ArgumentNullException(nameof(options));
-            var typeInfoResolver = options.TypeInfoResolver ?? throw new global::System.InvalidOperationException("TypeInfoResolver is not set.");
+            options = options ?? throw new global::System.ArgumentNullException(nameof(options)); 
 
             using var __jsonDocument = global::System.Text.Json.JsonDocument.ParseValue(ref reader);
             var __rawJson = __jsonDocument.RootElement.GetRawText();
@@ -46,9 +45,7 @@ namespace DId.JsonConverters
                 {
                     try
                     {
-                        var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::DId.ExpressiveAvatarExpressionDtoVariant1), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::DId.ExpressiveAvatarExpressionDtoVariant1> ??
-                                       throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::DId.ExpressiveAvatarExpressionDtoVariant1).Name}");
-                        expressiveAvatarExpressionDtoVariant1 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
+                        expressiveAvatarExpressionDtoVariant1 = global::System.Text.Json.JsonSerializer.Deserialize<global::DId.ExpressiveAvatarExpressionDtoVariant1>(__rawJson, options);
                     }
                     catch (global::System.Text.Json.JsonException)
                     {
@@ -61,9 +58,7 @@ namespace DId.JsonConverters
                 {
                     try
                     {
-                        var typeInfo = typeInfoResolver.GetTypeInfo(typeof(object), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<object> ??
-                                       throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(object).Name}");
-                        expressiveAvatarExpressionDtoVariant2 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
+                        expressiveAvatarExpressionDtoVariant2 = global::System.Text.Json.JsonSerializer.Deserialize<object>(__rawJson, options);
                     }
                     catch (global::System.Text.Json.JsonException)
                     {
@@ -78,9 +73,7 @@ namespace DId.JsonConverters
             {
                 try
                 {
-                    var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::DId.ExpressiveAvatarExpressionDtoVariant1), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::DId.ExpressiveAvatarExpressionDtoVariant1> ??
-                                   throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::DId.ExpressiveAvatarExpressionDtoVariant1).Name}");
-                    expressiveAvatarExpressionDtoVariant1 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
+                    expressiveAvatarExpressionDtoVariant1 = global::System.Text.Json.JsonSerializer.Deserialize<global::DId.ExpressiveAvatarExpressionDtoVariant1>(__rawJson, options);
                 }
                 catch (global::System.Text.Json.JsonException)
                 {
@@ -91,9 +84,7 @@ namespace DId.JsonConverters
 
                 try
                 {
-                    var typeInfo = typeInfoResolver.GetTypeInfo(typeof(object), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<object> ??
-                                   throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(object).Name}");
-                    expressiveAvatarExpressionDtoVariant2 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
+                    expressiveAvatarExpressionDtoVariant2 = global::System.Text.Json.JsonSerializer.Deserialize<object>(__rawJson, options);
                 }
                 catch (global::System.Text.Json.JsonException)
                 {
@@ -118,20 +109,15 @@ namespace DId.JsonConverters
             global::DId.ExpressiveAvatarExpressionDto value,
             global::System.Text.Json.JsonSerializerOptions options)
         {
-            options = options ?? throw new global::System.ArgumentNullException(nameof(options));
-            var typeInfoResolver = options.TypeInfoResolver ?? throw new global::System.InvalidOperationException("TypeInfoResolver is not set.");
+            options = options ?? throw new global::System.ArgumentNullException(nameof(options)); 
 
             if (value.IsExpressiveAvatarExpressionDtoVariant1)
             {
-                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::DId.ExpressiveAvatarExpressionDtoVariant1), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::DId.ExpressiveAvatarExpressionDtoVariant1?> ??
-                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::DId.ExpressiveAvatarExpressionDtoVariant1).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.ExpressiveAvatarExpressionDtoVariant1!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.ExpressiveAvatarExpressionDtoVariant1, typeof(global::DId.ExpressiveAvatarExpressionDtoVariant1), options);
             }
             else if (value.IsExpressiveAvatarExpressionDtoVariant2)
             {
-                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(object), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<object?> ??
-                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(object).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.ExpressiveAvatarExpressionDtoVariant2!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.ExpressiveAvatarExpressionDtoVariant2, typeof(object), options);
             }
         }
     }

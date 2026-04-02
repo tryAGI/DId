@@ -119,7 +119,7 @@ namespace DId
                     __response.EnsureSuccessStatusCode();
 
                     return
-                        global::DId.GetScenesResponse.FromJson(__content, JsonSerializerContext) ??
+                        global::DId.GetScenesResponse.FromJson(__content, JsonSerializerOptions) ??
                         throw new global::System.InvalidOperationException($"Response deserialization failed for \"{__content}\" ");
                 }
                 catch (global::System.Exception __ex)
@@ -150,7 +150,7 @@ namespace DId
                     ).ConfigureAwait(false);
 
                     return
-                        await global::DId.GetScenesResponse.FromJsonStreamAsync(__content, JsonSerializerContext).ConfigureAwait(false) ??
+                        await global::DId.GetScenesResponse.FromJsonStreamAsync(__content, JsonSerializerOptions).ConfigureAwait(false) ??
                         throw new global::System.InvalidOperationException("Response deserialization failed.");
                 }
                 catch (global::System.Exception __ex)

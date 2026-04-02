@@ -91,13 +91,13 @@ namespace DId
                     if (ReadResponseAsString)
                     {
                         __content_404 = await __response.Content.ReadAsStringAsync(cancellationToken).ConfigureAwait(false);
-                        __value_404 = global::DId.GetCreditsResponse2.FromJson(__content_404, JsonSerializerContext);
+                        __value_404 = global::DId.GetCreditsResponse2.FromJson(__content_404, JsonSerializerOptions);
                     }
                     else
                     {
                         __content_404 = await __response.Content.ReadAsStringAsync(cancellationToken).ConfigureAwait(false);
 
-                        __value_404 = global::DId.GetCreditsResponse2.FromJson(__content_404, JsonSerializerContext);
+                        __value_404 = global::DId.GetCreditsResponse2.FromJson(__content_404, JsonSerializerOptions);
                     }
                 }
                 catch (global::System.Exception __ex)
@@ -141,7 +141,7 @@ namespace DId
                     __response.EnsureSuccessStatusCode();
 
                     return
-                        global::DId.GetCreditsResponse.FromJson(__content, JsonSerializerContext) ??
+                        global::DId.GetCreditsResponse.FromJson(__content, JsonSerializerOptions) ??
                         throw new global::System.InvalidOperationException($"Response deserialization failed for \"{__content}\" ");
                 }
                 catch (global::System.Exception __ex)
@@ -172,7 +172,7 @@ namespace DId
                     ).ConfigureAwait(false);
 
                     return
-                        await global::DId.GetCreditsResponse.FromJsonStreamAsync(__content, JsonSerializerContext).ConfigureAwait(false) ??
+                        await global::DId.GetCreditsResponse.FromJsonStreamAsync(__content, JsonSerializerOptions).ConfigureAwait(false) ??
                         throw new global::System.InvalidOperationException("Response deserialization failed.");
                 }
                 catch (global::System.Exception __ex)

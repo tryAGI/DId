@@ -110,13 +110,13 @@ namespace DId
                     if (ReadResponseAsString)
                     {
                         __content_400 = await __response.Content.ReadAsStringAsync(cancellationToken).ConfigureAwait(false);
-                        __value_400 = global::DId.UpdateLogoResponse.FromJson(__content_400, JsonSerializerContext);
+                        __value_400 = global::DId.UpdateLogoResponse.FromJson(__content_400, JsonSerializerOptions);
                     }
                     else
                     {
                         __content_400 = await __response.Content.ReadAsStringAsync(cancellationToken).ConfigureAwait(false);
 
-                        __value_400 = global::DId.UpdateLogoResponse.FromJson(__content_400, JsonSerializerContext);
+                        __value_400 = global::DId.UpdateLogoResponse.FromJson(__content_400, JsonSerializerOptions);
                     }
                 }
                 catch (global::System.Exception __ex)
@@ -148,13 +148,13 @@ namespace DId
                     if (ReadResponseAsString)
                     {
                         __content_401 = await __response.Content.ReadAsStringAsync(cancellationToken).ConfigureAwait(false);
-                        __value_401 = global::DId.UpdateLogoResponse2.FromJson(__content_401, JsonSerializerContext);
+                        __value_401 = global::DId.UpdateLogoResponse2.FromJson(__content_401, JsonSerializerOptions);
                     }
                     else
                     {
                         __content_401 = await __response.Content.ReadAsStringAsync(cancellationToken).ConfigureAwait(false);
 
-                        __value_401 = global::DId.UpdateLogoResponse2.FromJson(__content_401, JsonSerializerContext);
+                        __value_401 = global::DId.UpdateLogoResponse2.FromJson(__content_401, JsonSerializerOptions);
                     }
                 }
                 catch (global::System.Exception __ex)
@@ -186,13 +186,13 @@ namespace DId
                     if (ReadResponseAsString)
                     {
                         __content_415 = await __response.Content.ReadAsStringAsync(cancellationToken).ConfigureAwait(false);
-                        __value_415 = global::DId.UpdateLogoResponse3.FromJson(__content_415, JsonSerializerContext);
+                        __value_415 = global::DId.UpdateLogoResponse3.FromJson(__content_415, JsonSerializerOptions);
                     }
                     else
                     {
                         __content_415 = await __response.Content.ReadAsStringAsync(cancellationToken).ConfigureAwait(false);
 
-                        __value_415 = global::DId.UpdateLogoResponse3.FromJson(__content_415, JsonSerializerContext);
+                        __value_415 = global::DId.UpdateLogoResponse3.FromJson(__content_415, JsonSerializerOptions);
                     }
                 }
                 catch (global::System.Exception __ex)
