@@ -12,7 +12,8 @@ namespace DId.JsonConverters
             global::System.Type typeToConvert,
             global::System.Text.Json.JsonSerializerOptions options)
         {
-            options = options ?? throw new global::System.ArgumentNullException(nameof(options)); 
+            options = options ?? throw new global::System.ArgumentNullException(nameof(options));
+            var typeInfoResolver = options.TypeInfoResolver ?? throw new global::System.InvalidOperationException("TypeInfoResolver is not set.");
 
             using var __jsonDocument = global::System.Text.Json.JsonDocument.ParseValue(ref reader);
             var __rawJson = __jsonDocument.RootElement.GetRawText();
@@ -53,7 +54,9 @@ namespace DId.JsonConverters
                 {
                     try
                     {
-                        openAIConfiguration = global::System.Text.Json.JsonSerializer.Deserialize<global::DId.UpdateSecretExternalLLMRequestDtoOpenAIConfiguration>(__rawJson, options);
+                        var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::DId.UpdateSecretExternalLLMRequestDtoOpenAIConfiguration), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::DId.UpdateSecretExternalLLMRequestDtoOpenAIConfiguration> ??
+                                       throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::DId.UpdateSecretExternalLLMRequestDtoOpenAIConfiguration).Name}");
+                        openAIConfiguration = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
                     }
                     catch (global::System.Text.Json.JsonException)
                     {
@@ -66,7 +69,9 @@ namespace DId.JsonConverters
                 {
                     try
                     {
-                        updateSecretExternalLLMRequestDtoVariant2 = global::System.Text.Json.JsonSerializer.Deserialize<global::DId.UpdateSecretExternalLLMRequestDtoVariant2>(__rawJson, options);
+                        var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::DId.UpdateSecretExternalLLMRequestDtoVariant2), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::DId.UpdateSecretExternalLLMRequestDtoVariant2> ??
+                                       throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::DId.UpdateSecretExternalLLMRequestDtoVariant2).Name}");
+                        updateSecretExternalLLMRequestDtoVariant2 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
                     }
                     catch (global::System.Text.Json.JsonException)
                     {
@@ -81,7 +86,9 @@ namespace DId.JsonConverters
             {
                 try
                 {
-                    openAIConfiguration = global::System.Text.Json.JsonSerializer.Deserialize<global::DId.UpdateSecretExternalLLMRequestDtoOpenAIConfiguration>(__rawJson, options);
+                    var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::DId.UpdateSecretExternalLLMRequestDtoOpenAIConfiguration), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::DId.UpdateSecretExternalLLMRequestDtoOpenAIConfiguration> ??
+                                   throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::DId.UpdateSecretExternalLLMRequestDtoOpenAIConfiguration).Name}");
+                    openAIConfiguration = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
                 }
                 catch (global::System.Text.Json.JsonException)
                 {
@@ -92,7 +99,9 @@ namespace DId.JsonConverters
 
                 try
                 {
-                    updateSecretExternalLLMRequestDtoVariant2 = global::System.Text.Json.JsonSerializer.Deserialize<global::DId.UpdateSecretExternalLLMRequestDtoVariant2>(__rawJson, options);
+                    var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::DId.UpdateSecretExternalLLMRequestDtoVariant2), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::DId.UpdateSecretExternalLLMRequestDtoVariant2> ??
+                                   throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::DId.UpdateSecretExternalLLMRequestDtoVariant2).Name}");
+                    updateSecretExternalLLMRequestDtoVariant2 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
                 }
                 catch (global::System.Text.Json.JsonException)
                 {
@@ -117,15 +126,20 @@ namespace DId.JsonConverters
             global::DId.UpdateSecretExternalLLMRequestDto value,
             global::System.Text.Json.JsonSerializerOptions options)
         {
-            options = options ?? throw new global::System.ArgumentNullException(nameof(options)); 
+            options = options ?? throw new global::System.ArgumentNullException(nameof(options));
+            var typeInfoResolver = options.TypeInfoResolver ?? throw new global::System.InvalidOperationException("TypeInfoResolver is not set.");
 
             if (value.IsOpenAIConfiguration)
             {
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.OpenAIConfiguration, typeof(global::DId.UpdateSecretExternalLLMRequestDtoOpenAIConfiguration), options);
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::DId.UpdateSecretExternalLLMRequestDtoOpenAIConfiguration), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::DId.UpdateSecretExternalLLMRequestDtoOpenAIConfiguration?> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::DId.UpdateSecretExternalLLMRequestDtoOpenAIConfiguration).Name}");
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.OpenAIConfiguration!, typeInfo);
             }
             else if (value.IsUpdateSecretExternalLLMRequestDtoVariant2)
             {
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.UpdateSecretExternalLLMRequestDtoVariant2, typeof(global::DId.UpdateSecretExternalLLMRequestDtoVariant2), options);
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::DId.UpdateSecretExternalLLMRequestDtoVariant2), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::DId.UpdateSecretExternalLLMRequestDtoVariant2?> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::DId.UpdateSecretExternalLLMRequestDtoVariant2).Name}");
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.UpdateSecretExternalLLMRequestDtoVariant2!, typeInfo);
             }
         }
     }

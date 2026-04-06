@@ -90,13 +90,13 @@ namespace DId
                     if (ReadResponseAsString)
                     {
                         __content_401 = await __response.Content.ReadAsStringAsync(cancellationToken).ConfigureAwait(false);
-                        __value_401 = global::DId.DeleteResponse.FromJson(__content_401, JsonSerializerOptions);
+                        __value_401 = global::DId.DeleteResponse.FromJson(__content_401, JsonSerializerContext);
                     }
                     else
                     {
                         __content_401 = await __response.Content.ReadAsStringAsync(cancellationToken).ConfigureAwait(false);
 
-                        __value_401 = global::DId.DeleteResponse.FromJson(__content_401, JsonSerializerOptions);
+                        __value_401 = global::DId.DeleteResponse.FromJson(__content_401, JsonSerializerContext);
                     }
                 }
                 catch (global::System.Exception __ex)
@@ -128,13 +128,13 @@ namespace DId
                     if (ReadResponseAsString)
                     {
                         __content_404 = await __response.Content.ReadAsStringAsync(cancellationToken).ConfigureAwait(false);
-                        __value_404 = global::DId.DeleteResponse2.FromJson(__content_404, JsonSerializerOptions);
+                        __value_404 = global::DId.DeleteResponse2.FromJson(__content_404, JsonSerializerContext);
                     }
                     else
                     {
                         __content_404 = await __response.Content.ReadAsStringAsync(cancellationToken).ConfigureAwait(false);
 
-                        __value_404 = global::DId.DeleteResponse2.FromJson(__content_404, JsonSerializerOptions);
+                        __value_404 = global::DId.DeleteResponse2.FromJson(__content_404, JsonSerializerContext);
                     }
                 }
                 catch (global::System.Exception __ex)
@@ -166,13 +166,13 @@ namespace DId
                     if (ReadResponseAsString)
                     {
                         __content_409 = await __response.Content.ReadAsStringAsync(cancellationToken).ConfigureAwait(false);
-                        __value_409 = global::DId.DeleteResponse3.FromJson(__content_409, JsonSerializerOptions);
+                        __value_409 = global::DId.DeleteResponse3.FromJson(__content_409, JsonSerializerContext);
                     }
                     else
                     {
                         __content_409 = await __response.Content.ReadAsStringAsync(cancellationToken).ConfigureAwait(false);
 
-                        __value_409 = global::DId.DeleteResponse3.FromJson(__content_409, JsonSerializerOptions);
+                        __value_409 = global::DId.DeleteResponse3.FromJson(__content_409, JsonSerializerContext);
                     }
                 }
                 catch (global::System.Exception __ex)

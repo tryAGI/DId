@@ -107,7 +107,7 @@ namespace DId
                     __response.EnsureSuccessStatusCode();
 
                     return
-                        global::DId.GetPresenterByIdResponse.FromJson(__content, JsonSerializerOptions) ??
+                        global::DId.GetPresenterByIdResponse.FromJson(__content, JsonSerializerContext) ??
                         throw new global::System.InvalidOperationException($"Response deserialization failed for \"{__content}\" ");
                 }
                 catch (global::System.Exception __ex)
@@ -137,7 +137,7 @@ namespace DId
                     ).ConfigureAwait(false);
 
                     return
-                        await global::DId.GetPresenterByIdResponse.FromJsonStreamAsync(__content, JsonSerializerOptions).ConfigureAwait(false) ??
+                        await global::DId.GetPresenterByIdResponse.FromJsonStreamAsync(__content, JsonSerializerContext).ConfigureAwait(false) ??
                         throw new global::System.InvalidOperationException("Response deserialization failed.");
                 }
                 catch (global::System.Exception __ex)

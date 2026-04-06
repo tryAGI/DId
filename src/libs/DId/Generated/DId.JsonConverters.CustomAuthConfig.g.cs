@@ -12,7 +12,8 @@ namespace DId.JsonConverters
             global::System.Type typeToConvert,
             global::System.Text.Json.JsonSerializerOptions options)
         {
-            options = options ?? throw new global::System.ArgumentNullException(nameof(options)); 
+            options = options ?? throw new global::System.ArgumentNullException(nameof(options));
+            var typeInfoResolver = options.TypeInfoResolver ?? throw new global::System.InvalidOperationException("TypeInfoResolver is not set.");
 
             using var __jsonDocument = global::System.Text.Json.JsonDocument.ParseValue(ref reader);
             var __rawJson = __jsonDocument.RootElement.GetRawText();
@@ -57,7 +58,9 @@ namespace DId.JsonConverters
                 {
                     try
                     {
-                        basic = global::System.Text.Json.JsonSerializer.Deserialize<global::DId.CustomAuthConfigBasic>(__rawJson, options);
+                        var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::DId.CustomAuthConfigBasic), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::DId.CustomAuthConfigBasic> ??
+                                       throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::DId.CustomAuthConfigBasic).Name}");
+                        basic = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
                     }
                     catch (global::System.Text.Json.JsonException)
                     {
@@ -70,7 +73,9 @@ namespace DId.JsonConverters
                 {
                     try
                     {
-                        oAuth2 = global::System.Text.Json.JsonSerializer.Deserialize<global::DId.CustomAuthConfigOAuth2>(__rawJson, options);
+                        var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::DId.CustomAuthConfigOAuth2), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::DId.CustomAuthConfigOAuth2> ??
+                                       throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::DId.CustomAuthConfigOAuth2).Name}");
+                        oAuth2 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
                     }
                     catch (global::System.Text.Json.JsonException)
                     {
@@ -85,7 +90,9 @@ namespace DId.JsonConverters
             {
                 try
                 {
-                    basic = global::System.Text.Json.JsonSerializer.Deserialize<global::DId.CustomAuthConfigBasic>(__rawJson, options);
+                    var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::DId.CustomAuthConfigBasic), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::DId.CustomAuthConfigBasic> ??
+                                   throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::DId.CustomAuthConfigBasic).Name}");
+                    basic = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
                 }
                 catch (global::System.Text.Json.JsonException)
                 {
@@ -96,7 +103,9 @@ namespace DId.JsonConverters
 
                 try
                 {
-                    oAuth2 = global::System.Text.Json.JsonSerializer.Deserialize<global::DId.CustomAuthConfigOAuth2>(__rawJson, options);
+                    var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::DId.CustomAuthConfigOAuth2), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::DId.CustomAuthConfigOAuth2> ??
+                                   throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::DId.CustomAuthConfigOAuth2).Name}");
+                    oAuth2 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
                 }
                 catch (global::System.Text.Json.JsonException)
                 {
@@ -121,15 +130,20 @@ namespace DId.JsonConverters
             global::DId.CustomAuthConfig value,
             global::System.Text.Json.JsonSerializerOptions options)
         {
-            options = options ?? throw new global::System.ArgumentNullException(nameof(options)); 
+            options = options ?? throw new global::System.ArgumentNullException(nameof(options));
+            var typeInfoResolver = options.TypeInfoResolver ?? throw new global::System.InvalidOperationException("TypeInfoResolver is not set.");
 
             if (value.IsBasic)
             {
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Basic, typeof(global::DId.CustomAuthConfigBasic), options);
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::DId.CustomAuthConfigBasic), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::DId.CustomAuthConfigBasic?> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::DId.CustomAuthConfigBasic).Name}");
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Basic!, typeInfo);
             }
             else if (value.IsOAuth2)
             {
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.OAuth2, typeof(global::DId.CustomAuthConfigOAuth2), options);
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::DId.CustomAuthConfigOAuth2), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::DId.CustomAuthConfigOAuth2?> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::DId.CustomAuthConfigOAuth2).Name}");
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.OAuth2!, typeInfo);
             }
         }
     }
