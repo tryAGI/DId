@@ -146,13 +146,13 @@ namespace DId
                     if (ReadResponseAsString)
                     {
                         __content_400 = await __response.Content.ReadAsStringAsync(cancellationToken).ConfigureAwait(false);
-                        __value_400 = global::DId.UploadAnImageResponse2.FromJson(__content_400, JsonSerializerOptions);
+                        __value_400 = global::DId.UploadAnImageResponse2.FromJson(__content_400, JsonSerializerContext);
                     }
                     else
                     {
                         __content_400 = await __response.Content.ReadAsStringAsync(cancellationToken).ConfigureAwait(false);
 
-                        __value_400 = global::DId.UploadAnImageResponse2.FromJson(__content_400, JsonSerializerOptions);
+                        __value_400 = global::DId.UploadAnImageResponse2.FromJson(__content_400, JsonSerializerContext);
                     }
                 }
                 catch (global::System.Exception __ex)
@@ -184,13 +184,13 @@ namespace DId
                     if (ReadResponseAsString)
                     {
                         __content_401 = await __response.Content.ReadAsStringAsync(cancellationToken).ConfigureAwait(false);
-                        __value_401 = global::DId.UploadAnImageResponse3.FromJson(__content_401, JsonSerializerOptions);
+                        __value_401 = global::DId.UploadAnImageResponse3.FromJson(__content_401, JsonSerializerContext);
                     }
                     else
                     {
                         __content_401 = await __response.Content.ReadAsStringAsync(cancellationToken).ConfigureAwait(false);
 
-                        __value_401 = global::DId.UploadAnImageResponse3.FromJson(__content_401, JsonSerializerOptions);
+                        __value_401 = global::DId.UploadAnImageResponse3.FromJson(__content_401, JsonSerializerContext);
                     }
                 }
                 catch (global::System.Exception __ex)
@@ -222,13 +222,13 @@ namespace DId
                     if (ReadResponseAsString)
                     {
                         __content_402 = await __response.Content.ReadAsStringAsync(cancellationToken).ConfigureAwait(false);
-                        __value_402 = global::DId.UploadAnImageResponse4.FromJson(__content_402, JsonSerializerOptions);
+                        __value_402 = global::DId.UploadAnImageResponse4.FromJson(__content_402, JsonSerializerContext);
                     }
                     else
                     {
                         __content_402 = await __response.Content.ReadAsStringAsync(cancellationToken).ConfigureAwait(false);
 
-                        __value_402 = global::DId.UploadAnImageResponse4.FromJson(__content_402, JsonSerializerOptions);
+                        __value_402 = global::DId.UploadAnImageResponse4.FromJson(__content_402, JsonSerializerContext);
                     }
                 }
                 catch (global::System.Exception __ex)
@@ -260,13 +260,13 @@ namespace DId
                     if (ReadResponseAsString)
                     {
                         __content_415 = await __response.Content.ReadAsStringAsync(cancellationToken).ConfigureAwait(false);
-                        __value_415 = global::DId.UploadAnImageResponse5.FromJson(__content_415, JsonSerializerOptions);
+                        __value_415 = global::DId.UploadAnImageResponse5.FromJson(__content_415, JsonSerializerContext);
                     }
                     else
                     {
                         __content_415 = await __response.Content.ReadAsStringAsync(cancellationToken).ConfigureAwait(false);
 
-                        __value_415 = global::DId.UploadAnImageResponse5.FromJson(__content_415, JsonSerializerOptions);
+                        __value_415 = global::DId.UploadAnImageResponse5.FromJson(__content_415, JsonSerializerContext);
                     }
                 }
                 catch (global::System.Exception __ex)
@@ -298,13 +298,13 @@ namespace DId
                     if (ReadResponseAsString)
                     {
                         __content_451 = await __response.Content.ReadAsStringAsync(cancellationToken).ConfigureAwait(false);
-                        __value_451 = global::DId.UploadAnImageResponse6.FromJson(__content_451, JsonSerializerOptions);
+                        __value_451 = global::DId.UploadAnImageResponse6.FromJson(__content_451, JsonSerializerContext);
                     }
                     else
                     {
                         __content_451 = await __response.Content.ReadAsStringAsync(cancellationToken).ConfigureAwait(false);
 
-                        __value_451 = global::DId.UploadAnImageResponse6.FromJson(__content_451, JsonSerializerOptions);
+                        __value_451 = global::DId.UploadAnImageResponse6.FromJson(__content_451, JsonSerializerContext);
                     }
                 }
                 catch (global::System.Exception __ex)
@@ -348,7 +348,7 @@ namespace DId
                     __response.EnsureSuccessStatusCode();
 
                     return
-                        global::DId.UploadAnImageResponse.FromJson(__content, JsonSerializerOptions) ??
+                        global::DId.UploadAnImageResponse.FromJson(__content, JsonSerializerContext) ??
                         throw new global::System.InvalidOperationException($"Response deserialization failed for \"{__content}\" ");
                 }
                 catch (global::System.Exception __ex)
@@ -378,7 +378,7 @@ namespace DId
                     ).ConfigureAwait(false);
 
                     return
-                        await global::DId.UploadAnImageResponse.FromJsonStreamAsync(__content, JsonSerializerOptions).ConfigureAwait(false) ??
+                        await global::DId.UploadAnImageResponse.FromJsonStreamAsync(__content, JsonSerializerContext).ConfigureAwait(false) ??
                         throw new global::System.InvalidOperationException("Response deserialization failed.");
                 }
                 catch (global::System.Exception __ex)

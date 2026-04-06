@@ -12,7 +12,8 @@ namespace DId.JsonConverters
             global::System.Type typeToConvert,
             global::System.Text.Json.JsonSerializerOptions options)
         {
-            options = options ?? throw new global::System.ArgumentNullException(nameof(options)); 
+            options = options ?? throw new global::System.ArgumentNullException(nameof(options));
+            var typeInfoResolver = options.TypeInfoResolver ?? throw new global::System.InvalidOperationException("TypeInfoResolver is not set.");
 
             using var __jsonDocument = global::System.Text.Json.JsonDocument.ParseValue(ref reader);
             var __rawJson = __jsonDocument.RootElement.GetRawText();
@@ -56,7 +57,9 @@ namespace DId.JsonConverters
                 {
                     try
                     {
-                        basicAuthentication = global::System.Text.Json.JsonSerializer.Deserialize<global::DId.UpdateAuthSecretRequestDtoBasicAuthentication>(__rawJson, options);
+                        var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::DId.UpdateAuthSecretRequestDtoBasicAuthentication), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::DId.UpdateAuthSecretRequestDtoBasicAuthentication> ??
+                                       throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::DId.UpdateAuthSecretRequestDtoBasicAuthentication).Name}");
+                        basicAuthentication = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
                     }
                     catch (global::System.Text.Json.JsonException)
                     {
@@ -69,7 +72,9 @@ namespace DId.JsonConverters
                 {
                     try
                     {
-                        bearerToken = global::System.Text.Json.JsonSerializer.Deserialize<global::DId.UpdateAuthSecretRequestDtoBearerToken>(__rawJson, options);
+                        var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::DId.UpdateAuthSecretRequestDtoBearerToken), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::DId.UpdateAuthSecretRequestDtoBearerToken> ??
+                                       throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::DId.UpdateAuthSecretRequestDtoBearerToken).Name}");
+                        bearerToken = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
                     }
                     catch (global::System.Text.Json.JsonException)
                     {
@@ -82,7 +87,9 @@ namespace DId.JsonConverters
                 {
                     try
                     {
-                        apiKey = global::System.Text.Json.JsonSerializer.Deserialize<global::DId.UpdateAuthSecretRequestDtoApiKey>(__rawJson, options);
+                        var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::DId.UpdateAuthSecretRequestDtoApiKey), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::DId.UpdateAuthSecretRequestDtoApiKey> ??
+                                       throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::DId.UpdateAuthSecretRequestDtoApiKey).Name}");
+                        apiKey = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
                     }
                     catch (global::System.Text.Json.JsonException)
                     {
@@ -97,7 +104,9 @@ namespace DId.JsonConverters
             {
                 try
                 {
-                    basicAuthentication = global::System.Text.Json.JsonSerializer.Deserialize<global::DId.UpdateAuthSecretRequestDtoBasicAuthentication>(__rawJson, options);
+                    var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::DId.UpdateAuthSecretRequestDtoBasicAuthentication), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::DId.UpdateAuthSecretRequestDtoBasicAuthentication> ??
+                                   throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::DId.UpdateAuthSecretRequestDtoBasicAuthentication).Name}");
+                    basicAuthentication = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
                 }
                 catch (global::System.Text.Json.JsonException)
                 {
@@ -108,7 +117,9 @@ namespace DId.JsonConverters
 
                 try
                 {
-                    bearerToken = global::System.Text.Json.JsonSerializer.Deserialize<global::DId.UpdateAuthSecretRequestDtoBearerToken>(__rawJson, options);
+                    var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::DId.UpdateAuthSecretRequestDtoBearerToken), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::DId.UpdateAuthSecretRequestDtoBearerToken> ??
+                                   throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::DId.UpdateAuthSecretRequestDtoBearerToken).Name}");
+                    bearerToken = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
                 }
                 catch (global::System.Text.Json.JsonException)
                 {
@@ -119,7 +130,9 @@ namespace DId.JsonConverters
 
                 try
                 {
-                    apiKey = global::System.Text.Json.JsonSerializer.Deserialize<global::DId.UpdateAuthSecretRequestDtoApiKey>(__rawJson, options);
+                    var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::DId.UpdateAuthSecretRequestDtoApiKey), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::DId.UpdateAuthSecretRequestDtoApiKey> ??
+                                   throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::DId.UpdateAuthSecretRequestDtoApiKey).Name}");
+                    apiKey = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
                 }
                 catch (global::System.Text.Json.JsonException)
                 {
@@ -146,19 +159,26 @@ namespace DId.JsonConverters
             global::DId.UpdateAuthSecretRequestDto value,
             global::System.Text.Json.JsonSerializerOptions options)
         {
-            options = options ?? throw new global::System.ArgumentNullException(nameof(options)); 
+            options = options ?? throw new global::System.ArgumentNullException(nameof(options));
+            var typeInfoResolver = options.TypeInfoResolver ?? throw new global::System.InvalidOperationException("TypeInfoResolver is not set.");
 
             if (value.IsBasicAuthentication)
             {
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.BasicAuthentication, typeof(global::DId.UpdateAuthSecretRequestDtoBasicAuthentication), options);
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::DId.UpdateAuthSecretRequestDtoBasicAuthentication), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::DId.UpdateAuthSecretRequestDtoBasicAuthentication?> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::DId.UpdateAuthSecretRequestDtoBasicAuthentication).Name}");
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.BasicAuthentication!, typeInfo);
             }
             else if (value.IsBearerToken)
             {
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.BearerToken, typeof(global::DId.UpdateAuthSecretRequestDtoBearerToken), options);
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::DId.UpdateAuthSecretRequestDtoBearerToken), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::DId.UpdateAuthSecretRequestDtoBearerToken?> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::DId.UpdateAuthSecretRequestDtoBearerToken).Name}");
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.BearerToken!, typeInfo);
             }
             else if (value.IsApiKey)
             {
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.ApiKey, typeof(global::DId.UpdateAuthSecretRequestDtoApiKey), options);
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::DId.UpdateAuthSecretRequestDtoApiKey), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::DId.UpdateAuthSecretRequestDtoApiKey?> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::DId.UpdateAuthSecretRequestDtoApiKey).Name}");
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.ApiKey!, typeInfo);
             }
         }
     }

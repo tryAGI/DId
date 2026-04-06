@@ -12,7 +12,8 @@ namespace DId.JsonConverters
             global::System.Type typeToConvert,
             global::System.Text.Json.JsonSerializerOptions options)
         {
-            options = options ?? throw new global::System.ArgumentNullException(nameof(options)); 
+            options = options ?? throw new global::System.ArgumentNullException(nameof(options));
+            var typeInfoResolver = options.TypeInfoResolver ?? throw new global::System.InvalidOperationException("TypeInfoResolver is not set.");
 
             using var __jsonDocument = global::System.Text.Json.JsonDocument.ParseValue(ref reader);
             var __rawJson = __jsonDocument.RootElement.GetRawText();
@@ -46,7 +47,9 @@ namespace DId.JsonConverters
                 {
                     try
                     {
-                        streamScriptVariant1 = global::System.Text.Json.JsonSerializer.Deserialize<global::DId.StreamScriptVariant1>(__rawJson, options);
+                        var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::DId.StreamScriptVariant1), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::DId.StreamScriptVariant1> ??
+                                       throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::DId.StreamScriptVariant1).Name}");
+                        streamScriptVariant1 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
                     }
                     catch (global::System.Text.Json.JsonException)
                     {
@@ -59,7 +62,9 @@ namespace DId.JsonConverters
                 {
                     try
                     {
-                        streamScriptVariant2 = global::System.Text.Json.JsonSerializer.Deserialize<global::DId.StreamScriptVariant2>(__rawJson, options);
+                        var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::DId.StreamScriptVariant2), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::DId.StreamScriptVariant2> ??
+                                       throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::DId.StreamScriptVariant2).Name}");
+                        streamScriptVariant2 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
                     }
                     catch (global::System.Text.Json.JsonException)
                     {
@@ -74,7 +79,9 @@ namespace DId.JsonConverters
             {
                 try
                 {
-                    streamScriptVariant1 = global::System.Text.Json.JsonSerializer.Deserialize<global::DId.StreamScriptVariant1>(__rawJson, options);
+                    var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::DId.StreamScriptVariant1), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::DId.StreamScriptVariant1> ??
+                                   throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::DId.StreamScriptVariant1).Name}");
+                    streamScriptVariant1 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
                 }
                 catch (global::System.Text.Json.JsonException)
                 {
@@ -85,7 +92,9 @@ namespace DId.JsonConverters
 
                 try
                 {
-                    streamScriptVariant2 = global::System.Text.Json.JsonSerializer.Deserialize<global::DId.StreamScriptVariant2>(__rawJson, options);
+                    var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::DId.StreamScriptVariant2), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::DId.StreamScriptVariant2> ??
+                                   throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::DId.StreamScriptVariant2).Name}");
+                    streamScriptVariant2 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
                 }
                 catch (global::System.Text.Json.JsonException)
                 {
@@ -110,15 +119,20 @@ namespace DId.JsonConverters
             global::DId.StreamScript value,
             global::System.Text.Json.JsonSerializerOptions options)
         {
-            options = options ?? throw new global::System.ArgumentNullException(nameof(options)); 
+            options = options ?? throw new global::System.ArgumentNullException(nameof(options));
+            var typeInfoResolver = options.TypeInfoResolver ?? throw new global::System.InvalidOperationException("TypeInfoResolver is not set.");
 
             if (value.IsStreamScriptVariant1)
             {
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.StreamScriptVariant1, typeof(global::DId.StreamScriptVariant1), options);
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::DId.StreamScriptVariant1), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::DId.StreamScriptVariant1?> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::DId.StreamScriptVariant1).Name}");
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.StreamScriptVariant1!, typeInfo);
             }
             else if (value.IsStreamScriptVariant2)
             {
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.StreamScriptVariant2, typeof(global::DId.StreamScriptVariant2), options);
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::DId.StreamScriptVariant2), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::DId.StreamScriptVariant2?> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::DId.StreamScriptVariant2).Name}");
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.StreamScriptVariant2!, typeInfo);
             }
         }
     }

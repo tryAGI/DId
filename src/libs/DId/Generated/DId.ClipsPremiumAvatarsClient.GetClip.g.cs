@@ -95,13 +95,13 @@ namespace DId
                     if (ReadResponseAsString)
                     {
                         __content_401 = await __response.Content.ReadAsStringAsync(cancellationToken).ConfigureAwait(false);
-                        __value_401 = global::DId.GetClipResponse3.FromJson(__content_401, JsonSerializerOptions);
+                        __value_401 = global::DId.GetClipResponse3.FromJson(__content_401, JsonSerializerContext);
                     }
                     else
                     {
                         __content_401 = await __response.Content.ReadAsStringAsync(cancellationToken).ConfigureAwait(false);
 
-                        __value_401 = global::DId.GetClipResponse3.FromJson(__content_401, JsonSerializerOptions);
+                        __value_401 = global::DId.GetClipResponse3.FromJson(__content_401, JsonSerializerContext);
                     }
                 }
                 catch (global::System.Exception __ex)
@@ -133,13 +133,13 @@ namespace DId
                     if (ReadResponseAsString)
                     {
                         __content_404 = await __response.Content.ReadAsStringAsync(cancellationToken).ConfigureAwait(false);
-                        __value_404 = global::DId.GetClipResponse4.FromJson(__content_404, JsonSerializerOptions);
+                        __value_404 = global::DId.GetClipResponse4.FromJson(__content_404, JsonSerializerContext);
                     }
                     else
                     {
                         __content_404 = await __response.Content.ReadAsStringAsync(cancellationToken).ConfigureAwait(false);
 
-                        __value_404 = global::DId.GetClipResponse4.FromJson(__content_404, JsonSerializerOptions);
+                        __value_404 = global::DId.GetClipResponse4.FromJson(__content_404, JsonSerializerContext);
                     }
                 }
                 catch (global::System.Exception __ex)
@@ -183,7 +183,7 @@ namespace DId
                     __response.EnsureSuccessStatusCode();
 
                     return
-                        global::DId.GetClipResponse2.FromJson(__content, JsonSerializerOptions) ??
+                        global::DId.GetClipResponse2.FromJson(__content, JsonSerializerContext) ??
                         throw new global::System.InvalidOperationException($"Response deserialization failed for \"{__content}\" ");
                 }
                 catch (global::System.Exception __ex)
@@ -213,7 +213,7 @@ namespace DId
                     ).ConfigureAwait(false);
 
                     return
-                        await global::DId.GetClipResponse2.FromJsonStreamAsync(__content, JsonSerializerOptions).ConfigureAwait(false) ??
+                        await global::DId.GetClipResponse2.FromJsonStreamAsync(__content, JsonSerializerContext).ConfigureAwait(false) ??
                         throw new global::System.InvalidOperationException("Response deserialization failed.");
                 }
                 catch (global::System.Exception __ex)

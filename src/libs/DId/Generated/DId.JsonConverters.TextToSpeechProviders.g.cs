@@ -12,7 +12,8 @@ namespace DId.JsonConverters
             global::System.Type typeToConvert,
             global::System.Text.Json.JsonSerializerOptions options)
         {
-            options = options ?? throw new global::System.ArgumentNullException(nameof(options)); 
+            options = options ?? throw new global::System.ArgumentNullException(nameof(options));
+            var typeInfoResolver = options.TypeInfoResolver ?? throw new global::System.InvalidOperationException("TypeInfoResolver is not set.");
 
             using var __jsonDocument = global::System.Text.Json.JsonDocument.ParseValue(ref reader);
             var __rawJson = __jsonDocument.RootElement.GetRawText();
@@ -67,7 +68,9 @@ namespace DId.JsonConverters
                 {
                     try
                     {
-                        microsoft = global::System.Text.Json.JsonSerializer.Deserialize<global::DId.TextToSpeechProvidersMicrosoft>(__rawJson, options);
+                        var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::DId.TextToSpeechProvidersMicrosoft), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::DId.TextToSpeechProvidersMicrosoft> ??
+                                       throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::DId.TextToSpeechProvidersMicrosoft).Name}");
+                        microsoft = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
                     }
                     catch (global::System.Text.Json.JsonException)
                     {
@@ -80,7 +83,9 @@ namespace DId.JsonConverters
                 {
                     try
                     {
-                        elevenLabs = global::System.Text.Json.JsonSerializer.Deserialize<global::DId.TextToSpeechProvidersElevenLabs>(__rawJson, options);
+                        var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::DId.TextToSpeechProvidersElevenLabs), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::DId.TextToSpeechProvidersElevenLabs> ??
+                                       throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::DId.TextToSpeechProvidersElevenLabs).Name}");
+                        elevenLabs = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
                     }
                     catch (global::System.Text.Json.JsonException)
                     {
@@ -93,7 +98,9 @@ namespace DId.JsonConverters
                 {
                     try
                     {
-                        amazon = global::System.Text.Json.JsonSerializer.Deserialize<global::DId.TextToSpeechProvidersAmazon>(__rawJson, options);
+                        var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::DId.TextToSpeechProvidersAmazon), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::DId.TextToSpeechProvidersAmazon> ??
+                                       throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::DId.TextToSpeechProvidersAmazon).Name}");
+                        amazon = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
                     }
                     catch (global::System.Text.Json.JsonException)
                     {
@@ -106,7 +113,9 @@ namespace DId.JsonConverters
                 {
                     try
                     {
-                        google = global::System.Text.Json.JsonSerializer.Deserialize<global::DId.TextToSpeechProvidersGoogle>(__rawJson, options);
+                        var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::DId.TextToSpeechProvidersGoogle), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::DId.TextToSpeechProvidersGoogle> ??
+                                       throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::DId.TextToSpeechProvidersGoogle).Name}");
+                        google = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
                     }
                     catch (global::System.Text.Json.JsonException)
                     {
@@ -119,7 +128,9 @@ namespace DId.JsonConverters
                 {
                     try
                     {
-                        openAI = global::System.Text.Json.JsonSerializer.Deserialize<global::DId.TextToSpeechProvidersOpenAI>(__rawJson, options);
+                        var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::DId.TextToSpeechProvidersOpenAI), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::DId.TextToSpeechProvidersOpenAI> ??
+                                       throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::DId.TextToSpeechProvidersOpenAI).Name}");
+                        openAI = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
                     }
                     catch (global::System.Text.Json.JsonException)
                     {
@@ -134,7 +145,9 @@ namespace DId.JsonConverters
             {
                 try
                 {
-                    microsoft = global::System.Text.Json.JsonSerializer.Deserialize<global::DId.TextToSpeechProvidersMicrosoft>(__rawJson, options);
+                    var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::DId.TextToSpeechProvidersMicrosoft), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::DId.TextToSpeechProvidersMicrosoft> ??
+                                   throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::DId.TextToSpeechProvidersMicrosoft).Name}");
+                    microsoft = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
                 }
                 catch (global::System.Text.Json.JsonException)
                 {
@@ -145,7 +158,9 @@ namespace DId.JsonConverters
 
                 try
                 {
-                    elevenLabs = global::System.Text.Json.JsonSerializer.Deserialize<global::DId.TextToSpeechProvidersElevenLabs>(__rawJson, options);
+                    var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::DId.TextToSpeechProvidersElevenLabs), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::DId.TextToSpeechProvidersElevenLabs> ??
+                                   throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::DId.TextToSpeechProvidersElevenLabs).Name}");
+                    elevenLabs = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
                 }
                 catch (global::System.Text.Json.JsonException)
                 {
@@ -156,7 +171,9 @@ namespace DId.JsonConverters
 
                 try
                 {
-                    amazon = global::System.Text.Json.JsonSerializer.Deserialize<global::DId.TextToSpeechProvidersAmazon>(__rawJson, options);
+                    var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::DId.TextToSpeechProvidersAmazon), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::DId.TextToSpeechProvidersAmazon> ??
+                                   throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::DId.TextToSpeechProvidersAmazon).Name}");
+                    amazon = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
                 }
                 catch (global::System.Text.Json.JsonException)
                 {
@@ -167,7 +184,9 @@ namespace DId.JsonConverters
 
                 try
                 {
-                    google = global::System.Text.Json.JsonSerializer.Deserialize<global::DId.TextToSpeechProvidersGoogle>(__rawJson, options);
+                    var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::DId.TextToSpeechProvidersGoogle), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::DId.TextToSpeechProvidersGoogle> ??
+                                   throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::DId.TextToSpeechProvidersGoogle).Name}");
+                    google = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
                 }
                 catch (global::System.Text.Json.JsonException)
                 {
@@ -178,7 +197,9 @@ namespace DId.JsonConverters
 
                 try
                 {
-                    openAI = global::System.Text.Json.JsonSerializer.Deserialize<global::DId.TextToSpeechProvidersOpenAI>(__rawJson, options);
+                    var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::DId.TextToSpeechProvidersOpenAI), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::DId.TextToSpeechProvidersOpenAI> ??
+                                   throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::DId.TextToSpeechProvidersOpenAI).Name}");
+                    openAI = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
                 }
                 catch (global::System.Text.Json.JsonException)
                 {
@@ -209,27 +230,38 @@ namespace DId.JsonConverters
             global::DId.TextToSpeechProviders value,
             global::System.Text.Json.JsonSerializerOptions options)
         {
-            options = options ?? throw new global::System.ArgumentNullException(nameof(options)); 
+            options = options ?? throw new global::System.ArgumentNullException(nameof(options));
+            var typeInfoResolver = options.TypeInfoResolver ?? throw new global::System.InvalidOperationException("TypeInfoResolver is not set.");
 
             if (value.IsMicrosoft)
             {
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Microsoft, typeof(global::DId.TextToSpeechProvidersMicrosoft), options);
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::DId.TextToSpeechProvidersMicrosoft), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::DId.TextToSpeechProvidersMicrosoft?> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::DId.TextToSpeechProvidersMicrosoft).Name}");
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Microsoft!, typeInfo);
             }
             else if (value.IsElevenLabs)
             {
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.ElevenLabs, typeof(global::DId.TextToSpeechProvidersElevenLabs), options);
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::DId.TextToSpeechProvidersElevenLabs), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::DId.TextToSpeechProvidersElevenLabs?> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::DId.TextToSpeechProvidersElevenLabs).Name}");
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.ElevenLabs!, typeInfo);
             }
             else if (value.IsAmazon)
             {
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Amazon, typeof(global::DId.TextToSpeechProvidersAmazon), options);
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::DId.TextToSpeechProvidersAmazon), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::DId.TextToSpeechProvidersAmazon?> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::DId.TextToSpeechProvidersAmazon).Name}");
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Amazon!, typeInfo);
             }
             else if (value.IsGoogle)
             {
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Google, typeof(global::DId.TextToSpeechProvidersGoogle), options);
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::DId.TextToSpeechProvidersGoogle), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::DId.TextToSpeechProvidersGoogle?> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::DId.TextToSpeechProvidersGoogle).Name}");
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Google!, typeInfo);
             }
             else if (value.IsOpenAI)
             {
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.OpenAI, typeof(global::DId.TextToSpeechProvidersOpenAI), options);
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::DId.TextToSpeechProvidersOpenAI), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::DId.TextToSpeechProvidersOpenAI?> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::DId.TextToSpeechProvidersOpenAI).Name}");
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.OpenAI!, typeInfo);
             }
         }
     }

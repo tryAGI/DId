@@ -84,13 +84,13 @@ namespace DId
                     if (ReadResponseAsString)
                     {
                         __content_401 = await __response.Content.ReadAsStringAsync(cancellationToken).ConfigureAwait(false);
-                        __value_401 = global::DId.DeleteLogoResponse.FromJson(__content_401, JsonSerializerOptions);
+                        __value_401 = global::DId.DeleteLogoResponse.FromJson(__content_401, JsonSerializerContext);
                     }
                     else
                     {
                         __content_401 = await __response.Content.ReadAsStringAsync(cancellationToken).ConfigureAwait(false);
 
-                        __value_401 = global::DId.DeleteLogoResponse.FromJson(__content_401, JsonSerializerOptions);
+                        __value_401 = global::DId.DeleteLogoResponse.FromJson(__content_401, JsonSerializerContext);
                     }
                 }
                 catch (global::System.Exception __ex)

@@ -101,7 +101,7 @@ namespace DId
                     __response.EnsureSuccessStatusCode();
 
                     return
-                        global::DId.GetAvatars1Response.FromJson(__content, JsonSerializerOptions) ??
+                        global::DId.GetAvatars1Response.FromJson(__content, JsonSerializerContext) ??
                         throw new global::System.InvalidOperationException($"Response deserialization failed for \"{__content}\" ");
                 }
                 catch (global::System.Exception __ex)
@@ -131,7 +131,7 @@ namespace DId
                     ).ConfigureAwait(false);
 
                     return
-                        await global::DId.GetAvatars1Response.FromJsonStreamAsync(__content, JsonSerializerOptions).ConfigureAwait(false) ??
+                        await global::DId.GetAvatars1Response.FromJsonStreamAsync(__content, JsonSerializerContext).ConfigureAwait(false) ??
                         throw new global::System.InvalidOperationException("Response deserialization failed.");
                 }
                 catch (global::System.Exception __ex)
