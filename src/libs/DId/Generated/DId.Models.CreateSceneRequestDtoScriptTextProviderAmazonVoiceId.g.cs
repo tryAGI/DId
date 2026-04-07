@@ -80,7 +80,7 @@ namespace DId
         /// <summary>
         /// 
         /// </summary>
-        L_a,
+        Léa,
         /// <summary>
         /// 
         /// </summary>
@@ -136,7 +136,7 @@ namespace DId
                 CreateSceneRequestDtoScriptTextProviderAmazonVoiceId.Kimberly => "Kimberly",
                 CreateSceneRequestDtoScriptTextProviderAmazonVoiceId.Lucia => "Lucia",
                 CreateSceneRequestDtoScriptTextProviderAmazonVoiceId.Lupe => "Lupe",
-                CreateSceneRequestDtoScriptTextProviderAmazonVoiceId.L_a => "Léa",
+                CreateSceneRequestDtoScriptTextProviderAmazonVoiceId.Léa => "Léa",
                 CreateSceneRequestDtoScriptTextProviderAmazonVoiceId.Matthew => "Matthew",
                 CreateSceneRequestDtoScriptTextProviderAmazonVoiceId.Olivia => "Olivia",
                 CreateSceneRequestDtoScriptTextProviderAmazonVoiceId.Salli => "Salli",
@@ -170,7 +170,7 @@ namespace DId
                 "Kimberly" => CreateSceneRequestDtoScriptTextProviderAmazonVoiceId.Kimberly,
                 "Lucia" => CreateSceneRequestDtoScriptTextProviderAmazonVoiceId.Lucia,
                 "Lupe" => CreateSceneRequestDtoScriptTextProviderAmazonVoiceId.Lupe,
-                "Léa" => CreateSceneRequestDtoScriptTextProviderAmazonVoiceId.L_a,
+                "Léa" => CreateSceneRequestDtoScriptTextProviderAmazonVoiceId.Léa,
                 "Matthew" => CreateSceneRequestDtoScriptTextProviderAmazonVoiceId.Matthew,
                 "Olivia" => CreateSceneRequestDtoScriptTextProviderAmazonVoiceId.Olivia,
                 "Salli" => CreateSceneRequestDtoScriptTextProviderAmazonVoiceId.Salli,

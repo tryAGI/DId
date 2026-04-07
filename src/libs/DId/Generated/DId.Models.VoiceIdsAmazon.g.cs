@@ -79,7 +79,7 @@ namespace DId
         /// <summary>
         /// 
         /// </summary>
-        L_a,
+        Léa,
         /// <summary>
         /// 
         /// </summary>
@@ -135,7 +135,7 @@ namespace DId
                 VoiceIdsAmazon.Kimberly => "Kimberly",
                 VoiceIdsAmazon.Lucia => "Lucia",
                 VoiceIdsAmazon.Lupe => "Lupe",
-                VoiceIdsAmazon.L_a => "Léa",
+                VoiceIdsAmazon.Léa => "Léa",
                 VoiceIdsAmazon.Matthew => "Matthew",
                 VoiceIdsAmazon.Olivia => "Olivia",
                 VoiceIdsAmazon.Salli => "Salli",
@@ -169,7 +169,7 @@ namespace DId
                 "Kimberly" => VoiceIdsAmazon.Kimberly,
                 "Lucia" => VoiceIdsAmazon.Lucia,
                 "Lupe" => VoiceIdsAmazon.Lupe,
-                "Léa" => VoiceIdsAmazon.L_a,
+                "Léa" => VoiceIdsAmazon.Léa,
                 "Matthew" => VoiceIdsAmazon.Matthew,
                 "Olivia" => VoiceIdsAmazon.Olivia,
                 "Salli" => VoiceIdsAmazon.Salli,

@@ -80,7 +80,7 @@ namespace DId
         /// <summary>
         /// 
         /// </summary>
-        L_a,
+        Léa,
         /// <summary>
         /// 
         /// </summary>
@@ -136,7 +136,7 @@ namespace DId
                 AmazonTtsProviderVoiceId.Kimberly => "Kimberly",
                 AmazonTtsProviderVoiceId.Lucia => "Lucia",
                 AmazonTtsProviderVoiceId.Lupe => "Lupe",
-                AmazonTtsProviderVoiceId.L_a => "Léa",
+                AmazonTtsProviderVoiceId.Léa => "Léa",
                 AmazonTtsProviderVoiceId.Matthew => "Matthew",
                 AmazonTtsProviderVoiceId.Olivia => "Olivia",
                 AmazonTtsProviderVoiceId.Salli => "Salli",
@@ -170,7 +170,7 @@ namespace DId
                 "Kimberly" => AmazonTtsProviderVoiceId.Kimberly,
                 "Lucia" => AmazonTtsProviderVoiceId.Lucia,
                 "Lupe" => AmazonTtsProviderVoiceId.Lupe,
-                "Léa" => AmazonTtsProviderVoiceId.L_a,
+                "Léa" => AmazonTtsProviderVoiceId.Léa,
                 "Matthew" => AmazonTtsProviderVoiceId.Matthew,
                 "Olivia" => AmazonTtsProviderVoiceId.Olivia,
                 "Salli" => AmazonTtsProviderVoiceId.Salli,

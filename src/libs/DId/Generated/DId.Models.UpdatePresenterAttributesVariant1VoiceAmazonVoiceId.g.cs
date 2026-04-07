@@ -80,7 +80,7 @@ namespace DId
         /// <summary>
         /// 
         /// </summary>
-        L_a,
+        Léa,
         /// <summary>
         /// 
         /// </summary>
@@ -136,7 +136,7 @@ namespace DId
                 UpdatePresenterAttributesVariant1VoiceAmazonVoiceId.Kimberly => "Kimberly",
                 UpdatePresenterAttributesVariant1VoiceAmazonVoiceId.Lucia => "Lucia",
                 UpdatePresenterAttributesVariant1VoiceAmazonVoiceId.Lupe => "Lupe",
-                UpdatePresenterAttributesVariant1VoiceAmazonVoiceId.L_a => "Léa",
+                UpdatePresenterAttributesVariant1VoiceAmazonVoiceId.Léa => "Léa",
                 UpdatePresenterAttributesVariant1VoiceAmazonVoiceId.Matthew => "Matthew",
                 UpdatePresenterAttributesVariant1VoiceAmazonVoiceId.Olivia => "Olivia",
                 UpdatePresenterAttributesVariant1VoiceAmazonVoiceId.Salli => "Salli",
@@ -170,7 +170,7 @@ namespace DId
                 "Kimberly" => UpdatePresenterAttributesVariant1VoiceAmazonVoiceId.Kimberly,
                 "Lucia" => UpdatePresenterAttributesVariant1VoiceAmazonVoiceId.Lucia,
                 "Lupe" => UpdatePresenterAttributesVariant1VoiceAmazonVoiceId.Lupe,
-                "Léa" => UpdatePresenterAttributesVariant1VoiceAmazonVoiceId.L_a,
+                "Léa" => UpdatePresenterAttributesVariant1VoiceAmazonVoiceId.Léa,
                 "Matthew" => UpdatePresenterAttributesVariant1VoiceAmazonVoiceId.Matthew,
                 "Olivia" => UpdatePresenterAttributesVariant1VoiceAmazonVoiceId.Olivia,
                 "Salli" => UpdatePresenterAttributesVariant1VoiceAmazonVoiceId.Salli,
