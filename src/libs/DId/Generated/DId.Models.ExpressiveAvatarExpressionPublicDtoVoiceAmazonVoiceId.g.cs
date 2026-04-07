@@ -80,7 +80,7 @@ namespace DId
         /// <summary>
         /// 
         /// </summary>
-        L_a,
+        Léa,
         /// <summary>
         /// 
         /// </summary>
@@ -136,7 +136,7 @@ namespace DId
                 ExpressiveAvatarExpressionPublicDtoVoiceAmazonVoiceId.Kimberly => "Kimberly",
                 ExpressiveAvatarExpressionPublicDtoVoiceAmazonVoiceId.Lucia => "Lucia",
                 ExpressiveAvatarExpressionPublicDtoVoiceAmazonVoiceId.Lupe => "Lupe",
-                ExpressiveAvatarExpressionPublicDtoVoiceAmazonVoiceId.L_a => "Léa",
+                ExpressiveAvatarExpressionPublicDtoVoiceAmazonVoiceId.Léa => "Léa",
                 ExpressiveAvatarExpressionPublicDtoVoiceAmazonVoiceId.Matthew => "Matthew",
                 ExpressiveAvatarExpressionPublicDtoVoiceAmazonVoiceId.Olivia => "Olivia",
                 ExpressiveAvatarExpressionPublicDtoVoiceAmazonVoiceId.Salli => "Salli",
@@ -170,7 +170,7 @@ namespace DId
                 "Kimberly" => ExpressiveAvatarExpressionPublicDtoVoiceAmazonVoiceId.Kimberly,
                 "Lucia" => ExpressiveAvatarExpressionPublicDtoVoiceAmazonVoiceId.Lucia,
                 "Lupe" => ExpressiveAvatarExpressionPublicDtoVoiceAmazonVoiceId.Lupe,
-                "Léa" => ExpressiveAvatarExpressionPublicDtoVoiceAmazonVoiceId.L_a,
+                "Léa" => ExpressiveAvatarExpressionPublicDtoVoiceAmazonVoiceId.Léa,
                 "Matthew" => ExpressiveAvatarExpressionPublicDtoVoiceAmazonVoiceId.Matthew,
                 "Olivia" => ExpressiveAvatarExpressionPublicDtoVoiceAmazonVoiceId.Olivia,
                 "Salli" => ExpressiveAvatarExpressionPublicDtoVoiceAmazonVoiceId.Salli,

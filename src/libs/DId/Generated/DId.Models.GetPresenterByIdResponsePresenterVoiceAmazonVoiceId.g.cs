@@ -80,7 +80,7 @@ namespace DId
         /// <summary>
         /// 
         /// </summary>
-        L_a,
+        Léa,
         /// <summary>
         /// 
         /// </summary>
@@ -136,7 +136,7 @@ namespace DId
                 GetPresenterByIdResponsePresenterVoiceAmazonVoiceId.Kimberly => "Kimberly",
                 GetPresenterByIdResponsePresenterVoiceAmazonVoiceId.Lucia => "Lucia",
                 GetPresenterByIdResponsePresenterVoiceAmazonVoiceId.Lupe => "Lupe",
-                GetPresenterByIdResponsePresenterVoiceAmazonVoiceId.L_a => "Léa",
+                GetPresenterByIdResponsePresenterVoiceAmazonVoiceId.Léa => "Léa",
                 GetPresenterByIdResponsePresenterVoiceAmazonVoiceId.Matthew => "Matthew",
                 GetPresenterByIdResponsePresenterVoiceAmazonVoiceId.Olivia => "Olivia",
                 GetPresenterByIdResponsePresenterVoiceAmazonVoiceId.Salli => "Salli",
@@ -170,7 +170,7 @@ namespace DId
                 "Kimberly" => GetPresenterByIdResponsePresenterVoiceAmazonVoiceId.Kimberly,
                 "Lucia" => GetPresenterByIdResponsePresenterVoiceAmazonVoiceId.Lucia,
                 "Lupe" => GetPresenterByIdResponsePresenterVoiceAmazonVoiceId.Lupe,
-                "Léa" => GetPresenterByIdResponsePresenterVoiceAmazonVoiceId.L_a,
+                "Léa" => GetPresenterByIdResponsePresenterVoiceAmazonVoiceId.Léa,
                 "Matthew" => GetPresenterByIdResponsePresenterVoiceAmazonVoiceId.Matthew,
                 "Olivia" => GetPresenterByIdResponsePresenterVoiceAmazonVoiceId.Olivia,
                 "Salli" => GetPresenterByIdResponsePresenterVoiceAmazonVoiceId.Salli,

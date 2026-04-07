@@ -80,7 +80,7 @@ namespace DId
         /// <summary>
         /// 
         /// </summary>
-        L_a,
+        Léa,
         /// <summary>
         /// 
         /// </summary>
@@ -136,7 +136,7 @@ namespace DId
                 CreateClipRequestScriptVariant1ProviderAmazonVoiceId2.Kimberly => "Kimberly",
                 CreateClipRequestScriptVariant1ProviderAmazonVoiceId2.Lucia => "Lucia",
                 CreateClipRequestScriptVariant1ProviderAmazonVoiceId2.Lupe => "Lupe",
-                CreateClipRequestScriptVariant1ProviderAmazonVoiceId2.L_a => "Léa",
+                CreateClipRequestScriptVariant1ProviderAmazonVoiceId2.Léa => "Léa",
                 CreateClipRequestScriptVariant1ProviderAmazonVoiceId2.Matthew => "Matthew",
                 CreateClipRequestScriptVariant1ProviderAmazonVoiceId2.Olivia => "Olivia",
                 CreateClipRequestScriptVariant1ProviderAmazonVoiceId2.Salli => "Salli",
@@ -170,7 +170,7 @@ namespace DId
                 "Kimberly" => CreateClipRequestScriptVariant1ProviderAmazonVoiceId2.Kimberly,
                 "Lucia" => CreateClipRequestScriptVariant1ProviderAmazonVoiceId2.Lucia,
                 "Lupe" => CreateClipRequestScriptVariant1ProviderAmazonVoiceId2.Lupe,
-                "Léa" => CreateClipRequestScriptVariant1ProviderAmazonVoiceId2.L_a,
+                "Léa" => CreateClipRequestScriptVariant1ProviderAmazonVoiceId2.Léa,
                 "Matthew" => CreateClipRequestScriptVariant1ProviderAmazonVoiceId2.Matthew,
                 "Olivia" => CreateClipRequestScriptVariant1ProviderAmazonVoiceId2.Olivia,
                 "Salli" => CreateClipRequestScriptVariant1ProviderAmazonVoiceId2.Salli,

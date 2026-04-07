@@ -80,7 +80,7 @@ namespace DId
         /// <summary>
         /// 
         /// </summary>
-        L_a,
+        Léa,
         /// <summary>
         /// 
         /// </summary>
@@ -136,7 +136,7 @@ namespace DId
                 ClipPresenterDtoVoiceAmazonVoiceId.Kimberly => "Kimberly",
                 ClipPresenterDtoVoiceAmazonVoiceId.Lucia => "Lucia",
                 ClipPresenterDtoVoiceAmazonVoiceId.Lupe => "Lupe",
-                ClipPresenterDtoVoiceAmazonVoiceId.L_a => "Léa",
+                ClipPresenterDtoVoiceAmazonVoiceId.Léa => "Léa",
                 ClipPresenterDtoVoiceAmazonVoiceId.Matthew => "Matthew",
                 ClipPresenterDtoVoiceAmazonVoiceId.Olivia => "Olivia",
                 ClipPresenterDtoVoiceAmazonVoiceId.Salli => "Salli",
@@ -170,7 +170,7 @@ namespace DId
                 "Kimberly" => ClipPresenterDtoVoiceAmazonVoiceId.Kimberly,
                 "Lucia" => ClipPresenterDtoVoiceAmazonVoiceId.Lucia,
                 "Lupe" => ClipPresenterDtoVoiceAmazonVoiceId.Lupe,
-                "Léa" => ClipPresenterDtoVoiceAmazonVoiceId.L_a,
+                "Léa" => ClipPresenterDtoVoiceAmazonVoiceId.Léa,
                 "Matthew" => ClipPresenterDtoVoiceAmazonVoiceId.Matthew,
                 "Olivia" => ClipPresenterDtoVoiceAmazonVoiceId.Olivia,
                 "Salli" => ClipPresenterDtoVoiceAmazonVoiceId.Salli,
