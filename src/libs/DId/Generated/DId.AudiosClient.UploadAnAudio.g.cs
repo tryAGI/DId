@@ -5,6 +5,25 @@ namespace DId
 {
     public partial class AudiosClient
     {
+
+
+        private static readonly global::DId.EndPointSecurityRequirement s_UploadAnAudioSecurityRequirement0 =
+            new global::DId.EndPointSecurityRequirement
+            {
+                Authorizations = new global::DId.EndPointAuthorizationRequirement[]
+                {                    new global::DId.EndPointAuthorizationRequirement
+                    {
+                        Type = "Http",
+                        Location = "Header",
+                        Name = "Bearer",
+                        FriendlyName = "Bearer",
+                    },
+                },
+            };
+        private static readonly global::DId.EndPointSecurityRequirement[] s_UploadAnAudioSecurityRequirements =
+            new global::DId.EndPointSecurityRequirement[]
+            {                s_UploadAnAudioSecurityRequirement0,
+            };
         partial void PrepareUploadAnAudioArguments(
             global::System.Net.Http.HttpClient httpClient,
             global::DId.UploadAnAudioRequest request);
@@ -46,9 +65,15 @@ namespace DId
                 httpClient: HttpClient,
                 request: request);
 
+
+            var __authorizations = global::DId.EndPointSecurityResolver.ResolveAuthorizations(
+                availableAuthorizations: Authorizations,
+                securityRequirements: s_UploadAnAudioSecurityRequirements,
+                operationName: "UploadAnAudioAsync");
+
             var __pathBuilder = new global::DId.PathBuilder(
                 path: "/audios",
-                baseUri: HttpClient.BaseAddress); 
+                baseUri: HttpClient.BaseAddress);
             var __path = __pathBuilder.ToString();
             using var __httpRequest = new global::System.Net.Http.HttpRequestMessage(
                 method: global::System.Net.Http.HttpMethod.Post,
@@ -58,7 +83,7 @@ namespace DId
             __httpRequest.VersionPolicy = global::System.Net.Http.HttpVersionPolicy.RequestVersionOrHigher;
 #endif
 
-            foreach (var __authorization in Authorizations)
+            foreach (var __authorization in __authorizations)
             {
                 if (__authorization.Type == "Http" ||
                     __authorization.Type == "OAuth2")

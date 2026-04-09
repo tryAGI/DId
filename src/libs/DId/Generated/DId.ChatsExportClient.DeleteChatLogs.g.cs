@@ -5,6 +5,25 @@ namespace DId
 {
     public partial class ChatsExportClient
     {
+
+
+        private static readonly global::DId.EndPointSecurityRequirement s_DeleteChatLogsSecurityRequirement0 =
+            new global::DId.EndPointSecurityRequirement
+            {
+                Authorizations = new global::DId.EndPointAuthorizationRequirement[]
+                {                    new global::DId.EndPointAuthorizationRequirement
+                    {
+                        Type = "Http",
+                        Location = "Header",
+                        Name = "Bearer",
+                        FriendlyName = "Bearer",
+                    },
+                },
+            };
+        private static readonly global::DId.EndPointSecurityRequirement[] s_DeleteChatLogsSecurityRequirements =
+            new global::DId.EndPointSecurityRequirement[]
+            {                s_DeleteChatLogsSecurityRequirement0,
+            };
         partial void PrepareDeleteChatLogsArguments(
             global::System.Net.Http.HttpClient httpClient,
             ref string id);
@@ -37,9 +56,15 @@ namespace DId
                 httpClient: HttpClient,
                 id: ref id);
 
+
+            var __authorizations = global::DId.EndPointSecurityResolver.ResolveAuthorizations(
+                availableAuthorizations: Authorizations,
+                securityRequirements: s_DeleteChatLogsSecurityRequirements,
+                operationName: "DeleteChatLogsAsync");
+
             var __pathBuilder = new global::DId.PathBuilder(
                 path: $"/agents/chats/exports/{id}",
-                baseUri: HttpClient.BaseAddress); 
+                baseUri: HttpClient.BaseAddress);
             var __path = __pathBuilder.ToString();
             using var __httpRequest = new global::System.Net.Http.HttpRequestMessage(
                 method: global::System.Net.Http.HttpMethod.Delete,
@@ -49,7 +74,7 @@ namespace DId
             __httpRequest.VersionPolicy = global::System.Net.Http.HttpVersionPolicy.RequestVersionOrHigher;
 #endif
 
-            foreach (var __authorization in Authorizations)
+            foreach (var __authorization in __authorizations)
             {
                 if (__authorization.Type == "Http" ||
                     __authorization.Type == "OAuth2")

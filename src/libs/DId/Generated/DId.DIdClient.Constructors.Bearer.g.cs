@@ -6,6 +6,7 @@ namespace DId
     public sealed partial class DIdClient
     {
         /// <inheritdoc cref="DIdClient(global::System.Net.Http.HttpClient?, global::System.Uri?, global::System.Collections.Generic.List{global::DId.EndPointAuthorization}?, bool)"/>
+
         public DIdClient(
             string apiKey,
             global::System.Net.Http.HttpClient? httpClient = null,

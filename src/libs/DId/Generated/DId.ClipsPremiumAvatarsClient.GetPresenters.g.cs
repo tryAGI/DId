@@ -5,6 +5,25 @@ namespace DId
 {
     public partial class ClipsPremiumAvatarsClient
     {
+
+
+        private static readonly global::DId.EndPointSecurityRequirement s_GetPresentersSecurityRequirement0 =
+            new global::DId.EndPointSecurityRequirement
+            {
+                Authorizations = new global::DId.EndPointAuthorizationRequirement[]
+                {                    new global::DId.EndPointAuthorizationRequirement
+                    {
+                        Type = "Http",
+                        Location = "Header",
+                        Name = "Bearer",
+                        FriendlyName = "Bearer",
+                    },
+                },
+            };
+        private static readonly global::DId.EndPointSecurityRequirement[] s_GetPresentersSecurityRequirements =
+            new global::DId.EndPointSecurityRequirement[]
+            {                s_GetPresentersSecurityRequirement0,
+            };
         partial void PrepareGetPresentersArguments(
             global::System.Net.Http.HttpClient httpClient,
             ref double? limit,
@@ -44,13 +63,19 @@ namespace DId
                 limit: ref limit,
                 token: ref token);
 
+
+            var __authorizations = global::DId.EndPointSecurityResolver.ResolveAuthorizations(
+                availableAuthorizations: Authorizations,
+                securityRequirements: s_GetPresentersSecurityRequirements,
+                operationName: "GetPresentersAsync");
+
             var __pathBuilder = new global::DId.PathBuilder(
                 path: "/clips/presenters",
                 baseUri: HttpClient.BaseAddress); 
             __pathBuilder
                 .AddOptionalParameter("limit", limit?.ToString())
                 .AddOptionalParameter("token", token) 
-                ; 
+                ;
             var __path = __pathBuilder.ToString();
             using var __httpRequest = new global::System.Net.Http.HttpRequestMessage(
                 method: global::System.Net.Http.HttpMethod.Get,
@@ -60,7 +85,7 @@ namespace DId
             __httpRequest.VersionPolicy = global::System.Net.Http.HttpVersionPolicy.RequestVersionOrHigher;
 #endif
 
-            foreach (var __authorization in Authorizations)
+            foreach (var __authorization in __authorizations)
             {
                 if (__authorization.Type == "Http" ||
                     __authorization.Type == "OAuth2")

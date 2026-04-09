@@ -7,6 +7,25 @@ namespace DId
 {
     public partial class AgentsStreamsClient
     {
+
+
+        private static readonly global::DId.EndPointSecurityRequirement s_ChatSecurityRequirement0 =
+            new global::DId.EndPointSecurityRequirement
+            {
+                Authorizations = new global::DId.EndPointAuthorizationRequirement[]
+                {                    new global::DId.EndPointAuthorizationRequirement
+                    {
+                        Type = "Http",
+                        Location = "Header",
+                        Name = "Bearer",
+                        FriendlyName = "Bearer",
+                    },
+                },
+            };
+        private static readonly global::DId.EndPointSecurityRequirement[] s_ChatSecurityRequirements =
+            new global::DId.EndPointSecurityRequirement[]
+            {                s_ChatSecurityRequirement0,
+            };
         partial void PrepareChatArguments(
             global::System.Net.Http.HttpClient httpClient,
             ref string agentId,
@@ -53,9 +72,15 @@ namespace DId
                 chatId: ref chatId,
                 request: request);
 
+
+            var __authorizations = global::DId.EndPointSecurityResolver.ResolveAuthorizations(
+                availableAuthorizations: Authorizations,
+                securityRequirements: s_ChatSecurityRequirements,
+                operationName: "ChatAsync");
+
             var __pathBuilder = new global::DId.PathBuilder(
                 path: $"/agents/{agentId}/chat/{chatId}",
-                baseUri: HttpClient.BaseAddress); 
+                baseUri: HttpClient.BaseAddress);
             var __path = __pathBuilder.ToString();
             using var __httpRequest = new global::System.Net.Http.HttpRequestMessage(
                 method: global::System.Net.Http.HttpMethod.Post,
@@ -65,7 +90,7 @@ namespace DId
             __httpRequest.VersionPolicy = global::System.Net.Http.HttpVersionPolicy.RequestVersionOrHigher;
 #endif
 
-            foreach (var __authorization in Authorizations)
+            foreach (var __authorization in __authorizations)
             {
                 if (__authorization.Type == "Http" ||
                     __authorization.Type == "OAuth2")

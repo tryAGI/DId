@@ -5,6 +5,25 @@ namespace DId
 {
     public partial class CreditsClient
     {
+
+
+        private static readonly global::DId.EndPointSecurityRequirement s_GetCreditsSecurityRequirement0 =
+            new global::DId.EndPointSecurityRequirement
+            {
+                Authorizations = new global::DId.EndPointAuthorizationRequirement[]
+                {                    new global::DId.EndPointAuthorizationRequirement
+                    {
+                        Type = "Http",
+                        Location = "Header",
+                        Name = "Bearer",
+                        FriendlyName = "Bearer",
+                    },
+                },
+            };
+        private static readonly global::DId.EndPointSecurityRequirement[] s_GetCreditsSecurityRequirements =
+            new global::DId.EndPointSecurityRequirement[]
+            {                s_GetCreditsSecurityRequirement0,
+            };
         partial void PrepareGetCreditsArguments(
             global::System.Net.Http.HttpClient httpClient);
         partial void PrepareGetCreditsRequest(
@@ -34,9 +53,15 @@ namespace DId
             PrepareGetCreditsArguments(
                 httpClient: HttpClient);
 
+
+            var __authorizations = global::DId.EndPointSecurityResolver.ResolveAuthorizations(
+                availableAuthorizations: Authorizations,
+                securityRequirements: s_GetCreditsSecurityRequirements,
+                operationName: "GetCreditsAsync");
+
             var __pathBuilder = new global::DId.PathBuilder(
                 path: "/credits",
-                baseUri: HttpClient.BaseAddress); 
+                baseUri: HttpClient.BaseAddress);
             var __path = __pathBuilder.ToString();
             using var __httpRequest = new global::System.Net.Http.HttpRequestMessage(
                 method: global::System.Net.Http.HttpMethod.Get,
@@ -46,7 +71,7 @@ namespace DId
             __httpRequest.VersionPolicy = global::System.Net.Http.HttpVersionPolicy.RequestVersionOrHigher;
 #endif
 
-            foreach (var __authorization in Authorizations)
+            foreach (var __authorization in __authorizations)
             {
                 if (__authorization.Type == "Http" ||
                     __authorization.Type == "OAuth2")
