@@ -5,6 +5,25 @@ namespace DId
 {
     public partial class SettingsClient
     {
+
+
+        private static readonly global::DId.EndPointSecurityRequirement s_DeleteLogoSecurityRequirement0 =
+            new global::DId.EndPointSecurityRequirement
+            {
+                Authorizations = new global::DId.EndPointAuthorizationRequirement[]
+                {                    new global::DId.EndPointAuthorizationRequirement
+                    {
+                        Type = "Http",
+                        Location = "Header",
+                        Name = "Bearer",
+                        FriendlyName = "Bearer",
+                    },
+                },
+            };
+        private static readonly global::DId.EndPointSecurityRequirement[] s_DeleteLogoSecurityRequirements =
+            new global::DId.EndPointSecurityRequirement[]
+            {                s_DeleteLogoSecurityRequirement0,
+            };
         partial void PrepareDeleteLogoArguments(
             global::System.Net.Http.HttpClient httpClient);
         partial void PrepareDeleteLogoRequest(
@@ -27,9 +46,15 @@ namespace DId
             PrepareDeleteLogoArguments(
                 httpClient: HttpClient);
 
+
+            var __authorizations = global::DId.EndPointSecurityResolver.ResolveAuthorizations(
+                availableAuthorizations: Authorizations,
+                securityRequirements: s_DeleteLogoSecurityRequirements,
+                operationName: "DeleteLogoAsync");
+
             var __pathBuilder = new global::DId.PathBuilder(
                 path: "/settings/logo",
-                baseUri: HttpClient.BaseAddress); 
+                baseUri: HttpClient.BaseAddress);
             var __path = __pathBuilder.ToString();
             using var __httpRequest = new global::System.Net.Http.HttpRequestMessage(
                 method: global::System.Net.Http.HttpMethod.Delete,
@@ -39,7 +64,7 @@ namespace DId
             __httpRequest.VersionPolicy = global::System.Net.Http.HttpVersionPolicy.RequestVersionOrHigher;
 #endif
 
-            foreach (var __authorization in Authorizations)
+            foreach (var __authorization in __authorizations)
             {
                 if (__authorization.Type == "Http" ||
                     __authorization.Type == "OAuth2")

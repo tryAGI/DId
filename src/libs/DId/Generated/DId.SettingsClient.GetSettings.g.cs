@@ -5,6 +5,25 @@ namespace DId
 {
     public partial class SettingsClient
     {
+
+
+        private static readonly global::DId.EndPointSecurityRequirement s_GetSettingsSecurityRequirement0 =
+            new global::DId.EndPointSecurityRequirement
+            {
+                Authorizations = new global::DId.EndPointAuthorizationRequirement[]
+                {                    new global::DId.EndPointAuthorizationRequirement
+                    {
+                        Type = "Http",
+                        Location = "Header",
+                        Name = "Bearer",
+                        FriendlyName = "Bearer",
+                    },
+                },
+            };
+        private static readonly global::DId.EndPointSecurityRequirement[] s_GetSettingsSecurityRequirements =
+            new global::DId.EndPointSecurityRequirement[]
+            {                s_GetSettingsSecurityRequirement0,
+            };
         partial void PrepareGetSettingsArguments(
             global::System.Net.Http.HttpClient httpClient);
         partial void PrepareGetSettingsRequest(
@@ -32,9 +51,15 @@ namespace DId
             PrepareGetSettingsArguments(
                 httpClient: HttpClient);
 
+
+            var __authorizations = global::DId.EndPointSecurityResolver.ResolveAuthorizations(
+                availableAuthorizations: Authorizations,
+                securityRequirements: s_GetSettingsSecurityRequirements,
+                operationName: "GetSettingsAsync");
+
             var __pathBuilder = new global::DId.PathBuilder(
                 path: "/settings",
-                baseUri: HttpClient.BaseAddress); 
+                baseUri: HttpClient.BaseAddress);
             var __path = __pathBuilder.ToString();
             using var __httpRequest = new global::System.Net.Http.HttpRequestMessage(
                 method: global::System.Net.Http.HttpMethod.Get,
@@ -44,7 +69,7 @@ namespace DId
             __httpRequest.VersionPolicy = global::System.Net.Http.HttpVersionPolicy.RequestVersionOrHigher;
 #endif
 
-            foreach (var __authorization in Authorizations)
+            foreach (var __authorization in __authorizations)
             {
                 if (__authorization.Type == "Http" ||
                     __authorization.Type == "OAuth2")

@@ -5,6 +5,25 @@ namespace DId
 {
     public partial class RatingsClient
     {
+
+
+        private static readonly global::DId.EndPointSecurityRequirement s_DeleteRatingSecurityRequirement0 =
+            new global::DId.EndPointSecurityRequirement
+            {
+                Authorizations = new global::DId.EndPointAuthorizationRequirement[]
+                {                    new global::DId.EndPointAuthorizationRequirement
+                    {
+                        Type = "Http",
+                        Location = "Header",
+                        Name = "Bearer",
+                        FriendlyName = "Bearer",
+                    },
+                },
+            };
+        private static readonly global::DId.EndPointSecurityRequirement[] s_DeleteRatingSecurityRequirements =
+            new global::DId.EndPointSecurityRequirement[]
+            {                s_DeleteRatingSecurityRequirement0,
+            };
         partial void PrepareDeleteRatingArguments(
             global::System.Net.Http.HttpClient httpClient,
             ref string agentId,
@@ -48,9 +67,15 @@ namespace DId
                 chatId: ref chatId,
                 ratingId: ref ratingId);
 
+
+            var __authorizations = global::DId.EndPointSecurityResolver.ResolveAuthorizations(
+                availableAuthorizations: Authorizations,
+                securityRequirements: s_DeleteRatingSecurityRequirements,
+                operationName: "DeleteRatingAsync");
+
             var __pathBuilder = new global::DId.PathBuilder(
                 path: $"/agents/{agentId}/chat/{chatId}/ratings/{ratingId}",
-                baseUri: HttpClient.BaseAddress); 
+                baseUri: HttpClient.BaseAddress);
             var __path = __pathBuilder.ToString();
             using var __httpRequest = new global::System.Net.Http.HttpRequestMessage(
                 method: global::System.Net.Http.HttpMethod.Delete,
@@ -60,7 +85,7 @@ namespace DId
             __httpRequest.VersionPolicy = global::System.Net.Http.HttpVersionPolicy.RequestVersionOrHigher;
 #endif
 
-            foreach (var __authorization in Authorizations)
+            foreach (var __authorization in __authorizations)
             {
                 if (__authorization.Type == "Http" ||
                     __authorization.Type == "OAuth2")

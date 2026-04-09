@@ -13,7 +13,7 @@ namespace DId
         /// <summary>
         /// 
         /// </summary>
-        public const string DefaultBaseUrl = "https://api.d-id.com";
+        public const string DefaultBaseUrl = "https://api.d-id.com/";
 
         private bool _disposeHttpClient = true;
 
