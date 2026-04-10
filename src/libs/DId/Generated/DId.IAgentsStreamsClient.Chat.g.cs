@@ -13,6 +13,7 @@ namespace DId
         /// <param name="agentId"></param>
         /// <param name="chatId"></param>
         /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::DId.ApiException"></exception>
         global::System.Threading.Tasks.Task<global::DId.ChatResponse2> ChatAsync(
@@ -20,6 +21,7 @@ namespace DId
             string chatId,
 
             global::DId.ChatRequest request,
+            global::DId.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
         /// Send a message to a Chat<br/>
@@ -38,6 +40,7 @@ namespace DId
         /// Id of session for Stream<br/>
         /// Required to organize requests to one thread of messages
         /// </param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
         global::System.Threading.Tasks.Task<global::DId.ChatResponse2> ChatAsync(
@@ -46,6 +49,7 @@ namespace DId
             global::System.Collections.Generic.IList<global::DId.ChatRequestMessage> messages,
             string? streamId = default,
             string? sessionId = default,
+            global::DId.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
     }
 }

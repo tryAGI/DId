@@ -14,11 +14,13 @@ namespace DId
         /// Storage duration: 24-48H
         /// </summary>
         /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::DId.ApiException"></exception>
         global::System.Threading.Tasks.Task<global::DId.UploadAnAudioResponse> UploadAnAudioAsync(
 
             global::DId.UploadAnAudioRequest request,
+            global::DId.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
         /// Upload audio file<br/>
@@ -40,6 +42,7 @@ namespace DId
         /// A URL to upload the audio to. If provided, the audio will be uploaded to this URL instead of the default bucket. https presigned URL supported. S3 presigned urls should have the putObject permission with content type audio/wav.
         /// </param>
         /// <param name="persist"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
         global::System.Threading.Tasks.Task<global::DId.UploadAnAudioResponse> UploadAnAudioAsync(
@@ -48,6 +51,7 @@ namespace DId
             string? sourceUrl = default,
             string? resultUrl = default,
             string? persist = default,
+            global::DId.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
     }
 }

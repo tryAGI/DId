@@ -8,11 +8,13 @@ namespace DId
         /// Create a Video Translate
         /// </summary>
         /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::DId.ApiException"></exception>
         global::System.Threading.Tasks.Task<global::DId.CreateResponse> CreateAsync(
 
             global::DId.CreateRequest request,
+            global::DId.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
         /// Create a Video Translate
@@ -42,6 +44,7 @@ namespace DId
         /// <param name="resultUrl">
         /// The result url of the video, if not provided use default destination. supports s3 signed urls.
         /// </param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
         global::System.Threading.Tasks.Task<global::DId.CreateResponse> CreateAsync(
@@ -51,6 +54,7 @@ namespace DId
             string? webhook = default,
             string? userData = default,
             string? resultUrl = default,
+            global::DId.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
     }
 }

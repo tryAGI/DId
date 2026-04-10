@@ -11,6 +11,7 @@ namespace DId
         /// <param name="agentId"></param>
         /// <param name="streamId"></param>
         /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::DId.ApiException"></exception>
         global::System.Threading.Tasks.Task<global::DId.StartConnectionResponse> StartConnectionAsync(
@@ -18,6 +19,7 @@ namespace DId
             string streamId,
 
             global::DId.StartConnectionRequest request,
+            global::DId.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
         /// Start a WebRTC connection<br/>
@@ -32,6 +34,7 @@ namespace DId
         /// <param name="answer">
         /// Jsep answer object used to create a peer connection
         /// </param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
         global::System.Threading.Tasks.Task<global::DId.StartConnectionResponse> StartConnectionAsync(
@@ -39,6 +42,7 @@ namespace DId
             string streamId,
             global::DId.StartConnectionRequestAnswer answer,
             string? sessionId = default,
+            global::DId.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
     }
 }

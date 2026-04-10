@@ -10,12 +10,14 @@ namespace DId
         /// </summary>
         /// <param name="xApiKeyExternal"></param>
         /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::DId.ApiException"></exception>
         global::System.Threading.Tasks.Task<global::DId.AllOf<global::DId.CreateResponseVariant1, global::DId.CreateResponseVariant2>> CreateAsync(
 
             global::DId.CreateRequest2 request,
             string? xApiKeyExternal = default,
+            global::DId.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
         /// Create an Agent<br/>
@@ -53,6 +55,7 @@ namespace DId
         /// <param name="triggers">
         /// Event-based trigger configuration for the Agent.
         /// </param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
         global::System.Threading.Tasks.Task<global::DId.AllOf<global::DId.CreateResponseVariant1, global::DId.CreateResponseVariant2>> CreateAsync(
@@ -67,6 +70,7 @@ namespace DId
             string? userData = default,
             bool? embed = default,
             global::DId.CreateRequestTriggers? triggers = default,
+            global::DId.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
     }
 }

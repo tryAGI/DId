@@ -8,11 +8,13 @@ namespace DId
         /// Create an Express Avatar
         /// </summary>
         /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::DId.ApiException"></exception>
         global::System.Threading.Tasks.Task<global::DId.Create1Response> Create1Async(
 
             global::DId.Create1Request request,
+            global::DId.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
         /// Create an Express Avatar
@@ -38,6 +40,7 @@ namespace DId
         /// <param name="isGreenscreen">
         /// Whether the video is a green screen video
         /// </param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
         global::System.Threading.Tasks.Task<global::DId.Create1Response> Create1Async(
@@ -47,6 +50,7 @@ namespace DId
             string? webhook = default,
             string? userData = default,
             bool? isGreenscreen = default,
+            global::DId.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
     }
 }
