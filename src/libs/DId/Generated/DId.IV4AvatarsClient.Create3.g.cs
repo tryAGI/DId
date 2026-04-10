@@ -9,12 +9,14 @@ namespace DId
         /// </summary>
         /// <param name="xApiKeyExternal"></param>
         /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::DId.ApiException"></exception>
         global::System.Threading.Tasks.Task<global::DId.AllOf<global::DId.Create3ResponseVariant1, global::DId.Create3ResponseVariant2>> Create3Async(
 
             global::DId.Create3Request request,
             string? xApiKeyExternal = default,
+            global::DId.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
         /// Create a Video
@@ -42,6 +44,7 @@ namespace DId
         /// </param>
         /// <param name="webhook"></param>
         /// <param name="script"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
         global::System.Threading.Tasks.Task<global::DId.AllOf<global::DId.Create3ResponseVariant1, global::DId.Create3ResponseVariant2>> Create3Async(
@@ -56,6 +59,7 @@ namespace DId
             bool? persist = default,
             string? resultUrl = default,
             string? webhook = default,
+            global::DId.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
     }
 }

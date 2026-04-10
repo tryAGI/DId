@@ -25,6 +25,7 @@ namespace DId
             Authorizations.Add(new global::DId.EndPointAuthorization
             {
                 Type = "Http",
+                SchemeId = "HttpBearer",
                 Location = "Header",
                 Name = "Bearer",
                 Value = apiKey,

@@ -10,12 +10,14 @@ namespace DId
         /// </summary>
         /// <param name="agentId"></param>
         /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::DId.ApiException"></exception>
         global::System.Threading.Tasks.Task<global::DId.CreateStreamResponse> CreateStreamAsync(
             string agentId,
 
             global::DId.CreateStreamRequest request,
+            global::DId.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
         /// Create a new stream<br/>
@@ -43,6 +45,7 @@ namespace DId
         /// When set to off: H264 will be used<br/>
         /// When set to auto the codec will be selected according to the browser.
         /// </param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
         global::System.Threading.Tasks.Task<global::DId.CreateStreamResponse> CreateStreamAsync(
@@ -51,6 +54,7 @@ namespace DId
             double? sessionTimeout = default,
             bool? streamWarmup = default,
             global::DId.CreateStreamRequestCompatibilityMode? compatibilityMode = default,
+            global::DId.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
     }
 }

@@ -13,11 +13,13 @@ namespace DId
         /// Storage duration: 24-48H
         /// </summary>
         /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::DId.ApiException"></exception>
         global::System.Threading.Tasks.Task<global::DId.UploadAnImageResponse> UploadAnImageAsync(
 
             global::DId.UploadAnImageRequest request,
+            global::DId.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
         /// Upload image<br/>
@@ -39,6 +41,7 @@ namespace DId
         /// <param name="resultUrl">
         /// A URL to upload the image to. If provided, the image will be uploaded to this URL instead of the default bucket. Should be an https presigned URL. S3 presigned urls should have the putObject permission with content type matching the uploaded image.
         /// </param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
         global::System.Threading.Tasks.Task<global::DId.UploadAnImageResponse> UploadAnImageAsync(
@@ -48,6 +51,7 @@ namespace DId
             string? metadata = default,
             string? sourceUrl = default,
             string? resultUrl = default,
+            global::DId.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
     }
 }
