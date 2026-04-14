@@ -123,10 +123,10 @@ namespace DId
                 } 
             }
 
-                if (xApiKeyExternal != default)
-                {
-                    __httpRequest.Headers.TryAddWithoutValidation("x-api-key-external", xApiKeyExternal.ToString());
-                }
+            if (xApiKeyExternal != default)
+            {
+                __httpRequest.Headers.TryAddWithoutValidation("x-api-key-external", xApiKeyExternal.ToString());
+            }
 
                             var __httpRequestContentBody = request.ToJson(JsonSerializerContext);
                             var __httpRequestContent = new global::System.Net.Http.StringContent(
