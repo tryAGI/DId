@@ -125,8 +125,8 @@ namespace DId
                 PrepareDeleteResourceClientKeyRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    agentId: agentId,
-                    clientKey: clientKey);
+                    agentId: agentId!,
+                    clientKey: clientKey!);
 
                 return __httpRequest;
             }

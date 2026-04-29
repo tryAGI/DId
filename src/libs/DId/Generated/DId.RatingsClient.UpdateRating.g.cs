@@ -149,9 +149,9 @@ namespace DId
                 PrepareUpdateRatingRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    agentId: agentId,
-                    chatId: chatId,
-                    ratingId: ratingId,
+                    agentId: agentId!,
+                    chatId: chatId!,
+                    ratingId: ratingId!,
                     request: request);
 
                 return __httpRequest;

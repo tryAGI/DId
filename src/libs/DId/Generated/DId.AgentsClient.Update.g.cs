@@ -150,7 +150,7 @@ namespace DId
                 PrepareUpdateRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    id: id,
+                    id: id!,
                     xApiKeyExternal: xApiKeyExternal,
                     request: request);
 

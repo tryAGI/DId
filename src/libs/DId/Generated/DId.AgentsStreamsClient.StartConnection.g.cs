@@ -144,8 +144,8 @@ namespace DId
                 PrepareStartConnectionRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    agentId: agentId,
-                    streamId: streamId,
+                    agentId: agentId!,
+                    streamId: streamId!,
                     request: request);
 
                 return __httpRequest;

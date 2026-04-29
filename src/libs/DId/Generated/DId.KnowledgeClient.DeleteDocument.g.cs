@@ -130,8 +130,8 @@ namespace DId
                 PrepareDeleteDocumentRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    knowledgeId: knowledgeId,
-                    documentId: documentId);
+                    knowledgeId: knowledgeId!,
+                    documentId: documentId!);
 
                 return __httpRequest;
             }

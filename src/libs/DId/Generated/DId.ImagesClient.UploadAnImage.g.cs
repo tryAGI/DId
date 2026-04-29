@@ -126,6 +126,34 @@ namespace DId
                             {
 
                                 var __contentImage = new global::System.Net.Http.ByteArrayContent(request.Image ?? global::System.Array.Empty<byte>());
+                                __contentImage.Headers.ContentType = new global::System.Net.Http.Headers.MediaTypeHeaderValue(
+                                    request.Imagename is null
+                                        ? "application/octet-stream"
+                                        : (global::System.IO.Path.GetExtension(request.Imagename) ?? string.Empty).ToLowerInvariant() switch
+                                        {
+                                            ".aac" => "audio/aac",
+                                            ".flac" => "audio/flac",
+                                            ".gif" => "image/gif",
+                                            ".jpeg" => "image/jpeg",
+                                            ".jpg" => "image/jpeg",
+                                            ".json" => "application/json",
+                                            ".m4a" => "audio/mp4",
+                                            ".mp3" => "audio/mpeg",
+                                            ".mp4" => "video/mp4",
+                                            ".mpeg" => "audio/mpeg",
+                                            ".mpga" => "audio/mpeg",
+                                            ".oga" => "audio/ogg",
+                                            ".ogg" => "audio/ogg",
+                                            ".opus" => "audio/ogg",
+                                            ".pdf" => "application/pdf",
+                                            ".png" => "image/png",
+                                            ".txt" => "text/plain",
+                                            ".wav" => "audio/wav",
+                                            ".weba" => "audio/webm",
+                                            ".webm" => "video/webm",
+                                            ".webp" => "image/webp",
+                                            _ => "application/octet-stream",
+                                        });
                                 __httpRequestContent.Add(
                                     content: __contentImage,
                                     name: "\"image\"",
@@ -139,28 +167,28 @@ namespace DId
                             {
 
                                 __httpRequestContent.Add(
-                                    content: new global::System.Net.Http.StringContent($"{request.DetectFaces}"),
+                                    content: new global::System.Net.Http.StringContent(request.DetectFaces ?? string.Empty),
                                     name: "\"detect_faces\"");
                             } 
                             if (request.Metadata != default)
                             {
 
                                 __httpRequestContent.Add(
-                                    content: new global::System.Net.Http.StringContent($"{request.Metadata}"),
+                                    content: new global::System.Net.Http.StringContent(request.Metadata ?? string.Empty),
                                     name: "\"metadata\"");
                             } 
                             if (request.SourceUrl != default)
                             {
 
                                 __httpRequestContent.Add(
-                                    content: new global::System.Net.Http.StringContent($"{request.SourceUrl}"),
+                                    content: new global::System.Net.Http.StringContent(request.SourceUrl ?? string.Empty),
                                     name: "\"source_url\"");
                             } 
                             if (request.ResultUrl != default)
                             {
 
                                 __httpRequestContent.Add(
-                                    content: new global::System.Net.Http.StringContent($"{request.ResultUrl}"),
+                                    content: new global::System.Net.Http.StringContent(request.ResultUrl ?? string.Empty),
                                     name: "\"result_url\"");
                             }
                             __httpRequest.Content = __httpRequestContent;
