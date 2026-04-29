@@ -135,9 +135,9 @@ namespace DId
                 PrepareDeleteRatingRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    agentId: agentId,
-                    chatId: chatId,
-                    ratingId: ratingId);
+                    agentId: agentId!,
+                    chatId: chatId!,
+                    ratingId: ratingId!);
 
                 return __httpRequest;
             }

@@ -124,7 +124,7 @@ namespace DId
                 PrepareGetPresenterByIdRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    id: id);
+                    id: id!);
 
                 return __httpRequest;
             }

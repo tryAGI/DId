@@ -119,7 +119,7 @@ namespace DId
                 PrepareDelete3Request(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    id: id);
+                    id: id!);
 
                 return __httpRequest;
             }

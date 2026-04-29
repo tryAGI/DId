@@ -125,7 +125,7 @@ namespace DId
                 PrepareGetDocumentsRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    knowledgeId: knowledgeId);
+                    knowledgeId: knowledgeId!);
 
                 return __httpRequest;
             }

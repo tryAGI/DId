@@ -144,8 +144,8 @@ namespace DId
                 PrepareCreateRatingRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    agentId: agentId,
-                    chatId: chatId,
+                    agentId: agentId!,
+                    chatId: chatId!,
                     request: request);
 
                 return __httpRequest;

@@ -125,7 +125,7 @@ namespace DId
                 PrepareGetByIdRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    knowledgeId: knowledgeId);
+                    knowledgeId: knowledgeId!);
 
                 return __httpRequest;
             }

@@ -139,8 +139,8 @@ namespace DId
                 PrepareUpdateResourceClientKeyRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    agentId: agentId,
-                    clientKey: clientKey,
+                    agentId: agentId!,
+                    clientKey: clientKey!,
                     request: request);
 
                 return __httpRequest;

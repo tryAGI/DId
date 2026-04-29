@@ -139,7 +139,7 @@ namespace DId
                 PrepareCreateDocumentRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    knowledgeId: knowledgeId,
+                    knowledgeId: knowledgeId!,
                     request: request);
 
                 return __httpRequest;
