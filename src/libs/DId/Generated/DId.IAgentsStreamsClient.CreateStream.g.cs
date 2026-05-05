@@ -24,6 +24,21 @@ namespace DId
         /// Initiates the creation of a new WebRTC connection to a browser peer. The endpoint returns the necessary information to set up and manage the connection.
         /// </summary>
         /// <param name="agentId"></param>
+        /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
+        /// <param name="cancellationToken">The token to cancel the operation with</param>
+        /// <exception cref="global::DId.ApiException"></exception>
+        global::System.Threading.Tasks.Task<global::DId.AutoSDKHttpResponse<global::DId.CreateStreamResponse>> CreateStreamAsResponseAsync(
+            string agentId,
+
+            global::DId.CreateStreamRequest request,
+            global::DId.AutoSDKRequestOptions? requestOptions = default,
+            global::System.Threading.CancellationToken cancellationToken = default);
+        /// <summary>
+        /// Create a new stream<br/>
+        /// Initiates the creation of a new WebRTC connection to a browser peer. The endpoint returns the necessary information to set up and manage the connection.
+        /// </summary>
+        /// <param name="agentId"></param>
         /// <param name="fluent">
         /// Whether to request a fluent stream.<br/>
         /// Default Value: false

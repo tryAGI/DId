@@ -43,7 +43,7 @@ namespace DId
         /// <summary>
         /// 
         /// </summary>
-        public AgentsClient Agents => new AgentsClient(HttpClient, authorizations: Authorizations, options: Options)
+        public AgentsClient Agents => new AgentsClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -52,7 +52,7 @@ namespace DId
         /// <summary>
         /// 
         /// </summary>
-        public AgentsStreamsClient AgentsStreams => new AgentsStreamsClient(HttpClient, authorizations: Authorizations, options: Options)
+        public AgentsStreamsClient AgentsStreams => new AgentsStreamsClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -61,7 +61,7 @@ namespace DId
         /// <summary>
         /// 
         /// </summary>
-        public AudiosClient Audios => new AudiosClient(HttpClient, authorizations: Authorizations, options: Options)
+        public AudiosClient Audios => new AudiosClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -70,7 +70,7 @@ namespace DId
         /// <summary>
         /// 
         /// </summary>
-        public ChatsExportClient ChatsExport => new ChatsExportClient(HttpClient, authorizations: Authorizations, options: Options)
+        public ChatsExportClient ChatsExport => new ChatsExportClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -79,7 +79,7 @@ namespace DId
         /// <summary>
         /// 
         /// </summary>
-        public ClientKeysClient ClientKeys => new ClientKeysClient(HttpClient, authorizations: Authorizations, options: Options)
+        public ClientKeysClient ClientKeys => new ClientKeysClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -88,7 +88,7 @@ namespace DId
         /// <summary>
         /// 
         /// </summary>
-        public ClipsPremiumAvatarsClient ClipsPremiumAvatars => new ClipsPremiumAvatarsClient(HttpClient, authorizations: Authorizations, options: Options)
+        public ClipsPremiumAvatarsClient ClipsPremiumAvatars => new ClipsPremiumAvatarsClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -97,7 +97,7 @@ namespace DId
         /// <summary>
         /// 
         /// </summary>
-        public ConsentsClient Consents => new ConsentsClient(HttpClient, authorizations: Authorizations, options: Options)
+        public ConsentsClient Consents => new ConsentsClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -106,7 +106,7 @@ namespace DId
         /// <summary>
         /// 
         /// </summary>
-        public CreditsClient Credits => new CreditsClient(HttpClient, authorizations: Authorizations, options: Options)
+        public CreditsClient Credits => new CreditsClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -115,7 +115,7 @@ namespace DId
         /// <summary>
         /// 
         /// </summary>
-        public ImagesClient Images => new ImagesClient(HttpClient, authorizations: Authorizations, options: Options)
+        public ImagesClient Images => new ImagesClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -124,7 +124,7 @@ namespace DId
         /// <summary>
         /// 
         /// </summary>
-        public KnowledgeClient Knowledge => new KnowledgeClient(HttpClient, authorizations: Authorizations, options: Options)
+        public KnowledgeClient Knowledge => new KnowledgeClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -133,7 +133,7 @@ namespace DId
         /// <summary>
         /// 
         /// </summary>
-        public RatingsClient Ratings => new RatingsClient(HttpClient, authorizations: Authorizations, options: Options)
+        public RatingsClient Ratings => new RatingsClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -142,7 +142,7 @@ namespace DId
         /// <summary>
         /// 
         /// </summary>
-        public ScenesExpressAvatarsClient ScenesExpressAvatars => new ScenesExpressAvatarsClient(HttpClient, authorizations: Authorizations, options: Options)
+        public ScenesExpressAvatarsClient ScenesExpressAvatars => new ScenesExpressAvatarsClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -151,7 +151,7 @@ namespace DId
         /// <summary>
         /// 
         /// </summary>
-        public SecretsClient Secrets => new SecretsClient(HttpClient, authorizations: Authorizations, options: Options)
+        public SecretsClient Secrets => new SecretsClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -160,7 +160,7 @@ namespace DId
         /// <summary>
         /// 
         /// </summary>
-        public SettingsClient Settings => new SettingsClient(HttpClient, authorizations: Authorizations, options: Options)
+        public SettingsClient Settings => new SettingsClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -169,7 +169,7 @@ namespace DId
         /// <summary>
         /// 
         /// </summary>
-        public TalksStandardAvatarsClient TalksStandardAvatars => new TalksStandardAvatarsClient(HttpClient, authorizations: Authorizations, options: Options)
+        public TalksStandardAvatarsClient TalksStandardAvatars => new TalksStandardAvatarsClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -178,7 +178,7 @@ namespace DId
         /// <summary>
         /// 
         /// </summary>
-        public V4AvatarsClient V4Avatars => new V4AvatarsClient(HttpClient, authorizations: Authorizations, options: Options)
+        public V4AvatarsClient V4Avatars => new V4AvatarsClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -187,7 +187,7 @@ namespace DId
         /// <summary>
         /// 
         /// </summary>
-        public VideoTranslateClient VideoTranslate => new VideoTranslateClient(HttpClient, authorizations: Authorizations, options: Options)
+        public VideoTranslateClient VideoTranslate => new VideoTranslateClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -196,7 +196,7 @@ namespace DId
         /// <summary>
         /// 
         /// </summary>
-        public VoicesClient Voices => new VoicesClient(HttpClient, authorizations: Authorizations, options: Options)
+        public VoicesClient Voices => new VoicesClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -235,10 +235,10 @@ namespace DId
         /// <param name="options">Client-wide request defaults such as headers, query parameters, retries, and timeout.</param>
         /// <param name="disposeHttpClient">Dispose the HttpClient when the instance is disposed. True by default.</param>
         public DIdClient(
-            global::System.Net.Http.HttpClient? httpClient = null,
-            global::System.Uri? baseUri = null,
-            global::System.Collections.Generic.List<global::DId.EndPointAuthorization>? authorizations = null,
-            global::DId.AutoSDKClientOptions? options = null,
+            global::System.Net.Http.HttpClient? httpClient,
+            global::System.Uri? baseUri,
+            global::System.Collections.Generic.List<global::DId.EndPointAuthorization>? authorizations,
+            global::DId.AutoSDKClientOptions? options,
             bool disposeHttpClient = true)
         {
 

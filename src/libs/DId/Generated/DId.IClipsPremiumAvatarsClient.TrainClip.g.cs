@@ -19,6 +19,18 @@ namespace DId
         /// <summary>
         /// Create a Premium+ Avatar
         /// </summary>
+        /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
+        /// <param name="cancellationToken">The token to cancel the operation with</param>
+        /// <exception cref="global::DId.ApiException"></exception>
+        global::System.Threading.Tasks.Task<global::DId.AutoSDKHttpResponse<global::DId.TrainClipResponse>> TrainClipAsResponseAsync(
+
+            global::DId.TrainClipRequest request,
+            global::DId.AutoSDKRequestOptions? requestOptions = default,
+            global::System.Threading.CancellationToken cancellationToken = default);
+        /// <summary>
+        /// Create a Premium+ Avatar
+        /// </summary>
         /// <param name="sourceUrl">
         /// The source URL of the clip video to train, the video must be longer than 3 minutes and have a resolution higher than 0.5 megapixels.
         /// </param>
