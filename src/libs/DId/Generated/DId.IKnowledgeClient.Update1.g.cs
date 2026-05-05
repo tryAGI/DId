@@ -26,6 +26,21 @@ namespace DId
         /// If you need to change some of knowledge field
         /// </summary>
         /// <param name="knowledgeId"></param>
+        /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
+        /// <param name="cancellationToken">The token to cancel the operation with</param>
+        /// <exception cref="global::DId.ApiException"></exception>
+        global::System.Threading.Tasks.Task<global::DId.AutoSDKHttpResponse<global::DId.Update1Response>> Update1AsResponseAsync(
+            string knowledgeId,
+
+            global::DId.Update1Request request,
+            global::DId.AutoSDKRequestOptions? requestOptions = default,
+            global::System.Threading.CancellationToken cancellationToken = default);
+        /// <summary>
+        /// Update a Knowledge<br/>
+        /// If you need to change some of knowledge field
+        /// </summary>
+        /// <param name="knowledgeId"></param>
         /// <param name="description">
         /// Description of knowledge
         /// </param>

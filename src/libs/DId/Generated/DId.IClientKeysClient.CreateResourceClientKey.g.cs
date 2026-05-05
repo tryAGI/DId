@@ -24,6 +24,21 @@ namespace DId
         /// Create a client key scoped to a specific agent. Multiple keys per agent are allowed with different domain sets.
         /// </summary>
         /// <param name="agentId"></param>
+        /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
+        /// <param name="cancellationToken">The token to cancel the operation with</param>
+        /// <exception cref="global::DId.ApiException"></exception>
+        global::System.Threading.Tasks.Task<global::DId.AutoSDKHttpResponse<global::DId.CreateResourceClientKeyResponse>> CreateResourceClientKeyAsResponseAsync(
+            string agentId,
+
+            global::DId.CreateResourceClientKeyRequest request,
+            global::DId.AutoSDKRequestOptions? requestOptions = default,
+            global::System.Threading.CancellationToken cancellationToken = default);
+        /// <summary>
+        /// Create Agent Client Key<br/>
+        /// Create a client key scoped to a specific agent. Multiple keys per agent are allowed with different domain sets.
+        /// </summary>
+        /// <param name="agentId"></param>
         /// <param name="allowedDomains"></param>
         /// <param name="name"></param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
