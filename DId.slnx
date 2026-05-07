@@ -2,6 +2,7 @@
   <Folder Name="/libs/">
     <File Path="src/libs/Directory.Build.props" />
     <Project Path="src/libs/DId/DId.csproj" />
+    <Project Path="src/libs/DId.Realtime/DId.Realtime.csproj" />
   </Folder>
   <Folder Name="/Solution Items/">
     <File Path=".github/dependabot.yml" />
