@@ -29,6 +29,19 @@ namespace DId
         /// <summary>
         /// 
         /// </summary>
+        public bool TryPickExpressiveVideoBackgroundVariant1(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::DId.ExpressiveVideoBackgroundVariant1? value)
+        {
+            value = ExpressiveVideoBackgroundVariant1;
+            return IsExpressiveVideoBackgroundVariant1;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::DId.ExpressiveVideoBackgroundVariant2? ExpressiveVideoBackgroundVariant2 { get; init; }
 #else
@@ -42,6 +55,19 @@ namespace DId
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(ExpressiveVideoBackgroundVariant2))]
 #endif
         public bool IsExpressiveVideoBackgroundVariant2 => ExpressiveVideoBackgroundVariant2 != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickExpressiveVideoBackgroundVariant2(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::DId.ExpressiveVideoBackgroundVariant2? value)
+        {
+            value = ExpressiveVideoBackgroundVariant2;
+            return IsExpressiveVideoBackgroundVariant2;
+        }
         /// <summary>
         /// 
         /// </summary>
@@ -118,8 +144,8 @@ namespace DId
         /// 
         /// </summary>
         public TResult? Match<TResult>(
-            global::System.Func<global::DId.ExpressiveVideoBackgroundVariant1?, TResult>? expressiveVideoBackgroundVariant1 = null,
-            global::System.Func<global::DId.ExpressiveVideoBackgroundVariant2?, TResult>? expressiveVideoBackgroundVariant2 = null,
+            global::System.Func<global::DId.ExpressiveVideoBackgroundVariant1, TResult>? expressiveVideoBackgroundVariant1 = null,
+            global::System.Func<global::DId.ExpressiveVideoBackgroundVariant2, TResult>? expressiveVideoBackgroundVariant2 = null,
             bool validate = true)
         {
             if (validate)
@@ -143,8 +169,32 @@ namespace DId
         /// 
         /// </summary>
         public void Match(
-            global::System.Action<global::DId.ExpressiveVideoBackgroundVariant1?>? expressiveVideoBackgroundVariant1 = null,
-            global::System.Action<global::DId.ExpressiveVideoBackgroundVariant2?>? expressiveVideoBackgroundVariant2 = null,
+            global::System.Action<global::DId.ExpressiveVideoBackgroundVariant1>? expressiveVideoBackgroundVariant1 = null,
+
+            global::System.Action<global::DId.ExpressiveVideoBackgroundVariant2>? expressiveVideoBackgroundVariant2 = null,
+            bool validate = true)
+        {
+            if (validate)
+            {
+                Validate();
+            }
+
+            if (IsExpressiveVideoBackgroundVariant1)
+            {
+                expressiveVideoBackgroundVariant1?.Invoke(ExpressiveVideoBackgroundVariant1!);
+            }
+            else if (IsExpressiveVideoBackgroundVariant2)
+            {
+                expressiveVideoBackgroundVariant2?.Invoke(ExpressiveVideoBackgroundVariant2!);
+            }
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public void Switch(
+            global::System.Action<global::DId.ExpressiveVideoBackgroundVariant1>? expressiveVideoBackgroundVariant1 = null,
+            global::System.Action<global::DId.ExpressiveVideoBackgroundVariant2>? expressiveVideoBackgroundVariant2 = null,
             bool validate = true)
         {
             if (validate)

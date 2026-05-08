@@ -29,6 +29,19 @@ namespace DId
         /// <summary>
         /// 
         /// </summary>
+        public bool TryPickBasicAuthentication(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::DId.CreateSecretRequestDtoBasicAuthentication? value)
+        {
+            value = BasicAuthentication;
+            return IsBasicAuthentication;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::DId.CreateSecretRequestDtoBearerToken? BearerToken { get; init; }
 #else
@@ -46,6 +59,19 @@ namespace DId
         /// <summary>
         /// 
         /// </summary>
+        public bool TryPickBearerToken(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::DId.CreateSecretRequestDtoBearerToken? value)
+        {
+            value = BearerToken;
+            return IsBearerToken;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::DId.CreateSecretRequestDtoApiKey? ApiKey { get; init; }
 #else
@@ -59,6 +85,19 @@ namespace DId
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(ApiKey))]
 #endif
         public bool IsApiKey => ApiKey != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickApiKey(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::DId.CreateSecretRequestDtoApiKey? value)
+        {
+            value = ApiKey;
+            return IsApiKey;
+        }
         /// <summary>
         /// 
         /// </summary>
@@ -157,9 +196,9 @@ namespace DId
         /// 
         /// </summary>
         public TResult? Match<TResult>(
-            global::System.Func<global::DId.CreateSecretRequestDtoBasicAuthentication?, TResult>? basicAuthentication = null,
-            global::System.Func<global::DId.CreateSecretRequestDtoBearerToken?, TResult>? bearerToken = null,
-            global::System.Func<global::DId.CreateSecretRequestDtoApiKey?, TResult>? apiKey = null,
+            global::System.Func<global::DId.CreateSecretRequestDtoBasicAuthentication, TResult>? basicAuthentication = null,
+            global::System.Func<global::DId.CreateSecretRequestDtoBearerToken, TResult>? bearerToken = null,
+            global::System.Func<global::DId.CreateSecretRequestDtoApiKey, TResult>? apiKey = null,
             bool validate = true)
         {
             if (validate)
@@ -187,9 +226,39 @@ namespace DId
         /// 
         /// </summary>
         public void Match(
-            global::System.Action<global::DId.CreateSecretRequestDtoBasicAuthentication?>? basicAuthentication = null,
-            global::System.Action<global::DId.CreateSecretRequestDtoBearerToken?>? bearerToken = null,
-            global::System.Action<global::DId.CreateSecretRequestDtoApiKey?>? apiKey = null,
+            global::System.Action<global::DId.CreateSecretRequestDtoBasicAuthentication>? basicAuthentication = null,
+
+            global::System.Action<global::DId.CreateSecretRequestDtoBearerToken>? bearerToken = null,
+
+            global::System.Action<global::DId.CreateSecretRequestDtoApiKey>? apiKey = null,
+            bool validate = true)
+        {
+            if (validate)
+            {
+                Validate();
+            }
+
+            if (IsBasicAuthentication)
+            {
+                basicAuthentication?.Invoke(BasicAuthentication!);
+            }
+            else if (IsBearerToken)
+            {
+                bearerToken?.Invoke(BearerToken!);
+            }
+            else if (IsApiKey)
+            {
+                apiKey?.Invoke(ApiKey!);
+            }
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public void Switch(
+            global::System.Action<global::DId.CreateSecretRequestDtoBasicAuthentication>? basicAuthentication = null,
+            global::System.Action<global::DId.CreateSecretRequestDtoBearerToken>? bearerToken = null,
+            global::System.Action<global::DId.CreateSecretRequestDtoApiKey>? apiKey = null,
             bool validate = true)
         {
             if (validate)

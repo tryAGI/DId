@@ -29,6 +29,19 @@ namespace DId
         /// <summary>
         /// 
         /// </summary>
+        public bool TryPickCreateIceCandidateStreamRequestVariant1(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::DId.AnyOf<global::DId.CreateIceCandidateStreamRequestVariant1Variant1, object>? value)
+        {
+            value = CreateIceCandidateStreamRequestVariant1;
+            return IsCreateIceCandidateStreamRequestVariant1;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::DId.CreateIceCandidateStreamRequestVariant2? CreateIceCandidateStreamRequestVariant2 { get; init; }
 #else
@@ -42,6 +55,19 @@ namespace DId
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(CreateIceCandidateStreamRequestVariant2))]
 #endif
         public bool IsCreateIceCandidateStreamRequestVariant2 => CreateIceCandidateStreamRequestVariant2 != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickCreateIceCandidateStreamRequestVariant2(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::DId.CreateIceCandidateStreamRequestVariant2? value)
+        {
+            value = CreateIceCandidateStreamRequestVariant2;
+            return IsCreateIceCandidateStreamRequestVariant2;
+        }
         /// <summary>
         /// 
         /// </summary>
@@ -119,7 +145,7 @@ namespace DId
         /// </summary>
         public TResult? Match<TResult>(
             global::System.Func<global::DId.AnyOf<global::DId.CreateIceCandidateStreamRequestVariant1Variant1, object>?, TResult>? createIceCandidateStreamRequestVariant1 = null,
-            global::System.Func<global::DId.CreateIceCandidateStreamRequestVariant2?, TResult>? createIceCandidateStreamRequestVariant2 = null,
+            global::System.Func<global::DId.CreateIceCandidateStreamRequestVariant2, TResult>? createIceCandidateStreamRequestVariant2 = null,
             bool validate = true)
         {
             if (validate)
@@ -144,7 +170,31 @@ namespace DId
         /// </summary>
         public void Match(
             global::System.Action<global::DId.AnyOf<global::DId.CreateIceCandidateStreamRequestVariant1Variant1, object>?>? createIceCandidateStreamRequestVariant1 = null,
-            global::System.Action<global::DId.CreateIceCandidateStreamRequestVariant2?>? createIceCandidateStreamRequestVariant2 = null,
+
+            global::System.Action<global::DId.CreateIceCandidateStreamRequestVariant2>? createIceCandidateStreamRequestVariant2 = null,
+            bool validate = true)
+        {
+            if (validate)
+            {
+                Validate();
+            }
+
+            if (IsCreateIceCandidateStreamRequestVariant1)
+            {
+                createIceCandidateStreamRequestVariant1?.Invoke(CreateIceCandidateStreamRequestVariant1!);
+            }
+            else if (IsCreateIceCandidateStreamRequestVariant2)
+            {
+                createIceCandidateStreamRequestVariant2?.Invoke(CreateIceCandidateStreamRequestVariant2!);
+            }
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public void Switch(
+            global::System.Action<global::DId.AnyOf<global::DId.CreateIceCandidateStreamRequestVariant1Variant1, object>?>? createIceCandidateStreamRequestVariant1 = null,
+            global::System.Action<global::DId.CreateIceCandidateStreamRequestVariant2>? createIceCandidateStreamRequestVariant2 = null,
             bool validate = true)
         {
             if (validate)

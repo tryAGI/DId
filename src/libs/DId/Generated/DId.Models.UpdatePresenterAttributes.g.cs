@@ -29,6 +29,19 @@ namespace DId
         /// <summary>
         /// 
         /// </summary>
+        public bool TryPickUpdatePresenterAttributesVariant1(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::DId.UpdatePresenterAttributesVariant1? value)
+        {
+            value = UpdatePresenterAttributesVariant1;
+            return IsUpdatePresenterAttributesVariant1;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::DId.UpdatePresenterAttributesVariant2? UpdatePresenterAttributesVariant2 { get; init; }
 #else
@@ -46,6 +59,19 @@ namespace DId
         /// <summary>
         /// 
         /// </summary>
+        public bool TryPickUpdatePresenterAttributesVariant2(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::DId.UpdatePresenterAttributesVariant2? value)
+        {
+            value = UpdatePresenterAttributesVariant2;
+            return IsUpdatePresenterAttributesVariant2;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::DId.UpdatePresenterAttributesVariant3? UpdatePresenterAttributesVariant3 { get; init; }
 #else
@@ -59,6 +85,19 @@ namespace DId
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(UpdatePresenterAttributesVariant3))]
 #endif
         public bool IsUpdatePresenterAttributesVariant3 => UpdatePresenterAttributesVariant3 != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickUpdatePresenterAttributesVariant3(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::DId.UpdatePresenterAttributesVariant3? value)
+        {
+            value = UpdatePresenterAttributesVariant3;
+            return IsUpdatePresenterAttributesVariant3;
+        }
         /// <summary>
         /// 
         /// </summary>
@@ -157,9 +196,9 @@ namespace DId
         /// 
         /// </summary>
         public TResult? Match<TResult>(
-            global::System.Func<global::DId.UpdatePresenterAttributesVariant1?, TResult>? updatePresenterAttributesVariant1 = null,
-            global::System.Func<global::DId.UpdatePresenterAttributesVariant2?, TResult>? updatePresenterAttributesVariant2 = null,
-            global::System.Func<global::DId.UpdatePresenterAttributesVariant3?, TResult>? updatePresenterAttributesVariant3 = null,
+            global::System.Func<global::DId.UpdatePresenterAttributesVariant1, TResult>? updatePresenterAttributesVariant1 = null,
+            global::System.Func<global::DId.UpdatePresenterAttributesVariant2, TResult>? updatePresenterAttributesVariant2 = null,
+            global::System.Func<global::DId.UpdatePresenterAttributesVariant3, TResult>? updatePresenterAttributesVariant3 = null,
             bool validate = true)
         {
             if (validate)
@@ -187,9 +226,39 @@ namespace DId
         /// 
         /// </summary>
         public void Match(
-            global::System.Action<global::DId.UpdatePresenterAttributesVariant1?>? updatePresenterAttributesVariant1 = null,
-            global::System.Action<global::DId.UpdatePresenterAttributesVariant2?>? updatePresenterAttributesVariant2 = null,
-            global::System.Action<global::DId.UpdatePresenterAttributesVariant3?>? updatePresenterAttributesVariant3 = null,
+            global::System.Action<global::DId.UpdatePresenterAttributesVariant1>? updatePresenterAttributesVariant1 = null,
+
+            global::System.Action<global::DId.UpdatePresenterAttributesVariant2>? updatePresenterAttributesVariant2 = null,
+
+            global::System.Action<global::DId.UpdatePresenterAttributesVariant3>? updatePresenterAttributesVariant3 = null,
+            bool validate = true)
+        {
+            if (validate)
+            {
+                Validate();
+            }
+
+            if (IsUpdatePresenterAttributesVariant1)
+            {
+                updatePresenterAttributesVariant1?.Invoke(UpdatePresenterAttributesVariant1!);
+            }
+            else if (IsUpdatePresenterAttributesVariant2)
+            {
+                updatePresenterAttributesVariant2?.Invoke(UpdatePresenterAttributesVariant2!);
+            }
+            else if (IsUpdatePresenterAttributesVariant3)
+            {
+                updatePresenterAttributesVariant3?.Invoke(UpdatePresenterAttributesVariant3!);
+            }
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public void Switch(
+            global::System.Action<global::DId.UpdatePresenterAttributesVariant1>? updatePresenterAttributesVariant1 = null,
+            global::System.Action<global::DId.UpdatePresenterAttributesVariant2>? updatePresenterAttributesVariant2 = null,
+            global::System.Action<global::DId.UpdatePresenterAttributesVariant3>? updatePresenterAttributesVariant3 = null,
             bool validate = true)
         {
             if (validate)

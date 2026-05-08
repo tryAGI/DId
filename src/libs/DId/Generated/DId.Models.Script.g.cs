@@ -29,6 +29,19 @@ namespace DId
         /// <summary>
         /// 
         /// </summary>
+        public bool TryPickScriptVariant1(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::DId.ScriptVariant1? value)
+        {
+            value = ScriptVariant1;
+            return IsScriptVariant1;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::DId.ScriptVariant2? ScriptVariant2 { get; init; }
 #else
@@ -42,6 +55,19 @@ namespace DId
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(ScriptVariant2))]
 #endif
         public bool IsScriptVariant2 => ScriptVariant2 != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickScriptVariant2(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::DId.ScriptVariant2? value)
+        {
+            value = ScriptVariant2;
+            return IsScriptVariant2;
+        }
         /// <summary>
         /// 
         /// </summary>
@@ -118,8 +144,8 @@ namespace DId
         /// 
         /// </summary>
         public TResult? Match<TResult>(
-            global::System.Func<global::DId.ScriptVariant1?, TResult>? scriptVariant1 = null,
-            global::System.Func<global::DId.ScriptVariant2?, TResult>? scriptVariant2 = null,
+            global::System.Func<global::DId.ScriptVariant1, TResult>? scriptVariant1 = null,
+            global::System.Func<global::DId.ScriptVariant2, TResult>? scriptVariant2 = null,
             bool validate = true)
         {
             if (validate)
@@ -143,8 +169,32 @@ namespace DId
         /// 
         /// </summary>
         public void Match(
-            global::System.Action<global::DId.ScriptVariant1?>? scriptVariant1 = null,
-            global::System.Action<global::DId.ScriptVariant2?>? scriptVariant2 = null,
+            global::System.Action<global::DId.ScriptVariant1>? scriptVariant1 = null,
+
+            global::System.Action<global::DId.ScriptVariant2>? scriptVariant2 = null,
+            bool validate = true)
+        {
+            if (validate)
+            {
+                Validate();
+            }
+
+            if (IsScriptVariant1)
+            {
+                scriptVariant1?.Invoke(ScriptVariant1!);
+            }
+            else if (IsScriptVariant2)
+            {
+                scriptVariant2?.Invoke(ScriptVariant2!);
+            }
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public void Switch(
+            global::System.Action<global::DId.ScriptVariant1>? scriptVariant1 = null,
+            global::System.Action<global::DId.ScriptVariant2>? scriptVariant2 = null,
             bool validate = true)
         {
             if (validate)

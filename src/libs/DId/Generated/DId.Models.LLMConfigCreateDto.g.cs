@@ -29,6 +29,19 @@ namespace DId
         /// <summary>
         /// 
         /// </summary>
+        public bool TryPickLLMConfigCreateDtoVariant1(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::DId.LLMConfigCreateDtoVariant1? value)
+        {
+            value = LLMConfigCreateDtoVariant1;
+            return IsLLMConfigCreateDtoVariant1;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::DId.LLMConfigCreateDtoVariant2? LLMConfigCreateDtoVariant2 { get; init; }
 #else
@@ -42,6 +55,19 @@ namespace DId
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(LLMConfigCreateDtoVariant2))]
 #endif
         public bool IsLLMConfigCreateDtoVariant2 => LLMConfigCreateDtoVariant2 != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickLLMConfigCreateDtoVariant2(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::DId.LLMConfigCreateDtoVariant2? value)
+        {
+            value = LLMConfigCreateDtoVariant2;
+            return IsLLMConfigCreateDtoVariant2;
+        }
 
         /// <summary>
         /// 
@@ -63,6 +89,19 @@ namespace DId
         /// <summary>
         /// 
         /// </summary>
+        public bool TryPickLLMConfigCreateDtoVariant3(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::DId.LLMConfigCreateDtoVariant3? value)
+        {
+            value = LLMConfigCreateDtoVariant3;
+            return IsLLMConfigCreateDtoVariant3;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::DId.LLMConfigCreateDtoVariant4? LLMConfigCreateDtoVariant4 { get; init; }
 #else
@@ -76,6 +115,19 @@ namespace DId
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(LLMConfigCreateDtoVariant4))]
 #endif
         public bool IsLLMConfigCreateDtoVariant4 => LLMConfigCreateDtoVariant4 != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickLLMConfigCreateDtoVariant4(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::DId.LLMConfigCreateDtoVariant4? value)
+        {
+            value = LLMConfigCreateDtoVariant4;
+            return IsLLMConfigCreateDtoVariant4;
+        }
 
         /// <summary>
         /// 
@@ -97,6 +149,19 @@ namespace DId
         /// <summary>
         /// 
         /// </summary>
+        public bool TryPickLLMConfigCreateDtoVariant5(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::DId.LLMConfigCreateDtoVariant5? value)
+        {
+            value = LLMConfigCreateDtoVariant5;
+            return IsLLMConfigCreateDtoVariant5;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::DId.LLMConfigCreateDtoVariant6? LLMConfigCreateDtoVariant6 { get; init; }
 #else
@@ -110,6 +175,19 @@ namespace DId
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(LLMConfigCreateDtoVariant6))]
 #endif
         public bool IsLLMConfigCreateDtoVariant6 => LLMConfigCreateDtoVariant6 != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickLLMConfigCreateDtoVariant6(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::DId.LLMConfigCreateDtoVariant6? value)
+        {
+            value = LLMConfigCreateDtoVariant6;
+            return IsLLMConfigCreateDtoVariant6;
+        }
         /// <summary>
         /// 
         /// </summary>
@@ -274,12 +352,12 @@ namespace DId
         /// 
         /// </summary>
         public TResult? Match<TResult>(
-            global::System.Func<global::DId.LLMConfigCreateDtoVariant1?, TResult>? lLMConfigCreateDtoVariant1 = null,
-            global::System.Func<global::DId.LLMConfigCreateDtoVariant2?, TResult>? lLMConfigCreateDtoVariant2 = null,
-            global::System.Func<global::DId.LLMConfigCreateDtoVariant3?, TResult>? lLMConfigCreateDtoVariant3 = null,
-            global::System.Func<global::DId.LLMConfigCreateDtoVariant4?, TResult>? lLMConfigCreateDtoVariant4 = null,
-            global::System.Func<global::DId.LLMConfigCreateDtoVariant5?, TResult>? lLMConfigCreateDtoVariant5 = null,
-            global::System.Func<global::DId.LLMConfigCreateDtoVariant6?, TResult>? lLMConfigCreateDtoVariant6 = null,
+            global::System.Func<global::DId.LLMConfigCreateDtoVariant1, TResult>? lLMConfigCreateDtoVariant1 = null,
+            global::System.Func<global::DId.LLMConfigCreateDtoVariant2, TResult>? lLMConfigCreateDtoVariant2 = null,
+            global::System.Func<global::DId.LLMConfigCreateDtoVariant3, TResult>? lLMConfigCreateDtoVariant3 = null,
+            global::System.Func<global::DId.LLMConfigCreateDtoVariant4, TResult>? lLMConfigCreateDtoVariant4 = null,
+            global::System.Func<global::DId.LLMConfigCreateDtoVariant5, TResult>? lLMConfigCreateDtoVariant5 = null,
+            global::System.Func<global::DId.LLMConfigCreateDtoVariant6, TResult>? lLMConfigCreateDtoVariant6 = null,
             bool validate = true)
         {
             if (validate)
@@ -319,12 +397,60 @@ namespace DId
         /// 
         /// </summary>
         public void Match(
-            global::System.Action<global::DId.LLMConfigCreateDtoVariant1?>? lLMConfigCreateDtoVariant1 = null,
-            global::System.Action<global::DId.LLMConfigCreateDtoVariant2?>? lLMConfigCreateDtoVariant2 = null,
-            global::System.Action<global::DId.LLMConfigCreateDtoVariant3?>? lLMConfigCreateDtoVariant3 = null,
-            global::System.Action<global::DId.LLMConfigCreateDtoVariant4?>? lLMConfigCreateDtoVariant4 = null,
-            global::System.Action<global::DId.LLMConfigCreateDtoVariant5?>? lLMConfigCreateDtoVariant5 = null,
-            global::System.Action<global::DId.LLMConfigCreateDtoVariant6?>? lLMConfigCreateDtoVariant6 = null,
+            global::System.Action<global::DId.LLMConfigCreateDtoVariant1>? lLMConfigCreateDtoVariant1 = null,
+
+            global::System.Action<global::DId.LLMConfigCreateDtoVariant2>? lLMConfigCreateDtoVariant2 = null,
+
+            global::System.Action<global::DId.LLMConfigCreateDtoVariant3>? lLMConfigCreateDtoVariant3 = null,
+
+            global::System.Action<global::DId.LLMConfigCreateDtoVariant4>? lLMConfigCreateDtoVariant4 = null,
+
+            global::System.Action<global::DId.LLMConfigCreateDtoVariant5>? lLMConfigCreateDtoVariant5 = null,
+
+            global::System.Action<global::DId.LLMConfigCreateDtoVariant6>? lLMConfigCreateDtoVariant6 = null,
+            bool validate = true)
+        {
+            if (validate)
+            {
+                Validate();
+            }
+
+            if (IsLLMConfigCreateDtoVariant1)
+            {
+                lLMConfigCreateDtoVariant1?.Invoke(LLMConfigCreateDtoVariant1!);
+            }
+            else if (IsLLMConfigCreateDtoVariant2)
+            {
+                lLMConfigCreateDtoVariant2?.Invoke(LLMConfigCreateDtoVariant2!);
+            }
+            else if (IsLLMConfigCreateDtoVariant3)
+            {
+                lLMConfigCreateDtoVariant3?.Invoke(LLMConfigCreateDtoVariant3!);
+            }
+            else if (IsLLMConfigCreateDtoVariant4)
+            {
+                lLMConfigCreateDtoVariant4?.Invoke(LLMConfigCreateDtoVariant4!);
+            }
+            else if (IsLLMConfigCreateDtoVariant5)
+            {
+                lLMConfigCreateDtoVariant5?.Invoke(LLMConfigCreateDtoVariant5!);
+            }
+            else if (IsLLMConfigCreateDtoVariant6)
+            {
+                lLMConfigCreateDtoVariant6?.Invoke(LLMConfigCreateDtoVariant6!);
+            }
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public void Switch(
+            global::System.Action<global::DId.LLMConfigCreateDtoVariant1>? lLMConfigCreateDtoVariant1 = null,
+            global::System.Action<global::DId.LLMConfigCreateDtoVariant2>? lLMConfigCreateDtoVariant2 = null,
+            global::System.Action<global::DId.LLMConfigCreateDtoVariant3>? lLMConfigCreateDtoVariant3 = null,
+            global::System.Action<global::DId.LLMConfigCreateDtoVariant4>? lLMConfigCreateDtoVariant4 = null,
+            global::System.Action<global::DId.LLMConfigCreateDtoVariant5>? lLMConfigCreateDtoVariant5 = null,
+            global::System.Action<global::DId.LLMConfigCreateDtoVariant6>? lLMConfigCreateDtoVariant6 = null,
             bool validate = true)
         {
             if (validate)
