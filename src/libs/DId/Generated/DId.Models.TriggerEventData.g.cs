@@ -29,6 +29,19 @@ namespace DId
         /// <summary>
         /// 
         /// </summary>
+        public bool TryPickChatEnd(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::DId.ChatEndEventData? value)
+        {
+            value = ChatEnd;
+            return IsChatEnd;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::DId.TriggerEventDataVariant2? TriggerEventDataVariant2 { get; init; }
 #else
@@ -42,6 +55,19 @@ namespace DId
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(TriggerEventDataVariant2))]
 #endif
         public bool IsTriggerEventDataVariant2 => TriggerEventDataVariant2 != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickTriggerEventDataVariant2(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::DId.TriggerEventDataVariant2? value)
+        {
+            value = TriggerEventDataVariant2;
+            return IsTriggerEventDataVariant2;
+        }
         /// <summary>
         /// 
         /// </summary>
@@ -118,8 +144,8 @@ namespace DId
         /// 
         /// </summary>
         public TResult? Match<TResult>(
-            global::System.Func<global::DId.ChatEndEventData?, TResult>? chatEnd = null,
-            global::System.Func<global::DId.TriggerEventDataVariant2?, TResult>? triggerEventDataVariant2 = null,
+            global::System.Func<global::DId.ChatEndEventData, TResult>? chatEnd = null,
+            global::System.Func<global::DId.TriggerEventDataVariant2, TResult>? triggerEventDataVariant2 = null,
             bool validate = true)
         {
             if (validate)
@@ -143,8 +169,32 @@ namespace DId
         /// 
         /// </summary>
         public void Match(
-            global::System.Action<global::DId.ChatEndEventData?>? chatEnd = null,
-            global::System.Action<global::DId.TriggerEventDataVariant2?>? triggerEventDataVariant2 = null,
+            global::System.Action<global::DId.ChatEndEventData>? chatEnd = null,
+
+            global::System.Action<global::DId.TriggerEventDataVariant2>? triggerEventDataVariant2 = null,
+            bool validate = true)
+        {
+            if (validate)
+            {
+                Validate();
+            }
+
+            if (IsChatEnd)
+            {
+                chatEnd?.Invoke(ChatEnd!);
+            }
+            else if (IsTriggerEventDataVariant2)
+            {
+                triggerEventDataVariant2?.Invoke(TriggerEventDataVariant2!);
+            }
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public void Switch(
+            global::System.Action<global::DId.ChatEndEventData>? chatEnd = null,
+            global::System.Action<global::DId.TriggerEventDataVariant2>? triggerEventDataVariant2 = null,
             bool validate = true)
         {
             if (validate)

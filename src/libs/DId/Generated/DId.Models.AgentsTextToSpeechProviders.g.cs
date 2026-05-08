@@ -29,6 +29,19 @@ namespace DId
         /// <summary>
         /// 
         /// </summary>
+        public bool TryPickMicrosoft(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::DId.AgentsTextToSpeechProvidersMicrosoft? value)
+        {
+            value = Microsoft;
+            return IsMicrosoft;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::DId.AgentsTextToSpeechProvidersElevenLabs? ElevenLabs { get; init; }
 #else
@@ -46,6 +59,19 @@ namespace DId
         /// <summary>
         /// 
         /// </summary>
+        public bool TryPickElevenLabs(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::DId.AgentsTextToSpeechProvidersElevenLabs? value)
+        {
+            value = ElevenLabs;
+            return IsElevenLabs;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::DId.AgentsTextToSpeechProvidersOpenAI? OpenAI { get; init; }
 #else
@@ -59,6 +85,19 @@ namespace DId
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(OpenAI))]
 #endif
         public bool IsOpenAI => OpenAI != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickOpenAI(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::DId.AgentsTextToSpeechProvidersOpenAI? value)
+        {
+            value = OpenAI;
+            return IsOpenAI;
+        }
         /// <summary>
         /// 
         /// </summary>
@@ -157,9 +196,9 @@ namespace DId
         /// 
         /// </summary>
         public TResult? Match<TResult>(
-            global::System.Func<global::DId.AgentsTextToSpeechProvidersMicrosoft?, TResult>? microsoft = null,
-            global::System.Func<global::DId.AgentsTextToSpeechProvidersElevenLabs?, TResult>? elevenLabs = null,
-            global::System.Func<global::DId.AgentsTextToSpeechProvidersOpenAI?, TResult>? openAI = null,
+            global::System.Func<global::DId.AgentsTextToSpeechProvidersMicrosoft, TResult>? microsoft = null,
+            global::System.Func<global::DId.AgentsTextToSpeechProvidersElevenLabs, TResult>? elevenLabs = null,
+            global::System.Func<global::DId.AgentsTextToSpeechProvidersOpenAI, TResult>? openAI = null,
             bool validate = true)
         {
             if (validate)
@@ -187,9 +226,39 @@ namespace DId
         /// 
         /// </summary>
         public void Match(
-            global::System.Action<global::DId.AgentsTextToSpeechProvidersMicrosoft?>? microsoft = null,
-            global::System.Action<global::DId.AgentsTextToSpeechProvidersElevenLabs?>? elevenLabs = null,
-            global::System.Action<global::DId.AgentsTextToSpeechProvidersOpenAI?>? openAI = null,
+            global::System.Action<global::DId.AgentsTextToSpeechProvidersMicrosoft>? microsoft = null,
+
+            global::System.Action<global::DId.AgentsTextToSpeechProvidersElevenLabs>? elevenLabs = null,
+
+            global::System.Action<global::DId.AgentsTextToSpeechProvidersOpenAI>? openAI = null,
+            bool validate = true)
+        {
+            if (validate)
+            {
+                Validate();
+            }
+
+            if (IsMicrosoft)
+            {
+                microsoft?.Invoke(Microsoft!);
+            }
+            else if (IsElevenLabs)
+            {
+                elevenLabs?.Invoke(ElevenLabs!);
+            }
+            else if (IsOpenAI)
+            {
+                openAI?.Invoke(OpenAI!);
+            }
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public void Switch(
+            global::System.Action<global::DId.AgentsTextToSpeechProvidersMicrosoft>? microsoft = null,
+            global::System.Action<global::DId.AgentsTextToSpeechProvidersElevenLabs>? elevenLabs = null,
+            global::System.Action<global::DId.AgentsTextToSpeechProvidersOpenAI>? openAI = null,
             bool validate = true)
         {
             if (validate)

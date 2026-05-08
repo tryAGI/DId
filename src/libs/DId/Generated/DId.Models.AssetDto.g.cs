@@ -27,6 +27,19 @@ namespace DId
         public bool IsAssetDtoVariant1 => AssetDtoVariant1 != null;
 
         /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickAssetDtoVariant1(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::DId.AssetDtoVariant1? value)
+        {
+            value = AssetDtoVariant1;
+            return IsAssetDtoVariant1;
+        }
+
+        /// <summary>
         /// DTO for updating an existing asset
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -42,6 +55,19 @@ namespace DId
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AssetDtoVariant2))]
 #endif
         public bool IsAssetDtoVariant2 => AssetDtoVariant2 != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickAssetDtoVariant2(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::DId.AssetDtoVariant2? value)
+        {
+            value = AssetDtoVariant2;
+            return IsAssetDtoVariant2;
+        }
         /// <summary>
         /// 
         /// </summary>
@@ -118,8 +144,8 @@ namespace DId
         /// 
         /// </summary>
         public TResult? Match<TResult>(
-            global::System.Func<global::DId.AssetDtoVariant1?, TResult>? assetDtoVariant1 = null,
-            global::System.Func<global::DId.AssetDtoVariant2?, TResult>? assetDtoVariant2 = null,
+            global::System.Func<global::DId.AssetDtoVariant1, TResult>? assetDtoVariant1 = null,
+            global::System.Func<global::DId.AssetDtoVariant2, TResult>? assetDtoVariant2 = null,
             bool validate = true)
         {
             if (validate)
@@ -143,8 +169,32 @@ namespace DId
         /// 
         /// </summary>
         public void Match(
-            global::System.Action<global::DId.AssetDtoVariant1?>? assetDtoVariant1 = null,
-            global::System.Action<global::DId.AssetDtoVariant2?>? assetDtoVariant2 = null,
+            global::System.Action<global::DId.AssetDtoVariant1>? assetDtoVariant1 = null,
+
+            global::System.Action<global::DId.AssetDtoVariant2>? assetDtoVariant2 = null,
+            bool validate = true)
+        {
+            if (validate)
+            {
+                Validate();
+            }
+
+            if (IsAssetDtoVariant1)
+            {
+                assetDtoVariant1?.Invoke(AssetDtoVariant1!);
+            }
+            else if (IsAssetDtoVariant2)
+            {
+                assetDtoVariant2?.Invoke(AssetDtoVariant2!);
+            }
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public void Switch(
+            global::System.Action<global::DId.AssetDtoVariant1>? assetDtoVariant1 = null,
+            global::System.Action<global::DId.AssetDtoVariant2>? assetDtoVariant2 = null,
             bool validate = true)
         {
             if (validate)
