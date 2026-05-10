@@ -42,6 +42,13 @@ namespace DId
         /// <summary>
         /// 
         /// </summary>
+        public global::DId.UpdatePresenterAttributesVariant1 PickUpdatePresenterAttributesVariant1() => IsUpdatePresenterAttributesVariant1
+            ? UpdatePresenterAttributesVariant1!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'UpdatePresenterAttributesVariant1' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::DId.UpdatePresenterAttributesVariant2? UpdatePresenterAttributesVariant2 { get; init; }
 #else
@@ -72,6 +79,13 @@ namespace DId
         /// <summary>
         /// 
         /// </summary>
+        public global::DId.UpdatePresenterAttributesVariant2 PickUpdatePresenterAttributesVariant2() => IsUpdatePresenterAttributesVariant2
+            ? UpdatePresenterAttributesVariant2!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'UpdatePresenterAttributesVariant2' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::DId.UpdatePresenterAttributesVariant3? UpdatePresenterAttributesVariant3 { get; init; }
 #else
@@ -98,6 +112,13 @@ namespace DId
             value = UpdatePresenterAttributesVariant3;
             return IsUpdatePresenterAttributesVariant3;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::DId.UpdatePresenterAttributesVariant3 PickUpdatePresenterAttributesVariant3() => IsUpdatePresenterAttributesVariant3
+            ? UpdatePresenterAttributesVariant3!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'UpdatePresenterAttributesVariant3' but the value was {ToString()}.");
         /// <summary>
         /// 
         /// </summary>

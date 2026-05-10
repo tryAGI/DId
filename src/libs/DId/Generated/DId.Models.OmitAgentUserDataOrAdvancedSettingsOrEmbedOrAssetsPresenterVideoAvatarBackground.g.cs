@@ -58,5 +58,6 @@ namespace DId
         public OmitAgentUserDataOrAdvancedSettingsOrEmbedOrAssetsPresenterVideoAvatarBackground()
         {
         }
+
     }
 }

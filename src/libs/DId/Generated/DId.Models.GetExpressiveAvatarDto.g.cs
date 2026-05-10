@@ -42,6 +42,13 @@ namespace DId
         /// <summary>
         /// 
         /// </summary>
+        public global::DId.AllOf<global::DId.GetExpressiveAvatarDtoVariant1Variant1, object> PickGetExpressiveAvatarDtoVariant1() => IsGetExpressiveAvatarDtoVariant1
+            ? GetExpressiveAvatarDtoVariant1!.Value
+            : throw new global::System.InvalidOperationException($"Expected union variant 'GetExpressiveAvatarDtoVariant1' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::DId.GetExpressiveAvatarDtoVariant2? GetExpressiveAvatarDtoVariant2 { get; init; }
 #else
@@ -68,6 +75,13 @@ namespace DId
             value = GetExpressiveAvatarDtoVariant2;
             return IsGetExpressiveAvatarDtoVariant2;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::DId.GetExpressiveAvatarDtoVariant2 PickGetExpressiveAvatarDtoVariant2() => IsGetExpressiveAvatarDtoVariant2
+            ? GetExpressiveAvatarDtoVariant2!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'GetExpressiveAvatarDtoVariant2' but the value was {ToString()}.");
         /// <summary>
         /// 
         /// </summary>

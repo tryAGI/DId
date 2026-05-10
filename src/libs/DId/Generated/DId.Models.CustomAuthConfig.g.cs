@@ -42,6 +42,13 @@ namespace DId
         /// <summary>
         /// 
         /// </summary>
+        public global::DId.CustomAuthConfigBasic PickBasic() => IsBasic
+            ? Basic!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Basic' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::DId.CustomAuthConfigOAuth2? OAuth2 { get; init; }
 #else
@@ -68,6 +75,13 @@ namespace DId
             value = OAuth2;
             return IsOAuth2;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::DId.CustomAuthConfigOAuth2 PickOAuth2() => IsOAuth2
+            ? OAuth2!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'OAuth2' but the value was {ToString()}.");
         /// <summary>
         /// 
         /// </summary>

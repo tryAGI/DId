@@ -96,5 +96,6 @@ namespace DId
         public PickExpressiveAvatarExpressionExpressionPublicAllowedAttributes()
         {
         }
+
     }
 }

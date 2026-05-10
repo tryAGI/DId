@@ -93,5 +93,6 @@ namespace DId
         public UpdateResponseVariant1PresenterPhotoAvatar()
         {
         }
+
     }
 }

@@ -185,5 +185,6 @@ namespace DId
         public PartialOmitPresenterOwnerIdOrPresenterIdOrCreatedAtOrCreatedByOrCreatedByCreatedAtOrCreatedByModifiedAtOrEntityCreatedAt()
         {
         }
+
     }
 }

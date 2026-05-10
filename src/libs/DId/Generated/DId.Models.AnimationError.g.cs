@@ -42,6 +42,13 @@ namespace DId
         /// <summary>
         /// 
         /// </summary>
+        public global::DId.AnimationErrorVariant1 PickAnimationErrorVariant1() => IsAnimationErrorVariant1
+            ? AnimationErrorVariant1!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'AnimationErrorVariant1' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::DId.AnimationErrorVariant2? AnimationErrorVariant2 { get; init; }
 #else
@@ -68,6 +75,13 @@ namespace DId
             value = AnimationErrorVariant2;
             return IsAnimationErrorVariant2;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::DId.AnimationErrorVariant2 PickAnimationErrorVariant2() => IsAnimationErrorVariant2
+            ? AnimationErrorVariant2!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'AnimationErrorVariant2' but the value was {ToString()}.");
 
         /// <summary>
         /// 
@@ -102,6 +116,13 @@ namespace DId
         /// <summary>
         /// 
         /// </summary>
+        public global::DId.AnimationErrorVariant3 PickAnimationErrorVariant3() => IsAnimationErrorVariant3
+            ? AnimationErrorVariant3!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'AnimationErrorVariant3' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::DId.AnimationErrorVariant4? AnimationErrorVariant4 { get; init; }
 #else
@@ -128,6 +149,13 @@ namespace DId
             value = AnimationErrorVariant4;
             return IsAnimationErrorVariant4;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::DId.AnimationErrorVariant4 PickAnimationErrorVariant4() => IsAnimationErrorVariant4
+            ? AnimationErrorVariant4!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'AnimationErrorVariant4' but the value was {ToString()}.");
 
         /// <summary>
         /// 
@@ -162,6 +190,13 @@ namespace DId
         /// <summary>
         /// 
         /// </summary>
+        public global::DId.AnimationErrorVariant5 PickAnimationErrorVariant5() => IsAnimationErrorVariant5
+            ? AnimationErrorVariant5!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'AnimationErrorVariant5' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::DId.AnimationErrorVariant6? AnimationErrorVariant6 { get; init; }
 #else
@@ -188,6 +223,13 @@ namespace DId
             value = AnimationErrorVariant6;
             return IsAnimationErrorVariant6;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::DId.AnimationErrorVariant6 PickAnimationErrorVariant6() => IsAnimationErrorVariant6
+            ? AnimationErrorVariant6!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'AnimationErrorVariant6' but the value was {ToString()}.");
         /// <summary>
         /// 
         /// </summary>

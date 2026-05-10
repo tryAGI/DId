@@ -117,5 +117,6 @@ namespace DId
         public GroupTranslation()
         {
         }
+
     }
 }

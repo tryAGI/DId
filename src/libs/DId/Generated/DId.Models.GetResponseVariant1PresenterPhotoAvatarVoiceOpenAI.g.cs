@@ -80,5 +80,6 @@ namespace DId
         public GetResponseVariant1PresenterPhotoAvatarVoiceOpenAI()
         {
         }
+
     }
 }

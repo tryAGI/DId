@@ -116,5 +116,6 @@ namespace DId
         public LLMConfigCreateDtoVariant2CustomOAuth2()
         {
         }
+
     }
 }

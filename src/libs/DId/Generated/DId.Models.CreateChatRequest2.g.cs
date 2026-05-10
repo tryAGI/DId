@@ -43,5 +43,6 @@ namespace DId
         public CreateChatRequest2()
         {
         }
+
     }
 }

@@ -148,5 +148,6 @@ namespace DId
         public AgentResponseDtoVariant1()
         {
         }
+
     }
 }

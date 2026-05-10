@@ -57,5 +57,6 @@ namespace DId
         public Get1ResponseConfigLogo()
         {
         }
+
     }
 }

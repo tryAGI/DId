@@ -40,6 +40,13 @@ namespace DId
         }
 
         /// <summary>
+        /// 
+        /// </summary>
+        public global::DId.ExpressiveAvatarExpressionDtoVariant1 PickExpressiveAvatarExpressionDtoVariant1() => IsExpressiveAvatarExpressionDtoVariant1
+            ? ExpressiveAvatarExpressionDtoVariant1!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'ExpressiveAvatarExpressionDtoVariant1' but the value was {ToString()}.");
+
+        /// <summary>
         /// Make all properties in T optional
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -68,6 +75,13 @@ namespace DId
             value = ExpressiveAvatarExpressionDtoVariant2;
             return IsExpressiveAvatarExpressionDtoVariant2;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public object PickExpressiveAvatarExpressionDtoVariant2() => IsExpressiveAvatarExpressionDtoVariant2
+            ? ExpressiveAvatarExpressionDtoVariant2!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'ExpressiveAvatarExpressionDtoVariant2' but the value was {ToString()}.");
         /// <summary>
         /// 
         /// </summary>

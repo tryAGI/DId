@@ -85,5 +85,6 @@ namespace DId
         public CreateSecretRequestCreateSecretRequest1ApiKey()
         {
         }
+
     }
 }

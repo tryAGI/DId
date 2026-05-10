@@ -79,5 +79,6 @@ namespace DId
         public CreateClipRequestScriptVariant1ProviderOpenAIVoiceConfig()
         {
         }
+
     }
 }

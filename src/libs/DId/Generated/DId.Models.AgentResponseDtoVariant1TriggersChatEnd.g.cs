@@ -41,5 +41,6 @@ namespace DId
         public AgentResponseDtoVariant1TriggersChatEnd()
         {
         }
+
     }
 }

@@ -42,6 +42,13 @@ namespace DId
         /// <summary>
         /// 
         /// </summary>
+        public global::DId.ExpressiveVideoBackgroundVariant1 PickExpressiveVideoBackgroundVariant1() => IsExpressiveVideoBackgroundVariant1
+            ? ExpressiveVideoBackgroundVariant1!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'ExpressiveVideoBackgroundVariant1' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::DId.ExpressiveVideoBackgroundVariant2? ExpressiveVideoBackgroundVariant2 { get; init; }
 #else
@@ -68,6 +75,13 @@ namespace DId
             value = ExpressiveVideoBackgroundVariant2;
             return IsExpressiveVideoBackgroundVariant2;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::DId.ExpressiveVideoBackgroundVariant2 PickExpressiveVideoBackgroundVariant2() => IsExpressiveVideoBackgroundVariant2
+            ? ExpressiveVideoBackgroundVariant2!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'ExpressiveVideoBackgroundVariant2' but the value was {ToString()}.");
         /// <summary>
         /// 
         /// </summary>

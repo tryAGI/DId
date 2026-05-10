@@ -159,5 +159,6 @@ namespace DId
         public GetGroupResponse()
         {
         }
+
     }
 }

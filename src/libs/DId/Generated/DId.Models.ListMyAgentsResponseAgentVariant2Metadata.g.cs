@@ -39,5 +39,6 @@ namespace DId
         public ListMyAgentsResponseAgentVariant2Metadata()
         {
         }
+
     }
 }

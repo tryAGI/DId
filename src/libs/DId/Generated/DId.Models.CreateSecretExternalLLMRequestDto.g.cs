@@ -42,6 +42,13 @@ namespace DId
         /// <summary>
         /// 
         /// </summary>
+        public global::DId.CreateSecretExternalLLMRequestDtoOpenAIConfiguration PickOpenAIConfiguration() => IsOpenAIConfiguration
+            ? OpenAIConfiguration!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'OpenAIConfiguration' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::DId.CreateSecretExternalLLMRequestDtoVariant2? CreateSecretExternalLLMRequestDtoVariant2 { get; init; }
 #else
@@ -68,6 +75,13 @@ namespace DId
             value = CreateSecretExternalLLMRequestDtoVariant2;
             return IsCreateSecretExternalLLMRequestDtoVariant2;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::DId.CreateSecretExternalLLMRequestDtoVariant2 PickCreateSecretExternalLLMRequestDtoVariant2() => IsCreateSecretExternalLLMRequestDtoVariant2
+            ? CreateSecretExternalLLMRequestDtoVariant2!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'CreateSecretExternalLLMRequestDtoVariant2' but the value was {ToString()}.");
         /// <summary>
         /// 
         /// </summary>

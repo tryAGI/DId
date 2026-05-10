@@ -42,6 +42,13 @@ namespace DId
         /// <summary>
         /// 
         /// </summary>
+        public global::DId.LLMConfigCreateDtoVariant1 PickLLMConfigCreateDtoVariant1() => IsLLMConfigCreateDtoVariant1
+            ? LLMConfigCreateDtoVariant1!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'LLMConfigCreateDtoVariant1' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::DId.LLMConfigCreateDtoVariant2? LLMConfigCreateDtoVariant2 { get; init; }
 #else
@@ -68,6 +75,13 @@ namespace DId
             value = LLMConfigCreateDtoVariant2;
             return IsLLMConfigCreateDtoVariant2;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::DId.LLMConfigCreateDtoVariant2 PickLLMConfigCreateDtoVariant2() => IsLLMConfigCreateDtoVariant2
+            ? LLMConfigCreateDtoVariant2!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'LLMConfigCreateDtoVariant2' but the value was {ToString()}.");
 
         /// <summary>
         /// 
@@ -102,6 +116,13 @@ namespace DId
         /// <summary>
         /// 
         /// </summary>
+        public global::DId.LLMConfigCreateDtoVariant3 PickLLMConfigCreateDtoVariant3() => IsLLMConfigCreateDtoVariant3
+            ? LLMConfigCreateDtoVariant3!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'LLMConfigCreateDtoVariant3' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::DId.LLMConfigCreateDtoVariant4? LLMConfigCreateDtoVariant4 { get; init; }
 #else
@@ -128,6 +149,13 @@ namespace DId
             value = LLMConfigCreateDtoVariant4;
             return IsLLMConfigCreateDtoVariant4;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::DId.LLMConfigCreateDtoVariant4 PickLLMConfigCreateDtoVariant4() => IsLLMConfigCreateDtoVariant4
+            ? LLMConfigCreateDtoVariant4!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'LLMConfigCreateDtoVariant4' but the value was {ToString()}.");
 
         /// <summary>
         /// 
@@ -162,6 +190,13 @@ namespace DId
         /// <summary>
         /// 
         /// </summary>
+        public global::DId.LLMConfigCreateDtoVariant5 PickLLMConfigCreateDtoVariant5() => IsLLMConfigCreateDtoVariant5
+            ? LLMConfigCreateDtoVariant5!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'LLMConfigCreateDtoVariant5' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::DId.LLMConfigCreateDtoVariant6? LLMConfigCreateDtoVariant6 { get; init; }
 #else
@@ -188,6 +223,13 @@ namespace DId
             value = LLMConfigCreateDtoVariant6;
             return IsLLMConfigCreateDtoVariant6;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::DId.LLMConfigCreateDtoVariant6 PickLLMConfigCreateDtoVariant6() => IsLLMConfigCreateDtoVariant6
+            ? LLMConfigCreateDtoVariant6!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'LLMConfigCreateDtoVariant6' but the value was {ToString()}.");
         /// <summary>
         /// 
         /// </summary>

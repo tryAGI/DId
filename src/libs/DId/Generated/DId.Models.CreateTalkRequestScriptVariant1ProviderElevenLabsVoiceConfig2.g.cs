@@ -128,5 +128,6 @@ namespace DId
         public CreateTalkRequestScriptVariant1ProviderElevenLabsVoiceConfig2()
         {
         }
+
     }
 }

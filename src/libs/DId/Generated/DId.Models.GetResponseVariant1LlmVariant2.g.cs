@@ -100,5 +100,6 @@ namespace DId
         public GetResponseVariant1LlmVariant2()
         {
         }
+
     }
 }

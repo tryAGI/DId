@@ -129,5 +129,6 @@ namespace DId
         public CreateSecretAzureOpenAIRequestDto()
         {
         }
+
     }
 }

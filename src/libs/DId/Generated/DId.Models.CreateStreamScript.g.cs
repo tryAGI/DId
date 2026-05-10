@@ -42,6 +42,13 @@ namespace DId
         /// <summary>
         /// 
         /// </summary>
+        public global::DId.CreateStreamScriptText PickText() => IsText
+            ? Text!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Text' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::DId.CreateStreamScriptAudio? Audio { get; init; }
 #else
@@ -68,6 +75,13 @@ namespace DId
             value = Audio;
             return IsAudio;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::DId.CreateStreamScriptAudio PickAudio() => IsAudio
+            ? Audio!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Audio' but the value was {ToString()}.");
         /// <summary>
         /// 
         /// </summary>

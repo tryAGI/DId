@@ -243,5 +243,6 @@ namespace DId
         public GetSceneResponseDto()
         {
         }
+
     }
 }

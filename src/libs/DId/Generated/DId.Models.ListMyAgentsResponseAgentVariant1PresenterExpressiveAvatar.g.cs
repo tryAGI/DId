@@ -77,5 +77,6 @@ namespace DId
         public ListMyAgentsResponseAgentVariant1PresenterExpressiveAvatar()
         {
         }
+
     }
 }
