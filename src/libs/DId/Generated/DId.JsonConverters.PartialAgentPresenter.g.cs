@@ -92,6 +92,7 @@ namespace DId.JsonConverters
             {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::DId.PartialAgentPresenterPhotoAvatar), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::DId.PartialAgentPresenterPhotoAvatar> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::DId.PartialAgentPresenterPhotoAvatar).Name}");
                     photoAvatar = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -102,9 +103,13 @@ namespace DId.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (photoAvatar == null && videoAvatar == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::DId.PartialAgentPresenterVideoAvatar), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::DId.PartialAgentPresenterVideoAvatar> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::DId.PartialAgentPresenterVideoAvatar).Name}");
                     videoAvatar = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);

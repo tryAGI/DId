@@ -75,6 +75,7 @@ namespace DId.JsonConverters
             {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::DId.AnyOf<global::DId.CreateIceCandidateStreamRequestVariant1Variant1, object>), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::DId.AnyOf<global::DId.CreateIceCandidateStreamRequestVariant1Variant1, object>> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::DId.AnyOf<global::DId.CreateIceCandidateStreamRequestVariant1Variant1, object>).Name}");
                     createIceCandidateStreamRequestVariant1 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -85,9 +86,13 @@ namespace DId.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (createIceCandidateStreamRequestVariant1 == null && createIceCandidateStreamRequestVariant2 == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::DId.CreateIceCandidateStreamRequestVariant2), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::DId.CreateIceCandidateStreamRequestVariant2> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::DId.CreateIceCandidateStreamRequestVariant2).Name}");
                     createIceCandidateStreamRequestVariant2 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);

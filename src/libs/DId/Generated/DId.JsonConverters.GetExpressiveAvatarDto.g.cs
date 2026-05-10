@@ -75,6 +75,7 @@ namespace DId.JsonConverters
             {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::DId.AllOf<global::DId.GetExpressiveAvatarDtoVariant1Variant1, object>), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::DId.AllOf<global::DId.GetExpressiveAvatarDtoVariant1Variant1, object>> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::DId.AllOf<global::DId.GetExpressiveAvatarDtoVariant1Variant1, object>).Name}");
                     getExpressiveAvatarDtoVariant1 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -85,9 +86,13 @@ namespace DId.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (getExpressiveAvatarDtoVariant1 == null && getExpressiveAvatarDtoVariant2 == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::DId.GetExpressiveAvatarDtoVariant2), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::DId.GetExpressiveAvatarDtoVariant2> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::DId.GetExpressiveAvatarDtoVariant2).Name}");
                     getExpressiveAvatarDtoVariant2 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
