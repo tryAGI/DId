@@ -144,5 +144,6 @@ namespace DId
         public UpdateRatingResponse()
         {
         }
+
     }
 }

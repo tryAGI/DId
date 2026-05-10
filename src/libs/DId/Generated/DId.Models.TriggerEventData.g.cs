@@ -42,6 +42,13 @@ namespace DId
         /// <summary>
         /// 
         /// </summary>
+        public global::DId.ChatEndEventData PickChatEnd() => IsChatEnd
+            ? ChatEnd!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'ChatEnd' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::DId.TriggerEventDataVariant2? TriggerEventDataVariant2 { get; init; }
 #else
@@ -68,6 +75,13 @@ namespace DId
             value = TriggerEventDataVariant2;
             return IsTriggerEventDataVariant2;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::DId.TriggerEventDataVariant2 PickTriggerEventDataVariant2() => IsTriggerEventDataVariant2
+            ? TriggerEventDataVariant2!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'TriggerEventDataVariant2' but the value was {ToString()}.");
         /// <summary>
         /// 
         /// </summary>

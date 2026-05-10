@@ -92,5 +92,6 @@ namespace DId
         public CreateClipStreamRequestPresenterConfigCropVariant2Rectangle()
         {
         }
+
     }
 }

@@ -69,5 +69,6 @@ namespace DId
         public GetClipResponseConfig2()
         {
         }
+
     }
 }

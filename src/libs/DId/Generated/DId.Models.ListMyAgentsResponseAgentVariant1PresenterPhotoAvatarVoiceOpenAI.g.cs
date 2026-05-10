@@ -80,5 +80,6 @@ namespace DId
         public ListMyAgentsResponseAgentVariant1PresenterPhotoAvatarVoiceOpenAI()
         {
         }
+
     }
 }

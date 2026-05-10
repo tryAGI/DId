@@ -40,6 +40,13 @@ namespace DId
         }
 
         /// <summary>
+        /// 
+        /// </summary>
+        public global::DId.PartialAgentPresenterPhotoAvatar PickPhotoAvatar() => IsPhotoAvatar
+            ? PhotoAvatar!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'PhotoAvatar' but the value was {ToString()}.");
+
+        /// <summary>
         /// Make all properties in T optional
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -68,6 +75,13 @@ namespace DId
             value = VideoAvatar;
             return IsVideoAvatar;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::DId.PartialAgentPresenterVideoAvatar PickVideoAvatar() => IsVideoAvatar
+            ? VideoAvatar!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'VideoAvatar' but the value was {ToString()}.");
         /// <summary>
         /// 
         /// </summary>

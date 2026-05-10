@@ -64,5 +64,6 @@ namespace DId
         public KnowledgeCreateDto()
         {
         }
+
     }
 }

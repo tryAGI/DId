@@ -48,5 +48,6 @@ namespace DId
         public GetAvatarResponseDtoCreationNotes()
         {
         }
+
     }
 }

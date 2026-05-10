@@ -79,5 +79,6 @@ namespace DId
         public GetExpressiveAvatarDtoVariant2SentimentVariant1VoiceOpenAIVoiceConfig()
         {
         }
+
     }
 }

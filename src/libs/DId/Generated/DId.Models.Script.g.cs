@@ -42,6 +42,13 @@ namespace DId
         /// <summary>
         /// 
         /// </summary>
+        public global::DId.ScriptVariant1 PickScriptVariant1() => IsScriptVariant1
+            ? ScriptVariant1!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'ScriptVariant1' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::DId.ScriptVariant2? ScriptVariant2 { get; init; }
 #else
@@ -68,6 +75,13 @@ namespace DId
             value = ScriptVariant2;
             return IsScriptVariant2;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::DId.ScriptVariant2 PickScriptVariant2() => IsScriptVariant2
+            ? ScriptVariant2!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'ScriptVariant2' but the value was {ToString()}.");
         /// <summary>
         /// 
         /// </summary>

@@ -116,5 +116,6 @@ namespace DId
         public CustomAuthOauth2Config()
         {
         }
+
     }
 }

@@ -116,5 +116,6 @@ namespace DId
         public AgentCreateDtoLlmVariant2CustomOAuth2()
         {
         }
+
     }
 }

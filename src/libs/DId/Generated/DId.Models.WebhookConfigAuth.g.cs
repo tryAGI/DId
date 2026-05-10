@@ -40,5 +40,6 @@ namespace DId
         public WebhookConfigAuth()
         {
         }
+
     }
 }

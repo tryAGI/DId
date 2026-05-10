@@ -40,6 +40,13 @@ namespace DId
         }
 
         /// <summary>
+        /// 
+        /// </summary>
+        public global::DId.AssetDtoVariant1 PickAssetDtoVariant1() => IsAssetDtoVariant1
+            ? AssetDtoVariant1!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'AssetDtoVariant1' but the value was {ToString()}.");
+
+        /// <summary>
         /// DTO for updating an existing asset
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -68,6 +75,13 @@ namespace DId
             value = AssetDtoVariant2;
             return IsAssetDtoVariant2;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::DId.AssetDtoVariant2 PickAssetDtoVariant2() => IsAssetDtoVariant2
+            ? AssetDtoVariant2!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'AssetDtoVariant2' but the value was {ToString()}.");
         /// <summary>
         /// 
         /// </summary>

@@ -52,5 +52,6 @@ namespace DId
         public AnimationErrorVariant6()
         {
         }
+
     }
 }

@@ -99,5 +99,6 @@ namespace DId
         public GetAnimationsResponseAnimationConfig()
         {
         }
+
     }
 }

@@ -42,6 +42,13 @@ namespace DId
         /// <summary>
         /// 
         /// </summary>
+        public global::DId.TextToSpeechProvidersMicrosoft PickMicrosoft() => IsMicrosoft
+            ? Microsoft!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Microsoft' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::DId.TextToSpeechProvidersElevenLabs? ElevenLabs { get; init; }
 #else
@@ -68,6 +75,13 @@ namespace DId
             value = ElevenLabs;
             return IsElevenLabs;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::DId.TextToSpeechProvidersElevenLabs PickElevenLabs() => IsElevenLabs
+            ? ElevenLabs!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'ElevenLabs' but the value was {ToString()}.");
 
         /// <summary>
         /// 
@@ -102,6 +116,13 @@ namespace DId
         /// <summary>
         /// 
         /// </summary>
+        public global::DId.TextToSpeechProvidersAmazon PickAmazon() => IsAmazon
+            ? Amazon!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Amazon' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::DId.TextToSpeechProvidersGoogle? Google { get; init; }
 #else
@@ -132,6 +153,13 @@ namespace DId
         /// <summary>
         /// 
         /// </summary>
+        public global::DId.TextToSpeechProvidersGoogle PickGoogle() => IsGoogle
+            ? Google!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Google' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::DId.TextToSpeechProvidersOpenAI? OpenAI { get; init; }
 #else
@@ -158,6 +186,13 @@ namespace DId
             value = OpenAI;
             return IsOpenAI;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::DId.TextToSpeechProvidersOpenAI PickOpenAI() => IsOpenAI
+            ? OpenAI!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'OpenAI' but the value was {ToString()}.");
         /// <summary>
         /// 
         /// </summary>

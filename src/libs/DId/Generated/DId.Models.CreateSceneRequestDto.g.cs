@@ -127,5 +127,6 @@ namespace DId
         public CreateSceneRequestDto()
         {
         }
+
     }
 }

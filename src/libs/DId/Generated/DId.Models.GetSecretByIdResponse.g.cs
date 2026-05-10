@@ -102,5 +102,6 @@ namespace DId
         public GetSecretByIdResponse()
         {
         }
+
     }
 }

@@ -80,5 +80,6 @@ namespace DId
         public ExpressiveAvatarExpressionDtoVariant1VoiceOpenAI()
         {
         }
+
     }
 }

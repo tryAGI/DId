@@ -42,6 +42,13 @@ namespace DId
         /// <summary>
         /// 
         /// </summary>
+        public global::DId.ToolResultOutputVariant1 PickToolResultOutputVariant1() => IsToolResultOutputVariant1
+            ? ToolResultOutputVariant1!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'ToolResultOutputVariant1' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::DId.ToolResultOutputVariant2? ToolResultOutputVariant2 { get; init; }
 #else
@@ -68,6 +75,13 @@ namespace DId
             value = ToolResultOutputVariant2;
             return IsToolResultOutputVariant2;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::DId.ToolResultOutputVariant2 PickToolResultOutputVariant2() => IsToolResultOutputVariant2
+            ? ToolResultOutputVariant2!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'ToolResultOutputVariant2' but the value was {ToString()}.");
         /// <summary>
         /// 
         /// </summary>

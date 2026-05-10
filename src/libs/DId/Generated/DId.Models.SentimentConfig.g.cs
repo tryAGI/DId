@@ -51,5 +51,6 @@ namespace DId
         public SentimentConfig()
         {
         }
+
     }
 }

@@ -95,5 +95,6 @@ namespace DId
         public UpdateSecretRequestUpdateSecretRequest1BasicAuthentication()
         {
         }
+
     }
 }

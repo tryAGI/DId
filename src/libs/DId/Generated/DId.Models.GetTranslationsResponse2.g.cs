@@ -49,5 +49,6 @@ namespace DId
         public GetTranslationsResponse2()
         {
         }
+
     }
 }

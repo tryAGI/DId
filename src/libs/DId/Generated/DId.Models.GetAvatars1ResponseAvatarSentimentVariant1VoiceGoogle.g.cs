@@ -56,5 +56,6 @@ namespace DId
         public GetAvatars1ResponseAvatarSentimentVariant1VoiceGoogle()
         {
         }
+
     }
 }

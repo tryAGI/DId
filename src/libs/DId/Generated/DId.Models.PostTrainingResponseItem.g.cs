@@ -83,5 +83,6 @@ namespace DId
         public PostTrainingResponseItem()
         {
         }
+
     }
 }

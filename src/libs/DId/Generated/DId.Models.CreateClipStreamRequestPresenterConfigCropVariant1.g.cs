@@ -42,5 +42,6 @@ namespace DId
         public CreateClipStreamRequestPresenterConfigCropVariant1()
         {
         }
+
     }
 }

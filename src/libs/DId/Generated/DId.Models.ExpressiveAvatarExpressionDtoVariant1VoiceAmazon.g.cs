@@ -70,5 +70,6 @@ namespace DId
         public ExpressiveAvatarExpressionDtoVariant1VoiceAmazon()
         {
         }
+
     }
 }

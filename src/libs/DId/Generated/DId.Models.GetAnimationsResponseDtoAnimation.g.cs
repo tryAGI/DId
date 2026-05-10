@@ -192,5 +192,6 @@ namespace DId
         public GetAnimationsResponseDtoAnimation()
         {
         }
+
     }
 }

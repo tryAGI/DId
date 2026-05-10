@@ -70,5 +70,6 @@ namespace DId
         public CreateClipRequestScriptVariant1ProviderAmazon2()
         {
         }
+
     }
 }

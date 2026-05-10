@@ -42,6 +42,13 @@ namespace DId
         /// <summary>
         /// 
         /// </summary>
+        public global::DId.CreateVideoStreamResponseVariant1 PickCreateVideoStreamResponseVariant1() => IsCreateVideoStreamResponseVariant1
+            ? CreateVideoStreamResponseVariant1!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'CreateVideoStreamResponseVariant1' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::DId.CreateVideoStreamResponseVariant2? CreateVideoStreamResponseVariant2 { get; init; }
 #else
@@ -68,6 +75,13 @@ namespace DId
             value = CreateVideoStreamResponseVariant2;
             return IsCreateVideoStreamResponseVariant2;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::DId.CreateVideoStreamResponseVariant2 PickCreateVideoStreamResponseVariant2() => IsCreateVideoStreamResponseVariant2
+            ? CreateVideoStreamResponseVariant2!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'CreateVideoStreamResponseVariant2' but the value was {ToString()}.");
         /// <summary>
         /// 
         /// </summary>

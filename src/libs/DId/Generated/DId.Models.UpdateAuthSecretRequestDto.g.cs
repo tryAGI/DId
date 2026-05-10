@@ -42,6 +42,13 @@ namespace DId
         /// <summary>
         /// 
         /// </summary>
+        public global::DId.UpdateAuthSecretRequestDtoBasicAuthentication PickBasicAuthentication() => IsBasicAuthentication
+            ? BasicAuthentication!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'BasicAuthentication' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::DId.UpdateAuthSecretRequestDtoBearerToken? BearerToken { get; init; }
 #else
@@ -72,6 +79,13 @@ namespace DId
         /// <summary>
         /// 
         /// </summary>
+        public global::DId.UpdateAuthSecretRequestDtoBearerToken PickBearerToken() => IsBearerToken
+            ? BearerToken!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'BearerToken' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::DId.UpdateAuthSecretRequestDtoApiKey? ApiKey { get; init; }
 #else
@@ -98,6 +112,13 @@ namespace DId
             value = ApiKey;
             return IsApiKey;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::DId.UpdateAuthSecretRequestDtoApiKey PickApiKey() => IsApiKey
+            ? ApiKey!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'ApiKey' but the value was {ToString()}.");
         /// <summary>
         /// 
         /// </summary>

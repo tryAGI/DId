@@ -80,5 +80,6 @@ namespace DId
         public CreateClipStreamRequestScriptVariant1ProviderOpenAI2()
         {
         }
+
     }
 }

@@ -79,5 +79,6 @@ namespace DId
         public CreateTalkStreamRequestScriptVariant1ProviderMicrosoftVoiceConfig2()
         {
         }
+
     }
 }

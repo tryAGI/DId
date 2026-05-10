@@ -56,5 +56,6 @@ namespace DId
         public CreateTalkRequestScriptVariant1ProviderGoogle()
         {
         }
+
     }
 }

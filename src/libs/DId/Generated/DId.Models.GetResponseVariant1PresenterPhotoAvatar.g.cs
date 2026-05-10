@@ -93,5 +93,6 @@ namespace DId
         public GetResponseVariant1PresenterPhotoAvatar()
         {
         }
+
     }
 }

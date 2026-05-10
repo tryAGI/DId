@@ -80,5 +80,6 @@ namespace DId
         public CreateClipRequestScriptVariant1ProviderMicrosoft2()
         {
         }
+
     }
 }

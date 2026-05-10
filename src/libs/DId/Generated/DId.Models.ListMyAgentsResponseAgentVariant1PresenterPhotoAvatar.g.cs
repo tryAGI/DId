@@ -93,5 +93,6 @@ namespace DId
         public ListMyAgentsResponseAgentVariant1PresenterPhotoAvatar()
         {
         }
+
     }
 }

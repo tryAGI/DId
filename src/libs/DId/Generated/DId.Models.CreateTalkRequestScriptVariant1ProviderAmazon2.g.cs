@@ -70,5 +70,6 @@ namespace DId
         public CreateTalkRequestScriptVariant1ProviderAmazon2()
         {
         }
+
     }
 }

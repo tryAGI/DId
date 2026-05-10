@@ -112,5 +112,6 @@ namespace DId
         public UpdateSecretRequestVariant2OpenAIConfiguration()
         {
         }
+
     }
 }

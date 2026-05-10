@@ -50,5 +50,6 @@ namespace DId
         public GetFaceDetectionResponse()
         {
         }
+
     }
 }

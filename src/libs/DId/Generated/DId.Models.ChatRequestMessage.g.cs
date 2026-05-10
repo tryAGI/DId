@@ -61,5 +61,6 @@ namespace DId
         public ChatRequestMessage()
         {
         }
+
     }
 }

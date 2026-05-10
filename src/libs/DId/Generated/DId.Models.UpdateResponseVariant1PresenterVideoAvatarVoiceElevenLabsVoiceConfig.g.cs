@@ -128,5 +128,6 @@ namespace DId
         public UpdateResponseVariant1PresenterVideoAvatarVoiceElevenLabsVoiceConfig()
         {
         }
+
     }
 }

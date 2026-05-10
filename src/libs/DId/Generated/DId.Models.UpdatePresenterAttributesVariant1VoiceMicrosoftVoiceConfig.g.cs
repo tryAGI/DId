@@ -79,5 +79,6 @@ namespace DId
         public UpdatePresenterAttributesVariant1VoiceMicrosoftVoiceConfig()
         {
         }
+
     }
 }

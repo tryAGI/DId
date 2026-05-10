@@ -79,5 +79,6 @@ namespace DId
         public GetAvatarByIdResponseSentimentVariant1VoiceMicrosoftVoiceConfig()
         {
         }
+
     }
 }
