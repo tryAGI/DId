@@ -179,6 +179,11 @@ namespace DId
         /// <summary>
         /// 
         /// </summary>
+        public static LLMConfig FromOpenAI(global::DId.LLMConfigOpenAI? value) => new LLMConfig(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator LLMConfig(global::DId.LLMConfigVariant2 value) => new LLMConfig((global::DId.LLMConfigVariant2?)value);
 
         /// <summary>
@@ -193,6 +198,11 @@ namespace DId
         {
             LLMConfigVariant2 = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static LLMConfig FromLLMConfigVariant2(global::DId.LLMConfigVariant2? value) => new LLMConfig(value);
 
         /// <summary>
         /// 
@@ -215,6 +225,11 @@ namespace DId
         /// <summary>
         /// 
         /// </summary>
+        public static LLMConfig FromLLMConfigVariant3(global::DId.LLMConfigVariant3? value) => new LLMConfig(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator LLMConfig(global::DId.LLMConfigDId value) => new LLMConfig((global::DId.LLMConfigDId?)value);
 
         /// <summary>
@@ -233,6 +248,11 @@ namespace DId
         /// <summary>
         /// 
         /// </summary>
+        public static LLMConfig FromDId(global::DId.LLMConfigDId? value) => new LLMConfig(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator LLMConfig(global::DId.LLMConfigGoogle value) => new LLMConfig((global::DId.LLMConfigGoogle?)value);
 
         /// <summary>
@@ -247,6 +267,11 @@ namespace DId
         {
             Google = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static LLMConfig FromGoogle(global::DId.LLMConfigGoogle? value) => new LLMConfig(value);
 
         /// <summary>
         /// 

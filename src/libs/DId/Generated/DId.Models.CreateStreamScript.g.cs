@@ -89,6 +89,11 @@ namespace DId
         /// <summary>
         /// 
         /// </summary>
+        public static CreateStreamScript FromText(global::DId.CreateStreamScriptText? value) => new CreateStreamScript(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator CreateStreamScript(global::DId.CreateStreamScriptAudio value) => new CreateStreamScript((global::DId.CreateStreamScriptAudio?)value);
 
         /// <summary>
@@ -103,6 +108,11 @@ namespace DId
         {
             Audio = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static CreateStreamScript FromAudio(global::DId.CreateStreamScriptAudio? value) => new CreateStreamScript(value);
 
         /// <summary>
         /// 

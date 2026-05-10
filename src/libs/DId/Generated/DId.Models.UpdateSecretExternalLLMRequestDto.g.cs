@@ -89,6 +89,11 @@ namespace DId
         /// <summary>
         /// 
         /// </summary>
+        public static UpdateSecretExternalLLMRequestDto FromOpenAIConfiguration(global::DId.UpdateSecretExternalLLMRequestDtoOpenAIConfiguration? value) => new UpdateSecretExternalLLMRequestDto(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator UpdateSecretExternalLLMRequestDto(global::DId.UpdateSecretExternalLLMRequestDtoVariant2 value) => new UpdateSecretExternalLLMRequestDto((global::DId.UpdateSecretExternalLLMRequestDtoVariant2?)value);
 
         /// <summary>
@@ -103,6 +108,11 @@ namespace DId
         {
             UpdateSecretExternalLLMRequestDtoVariant2 = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static UpdateSecretExternalLLMRequestDto FromUpdateSecretExternalLLMRequestDtoVariant2(global::DId.UpdateSecretExternalLLMRequestDtoVariant2? value) => new UpdateSecretExternalLLMRequestDto(value);
 
         /// <summary>
         /// 

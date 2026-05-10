@@ -89,6 +89,11 @@ namespace DId
         /// <summary>
         /// 
         /// </summary>
+        public static CreateExpressiveResponseDto FromCreateExpressiveResponseDtoVariant1(global::DId.CreateExpressiveResponseDtoVariant1? value) => new CreateExpressiveResponseDto(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator CreateExpressiveResponseDto(global::DId.CreateExpressiveResponseDtoVariant2 value) => new CreateExpressiveResponseDto((global::DId.CreateExpressiveResponseDtoVariant2?)value);
 
         /// <summary>
@@ -103,6 +108,11 @@ namespace DId
         {
             CreateExpressiveResponseDtoVariant2 = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static CreateExpressiveResponseDto FromCreateExpressiveResponseDtoVariant2(global::DId.CreateExpressiveResponseDtoVariant2? value) => new CreateExpressiveResponseDto(value);
 
         /// <summary>
         /// 

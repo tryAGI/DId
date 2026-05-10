@@ -89,6 +89,11 @@ namespace DId
         /// <summary>
         /// 
         /// </summary>
+        public static GetExpressiveAvatarDto FromGetExpressiveAvatarDtoVariant1(global::DId.AllOf<global::DId.GetExpressiveAvatarDtoVariant1Variant1, object>? value) => new GetExpressiveAvatarDto(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator GetExpressiveAvatarDto(global::DId.GetExpressiveAvatarDtoVariant2 value) => new GetExpressiveAvatarDto((global::DId.GetExpressiveAvatarDtoVariant2?)value);
 
         /// <summary>
@@ -103,6 +108,11 @@ namespace DId
         {
             GetExpressiveAvatarDtoVariant2 = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static GetExpressiveAvatarDto FromGetExpressiveAvatarDtoVariant2(global::DId.GetExpressiveAvatarDtoVariant2? value) => new GetExpressiveAvatarDto(value);
 
         /// <summary>
         /// 

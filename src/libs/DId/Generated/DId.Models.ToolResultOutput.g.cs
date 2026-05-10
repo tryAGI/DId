@@ -89,6 +89,11 @@ namespace DId
         /// <summary>
         /// 
         /// </summary>
+        public static ToolResultOutput FromToolResultOutputVariant1(global::DId.ToolResultOutputVariant1? value) => new ToolResultOutput(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator ToolResultOutput(global::DId.ToolResultOutputVariant2 value) => new ToolResultOutput((global::DId.ToolResultOutputVariant2?)value);
 
         /// <summary>
@@ -103,6 +108,11 @@ namespace DId
         {
             ToolResultOutputVariant2 = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static ToolResultOutput FromToolResultOutputVariant2(global::DId.ToolResultOutputVariant2? value) => new ToolResultOutput(value);
 
         /// <summary>
         /// 

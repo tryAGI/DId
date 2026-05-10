@@ -89,6 +89,11 @@ namespace DId
         /// <summary>
         /// 
         /// </summary>
+        public static ExportDto FromExportDtoVariant1(global::DId.ExportDtoVariant1? value) => new ExportDto(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator ExportDto(global::DId.ExportDtoVariant2 value) => new ExportDto((global::DId.ExportDtoVariant2?)value);
 
         /// <summary>
@@ -103,6 +108,11 @@ namespace DId
         {
             ExportDtoVariant2 = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static ExportDto FromExportDtoVariant2(global::DId.ExportDtoVariant2? value) => new ExportDto(value);
 
         /// <summary>
         /// 

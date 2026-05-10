@@ -119,6 +119,11 @@ namespace DId
         /// <summary>
         /// 
         /// </summary>
+        public static AgentsTextToSpeechProviders FromMicrosoft(global::DId.AgentsTextToSpeechProvidersMicrosoft? value) => new AgentsTextToSpeechProviders(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator AgentsTextToSpeechProviders(global::DId.AgentsTextToSpeechProvidersElevenLabs value) => new AgentsTextToSpeechProviders((global::DId.AgentsTextToSpeechProvidersElevenLabs?)value);
 
         /// <summary>
@@ -137,6 +142,11 @@ namespace DId
         /// <summary>
         /// 
         /// </summary>
+        public static AgentsTextToSpeechProviders FromElevenLabs(global::DId.AgentsTextToSpeechProvidersElevenLabs? value) => new AgentsTextToSpeechProviders(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator AgentsTextToSpeechProviders(global::DId.AgentsTextToSpeechProvidersOpenAI value) => new AgentsTextToSpeechProviders((global::DId.AgentsTextToSpeechProvidersOpenAI?)value);
 
         /// <summary>
@@ -151,6 +161,11 @@ namespace DId
         {
             OpenAI = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static AgentsTextToSpeechProviders FromOpenAI(global::DId.AgentsTextToSpeechProvidersOpenAI? value) => new AgentsTextToSpeechProviders(value);
 
         /// <summary>
         /// 

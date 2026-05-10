@@ -89,6 +89,11 @@ namespace DId
         /// <summary>
         /// 
         /// </summary>
+        public static CreateDocumentDto FromCreateDocumentDtoVariant1(global::DId.CreateDocumentDtoVariant1? value) => new CreateDocumentDto(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator CreateDocumentDto(global::DId.CreateDocumentDtoVariant2 value) => new CreateDocumentDto((global::DId.CreateDocumentDtoVariant2?)value);
 
         /// <summary>
@@ -103,6 +108,11 @@ namespace DId
         {
             CreateDocumentDtoVariant2 = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static CreateDocumentDto FromCreateDocumentDtoVariant2(global::DId.CreateDocumentDtoVariant2? value) => new CreateDocumentDto(value);
 
         /// <summary>
         /// 

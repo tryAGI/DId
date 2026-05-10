@@ -119,6 +119,11 @@ namespace DId
         /// <summary>
         /// 
         /// </summary>
+        public static CreateSecretRequestDto FromBasicAuthentication(global::DId.CreateSecretRequestDtoBasicAuthentication? value) => new CreateSecretRequestDto(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator CreateSecretRequestDto(global::DId.CreateSecretRequestDtoBearerToken value) => new CreateSecretRequestDto((global::DId.CreateSecretRequestDtoBearerToken?)value);
 
         /// <summary>
@@ -137,6 +142,11 @@ namespace DId
         /// <summary>
         /// 
         /// </summary>
+        public static CreateSecretRequestDto FromBearerToken(global::DId.CreateSecretRequestDtoBearerToken? value) => new CreateSecretRequestDto(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator CreateSecretRequestDto(global::DId.CreateSecretRequestDtoApiKey value) => new CreateSecretRequestDto((global::DId.CreateSecretRequestDtoApiKey?)value);
 
         /// <summary>
@@ -151,6 +161,11 @@ namespace DId
         {
             ApiKey = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static CreateSecretRequestDto FromApiKey(global::DId.CreateSecretRequestDtoApiKey? value) => new CreateSecretRequestDto(value);
 
         /// <summary>
         /// 

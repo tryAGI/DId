@@ -89,6 +89,11 @@ namespace DId
         /// <summary>
         /// 
         /// </summary>
+        public static AssetDto FromAssetDtoVariant1(global::DId.AssetDtoVariant1? value) => new AssetDto(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator AssetDto(global::DId.AssetDtoVariant2 value) => new AssetDto((global::DId.AssetDtoVariant2?)value);
 
         /// <summary>
@@ -103,6 +108,11 @@ namespace DId
         {
             AssetDtoVariant2 = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static AssetDto FromAssetDtoVariant2(global::DId.AssetDtoVariant2? value) => new AssetDto(value);
 
         /// <summary>
         /// 
