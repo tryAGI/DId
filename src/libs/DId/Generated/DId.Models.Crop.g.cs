@@ -89,6 +89,11 @@ namespace DId
         /// <summary>
         /// 
         /// </summary>
+        public static Crop FromCropVariant1(global::DId.CropVariant1? value) => new Crop(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator Crop(global::DId.CropVariant2 value) => new Crop((global::DId.CropVariant2?)value);
 
         /// <summary>
@@ -103,6 +108,11 @@ namespace DId
         {
             CropVariant2 = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static Crop FromCropVariant2(global::DId.CropVariant2? value) => new Crop(value);
 
         /// <summary>
         /// 

@@ -119,6 +119,11 @@ namespace DId
         /// <summary>
         /// 
         /// </summary>
+        public static AgentPresenter FromPhotoAvatar(global::DId.AgentPresenterPhotoAvatar? value) => new AgentPresenter(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator AgentPresenter(global::DId.AgentPresenterVideoAvatar value) => new AgentPresenter((global::DId.AgentPresenterVideoAvatar?)value);
 
         /// <summary>
@@ -137,6 +142,11 @@ namespace DId
         /// <summary>
         /// 
         /// </summary>
+        public static AgentPresenter FromVideoAvatar(global::DId.AgentPresenterVideoAvatar? value) => new AgentPresenter(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator AgentPresenter(global::DId.AgentPresenterExpressiveAvatar value) => new AgentPresenter((global::DId.AgentPresenterExpressiveAvatar?)value);
 
         /// <summary>
@@ -151,6 +161,11 @@ namespace DId
         {
             ExpressiveAvatar = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static AgentPresenter FromExpressiveAvatar(global::DId.AgentPresenterExpressiveAvatar? value) => new AgentPresenter(value);
 
         /// <summary>
         /// 

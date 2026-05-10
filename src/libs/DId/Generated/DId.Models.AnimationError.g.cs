@@ -209,6 +209,11 @@ namespace DId
         /// <summary>
         /// 
         /// </summary>
+        public static AnimationError FromAnimationErrorVariant1(global::DId.AnimationErrorVariant1? value) => new AnimationError(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator AnimationError(global::DId.AnimationErrorVariant2 value) => new AnimationError((global::DId.AnimationErrorVariant2?)value);
 
         /// <summary>
@@ -223,6 +228,11 @@ namespace DId
         {
             AnimationErrorVariant2 = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static AnimationError FromAnimationErrorVariant2(global::DId.AnimationErrorVariant2? value) => new AnimationError(value);
 
         /// <summary>
         /// 
@@ -245,6 +255,11 @@ namespace DId
         /// <summary>
         /// 
         /// </summary>
+        public static AnimationError FromAnimationErrorVariant3(global::DId.AnimationErrorVariant3? value) => new AnimationError(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator AnimationError(global::DId.AnimationErrorVariant4 value) => new AnimationError((global::DId.AnimationErrorVariant4?)value);
 
         /// <summary>
@@ -259,6 +274,11 @@ namespace DId
         {
             AnimationErrorVariant4 = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static AnimationError FromAnimationErrorVariant4(global::DId.AnimationErrorVariant4? value) => new AnimationError(value);
 
         /// <summary>
         /// 
@@ -281,6 +301,11 @@ namespace DId
         /// <summary>
         /// 
         /// </summary>
+        public static AnimationError FromAnimationErrorVariant5(global::DId.AnimationErrorVariant5? value) => new AnimationError(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator AnimationError(global::DId.AnimationErrorVariant6 value) => new AnimationError((global::DId.AnimationErrorVariant6?)value);
 
         /// <summary>
@@ -295,6 +320,11 @@ namespace DId
         {
             AnimationErrorVariant6 = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static AnimationError FromAnimationErrorVariant6(global::DId.AnimationErrorVariant6? value) => new AnimationError(value);
 
         /// <summary>
         /// 

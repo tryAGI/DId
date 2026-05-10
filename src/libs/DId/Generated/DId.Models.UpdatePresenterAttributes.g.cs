@@ -119,6 +119,11 @@ namespace DId
         /// <summary>
         /// 
         /// </summary>
+        public static UpdatePresenterAttributes FromUpdatePresenterAttributesVariant1(global::DId.UpdatePresenterAttributesVariant1? value) => new UpdatePresenterAttributes(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator UpdatePresenterAttributes(global::DId.UpdatePresenterAttributesVariant2 value) => new UpdatePresenterAttributes((global::DId.UpdatePresenterAttributesVariant2?)value);
 
         /// <summary>
@@ -137,6 +142,11 @@ namespace DId
         /// <summary>
         /// 
         /// </summary>
+        public static UpdatePresenterAttributes FromUpdatePresenterAttributesVariant2(global::DId.UpdatePresenterAttributesVariant2? value) => new UpdatePresenterAttributes(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator UpdatePresenterAttributes(global::DId.UpdatePresenterAttributesVariant3 value) => new UpdatePresenterAttributes((global::DId.UpdatePresenterAttributesVariant3?)value);
 
         /// <summary>
@@ -151,6 +161,11 @@ namespace DId
         {
             UpdatePresenterAttributesVariant3 = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static UpdatePresenterAttributes FromUpdatePresenterAttributesVariant3(global::DId.UpdatePresenterAttributesVariant3? value) => new UpdatePresenterAttributes(value);
 
         /// <summary>
         /// 

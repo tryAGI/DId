@@ -119,6 +119,11 @@ namespace DId
         /// <summary>
         /// 
         /// </summary>
+        public static UpdateAuthSecretRequestDto FromBasicAuthentication(global::DId.UpdateAuthSecretRequestDtoBasicAuthentication? value) => new UpdateAuthSecretRequestDto(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator UpdateAuthSecretRequestDto(global::DId.UpdateAuthSecretRequestDtoBearerToken value) => new UpdateAuthSecretRequestDto((global::DId.UpdateAuthSecretRequestDtoBearerToken?)value);
 
         /// <summary>
@@ -137,6 +142,11 @@ namespace DId
         /// <summary>
         /// 
         /// </summary>
+        public static UpdateAuthSecretRequestDto FromBearerToken(global::DId.UpdateAuthSecretRequestDtoBearerToken? value) => new UpdateAuthSecretRequestDto(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator UpdateAuthSecretRequestDto(global::DId.UpdateAuthSecretRequestDtoApiKey value) => new UpdateAuthSecretRequestDto((global::DId.UpdateAuthSecretRequestDtoApiKey?)value);
 
         /// <summary>
@@ -151,6 +161,11 @@ namespace DId
         {
             ApiKey = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static UpdateAuthSecretRequestDto FromApiKey(global::DId.UpdateAuthSecretRequestDtoApiKey? value) => new UpdateAuthSecretRequestDto(value);
 
         /// <summary>
         /// 

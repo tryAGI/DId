@@ -179,6 +179,11 @@ namespace DId
         /// <summary>
         /// 
         /// </summary>
+        public static JSONValue FromJSONValueVariant1(string? value) => new JSONValue(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator JSONValue(double value) => new JSONValue((double?)value);
 
         /// <summary>
@@ -193,6 +198,11 @@ namespace DId
         {
             JSONValueVariant2 = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static JSONValue FromJSONValueVariant2(double? value) => new JSONValue(value);
 
         /// <summary>
         /// 
@@ -215,6 +225,11 @@ namespace DId
         /// <summary>
         /// 
         /// </summary>
+        public static JSONValue FromJSONValueVariant3(bool? value) => new JSONValue(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator JSONValue(global::System.Collections.Generic.Dictionary<string, global::DId.JSONValue?> value) => new JSONValue((global::System.Collections.Generic.Dictionary<string, global::DId.JSONValue?>?)value);
 
         /// <summary>
@@ -229,6 +244,11 @@ namespace DId
         {
             JSONValueVariant5 = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static JSONValue FromJSONValueVariant5(global::System.Collections.Generic.Dictionary<string, global::DId.JSONValue?>? value) => new JSONValue(value);
 
         /// <summary>
         /// 

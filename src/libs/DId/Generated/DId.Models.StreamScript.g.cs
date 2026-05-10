@@ -89,6 +89,11 @@ namespace DId
         /// <summary>
         /// 
         /// </summary>
+        public static StreamScript FromStreamScriptVariant1(global::DId.StreamScriptVariant1? value) => new StreamScript(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator StreamScript(global::DId.StreamScriptVariant2 value) => new StreamScript((global::DId.StreamScriptVariant2?)value);
 
         /// <summary>
@@ -103,6 +108,11 @@ namespace DId
         {
             StreamScriptVariant2 = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static StreamScript FromStreamScriptVariant2(global::DId.StreamScriptVariant2? value) => new StreamScript(value);
 
         /// <summary>
         /// 

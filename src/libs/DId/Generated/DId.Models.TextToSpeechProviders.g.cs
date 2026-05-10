@@ -179,6 +179,11 @@ namespace DId
         /// <summary>
         /// 
         /// </summary>
+        public static TextToSpeechProviders FromMicrosoft(global::DId.TextToSpeechProvidersMicrosoft? value) => new TextToSpeechProviders(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator TextToSpeechProviders(global::DId.TextToSpeechProvidersElevenLabs value) => new TextToSpeechProviders((global::DId.TextToSpeechProvidersElevenLabs?)value);
 
         /// <summary>
@@ -193,6 +198,11 @@ namespace DId
         {
             ElevenLabs = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static TextToSpeechProviders FromElevenLabs(global::DId.TextToSpeechProvidersElevenLabs? value) => new TextToSpeechProviders(value);
 
         /// <summary>
         /// 
@@ -215,6 +225,11 @@ namespace DId
         /// <summary>
         /// 
         /// </summary>
+        public static TextToSpeechProviders FromAmazon(global::DId.TextToSpeechProvidersAmazon? value) => new TextToSpeechProviders(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator TextToSpeechProviders(global::DId.TextToSpeechProvidersGoogle value) => new TextToSpeechProviders((global::DId.TextToSpeechProvidersGoogle?)value);
 
         /// <summary>
@@ -233,6 +248,11 @@ namespace DId
         /// <summary>
         /// 
         /// </summary>
+        public static TextToSpeechProviders FromGoogle(global::DId.TextToSpeechProvidersGoogle? value) => new TextToSpeechProviders(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator TextToSpeechProviders(global::DId.TextToSpeechProvidersOpenAI value) => new TextToSpeechProviders((global::DId.TextToSpeechProvidersOpenAI?)value);
 
         /// <summary>
@@ -247,6 +267,11 @@ namespace DId
         {
             OpenAI = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static TextToSpeechProviders FromOpenAI(global::DId.TextToSpeechProvidersOpenAI? value) => new TextToSpeechProviders(value);
 
         /// <summary>
         /// 

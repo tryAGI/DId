@@ -89,6 +89,11 @@ namespace DId
         /// <summary>
         /// 
         /// </summary>
+        public static CreateIceCandidateStreamRequest FromCreateIceCandidateStreamRequestVariant1(global::DId.AnyOf<global::DId.CreateIceCandidateStreamRequestVariant1Variant1, object>? value) => new CreateIceCandidateStreamRequest(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator CreateIceCandidateStreamRequest(global::DId.CreateIceCandidateStreamRequestVariant2 value) => new CreateIceCandidateStreamRequest((global::DId.CreateIceCandidateStreamRequestVariant2?)value);
 
         /// <summary>
@@ -103,6 +108,11 @@ namespace DId
         {
             CreateIceCandidateStreamRequestVariant2 = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static CreateIceCandidateStreamRequest FromCreateIceCandidateStreamRequestVariant2(global::DId.CreateIceCandidateStreamRequestVariant2? value) => new CreateIceCandidateStreamRequest(value);
 
         /// <summary>
         /// 

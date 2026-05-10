@@ -89,6 +89,11 @@ namespace DId
         /// <summary>
         /// 
         /// </summary>
+        public static PartialAgentPresenter FromPhotoAvatar(global::DId.PartialAgentPresenterPhotoAvatar? value) => new PartialAgentPresenter(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator PartialAgentPresenter(global::DId.PartialAgentPresenterVideoAvatar value) => new PartialAgentPresenter((global::DId.PartialAgentPresenterVideoAvatar?)value);
 
         /// <summary>
@@ -103,6 +108,11 @@ namespace DId
         {
             VideoAvatar = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static PartialAgentPresenter FromVideoAvatar(global::DId.PartialAgentPresenterVideoAvatar? value) => new PartialAgentPresenter(value);
 
         /// <summary>
         /// 

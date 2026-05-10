@@ -89,6 +89,11 @@ namespace DId
         /// <summary>
         /// 
         /// </summary>
+        public static AgentResponseDto FromAgentResponseDtoVariant1(global::DId.AgentResponseDtoVariant1? value) => new AgentResponseDto(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator AgentResponseDto(global::DId.AgentResponseDtoVariant2 value) => new AgentResponseDto((global::DId.AgentResponseDtoVariant2?)value);
 
         /// <summary>
@@ -103,6 +108,11 @@ namespace DId
         {
             AgentResponseDtoVariant2 = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static AgentResponseDto FromAgentResponseDtoVariant2(global::DId.AgentResponseDtoVariant2? value) => new AgentResponseDto(value);
 
         /// <summary>
         /// 

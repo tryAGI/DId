@@ -209,6 +209,11 @@ namespace DId
         /// <summary>
         /// 
         /// </summary>
+        public static LLMConfigCreateDto FromLLMConfigCreateDtoVariant1(global::DId.LLMConfigCreateDtoVariant1? value) => new LLMConfigCreateDto(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator LLMConfigCreateDto(global::DId.LLMConfigCreateDtoVariant2 value) => new LLMConfigCreateDto((global::DId.LLMConfigCreateDtoVariant2?)value);
 
         /// <summary>
@@ -223,6 +228,11 @@ namespace DId
         {
             LLMConfigCreateDtoVariant2 = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static LLMConfigCreateDto FromLLMConfigCreateDtoVariant2(global::DId.LLMConfigCreateDtoVariant2? value) => new LLMConfigCreateDto(value);
 
         /// <summary>
         /// 
@@ -245,6 +255,11 @@ namespace DId
         /// <summary>
         /// 
         /// </summary>
+        public static LLMConfigCreateDto FromLLMConfigCreateDtoVariant3(global::DId.LLMConfigCreateDtoVariant3? value) => new LLMConfigCreateDto(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator LLMConfigCreateDto(global::DId.LLMConfigCreateDtoVariant4 value) => new LLMConfigCreateDto((global::DId.LLMConfigCreateDtoVariant4?)value);
 
         /// <summary>
@@ -259,6 +274,11 @@ namespace DId
         {
             LLMConfigCreateDtoVariant4 = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static LLMConfigCreateDto FromLLMConfigCreateDtoVariant4(global::DId.LLMConfigCreateDtoVariant4? value) => new LLMConfigCreateDto(value);
 
         /// <summary>
         /// 
@@ -281,6 +301,11 @@ namespace DId
         /// <summary>
         /// 
         /// </summary>
+        public static LLMConfigCreateDto FromLLMConfigCreateDtoVariant5(global::DId.LLMConfigCreateDtoVariant5? value) => new LLMConfigCreateDto(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator LLMConfigCreateDto(global::DId.LLMConfigCreateDtoVariant6 value) => new LLMConfigCreateDto((global::DId.LLMConfigCreateDtoVariant6?)value);
 
         /// <summary>
@@ -295,6 +320,11 @@ namespace DId
         {
             LLMConfigCreateDtoVariant6 = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static LLMConfigCreateDto FromLLMConfigCreateDtoVariant6(global::DId.LLMConfigCreateDtoVariant6? value) => new LLMConfigCreateDto(value);
 
         /// <summary>
         /// 

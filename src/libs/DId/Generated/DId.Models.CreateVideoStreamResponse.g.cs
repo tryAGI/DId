@@ -89,6 +89,11 @@ namespace DId
         /// <summary>
         /// 
         /// </summary>
+        public static CreateVideoStreamResponse FromCreateVideoStreamResponseVariant1(global::DId.CreateVideoStreamResponseVariant1? value) => new CreateVideoStreamResponse(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator CreateVideoStreamResponse(global::DId.CreateVideoStreamResponseVariant2 value) => new CreateVideoStreamResponse((global::DId.CreateVideoStreamResponseVariant2?)value);
 
         /// <summary>
@@ -103,6 +108,11 @@ namespace DId
         {
             CreateVideoStreamResponseVariant2 = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static CreateVideoStreamResponse FromCreateVideoStreamResponseVariant2(global::DId.CreateVideoStreamResponseVariant2? value) => new CreateVideoStreamResponse(value);
 
         /// <summary>
         /// 

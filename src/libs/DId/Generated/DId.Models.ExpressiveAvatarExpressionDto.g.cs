@@ -89,6 +89,11 @@ namespace DId
         /// <summary>
         /// 
         /// </summary>
+        public static ExpressiveAvatarExpressionDto FromExpressiveAvatarExpressionDtoVariant1(global::DId.ExpressiveAvatarExpressionDtoVariant1? value) => new ExpressiveAvatarExpressionDto(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public ExpressiveAvatarExpressionDto(
             global::DId.ExpressiveAvatarExpressionDtoVariant1? expressiveAvatarExpressionDtoVariant1,
             object? expressiveAvatarExpressionDtoVariant2

@@ -89,6 +89,11 @@ namespace DId
         /// <summary>
         /// 
         /// </summary>
+        public static ExpressiveVideoBackground FromExpressiveVideoBackgroundVariant1(global::DId.ExpressiveVideoBackgroundVariant1? value) => new ExpressiveVideoBackground(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator ExpressiveVideoBackground(global::DId.ExpressiveVideoBackgroundVariant2 value) => new ExpressiveVideoBackground((global::DId.ExpressiveVideoBackgroundVariant2?)value);
 
         /// <summary>
@@ -103,6 +108,11 @@ namespace DId
         {
             ExpressiveVideoBackgroundVariant2 = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static ExpressiveVideoBackground FromExpressiveVideoBackgroundVariant2(global::DId.ExpressiveVideoBackgroundVariant2? value) => new ExpressiveVideoBackground(value);
 
         /// <summary>
         /// 

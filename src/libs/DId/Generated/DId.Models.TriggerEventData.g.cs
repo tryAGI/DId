@@ -89,6 +89,11 @@ namespace DId
         /// <summary>
         /// 
         /// </summary>
+        public static TriggerEventData FromChatEnd(global::DId.ChatEndEventData? value) => new TriggerEventData(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator TriggerEventData(global::DId.TriggerEventDataVariant2 value) => new TriggerEventData((global::DId.TriggerEventDataVariant2?)value);
 
         /// <summary>
@@ -103,6 +108,11 @@ namespace DId
         {
             TriggerEventDataVariant2 = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static TriggerEventData FromTriggerEventDataVariant2(global::DId.TriggerEventDataVariant2? value) => new TriggerEventData(value);
 
         /// <summary>
         /// 

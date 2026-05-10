@@ -89,6 +89,11 @@ namespace DId
         /// <summary>
         /// 
         /// </summary>
+        public static CustomAuthConfig FromBasic(global::DId.CustomAuthConfigBasic? value) => new CustomAuthConfig(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator CustomAuthConfig(global::DId.CustomAuthConfigOAuth2 value) => new CustomAuthConfig((global::DId.CustomAuthConfigOAuth2?)value);
 
         /// <summary>
@@ -103,6 +108,11 @@ namespace DId
         {
             OAuth2 = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static CustomAuthConfig FromOAuth2(global::DId.CustomAuthConfigOAuth2? value) => new CustomAuthConfig(value);
 
         /// <summary>
         /// 

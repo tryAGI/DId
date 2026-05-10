@@ -89,6 +89,11 @@ namespace DId
         /// <summary>
         /// 
         /// </summary>
+        public static LogoDto FromLogoDtoVariant1(global::DId.LogoDtoVariant1? value) => new LogoDto(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator LogoDto(bool value) => new LogoDto((bool?)value);
 
         /// <summary>
@@ -103,6 +108,11 @@ namespace DId
         {
             LogoDtoVariant2 = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static LogoDto FromLogoDtoVariant2(bool? value) => new LogoDto(value);
 
         /// <summary>
         /// 

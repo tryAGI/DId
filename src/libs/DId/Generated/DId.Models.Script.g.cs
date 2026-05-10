@@ -89,6 +89,11 @@ namespace DId
         /// <summary>
         /// 
         /// </summary>
+        public static Script FromScriptVariant1(global::DId.ScriptVariant1? value) => new Script(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator Script(global::DId.ScriptVariant2 value) => new Script((global::DId.ScriptVariant2?)value);
 
         /// <summary>
@@ -103,6 +108,11 @@ namespace DId
         {
             ScriptVariant2 = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static Script FromScriptVariant2(global::DId.ScriptVariant2? value) => new Script(value);
 
         /// <summary>
         /// 
