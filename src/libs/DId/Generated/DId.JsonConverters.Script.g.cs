@@ -82,6 +82,7 @@ namespace DId.JsonConverters
             {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::DId.ScriptVariant1), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::DId.ScriptVariant1> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::DId.ScriptVariant1).Name}");
                     scriptVariant1 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -92,9 +93,13 @@ namespace DId.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (scriptVariant1 == null && scriptVariant2 == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::DId.ScriptVariant2), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::DId.ScriptVariant2> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::DId.ScriptVariant2).Name}");
                     scriptVariant2 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
