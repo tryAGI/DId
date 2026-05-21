@@ -29,6 +29,26 @@ namespace DId
         /// <summary>
         /// 
         /// </summary>
+        public bool TryPickCreateExpressiveResponseDtoVariant1(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::DId.CreateExpressiveResponseDtoVariant1? value)
+        {
+            value = CreateExpressiveResponseDtoVariant1;
+            return IsCreateExpressiveResponseDtoVariant1;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::DId.CreateExpressiveResponseDtoVariant1 PickCreateExpressiveResponseDtoVariant1() => IsCreateExpressiveResponseDtoVariant1
+            ? CreateExpressiveResponseDtoVariant1!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'CreateExpressiveResponseDtoVariant1' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::DId.CreateExpressiveResponseDtoVariant2? CreateExpressiveResponseDtoVariant2 { get; init; }
 #else
@@ -42,6 +62,26 @@ namespace DId
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(CreateExpressiveResponseDtoVariant2))]
 #endif
         public bool IsCreateExpressiveResponseDtoVariant2 => CreateExpressiveResponseDtoVariant2 != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickCreateExpressiveResponseDtoVariant2(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::DId.CreateExpressiveResponseDtoVariant2? value)
+        {
+            value = CreateExpressiveResponseDtoVariant2;
+            return IsCreateExpressiveResponseDtoVariant2;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::DId.CreateExpressiveResponseDtoVariant2 PickCreateExpressiveResponseDtoVariant2() => IsCreateExpressiveResponseDtoVariant2
+            ? CreateExpressiveResponseDtoVariant2!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'CreateExpressiveResponseDtoVariant2' but the value was {ToString()}.");
         /// <summary>
         /// 
         /// </summary>
@@ -63,6 +103,11 @@ namespace DId
         /// <summary>
         /// 
         /// </summary>
+        public static CreateExpressiveResponseDto FromCreateExpressiveResponseDtoVariant1(global::DId.CreateExpressiveResponseDtoVariant1? value) => new CreateExpressiveResponseDto(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator CreateExpressiveResponseDto(global::DId.CreateExpressiveResponseDtoVariant2 value) => new CreateExpressiveResponseDto((global::DId.CreateExpressiveResponseDtoVariant2?)value);
 
         /// <summary>
@@ -77,6 +122,11 @@ namespace DId
         {
             CreateExpressiveResponseDtoVariant2 = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static CreateExpressiveResponseDto FromCreateExpressiveResponseDtoVariant2(global::DId.CreateExpressiveResponseDtoVariant2? value) => new CreateExpressiveResponseDto(value);
 
         /// <summary>
         /// 
@@ -118,8 +168,8 @@ namespace DId
         /// 
         /// </summary>
         public TResult? Match<TResult>(
-            global::System.Func<global::DId.CreateExpressiveResponseDtoVariant1?, TResult>? createExpressiveResponseDtoVariant1 = null,
-            global::System.Func<global::DId.CreateExpressiveResponseDtoVariant2?, TResult>? createExpressiveResponseDtoVariant2 = null,
+            global::System.Func<global::DId.CreateExpressiveResponseDtoVariant1, TResult>? createExpressiveResponseDtoVariant1 = null,
+            global::System.Func<global::DId.CreateExpressiveResponseDtoVariant2, TResult>? createExpressiveResponseDtoVariant2 = null,
             bool validate = true)
         {
             if (validate)
@@ -143,8 +193,32 @@ namespace DId
         /// 
         /// </summary>
         public void Match(
-            global::System.Action<global::DId.CreateExpressiveResponseDtoVariant1?>? createExpressiveResponseDtoVariant1 = null,
-            global::System.Action<global::DId.CreateExpressiveResponseDtoVariant2?>? createExpressiveResponseDtoVariant2 = null,
+            global::System.Action<global::DId.CreateExpressiveResponseDtoVariant1>? createExpressiveResponseDtoVariant1 = null,
+
+            global::System.Action<global::DId.CreateExpressiveResponseDtoVariant2>? createExpressiveResponseDtoVariant2 = null,
+            bool validate = true)
+        {
+            if (validate)
+            {
+                Validate();
+            }
+
+            if (IsCreateExpressiveResponseDtoVariant1)
+            {
+                createExpressiveResponseDtoVariant1?.Invoke(CreateExpressiveResponseDtoVariant1!);
+            }
+            else if (IsCreateExpressiveResponseDtoVariant2)
+            {
+                createExpressiveResponseDtoVariant2?.Invoke(CreateExpressiveResponseDtoVariant2!);
+            }
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public void Switch(
+            global::System.Action<global::DId.CreateExpressiveResponseDtoVariant1>? createExpressiveResponseDtoVariant1 = null,
+            global::System.Action<global::DId.CreateExpressiveResponseDtoVariant2>? createExpressiveResponseDtoVariant2 = null,
             bool validate = true)
         {
             if (validate)

@@ -59,5 +59,6 @@ namespace DId
         public CreateResponseVariant1Error()
         {
         }
+
     }
 }

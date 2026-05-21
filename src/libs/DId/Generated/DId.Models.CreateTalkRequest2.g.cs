@@ -122,5 +122,6 @@ namespace DId
         public CreateTalkRequest2()
         {
         }
+
     }
 }

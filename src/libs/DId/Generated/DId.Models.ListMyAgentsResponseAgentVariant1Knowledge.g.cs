@@ -68,5 +68,6 @@ namespace DId
         public ListMyAgentsResponseAgentVariant1Knowledge()
         {
         }
+
     }
 }

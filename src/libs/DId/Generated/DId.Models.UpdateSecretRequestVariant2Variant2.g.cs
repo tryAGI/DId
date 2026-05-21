@@ -126,5 +126,6 @@ namespace DId
         public UpdateSecretRequestVariant2Variant2()
         {
         }
+
     }
 }

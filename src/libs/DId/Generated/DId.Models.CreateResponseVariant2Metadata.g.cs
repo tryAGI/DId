@@ -39,5 +39,6 @@ namespace DId
         public CreateResponseVariant2Metadata()
         {
         }
+
     }
 }

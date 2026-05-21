@@ -74,5 +74,6 @@ namespace DId
         public ScriptVariant2()
         {
         }
+
     }
 }

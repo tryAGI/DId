@@ -71,5 +71,6 @@ namespace DId
         public CreateSecretRequestCreateSecretRequest1BearerToken()
         {
         }
+
     }
 }

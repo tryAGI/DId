@@ -92,5 +92,6 @@ namespace DId
         public ClipPresenterConfigCropVariant2Rectangle()
         {
         }
+
     }
 }

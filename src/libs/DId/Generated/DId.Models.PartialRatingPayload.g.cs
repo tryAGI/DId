@@ -88,5 +88,6 @@ namespace DId
         public PartialRatingPayload()
         {
         }
+
     }
 }

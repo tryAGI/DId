@@ -147,5 +147,6 @@ namespace DId
         public AgentCreateDto()
         {
         }
+
     }
 }

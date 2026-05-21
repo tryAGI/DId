@@ -29,6 +29,26 @@ namespace DId
         /// <summary>
         /// 
         /// </summary>
+        public bool TryPickAnimationErrorVariant1(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::DId.AnimationErrorVariant1? value)
+        {
+            value = AnimationErrorVariant1;
+            return IsAnimationErrorVariant1;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::DId.AnimationErrorVariant1 PickAnimationErrorVariant1() => IsAnimationErrorVariant1
+            ? AnimationErrorVariant1!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'AnimationErrorVariant1' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::DId.AnimationErrorVariant2? AnimationErrorVariant2 { get; init; }
 #else
@@ -42,6 +62,26 @@ namespace DId
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AnimationErrorVariant2))]
 #endif
         public bool IsAnimationErrorVariant2 => AnimationErrorVariant2 != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickAnimationErrorVariant2(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::DId.AnimationErrorVariant2? value)
+        {
+            value = AnimationErrorVariant2;
+            return IsAnimationErrorVariant2;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::DId.AnimationErrorVariant2 PickAnimationErrorVariant2() => IsAnimationErrorVariant2
+            ? AnimationErrorVariant2!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'AnimationErrorVariant2' but the value was {ToString()}.");
 
         /// <summary>
         /// 
@@ -63,6 +103,26 @@ namespace DId
         /// <summary>
         /// 
         /// </summary>
+        public bool TryPickAnimationErrorVariant3(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::DId.AnimationErrorVariant3? value)
+        {
+            value = AnimationErrorVariant3;
+            return IsAnimationErrorVariant3;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::DId.AnimationErrorVariant3 PickAnimationErrorVariant3() => IsAnimationErrorVariant3
+            ? AnimationErrorVariant3!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'AnimationErrorVariant3' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::DId.AnimationErrorVariant4? AnimationErrorVariant4 { get; init; }
 #else
@@ -76,6 +136,26 @@ namespace DId
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AnimationErrorVariant4))]
 #endif
         public bool IsAnimationErrorVariant4 => AnimationErrorVariant4 != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickAnimationErrorVariant4(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::DId.AnimationErrorVariant4? value)
+        {
+            value = AnimationErrorVariant4;
+            return IsAnimationErrorVariant4;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::DId.AnimationErrorVariant4 PickAnimationErrorVariant4() => IsAnimationErrorVariant4
+            ? AnimationErrorVariant4!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'AnimationErrorVariant4' but the value was {ToString()}.");
 
         /// <summary>
         /// 
@@ -97,6 +177,26 @@ namespace DId
         /// <summary>
         /// 
         /// </summary>
+        public bool TryPickAnimationErrorVariant5(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::DId.AnimationErrorVariant5? value)
+        {
+            value = AnimationErrorVariant5;
+            return IsAnimationErrorVariant5;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::DId.AnimationErrorVariant5 PickAnimationErrorVariant5() => IsAnimationErrorVariant5
+            ? AnimationErrorVariant5!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'AnimationErrorVariant5' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::DId.AnimationErrorVariant6? AnimationErrorVariant6 { get; init; }
 #else
@@ -110,6 +210,26 @@ namespace DId
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AnimationErrorVariant6))]
 #endif
         public bool IsAnimationErrorVariant6 => AnimationErrorVariant6 != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickAnimationErrorVariant6(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::DId.AnimationErrorVariant6? value)
+        {
+            value = AnimationErrorVariant6;
+            return IsAnimationErrorVariant6;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::DId.AnimationErrorVariant6 PickAnimationErrorVariant6() => IsAnimationErrorVariant6
+            ? AnimationErrorVariant6!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'AnimationErrorVariant6' but the value was {ToString()}.");
         /// <summary>
         /// 
         /// </summary>
@@ -127,6 +247,11 @@ namespace DId
         {
             AnimationErrorVariant1 = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static AnimationError FromAnimationErrorVariant1(global::DId.AnimationErrorVariant1? value) => new AnimationError(value);
 
         /// <summary>
         /// 
@@ -149,6 +274,11 @@ namespace DId
         /// <summary>
         /// 
         /// </summary>
+        public static AnimationError FromAnimationErrorVariant2(global::DId.AnimationErrorVariant2? value) => new AnimationError(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator AnimationError(global::DId.AnimationErrorVariant3 value) => new AnimationError((global::DId.AnimationErrorVariant3?)value);
 
         /// <summary>
@@ -163,6 +293,11 @@ namespace DId
         {
             AnimationErrorVariant3 = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static AnimationError FromAnimationErrorVariant3(global::DId.AnimationErrorVariant3? value) => new AnimationError(value);
 
         /// <summary>
         /// 
@@ -185,6 +320,11 @@ namespace DId
         /// <summary>
         /// 
         /// </summary>
+        public static AnimationError FromAnimationErrorVariant4(global::DId.AnimationErrorVariant4? value) => new AnimationError(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator AnimationError(global::DId.AnimationErrorVariant5 value) => new AnimationError((global::DId.AnimationErrorVariant5?)value);
 
         /// <summary>
@@ -203,6 +343,11 @@ namespace DId
         /// <summary>
         /// 
         /// </summary>
+        public static AnimationError FromAnimationErrorVariant5(global::DId.AnimationErrorVariant5? value) => new AnimationError(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator AnimationError(global::DId.AnimationErrorVariant6 value) => new AnimationError((global::DId.AnimationErrorVariant6?)value);
 
         /// <summary>
@@ -217,6 +362,11 @@ namespace DId
         {
             AnimationErrorVariant6 = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static AnimationError FromAnimationErrorVariant6(global::DId.AnimationErrorVariant6? value) => new AnimationError(value);
 
         /// <summary>
         /// 
@@ -274,12 +424,12 @@ namespace DId
         /// 
         /// </summary>
         public TResult? Match<TResult>(
-            global::System.Func<global::DId.AnimationErrorVariant1?, TResult>? animationErrorVariant1 = null,
-            global::System.Func<global::DId.AnimationErrorVariant2?, TResult>? animationErrorVariant2 = null,
-            global::System.Func<global::DId.AnimationErrorVariant3?, TResult>? animationErrorVariant3 = null,
-            global::System.Func<global::DId.AnimationErrorVariant4?, TResult>? animationErrorVariant4 = null,
-            global::System.Func<global::DId.AnimationErrorVariant5?, TResult>? animationErrorVariant5 = null,
-            global::System.Func<global::DId.AnimationErrorVariant6?, TResult>? animationErrorVariant6 = null,
+            global::System.Func<global::DId.AnimationErrorVariant1, TResult>? animationErrorVariant1 = null,
+            global::System.Func<global::DId.AnimationErrorVariant2, TResult>? animationErrorVariant2 = null,
+            global::System.Func<global::DId.AnimationErrorVariant3, TResult>? animationErrorVariant3 = null,
+            global::System.Func<global::DId.AnimationErrorVariant4, TResult>? animationErrorVariant4 = null,
+            global::System.Func<global::DId.AnimationErrorVariant5, TResult>? animationErrorVariant5 = null,
+            global::System.Func<global::DId.AnimationErrorVariant6, TResult>? animationErrorVariant6 = null,
             bool validate = true)
         {
             if (validate)
@@ -319,12 +469,60 @@ namespace DId
         /// 
         /// </summary>
         public void Match(
-            global::System.Action<global::DId.AnimationErrorVariant1?>? animationErrorVariant1 = null,
-            global::System.Action<global::DId.AnimationErrorVariant2?>? animationErrorVariant2 = null,
-            global::System.Action<global::DId.AnimationErrorVariant3?>? animationErrorVariant3 = null,
-            global::System.Action<global::DId.AnimationErrorVariant4?>? animationErrorVariant4 = null,
-            global::System.Action<global::DId.AnimationErrorVariant5?>? animationErrorVariant5 = null,
-            global::System.Action<global::DId.AnimationErrorVariant6?>? animationErrorVariant6 = null,
+            global::System.Action<global::DId.AnimationErrorVariant1>? animationErrorVariant1 = null,
+
+            global::System.Action<global::DId.AnimationErrorVariant2>? animationErrorVariant2 = null,
+
+            global::System.Action<global::DId.AnimationErrorVariant3>? animationErrorVariant3 = null,
+
+            global::System.Action<global::DId.AnimationErrorVariant4>? animationErrorVariant4 = null,
+
+            global::System.Action<global::DId.AnimationErrorVariant5>? animationErrorVariant5 = null,
+
+            global::System.Action<global::DId.AnimationErrorVariant6>? animationErrorVariant6 = null,
+            bool validate = true)
+        {
+            if (validate)
+            {
+                Validate();
+            }
+
+            if (IsAnimationErrorVariant1)
+            {
+                animationErrorVariant1?.Invoke(AnimationErrorVariant1!);
+            }
+            else if (IsAnimationErrorVariant2)
+            {
+                animationErrorVariant2?.Invoke(AnimationErrorVariant2!);
+            }
+            else if (IsAnimationErrorVariant3)
+            {
+                animationErrorVariant3?.Invoke(AnimationErrorVariant3!);
+            }
+            else if (IsAnimationErrorVariant4)
+            {
+                animationErrorVariant4?.Invoke(AnimationErrorVariant4!);
+            }
+            else if (IsAnimationErrorVariant5)
+            {
+                animationErrorVariant5?.Invoke(AnimationErrorVariant5!);
+            }
+            else if (IsAnimationErrorVariant6)
+            {
+                animationErrorVariant6?.Invoke(AnimationErrorVariant6!);
+            }
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public void Switch(
+            global::System.Action<global::DId.AnimationErrorVariant1>? animationErrorVariant1 = null,
+            global::System.Action<global::DId.AnimationErrorVariant2>? animationErrorVariant2 = null,
+            global::System.Action<global::DId.AnimationErrorVariant3>? animationErrorVariant3 = null,
+            global::System.Action<global::DId.AnimationErrorVariant4>? animationErrorVariant4 = null,
+            global::System.Action<global::DId.AnimationErrorVariant5>? animationErrorVariant5 = null,
+            global::System.Action<global::DId.AnimationErrorVariant6>? animationErrorVariant6 = null,
             bool validate = true)
         {
             if (validate)

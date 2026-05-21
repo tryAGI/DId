@@ -105,5 +105,6 @@ namespace DId
         public CreateAvatarRequestDto()
         {
         }
+
     }
 }

@@ -77,6 +77,7 @@ namespace DId.JsonConverters
             {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::DId.CreateVideoStreamResponseVariant1), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::DId.CreateVideoStreamResponseVariant1> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::DId.CreateVideoStreamResponseVariant1).Name}");
                     createVideoStreamResponseVariant1 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -87,9 +88,13 @@ namespace DId.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (createVideoStreamResponseVariant1 == null && createVideoStreamResponseVariant2 == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::DId.CreateVideoStreamResponseVariant2), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::DId.CreateVideoStreamResponseVariant2> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::DId.CreateVideoStreamResponseVariant2).Name}");
                     createVideoStreamResponseVariant2 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);

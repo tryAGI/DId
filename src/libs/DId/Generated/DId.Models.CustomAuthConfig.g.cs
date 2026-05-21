@@ -29,6 +29,26 @@ namespace DId
         /// <summary>
         /// 
         /// </summary>
+        public bool TryPickBasic(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::DId.CustomAuthConfigBasic? value)
+        {
+            value = Basic;
+            return IsBasic;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::DId.CustomAuthConfigBasic PickBasic() => IsBasic
+            ? Basic!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Basic' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::DId.CustomAuthConfigOAuth2? OAuth2 { get; init; }
 #else
@@ -42,6 +62,26 @@ namespace DId
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(OAuth2))]
 #endif
         public bool IsOAuth2 => OAuth2 != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickOAuth2(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::DId.CustomAuthConfigOAuth2? value)
+        {
+            value = OAuth2;
+            return IsOAuth2;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::DId.CustomAuthConfigOAuth2 PickOAuth2() => IsOAuth2
+            ? OAuth2!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'OAuth2' but the value was {ToString()}.");
         /// <summary>
         /// 
         /// </summary>
@@ -63,6 +103,11 @@ namespace DId
         /// <summary>
         /// 
         /// </summary>
+        public static CustomAuthConfig FromBasic(global::DId.CustomAuthConfigBasic? value) => new CustomAuthConfig(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator CustomAuthConfig(global::DId.CustomAuthConfigOAuth2 value) => new CustomAuthConfig((global::DId.CustomAuthConfigOAuth2?)value);
 
         /// <summary>
@@ -77,6 +122,11 @@ namespace DId
         {
             OAuth2 = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static CustomAuthConfig FromOAuth2(global::DId.CustomAuthConfigOAuth2? value) => new CustomAuthConfig(value);
 
         /// <summary>
         /// 
@@ -118,8 +168,8 @@ namespace DId
         /// 
         /// </summary>
         public TResult? Match<TResult>(
-            global::System.Func<global::DId.CustomAuthConfigBasic?, TResult>? basic = null,
-            global::System.Func<global::DId.CustomAuthConfigOAuth2?, TResult>? oAuth2 = null,
+            global::System.Func<global::DId.CustomAuthConfigBasic, TResult>? basic = null,
+            global::System.Func<global::DId.CustomAuthConfigOAuth2, TResult>? oAuth2 = null,
             bool validate = true)
         {
             if (validate)
@@ -143,8 +193,32 @@ namespace DId
         /// 
         /// </summary>
         public void Match(
-            global::System.Action<global::DId.CustomAuthConfigBasic?>? basic = null,
-            global::System.Action<global::DId.CustomAuthConfigOAuth2?>? oAuth2 = null,
+            global::System.Action<global::DId.CustomAuthConfigBasic>? basic = null,
+
+            global::System.Action<global::DId.CustomAuthConfigOAuth2>? oAuth2 = null,
+            bool validate = true)
+        {
+            if (validate)
+            {
+                Validate();
+            }
+
+            if (IsBasic)
+            {
+                basic?.Invoke(Basic!);
+            }
+            else if (IsOAuth2)
+            {
+                oAuth2?.Invoke(OAuth2!);
+            }
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public void Switch(
+            global::System.Action<global::DId.CustomAuthConfigBasic>? basic = null,
+            global::System.Action<global::DId.CustomAuthConfigOAuth2>? oAuth2 = null,
             bool validate = true)
         {
             if (validate)

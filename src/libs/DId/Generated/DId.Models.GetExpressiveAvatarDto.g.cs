@@ -29,6 +29,26 @@ namespace DId
         /// <summary>
         /// 
         /// </summary>
+        public bool TryPickGetExpressiveAvatarDtoVariant1(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::DId.AllOf<global::DId.GetExpressiveAvatarDtoVariant1Variant1, object>? value)
+        {
+            value = GetExpressiveAvatarDtoVariant1;
+            return IsGetExpressiveAvatarDtoVariant1;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::DId.AllOf<global::DId.GetExpressiveAvatarDtoVariant1Variant1, object> PickGetExpressiveAvatarDtoVariant1() => IsGetExpressiveAvatarDtoVariant1
+            ? GetExpressiveAvatarDtoVariant1!.Value
+            : throw new global::System.InvalidOperationException($"Expected union variant 'GetExpressiveAvatarDtoVariant1' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::DId.GetExpressiveAvatarDtoVariant2? GetExpressiveAvatarDtoVariant2 { get; init; }
 #else
@@ -42,6 +62,26 @@ namespace DId
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(GetExpressiveAvatarDtoVariant2))]
 #endif
         public bool IsGetExpressiveAvatarDtoVariant2 => GetExpressiveAvatarDtoVariant2 != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickGetExpressiveAvatarDtoVariant2(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::DId.GetExpressiveAvatarDtoVariant2? value)
+        {
+            value = GetExpressiveAvatarDtoVariant2;
+            return IsGetExpressiveAvatarDtoVariant2;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::DId.GetExpressiveAvatarDtoVariant2 PickGetExpressiveAvatarDtoVariant2() => IsGetExpressiveAvatarDtoVariant2
+            ? GetExpressiveAvatarDtoVariant2!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'GetExpressiveAvatarDtoVariant2' but the value was {ToString()}.");
         /// <summary>
         /// 
         /// </summary>
@@ -63,6 +103,11 @@ namespace DId
         /// <summary>
         /// 
         /// </summary>
+        public static GetExpressiveAvatarDto FromGetExpressiveAvatarDtoVariant1(global::DId.AllOf<global::DId.GetExpressiveAvatarDtoVariant1Variant1, object>? value) => new GetExpressiveAvatarDto(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator GetExpressiveAvatarDto(global::DId.GetExpressiveAvatarDtoVariant2 value) => new GetExpressiveAvatarDto((global::DId.GetExpressiveAvatarDtoVariant2?)value);
 
         /// <summary>
@@ -77,6 +122,11 @@ namespace DId
         {
             GetExpressiveAvatarDtoVariant2 = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static GetExpressiveAvatarDto FromGetExpressiveAvatarDtoVariant2(global::DId.GetExpressiveAvatarDtoVariant2? value) => new GetExpressiveAvatarDto(value);
 
         /// <summary>
         /// 
@@ -119,7 +169,7 @@ namespace DId
         /// </summary>
         public TResult? Match<TResult>(
             global::System.Func<global::DId.AllOf<global::DId.GetExpressiveAvatarDtoVariant1Variant1, object>?, TResult>? getExpressiveAvatarDtoVariant1 = null,
-            global::System.Func<global::DId.GetExpressiveAvatarDtoVariant2?, TResult>? getExpressiveAvatarDtoVariant2 = null,
+            global::System.Func<global::DId.GetExpressiveAvatarDtoVariant2, TResult>? getExpressiveAvatarDtoVariant2 = null,
             bool validate = true)
         {
             if (validate)
@@ -144,7 +194,31 @@ namespace DId
         /// </summary>
         public void Match(
             global::System.Action<global::DId.AllOf<global::DId.GetExpressiveAvatarDtoVariant1Variant1, object>?>? getExpressiveAvatarDtoVariant1 = null,
-            global::System.Action<global::DId.GetExpressiveAvatarDtoVariant2?>? getExpressiveAvatarDtoVariant2 = null,
+
+            global::System.Action<global::DId.GetExpressiveAvatarDtoVariant2>? getExpressiveAvatarDtoVariant2 = null,
+            bool validate = true)
+        {
+            if (validate)
+            {
+                Validate();
+            }
+
+            if (IsGetExpressiveAvatarDtoVariant1)
+            {
+                getExpressiveAvatarDtoVariant1?.Invoke(GetExpressiveAvatarDtoVariant1!);
+            }
+            else if (IsGetExpressiveAvatarDtoVariant2)
+            {
+                getExpressiveAvatarDtoVariant2?.Invoke(GetExpressiveAvatarDtoVariant2!);
+            }
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public void Switch(
+            global::System.Action<global::DId.AllOf<global::DId.GetExpressiveAvatarDtoVariant1Variant1, object>?>? getExpressiveAvatarDtoVariant1 = null,
+            global::System.Action<global::DId.GetExpressiveAvatarDtoVariant2>? getExpressiveAvatarDtoVariant2 = null,
             bool validate = true)
         {
             if (validate)

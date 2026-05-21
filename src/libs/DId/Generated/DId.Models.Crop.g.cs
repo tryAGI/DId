@@ -27,6 +27,26 @@ namespace DId
         public bool IsCropVariant1 => CropVariant1 != null;
 
         /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickCropVariant1(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::DId.CropVariant1? value)
+        {
+            value = CropVariant1;
+            return IsCropVariant1;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::DId.CropVariant1 PickCropVariant1() => IsCropVariant1
+            ? CropVariant1!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'CropVariant1' but the value was {ToString()}.");
+
+        /// <summary>
         /// Custom crop
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -42,6 +62,26 @@ namespace DId
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(CropVariant2))]
 #endif
         public bool IsCropVariant2 => CropVariant2 != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickCropVariant2(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::DId.CropVariant2? value)
+        {
+            value = CropVariant2;
+            return IsCropVariant2;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::DId.CropVariant2 PickCropVariant2() => IsCropVariant2
+            ? CropVariant2!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'CropVariant2' but the value was {ToString()}.");
         /// <summary>
         /// 
         /// </summary>
@@ -63,6 +103,11 @@ namespace DId
         /// <summary>
         /// 
         /// </summary>
+        public static Crop FromCropVariant1(global::DId.CropVariant1? value) => new Crop(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator Crop(global::DId.CropVariant2 value) => new Crop((global::DId.CropVariant2?)value);
 
         /// <summary>
@@ -77,6 +122,11 @@ namespace DId
         {
             CropVariant2 = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static Crop FromCropVariant2(global::DId.CropVariant2? value) => new Crop(value);
 
         /// <summary>
         /// 
@@ -118,8 +168,8 @@ namespace DId
         /// 
         /// </summary>
         public TResult? Match<TResult>(
-            global::System.Func<global::DId.CropVariant1?, TResult>? cropVariant1 = null,
-            global::System.Func<global::DId.CropVariant2?, TResult>? cropVariant2 = null,
+            global::System.Func<global::DId.CropVariant1, TResult>? cropVariant1 = null,
+            global::System.Func<global::DId.CropVariant2, TResult>? cropVariant2 = null,
             bool validate = true)
         {
             if (validate)
@@ -143,8 +193,32 @@ namespace DId
         /// 
         /// </summary>
         public void Match(
-            global::System.Action<global::DId.CropVariant1?>? cropVariant1 = null,
-            global::System.Action<global::DId.CropVariant2?>? cropVariant2 = null,
+            global::System.Action<global::DId.CropVariant1>? cropVariant1 = null,
+
+            global::System.Action<global::DId.CropVariant2>? cropVariant2 = null,
+            bool validate = true)
+        {
+            if (validate)
+            {
+                Validate();
+            }
+
+            if (IsCropVariant1)
+            {
+                cropVariant1?.Invoke(CropVariant1!);
+            }
+            else if (IsCropVariant2)
+            {
+                cropVariant2?.Invoke(CropVariant2!);
+            }
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public void Switch(
+            global::System.Action<global::DId.CropVariant1>? cropVariant1 = null,
+            global::System.Action<global::DId.CropVariant2>? cropVariant2 = null,
             bool validate = true)
         {
             if (validate)

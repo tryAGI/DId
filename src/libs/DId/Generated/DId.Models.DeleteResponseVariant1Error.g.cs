@@ -59,5 +59,6 @@ namespace DId
         public DeleteResponseVariant1Error()
         {
         }
+
     }
 }

@@ -103,5 +103,6 @@ namespace DId
         public CreateTalkRequestConfig2()
         {
         }
+
     }
 }

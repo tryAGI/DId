@@ -39,5 +39,6 @@ namespace DId
         public CreateVideoStreamResponseVariant12()
         {
         }
+
     }
 }

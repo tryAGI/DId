@@ -79,5 +79,6 @@ namespace DId
         public ListMyAgentsResponseAgentVariant1PresenterExpressiveAvatarVoiceOpenAIVoiceConfig()
         {
         }
+
     }
 }

@@ -81,6 +81,7 @@ namespace DId.JsonConverters
             {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::DId.ChatEndEventData), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::DId.ChatEndEventData> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::DId.ChatEndEventData).Name}");
                     chatEnd = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -91,9 +92,13 @@ namespace DId.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (chatEnd == null && triggerEventDataVariant2 == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::DId.TriggerEventDataVariant2), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::DId.TriggerEventDataVariant2> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::DId.TriggerEventDataVariant2).Name}");
                     triggerEventDataVariant2 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);

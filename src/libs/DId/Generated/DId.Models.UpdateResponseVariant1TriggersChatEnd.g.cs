@@ -41,5 +41,6 @@ namespace DId
         public UpdateResponseVariant1TriggersChatEnd()
         {
         }
+
     }
 }

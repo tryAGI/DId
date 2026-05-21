@@ -223,6 +223,7 @@ namespace DId.JsonConverters
             {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::DId.LLMConfigCreateDtoVariant1), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::DId.LLMConfigCreateDtoVariant1> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::DId.LLMConfigCreateDtoVariant1).Name}");
                     lLMConfigCreateDtoVariant1 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -233,9 +234,13 @@ namespace DId.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (lLMConfigCreateDtoVariant1 == null && lLMConfigCreateDtoVariant2 == null && lLMConfigCreateDtoVariant3 == null && lLMConfigCreateDtoVariant4 == null && lLMConfigCreateDtoVariant5 == null && lLMConfigCreateDtoVariant6 == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::DId.LLMConfigCreateDtoVariant2), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::DId.LLMConfigCreateDtoVariant2> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::DId.LLMConfigCreateDtoVariant2).Name}");
                     lLMConfigCreateDtoVariant2 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -246,9 +251,13 @@ namespace DId.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (lLMConfigCreateDtoVariant1 == null && lLMConfigCreateDtoVariant2 == null && lLMConfigCreateDtoVariant3 == null && lLMConfigCreateDtoVariant4 == null && lLMConfigCreateDtoVariant5 == null && lLMConfigCreateDtoVariant6 == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::DId.LLMConfigCreateDtoVariant3), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::DId.LLMConfigCreateDtoVariant3> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::DId.LLMConfigCreateDtoVariant3).Name}");
                     lLMConfigCreateDtoVariant3 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -259,9 +268,13 @@ namespace DId.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (lLMConfigCreateDtoVariant1 == null && lLMConfigCreateDtoVariant2 == null && lLMConfigCreateDtoVariant3 == null && lLMConfigCreateDtoVariant4 == null && lLMConfigCreateDtoVariant5 == null && lLMConfigCreateDtoVariant6 == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::DId.LLMConfigCreateDtoVariant4), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::DId.LLMConfigCreateDtoVariant4> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::DId.LLMConfigCreateDtoVariant4).Name}");
                     lLMConfigCreateDtoVariant4 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -272,9 +285,13 @@ namespace DId.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (lLMConfigCreateDtoVariant1 == null && lLMConfigCreateDtoVariant2 == null && lLMConfigCreateDtoVariant3 == null && lLMConfigCreateDtoVariant4 == null && lLMConfigCreateDtoVariant5 == null && lLMConfigCreateDtoVariant6 == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::DId.LLMConfigCreateDtoVariant5), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::DId.LLMConfigCreateDtoVariant5> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::DId.LLMConfigCreateDtoVariant5).Name}");
                     lLMConfigCreateDtoVariant5 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -285,9 +302,13 @@ namespace DId.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (lLMConfigCreateDtoVariant1 == null && lLMConfigCreateDtoVariant2 == null && lLMConfigCreateDtoVariant3 == null && lLMConfigCreateDtoVariant4 == null && lLMConfigCreateDtoVariant5 == null && lLMConfigCreateDtoVariant6 == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::DId.LLMConfigCreateDtoVariant6), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::DId.LLMConfigCreateDtoVariant6> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::DId.LLMConfigCreateDtoVariant6).Name}");
                     lLMConfigCreateDtoVariant6 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);

@@ -58,5 +58,6 @@ namespace DId
         public ListMyAgentsResponseAgentVariant1PresenterVideoAvatarBackground()
         {
         }
+
     }
 }

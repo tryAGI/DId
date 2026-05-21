@@ -39,5 +39,6 @@ namespace DId
         public DeleteResponseVariant2Metadata()
         {
         }
+
     }
 }

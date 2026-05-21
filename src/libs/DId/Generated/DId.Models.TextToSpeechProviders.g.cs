@@ -29,6 +29,26 @@ namespace DId
         /// <summary>
         /// 
         /// </summary>
+        public bool TryPickMicrosoft(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::DId.TextToSpeechProvidersMicrosoft? value)
+        {
+            value = Microsoft;
+            return IsMicrosoft;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::DId.TextToSpeechProvidersMicrosoft PickMicrosoft() => IsMicrosoft
+            ? Microsoft!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Microsoft' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::DId.TextToSpeechProvidersElevenLabs? ElevenLabs { get; init; }
 #else
@@ -42,6 +62,26 @@ namespace DId
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(ElevenLabs))]
 #endif
         public bool IsElevenLabs => ElevenLabs != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickElevenLabs(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::DId.TextToSpeechProvidersElevenLabs? value)
+        {
+            value = ElevenLabs;
+            return IsElevenLabs;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::DId.TextToSpeechProvidersElevenLabs PickElevenLabs() => IsElevenLabs
+            ? ElevenLabs!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'ElevenLabs' but the value was {ToString()}.");
 
         /// <summary>
         /// 
@@ -63,6 +103,26 @@ namespace DId
         /// <summary>
         /// 
         /// </summary>
+        public bool TryPickAmazon(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::DId.TextToSpeechProvidersAmazon? value)
+        {
+            value = Amazon;
+            return IsAmazon;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::DId.TextToSpeechProvidersAmazon PickAmazon() => IsAmazon
+            ? Amazon!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Amazon' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::DId.TextToSpeechProvidersGoogle? Google { get; init; }
 #else
@@ -80,6 +140,26 @@ namespace DId
         /// <summary>
         /// 
         /// </summary>
+        public bool TryPickGoogle(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::DId.TextToSpeechProvidersGoogle? value)
+        {
+            value = Google;
+            return IsGoogle;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::DId.TextToSpeechProvidersGoogle PickGoogle() => IsGoogle
+            ? Google!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Google' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::DId.TextToSpeechProvidersOpenAI? OpenAI { get; init; }
 #else
@@ -93,6 +173,26 @@ namespace DId
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(OpenAI))]
 #endif
         public bool IsOpenAI => OpenAI != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickOpenAI(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::DId.TextToSpeechProvidersOpenAI? value)
+        {
+            value = OpenAI;
+            return IsOpenAI;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::DId.TextToSpeechProvidersOpenAI PickOpenAI() => IsOpenAI
+            ? OpenAI!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'OpenAI' but the value was {ToString()}.");
         /// <summary>
         /// 
         /// </summary>
@@ -110,6 +210,11 @@ namespace DId
         {
             Microsoft = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static TextToSpeechProviders FromMicrosoft(global::DId.TextToSpeechProvidersMicrosoft? value) => new TextToSpeechProviders(value);
 
         /// <summary>
         /// 
@@ -132,6 +237,11 @@ namespace DId
         /// <summary>
         /// 
         /// </summary>
+        public static TextToSpeechProviders FromElevenLabs(global::DId.TextToSpeechProvidersElevenLabs? value) => new TextToSpeechProviders(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator TextToSpeechProviders(global::DId.TextToSpeechProvidersAmazon value) => new TextToSpeechProviders((global::DId.TextToSpeechProvidersAmazon?)value);
 
         /// <summary>
@@ -146,6 +256,11 @@ namespace DId
         {
             Amazon = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static TextToSpeechProviders FromAmazon(global::DId.TextToSpeechProvidersAmazon? value) => new TextToSpeechProviders(value);
 
         /// <summary>
         /// 
@@ -168,6 +283,11 @@ namespace DId
         /// <summary>
         /// 
         /// </summary>
+        public static TextToSpeechProviders FromGoogle(global::DId.TextToSpeechProvidersGoogle? value) => new TextToSpeechProviders(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator TextToSpeechProviders(global::DId.TextToSpeechProvidersOpenAI value) => new TextToSpeechProviders((global::DId.TextToSpeechProvidersOpenAI?)value);
 
         /// <summary>
@@ -182,6 +302,11 @@ namespace DId
         {
             OpenAI = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static TextToSpeechProviders FromOpenAI(global::DId.TextToSpeechProvidersOpenAI? value) => new TextToSpeechProviders(value);
 
         /// <summary>
         /// 
@@ -235,11 +360,11 @@ namespace DId
         /// 
         /// </summary>
         public TResult? Match<TResult>(
-            global::System.Func<global::DId.TextToSpeechProvidersMicrosoft?, TResult>? microsoft = null,
-            global::System.Func<global::DId.TextToSpeechProvidersElevenLabs?, TResult>? elevenLabs = null,
-            global::System.Func<global::DId.TextToSpeechProvidersAmazon?, TResult>? amazon = null,
-            global::System.Func<global::DId.TextToSpeechProvidersGoogle?, TResult>? google = null,
-            global::System.Func<global::DId.TextToSpeechProvidersOpenAI?, TResult>? openAI = null,
+            global::System.Func<global::DId.TextToSpeechProvidersMicrosoft, TResult>? microsoft = null,
+            global::System.Func<global::DId.TextToSpeechProvidersElevenLabs, TResult>? elevenLabs = null,
+            global::System.Func<global::DId.TextToSpeechProvidersAmazon, TResult>? amazon = null,
+            global::System.Func<global::DId.TextToSpeechProvidersGoogle, TResult>? google = null,
+            global::System.Func<global::DId.TextToSpeechProvidersOpenAI, TResult>? openAI = null,
             bool validate = true)
         {
             if (validate)
@@ -275,11 +400,53 @@ namespace DId
         /// 
         /// </summary>
         public void Match(
-            global::System.Action<global::DId.TextToSpeechProvidersMicrosoft?>? microsoft = null,
-            global::System.Action<global::DId.TextToSpeechProvidersElevenLabs?>? elevenLabs = null,
-            global::System.Action<global::DId.TextToSpeechProvidersAmazon?>? amazon = null,
-            global::System.Action<global::DId.TextToSpeechProvidersGoogle?>? google = null,
-            global::System.Action<global::DId.TextToSpeechProvidersOpenAI?>? openAI = null,
+            global::System.Action<global::DId.TextToSpeechProvidersMicrosoft>? microsoft = null,
+
+            global::System.Action<global::DId.TextToSpeechProvidersElevenLabs>? elevenLabs = null,
+
+            global::System.Action<global::DId.TextToSpeechProvidersAmazon>? amazon = null,
+
+            global::System.Action<global::DId.TextToSpeechProvidersGoogle>? google = null,
+
+            global::System.Action<global::DId.TextToSpeechProvidersOpenAI>? openAI = null,
+            bool validate = true)
+        {
+            if (validate)
+            {
+                Validate();
+            }
+
+            if (IsMicrosoft)
+            {
+                microsoft?.Invoke(Microsoft!);
+            }
+            else if (IsElevenLabs)
+            {
+                elevenLabs?.Invoke(ElevenLabs!);
+            }
+            else if (IsAmazon)
+            {
+                amazon?.Invoke(Amazon!);
+            }
+            else if (IsGoogle)
+            {
+                google?.Invoke(Google!);
+            }
+            else if (IsOpenAI)
+            {
+                openAI?.Invoke(OpenAI!);
+            }
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public void Switch(
+            global::System.Action<global::DId.TextToSpeechProvidersMicrosoft>? microsoft = null,
+            global::System.Action<global::DId.TextToSpeechProvidersElevenLabs>? elevenLabs = null,
+            global::System.Action<global::DId.TextToSpeechProvidersAmazon>? amazon = null,
+            global::System.Action<global::DId.TextToSpeechProvidersGoogle>? google = null,
+            global::System.Action<global::DId.TextToSpeechProvidersOpenAI>? openAI = null,
             bool validate = true)
         {
             if (validate)

@@ -80,5 +80,6 @@ namespace DId
         public GetExpressiveAvatarsDtoAvatarSentimentVariant1VoiceOpenAI()
         {
         }
+
     }
 }

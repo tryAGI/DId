@@ -41,5 +41,6 @@ namespace DId
         public Get1ResponseConfig()
         {
         }
+
     }
 }

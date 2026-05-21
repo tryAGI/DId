@@ -86,5 +86,6 @@ namespace DId
         public CreateSecretRequestCreateSecretRequest1BasicAuthentication()
         {
         }
+
     }
 }

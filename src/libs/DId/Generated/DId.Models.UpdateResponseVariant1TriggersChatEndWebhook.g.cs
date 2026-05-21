@@ -68,5 +68,6 @@ namespace DId
         public UpdateResponseVariant1TriggersChatEndWebhook()
         {
         }
+
     }
 }

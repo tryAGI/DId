@@ -215,5 +215,6 @@ namespace DId
         public GetClipResponse2()
         {
         }
+
     }
 }

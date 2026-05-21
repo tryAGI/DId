@@ -29,6 +29,26 @@ namespace DId
         /// <summary>
         /// 
         /// </summary>
+        public bool TryPickLogoDtoVariant1(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::DId.LogoDtoVariant1? value)
+        {
+            value = LogoDtoVariant1;
+            return IsLogoDtoVariant1;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::DId.LogoDtoVariant1 PickLogoDtoVariant1() => IsLogoDtoVariant1
+            ? LogoDtoVariant1!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'LogoDtoVariant1' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public bool? LogoDtoVariant2 { get; init; }
 #else
@@ -42,6 +62,26 @@ namespace DId
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(LogoDtoVariant2))]
 #endif
         public bool IsLogoDtoVariant2 => LogoDtoVariant2 != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickLogoDtoVariant2(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out bool? value)
+        {
+            value = LogoDtoVariant2;
+            return IsLogoDtoVariant2;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool PickLogoDtoVariant2() => IsLogoDtoVariant2
+            ? LogoDtoVariant2!.Value
+            : throw new global::System.InvalidOperationException($"Expected union variant 'LogoDtoVariant2' but the value was {ToString()}.");
         /// <summary>
         /// 
         /// </summary>
@@ -63,6 +103,11 @@ namespace DId
         /// <summary>
         /// 
         /// </summary>
+        public static LogoDto FromLogoDtoVariant1(global::DId.LogoDtoVariant1? value) => new LogoDto(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator LogoDto(bool value) => new LogoDto((bool?)value);
 
         /// <summary>
@@ -77,6 +122,11 @@ namespace DId
         {
             LogoDtoVariant2 = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static LogoDto FromLogoDtoVariant2(bool? value) => new LogoDto(value);
 
         /// <summary>
         /// 
@@ -118,7 +168,7 @@ namespace DId
         /// 
         /// </summary>
         public TResult? Match<TResult>(
-            global::System.Func<global::DId.LogoDtoVariant1?, TResult>? logoDtoVariant1 = null,
+            global::System.Func<global::DId.LogoDtoVariant1, TResult>? logoDtoVariant1 = null,
             global::System.Func<bool?, TResult>? logoDtoVariant2 = null,
             bool validate = true)
         {
@@ -143,7 +193,31 @@ namespace DId
         /// 
         /// </summary>
         public void Match(
-            global::System.Action<global::DId.LogoDtoVariant1?>? logoDtoVariant1 = null,
+            global::System.Action<global::DId.LogoDtoVariant1>? logoDtoVariant1 = null,
+
+            global::System.Action<bool?>? logoDtoVariant2 = null,
+            bool validate = true)
+        {
+            if (validate)
+            {
+                Validate();
+            }
+
+            if (IsLogoDtoVariant1)
+            {
+                logoDtoVariant1?.Invoke(LogoDtoVariant1!);
+            }
+            else if (IsLogoDtoVariant2)
+            {
+                logoDtoVariant2?.Invoke(LogoDtoVariant2!);
+            }
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public void Switch(
+            global::System.Action<global::DId.LogoDtoVariant1>? logoDtoVariant1 = null,
             global::System.Action<bool?>? logoDtoVariant2 = null,
             bool validate = true)
         {

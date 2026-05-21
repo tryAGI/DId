@@ -29,6 +29,26 @@ namespace DId
         /// <summary>
         /// 
         /// </summary>
+        public bool TryPickScriptVariant1(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::DId.ScriptVariant1? value)
+        {
+            value = ScriptVariant1;
+            return IsScriptVariant1;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::DId.ScriptVariant1 PickScriptVariant1() => IsScriptVariant1
+            ? ScriptVariant1!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'ScriptVariant1' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::DId.ScriptVariant2? ScriptVariant2 { get; init; }
 #else
@@ -42,6 +62,26 @@ namespace DId
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(ScriptVariant2))]
 #endif
         public bool IsScriptVariant2 => ScriptVariant2 != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickScriptVariant2(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::DId.ScriptVariant2? value)
+        {
+            value = ScriptVariant2;
+            return IsScriptVariant2;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::DId.ScriptVariant2 PickScriptVariant2() => IsScriptVariant2
+            ? ScriptVariant2!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'ScriptVariant2' but the value was {ToString()}.");
         /// <summary>
         /// 
         /// </summary>
@@ -63,6 +103,11 @@ namespace DId
         /// <summary>
         /// 
         /// </summary>
+        public static Script FromScriptVariant1(global::DId.ScriptVariant1? value) => new Script(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator Script(global::DId.ScriptVariant2 value) => new Script((global::DId.ScriptVariant2?)value);
 
         /// <summary>
@@ -77,6 +122,11 @@ namespace DId
         {
             ScriptVariant2 = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static Script FromScriptVariant2(global::DId.ScriptVariant2? value) => new Script(value);
 
         /// <summary>
         /// 
@@ -118,8 +168,8 @@ namespace DId
         /// 
         /// </summary>
         public TResult? Match<TResult>(
-            global::System.Func<global::DId.ScriptVariant1?, TResult>? scriptVariant1 = null,
-            global::System.Func<global::DId.ScriptVariant2?, TResult>? scriptVariant2 = null,
+            global::System.Func<global::DId.ScriptVariant1, TResult>? scriptVariant1 = null,
+            global::System.Func<global::DId.ScriptVariant2, TResult>? scriptVariant2 = null,
             bool validate = true)
         {
             if (validate)
@@ -143,8 +193,32 @@ namespace DId
         /// 
         /// </summary>
         public void Match(
-            global::System.Action<global::DId.ScriptVariant1?>? scriptVariant1 = null,
-            global::System.Action<global::DId.ScriptVariant2?>? scriptVariant2 = null,
+            global::System.Action<global::DId.ScriptVariant1>? scriptVariant1 = null,
+
+            global::System.Action<global::DId.ScriptVariant2>? scriptVariant2 = null,
+            bool validate = true)
+        {
+            if (validate)
+            {
+                Validate();
+            }
+
+            if (IsScriptVariant1)
+            {
+                scriptVariant1?.Invoke(ScriptVariant1!);
+            }
+            else if (IsScriptVariant2)
+            {
+                scriptVariant2?.Invoke(ScriptVariant2!);
+            }
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public void Switch(
+            global::System.Action<global::DId.ScriptVariant1>? scriptVariant1 = null,
+            global::System.Action<global::DId.ScriptVariant2>? scriptVariant2 = null,
             bool validate = true)
         {
             if (validate)

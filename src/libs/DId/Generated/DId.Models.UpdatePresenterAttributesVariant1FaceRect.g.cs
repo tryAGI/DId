@@ -70,5 +70,6 @@ namespace DId
         public UpdatePresenterAttributesVariant1FaceRect()
         {
         }
+
     }
 }

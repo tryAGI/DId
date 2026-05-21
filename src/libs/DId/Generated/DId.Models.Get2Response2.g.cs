@@ -68,5 +68,6 @@ namespace DId
         public Get2Response2()
         {
         }
+
     }
 }

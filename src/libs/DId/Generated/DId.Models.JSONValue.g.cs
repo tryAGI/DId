@@ -29,6 +29,26 @@ namespace DId
         /// <summary>
         /// 
         /// </summary>
+        public bool TryPickJSONValueVariant1(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out string? value)
+        {
+            value = JSONValueVariant1;
+            return IsJSONValueVariant1;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public string PickJSONValueVariant1() => IsJSONValueVariant1
+            ? JSONValueVariant1!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'JSONValueVariant1' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public double? JSONValueVariant2 { get; init; }
 #else
@@ -42,6 +62,26 @@ namespace DId
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(JSONValueVariant2))]
 #endif
         public bool IsJSONValueVariant2 => JSONValueVariant2 != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickJSONValueVariant2(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out double? value)
+        {
+            value = JSONValueVariant2;
+            return IsJSONValueVariant2;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public double PickJSONValueVariant2() => IsJSONValueVariant2
+            ? JSONValueVariant2!.Value
+            : throw new global::System.InvalidOperationException($"Expected union variant 'JSONValueVariant2' but the value was {ToString()}.");
 
         /// <summary>
         /// 
@@ -63,6 +103,26 @@ namespace DId
         /// <summary>
         /// 
         /// </summary>
+        public bool TryPickJSONValueVariant3(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out bool? value)
+        {
+            value = JSONValueVariant3;
+            return IsJSONValueVariant3;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool PickJSONValueVariant3() => IsJSONValueVariant3
+            ? JSONValueVariant3!.Value
+            : throw new global::System.InvalidOperationException($"Expected union variant 'JSONValueVariant3' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::System.Collections.Generic.IList<global::DId.JSONValue>? JSONValueVariant4 { get; init; }
 #else
@@ -80,6 +140,26 @@ namespace DId
         /// <summary>
         /// 
         /// </summary>
+        public bool TryPickJSONValueVariant4(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::System.Collections.Generic.IList<global::DId.JSONValue>? value)
+        {
+            value = JSONValueVariant4;
+            return IsJSONValueVariant4;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::System.Collections.Generic.IList<global::DId.JSONValue> PickJSONValueVariant4() => IsJSONValueVariant4
+            ? JSONValueVariant4!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'JSONValueVariant4' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::System.Collections.Generic.Dictionary<string, global::DId.JSONValue?>? JSONValueVariant5 { get; init; }
 #else
@@ -93,6 +173,26 @@ namespace DId
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(JSONValueVariant5))]
 #endif
         public bool IsJSONValueVariant5 => JSONValueVariant5 != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickJSONValueVariant5(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::System.Collections.Generic.Dictionary<string, global::DId.JSONValue?>? value)
+        {
+            value = JSONValueVariant5;
+            return IsJSONValueVariant5;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::System.Collections.Generic.Dictionary<string, global::DId.JSONValue?> PickJSONValueVariant5() => IsJSONValueVariant5
+            ? JSONValueVariant5!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'JSONValueVariant5' but the value was {ToString()}.");
         /// <summary>
         /// 
         /// </summary>
@@ -110,6 +210,11 @@ namespace DId
         {
             JSONValueVariant1 = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static JSONValue FromJSONValueVariant1(string? value) => new JSONValue(value);
 
         /// <summary>
         /// 
@@ -132,6 +237,11 @@ namespace DId
         /// <summary>
         /// 
         /// </summary>
+        public static JSONValue FromJSONValueVariant2(double? value) => new JSONValue(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator JSONValue(bool value) => new JSONValue((bool?)value);
 
         /// <summary>
@@ -150,6 +260,11 @@ namespace DId
         /// <summary>
         /// 
         /// </summary>
+        public static JSONValue FromJSONValueVariant3(bool? value) => new JSONValue(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator JSONValue(global::System.Collections.Generic.Dictionary<string, global::DId.JSONValue?> value) => new JSONValue((global::System.Collections.Generic.Dictionary<string, global::DId.JSONValue?>?)value);
 
         /// <summary>
@@ -164,6 +279,11 @@ namespace DId
         {
             JSONValueVariant5 = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static JSONValue FromJSONValueVariant5(global::System.Collections.Generic.Dictionary<string, global::DId.JSONValue?>? value) => new JSONValue(value);
 
         /// <summary>
         /// 
@@ -217,11 +337,11 @@ namespace DId
         /// 
         /// </summary>
         public TResult? Match<TResult>(
-            global::System.Func<string?, TResult>? jSONValueVariant1 = null,
+            global::System.Func<string, TResult>? jSONValueVariant1 = null,
             global::System.Func<double?, TResult>? jSONValueVariant2 = null,
             global::System.Func<bool?, TResult>? jSONValueVariant3 = null,
-            global::System.Func<global::System.Collections.Generic.IList<global::DId.JSONValue>?, TResult>? jSONValueVariant4 = null,
-            global::System.Func<global::System.Collections.Generic.Dictionary<string, global::DId.JSONValue?>?, TResult>? jSONValueVariant5 = null,
+            global::System.Func<global::System.Collections.Generic.IList<global::DId.JSONValue>, TResult>? jSONValueVariant4 = null,
+            global::System.Func<global::System.Collections.Generic.Dictionary<string, global::DId.JSONValue?>, TResult>? jSONValueVariant5 = null,
             bool validate = true)
         {
             if (validate)
@@ -257,11 +377,53 @@ namespace DId
         /// 
         /// </summary>
         public void Match(
-            global::System.Action<string?>? jSONValueVariant1 = null,
+            global::System.Action<string>? jSONValueVariant1 = null,
+
+            global::System.Action<double?>? jSONValueVariant2 = null,
+
+            global::System.Action<bool?>? jSONValueVariant3 = null,
+
+            global::System.Action<global::System.Collections.Generic.IList<global::DId.JSONValue>>? jSONValueVariant4 = null,
+
+            global::System.Action<global::System.Collections.Generic.Dictionary<string, global::DId.JSONValue?>>? jSONValueVariant5 = null,
+            bool validate = true)
+        {
+            if (validate)
+            {
+                Validate();
+            }
+
+            if (IsJSONValueVariant1)
+            {
+                jSONValueVariant1?.Invoke(JSONValueVariant1!);
+            }
+            else if (IsJSONValueVariant2)
+            {
+                jSONValueVariant2?.Invoke(JSONValueVariant2!);
+            }
+            else if (IsJSONValueVariant3)
+            {
+                jSONValueVariant3?.Invoke(JSONValueVariant3!);
+            }
+            else if (IsJSONValueVariant4)
+            {
+                jSONValueVariant4?.Invoke(JSONValueVariant4!);
+            }
+            else if (IsJSONValueVariant5)
+            {
+                jSONValueVariant5?.Invoke(JSONValueVariant5!);
+            }
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public void Switch(
+            global::System.Action<string>? jSONValueVariant1 = null,
             global::System.Action<double?>? jSONValueVariant2 = null,
             global::System.Action<bool?>? jSONValueVariant3 = null,
-            global::System.Action<global::System.Collections.Generic.IList<global::DId.JSONValue>?>? jSONValueVariant4 = null,
-            global::System.Action<global::System.Collections.Generic.Dictionary<string, global::DId.JSONValue?>?>? jSONValueVariant5 = null,
+            global::System.Action<global::System.Collections.Generic.IList<global::DId.JSONValue>>? jSONValueVariant4 = null,
+            global::System.Action<global::System.Collections.Generic.Dictionary<string, global::DId.JSONValue?>>? jSONValueVariant5 = null,
             bool validate = true)
         {
             if (validate)

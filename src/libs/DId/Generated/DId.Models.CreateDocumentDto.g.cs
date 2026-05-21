@@ -27,6 +27,26 @@ namespace DId
         public bool IsCreateDocumentDtoVariant1 => CreateDocumentDtoVariant1 != null;
 
         /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickCreateDocumentDtoVariant1(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::DId.CreateDocumentDtoVariant1? value)
+        {
+            value = CreateDocumentDtoVariant1;
+            return IsCreateDocumentDtoVariant1;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::DId.CreateDocumentDtoVariant1 PickCreateDocumentDtoVariant1() => IsCreateDocumentDtoVariant1
+            ? CreateDocumentDtoVariant1!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'CreateDocumentDtoVariant1' but the value was {ToString()}.");
+
+        /// <summary>
         /// Construct a type with the properties of T except for those in type K.
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -42,6 +62,26 @@ namespace DId
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(CreateDocumentDtoVariant2))]
 #endif
         public bool IsCreateDocumentDtoVariant2 => CreateDocumentDtoVariant2 != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickCreateDocumentDtoVariant2(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::DId.CreateDocumentDtoVariant2? value)
+        {
+            value = CreateDocumentDtoVariant2;
+            return IsCreateDocumentDtoVariant2;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::DId.CreateDocumentDtoVariant2 PickCreateDocumentDtoVariant2() => IsCreateDocumentDtoVariant2
+            ? CreateDocumentDtoVariant2!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'CreateDocumentDtoVariant2' but the value was {ToString()}.");
         /// <summary>
         /// 
         /// </summary>
@@ -63,6 +103,11 @@ namespace DId
         /// <summary>
         /// 
         /// </summary>
+        public static CreateDocumentDto FromCreateDocumentDtoVariant1(global::DId.CreateDocumentDtoVariant1? value) => new CreateDocumentDto(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator CreateDocumentDto(global::DId.CreateDocumentDtoVariant2 value) => new CreateDocumentDto((global::DId.CreateDocumentDtoVariant2?)value);
 
         /// <summary>
@@ -77,6 +122,11 @@ namespace DId
         {
             CreateDocumentDtoVariant2 = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static CreateDocumentDto FromCreateDocumentDtoVariant2(global::DId.CreateDocumentDtoVariant2? value) => new CreateDocumentDto(value);
 
         /// <summary>
         /// 
@@ -118,8 +168,8 @@ namespace DId
         /// 
         /// </summary>
         public TResult? Match<TResult>(
-            global::System.Func<global::DId.CreateDocumentDtoVariant1?, TResult>? createDocumentDtoVariant1 = null,
-            global::System.Func<global::DId.CreateDocumentDtoVariant2?, TResult>? createDocumentDtoVariant2 = null,
+            global::System.Func<global::DId.CreateDocumentDtoVariant1, TResult>? createDocumentDtoVariant1 = null,
+            global::System.Func<global::DId.CreateDocumentDtoVariant2, TResult>? createDocumentDtoVariant2 = null,
             bool validate = true)
         {
             if (validate)
@@ -143,8 +193,32 @@ namespace DId
         /// 
         /// </summary>
         public void Match(
-            global::System.Action<global::DId.CreateDocumentDtoVariant1?>? createDocumentDtoVariant1 = null,
-            global::System.Action<global::DId.CreateDocumentDtoVariant2?>? createDocumentDtoVariant2 = null,
+            global::System.Action<global::DId.CreateDocumentDtoVariant1>? createDocumentDtoVariant1 = null,
+
+            global::System.Action<global::DId.CreateDocumentDtoVariant2>? createDocumentDtoVariant2 = null,
+            bool validate = true)
+        {
+            if (validate)
+            {
+                Validate();
+            }
+
+            if (IsCreateDocumentDtoVariant1)
+            {
+                createDocumentDtoVariant1?.Invoke(CreateDocumentDtoVariant1!);
+            }
+            else if (IsCreateDocumentDtoVariant2)
+            {
+                createDocumentDtoVariant2?.Invoke(CreateDocumentDtoVariant2!);
+            }
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public void Switch(
+            global::System.Action<global::DId.CreateDocumentDtoVariant1>? createDocumentDtoVariant1 = null,
+            global::System.Action<global::DId.CreateDocumentDtoVariant2>? createDocumentDtoVariant2 = null,
             bool validate = true)
         {
             if (validate)

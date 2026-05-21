@@ -29,6 +29,26 @@ namespace DId
         /// <summary>
         /// 
         /// </summary>
+        public bool TryPickCreateVideoStreamResponseVariant1(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::DId.CreateVideoStreamResponseVariant1? value)
+        {
+            value = CreateVideoStreamResponseVariant1;
+            return IsCreateVideoStreamResponseVariant1;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::DId.CreateVideoStreamResponseVariant1 PickCreateVideoStreamResponseVariant1() => IsCreateVideoStreamResponseVariant1
+            ? CreateVideoStreamResponseVariant1!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'CreateVideoStreamResponseVariant1' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::DId.CreateVideoStreamResponseVariant2? CreateVideoStreamResponseVariant2 { get; init; }
 #else
@@ -42,6 +62,26 @@ namespace DId
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(CreateVideoStreamResponseVariant2))]
 #endif
         public bool IsCreateVideoStreamResponseVariant2 => CreateVideoStreamResponseVariant2 != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickCreateVideoStreamResponseVariant2(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::DId.CreateVideoStreamResponseVariant2? value)
+        {
+            value = CreateVideoStreamResponseVariant2;
+            return IsCreateVideoStreamResponseVariant2;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::DId.CreateVideoStreamResponseVariant2 PickCreateVideoStreamResponseVariant2() => IsCreateVideoStreamResponseVariant2
+            ? CreateVideoStreamResponseVariant2!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'CreateVideoStreamResponseVariant2' but the value was {ToString()}.");
         /// <summary>
         /// 
         /// </summary>
@@ -63,6 +103,11 @@ namespace DId
         /// <summary>
         /// 
         /// </summary>
+        public static CreateVideoStreamResponse FromCreateVideoStreamResponseVariant1(global::DId.CreateVideoStreamResponseVariant1? value) => new CreateVideoStreamResponse(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator CreateVideoStreamResponse(global::DId.CreateVideoStreamResponseVariant2 value) => new CreateVideoStreamResponse((global::DId.CreateVideoStreamResponseVariant2?)value);
 
         /// <summary>
@@ -77,6 +122,11 @@ namespace DId
         {
             CreateVideoStreamResponseVariant2 = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static CreateVideoStreamResponse FromCreateVideoStreamResponseVariant2(global::DId.CreateVideoStreamResponseVariant2? value) => new CreateVideoStreamResponse(value);
 
         /// <summary>
         /// 
@@ -118,8 +168,8 @@ namespace DId
         /// 
         /// </summary>
         public TResult? Match<TResult>(
-            global::System.Func<global::DId.CreateVideoStreamResponseVariant1?, TResult>? createVideoStreamResponseVariant1 = null,
-            global::System.Func<global::DId.CreateVideoStreamResponseVariant2?, TResult>? createVideoStreamResponseVariant2 = null,
+            global::System.Func<global::DId.CreateVideoStreamResponseVariant1, TResult>? createVideoStreamResponseVariant1 = null,
+            global::System.Func<global::DId.CreateVideoStreamResponseVariant2, TResult>? createVideoStreamResponseVariant2 = null,
             bool validate = true)
         {
             if (validate)
@@ -143,8 +193,32 @@ namespace DId
         /// 
         /// </summary>
         public void Match(
-            global::System.Action<global::DId.CreateVideoStreamResponseVariant1?>? createVideoStreamResponseVariant1 = null,
-            global::System.Action<global::DId.CreateVideoStreamResponseVariant2?>? createVideoStreamResponseVariant2 = null,
+            global::System.Action<global::DId.CreateVideoStreamResponseVariant1>? createVideoStreamResponseVariant1 = null,
+
+            global::System.Action<global::DId.CreateVideoStreamResponseVariant2>? createVideoStreamResponseVariant2 = null,
+            bool validate = true)
+        {
+            if (validate)
+            {
+                Validate();
+            }
+
+            if (IsCreateVideoStreamResponseVariant1)
+            {
+                createVideoStreamResponseVariant1?.Invoke(CreateVideoStreamResponseVariant1!);
+            }
+            else if (IsCreateVideoStreamResponseVariant2)
+            {
+                createVideoStreamResponseVariant2?.Invoke(CreateVideoStreamResponseVariant2!);
+            }
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public void Switch(
+            global::System.Action<global::DId.CreateVideoStreamResponseVariant1>? createVideoStreamResponseVariant1 = null,
+            global::System.Action<global::DId.CreateVideoStreamResponseVariant2>? createVideoStreamResponseVariant2 = null,
             bool validate = true)
         {
             if (validate)

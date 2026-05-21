@@ -27,6 +27,26 @@ namespace DId
         public bool IsExpressiveAvatarExpressionDtoVariant1 => ExpressiveAvatarExpressionDtoVariant1 != null;
 
         /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickExpressiveAvatarExpressionDtoVariant1(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::DId.ExpressiveAvatarExpressionDtoVariant1? value)
+        {
+            value = ExpressiveAvatarExpressionDtoVariant1;
+            return IsExpressiveAvatarExpressionDtoVariant1;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::DId.ExpressiveAvatarExpressionDtoVariant1 PickExpressiveAvatarExpressionDtoVariant1() => IsExpressiveAvatarExpressionDtoVariant1
+            ? ExpressiveAvatarExpressionDtoVariant1!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'ExpressiveAvatarExpressionDtoVariant1' but the value was {ToString()}.");
+
+        /// <summary>
         /// Make all properties in T optional
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -42,6 +62,26 @@ namespace DId
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(ExpressiveAvatarExpressionDtoVariant2))]
 #endif
         public bool IsExpressiveAvatarExpressionDtoVariant2 => ExpressiveAvatarExpressionDtoVariant2 != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickExpressiveAvatarExpressionDtoVariant2(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out object? value)
+        {
+            value = ExpressiveAvatarExpressionDtoVariant2;
+            return IsExpressiveAvatarExpressionDtoVariant2;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public object PickExpressiveAvatarExpressionDtoVariant2() => IsExpressiveAvatarExpressionDtoVariant2
+            ? ExpressiveAvatarExpressionDtoVariant2!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'ExpressiveAvatarExpressionDtoVariant2' but the value was {ToString()}.");
         /// <summary>
         /// 
         /// </summary>
@@ -59,6 +99,11 @@ namespace DId
         {
             ExpressiveAvatarExpressionDtoVariant1 = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static ExpressiveAvatarExpressionDto FromExpressiveAvatarExpressionDtoVariant1(global::DId.ExpressiveAvatarExpressionDtoVariant1? value) => new ExpressiveAvatarExpressionDto(value);
 
         /// <summary>
         /// 
@@ -100,8 +145,8 @@ namespace DId
         /// 
         /// </summary>
         public TResult? Match<TResult>(
-            global::System.Func<global::DId.ExpressiveAvatarExpressionDtoVariant1?, TResult>? expressiveAvatarExpressionDtoVariant1 = null,
-            global::System.Func<object?, TResult>? expressiveAvatarExpressionDtoVariant2 = null,
+            global::System.Func<global::DId.ExpressiveAvatarExpressionDtoVariant1, TResult>? expressiveAvatarExpressionDtoVariant1 = null,
+            global::System.Func<object, TResult>? expressiveAvatarExpressionDtoVariant2 = null,
             bool validate = true)
         {
             if (validate)
@@ -125,8 +170,32 @@ namespace DId
         /// 
         /// </summary>
         public void Match(
-            global::System.Action<global::DId.ExpressiveAvatarExpressionDtoVariant1?>? expressiveAvatarExpressionDtoVariant1 = null,
-            global::System.Action<object?>? expressiveAvatarExpressionDtoVariant2 = null,
+            global::System.Action<global::DId.ExpressiveAvatarExpressionDtoVariant1>? expressiveAvatarExpressionDtoVariant1 = null,
+
+            global::System.Action<object>? expressiveAvatarExpressionDtoVariant2 = null,
+            bool validate = true)
+        {
+            if (validate)
+            {
+                Validate();
+            }
+
+            if (IsExpressiveAvatarExpressionDtoVariant1)
+            {
+                expressiveAvatarExpressionDtoVariant1?.Invoke(ExpressiveAvatarExpressionDtoVariant1!);
+            }
+            else if (IsExpressiveAvatarExpressionDtoVariant2)
+            {
+                expressiveAvatarExpressionDtoVariant2?.Invoke(ExpressiveAvatarExpressionDtoVariant2!);
+            }
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public void Switch(
+            global::System.Action<global::DId.ExpressiveAvatarExpressionDtoVariant1>? expressiveAvatarExpressionDtoVariant1 = null,
+            global::System.Action<object>? expressiveAvatarExpressionDtoVariant2 = null,
             bool validate = true)
         {
             if (validate)

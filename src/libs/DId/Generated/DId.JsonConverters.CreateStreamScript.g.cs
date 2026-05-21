@@ -80,6 +80,7 @@ namespace DId.JsonConverters
             {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::DId.CreateStreamScriptText), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::DId.CreateStreamScriptText> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::DId.CreateStreamScriptText).Name}");
                     text = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -90,9 +91,13 @@ namespace DId.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (text == null && audio == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::DId.CreateStreamScriptAudio), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::DId.CreateStreamScriptAudio> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::DId.CreateStreamScriptAudio).Name}");
                     audio = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);

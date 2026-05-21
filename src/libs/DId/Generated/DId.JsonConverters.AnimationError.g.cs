@@ -158,6 +158,7 @@ namespace DId.JsonConverters
             {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::DId.AnimationErrorVariant1), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::DId.AnimationErrorVariant1> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::DId.AnimationErrorVariant1).Name}");
                     animationErrorVariant1 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -168,9 +169,13 @@ namespace DId.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (animationErrorVariant1 == null && animationErrorVariant2 == null && animationErrorVariant3 == null && animationErrorVariant4 == null && animationErrorVariant5 == null && animationErrorVariant6 == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::DId.AnimationErrorVariant2), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::DId.AnimationErrorVariant2> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::DId.AnimationErrorVariant2).Name}");
                     animationErrorVariant2 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -181,9 +186,13 @@ namespace DId.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (animationErrorVariant1 == null && animationErrorVariant2 == null && animationErrorVariant3 == null && animationErrorVariant4 == null && animationErrorVariant5 == null && animationErrorVariant6 == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::DId.AnimationErrorVariant3), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::DId.AnimationErrorVariant3> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::DId.AnimationErrorVariant3).Name}");
                     animationErrorVariant3 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -194,9 +203,13 @@ namespace DId.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (animationErrorVariant1 == null && animationErrorVariant2 == null && animationErrorVariant3 == null && animationErrorVariant4 == null && animationErrorVariant5 == null && animationErrorVariant6 == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::DId.AnimationErrorVariant4), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::DId.AnimationErrorVariant4> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::DId.AnimationErrorVariant4).Name}");
                     animationErrorVariant4 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -207,9 +220,13 @@ namespace DId.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (animationErrorVariant1 == null && animationErrorVariant2 == null && animationErrorVariant3 == null && animationErrorVariant4 == null && animationErrorVariant5 == null && animationErrorVariant6 == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::DId.AnimationErrorVariant5), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::DId.AnimationErrorVariant5> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::DId.AnimationErrorVariant5).Name}");
                     animationErrorVariant5 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -220,9 +237,13 @@ namespace DId.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (animationErrorVariant1 == null && animationErrorVariant2 == null && animationErrorVariant3 == null && animationErrorVariant4 == null && animationErrorVariant5 == null && animationErrorVariant6 == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::DId.AnimationErrorVariant6), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::DId.AnimationErrorVariant6> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::DId.AnimationErrorVariant6).Name}");
                     animationErrorVariant6 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);

@@ -29,6 +29,26 @@ namespace DId
         /// <summary>
         /// 
         /// </summary>
+        public bool TryPickAgentResponseDtoVariant1(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::DId.AgentResponseDtoVariant1? value)
+        {
+            value = AgentResponseDtoVariant1;
+            return IsAgentResponseDtoVariant1;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::DId.AgentResponseDtoVariant1 PickAgentResponseDtoVariant1() => IsAgentResponseDtoVariant1
+            ? AgentResponseDtoVariant1!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'AgentResponseDtoVariant1' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::DId.AgentResponseDtoVariant2? AgentResponseDtoVariant2 { get; init; }
 #else
@@ -42,6 +62,26 @@ namespace DId
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AgentResponseDtoVariant2))]
 #endif
         public bool IsAgentResponseDtoVariant2 => AgentResponseDtoVariant2 != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickAgentResponseDtoVariant2(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::DId.AgentResponseDtoVariant2? value)
+        {
+            value = AgentResponseDtoVariant2;
+            return IsAgentResponseDtoVariant2;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::DId.AgentResponseDtoVariant2 PickAgentResponseDtoVariant2() => IsAgentResponseDtoVariant2
+            ? AgentResponseDtoVariant2!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'AgentResponseDtoVariant2' but the value was {ToString()}.");
         /// <summary>
         /// 
         /// </summary>
@@ -63,6 +103,11 @@ namespace DId
         /// <summary>
         /// 
         /// </summary>
+        public static AgentResponseDto FromAgentResponseDtoVariant1(global::DId.AgentResponseDtoVariant1? value) => new AgentResponseDto(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator AgentResponseDto(global::DId.AgentResponseDtoVariant2 value) => new AgentResponseDto((global::DId.AgentResponseDtoVariant2?)value);
 
         /// <summary>
@@ -77,6 +122,11 @@ namespace DId
         {
             AgentResponseDtoVariant2 = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static AgentResponseDto FromAgentResponseDtoVariant2(global::DId.AgentResponseDtoVariant2? value) => new AgentResponseDto(value);
 
         /// <summary>
         /// 
@@ -118,8 +168,8 @@ namespace DId
         /// 
         /// </summary>
         public TResult? Match<TResult>(
-            global::System.Func<global::DId.AgentResponseDtoVariant1?, TResult>? agentResponseDtoVariant1 = null,
-            global::System.Func<global::DId.AgentResponseDtoVariant2?, TResult>? agentResponseDtoVariant2 = null,
+            global::System.Func<global::DId.AgentResponseDtoVariant1, TResult>? agentResponseDtoVariant1 = null,
+            global::System.Func<global::DId.AgentResponseDtoVariant2, TResult>? agentResponseDtoVariant2 = null,
             bool validate = true)
         {
             if (validate)
@@ -143,8 +193,32 @@ namespace DId
         /// 
         /// </summary>
         public void Match(
-            global::System.Action<global::DId.AgentResponseDtoVariant1?>? agentResponseDtoVariant1 = null,
-            global::System.Action<global::DId.AgentResponseDtoVariant2?>? agentResponseDtoVariant2 = null,
+            global::System.Action<global::DId.AgentResponseDtoVariant1>? agentResponseDtoVariant1 = null,
+
+            global::System.Action<global::DId.AgentResponseDtoVariant2>? agentResponseDtoVariant2 = null,
+            bool validate = true)
+        {
+            if (validate)
+            {
+                Validate();
+            }
+
+            if (IsAgentResponseDtoVariant1)
+            {
+                agentResponseDtoVariant1?.Invoke(AgentResponseDtoVariant1!);
+            }
+            else if (IsAgentResponseDtoVariant2)
+            {
+                agentResponseDtoVariant2?.Invoke(AgentResponseDtoVariant2!);
+            }
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public void Switch(
+            global::System.Action<global::DId.AgentResponseDtoVariant1>? agentResponseDtoVariant1 = null,
+            global::System.Action<global::DId.AgentResponseDtoVariant2>? agentResponseDtoVariant2 = null,
             bool validate = true)
         {
             if (validate)

@@ -79,5 +79,6 @@ namespace DId
         public CreateTalkRequestScriptVariant1ProviderOpenAIVoiceConfig2()
         {
         }
+
     }
 }

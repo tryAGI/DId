@@ -27,6 +27,26 @@ namespace DId
         public bool IsOpenAI => OpenAI != null;
 
         /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickOpenAI(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::DId.LLMConfigOpenAI? value)
+        {
+            value = OpenAI;
+            return IsOpenAI;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::DId.LLMConfigOpenAI PickOpenAI() => IsOpenAI
+            ? OpenAI!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'OpenAI' but the value was {ToString()}.");
+
+        /// <summary>
         /// OpenAI External LLM
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -42,6 +62,26 @@ namespace DId
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(LLMConfigVariant2))]
 #endif
         public bool IsLLMConfigVariant2 => LLMConfigVariant2 != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickLLMConfigVariant2(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::DId.LLMConfigVariant2? value)
+        {
+            value = LLMConfigVariant2;
+            return IsLLMConfigVariant2;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::DId.LLMConfigVariant2 PickLLMConfigVariant2() => IsLLMConfigVariant2
+            ? LLMConfigVariant2!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'LLMConfigVariant2' but the value was {ToString()}.");
 
         /// <summary>
         /// Azure OpenAI External LLM
@@ -63,6 +103,26 @@ namespace DId
         /// <summary>
         /// 
         /// </summary>
+        public bool TryPickLLMConfigVariant3(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::DId.LLMConfigVariant3? value)
+        {
+            value = LLMConfigVariant3;
+            return IsLLMConfigVariant3;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::DId.LLMConfigVariant3 PickLLMConfigVariant3() => IsLLMConfigVariant3
+            ? LLMConfigVariant3!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'LLMConfigVariant3' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::DId.LLMConfigDId? DId { get; init; }
 #else
@@ -80,6 +140,26 @@ namespace DId
         /// <summary>
         /// 
         /// </summary>
+        public bool TryPickDId(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::DId.LLMConfigDId? value)
+        {
+            value = DId;
+            return IsDId;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::DId.LLMConfigDId PickDId() => IsDId
+            ? DId!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'DId' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::DId.LLMConfigGoogle? Google { get; init; }
 #else
@@ -93,6 +173,26 @@ namespace DId
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Google))]
 #endif
         public bool IsGoogle => Google != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickGoogle(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::DId.LLMConfigGoogle? value)
+        {
+            value = Google;
+            return IsGoogle;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::DId.LLMConfigGoogle PickGoogle() => IsGoogle
+            ? Google!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Google' but the value was {ToString()}.");
         /// <summary>
         /// 
         /// </summary>
@@ -110,6 +210,11 @@ namespace DId
         {
             OpenAI = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static LLMConfig FromOpenAI(global::DId.LLMConfigOpenAI? value) => new LLMConfig(value);
 
         /// <summary>
         /// 
@@ -132,6 +237,11 @@ namespace DId
         /// <summary>
         /// 
         /// </summary>
+        public static LLMConfig FromLLMConfigVariant2(global::DId.LLMConfigVariant2? value) => new LLMConfig(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator LLMConfig(global::DId.LLMConfigVariant3 value) => new LLMConfig((global::DId.LLMConfigVariant3?)value);
 
         /// <summary>
@@ -146,6 +256,11 @@ namespace DId
         {
             LLMConfigVariant3 = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static LLMConfig FromLLMConfigVariant3(global::DId.LLMConfigVariant3? value) => new LLMConfig(value);
 
         /// <summary>
         /// 
@@ -168,6 +283,11 @@ namespace DId
         /// <summary>
         /// 
         /// </summary>
+        public static LLMConfig FromDId(global::DId.LLMConfigDId? value) => new LLMConfig(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator LLMConfig(global::DId.LLMConfigGoogle value) => new LLMConfig((global::DId.LLMConfigGoogle?)value);
 
         /// <summary>
@@ -182,6 +302,11 @@ namespace DId
         {
             Google = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static LLMConfig FromGoogle(global::DId.LLMConfigGoogle? value) => new LLMConfig(value);
 
         /// <summary>
         /// 
@@ -235,11 +360,11 @@ namespace DId
         /// 
         /// </summary>
         public TResult? Match<TResult>(
-            global::System.Func<global::DId.LLMConfigOpenAI?, TResult>? openAI = null,
-            global::System.Func<global::DId.LLMConfigVariant2?, TResult>? lLMConfigVariant2 = null,
-            global::System.Func<global::DId.LLMConfigVariant3?, TResult>? lLMConfigVariant3 = null,
-            global::System.Func<global::DId.LLMConfigDId?, TResult>? dId = null,
-            global::System.Func<global::DId.LLMConfigGoogle?, TResult>? google = null,
+            global::System.Func<global::DId.LLMConfigOpenAI, TResult>? openAI = null,
+            global::System.Func<global::DId.LLMConfigVariant2, TResult>? lLMConfigVariant2 = null,
+            global::System.Func<global::DId.LLMConfigVariant3, TResult>? lLMConfigVariant3 = null,
+            global::System.Func<global::DId.LLMConfigDId, TResult>? dId = null,
+            global::System.Func<global::DId.LLMConfigGoogle, TResult>? google = null,
             bool validate = true)
         {
             if (validate)
@@ -275,11 +400,53 @@ namespace DId
         /// 
         /// </summary>
         public void Match(
-            global::System.Action<global::DId.LLMConfigOpenAI?>? openAI = null,
-            global::System.Action<global::DId.LLMConfigVariant2?>? lLMConfigVariant2 = null,
-            global::System.Action<global::DId.LLMConfigVariant3?>? lLMConfigVariant3 = null,
-            global::System.Action<global::DId.LLMConfigDId?>? dId = null,
-            global::System.Action<global::DId.LLMConfigGoogle?>? google = null,
+            global::System.Action<global::DId.LLMConfigOpenAI>? openAI = null,
+
+            global::System.Action<global::DId.LLMConfigVariant2>? lLMConfigVariant2 = null,
+
+            global::System.Action<global::DId.LLMConfigVariant3>? lLMConfigVariant3 = null,
+
+            global::System.Action<global::DId.LLMConfigDId>? dId = null,
+
+            global::System.Action<global::DId.LLMConfigGoogle>? google = null,
+            bool validate = true)
+        {
+            if (validate)
+            {
+                Validate();
+            }
+
+            if (IsOpenAI)
+            {
+                openAI?.Invoke(OpenAI!);
+            }
+            else if (IsLLMConfigVariant2)
+            {
+                lLMConfigVariant2?.Invoke(LLMConfigVariant2!);
+            }
+            else if (IsLLMConfigVariant3)
+            {
+                lLMConfigVariant3?.Invoke(LLMConfigVariant3!);
+            }
+            else if (IsDId)
+            {
+                dId?.Invoke(DId!);
+            }
+            else if (IsGoogle)
+            {
+                google?.Invoke(Google!);
+            }
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public void Switch(
+            global::System.Action<global::DId.LLMConfigOpenAI>? openAI = null,
+            global::System.Action<global::DId.LLMConfigVariant2>? lLMConfigVariant2 = null,
+            global::System.Action<global::DId.LLMConfigVariant3>? lLMConfigVariant3 = null,
+            global::System.Action<global::DId.LLMConfigDId>? dId = null,
+            global::System.Action<global::DId.LLMConfigGoogle>? google = null,
             bool validate = true)
         {
             if (validate)

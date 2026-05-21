@@ -81,5 +81,6 @@ namespace DId
         public UpdateSecretRequestUpdateSecretRequest1BearerToken()
         {
         }
+
     }
 }

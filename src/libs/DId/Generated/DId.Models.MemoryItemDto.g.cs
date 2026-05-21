@@ -89,5 +89,6 @@ namespace DId
         public MemoryItemDto()
         {
         }
+
     }
 }
