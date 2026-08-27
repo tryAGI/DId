@@ -4,12 +4,12 @@
 namespace DId
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class ListResponseDto
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("consents")]
         [global::System.Text.Json.Serialization.JsonRequired]

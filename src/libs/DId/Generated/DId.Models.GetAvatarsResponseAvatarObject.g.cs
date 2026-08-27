@@ -9,7 +9,7 @@ namespace DId
     public enum GetAvatarsResponseAvatarObject
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SceneAvatar,
     }

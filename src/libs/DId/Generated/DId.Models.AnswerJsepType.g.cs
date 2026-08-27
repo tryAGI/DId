@@ -10,7 +10,7 @@ namespace DId
     public enum AnswerJsepType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Answer,
     }

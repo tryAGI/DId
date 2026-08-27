@@ -34,7 +34,7 @@ namespace DId
         public string? ErrorMessage { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("request_payload")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::DId.JsonConverters.TriggerEventDataJsonConverter))]

@@ -4,12 +4,12 @@
 namespace DId
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class GetAvatars1ResponseAvatarSentimentVariant1VoiceMicrosoft
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("type")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::DId.JsonConverters.GetAvatars1ResponseAvatarSentimentVariant1VoiceMicrosoftTypeJsonConverter))]

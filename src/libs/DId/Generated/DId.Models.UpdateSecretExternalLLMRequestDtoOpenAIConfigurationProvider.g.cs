@@ -9,7 +9,7 @@ namespace DId
     public enum UpdateSecretExternalLLMRequestDtoOpenAIConfigurationProvider
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ExternalOpenai,
     }

@@ -4,12 +4,12 @@
 namespace DId
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class CreateTalkRequestScriptVariant1ProviderElevenLabs2
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("type")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::DId.JsonConverters.CreateTalkRequestScriptVariant1ProviderElevenLabsType2JsonConverter))]

@@ -4,12 +4,12 @@
 namespace DId
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum AgentPresenterPhotoAvatarVoiceElevenLabsType2
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Elevenlabs,
     }

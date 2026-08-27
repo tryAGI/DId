@@ -4,16 +4,16 @@
 namespace DId
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum AgentUseCase
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DIdAgents,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DIdCampaigns,
     }

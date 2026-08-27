@@ -9,7 +9,7 @@ namespace DId
     public enum OpenAILLMProvider
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Openai,
     }

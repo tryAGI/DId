@@ -4,7 +4,7 @@
 namespace DId
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class GetAvatars1ResponseAvatarSentimentVariant1VoiceOpenAI
     {
@@ -32,7 +32,7 @@ namespace DId
         public string? Language { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("type")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::DId.JsonConverters.GetAvatars1ResponseAvatarSentimentVariant1VoiceOpenAITypeJsonConverter))]

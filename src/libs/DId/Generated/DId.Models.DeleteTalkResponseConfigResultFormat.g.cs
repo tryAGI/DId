@@ -9,11 +9,11 @@ namespace DId
     public enum DeleteTalkResponseConfigResultFormat
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Mov,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Mp4,
     }

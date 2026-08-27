@@ -11,7 +11,7 @@ namespace DId
     public sealed partial class DIdClient : global::DId.IDIdClient, global::System.IDisposable
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public const string DefaultBaseUrl = "https://api.d-id.com/";
 
@@ -38,7 +38,7 @@ namespace DId
         internal global::System.Lazy<global::System.Text.Json.Serialization.JsonSerializerContext> JsonSerializerContextProvider { get; set; } = new(() => global::DId.SourceGenerationContext.Default);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::System.Text.Json.Serialization.JsonSerializerContext JsonSerializerContext
         {
@@ -48,7 +48,7 @@ namespace DId
 
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public AgentsClient Agents => new AgentsClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -57,7 +57,7 @@ namespace DId
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public AgentsStreamsClient AgentsStreams => new AgentsStreamsClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -66,7 +66,7 @@ namespace DId
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public AudiosClient Audios => new AudiosClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -75,7 +75,7 @@ namespace DId
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ChatsExportClient ChatsExport => new ChatsExportClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -84,7 +84,7 @@ namespace DId
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ClientKeysClient ClientKeys => new ClientKeysClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -93,7 +93,7 @@ namespace DId
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ClipsPremiumAvatarsClient ClipsPremiumAvatars => new ClipsPremiumAvatarsClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -102,7 +102,7 @@ namespace DId
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ConsentsClient Consents => new ConsentsClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -111,7 +111,7 @@ namespace DId
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public CreditsClient Credits => new CreditsClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -120,7 +120,7 @@ namespace DId
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ImagesClient Images => new ImagesClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -129,7 +129,7 @@ namespace DId
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public KnowledgeClient Knowledge => new KnowledgeClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -138,7 +138,7 @@ namespace DId
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public RatingsClient Ratings => new RatingsClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -147,7 +147,7 @@ namespace DId
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ScenesExpressAvatarsClient ScenesExpressAvatars => new ScenesExpressAvatarsClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -156,7 +156,7 @@ namespace DId
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public SecretsClient Secrets => new SecretsClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -165,7 +165,7 @@ namespace DId
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public SettingsClient Settings => new SettingsClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -174,7 +174,7 @@ namespace DId
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TalksStandardAvatarsClient TalksStandardAvatars => new TalksStandardAvatarsClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -183,7 +183,7 @@ namespace DId
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public V4AvatarsClient V4Avatars => new V4AvatarsClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -192,7 +192,7 @@ namespace DId
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public VideoTranslateClient VideoTranslate => new VideoTranslateClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -201,7 +201,7 @@ namespace DId
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public VoicesClient Voices => new VoicesClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {

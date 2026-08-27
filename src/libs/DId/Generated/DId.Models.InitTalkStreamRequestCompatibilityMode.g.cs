@@ -12,7 +12,7 @@ namespace DId
     public enum InitTalkStreamRequestCompatibilityMode
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Auto,
         /// <summary>

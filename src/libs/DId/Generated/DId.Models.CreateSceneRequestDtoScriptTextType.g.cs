@@ -9,7 +9,7 @@ namespace DId
     public enum CreateSceneRequestDtoScriptTextType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Text,
     }

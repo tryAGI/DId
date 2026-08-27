@@ -9,105 +9,105 @@ namespace DId
     public sealed partial class UpdatePresenterAttributesRequestVariant1
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("entity__modified_at")]
         public string? EntityModifiedAt { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("modified_at")]
         public string? ModifiedAt { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("show")]
         public bool? Show { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("image_url")]
         public string? ImageUrl { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("thumbnail_url")]
         public string? ThumbnailUrl { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("video_url")]
         public string? VideoUrl { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("preview_url")]
         public string? PreviewUrl { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("talking_preview_url")]
         public string? TalkingPreviewUrl { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("gender")]
         public string? Gender { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("name")]
         public string? Name { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("voice")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::DId.JsonConverters.AnyOfJsonConverter<global::DId.UpdatePresenterAttributesRequestVariant1VoiceMicrosoft, global::DId.UpdatePresenterAttributesRequestVariant1VoiceElevenLabs, global::DId.UpdatePresenterAttributesRequestVariant1VoiceAmazon, global::DId.UpdatePresenterAttributesRequestVariant1VoiceGoogle, global::DId.UpdatePresenterAttributesRequestVariant1VoiceOpenAI>))]
         public global::DId.AnyOf<global::DId.UpdatePresenterAttributesRequestVariant1VoiceMicrosoft, global::DId.UpdatePresenterAttributesRequestVariant1VoiceElevenLabs, global::DId.UpdatePresenterAttributesRequestVariant1VoiceAmazon, global::DId.UpdatePresenterAttributesRequestVariant1VoiceGoogle, global::DId.UpdatePresenterAttributesRequestVariant1VoiceOpenAI>? Voice { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("is_streamable")]
         public bool? IsStreamable { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("is_greenscreen")]
         public bool? IsGreenscreen { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("idle_video")]
         public string? IdleVideo { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("a2e_model")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::DId.JsonConverters.UpdatePresenterAttributesRequestVariant1A2eModelJsonConverter))]
         public global::DId.UpdatePresenterAttributesRequestVariant1A2eModel? A2eModel { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("labels")]
         public global::System.Collections.Generic.IList<string>? Labels { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("face_rect")]
         public global::DId.UpdatePresenterAttributesRequestVariant1FaceRect? FaceRect { get; set; }

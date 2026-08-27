@@ -12,15 +12,15 @@ namespace DId
     public enum DeleteResponseVariant1LlmVariant3Template
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Assistant,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         RagGrounded,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         RagUngrounded,
     }

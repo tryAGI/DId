@@ -20,7 +20,7 @@ namespace DId.JsonConverters
                     {
                         return global::DId.CreateDocumentRequestVariant1DocumentTypeExtensions.ToEnum(stringValue) ?? default;
                     }
-                    
+
                     break;
                 }
                 case global::System.Text.Json.JsonTokenType.Number:

@@ -4,16 +4,16 @@
 namespace DId
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum EmbeddingProvider
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AzureOpenAi,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         OpenAi,
     }

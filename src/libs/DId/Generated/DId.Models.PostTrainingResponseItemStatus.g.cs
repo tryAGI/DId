@@ -9,23 +9,23 @@ namespace DId
     public enum PostTrainingResponseItemStatus
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Created,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Done,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Error,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ModelAssetsUploaded,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ProcessingArtifacts,
     }

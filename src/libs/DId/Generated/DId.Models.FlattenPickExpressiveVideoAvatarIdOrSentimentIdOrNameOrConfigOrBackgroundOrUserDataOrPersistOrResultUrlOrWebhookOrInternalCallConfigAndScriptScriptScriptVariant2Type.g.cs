@@ -9,7 +9,7 @@ namespace DId
     public enum FlattenPickExpressiveVideoAvatarIdOrSentimentIdOrNameOrConfigOrBackgroundOrUserDataOrPersistOrResultUrlOrWebhookOrInternalCallConfigAndScriptScriptScriptVariant2Type
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Audio,
     }

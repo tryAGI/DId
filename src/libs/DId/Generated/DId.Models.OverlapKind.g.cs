@@ -4,24 +4,24 @@
 namespace DId
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum OverlapKind
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         No,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Partial,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Unknown,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Yes,
     }

@@ -4,7 +4,7 @@
 namespace DId
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class UploadAnImageResponseFace
     {
@@ -23,44 +23,44 @@ namespace DId
         public required global::System.Collections.Generic.IList<double> TopLeft { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("overlap")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::DId.JsonConverters.UploadAnImageResponseFaceOverlapJsonConverter))]
         public global::DId.UploadAnImageResponseFaceOverlap? Overlap { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("face_id")]
         public string? FaceId { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("detect_confidence")]
         public double? DetectConfidence { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("sharpness")]
         public double? Sharpness { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("face_occluded")]
         public bool? FaceOccluded { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("face_occluded_confidence")]
         public double? FaceOccludedConfidence { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("detection")]
         public global::DId.UploadAnImageResponseFaceDetection? Detection { get; set; }

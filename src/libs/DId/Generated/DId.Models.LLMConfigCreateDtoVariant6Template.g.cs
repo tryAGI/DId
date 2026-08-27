@@ -12,15 +12,15 @@ namespace DId
     public enum LLMConfigCreateDtoVariant6Template
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Assistant,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         RagGrounded,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         RagUngrounded,
     }

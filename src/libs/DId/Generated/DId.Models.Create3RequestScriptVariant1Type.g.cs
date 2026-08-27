@@ -9,7 +9,7 @@ namespace DId
     public enum Create3RequestScriptVariant1Type
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Text,
     }

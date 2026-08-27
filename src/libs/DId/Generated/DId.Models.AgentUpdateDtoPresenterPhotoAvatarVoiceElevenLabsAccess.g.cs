@@ -10,19 +10,19 @@ namespace DId
     public enum AgentUpdateDtoPresenterPhotoAvatarVoiceElevenLabsAccess
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ExternalPrivate,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Premium,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Private,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Public,
     }

@@ -5,12 +5,12 @@
 namespace DId
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public readonly partial struct CreateDocumentDto : global::System.IEquatable<CreateDocumentDto>
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::DId.CreateDocumentDtoVariant1? CreateDocumentDtoVariant1 { get; init; }
@@ -19,7 +19,7 @@ namespace DId
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(CreateDocumentDtoVariant1))]
@@ -27,7 +27,7 @@ namespace DId
         public bool IsCreateDocumentDtoVariant1 => CreateDocumentDtoVariant1 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickCreateDocumentDtoVariant1(
 #if NET6_0_OR_GREATER
@@ -40,7 +40,7 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::DId.CreateDocumentDtoVariant1 PickCreateDocumentDtoVariant1() => IsCreateDocumentDtoVariant1
             ? CreateDocumentDtoVariant1!
@@ -56,7 +56,7 @@ namespace DId
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(CreateDocumentDtoVariant2))]
@@ -64,7 +64,7 @@ namespace DId
         public bool IsCreateDocumentDtoVariant2 => CreateDocumentDtoVariant2 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickCreateDocumentDtoVariant2(
 #if NET6_0_OR_GREATER
@@ -77,23 +77,23 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::DId.CreateDocumentDtoVariant2 PickCreateDocumentDtoVariant2() => IsCreateDocumentDtoVariant2
             ? CreateDocumentDtoVariant2!
             : throw new global::System.InvalidOperationException($"Expected union variant 'CreateDocumentDtoVariant2' but the value was {ToString()}.");
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator CreateDocumentDto(global::DId.CreateDocumentDtoVariant1 value) => new CreateDocumentDto((global::DId.CreateDocumentDtoVariant1?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::DId.CreateDocumentDtoVariant1?(CreateDocumentDto @this) => @this.CreateDocumentDtoVariant1;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public CreateDocumentDto(global::DId.CreateDocumentDtoVariant1? value)
         {
@@ -101,22 +101,22 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static CreateDocumentDto FromCreateDocumentDtoVariant1(global::DId.CreateDocumentDtoVariant1? value) => new CreateDocumentDto(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator CreateDocumentDto(global::DId.CreateDocumentDtoVariant2 value) => new CreateDocumentDto((global::DId.CreateDocumentDtoVariant2?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::DId.CreateDocumentDtoVariant2?(CreateDocumentDto @this) => @this.CreateDocumentDtoVariant2;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public CreateDocumentDto(global::DId.CreateDocumentDtoVariant2? value)
         {
@@ -124,12 +124,12 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static CreateDocumentDto FromCreateDocumentDtoVariant2(global::DId.CreateDocumentDtoVariant2? value) => new CreateDocumentDto(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public CreateDocumentDto(
             global::DId.CreateDocumentDtoVariant1? createDocumentDtoVariant1,
@@ -141,23 +141,23 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public object? Object =>
             CreateDocumentDtoVariant2 as object ??
-            CreateDocumentDtoVariant1 as object 
+            CreateDocumentDtoVariant1 as object
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override string? ToString() =>
             CreateDocumentDtoVariant1?.ToString() ??
-            CreateDocumentDtoVariant2?.ToString() 
+            CreateDocumentDtoVariant2?.ToString()
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Validate()
         {
@@ -165,7 +165,7 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TResult? Match<TResult>(
             global::System.Func<global::DId.CreateDocumentDtoVariant1, TResult>? createDocumentDtoVariant1 = null,
@@ -190,7 +190,7 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Match(
             global::System.Action<global::DId.CreateDocumentDtoVariant1>? createDocumentDtoVariant1 = null,
@@ -214,7 +214,7 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Switch(
             global::System.Action<global::DId.CreateDocumentDtoVariant1>? createDocumentDtoVariant1 = null,
@@ -237,7 +237,7 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override int GetHashCode()
         {
@@ -258,18 +258,18 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Equals(CreateDocumentDto other)
         {
             return
                 global::System.Collections.Generic.EqualityComparer<global::DId.CreateDocumentDtoVariant1?>.Default.Equals(CreateDocumentDtoVariant1, other.CreateDocumentDtoVariant1) &&
-                global::System.Collections.Generic.EqualityComparer<global::DId.CreateDocumentDtoVariant2?>.Default.Equals(CreateDocumentDtoVariant2, other.CreateDocumentDtoVariant2) 
+                global::System.Collections.Generic.EqualityComparer<global::DId.CreateDocumentDtoVariant2?>.Default.Equals(CreateDocumentDtoVariant2, other.CreateDocumentDtoVariant2)
                 ;
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator ==(CreateDocumentDto obj1, CreateDocumentDto obj2)
         {
@@ -277,7 +277,7 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator !=(CreateDocumentDto obj1, CreateDocumentDto obj2)
         {
@@ -285,7 +285,7 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override bool Equals(object? obj)
         {

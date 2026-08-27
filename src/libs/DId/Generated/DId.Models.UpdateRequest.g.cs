@@ -56,7 +56,7 @@ namespace DId
         public global::System.Collections.Generic.IList<string>? Greetings { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("user_data")]
         public string? UserData { get; set; }

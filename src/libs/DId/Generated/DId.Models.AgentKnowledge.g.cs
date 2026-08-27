@@ -11,7 +11,7 @@ namespace DId
     public sealed partial class AgentKnowledge
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("id")]
         [global::System.Text.Json.Serialization.JsonRequired]

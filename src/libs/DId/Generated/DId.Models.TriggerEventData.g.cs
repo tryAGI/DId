@@ -5,12 +5,12 @@
 namespace DId
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public readonly partial struct TriggerEventData : global::System.IEquatable<TriggerEventData>
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::DId.ChatEndEventData? ChatEnd { get; init; }
@@ -19,7 +19,7 @@ namespace DId
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(ChatEnd))]
@@ -27,7 +27,7 @@ namespace DId
         public bool IsChatEnd => ChatEnd != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickChatEnd(
 #if NET6_0_OR_GREATER
@@ -40,14 +40,14 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::DId.ChatEndEventData PickChatEnd() => IsChatEnd
             ? ChatEnd!
             : throw new global::System.InvalidOperationException($"Expected union variant 'ChatEnd' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::DId.TriggerEventDataVariant2? TriggerEventDataVariant2 { get; init; }
@@ -56,7 +56,7 @@ namespace DId
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(TriggerEventDataVariant2))]
@@ -64,7 +64,7 @@ namespace DId
         public bool IsTriggerEventDataVariant2 => TriggerEventDataVariant2 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickTriggerEventDataVariant2(
 #if NET6_0_OR_GREATER
@@ -77,23 +77,23 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::DId.TriggerEventDataVariant2 PickTriggerEventDataVariant2() => IsTriggerEventDataVariant2
             ? TriggerEventDataVariant2!
             : throw new global::System.InvalidOperationException($"Expected union variant 'TriggerEventDataVariant2' but the value was {ToString()}.");
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator TriggerEventData(global::DId.ChatEndEventData value) => new TriggerEventData((global::DId.ChatEndEventData?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::DId.ChatEndEventData?(TriggerEventData @this) => @this.ChatEnd;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TriggerEventData(global::DId.ChatEndEventData? value)
         {
@@ -101,22 +101,22 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static TriggerEventData FromChatEnd(global::DId.ChatEndEventData? value) => new TriggerEventData(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator TriggerEventData(global::DId.TriggerEventDataVariant2 value) => new TriggerEventData((global::DId.TriggerEventDataVariant2?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::DId.TriggerEventDataVariant2?(TriggerEventData @this) => @this.TriggerEventDataVariant2;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TriggerEventData(global::DId.TriggerEventDataVariant2? value)
         {
@@ -124,12 +124,12 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static TriggerEventData FromTriggerEventDataVariant2(global::DId.TriggerEventDataVariant2? value) => new TriggerEventData(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TriggerEventData(
             global::DId.ChatEndEventData? chatEnd,
@@ -141,23 +141,23 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public object? Object =>
             TriggerEventDataVariant2 as object ??
-            ChatEnd as object 
+            ChatEnd as object
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override string? ToString() =>
             ChatEnd?.ToString() ??
-            TriggerEventDataVariant2?.ToString() 
+            TriggerEventDataVariant2?.ToString()
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Validate()
         {
@@ -165,7 +165,7 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TResult? Match<TResult>(
             global::System.Func<global::DId.ChatEndEventData, TResult>? chatEnd = null,
@@ -190,7 +190,7 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Match(
             global::System.Action<global::DId.ChatEndEventData>? chatEnd = null,
@@ -214,7 +214,7 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Switch(
             global::System.Action<global::DId.ChatEndEventData>? chatEnd = null,
@@ -237,7 +237,7 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override int GetHashCode()
         {
@@ -258,18 +258,18 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Equals(TriggerEventData other)
         {
             return
                 global::System.Collections.Generic.EqualityComparer<global::DId.ChatEndEventData?>.Default.Equals(ChatEnd, other.ChatEnd) &&
-                global::System.Collections.Generic.EqualityComparer<global::DId.TriggerEventDataVariant2?>.Default.Equals(TriggerEventDataVariant2, other.TriggerEventDataVariant2) 
+                global::System.Collections.Generic.EqualityComparer<global::DId.TriggerEventDataVariant2?>.Default.Equals(TriggerEventDataVariant2, other.TriggerEventDataVariant2)
                 ;
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator ==(TriggerEventData obj1, TriggerEventData obj2)
         {
@@ -277,7 +277,7 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator !=(TriggerEventData obj1, TriggerEventData obj2)
         {
@@ -285,7 +285,7 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override bool Equals(object? obj)
         {

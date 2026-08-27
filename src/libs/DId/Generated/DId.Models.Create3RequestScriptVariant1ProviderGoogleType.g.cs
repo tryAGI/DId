@@ -4,12 +4,12 @@
 namespace DId
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum Create3RequestScriptVariant1ProviderGoogleType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Google,
     }

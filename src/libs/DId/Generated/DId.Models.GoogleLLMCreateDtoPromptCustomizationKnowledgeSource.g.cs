@@ -12,7 +12,7 @@ namespace DId
     public enum GoogleLLMCreateDtoPromptCustomizationKnowledgeSource
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         BaseKnowledge,
         /// <summary>

@@ -9,7 +9,7 @@ namespace DId
     public enum ListMyAgentsResponseAgentVariant1LlmGoogleProvider
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Google,
     }

@@ -5,12 +5,12 @@
 namespace DId
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public readonly partial struct AgentPresenter : global::System.IEquatable<AgentPresenter>
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::DId.AgentPresenterPhotoAvatar? PhotoAvatar { get; init; }
@@ -19,7 +19,7 @@ namespace DId
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(PhotoAvatar))]
@@ -27,7 +27,7 @@ namespace DId
         public bool IsPhotoAvatar => PhotoAvatar != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickPhotoAvatar(
 #if NET6_0_OR_GREATER
@@ -40,14 +40,14 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::DId.AgentPresenterPhotoAvatar PickPhotoAvatar() => IsPhotoAvatar
             ? PhotoAvatar!
             : throw new global::System.InvalidOperationException($"Expected union variant 'PhotoAvatar' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::DId.AgentPresenterVideoAvatar? VideoAvatar { get; init; }
@@ -56,7 +56,7 @@ namespace DId
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(VideoAvatar))]
@@ -64,7 +64,7 @@ namespace DId
         public bool IsVideoAvatar => VideoAvatar != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickVideoAvatar(
 #if NET6_0_OR_GREATER
@@ -77,14 +77,14 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::DId.AgentPresenterVideoAvatar PickVideoAvatar() => IsVideoAvatar
             ? VideoAvatar!
             : throw new global::System.InvalidOperationException($"Expected union variant 'VideoAvatar' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::DId.AgentPresenterExpressiveAvatar? ExpressiveAvatar { get; init; }
@@ -93,7 +93,7 @@ namespace DId
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(ExpressiveAvatar))]
@@ -101,7 +101,7 @@ namespace DId
         public bool IsExpressiveAvatar => ExpressiveAvatar != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickExpressiveAvatar(
 #if NET6_0_OR_GREATER
@@ -114,23 +114,23 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::DId.AgentPresenterExpressiveAvatar PickExpressiveAvatar() => IsExpressiveAvatar
             ? ExpressiveAvatar!
             : throw new global::System.InvalidOperationException($"Expected union variant 'ExpressiveAvatar' but the value was {ToString()}.");
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator AgentPresenter(global::DId.AgentPresenterPhotoAvatar value) => new AgentPresenter((global::DId.AgentPresenterPhotoAvatar?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::DId.AgentPresenterPhotoAvatar?(AgentPresenter @this) => @this.PhotoAvatar;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public AgentPresenter(global::DId.AgentPresenterPhotoAvatar? value)
         {
@@ -138,22 +138,22 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static AgentPresenter FromPhotoAvatar(global::DId.AgentPresenterPhotoAvatar? value) => new AgentPresenter(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator AgentPresenter(global::DId.AgentPresenterVideoAvatar value) => new AgentPresenter((global::DId.AgentPresenterVideoAvatar?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::DId.AgentPresenterVideoAvatar?(AgentPresenter @this) => @this.VideoAvatar;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public AgentPresenter(global::DId.AgentPresenterVideoAvatar? value)
         {
@@ -161,22 +161,22 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static AgentPresenter FromVideoAvatar(global::DId.AgentPresenterVideoAvatar? value) => new AgentPresenter(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator AgentPresenter(global::DId.AgentPresenterExpressiveAvatar value) => new AgentPresenter((global::DId.AgentPresenterExpressiveAvatar?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::DId.AgentPresenterExpressiveAvatar?(AgentPresenter @this) => @this.ExpressiveAvatar;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public AgentPresenter(global::DId.AgentPresenterExpressiveAvatar? value)
         {
@@ -184,12 +184,12 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static AgentPresenter FromExpressiveAvatar(global::DId.AgentPresenterExpressiveAvatar? value) => new AgentPresenter(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public AgentPresenter(
             global::DId.AgentPresenterPhotoAvatar? photoAvatar,
@@ -203,25 +203,25 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public object? Object =>
             ExpressiveAvatar as object ??
             VideoAvatar as object ??
-            PhotoAvatar as object 
+            PhotoAvatar as object
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override string? ToString() =>
             PhotoAvatar?.ToString() ??
             VideoAvatar?.ToString() ??
-            ExpressiveAvatar?.ToString() 
+            ExpressiveAvatar?.ToString()
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Validate()
         {
@@ -229,7 +229,7 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TResult? Match<TResult>(
             global::System.Func<global::DId.AgentPresenterPhotoAvatar, TResult>? photoAvatar = null,
@@ -259,7 +259,7 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Match(
             global::System.Action<global::DId.AgentPresenterPhotoAvatar>? photoAvatar = null,
@@ -289,7 +289,7 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Switch(
             global::System.Action<global::DId.AgentPresenterPhotoAvatar>? photoAvatar = null,
@@ -317,7 +317,7 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override int GetHashCode()
         {
@@ -340,19 +340,19 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Equals(AgentPresenter other)
         {
             return
                 global::System.Collections.Generic.EqualityComparer<global::DId.AgentPresenterPhotoAvatar?>.Default.Equals(PhotoAvatar, other.PhotoAvatar) &&
                 global::System.Collections.Generic.EqualityComparer<global::DId.AgentPresenterVideoAvatar?>.Default.Equals(VideoAvatar, other.VideoAvatar) &&
-                global::System.Collections.Generic.EqualityComparer<global::DId.AgentPresenterExpressiveAvatar?>.Default.Equals(ExpressiveAvatar, other.ExpressiveAvatar) 
+                global::System.Collections.Generic.EqualityComparer<global::DId.AgentPresenterExpressiveAvatar?>.Default.Equals(ExpressiveAvatar, other.ExpressiveAvatar)
                 ;
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator ==(AgentPresenter obj1, AgentPresenter obj2)
         {
@@ -360,7 +360,7 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator !=(AgentPresenter obj1, AgentPresenter obj2)
         {
@@ -368,7 +368,7 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override bool Equals(object? obj)
         {

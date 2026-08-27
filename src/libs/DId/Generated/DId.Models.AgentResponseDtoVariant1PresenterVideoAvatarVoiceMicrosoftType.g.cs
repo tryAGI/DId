@@ -4,12 +4,12 @@
 namespace DId
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum AgentResponseDtoVariant1PresenterVideoAvatarVoiceMicrosoftType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Microsoft,
     }

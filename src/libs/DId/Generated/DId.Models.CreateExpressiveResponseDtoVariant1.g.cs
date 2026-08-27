@@ -16,7 +16,7 @@ namespace DId
         public required string Id { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("status")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::DId.JsonConverters.CreateExpressiveResponseDtoVariant1StatusJsonConverter))]

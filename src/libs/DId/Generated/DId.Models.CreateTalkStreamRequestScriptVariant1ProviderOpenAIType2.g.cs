@@ -4,12 +4,12 @@
 namespace DId
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum CreateTalkStreamRequestScriptVariant1ProviderOpenAIType2
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AzureOpenai,
     }

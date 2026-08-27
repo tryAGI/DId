@@ -5,12 +5,12 @@
 namespace DId
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public readonly partial struct LogoDto : global::System.IEquatable<LogoDto>
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::DId.LogoDtoVariant1? LogoDtoVariant1 { get; init; }
@@ -19,7 +19,7 @@ namespace DId
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(LogoDtoVariant1))]
@@ -27,7 +27,7 @@ namespace DId
         public bool IsLogoDtoVariant1 => LogoDtoVariant1 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickLogoDtoVariant1(
 #if NET6_0_OR_GREATER
@@ -40,14 +40,14 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::DId.LogoDtoVariant1 PickLogoDtoVariant1() => IsLogoDtoVariant1
             ? LogoDtoVariant1!
             : throw new global::System.InvalidOperationException($"Expected union variant 'LogoDtoVariant1' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public bool? LogoDtoVariant2 { get; init; }
@@ -56,7 +56,7 @@ namespace DId
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(LogoDtoVariant2))]
@@ -64,7 +64,7 @@ namespace DId
         public bool IsLogoDtoVariant2 => LogoDtoVariant2 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickLogoDtoVariant2(
 #if NET6_0_OR_GREATER
@@ -77,23 +77,23 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool PickLogoDtoVariant2() => IsLogoDtoVariant2
             ? LogoDtoVariant2!.Value
             : throw new global::System.InvalidOperationException($"Expected union variant 'LogoDtoVariant2' but the value was {ToString()}.");
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator LogoDto(global::DId.LogoDtoVariant1 value) => new LogoDto((global::DId.LogoDtoVariant1?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::DId.LogoDtoVariant1?(LogoDto @this) => @this.LogoDtoVariant1;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public LogoDto(global::DId.LogoDtoVariant1? value)
         {
@@ -101,22 +101,22 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static LogoDto FromLogoDtoVariant1(global::DId.LogoDtoVariant1? value) => new LogoDto(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator LogoDto(bool value) => new LogoDto((bool?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator bool?(LogoDto @this) => @this.LogoDtoVariant2;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public LogoDto(bool? value)
         {
@@ -124,12 +124,12 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static LogoDto FromLogoDtoVariant2(bool? value) => new LogoDto(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public LogoDto(
             global::DId.LogoDtoVariant1? logoDtoVariant1,
@@ -141,23 +141,23 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public object? Object =>
             LogoDtoVariant2 as object ??
-            LogoDtoVariant1 as object 
+            LogoDtoVariant1 as object
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override string? ToString() =>
             LogoDtoVariant1?.ToString() ??
-            LogoDtoVariant2?.ToString().ToLowerInvariant() 
+            LogoDtoVariant2?.ToString().ToLowerInvariant()
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Validate()
         {
@@ -165,7 +165,7 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TResult? Match<TResult>(
             global::System.Func<global::DId.LogoDtoVariant1, TResult>? logoDtoVariant1 = null,
@@ -190,7 +190,7 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Match(
             global::System.Action<global::DId.LogoDtoVariant1>? logoDtoVariant1 = null,
@@ -214,7 +214,7 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Switch(
             global::System.Action<global::DId.LogoDtoVariant1>? logoDtoVariant1 = null,
@@ -237,7 +237,7 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override int GetHashCode()
         {
@@ -258,18 +258,18 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Equals(LogoDto other)
         {
             return
                 global::System.Collections.Generic.EqualityComparer<global::DId.LogoDtoVariant1?>.Default.Equals(LogoDtoVariant1, other.LogoDtoVariant1) &&
-                global::System.Collections.Generic.EqualityComparer<bool?>.Default.Equals(LogoDtoVariant2, other.LogoDtoVariant2) 
+                global::System.Collections.Generic.EqualityComparer<bool?>.Default.Equals(LogoDtoVariant2, other.LogoDtoVariant2)
                 ;
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator ==(LogoDto obj1, LogoDto obj2)
         {
@@ -277,7 +277,7 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator !=(LogoDto obj1, LogoDto obj2)
         {
@@ -285,7 +285,7 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override bool Equals(object? obj)
         {

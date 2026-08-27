@@ -9,7 +9,7 @@ namespace DId
     public enum CreateVideoStreamRequestScriptTextType2
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Text,
     }

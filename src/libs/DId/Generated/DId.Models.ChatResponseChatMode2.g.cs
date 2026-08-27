@@ -4,24 +4,24 @@
 namespace DId
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum ChatResponseChatMode2
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Functional,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Maintenance,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Playground,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TextOnly,
     }

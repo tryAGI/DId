@@ -4,12 +4,12 @@
 namespace DId
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum CreateTalkRequestScriptVariant1ProviderMicrosoftType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Microsoft,
     }

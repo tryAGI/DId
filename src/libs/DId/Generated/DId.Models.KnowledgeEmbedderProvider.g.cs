@@ -4,16 +4,16 @@
 namespace DId
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum KnowledgeEmbedderProvider
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AzureOpenAi,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         OpenAi,
     }

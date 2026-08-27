@@ -4,12 +4,12 @@
 namespace DId
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum GetExpressiveAvatarsDtoAvatarSentimentVariant1VoiceAmazonType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Amazon,
     }

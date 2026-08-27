@@ -4,16 +4,16 @@
 namespace DId
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum ExpressiveInferenceMode
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Idle,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Talk,
     }

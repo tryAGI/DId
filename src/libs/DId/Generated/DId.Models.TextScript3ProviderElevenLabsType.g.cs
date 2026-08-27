@@ -4,12 +4,12 @@
 namespace DId
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum TextScript3ProviderElevenLabsType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Elevenlabs,
     }

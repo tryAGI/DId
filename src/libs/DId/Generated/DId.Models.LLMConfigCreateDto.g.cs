@@ -5,7 +5,7 @@
 namespace DId
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public readonly partial struct LLMConfigCreateDto : global::System.IEquatable<LLMConfigCreateDto>
     {
@@ -19,7 +19,7 @@ namespace DId
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(LLMConfigCreateDtoVariant1))]
@@ -27,7 +27,7 @@ namespace DId
         public bool IsLLMConfigCreateDtoVariant1 => LLMConfigCreateDtoVariant1 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickLLMConfigCreateDtoVariant1(
 #if NET6_0_OR_GREATER
@@ -40,14 +40,14 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::DId.LLMConfigCreateDtoVariant1 PickLLMConfigCreateDtoVariant1() => IsLLMConfigCreateDtoVariant1
             ? LLMConfigCreateDtoVariant1!
             : throw new global::System.InvalidOperationException($"Expected union variant 'LLMConfigCreateDtoVariant1' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::DId.LLMConfigCreateDtoVariant2? LLMConfigCreateDtoVariant2 { get; init; }
@@ -56,7 +56,7 @@ namespace DId
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(LLMConfigCreateDtoVariant2))]
@@ -64,7 +64,7 @@ namespace DId
         public bool IsLLMConfigCreateDtoVariant2 => LLMConfigCreateDtoVariant2 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickLLMConfigCreateDtoVariant2(
 #if NET6_0_OR_GREATER
@@ -77,14 +77,14 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::DId.LLMConfigCreateDtoVariant2 PickLLMConfigCreateDtoVariant2() => IsLLMConfigCreateDtoVariant2
             ? LLMConfigCreateDtoVariant2!
             : throw new global::System.InvalidOperationException($"Expected union variant 'LLMConfigCreateDtoVariant2' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::DId.LLMConfigCreateDtoVariant3? LLMConfigCreateDtoVariant3 { get; init; }
@@ -93,7 +93,7 @@ namespace DId
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(LLMConfigCreateDtoVariant3))]
@@ -101,7 +101,7 @@ namespace DId
         public bool IsLLMConfigCreateDtoVariant3 => LLMConfigCreateDtoVariant3 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickLLMConfigCreateDtoVariant3(
 #if NET6_0_OR_GREATER
@@ -114,14 +114,14 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::DId.LLMConfigCreateDtoVariant3 PickLLMConfigCreateDtoVariant3() => IsLLMConfigCreateDtoVariant3
             ? LLMConfigCreateDtoVariant3!
             : throw new global::System.InvalidOperationException($"Expected union variant 'LLMConfigCreateDtoVariant3' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::DId.LLMConfigCreateDtoVariant4? LLMConfigCreateDtoVariant4 { get; init; }
@@ -130,7 +130,7 @@ namespace DId
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(LLMConfigCreateDtoVariant4))]
@@ -138,7 +138,7 @@ namespace DId
         public bool IsLLMConfigCreateDtoVariant4 => LLMConfigCreateDtoVariant4 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickLLMConfigCreateDtoVariant4(
 #if NET6_0_OR_GREATER
@@ -151,14 +151,14 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::DId.LLMConfigCreateDtoVariant4 PickLLMConfigCreateDtoVariant4() => IsLLMConfigCreateDtoVariant4
             ? LLMConfigCreateDtoVariant4!
             : throw new global::System.InvalidOperationException($"Expected union variant 'LLMConfigCreateDtoVariant4' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::DId.LLMConfigCreateDtoVariant5? LLMConfigCreateDtoVariant5 { get; init; }
@@ -167,7 +167,7 @@ namespace DId
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(LLMConfigCreateDtoVariant5))]
@@ -175,7 +175,7 @@ namespace DId
         public bool IsLLMConfigCreateDtoVariant5 => LLMConfigCreateDtoVariant5 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickLLMConfigCreateDtoVariant5(
 #if NET6_0_OR_GREATER
@@ -188,14 +188,14 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::DId.LLMConfigCreateDtoVariant5 PickLLMConfigCreateDtoVariant5() => IsLLMConfigCreateDtoVariant5
             ? LLMConfigCreateDtoVariant5!
             : throw new global::System.InvalidOperationException($"Expected union variant 'LLMConfigCreateDtoVariant5' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::DId.LLMConfigCreateDtoVariant6? LLMConfigCreateDtoVariant6 { get; init; }
@@ -204,7 +204,7 @@ namespace DId
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(LLMConfigCreateDtoVariant6))]
@@ -212,7 +212,7 @@ namespace DId
         public bool IsLLMConfigCreateDtoVariant6 => LLMConfigCreateDtoVariant6 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickLLMConfigCreateDtoVariant6(
 #if NET6_0_OR_GREATER
@@ -225,23 +225,23 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::DId.LLMConfigCreateDtoVariant6 PickLLMConfigCreateDtoVariant6() => IsLLMConfigCreateDtoVariant6
             ? LLMConfigCreateDtoVariant6!
             : throw new global::System.InvalidOperationException($"Expected union variant 'LLMConfigCreateDtoVariant6' but the value was {ToString()}.");
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator LLMConfigCreateDto(global::DId.LLMConfigCreateDtoVariant1 value) => new LLMConfigCreateDto((global::DId.LLMConfigCreateDtoVariant1?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::DId.LLMConfigCreateDtoVariant1?(LLMConfigCreateDto @this) => @this.LLMConfigCreateDtoVariant1;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public LLMConfigCreateDto(global::DId.LLMConfigCreateDtoVariant1? value)
         {
@@ -249,22 +249,22 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static LLMConfigCreateDto FromLLMConfigCreateDtoVariant1(global::DId.LLMConfigCreateDtoVariant1? value) => new LLMConfigCreateDto(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator LLMConfigCreateDto(global::DId.LLMConfigCreateDtoVariant2 value) => new LLMConfigCreateDto((global::DId.LLMConfigCreateDtoVariant2?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::DId.LLMConfigCreateDtoVariant2?(LLMConfigCreateDto @this) => @this.LLMConfigCreateDtoVariant2;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public LLMConfigCreateDto(global::DId.LLMConfigCreateDtoVariant2? value)
         {
@@ -272,22 +272,22 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static LLMConfigCreateDto FromLLMConfigCreateDtoVariant2(global::DId.LLMConfigCreateDtoVariant2? value) => new LLMConfigCreateDto(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator LLMConfigCreateDto(global::DId.LLMConfigCreateDtoVariant3 value) => new LLMConfigCreateDto((global::DId.LLMConfigCreateDtoVariant3?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::DId.LLMConfigCreateDtoVariant3?(LLMConfigCreateDto @this) => @this.LLMConfigCreateDtoVariant3;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public LLMConfigCreateDto(global::DId.LLMConfigCreateDtoVariant3? value)
         {
@@ -295,22 +295,22 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static LLMConfigCreateDto FromLLMConfigCreateDtoVariant3(global::DId.LLMConfigCreateDtoVariant3? value) => new LLMConfigCreateDto(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator LLMConfigCreateDto(global::DId.LLMConfigCreateDtoVariant4 value) => new LLMConfigCreateDto((global::DId.LLMConfigCreateDtoVariant4?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::DId.LLMConfigCreateDtoVariant4?(LLMConfigCreateDto @this) => @this.LLMConfigCreateDtoVariant4;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public LLMConfigCreateDto(global::DId.LLMConfigCreateDtoVariant4? value)
         {
@@ -318,22 +318,22 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static LLMConfigCreateDto FromLLMConfigCreateDtoVariant4(global::DId.LLMConfigCreateDtoVariant4? value) => new LLMConfigCreateDto(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator LLMConfigCreateDto(global::DId.LLMConfigCreateDtoVariant5 value) => new LLMConfigCreateDto((global::DId.LLMConfigCreateDtoVariant5?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::DId.LLMConfigCreateDtoVariant5?(LLMConfigCreateDto @this) => @this.LLMConfigCreateDtoVariant5;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public LLMConfigCreateDto(global::DId.LLMConfigCreateDtoVariant5? value)
         {
@@ -341,22 +341,22 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static LLMConfigCreateDto FromLLMConfigCreateDtoVariant5(global::DId.LLMConfigCreateDtoVariant5? value) => new LLMConfigCreateDto(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator LLMConfigCreateDto(global::DId.LLMConfigCreateDtoVariant6 value) => new LLMConfigCreateDto((global::DId.LLMConfigCreateDtoVariant6?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::DId.LLMConfigCreateDtoVariant6?(LLMConfigCreateDto @this) => @this.LLMConfigCreateDtoVariant6;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public LLMConfigCreateDto(global::DId.LLMConfigCreateDtoVariant6? value)
         {
@@ -364,12 +364,12 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static LLMConfigCreateDto FromLLMConfigCreateDtoVariant6(global::DId.LLMConfigCreateDtoVariant6? value) => new LLMConfigCreateDto(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public LLMConfigCreateDto(
             global::DId.LLMConfigCreateDtoVariant1? lLMConfigCreateDtoVariant1,
@@ -389,7 +389,7 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public object? Object =>
             LLMConfigCreateDtoVariant6 as object ??
@@ -397,11 +397,11 @@ namespace DId
             LLMConfigCreateDtoVariant4 as object ??
             LLMConfigCreateDtoVariant3 as object ??
             LLMConfigCreateDtoVariant2 as object ??
-            LLMConfigCreateDtoVariant1 as object 
+            LLMConfigCreateDtoVariant1 as object
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override string? ToString() =>
             LLMConfigCreateDtoVariant1?.ToString() ??
@@ -409,11 +409,11 @@ namespace DId
             LLMConfigCreateDtoVariant3?.ToString() ??
             LLMConfigCreateDtoVariant4?.ToString() ??
             LLMConfigCreateDtoVariant5?.ToString() ??
-            LLMConfigCreateDtoVariant6?.ToString() 
+            LLMConfigCreateDtoVariant6?.ToString()
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Validate()
         {
@@ -421,7 +421,7 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TResult? Match<TResult>(
             global::System.Func<global::DId.LLMConfigCreateDtoVariant1, TResult>? lLMConfigCreateDtoVariant1 = null,
@@ -466,7 +466,7 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Match(
             global::System.Action<global::DId.LLMConfigCreateDtoVariant1>? lLMConfigCreateDtoVariant1 = null,
@@ -514,7 +514,7 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Switch(
             global::System.Action<global::DId.LLMConfigCreateDtoVariant1>? lLMConfigCreateDtoVariant1 = null,
@@ -557,7 +557,7 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override int GetHashCode()
         {
@@ -586,7 +586,7 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Equals(LLMConfigCreateDto other)
         {
@@ -596,12 +596,12 @@ namespace DId
                 global::System.Collections.Generic.EqualityComparer<global::DId.LLMConfigCreateDtoVariant3?>.Default.Equals(LLMConfigCreateDtoVariant3, other.LLMConfigCreateDtoVariant3) &&
                 global::System.Collections.Generic.EqualityComparer<global::DId.LLMConfigCreateDtoVariant4?>.Default.Equals(LLMConfigCreateDtoVariant4, other.LLMConfigCreateDtoVariant4) &&
                 global::System.Collections.Generic.EqualityComparer<global::DId.LLMConfigCreateDtoVariant5?>.Default.Equals(LLMConfigCreateDtoVariant5, other.LLMConfigCreateDtoVariant5) &&
-                global::System.Collections.Generic.EqualityComparer<global::DId.LLMConfigCreateDtoVariant6?>.Default.Equals(LLMConfigCreateDtoVariant6, other.LLMConfigCreateDtoVariant6) 
+                global::System.Collections.Generic.EqualityComparer<global::DId.LLMConfigCreateDtoVariant6?>.Default.Equals(LLMConfigCreateDtoVariant6, other.LLMConfigCreateDtoVariant6)
                 ;
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator ==(LLMConfigCreateDto obj1, LLMConfigCreateDto obj2)
         {
@@ -609,7 +609,7 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator !=(LLMConfigCreateDto obj1, LLMConfigCreateDto obj2)
         {
@@ -617,7 +617,7 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override bool Equals(object? obj)
         {

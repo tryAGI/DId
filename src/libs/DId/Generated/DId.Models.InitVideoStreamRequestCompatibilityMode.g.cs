@@ -12,7 +12,7 @@ namespace DId
     public enum InitVideoStreamRequestCompatibilityMode
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Auto,
         /// <summary>

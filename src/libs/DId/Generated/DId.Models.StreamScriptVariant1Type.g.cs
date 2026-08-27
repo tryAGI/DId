@@ -9,7 +9,7 @@ namespace DId
     public enum StreamScriptVariant1Type
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Text,
     }

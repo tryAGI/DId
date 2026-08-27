@@ -4,19 +4,19 @@
 namespace DId
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class CreateTranslationResponseDtoTranslationTranscription
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("url")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string Url { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("version")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::DId.JsonConverters.CreateTranslationResponseDtoTranslationTranscriptionVersionJsonConverter))]
@@ -24,7 +24,7 @@ namespace DId
         public required global::DId.CreateTranslationResponseDtoTranslationTranscriptionVersion Version { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("selected")]
         public bool? Selected { get; set; }

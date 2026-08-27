@@ -9,23 +9,23 @@ namespace DId
     public enum TrainingStatus
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Created,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Done,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Error,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ModelAssetsUploaded,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ProcessingArtifacts,
     }

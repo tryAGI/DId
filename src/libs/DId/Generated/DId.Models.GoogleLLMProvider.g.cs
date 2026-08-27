@@ -9,7 +9,7 @@ namespace DId
     public enum GoogleLLMProvider
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Google,
     }

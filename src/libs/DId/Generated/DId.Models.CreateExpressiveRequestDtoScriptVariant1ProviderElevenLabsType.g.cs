@@ -4,12 +4,12 @@
 namespace DId
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum CreateExpressiveRequestDtoScriptVariant1ProviderElevenLabsType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Elevenlabs,
     }

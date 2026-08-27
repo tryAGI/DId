@@ -12,15 +12,15 @@ namespace DId
     public enum OmitAgentUserDataOrAdvancedSettingsOrEmbedOrAssetsLlmDIdTemplate
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Assistant,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         RagGrounded,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         RagUngrounded,
     }

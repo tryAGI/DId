@@ -4,7 +4,7 @@
 namespace DId
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class Agent
     {
@@ -69,7 +69,7 @@ namespace DId
         public global::DId.AgentError? Error { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("user_data")]
         public string? UserData { get; set; }

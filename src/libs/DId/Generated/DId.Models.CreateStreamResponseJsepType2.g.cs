@@ -9,7 +9,7 @@ namespace DId
     public enum CreateStreamResponseJsepType2
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Offer,
     }

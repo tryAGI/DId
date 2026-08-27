@@ -4,12 +4,12 @@
 namespace DId
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum ColorBackgroundType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Color,
     }

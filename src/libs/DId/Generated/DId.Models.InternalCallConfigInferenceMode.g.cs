@@ -4,16 +4,16 @@
 namespace DId
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum InternalCallConfigInferenceMode
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Idle,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Talk,
     }

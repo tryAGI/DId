@@ -4,12 +4,12 @@
 namespace DId
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class KnowledgeEmbedder
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("provider")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::DId.JsonConverters.KnowledgeEmbedderProviderJsonConverter))]
@@ -24,7 +24,7 @@ namespace DId
         public required string Model { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("trim")]
         public global::DId.KnowledgeEmbedderTrim? Trim { get; set; }

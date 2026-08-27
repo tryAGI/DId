@@ -9,7 +9,7 @@ namespace DId
     public enum AgentUpdateDtoLlmGoogleProvider
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Google,
     }

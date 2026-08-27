@@ -4,16 +4,16 @@
 namespace DId
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum A2eModel
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         BaselineDefault,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Finetuned,
     }

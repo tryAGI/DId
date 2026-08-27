@@ -9,7 +9,7 @@ namespace DId
     public enum DeleteResponseVariant1PresenterPhotoAvatarType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Talk,
     }

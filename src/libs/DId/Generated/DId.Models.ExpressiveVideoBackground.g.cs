@@ -5,12 +5,12 @@
 namespace DId
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public readonly partial struct ExpressiveVideoBackground : global::System.IEquatable<ExpressiveVideoBackground>
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::DId.ExpressiveVideoBackgroundVariant1? ExpressiveVideoBackgroundVariant1 { get; init; }
@@ -19,7 +19,7 @@ namespace DId
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(ExpressiveVideoBackgroundVariant1))]
@@ -27,7 +27,7 @@ namespace DId
         public bool IsExpressiveVideoBackgroundVariant1 => ExpressiveVideoBackgroundVariant1 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickExpressiveVideoBackgroundVariant1(
 #if NET6_0_OR_GREATER
@@ -40,14 +40,14 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::DId.ExpressiveVideoBackgroundVariant1 PickExpressiveVideoBackgroundVariant1() => IsExpressiveVideoBackgroundVariant1
             ? ExpressiveVideoBackgroundVariant1!
             : throw new global::System.InvalidOperationException($"Expected union variant 'ExpressiveVideoBackgroundVariant1' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::DId.ExpressiveVideoBackgroundVariant2? ExpressiveVideoBackgroundVariant2 { get; init; }
@@ -56,7 +56,7 @@ namespace DId
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(ExpressiveVideoBackgroundVariant2))]
@@ -64,7 +64,7 @@ namespace DId
         public bool IsExpressiveVideoBackgroundVariant2 => ExpressiveVideoBackgroundVariant2 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickExpressiveVideoBackgroundVariant2(
 #if NET6_0_OR_GREATER
@@ -77,23 +77,23 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::DId.ExpressiveVideoBackgroundVariant2 PickExpressiveVideoBackgroundVariant2() => IsExpressiveVideoBackgroundVariant2
             ? ExpressiveVideoBackgroundVariant2!
             : throw new global::System.InvalidOperationException($"Expected union variant 'ExpressiveVideoBackgroundVariant2' but the value was {ToString()}.");
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator ExpressiveVideoBackground(global::DId.ExpressiveVideoBackgroundVariant1 value) => new ExpressiveVideoBackground((global::DId.ExpressiveVideoBackgroundVariant1?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::DId.ExpressiveVideoBackgroundVariant1?(ExpressiveVideoBackground @this) => @this.ExpressiveVideoBackgroundVariant1;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ExpressiveVideoBackground(global::DId.ExpressiveVideoBackgroundVariant1? value)
         {
@@ -101,22 +101,22 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static ExpressiveVideoBackground FromExpressiveVideoBackgroundVariant1(global::DId.ExpressiveVideoBackgroundVariant1? value) => new ExpressiveVideoBackground(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator ExpressiveVideoBackground(global::DId.ExpressiveVideoBackgroundVariant2 value) => new ExpressiveVideoBackground((global::DId.ExpressiveVideoBackgroundVariant2?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::DId.ExpressiveVideoBackgroundVariant2?(ExpressiveVideoBackground @this) => @this.ExpressiveVideoBackgroundVariant2;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ExpressiveVideoBackground(global::DId.ExpressiveVideoBackgroundVariant2? value)
         {
@@ -124,12 +124,12 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static ExpressiveVideoBackground FromExpressiveVideoBackgroundVariant2(global::DId.ExpressiveVideoBackgroundVariant2? value) => new ExpressiveVideoBackground(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ExpressiveVideoBackground(
             global::DId.ExpressiveVideoBackgroundVariant1? expressiveVideoBackgroundVariant1,
@@ -141,23 +141,23 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public object? Object =>
             ExpressiveVideoBackgroundVariant2 as object ??
-            ExpressiveVideoBackgroundVariant1 as object 
+            ExpressiveVideoBackgroundVariant1 as object
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override string? ToString() =>
             ExpressiveVideoBackgroundVariant1?.ToString() ??
-            ExpressiveVideoBackgroundVariant2?.ToString() 
+            ExpressiveVideoBackgroundVariant2?.ToString()
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Validate()
         {
@@ -165,7 +165,7 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TResult? Match<TResult>(
             global::System.Func<global::DId.ExpressiveVideoBackgroundVariant1, TResult>? expressiveVideoBackgroundVariant1 = null,
@@ -190,7 +190,7 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Match(
             global::System.Action<global::DId.ExpressiveVideoBackgroundVariant1>? expressiveVideoBackgroundVariant1 = null,
@@ -214,7 +214,7 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Switch(
             global::System.Action<global::DId.ExpressiveVideoBackgroundVariant1>? expressiveVideoBackgroundVariant1 = null,
@@ -237,7 +237,7 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override int GetHashCode()
         {
@@ -258,18 +258,18 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Equals(ExpressiveVideoBackground other)
         {
             return
                 global::System.Collections.Generic.EqualityComparer<global::DId.ExpressiveVideoBackgroundVariant1?>.Default.Equals(ExpressiveVideoBackgroundVariant1, other.ExpressiveVideoBackgroundVariant1) &&
-                global::System.Collections.Generic.EqualityComparer<global::DId.ExpressiveVideoBackgroundVariant2?>.Default.Equals(ExpressiveVideoBackgroundVariant2, other.ExpressiveVideoBackgroundVariant2) 
+                global::System.Collections.Generic.EqualityComparer<global::DId.ExpressiveVideoBackgroundVariant2?>.Default.Equals(ExpressiveVideoBackgroundVariant2, other.ExpressiveVideoBackgroundVariant2)
                 ;
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator ==(ExpressiveVideoBackground obj1, ExpressiveVideoBackground obj2)
         {
@@ -277,7 +277,7 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator !=(ExpressiveVideoBackground obj1, ExpressiveVideoBackground obj2)
         {
@@ -285,7 +285,7 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override bool Equals(object? obj)
         {

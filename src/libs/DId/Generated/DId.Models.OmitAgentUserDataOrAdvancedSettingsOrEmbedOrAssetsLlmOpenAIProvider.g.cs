@@ -9,7 +9,7 @@ namespace DId
     public enum OmitAgentUserDataOrAdvancedSettingsOrEmbedOrAssetsLlmOpenAIProvider
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Openai,
     }

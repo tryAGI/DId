@@ -9,11 +9,11 @@ namespace DId
     public enum CreateClipTrainRequestGender
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Female,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Male,
     }

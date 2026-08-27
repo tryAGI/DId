@@ -4,7 +4,7 @@
 namespace DId
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class GetExpressivesResponseDto
     {
@@ -15,7 +15,7 @@ namespace DId
         public string? Token { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("expressives")]
         [global::System.Text.Json.Serialization.JsonRequired]

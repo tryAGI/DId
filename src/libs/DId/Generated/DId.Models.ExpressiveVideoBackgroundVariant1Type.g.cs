@@ -4,12 +4,12 @@
 namespace DId
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum ExpressiveVideoBackgroundVariant1Type
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Color,
     }

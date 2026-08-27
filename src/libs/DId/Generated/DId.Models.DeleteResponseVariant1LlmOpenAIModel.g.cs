@@ -9,31 +9,31 @@ namespace DId
     public enum DeleteResponseVariant1LlmOpenAIModel
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Gpt41,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Gpt41Mini,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Gpt41Nano,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Gpt4oGlobal,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Gpt4oMini,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Gpt5Mini,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Gpt5Nano,
     }

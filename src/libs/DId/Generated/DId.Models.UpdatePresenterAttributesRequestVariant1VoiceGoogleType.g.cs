@@ -4,12 +4,12 @@
 namespace DId
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum UpdatePresenterAttributesRequestVariant1VoiceGoogleType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Google,
     }

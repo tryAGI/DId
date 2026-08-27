@@ -10,19 +10,19 @@ namespace DId
     public enum AgentPresenterExpressiveAvatarVoiceElevenLabsAccess
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ExternalPrivate,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Premium,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Private,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Public,
     }

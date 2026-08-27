@@ -4,12 +4,12 @@
 namespace DId
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class CreateClipStreamRequestScriptVariant1ProviderMicrosoft2
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("type")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::DId.JsonConverters.CreateClipStreamRequestScriptVariant1ProviderMicrosoftType2JsonConverter))]

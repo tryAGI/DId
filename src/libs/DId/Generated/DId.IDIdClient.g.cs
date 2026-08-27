@@ -40,98 +40,98 @@ namespace DId
 
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         global::System.Text.Json.Serialization.JsonSerializerContext JsonSerializerContext { get; set; }
 
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public AgentsClient Agents { get; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public AgentsStreamsClient AgentsStreams { get; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public AudiosClient Audios { get; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ChatsExportClient ChatsExport { get; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ClientKeysClient ClientKeys { get; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ClipsPremiumAvatarsClient ClipsPremiumAvatars { get; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ConsentsClient Consents { get; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public CreditsClient Credits { get; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ImagesClient Images { get; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public KnowledgeClient Knowledge { get; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public RatingsClient Ratings { get; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ScenesExpressAvatarsClient ScenesExpressAvatars { get; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public SecretsClient Secrets { get; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public SettingsClient Settings { get; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TalksStandardAvatarsClient TalksStandardAvatars { get; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public V4AvatarsClient V4Avatars { get; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public VideoTranslateClient VideoTranslate { get; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public VoicesClient Voices { get; }
 

@@ -20,7 +20,7 @@ namespace DId.JsonConverters
                     {
                         return global::DId.CustomAuthConfigOAuth2TypeExtensions.ToEnum(stringValue) ?? default;
                     }
-                    
+
                     break;
                 }
                 case global::System.Text.Json.JsonTokenType.Number:

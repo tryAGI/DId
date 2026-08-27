@@ -4,12 +4,12 @@
 namespace DId
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum CreateClipRequestScriptVariant1ProviderElevenLabsType2
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Elevenlabs,
     }

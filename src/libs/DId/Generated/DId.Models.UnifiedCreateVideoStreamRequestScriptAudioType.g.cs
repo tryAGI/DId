@@ -9,7 +9,7 @@ namespace DId
     public enum UnifiedCreateVideoStreamRequestScriptAudioType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Audio,
     }

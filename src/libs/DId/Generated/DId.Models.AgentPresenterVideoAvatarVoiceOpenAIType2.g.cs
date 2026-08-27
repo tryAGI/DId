@@ -4,12 +4,12 @@
 namespace DId
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum AgentPresenterVideoAvatarVoiceOpenAIType2
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AzureOpenai,
     }

@@ -4,24 +4,24 @@
 namespace DId
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class AgentsSettings
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("num_embed")]
         public double? NumEmbed { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("num_origins")]
         public double? NumOrigins { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("session_ttl")]
         public double? SessionTtl { get; set; }
@@ -34,7 +34,7 @@ namespace DId
         public global::DId.AgentsSettingsLlmModel? LlmModel { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("messages_limit")]
         public double? MessagesLimit { get; set; }

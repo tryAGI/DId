@@ -9,7 +9,7 @@ namespace DId
     public enum PickAgentExcludeKeyofAgentUserDataOrAdvancedSettingsOrEmbedOrAssetsPresenterVideoAvatarType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Clip,
     }

@@ -6,12 +6,12 @@
 namespace DId
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class CreateClipStreamRequest2
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("session_id")]
         public string? SessionId { get; set; }
@@ -37,7 +37,7 @@ namespace DId
         public string? DriverId { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("script")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::DId.JsonConverters.AnyOfJsonConverter<global::DId.CreateClipStreamRequestScriptVariant12, global::DId.CreateClipStreamRequestScriptVariant22>))]
@@ -63,7 +63,7 @@ namespace DId
         public global::DId.CreateClipStreamRequestPresenterConfig2? PresenterConfig { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("background")]
         [global::System.Obsolete("This property marked as deprecated.")]

@@ -9,7 +9,7 @@ namespace DId
     public enum CreateTalkStreamRequestScriptVariant2Type2
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Audio,
     }

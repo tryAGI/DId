@@ -10,99 +10,99 @@ namespace DId
     public enum CreateExpressiveRequestDtoScriptVariant1ProviderAmazonVoiceId
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Amy,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Aria,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Ayanda,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Bianca,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Brian,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Camila,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Emma,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Gabrielle,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Ivy,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Joanna,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Joey,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Justin,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Kendra,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Kevin,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Kimberly,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Lucia,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Lupe,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Léa,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Matthew,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Olivia,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Salli,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Seoyeon,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Takumi,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Vicki,
     }

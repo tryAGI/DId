@@ -9,7 +9,7 @@ namespace DId
     public enum CropVariant1Type
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Wide,
     }

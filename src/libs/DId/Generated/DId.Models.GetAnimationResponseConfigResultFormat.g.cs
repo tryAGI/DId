@@ -9,11 +9,11 @@ namespace DId
     public enum GetAnimationResponseConfigResultFormat
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Mov,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Mp4,
     }

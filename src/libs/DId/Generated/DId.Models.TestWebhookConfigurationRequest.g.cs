@@ -9,7 +9,7 @@ namespace DId
     public sealed partial class TestWebhookConfigurationRequest
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("event_type")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::DId.JsonConverters.TestWebhookConfigurationRequestEventTypeJsonConverter))]
@@ -31,7 +31,7 @@ namespace DId
         public global::DId.TestWebhookConfigurationRequestAuth? Auth { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("headers")]
         public global::System.Collections.Generic.Dictionary<string, string>? Headers { get; set; }

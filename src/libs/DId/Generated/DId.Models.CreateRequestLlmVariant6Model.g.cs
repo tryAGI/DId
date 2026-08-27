@@ -9,15 +9,15 @@ namespace DId
     public enum CreateRequestLlmVariant6Model
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Gemini25Flash,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Gemini25FlashLite,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Gemini3Flash,
     }

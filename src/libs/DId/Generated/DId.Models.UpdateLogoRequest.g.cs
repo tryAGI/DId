@@ -4,33 +4,33 @@
 namespace DId
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class UpdateLogoRequest
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("logo")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required byte[] Logo { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("logoname")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string Logoname { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("top")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string Top { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("left")]
         [global::System.Text.Json.Serialization.JsonRequired]

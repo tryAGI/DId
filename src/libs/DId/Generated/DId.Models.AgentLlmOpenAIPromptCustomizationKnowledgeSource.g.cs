@@ -12,7 +12,7 @@ namespace DId
     public enum AgentLlmOpenAIPromptCustomizationKnowledgeSource
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         BaseKnowledge,
         /// <summary>

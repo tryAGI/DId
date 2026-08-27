@@ -5,12 +5,12 @@
 namespace DId
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public readonly partial struct Script : global::System.IEquatable<Script>
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::DId.ScriptVariant1? ScriptVariant1 { get; init; }
@@ -19,7 +19,7 @@ namespace DId
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(ScriptVariant1))]
@@ -27,7 +27,7 @@ namespace DId
         public bool IsScriptVariant1 => ScriptVariant1 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickScriptVariant1(
 #if NET6_0_OR_GREATER
@@ -40,14 +40,14 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::DId.ScriptVariant1 PickScriptVariant1() => IsScriptVariant1
             ? ScriptVariant1!
             : throw new global::System.InvalidOperationException($"Expected union variant 'ScriptVariant1' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::DId.ScriptVariant2? ScriptVariant2 { get; init; }
@@ -56,7 +56,7 @@ namespace DId
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(ScriptVariant2))]
@@ -64,7 +64,7 @@ namespace DId
         public bool IsScriptVariant2 => ScriptVariant2 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickScriptVariant2(
 #if NET6_0_OR_GREATER
@@ -77,23 +77,23 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::DId.ScriptVariant2 PickScriptVariant2() => IsScriptVariant2
             ? ScriptVariant2!
             : throw new global::System.InvalidOperationException($"Expected union variant 'ScriptVariant2' but the value was {ToString()}.");
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator Script(global::DId.ScriptVariant1 value) => new Script((global::DId.ScriptVariant1?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::DId.ScriptVariant1?(Script @this) => @this.ScriptVariant1;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public Script(global::DId.ScriptVariant1? value)
         {
@@ -101,22 +101,22 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static Script FromScriptVariant1(global::DId.ScriptVariant1? value) => new Script(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator Script(global::DId.ScriptVariant2 value) => new Script((global::DId.ScriptVariant2?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::DId.ScriptVariant2?(Script @this) => @this.ScriptVariant2;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public Script(global::DId.ScriptVariant2? value)
         {
@@ -124,12 +124,12 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static Script FromScriptVariant2(global::DId.ScriptVariant2? value) => new Script(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public Script(
             global::DId.ScriptVariant1? scriptVariant1,
@@ -141,23 +141,23 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public object? Object =>
             ScriptVariant2 as object ??
-            ScriptVariant1 as object 
+            ScriptVariant1 as object
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override string? ToString() =>
             ScriptVariant1?.ToString() ??
-            ScriptVariant2?.ToString() 
+            ScriptVariant2?.ToString()
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Validate()
         {
@@ -165,7 +165,7 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TResult? Match<TResult>(
             global::System.Func<global::DId.ScriptVariant1, TResult>? scriptVariant1 = null,
@@ -190,7 +190,7 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Match(
             global::System.Action<global::DId.ScriptVariant1>? scriptVariant1 = null,
@@ -214,7 +214,7 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Switch(
             global::System.Action<global::DId.ScriptVariant1>? scriptVariant1 = null,
@@ -237,7 +237,7 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override int GetHashCode()
         {
@@ -258,18 +258,18 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Equals(Script other)
         {
             return
                 global::System.Collections.Generic.EqualityComparer<global::DId.ScriptVariant1?>.Default.Equals(ScriptVariant1, other.ScriptVariant1) &&
-                global::System.Collections.Generic.EqualityComparer<global::DId.ScriptVariant2?>.Default.Equals(ScriptVariant2, other.ScriptVariant2) 
+                global::System.Collections.Generic.EqualityComparer<global::DId.ScriptVariant2?>.Default.Equals(ScriptVariant2, other.ScriptVariant2)
                 ;
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator ==(Script obj1, Script obj2)
         {
@@ -277,7 +277,7 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator !=(Script obj1, Script obj2)
         {
@@ -285,7 +285,7 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override bool Equals(object? obj)
         {

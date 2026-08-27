@@ -9,7 +9,7 @@ namespace DId
     public enum UpdateSecretRequestVariant2Variant2Provider
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ExternalAzureOpenai,
     }

@@ -9,13 +9,13 @@ namespace DId
     public sealed partial class GetAvatarsResponseAvatarCreationNotes
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("is_clone_voice_failed")]
         public bool? IsCloneVoiceFailed { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("worker_errors")]
         public global::System.Collections.Generic.IList<global::DId.GetAvatarsResponseAvatarCreationNotesWorkerError>? WorkerErrors { get; set; }

@@ -9,7 +9,7 @@ namespace DId
     public sealed partial class GetClipResponseConfig2
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("logo")]
         public global::DId.GetClipResponseConfigLogo2? Logo { get; set; }

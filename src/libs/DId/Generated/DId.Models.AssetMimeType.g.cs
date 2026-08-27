@@ -9,43 +9,43 @@ namespace DId
     public enum AssetMimeType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ImageGif,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ImageJpeg,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ImageJpg,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ImagePng,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ImageWebp,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         VideoMatroska,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         VideoMp4,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         VideoQuicktime,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         VideoWebm,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         VideoXMatroska,
     }

@@ -4,33 +4,33 @@
 namespace DId
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class GetFaceDetectionResponseFaceCrop
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("top")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required double Top { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("left")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required double Left { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("bottom")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required double Bottom { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("right")]
         [global::System.Text.Json.Serialization.JsonRequired]

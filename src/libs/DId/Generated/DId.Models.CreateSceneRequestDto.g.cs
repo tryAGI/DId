@@ -4,7 +4,7 @@
 namespace DId
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class CreateSceneRequestDto
     {
@@ -16,7 +16,7 @@ namespace DId
         public required string AvatarId { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("script")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::DId.JsonConverters.AnyOfJsonConverter<global::DId.CreateSceneRequestDtoScriptText, global::DId.CreateSceneRequestDtoScriptAudio>))]

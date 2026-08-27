@@ -9,7 +9,7 @@ namespace DId
     public enum GetResponseVariant1PresenterExpressiveAvatarType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Expressive,
     }

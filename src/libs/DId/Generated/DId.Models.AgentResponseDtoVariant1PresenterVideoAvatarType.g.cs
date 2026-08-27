@@ -9,7 +9,7 @@ namespace DId
     public enum AgentResponseDtoVariant1PresenterVideoAvatarType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Clip,
     }

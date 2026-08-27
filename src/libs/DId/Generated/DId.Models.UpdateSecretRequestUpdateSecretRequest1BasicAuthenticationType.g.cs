@@ -9,7 +9,7 @@ namespace DId
     public enum UpdateSecretRequestUpdateSecretRequest1BasicAuthenticationType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Basic,
     }

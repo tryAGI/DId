@@ -9,7 +9,7 @@ namespace DId
     public enum CreateExpressiveRequestDtoScriptVariant2Type
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Audio,
     }

@@ -20,7 +20,7 @@ namespace DId.JsonConverters
                     {
                         return global::DId.UpdateResponseVariant1PresenterPhotoAvatarVoiceElevenLabsAccessExtensions.ToEnum(stringValue);
                     }
-                    
+
                     break;
                 }
                 case global::System.Text.Json.JsonTokenType.Number:

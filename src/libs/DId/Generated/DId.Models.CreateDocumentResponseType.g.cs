@@ -9,15 +9,15 @@ namespace DId
     public enum CreateDocumentResponseType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Document,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Knowledge,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Record,
     }

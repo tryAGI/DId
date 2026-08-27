@@ -9,7 +9,7 @@ namespace DId
     public enum OmitAgentUserDataOrAdvancedSettingsOrEmbedOrAssetsPresenterPhotoAvatarType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Talk,
     }

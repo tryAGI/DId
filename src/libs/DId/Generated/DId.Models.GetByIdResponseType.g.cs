@@ -9,15 +9,15 @@ namespace DId
     public enum GetByIdResponseType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Document,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Knowledge,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Record,
     }

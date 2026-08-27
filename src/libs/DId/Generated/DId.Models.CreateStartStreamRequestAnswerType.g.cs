@@ -10,7 +10,7 @@ namespace DId
     public enum CreateStartStreamRequestAnswerType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Answer,
     }

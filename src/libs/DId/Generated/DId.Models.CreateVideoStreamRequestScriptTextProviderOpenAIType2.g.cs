@@ -4,12 +4,12 @@
 namespace DId
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum CreateVideoStreamRequestScriptTextProviderOpenAIType2
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AzureOpenai,
     }

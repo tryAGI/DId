@@ -4,12 +4,12 @@
 namespace DId
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum UpdatePresenterAttributesVariant1VoiceAmazonType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Amazon,
     }

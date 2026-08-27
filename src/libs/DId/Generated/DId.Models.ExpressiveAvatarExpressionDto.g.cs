@@ -5,7 +5,7 @@
 namespace DId
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public readonly partial struct ExpressiveAvatarExpressionDto : global::System.IEquatable<ExpressiveAvatarExpressionDto>
     {
@@ -19,7 +19,7 @@ namespace DId
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(ExpressiveAvatarExpressionDtoVariant1))]
@@ -27,7 +27,7 @@ namespace DId
         public bool IsExpressiveAvatarExpressionDtoVariant1 => ExpressiveAvatarExpressionDtoVariant1 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickExpressiveAvatarExpressionDtoVariant1(
 #if NET6_0_OR_GREATER
@@ -40,7 +40,7 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::DId.ExpressiveAvatarExpressionDtoVariant1 PickExpressiveAvatarExpressionDtoVariant1() => IsExpressiveAvatarExpressionDtoVariant1
             ? ExpressiveAvatarExpressionDtoVariant1!
@@ -56,7 +56,7 @@ namespace DId
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(ExpressiveAvatarExpressionDtoVariant2))]
@@ -64,7 +64,7 @@ namespace DId
         public bool IsExpressiveAvatarExpressionDtoVariant2 => ExpressiveAvatarExpressionDtoVariant2 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickExpressiveAvatarExpressionDtoVariant2(
 #if NET6_0_OR_GREATER
@@ -77,23 +77,23 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public object PickExpressiveAvatarExpressionDtoVariant2() => IsExpressiveAvatarExpressionDtoVariant2
             ? ExpressiveAvatarExpressionDtoVariant2!
             : throw new global::System.InvalidOperationException($"Expected union variant 'ExpressiveAvatarExpressionDtoVariant2' but the value was {ToString()}.");
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator ExpressiveAvatarExpressionDto(global::DId.ExpressiveAvatarExpressionDtoVariant1 value) => new ExpressiveAvatarExpressionDto((global::DId.ExpressiveAvatarExpressionDtoVariant1?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::DId.ExpressiveAvatarExpressionDtoVariant1?(ExpressiveAvatarExpressionDto @this) => @this.ExpressiveAvatarExpressionDtoVariant1;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ExpressiveAvatarExpressionDto(global::DId.ExpressiveAvatarExpressionDtoVariant1? value)
         {
@@ -101,12 +101,12 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static ExpressiveAvatarExpressionDto FromExpressiveAvatarExpressionDtoVariant1(global::DId.ExpressiveAvatarExpressionDtoVariant1? value) => new ExpressiveAvatarExpressionDto(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ExpressiveAvatarExpressionDto(
             global::DId.ExpressiveAvatarExpressionDtoVariant1? expressiveAvatarExpressionDtoVariant1,
@@ -118,23 +118,23 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public object? Object =>
             ExpressiveAvatarExpressionDtoVariant2 as object ??
-            ExpressiveAvatarExpressionDtoVariant1 as object 
+            ExpressiveAvatarExpressionDtoVariant1 as object
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override string? ToString() =>
             ExpressiveAvatarExpressionDtoVariant1?.ToString() ??
-            ExpressiveAvatarExpressionDtoVariant2?.ToString() 
+            ExpressiveAvatarExpressionDtoVariant2?.ToString()
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Validate()
         {
@@ -142,7 +142,7 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TResult? Match<TResult>(
             global::System.Func<global::DId.ExpressiveAvatarExpressionDtoVariant1, TResult>? expressiveAvatarExpressionDtoVariant1 = null,
@@ -167,7 +167,7 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Match(
             global::System.Action<global::DId.ExpressiveAvatarExpressionDtoVariant1>? expressiveAvatarExpressionDtoVariant1 = null,
@@ -191,7 +191,7 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Switch(
             global::System.Action<global::DId.ExpressiveAvatarExpressionDtoVariant1>? expressiveAvatarExpressionDtoVariant1 = null,
@@ -214,7 +214,7 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override int GetHashCode()
         {
@@ -235,18 +235,18 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Equals(ExpressiveAvatarExpressionDto other)
         {
             return
                 global::System.Collections.Generic.EqualityComparer<global::DId.ExpressiveAvatarExpressionDtoVariant1?>.Default.Equals(ExpressiveAvatarExpressionDtoVariant1, other.ExpressiveAvatarExpressionDtoVariant1) &&
-                global::System.Collections.Generic.EqualityComparer<object?>.Default.Equals(ExpressiveAvatarExpressionDtoVariant2, other.ExpressiveAvatarExpressionDtoVariant2) 
+                global::System.Collections.Generic.EqualityComparer<object?>.Default.Equals(ExpressiveAvatarExpressionDtoVariant2, other.ExpressiveAvatarExpressionDtoVariant2)
                 ;
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator ==(ExpressiveAvatarExpressionDto obj1, ExpressiveAvatarExpressionDto obj2)
         {
@@ -254,7 +254,7 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator !=(ExpressiveAvatarExpressionDto obj1, ExpressiveAvatarExpressionDto obj2)
         {
@@ -262,7 +262,7 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override bool Equals(object? obj)
         {

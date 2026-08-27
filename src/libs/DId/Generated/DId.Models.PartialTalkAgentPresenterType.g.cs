@@ -9,7 +9,7 @@ namespace DId
     public enum PartialTalkAgentPresenterType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Talk,
     }

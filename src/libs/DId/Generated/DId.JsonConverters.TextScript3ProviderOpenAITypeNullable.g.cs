@@ -20,7 +20,7 @@ namespace DId.JsonConverters
                     {
                         return global::DId.TextScript3ProviderOpenAITypeExtensions.ToEnum(stringValue);
                     }
-                    
+
                     break;
                 }
                 case global::System.Text.Json.JsonTokenType.Number:

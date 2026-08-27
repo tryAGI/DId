@@ -5,12 +5,12 @@
 namespace DId
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public readonly partial struct StreamScript : global::System.IEquatable<StreamScript>
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::DId.StreamScriptVariant1? StreamScriptVariant1 { get; init; }
@@ -19,7 +19,7 @@ namespace DId
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(StreamScriptVariant1))]
@@ -27,7 +27,7 @@ namespace DId
         public bool IsStreamScriptVariant1 => StreamScriptVariant1 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickStreamScriptVariant1(
 #if NET6_0_OR_GREATER
@@ -40,14 +40,14 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::DId.StreamScriptVariant1 PickStreamScriptVariant1() => IsStreamScriptVariant1
             ? StreamScriptVariant1!
             : throw new global::System.InvalidOperationException($"Expected union variant 'StreamScriptVariant1' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::DId.StreamScriptVariant2? StreamScriptVariant2 { get; init; }
@@ -56,7 +56,7 @@ namespace DId
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(StreamScriptVariant2))]
@@ -64,7 +64,7 @@ namespace DId
         public bool IsStreamScriptVariant2 => StreamScriptVariant2 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickStreamScriptVariant2(
 #if NET6_0_OR_GREATER
@@ -77,23 +77,23 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::DId.StreamScriptVariant2 PickStreamScriptVariant2() => IsStreamScriptVariant2
             ? StreamScriptVariant2!
             : throw new global::System.InvalidOperationException($"Expected union variant 'StreamScriptVariant2' but the value was {ToString()}.");
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator StreamScript(global::DId.StreamScriptVariant1 value) => new StreamScript((global::DId.StreamScriptVariant1?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::DId.StreamScriptVariant1?(StreamScript @this) => @this.StreamScriptVariant1;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public StreamScript(global::DId.StreamScriptVariant1? value)
         {
@@ -101,22 +101,22 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static StreamScript FromStreamScriptVariant1(global::DId.StreamScriptVariant1? value) => new StreamScript(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator StreamScript(global::DId.StreamScriptVariant2 value) => new StreamScript((global::DId.StreamScriptVariant2?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::DId.StreamScriptVariant2?(StreamScript @this) => @this.StreamScriptVariant2;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public StreamScript(global::DId.StreamScriptVariant2? value)
         {
@@ -124,12 +124,12 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static StreamScript FromStreamScriptVariant2(global::DId.StreamScriptVariant2? value) => new StreamScript(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public StreamScript(
             global::DId.StreamScriptVariant1? streamScriptVariant1,
@@ -141,23 +141,23 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public object? Object =>
             StreamScriptVariant2 as object ??
-            StreamScriptVariant1 as object 
+            StreamScriptVariant1 as object
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override string? ToString() =>
             StreamScriptVariant1?.ToString() ??
-            StreamScriptVariant2?.ToString() 
+            StreamScriptVariant2?.ToString()
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Validate()
         {
@@ -165,7 +165,7 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TResult? Match<TResult>(
             global::System.Func<global::DId.StreamScriptVariant1, TResult>? streamScriptVariant1 = null,
@@ -190,7 +190,7 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Match(
             global::System.Action<global::DId.StreamScriptVariant1>? streamScriptVariant1 = null,
@@ -214,7 +214,7 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Switch(
             global::System.Action<global::DId.StreamScriptVariant1>? streamScriptVariant1 = null,
@@ -237,7 +237,7 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override int GetHashCode()
         {
@@ -258,18 +258,18 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Equals(StreamScript other)
         {
             return
                 global::System.Collections.Generic.EqualityComparer<global::DId.StreamScriptVariant1?>.Default.Equals(StreamScriptVariant1, other.StreamScriptVariant1) &&
-                global::System.Collections.Generic.EqualityComparer<global::DId.StreamScriptVariant2?>.Default.Equals(StreamScriptVariant2, other.StreamScriptVariant2) 
+                global::System.Collections.Generic.EqualityComparer<global::DId.StreamScriptVariant2?>.Default.Equals(StreamScriptVariant2, other.StreamScriptVariant2)
                 ;
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator ==(StreamScript obj1, StreamScript obj2)
         {
@@ -277,7 +277,7 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator !=(StreamScript obj1, StreamScript obj2)
         {
@@ -285,7 +285,7 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override bool Equals(object? obj)
         {

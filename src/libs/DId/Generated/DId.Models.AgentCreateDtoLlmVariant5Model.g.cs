@@ -9,7 +9,7 @@ namespace DId
     public enum AgentCreateDtoLlmVariant5Model
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         GptOss120b,
     }

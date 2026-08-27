@@ -4,40 +4,40 @@
 namespace DId
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum ILogicalChatPlan
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Advanced,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Basic,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Enterprise,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         EnterpriseTrial,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Free,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Lite,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         LiteBigger,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Trial,
     }

@@ -9,7 +9,7 @@ namespace DId
     public enum CreateRequestPresenterVideoAvatarType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Clip,
     }

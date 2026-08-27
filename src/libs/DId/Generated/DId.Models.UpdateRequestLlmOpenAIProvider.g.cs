@@ -9,7 +9,7 @@ namespace DId
     public enum UpdateRequestLlmOpenAIProvider
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Openai,
     }

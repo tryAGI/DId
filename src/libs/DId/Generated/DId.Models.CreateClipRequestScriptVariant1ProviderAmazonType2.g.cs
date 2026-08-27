@@ -4,12 +4,12 @@
 namespace DId
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum CreateClipRequestScriptVariant1ProviderAmazonType2
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Amazon,
     }

@@ -4,16 +4,16 @@
 namespace DId
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum VoiceType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Avatar,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         CloneVoice,
     }

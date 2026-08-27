@@ -9,7 +9,7 @@ namespace DId
     public enum CreateSecretAzureOpenAIRequestDtoProvider
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ExternalAzureOpenai,
     }

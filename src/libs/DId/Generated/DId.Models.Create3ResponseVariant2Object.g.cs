@@ -4,12 +4,12 @@
 namespace DId
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum Create3ResponseVariant2Object
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Expressive,
     }

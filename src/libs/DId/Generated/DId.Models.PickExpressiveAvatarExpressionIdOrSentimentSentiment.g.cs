@@ -10,23 +10,23 @@ namespace DId
     public enum PickExpressiveAvatarExpressionIdOrSentimentSentiment
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Empathetic,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Excited,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Friendly,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Frustrated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Professional,
     }

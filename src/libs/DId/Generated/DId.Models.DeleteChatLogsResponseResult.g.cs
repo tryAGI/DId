@@ -9,13 +9,13 @@ namespace DId
     public sealed partial class DeleteChatLogsResponseResult
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("token")]
         public string? Token { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("result_url")]
         [global::System.Text.Json.Serialization.JsonRequired]

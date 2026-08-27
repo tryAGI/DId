@@ -4,12 +4,12 @@
 namespace DId
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum TriggerEventDataVariant2EventType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ChatStart,
     }

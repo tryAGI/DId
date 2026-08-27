@@ -9,7 +9,7 @@ namespace DId
     public enum CreateRequestLlmVariant5Model
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         GptOss120b,
     }

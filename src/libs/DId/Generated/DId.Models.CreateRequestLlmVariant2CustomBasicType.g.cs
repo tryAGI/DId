@@ -4,12 +4,12 @@
 namespace DId
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum CreateRequestLlmVariant2CustomBasicType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Basic,
     }

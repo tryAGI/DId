@@ -9,23 +9,23 @@ namespace DId
     public enum DeleteChatLogsResponseStatus
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Created,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Done,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Error,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Partial,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Started,
     }

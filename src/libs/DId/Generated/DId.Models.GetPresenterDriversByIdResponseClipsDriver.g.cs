@@ -4,7 +4,7 @@
 namespace DId
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class GetPresenterDriversByIdResponseClipsDriver
     {
@@ -103,13 +103,13 @@ namespace DId
         public required string TalkingPreviewUrl { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("chroma_key_similarity")]
         public double? ChromaKeySimilarity { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("chroma_key_blend")]
         public double? ChromaKeyBlend { get; set; }

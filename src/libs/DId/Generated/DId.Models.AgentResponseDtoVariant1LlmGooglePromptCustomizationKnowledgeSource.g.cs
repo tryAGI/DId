@@ -12,7 +12,7 @@ namespace DId
     public enum AgentResponseDtoVariant1LlmGooglePromptCustomizationKnowledgeSource
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         BaseKnowledge,
         /// <summary>

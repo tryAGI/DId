@@ -4,24 +4,24 @@
 namespace DId
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum Expression
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Happy,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Neutral,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Serious,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Surprise,
     }

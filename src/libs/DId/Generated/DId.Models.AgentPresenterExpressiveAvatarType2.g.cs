@@ -9,7 +9,7 @@ namespace DId
     public enum AgentPresenterExpressiveAvatarType2
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Expressive,
     }

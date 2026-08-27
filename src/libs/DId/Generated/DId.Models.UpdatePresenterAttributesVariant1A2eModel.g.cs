@@ -4,16 +4,16 @@
 namespace DId
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum UpdatePresenterAttributesVariant1A2eModel
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         BaselineDefault,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Finetuned,
     }

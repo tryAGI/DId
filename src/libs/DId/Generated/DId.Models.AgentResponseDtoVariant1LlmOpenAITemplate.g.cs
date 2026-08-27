@@ -12,15 +12,15 @@ namespace DId
     public enum AgentResponseDtoVariant1LlmOpenAITemplate
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Assistant,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         RagGrounded,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         RagUngrounded,
     }

@@ -9,7 +9,7 @@ namespace DId
     public enum PartialClipAgentPresenterType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Clip,
     }

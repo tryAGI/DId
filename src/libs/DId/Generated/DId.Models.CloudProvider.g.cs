@@ -9,11 +9,11 @@ namespace DId
     public enum CloudProvider
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Aws,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Azure,
     }
