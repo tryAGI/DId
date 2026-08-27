@@ -5,7 +5,7 @@
 namespace DId
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public readonly partial struct ExpressiveAvatarDto : global::System.IEquatable<ExpressiveAvatarDto>
     {
@@ -19,7 +19,7 @@ namespace DId
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(ExpressiveAvatarDtoVariant1))]
@@ -27,7 +27,7 @@ namespace DId
         public bool IsExpressiveAvatarDtoVariant1 => ExpressiveAvatarDtoVariant1 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickExpressiveAvatarDtoVariant1(
 #if NET6_0_OR_GREATER
@@ -40,7 +40,7 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::DId.ExpressiveAvatarDtoVariant1 PickExpressiveAvatarDtoVariant1() => IsExpressiveAvatarDtoVariant1
             ? ExpressiveAvatarDtoVariant1!
@@ -56,7 +56,7 @@ namespace DId
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(ExpressiveAvatarDtoVariant2))]
@@ -64,7 +64,7 @@ namespace DId
         public bool IsExpressiveAvatarDtoVariant2 => ExpressiveAvatarDtoVariant2 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickExpressiveAvatarDtoVariant2(
 #if NET6_0_OR_GREATER
@@ -77,23 +77,23 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public object PickExpressiveAvatarDtoVariant2() => IsExpressiveAvatarDtoVariant2
             ? ExpressiveAvatarDtoVariant2!
             : throw new global::System.InvalidOperationException($"Expected union variant 'ExpressiveAvatarDtoVariant2' but the value was {ToString()}.");
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator ExpressiveAvatarDto(global::DId.ExpressiveAvatarDtoVariant1 value) => new ExpressiveAvatarDto((global::DId.ExpressiveAvatarDtoVariant1?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::DId.ExpressiveAvatarDtoVariant1?(ExpressiveAvatarDto @this) => @this.ExpressiveAvatarDtoVariant1;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ExpressiveAvatarDto(global::DId.ExpressiveAvatarDtoVariant1? value)
         {
@@ -101,12 +101,12 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static ExpressiveAvatarDto FromExpressiveAvatarDtoVariant1(global::DId.ExpressiveAvatarDtoVariant1? value) => new ExpressiveAvatarDto(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ExpressiveAvatarDto(
             global::DId.ExpressiveAvatarDtoVariant1? expressiveAvatarDtoVariant1,
@@ -118,23 +118,23 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public object? Object =>
             ExpressiveAvatarDtoVariant2 as object ??
-            ExpressiveAvatarDtoVariant1 as object 
+            ExpressiveAvatarDtoVariant1 as object
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override string? ToString() =>
             ExpressiveAvatarDtoVariant1?.ToString() ??
-            ExpressiveAvatarDtoVariant2?.ToString() 
+            ExpressiveAvatarDtoVariant2?.ToString()
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Validate()
         {
@@ -142,7 +142,7 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TResult? Match<TResult>(
             global::System.Func<global::DId.ExpressiveAvatarDtoVariant1, TResult>? expressiveAvatarDtoVariant1 = null,
@@ -167,7 +167,7 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Match(
             global::System.Action<global::DId.ExpressiveAvatarDtoVariant1>? expressiveAvatarDtoVariant1 = null,
@@ -191,7 +191,7 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Switch(
             global::System.Action<global::DId.ExpressiveAvatarDtoVariant1>? expressiveAvatarDtoVariant1 = null,
@@ -214,7 +214,7 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override int GetHashCode()
         {
@@ -235,18 +235,18 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Equals(ExpressiveAvatarDto other)
         {
             return
                 global::System.Collections.Generic.EqualityComparer<global::DId.ExpressiveAvatarDtoVariant1?>.Default.Equals(ExpressiveAvatarDtoVariant1, other.ExpressiveAvatarDtoVariant1) &&
-                global::System.Collections.Generic.EqualityComparer<object?>.Default.Equals(ExpressiveAvatarDtoVariant2, other.ExpressiveAvatarDtoVariant2) 
+                global::System.Collections.Generic.EqualityComparer<object?>.Default.Equals(ExpressiveAvatarDtoVariant2, other.ExpressiveAvatarDtoVariant2)
                 ;
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator ==(ExpressiveAvatarDto obj1, ExpressiveAvatarDto obj2)
         {
@@ -254,7 +254,7 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator !=(ExpressiveAvatarDto obj1, ExpressiveAvatarDto obj2)
         {
@@ -262,7 +262,7 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override bool Equals(object? obj)
         {

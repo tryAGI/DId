@@ -4,12 +4,12 @@
 namespace DId
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum CustomAuthOauth2ConfigType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Oauth2,
     }

@@ -9,19 +9,19 @@ namespace DId
     public enum GetTalksDtoTalkConfigDriverExpressionsExpressionExpression
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Happy,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Neutral,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Serious,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Surprise,
     }

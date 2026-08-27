@@ -12,7 +12,7 @@ namespace DId
     public enum AgentResponseDtoVariant1LlmVariant3PromptCustomizationKnowledgeSource
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         BaseKnowledge,
         /// <summary>

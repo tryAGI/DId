@@ -10,15 +10,15 @@ namespace DId
     public enum CreateExpressiveRequestDtoConfigResultFormat
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Mov,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Mp4,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Webm,
     }

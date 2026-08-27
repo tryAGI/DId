@@ -9,7 +9,7 @@ namespace DId
     public enum AgentResponseDtoVariant1KnowledgeProvider
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Pinecone,
     }

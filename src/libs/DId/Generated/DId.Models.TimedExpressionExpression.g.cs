@@ -9,19 +9,19 @@ namespace DId
     public enum TimedExpressionExpression
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Happy,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Neutral,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Serious,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Surprise,
     }

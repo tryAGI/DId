@@ -5,12 +5,12 @@
 namespace DId
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public readonly partial struct CreateStreamScript : global::System.IEquatable<CreateStreamScript>
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::DId.CreateStreamScriptText? Text { get; init; }
@@ -19,7 +19,7 @@ namespace DId
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Text))]
@@ -27,7 +27,7 @@ namespace DId
         public bool IsText => Text != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickText(
 #if NET6_0_OR_GREATER
@@ -40,14 +40,14 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::DId.CreateStreamScriptText PickText() => IsText
             ? Text!
             : throw new global::System.InvalidOperationException($"Expected union variant 'Text' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::DId.CreateStreamScriptAudio? Audio { get; init; }
@@ -56,7 +56,7 @@ namespace DId
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Audio))]
@@ -64,7 +64,7 @@ namespace DId
         public bool IsAudio => Audio != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickAudio(
 #if NET6_0_OR_GREATER
@@ -77,23 +77,23 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::DId.CreateStreamScriptAudio PickAudio() => IsAudio
             ? Audio!
             : throw new global::System.InvalidOperationException($"Expected union variant 'Audio' but the value was {ToString()}.");
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator CreateStreamScript(global::DId.CreateStreamScriptText value) => new CreateStreamScript((global::DId.CreateStreamScriptText?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::DId.CreateStreamScriptText?(CreateStreamScript @this) => @this.Text;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public CreateStreamScript(global::DId.CreateStreamScriptText? value)
         {
@@ -101,22 +101,22 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static CreateStreamScript FromText(global::DId.CreateStreamScriptText? value) => new CreateStreamScript(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator CreateStreamScript(global::DId.CreateStreamScriptAudio value) => new CreateStreamScript((global::DId.CreateStreamScriptAudio?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::DId.CreateStreamScriptAudio?(CreateStreamScript @this) => @this.Audio;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public CreateStreamScript(global::DId.CreateStreamScriptAudio? value)
         {
@@ -124,12 +124,12 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static CreateStreamScript FromAudio(global::DId.CreateStreamScriptAudio? value) => new CreateStreamScript(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public CreateStreamScript(
             global::DId.CreateStreamScriptText? text,
@@ -141,23 +141,23 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public object? Object =>
             Audio as object ??
-            Text as object 
+            Text as object
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override string? ToString() =>
             Text?.ToString() ??
-            Audio?.ToString() 
+            Audio?.ToString()
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Validate()
         {
@@ -165,7 +165,7 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TResult? Match<TResult>(
             global::System.Func<global::DId.CreateStreamScriptText, TResult>? text = null,
@@ -190,7 +190,7 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Match(
             global::System.Action<global::DId.CreateStreamScriptText>? text = null,
@@ -214,7 +214,7 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Switch(
             global::System.Action<global::DId.CreateStreamScriptText>? text = null,
@@ -237,7 +237,7 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override int GetHashCode()
         {
@@ -258,18 +258,18 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Equals(CreateStreamScript other)
         {
             return
                 global::System.Collections.Generic.EqualityComparer<global::DId.CreateStreamScriptText?>.Default.Equals(Text, other.Text) &&
-                global::System.Collections.Generic.EqualityComparer<global::DId.CreateStreamScriptAudio?>.Default.Equals(Audio, other.Audio) 
+                global::System.Collections.Generic.EqualityComparer<global::DId.CreateStreamScriptAudio?>.Default.Equals(Audio, other.Audio)
                 ;
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator ==(CreateStreamScript obj1, CreateStreamScript obj2)
         {
@@ -277,7 +277,7 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator !=(CreateStreamScript obj1, CreateStreamScript obj2)
         {
@@ -285,7 +285,7 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override bool Equals(object? obj)
         {

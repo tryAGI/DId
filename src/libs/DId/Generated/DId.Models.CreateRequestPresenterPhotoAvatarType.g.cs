@@ -9,7 +9,7 @@ namespace DId
     public enum CreateRequestPresenterPhotoAvatarType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Talk,
     }

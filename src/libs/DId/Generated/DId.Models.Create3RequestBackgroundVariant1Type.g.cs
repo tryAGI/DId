@@ -4,12 +4,12 @@
 namespace DId
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum Create3RequestBackgroundVariant1Type
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Color,
     }

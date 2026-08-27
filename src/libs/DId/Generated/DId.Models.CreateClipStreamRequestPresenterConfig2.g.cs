@@ -9,7 +9,7 @@ namespace DId
     public sealed partial class CreateClipStreamRequestPresenterConfig2
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("crop")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::DId.JsonConverters.AnyOfJsonConverter<global::DId.CreateClipStreamRequestPresenterConfigCropVariant12, global::DId.CreateClipStreamRequestPresenterConfigCropVariant22>))]

@@ -9,7 +9,7 @@ namespace DId
     public enum CreateSecretExternalLLMRequestDtoVariant2Provider
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ExternalAzureOpenai,
     }

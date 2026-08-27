@@ -9,7 +9,7 @@ namespace DId
     public sealed partial class AgentCreateDtoTriggersChatEndWebhookAuth
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("secret_id")]
         [global::System.Text.Json.Serialization.JsonRequired]

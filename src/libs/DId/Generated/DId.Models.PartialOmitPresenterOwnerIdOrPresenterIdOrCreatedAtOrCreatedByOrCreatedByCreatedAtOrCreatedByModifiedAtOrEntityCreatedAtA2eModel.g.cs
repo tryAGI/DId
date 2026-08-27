@@ -4,16 +4,16 @@
 namespace DId
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum PartialOmitPresenterOwnerIdOrPresenterIdOrCreatedAtOrCreatedByOrCreatedByCreatedAtOrCreatedByModifiedAtOrEntityCreatedAtA2eModel
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         BaselineDefault,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Finetuned,
     }

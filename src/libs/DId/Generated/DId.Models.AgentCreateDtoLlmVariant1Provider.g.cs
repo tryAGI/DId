@@ -9,7 +9,7 @@ namespace DId
     public enum AgentCreateDtoLlmVariant1Provider
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Openai,
     }

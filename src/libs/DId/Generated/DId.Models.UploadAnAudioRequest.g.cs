@@ -4,7 +4,7 @@
 namespace DId
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class UploadAnAudioRequest
     {
@@ -21,7 +21,7 @@ namespace DId
         public string? Audioname { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("source_url")]
         public string? SourceUrl { get; set; }
@@ -33,7 +33,7 @@ namespace DId
         public string? ResultUrl { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("persist")]
         public string? Persist { get; set; }

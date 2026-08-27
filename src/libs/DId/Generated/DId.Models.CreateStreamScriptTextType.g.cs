@@ -9,7 +9,7 @@ namespace DId
     public enum CreateStreamScriptTextType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Text,
     }

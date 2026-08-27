@@ -4,12 +4,12 @@
 namespace DId
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum TextScript3ProviderGoogleType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Google,
     }

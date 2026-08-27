@@ -4,28 +4,28 @@
 namespace DId
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum IVoiceProvider
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Amazon,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AzureOpenai,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Elevenlabs,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Google,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Microsoft,
     }

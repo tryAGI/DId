@@ -9,7 +9,7 @@ namespace DId
     public enum AgentCreateDtoLlmVariant2Provider
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Custom,
     }

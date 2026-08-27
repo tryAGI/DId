@@ -4,7 +4,7 @@
 namespace DId
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class CreateTalkStreamRequestScriptVariant1ProviderOpenAI
     {
@@ -32,7 +32,7 @@ namespace DId
         public string? Language { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("type")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::DId.JsonConverters.CreateTalkStreamRequestScriptVariant1ProviderOpenAITypeJsonConverter))]

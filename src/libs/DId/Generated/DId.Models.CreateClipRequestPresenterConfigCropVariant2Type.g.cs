@@ -9,7 +9,7 @@ namespace DId
     public enum CreateClipRequestPresenterConfigCropVariant2Type
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Rectangle,
     }

@@ -4,12 +4,12 @@
 namespace DId
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum TextScript3ProviderAmazonType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Amazon,
     }

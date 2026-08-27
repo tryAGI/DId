@@ -12,7 +12,7 @@ namespace DId
     public enum GetResponseVariant1LlmDIdPromptCustomizationKnowledgeSource
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         BaseKnowledge,
         /// <summary>

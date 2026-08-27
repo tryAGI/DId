@@ -4,24 +4,24 @@
 namespace DId
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum SessionSummaryDtoInsightsOutcome
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Achieved,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         NotAchieved,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         PartiallyAchieved,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         UnclearDefinition,
     }

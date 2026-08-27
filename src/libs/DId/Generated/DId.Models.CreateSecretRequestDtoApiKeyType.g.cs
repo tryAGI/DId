@@ -9,7 +9,7 @@ namespace DId
     public enum CreateSecretRequestDtoApiKeyType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ApiKey,
     }

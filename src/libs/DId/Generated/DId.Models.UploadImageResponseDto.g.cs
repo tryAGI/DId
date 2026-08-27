@@ -4,7 +4,7 @@
 namespace DId
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class UploadImageResponseDto
     {
@@ -23,7 +23,7 @@ namespace DId
         public string? Id { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("faces")]
         public global::System.Collections.Generic.IList<global::DId.UploadImageResponseDtoFace>? Faces { get; set; }

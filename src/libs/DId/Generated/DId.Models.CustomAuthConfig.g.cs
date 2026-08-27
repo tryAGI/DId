@@ -5,12 +5,12 @@
 namespace DId
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public readonly partial struct CustomAuthConfig : global::System.IEquatable<CustomAuthConfig>
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::DId.CustomAuthConfigBasic? Basic { get; init; }
@@ -19,7 +19,7 @@ namespace DId
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Basic))]
@@ -27,7 +27,7 @@ namespace DId
         public bool IsBasic => Basic != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickBasic(
 #if NET6_0_OR_GREATER
@@ -40,14 +40,14 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::DId.CustomAuthConfigBasic PickBasic() => IsBasic
             ? Basic!
             : throw new global::System.InvalidOperationException($"Expected union variant 'Basic' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::DId.CustomAuthConfigOAuth2? OAuth2 { get; init; }
@@ -56,7 +56,7 @@ namespace DId
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(OAuth2))]
@@ -64,7 +64,7 @@ namespace DId
         public bool IsOAuth2 => OAuth2 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickOAuth2(
 #if NET6_0_OR_GREATER
@@ -77,23 +77,23 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::DId.CustomAuthConfigOAuth2 PickOAuth2() => IsOAuth2
             ? OAuth2!
             : throw new global::System.InvalidOperationException($"Expected union variant 'OAuth2' but the value was {ToString()}.");
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator CustomAuthConfig(global::DId.CustomAuthConfigBasic value) => new CustomAuthConfig((global::DId.CustomAuthConfigBasic?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::DId.CustomAuthConfigBasic?(CustomAuthConfig @this) => @this.Basic;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public CustomAuthConfig(global::DId.CustomAuthConfigBasic? value)
         {
@@ -101,22 +101,22 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static CustomAuthConfig FromBasic(global::DId.CustomAuthConfigBasic? value) => new CustomAuthConfig(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator CustomAuthConfig(global::DId.CustomAuthConfigOAuth2 value) => new CustomAuthConfig((global::DId.CustomAuthConfigOAuth2?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::DId.CustomAuthConfigOAuth2?(CustomAuthConfig @this) => @this.OAuth2;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public CustomAuthConfig(global::DId.CustomAuthConfigOAuth2? value)
         {
@@ -124,12 +124,12 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static CustomAuthConfig FromOAuth2(global::DId.CustomAuthConfigOAuth2? value) => new CustomAuthConfig(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public CustomAuthConfig(
             global::DId.CustomAuthConfigBasic? basic,
@@ -141,23 +141,23 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public object? Object =>
             OAuth2 as object ??
-            Basic as object 
+            Basic as object
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override string? ToString() =>
             Basic?.ToString() ??
-            OAuth2?.ToString() 
+            OAuth2?.ToString()
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Validate()
         {
@@ -165,7 +165,7 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TResult? Match<TResult>(
             global::System.Func<global::DId.CustomAuthConfigBasic, TResult>? basic = null,
@@ -190,7 +190,7 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Match(
             global::System.Action<global::DId.CustomAuthConfigBasic>? basic = null,
@@ -214,7 +214,7 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Switch(
             global::System.Action<global::DId.CustomAuthConfigBasic>? basic = null,
@@ -237,7 +237,7 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override int GetHashCode()
         {
@@ -258,18 +258,18 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Equals(CustomAuthConfig other)
         {
             return
                 global::System.Collections.Generic.EqualityComparer<global::DId.CustomAuthConfigBasic?>.Default.Equals(Basic, other.Basic) &&
-                global::System.Collections.Generic.EqualityComparer<global::DId.CustomAuthConfigOAuth2?>.Default.Equals(OAuth2, other.OAuth2) 
+                global::System.Collections.Generic.EqualityComparer<global::DId.CustomAuthConfigOAuth2?>.Default.Equals(OAuth2, other.OAuth2)
                 ;
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator ==(CustomAuthConfig obj1, CustomAuthConfig obj2)
         {
@@ -277,7 +277,7 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator !=(CustomAuthConfig obj1, CustomAuthConfig obj2)
         {
@@ -285,7 +285,7 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override bool Equals(object? obj)
         {

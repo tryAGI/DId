@@ -32,7 +32,7 @@ namespace DId
         public string? SessionId { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("chatMode")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::DId.JsonConverters.ChatRequestChatModeJsonConverter))]

@@ -5,12 +5,12 @@
 namespace DId
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public readonly partial struct CreateIceCandidateStreamRequest : global::System.IEquatable<CreateIceCandidateStreamRequest>
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::DId.AnyOf<global::DId.CreateIceCandidateStreamRequestVariant1Variant1, object>? CreateIceCandidateStreamRequestVariant1 { get; init; }
@@ -19,7 +19,7 @@ namespace DId
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(CreateIceCandidateStreamRequestVariant1))]
@@ -27,7 +27,7 @@ namespace DId
         public bool IsCreateIceCandidateStreamRequestVariant1 => CreateIceCandidateStreamRequestVariant1 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickCreateIceCandidateStreamRequestVariant1(
 #if NET6_0_OR_GREATER
@@ -40,14 +40,14 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::DId.AnyOf<global::DId.CreateIceCandidateStreamRequestVariant1Variant1, object> PickCreateIceCandidateStreamRequestVariant1() => IsCreateIceCandidateStreamRequestVariant1
             ? CreateIceCandidateStreamRequestVariant1!.Value
             : throw new global::System.InvalidOperationException($"Expected union variant 'CreateIceCandidateStreamRequestVariant1' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::DId.CreateIceCandidateStreamRequestVariant2? CreateIceCandidateStreamRequestVariant2 { get; init; }
@@ -56,7 +56,7 @@ namespace DId
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(CreateIceCandidateStreamRequestVariant2))]
@@ -64,7 +64,7 @@ namespace DId
         public bool IsCreateIceCandidateStreamRequestVariant2 => CreateIceCandidateStreamRequestVariant2 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickCreateIceCandidateStreamRequestVariant2(
 #if NET6_0_OR_GREATER
@@ -77,23 +77,23 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::DId.CreateIceCandidateStreamRequestVariant2 PickCreateIceCandidateStreamRequestVariant2() => IsCreateIceCandidateStreamRequestVariant2
             ? CreateIceCandidateStreamRequestVariant2!
             : throw new global::System.InvalidOperationException($"Expected union variant 'CreateIceCandidateStreamRequestVariant2' but the value was {ToString()}.");
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator CreateIceCandidateStreamRequest(global::DId.AnyOf<global::DId.CreateIceCandidateStreamRequestVariant1Variant1, object> value) => new CreateIceCandidateStreamRequest((global::DId.AnyOf<global::DId.CreateIceCandidateStreamRequestVariant1Variant1, object>?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::DId.AnyOf<global::DId.CreateIceCandidateStreamRequestVariant1Variant1, object>?(CreateIceCandidateStreamRequest @this) => @this.CreateIceCandidateStreamRequestVariant1;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public CreateIceCandidateStreamRequest(global::DId.AnyOf<global::DId.CreateIceCandidateStreamRequestVariant1Variant1, object>? value)
         {
@@ -101,22 +101,22 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static CreateIceCandidateStreamRequest FromCreateIceCandidateStreamRequestVariant1(global::DId.AnyOf<global::DId.CreateIceCandidateStreamRequestVariant1Variant1, object>? value) => new CreateIceCandidateStreamRequest(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator CreateIceCandidateStreamRequest(global::DId.CreateIceCandidateStreamRequestVariant2 value) => new CreateIceCandidateStreamRequest((global::DId.CreateIceCandidateStreamRequestVariant2?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::DId.CreateIceCandidateStreamRequestVariant2?(CreateIceCandidateStreamRequest @this) => @this.CreateIceCandidateStreamRequestVariant2;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public CreateIceCandidateStreamRequest(global::DId.CreateIceCandidateStreamRequestVariant2? value)
         {
@@ -124,12 +124,12 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static CreateIceCandidateStreamRequest FromCreateIceCandidateStreamRequestVariant2(global::DId.CreateIceCandidateStreamRequestVariant2? value) => new CreateIceCandidateStreamRequest(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public CreateIceCandidateStreamRequest(
             global::DId.AnyOf<global::DId.CreateIceCandidateStreamRequestVariant1Variant1, object>? createIceCandidateStreamRequestVariant1,
@@ -141,23 +141,23 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public object? Object =>
             CreateIceCandidateStreamRequestVariant2 as object ??
-            CreateIceCandidateStreamRequestVariant1 as object 
+            CreateIceCandidateStreamRequestVariant1 as object
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override string? ToString() =>
             CreateIceCandidateStreamRequestVariant1?.ToString() ??
-            CreateIceCandidateStreamRequestVariant2?.ToString() 
+            CreateIceCandidateStreamRequestVariant2?.ToString()
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Validate()
         {
@@ -165,7 +165,7 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TResult? Match<TResult>(
             global::System.Func<global::DId.AnyOf<global::DId.CreateIceCandidateStreamRequestVariant1Variant1, object>?, TResult>? createIceCandidateStreamRequestVariant1 = null,
@@ -190,7 +190,7 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Match(
             global::System.Action<global::DId.AnyOf<global::DId.CreateIceCandidateStreamRequestVariant1Variant1, object>?>? createIceCandidateStreamRequestVariant1 = null,
@@ -214,7 +214,7 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Switch(
             global::System.Action<global::DId.AnyOf<global::DId.CreateIceCandidateStreamRequestVariant1Variant1, object>?>? createIceCandidateStreamRequestVariant1 = null,
@@ -237,7 +237,7 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override int GetHashCode()
         {
@@ -258,18 +258,18 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Equals(CreateIceCandidateStreamRequest other)
         {
             return
                 global::System.Collections.Generic.EqualityComparer<global::DId.AnyOf<global::DId.CreateIceCandidateStreamRequestVariant1Variant1, object>?>.Default.Equals(CreateIceCandidateStreamRequestVariant1, other.CreateIceCandidateStreamRequestVariant1) &&
-                global::System.Collections.Generic.EqualityComparer<global::DId.CreateIceCandidateStreamRequestVariant2?>.Default.Equals(CreateIceCandidateStreamRequestVariant2, other.CreateIceCandidateStreamRequestVariant2) 
+                global::System.Collections.Generic.EqualityComparer<global::DId.CreateIceCandidateStreamRequestVariant2?>.Default.Equals(CreateIceCandidateStreamRequestVariant2, other.CreateIceCandidateStreamRequestVariant2)
                 ;
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator ==(CreateIceCandidateStreamRequest obj1, CreateIceCandidateStreamRequest obj2)
         {
@@ -277,7 +277,7 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator !=(CreateIceCandidateStreamRequest obj1, CreateIceCandidateStreamRequest obj2)
         {
@@ -285,7 +285,7 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override bool Equals(object? obj)
         {

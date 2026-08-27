@@ -4,20 +4,20 @@
 namespace DId
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum CreateResponseTranslationTranscriptionVersion
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Edit,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Original,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Shortened,
     }

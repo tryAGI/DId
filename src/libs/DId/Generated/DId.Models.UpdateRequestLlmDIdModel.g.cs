@@ -9,7 +9,7 @@ namespace DId
     public enum UpdateRequestLlmDIdModel
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         GptOss120b,
     }

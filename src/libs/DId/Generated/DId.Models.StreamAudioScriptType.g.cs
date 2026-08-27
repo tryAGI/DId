@@ -9,7 +9,7 @@ namespace DId
     public enum StreamAudioScriptType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Audio,
     }

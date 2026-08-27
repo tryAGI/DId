@@ -9,15 +9,15 @@ namespace DId
     public enum CreateDocumentDtoVariant1DocumentType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Pdf,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Powerpoint,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Text,
     }

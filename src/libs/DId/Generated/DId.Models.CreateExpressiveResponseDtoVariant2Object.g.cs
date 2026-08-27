@@ -4,12 +4,12 @@
 namespace DId
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum CreateExpressiveResponseDtoVariant2Object
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Expressive,
     }

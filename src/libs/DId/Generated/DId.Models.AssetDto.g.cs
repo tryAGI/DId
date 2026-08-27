@@ -19,7 +19,7 @@ namespace DId
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AssetDtoVariant1))]
@@ -27,7 +27,7 @@ namespace DId
         public bool IsAssetDtoVariant1 => AssetDtoVariant1 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickAssetDtoVariant1(
 #if NET6_0_OR_GREATER
@@ -40,7 +40,7 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::DId.AssetDtoVariant1 PickAssetDtoVariant1() => IsAssetDtoVariant1
             ? AssetDtoVariant1!
@@ -56,7 +56,7 @@ namespace DId
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AssetDtoVariant2))]
@@ -64,7 +64,7 @@ namespace DId
         public bool IsAssetDtoVariant2 => AssetDtoVariant2 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickAssetDtoVariant2(
 #if NET6_0_OR_GREATER
@@ -77,23 +77,23 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::DId.AssetDtoVariant2 PickAssetDtoVariant2() => IsAssetDtoVariant2
             ? AssetDtoVariant2!
             : throw new global::System.InvalidOperationException($"Expected union variant 'AssetDtoVariant2' but the value was {ToString()}.");
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator AssetDto(global::DId.AssetDtoVariant1 value) => new AssetDto((global::DId.AssetDtoVariant1?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::DId.AssetDtoVariant1?(AssetDto @this) => @this.AssetDtoVariant1;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public AssetDto(global::DId.AssetDtoVariant1? value)
         {
@@ -101,22 +101,22 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static AssetDto FromAssetDtoVariant1(global::DId.AssetDtoVariant1? value) => new AssetDto(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator AssetDto(global::DId.AssetDtoVariant2 value) => new AssetDto((global::DId.AssetDtoVariant2?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::DId.AssetDtoVariant2?(AssetDto @this) => @this.AssetDtoVariant2;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public AssetDto(global::DId.AssetDtoVariant2? value)
         {
@@ -124,12 +124,12 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static AssetDto FromAssetDtoVariant2(global::DId.AssetDtoVariant2? value) => new AssetDto(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public AssetDto(
             global::DId.AssetDtoVariant1? assetDtoVariant1,
@@ -141,23 +141,23 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public object? Object =>
             AssetDtoVariant2 as object ??
-            AssetDtoVariant1 as object 
+            AssetDtoVariant1 as object
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override string? ToString() =>
             AssetDtoVariant1?.ToString() ??
-            AssetDtoVariant2?.ToString() 
+            AssetDtoVariant2?.ToString()
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Validate()
         {
@@ -165,7 +165,7 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TResult? Match<TResult>(
             global::System.Func<global::DId.AssetDtoVariant1, TResult>? assetDtoVariant1 = null,
@@ -190,7 +190,7 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Match(
             global::System.Action<global::DId.AssetDtoVariant1>? assetDtoVariant1 = null,
@@ -214,7 +214,7 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Switch(
             global::System.Action<global::DId.AssetDtoVariant1>? assetDtoVariant1 = null,
@@ -237,7 +237,7 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override int GetHashCode()
         {
@@ -258,18 +258,18 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Equals(AssetDto other)
         {
             return
                 global::System.Collections.Generic.EqualityComparer<global::DId.AssetDtoVariant1?>.Default.Equals(AssetDtoVariant1, other.AssetDtoVariant1) &&
-                global::System.Collections.Generic.EqualityComparer<global::DId.AssetDtoVariant2?>.Default.Equals(AssetDtoVariant2, other.AssetDtoVariant2) 
+                global::System.Collections.Generic.EqualityComparer<global::DId.AssetDtoVariant2?>.Default.Equals(AssetDtoVariant2, other.AssetDtoVariant2)
                 ;
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator ==(AssetDto obj1, AssetDto obj2)
         {
@@ -277,7 +277,7 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator !=(AssetDto obj1, AssetDto obj2)
         {
@@ -285,7 +285,7 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override bool Equals(object? obj)
         {

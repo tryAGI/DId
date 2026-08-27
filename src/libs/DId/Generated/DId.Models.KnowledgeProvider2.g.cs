@@ -9,7 +9,7 @@ namespace DId
     public enum KnowledgeProvider2
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Pinecone,
     }

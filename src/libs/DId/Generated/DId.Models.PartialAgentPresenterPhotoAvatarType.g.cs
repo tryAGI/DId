@@ -9,7 +9,7 @@ namespace DId
     public enum PartialAgentPresenterPhotoAvatarType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Talk,
     }

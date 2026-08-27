@@ -9,7 +9,7 @@ namespace DId
     public enum LLMConfigCreateDtoVariant6Provider
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Google,
     }

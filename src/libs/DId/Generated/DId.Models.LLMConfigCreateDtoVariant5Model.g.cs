@@ -9,7 +9,7 @@ namespace DId
     public enum LLMConfigCreateDtoVariant5Model
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         GptOss120b,
     }

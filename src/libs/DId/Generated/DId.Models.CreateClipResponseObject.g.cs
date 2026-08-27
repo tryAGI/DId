@@ -9,7 +9,7 @@ namespace DId
     public enum CreateClipResponseObject
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Clip,
     }

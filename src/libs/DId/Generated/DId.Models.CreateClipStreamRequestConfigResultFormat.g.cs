@@ -10,11 +10,11 @@ namespace DId
     public enum CreateClipStreamRequestConfigResultFormat
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Mov,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Mp4,
     }

@@ -9,7 +9,7 @@ namespace DId
     public sealed partial class JoinLivekitRoomRequestTransport
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("provider")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::DId.JsonConverters.JoinLivekitRoomRequestTransportProviderJsonConverter))]

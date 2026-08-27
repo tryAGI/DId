@@ -4,7 +4,7 @@
 namespace DId
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class GetPresentersResponsePresenter
     {
@@ -73,25 +73,25 @@ namespace DId
         public string? VideoUrl { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("thumbnail_url")]
         public string? ThumbnailUrl { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("image_url")]
         public string? ImageUrl { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("created_at")]
         public string? CreatedAt { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("voice")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::DId.JsonConverters.AnyOfJsonConverter<global::DId.GetPresentersResponsePresenterVoiceMicrosoft, global::DId.GetPresentersResponsePresenterVoiceElevenLabs, global::DId.GetPresentersResponsePresenterVoiceAmazon, global::DId.GetPresentersResponsePresenterVoiceGoogle, global::DId.GetPresentersResponsePresenterVoiceOpenAI>))]

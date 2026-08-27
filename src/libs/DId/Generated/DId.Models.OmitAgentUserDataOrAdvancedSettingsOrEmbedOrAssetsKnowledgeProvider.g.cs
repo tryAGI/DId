@@ -9,7 +9,7 @@ namespace DId
     public enum OmitAgentUserDataOrAdvancedSettingsOrEmbedOrAssetsKnowledgeProvider
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Pinecone,
     }

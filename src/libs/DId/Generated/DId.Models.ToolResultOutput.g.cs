@@ -5,12 +5,12 @@
 namespace DId
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public readonly partial struct ToolResultOutput : global::System.IEquatable<ToolResultOutput>
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::DId.ToolResultOutputVariant1? ToolResultOutputVariant1 { get; init; }
@@ -19,7 +19,7 @@ namespace DId
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(ToolResultOutputVariant1))]
@@ -27,7 +27,7 @@ namespace DId
         public bool IsToolResultOutputVariant1 => ToolResultOutputVariant1 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickToolResultOutputVariant1(
 #if NET6_0_OR_GREATER
@@ -40,14 +40,14 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::DId.ToolResultOutputVariant1 PickToolResultOutputVariant1() => IsToolResultOutputVariant1
             ? ToolResultOutputVariant1!
             : throw new global::System.InvalidOperationException($"Expected union variant 'ToolResultOutputVariant1' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::DId.ToolResultOutputVariant2? ToolResultOutputVariant2 { get; init; }
@@ -56,7 +56,7 @@ namespace DId
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(ToolResultOutputVariant2))]
@@ -64,7 +64,7 @@ namespace DId
         public bool IsToolResultOutputVariant2 => ToolResultOutputVariant2 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickToolResultOutputVariant2(
 #if NET6_0_OR_GREATER
@@ -77,23 +77,23 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::DId.ToolResultOutputVariant2 PickToolResultOutputVariant2() => IsToolResultOutputVariant2
             ? ToolResultOutputVariant2!
             : throw new global::System.InvalidOperationException($"Expected union variant 'ToolResultOutputVariant2' but the value was {ToString()}.");
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator ToolResultOutput(global::DId.ToolResultOutputVariant1 value) => new ToolResultOutput((global::DId.ToolResultOutputVariant1?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::DId.ToolResultOutputVariant1?(ToolResultOutput @this) => @this.ToolResultOutputVariant1;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ToolResultOutput(global::DId.ToolResultOutputVariant1? value)
         {
@@ -101,22 +101,22 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static ToolResultOutput FromToolResultOutputVariant1(global::DId.ToolResultOutputVariant1? value) => new ToolResultOutput(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator ToolResultOutput(global::DId.ToolResultOutputVariant2 value) => new ToolResultOutput((global::DId.ToolResultOutputVariant2?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::DId.ToolResultOutputVariant2?(ToolResultOutput @this) => @this.ToolResultOutputVariant2;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ToolResultOutput(global::DId.ToolResultOutputVariant2? value)
         {
@@ -124,12 +124,12 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static ToolResultOutput FromToolResultOutputVariant2(global::DId.ToolResultOutputVariant2? value) => new ToolResultOutput(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ToolResultOutput(
             global::DId.ToolResultOutputVariant1? toolResultOutputVariant1,
@@ -141,23 +141,23 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public object? Object =>
             ToolResultOutputVariant2 as object ??
-            ToolResultOutputVariant1 as object 
+            ToolResultOutputVariant1 as object
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override string? ToString() =>
             ToolResultOutputVariant1?.ToString() ??
-            ToolResultOutputVariant2?.ToString() 
+            ToolResultOutputVariant2?.ToString()
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Validate()
         {
@@ -165,7 +165,7 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TResult? Match<TResult>(
             global::System.Func<global::DId.ToolResultOutputVariant1, TResult>? toolResultOutputVariant1 = null,
@@ -190,7 +190,7 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Match(
             global::System.Action<global::DId.ToolResultOutputVariant1>? toolResultOutputVariant1 = null,
@@ -214,7 +214,7 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Switch(
             global::System.Action<global::DId.ToolResultOutputVariant1>? toolResultOutputVariant1 = null,
@@ -237,7 +237,7 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override int GetHashCode()
         {
@@ -258,18 +258,18 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Equals(ToolResultOutput other)
         {
             return
                 global::System.Collections.Generic.EqualityComparer<global::DId.ToolResultOutputVariant1?>.Default.Equals(ToolResultOutputVariant1, other.ToolResultOutputVariant1) &&
-                global::System.Collections.Generic.EqualityComparer<global::DId.ToolResultOutputVariant2?>.Default.Equals(ToolResultOutputVariant2, other.ToolResultOutputVariant2) 
+                global::System.Collections.Generic.EqualityComparer<global::DId.ToolResultOutputVariant2?>.Default.Equals(ToolResultOutputVariant2, other.ToolResultOutputVariant2)
                 ;
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator ==(ToolResultOutput obj1, ToolResultOutput obj2)
         {
@@ -277,7 +277,7 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator !=(ToolResultOutput obj1, ToolResultOutput obj2)
         {
@@ -285,7 +285,7 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override bool Equals(object? obj)
         {

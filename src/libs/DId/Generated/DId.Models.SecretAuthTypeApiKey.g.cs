@@ -4,12 +4,12 @@
 namespace DId
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum SecretAuthTypeApiKey
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ApiKey,
     }

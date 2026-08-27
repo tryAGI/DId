@@ -4,12 +4,12 @@
 namespace DId
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum CreateTalkStreamRequestScriptVariant1ProviderElevenLabsType2
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Elevenlabs,
     }

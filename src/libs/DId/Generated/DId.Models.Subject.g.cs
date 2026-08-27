@@ -4,708 +4,708 @@
 namespace DId
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum Subject
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AgentAssetCreated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AgentAssetDone,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AgentAssetError,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AgentAssetStarted,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AgentCreated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AgentDone,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AgentError,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AgentInsightsDeleted,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AgentReady,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AgentReadyForPreprocess,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AgentRejected,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AgentStarted,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AnimateTaskCreated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AnimateCreated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AnimateDone,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AnimateError,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AnimatePostDone,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AnimatePostError,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AnimateStarted,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AudioRejected,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ChatDataDeleted,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ChatMessagesAdded,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ChatProgress,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ChatSpeak,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ChatsInvoiceFailed,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ChatsInvoicePaid,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ClipAvatarCreated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ClipAvatarDone,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ClipAvatarError,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ClipAvatarErrorNotification,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ClipAvatarPostDone,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ClipAvatarProgress,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ClipAvatarReady,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ClipAvatarRejected,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ClipAvatarStarted,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ClipAvatarTrainingArtifactsUpdated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ClipCreated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ClipDeleted,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ClipDone,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ClipError,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ClipPostDone,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ClipPostError,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ClipRejected,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ClipStarted,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ClipStreamCreated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ClipStreamDone,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ClipStreamError,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ClipStreamPostDone,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ClipStreamPostError,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ClipStreamRejected,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ClipStreamStarted,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ClipV2Created,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ConsentsDone,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ConsentsError,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ConsentsRejected,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ConsentsStartValidation,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         CreditsCharge,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DocumentCreated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DocumentDone,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DocumentError,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DocumentProcessed,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DocumentRejected,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ExportCreated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ExportDeleted,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ExportDone,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ExportError,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ExportPartial,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ExportStarted,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ExpressiveAvatarTrained,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ExpressiveCreated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ExpressiveDone,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ExpressiveError,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ExpressivePostDone,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ExpressivePostError,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ExpressiveRejected,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ExpressiveStarted,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ExpressiveStreamDone,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ImageRejected,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         InvoiceFailed,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         InvoicePaid,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         KnowledgeDone,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         KnowledgeError,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         KnowledgeProcessing,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         OrganizationCreated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         OrganizationDeleted,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         OrganizationMemberAdded,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ProjectDeleted,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ProjectDone,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ProjectError,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ProjectPostDone,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ProjectReady,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ProjectRejected,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ProjectStarted,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         RenderCreated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         RenderDone,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         RenderError,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         RenderStarted,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SceneAvatarCreated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SceneAvatarDone,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SceneAvatarError,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SceneAvatarItemCreated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SceneAvatarPostDone,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SceneAvatarPostError,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SceneAvatarStarted,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SceneAvatarTrainingStarted,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SceneAvatarValidationsDone,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SceneAvatarValidationsError,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SceneCreated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SceneDone,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SceneError,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ScenePostDone,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ScenePostError,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SceneStarted,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ScenesAvatarsFileUploaded,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         StreamVideoDone,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         StreamVideoError,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         StreamVideoRejected,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         StreamVideoStarted,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         StreamDone,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TalkCreated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TalkDeleted,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TalkDone,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TalkError,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TalkPostDone,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TalkPostError,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TalkRejected,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TalkStarted,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TalkStreamCreated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TalkStreamDone,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TalkStreamError,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TalkStreamPostDone,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TalkStreamPostError,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TalkStreamRejected,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TalkStreamStarted,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TranslationAudioDataUpdated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TranslationCelebDetectionDone,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TranslationCelebDetectionError,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TranslationDeleted,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TranslationDone,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TranslationError,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TranslationFileUploaded,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TranslationGroupDone,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TranslationGroupError,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TranslationGroupPartialDone,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TranslationGroupPartialError,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TranslationGroupPostDone,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TranslationGroupPostError,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TranslationGroupStarted,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TranslationItemCreated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TranslationPostDone,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TranslationPostError,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TranslationReady,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TranslationSpeechDone,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TranslationSpeechError,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TranslationStarted,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TranslationSubtitlesDone,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TriggerToolResult,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TriggerWebhookDone,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TriggerWebhookError,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         UserAccountMerged,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         UserAccountMergedManually,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         UserApiKeyCreated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         UserDeleted,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         UserFirstVisit,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         UserRegistered,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         UserSubscriptionCreated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         UserSubscriptionDeleted,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         UserSubscriptionRenewed,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         UserSubscriptionTransferred,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         UserSubscriptionUpdated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         UserSubscriptionWillEnd,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         UserUpdated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         VoiceDone,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         VoiceError,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         VoiceRejected,
     }

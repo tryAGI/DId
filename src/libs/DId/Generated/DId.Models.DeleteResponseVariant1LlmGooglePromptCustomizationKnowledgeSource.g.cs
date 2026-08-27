@@ -12,7 +12,7 @@ namespace DId
     public enum DeleteResponseVariant1LlmGooglePromptCustomizationKnowledgeSource
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         BaseKnowledge,
         /// <summary>

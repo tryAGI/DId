@@ -4,12 +4,12 @@
 namespace DId
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum InitLiveKitRoomTransportProvider
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Livekit,
     }

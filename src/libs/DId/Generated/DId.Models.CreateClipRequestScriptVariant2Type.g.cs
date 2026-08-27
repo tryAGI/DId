@@ -9,7 +9,7 @@ namespace DId
     public enum CreateClipRequestScriptVariant2Type
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Audio,
     }

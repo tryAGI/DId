@@ -9,7 +9,7 @@ namespace DId
     public enum CreateRequestLlmVariant2Provider
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Custom,
     }

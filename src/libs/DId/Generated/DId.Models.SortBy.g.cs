@@ -4,28 +4,28 @@
 namespace DId
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum SortBy
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Chats,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         CreatedAt,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         CreatedBy,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ModifiedAt,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Score,
     }

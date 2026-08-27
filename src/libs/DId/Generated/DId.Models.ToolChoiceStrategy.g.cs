@@ -9,11 +9,11 @@ namespace DId
     public enum ToolChoiceStrategy
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Auto,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Required,
     }

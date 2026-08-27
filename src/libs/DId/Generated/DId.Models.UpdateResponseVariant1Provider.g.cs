@@ -9,7 +9,7 @@ namespace DId
     public enum UpdateResponseVariant1Provider
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DIdAgents,
     }

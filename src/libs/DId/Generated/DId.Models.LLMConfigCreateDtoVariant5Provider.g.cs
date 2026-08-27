@@ -9,7 +9,7 @@ namespace DId
     public enum LLMConfigCreateDtoVariant5Provider
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DId,
     }

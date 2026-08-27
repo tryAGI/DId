@@ -12,7 +12,7 @@ namespace DId
     public enum UpdateResponseVariant1LlmOpenAIPromptCustomizationKnowledgeSource
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         BaseKnowledge,
         /// <summary>

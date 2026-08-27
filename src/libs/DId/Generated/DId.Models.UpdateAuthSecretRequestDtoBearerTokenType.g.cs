@@ -9,7 +9,7 @@ namespace DId
     public enum UpdateAuthSecretRequestDtoBearerTokenType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Bearer,
     }

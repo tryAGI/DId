@@ -5,7 +5,7 @@
 namespace DId
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public readonly partial struct UpdatePresenterAttributes : global::System.IEquatable<UpdatePresenterAttributes>
     {
@@ -19,7 +19,7 @@ namespace DId
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(UpdatePresenterAttributesVariant1))]
@@ -27,7 +27,7 @@ namespace DId
         public bool IsUpdatePresenterAttributesVariant1 => UpdatePresenterAttributesVariant1 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickUpdatePresenterAttributesVariant1(
 #if NET6_0_OR_GREATER
@@ -40,14 +40,14 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::DId.UpdatePresenterAttributesVariant1 PickUpdatePresenterAttributesVariant1() => IsUpdatePresenterAttributesVariant1
             ? UpdatePresenterAttributesVariant1!
             : throw new global::System.InvalidOperationException($"Expected union variant 'UpdatePresenterAttributesVariant1' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::DId.UpdatePresenterAttributesVariant2? UpdatePresenterAttributesVariant2 { get; init; }
@@ -56,7 +56,7 @@ namespace DId
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(UpdatePresenterAttributesVariant2))]
@@ -64,7 +64,7 @@ namespace DId
         public bool IsUpdatePresenterAttributesVariant2 => UpdatePresenterAttributesVariant2 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickUpdatePresenterAttributesVariant2(
 #if NET6_0_OR_GREATER
@@ -77,14 +77,14 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::DId.UpdatePresenterAttributesVariant2 PickUpdatePresenterAttributesVariant2() => IsUpdatePresenterAttributesVariant2
             ? UpdatePresenterAttributesVariant2!
             : throw new global::System.InvalidOperationException($"Expected union variant 'UpdatePresenterAttributesVariant2' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::DId.UpdatePresenterAttributesVariant3? UpdatePresenterAttributesVariant3 { get; init; }
@@ -93,7 +93,7 @@ namespace DId
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(UpdatePresenterAttributesVariant3))]
@@ -101,7 +101,7 @@ namespace DId
         public bool IsUpdatePresenterAttributesVariant3 => UpdatePresenterAttributesVariant3 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickUpdatePresenterAttributesVariant3(
 #if NET6_0_OR_GREATER
@@ -114,23 +114,23 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::DId.UpdatePresenterAttributesVariant3 PickUpdatePresenterAttributesVariant3() => IsUpdatePresenterAttributesVariant3
             ? UpdatePresenterAttributesVariant3!
             : throw new global::System.InvalidOperationException($"Expected union variant 'UpdatePresenterAttributesVariant3' but the value was {ToString()}.");
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator UpdatePresenterAttributes(global::DId.UpdatePresenterAttributesVariant1 value) => new UpdatePresenterAttributes((global::DId.UpdatePresenterAttributesVariant1?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::DId.UpdatePresenterAttributesVariant1?(UpdatePresenterAttributes @this) => @this.UpdatePresenterAttributesVariant1;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public UpdatePresenterAttributes(global::DId.UpdatePresenterAttributesVariant1? value)
         {
@@ -138,22 +138,22 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static UpdatePresenterAttributes FromUpdatePresenterAttributesVariant1(global::DId.UpdatePresenterAttributesVariant1? value) => new UpdatePresenterAttributes(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator UpdatePresenterAttributes(global::DId.UpdatePresenterAttributesVariant2 value) => new UpdatePresenterAttributes((global::DId.UpdatePresenterAttributesVariant2?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::DId.UpdatePresenterAttributesVariant2?(UpdatePresenterAttributes @this) => @this.UpdatePresenterAttributesVariant2;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public UpdatePresenterAttributes(global::DId.UpdatePresenterAttributesVariant2? value)
         {
@@ -161,22 +161,22 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static UpdatePresenterAttributes FromUpdatePresenterAttributesVariant2(global::DId.UpdatePresenterAttributesVariant2? value) => new UpdatePresenterAttributes(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator UpdatePresenterAttributes(global::DId.UpdatePresenterAttributesVariant3 value) => new UpdatePresenterAttributes((global::DId.UpdatePresenterAttributesVariant3?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::DId.UpdatePresenterAttributesVariant3?(UpdatePresenterAttributes @this) => @this.UpdatePresenterAttributesVariant3;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public UpdatePresenterAttributes(global::DId.UpdatePresenterAttributesVariant3? value)
         {
@@ -184,12 +184,12 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static UpdatePresenterAttributes FromUpdatePresenterAttributesVariant3(global::DId.UpdatePresenterAttributesVariant3? value) => new UpdatePresenterAttributes(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public UpdatePresenterAttributes(
             global::DId.UpdatePresenterAttributesVariant1? updatePresenterAttributesVariant1,
@@ -203,25 +203,25 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public object? Object =>
             UpdatePresenterAttributesVariant3 as object ??
             UpdatePresenterAttributesVariant2 as object ??
-            UpdatePresenterAttributesVariant1 as object 
+            UpdatePresenterAttributesVariant1 as object
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override string? ToString() =>
             UpdatePresenterAttributesVariant1?.ToString() ??
             UpdatePresenterAttributesVariant2?.ToString() ??
-            UpdatePresenterAttributesVariant3?.ToString() 
+            UpdatePresenterAttributesVariant3?.ToString()
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Validate()
         {
@@ -229,7 +229,7 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TResult? Match<TResult>(
             global::System.Func<global::DId.UpdatePresenterAttributesVariant1, TResult>? updatePresenterAttributesVariant1 = null,
@@ -259,7 +259,7 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Match(
             global::System.Action<global::DId.UpdatePresenterAttributesVariant1>? updatePresenterAttributesVariant1 = null,
@@ -289,7 +289,7 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Switch(
             global::System.Action<global::DId.UpdatePresenterAttributesVariant1>? updatePresenterAttributesVariant1 = null,
@@ -317,7 +317,7 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override int GetHashCode()
         {
@@ -340,19 +340,19 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Equals(UpdatePresenterAttributes other)
         {
             return
                 global::System.Collections.Generic.EqualityComparer<global::DId.UpdatePresenterAttributesVariant1?>.Default.Equals(UpdatePresenterAttributesVariant1, other.UpdatePresenterAttributesVariant1) &&
                 global::System.Collections.Generic.EqualityComparer<global::DId.UpdatePresenterAttributesVariant2?>.Default.Equals(UpdatePresenterAttributesVariant2, other.UpdatePresenterAttributesVariant2) &&
-                global::System.Collections.Generic.EqualityComparer<global::DId.UpdatePresenterAttributesVariant3?>.Default.Equals(UpdatePresenterAttributesVariant3, other.UpdatePresenterAttributesVariant3) 
+                global::System.Collections.Generic.EqualityComparer<global::DId.UpdatePresenterAttributesVariant3?>.Default.Equals(UpdatePresenterAttributesVariant3, other.UpdatePresenterAttributesVariant3)
                 ;
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator ==(UpdatePresenterAttributes obj1, UpdatePresenterAttributes obj2)
         {
@@ -360,7 +360,7 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator !=(UpdatePresenterAttributes obj1, UpdatePresenterAttributes obj2)
         {
@@ -368,7 +368,7 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override bool Equals(object? obj)
         {

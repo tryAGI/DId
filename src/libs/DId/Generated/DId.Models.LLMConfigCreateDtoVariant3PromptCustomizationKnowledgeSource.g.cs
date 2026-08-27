@@ -12,7 +12,7 @@ namespace DId
     public enum LLMConfigCreateDtoVariant3PromptCustomizationKnowledgeSource
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         BaseKnowledge,
         /// <summary>

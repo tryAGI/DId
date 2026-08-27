@@ -9,7 +9,7 @@ namespace DId
     public sealed partial class CreateTalkRequestConfig
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("logo")]
         public global::DId.CreateTalkRequestConfigLogo? Logo { get; set; }

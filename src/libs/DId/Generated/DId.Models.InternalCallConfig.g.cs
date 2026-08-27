@@ -4,31 +4,31 @@
 namespace DId
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class InternalCallConfig
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("avatar_owner_id")]
         public string? AvatarOwnerId { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("inference_mode")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::DId.JsonConverters.InternalCallConfigInferenceModeJsonConverter))]
         public global::DId.InternalCallConfigInferenceMode? InferenceMode { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("no_logo")]
         public bool? NoLogo { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("result_without_audio")]
         public bool? ResultWithoutAudio { get; set; }

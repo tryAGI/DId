@@ -5,12 +5,12 @@
 namespace DId
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public readonly partial struct CreateVideoStreamResponse : global::System.IEquatable<CreateVideoStreamResponse>
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::DId.CreateVideoStreamResponseVariant1? CreateVideoStreamResponseVariant1 { get; init; }
@@ -19,7 +19,7 @@ namespace DId
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(CreateVideoStreamResponseVariant1))]
@@ -27,7 +27,7 @@ namespace DId
         public bool IsCreateVideoStreamResponseVariant1 => CreateVideoStreamResponseVariant1 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickCreateVideoStreamResponseVariant1(
 #if NET6_0_OR_GREATER
@@ -40,14 +40,14 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::DId.CreateVideoStreamResponseVariant1 PickCreateVideoStreamResponseVariant1() => IsCreateVideoStreamResponseVariant1
             ? CreateVideoStreamResponseVariant1!
             : throw new global::System.InvalidOperationException($"Expected union variant 'CreateVideoStreamResponseVariant1' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::DId.CreateVideoStreamResponseVariant2? CreateVideoStreamResponseVariant2 { get; init; }
@@ -56,7 +56,7 @@ namespace DId
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(CreateVideoStreamResponseVariant2))]
@@ -64,7 +64,7 @@ namespace DId
         public bool IsCreateVideoStreamResponseVariant2 => CreateVideoStreamResponseVariant2 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickCreateVideoStreamResponseVariant2(
 #if NET6_0_OR_GREATER
@@ -77,23 +77,23 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::DId.CreateVideoStreamResponseVariant2 PickCreateVideoStreamResponseVariant2() => IsCreateVideoStreamResponseVariant2
             ? CreateVideoStreamResponseVariant2!
             : throw new global::System.InvalidOperationException($"Expected union variant 'CreateVideoStreamResponseVariant2' but the value was {ToString()}.");
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator CreateVideoStreamResponse(global::DId.CreateVideoStreamResponseVariant1 value) => new CreateVideoStreamResponse((global::DId.CreateVideoStreamResponseVariant1?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::DId.CreateVideoStreamResponseVariant1?(CreateVideoStreamResponse @this) => @this.CreateVideoStreamResponseVariant1;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public CreateVideoStreamResponse(global::DId.CreateVideoStreamResponseVariant1? value)
         {
@@ -101,22 +101,22 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static CreateVideoStreamResponse FromCreateVideoStreamResponseVariant1(global::DId.CreateVideoStreamResponseVariant1? value) => new CreateVideoStreamResponse(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator CreateVideoStreamResponse(global::DId.CreateVideoStreamResponseVariant2 value) => new CreateVideoStreamResponse((global::DId.CreateVideoStreamResponseVariant2?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::DId.CreateVideoStreamResponseVariant2?(CreateVideoStreamResponse @this) => @this.CreateVideoStreamResponseVariant2;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public CreateVideoStreamResponse(global::DId.CreateVideoStreamResponseVariant2? value)
         {
@@ -124,12 +124,12 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static CreateVideoStreamResponse FromCreateVideoStreamResponseVariant2(global::DId.CreateVideoStreamResponseVariant2? value) => new CreateVideoStreamResponse(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public CreateVideoStreamResponse(
             global::DId.CreateVideoStreamResponseVariant1? createVideoStreamResponseVariant1,
@@ -141,23 +141,23 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public object? Object =>
             CreateVideoStreamResponseVariant2 as object ??
-            CreateVideoStreamResponseVariant1 as object 
+            CreateVideoStreamResponseVariant1 as object
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override string? ToString() =>
             CreateVideoStreamResponseVariant1?.ToString() ??
-            CreateVideoStreamResponseVariant2?.ToString() 
+            CreateVideoStreamResponseVariant2?.ToString()
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Validate()
         {
@@ -165,7 +165,7 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TResult? Match<TResult>(
             global::System.Func<global::DId.CreateVideoStreamResponseVariant1, TResult>? createVideoStreamResponseVariant1 = null,
@@ -190,7 +190,7 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Match(
             global::System.Action<global::DId.CreateVideoStreamResponseVariant1>? createVideoStreamResponseVariant1 = null,
@@ -214,7 +214,7 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Switch(
             global::System.Action<global::DId.CreateVideoStreamResponseVariant1>? createVideoStreamResponseVariant1 = null,
@@ -237,7 +237,7 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override int GetHashCode()
         {
@@ -258,18 +258,18 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Equals(CreateVideoStreamResponse other)
         {
             return
                 global::System.Collections.Generic.EqualityComparer<global::DId.CreateVideoStreamResponseVariant1?>.Default.Equals(CreateVideoStreamResponseVariant1, other.CreateVideoStreamResponseVariant1) &&
-                global::System.Collections.Generic.EqualityComparer<global::DId.CreateVideoStreamResponseVariant2?>.Default.Equals(CreateVideoStreamResponseVariant2, other.CreateVideoStreamResponseVariant2) 
+                global::System.Collections.Generic.EqualityComparer<global::DId.CreateVideoStreamResponseVariant2?>.Default.Equals(CreateVideoStreamResponseVariant2, other.CreateVideoStreamResponseVariant2)
                 ;
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator ==(CreateVideoStreamResponse obj1, CreateVideoStreamResponse obj2)
         {
@@ -277,7 +277,7 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator !=(CreateVideoStreamResponse obj1, CreateVideoStreamResponse obj2)
         {
@@ -285,7 +285,7 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override bool Equals(object? obj)
         {

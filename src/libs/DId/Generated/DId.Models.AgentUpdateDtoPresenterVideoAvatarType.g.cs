@@ -9,7 +9,7 @@ namespace DId
     public enum AgentUpdateDtoPresenterVideoAvatarType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Clip,
     }

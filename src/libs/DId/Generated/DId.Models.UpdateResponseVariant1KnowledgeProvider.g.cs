@@ -9,7 +9,7 @@ namespace DId
     public enum UpdateResponseVariant1KnowledgeProvider
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Pinecone,
     }

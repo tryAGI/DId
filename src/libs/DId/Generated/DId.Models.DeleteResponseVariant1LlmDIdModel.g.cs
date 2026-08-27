@@ -9,7 +9,7 @@ namespace DId
     public enum DeleteResponseVariant1LlmDIdModel
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         GptOss120b,
     }

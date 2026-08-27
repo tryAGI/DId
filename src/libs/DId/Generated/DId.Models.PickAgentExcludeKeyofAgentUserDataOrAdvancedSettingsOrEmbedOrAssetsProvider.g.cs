@@ -9,7 +9,7 @@ namespace DId
     public enum PickAgentExcludeKeyofAgentUserDataOrAdvancedSettingsOrEmbedOrAssetsProvider
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DIdAgents,
     }

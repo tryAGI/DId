@@ -9,7 +9,7 @@ namespace DId
     public enum GetResponseVariant1LlmDIdProvider
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DId,
     }

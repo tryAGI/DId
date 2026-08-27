@@ -5,12 +5,12 @@
 namespace DId
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public readonly partial struct Crop : global::System.IEquatable<Crop>
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::DId.CropVariant1? CropVariant1 { get; init; }
@@ -19,7 +19,7 @@ namespace DId
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(CropVariant1))]
@@ -27,7 +27,7 @@ namespace DId
         public bool IsCropVariant1 => CropVariant1 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickCropVariant1(
 #if NET6_0_OR_GREATER
@@ -40,7 +40,7 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::DId.CropVariant1 PickCropVariant1() => IsCropVariant1
             ? CropVariant1!
@@ -56,7 +56,7 @@ namespace DId
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(CropVariant2))]
@@ -64,7 +64,7 @@ namespace DId
         public bool IsCropVariant2 => CropVariant2 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickCropVariant2(
 #if NET6_0_OR_GREATER
@@ -77,23 +77,23 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::DId.CropVariant2 PickCropVariant2() => IsCropVariant2
             ? CropVariant2!
             : throw new global::System.InvalidOperationException($"Expected union variant 'CropVariant2' but the value was {ToString()}.");
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator Crop(global::DId.CropVariant1 value) => new Crop((global::DId.CropVariant1?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::DId.CropVariant1?(Crop @this) => @this.CropVariant1;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public Crop(global::DId.CropVariant1? value)
         {
@@ -101,22 +101,22 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static Crop FromCropVariant1(global::DId.CropVariant1? value) => new Crop(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator Crop(global::DId.CropVariant2 value) => new Crop((global::DId.CropVariant2?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::DId.CropVariant2?(Crop @this) => @this.CropVariant2;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public Crop(global::DId.CropVariant2? value)
         {
@@ -124,12 +124,12 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static Crop FromCropVariant2(global::DId.CropVariant2? value) => new Crop(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public Crop(
             global::DId.CropVariant1? cropVariant1,
@@ -141,23 +141,23 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public object? Object =>
             CropVariant2 as object ??
-            CropVariant1 as object 
+            CropVariant1 as object
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override string? ToString() =>
             CropVariant1?.ToString() ??
-            CropVariant2?.ToString() 
+            CropVariant2?.ToString()
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Validate()
         {
@@ -165,7 +165,7 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TResult? Match<TResult>(
             global::System.Func<global::DId.CropVariant1, TResult>? cropVariant1 = null,
@@ -190,7 +190,7 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Match(
             global::System.Action<global::DId.CropVariant1>? cropVariant1 = null,
@@ -214,7 +214,7 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Switch(
             global::System.Action<global::DId.CropVariant1>? cropVariant1 = null,
@@ -237,7 +237,7 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override int GetHashCode()
         {
@@ -258,18 +258,18 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Equals(Crop other)
         {
             return
                 global::System.Collections.Generic.EqualityComparer<global::DId.CropVariant1?>.Default.Equals(CropVariant1, other.CropVariant1) &&
-                global::System.Collections.Generic.EqualityComparer<global::DId.CropVariant2?>.Default.Equals(CropVariant2, other.CropVariant2) 
+                global::System.Collections.Generic.EqualityComparer<global::DId.CropVariant2?>.Default.Equals(CropVariant2, other.CropVariant2)
                 ;
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator ==(Crop obj1, Crop obj2)
         {
@@ -277,7 +277,7 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator !=(Crop obj1, Crop obj2)
         {
@@ -285,7 +285,7 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override bool Equals(object? obj)
         {

@@ -124,7 +124,7 @@ namespace DId
                          __authorization.Location == "Header")
                 {
                     __httpRequest.Headers.Add(__authorization.Name, __authorization.Value);
-                } 
+                }
             }
                 global::DId.AutoSDKRequestOptionsSupport.ApplyHeaders(
                     request: __httpRequest,

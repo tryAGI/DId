@@ -10,7 +10,7 @@ namespace DId
     public sealed partial class AgentUpdateDtoKnowledge
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("id")]
         [global::System.Text.Json.Serialization.JsonRequired]

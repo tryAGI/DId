@@ -9,7 +9,7 @@ namespace DId
     public sealed partial class TestWebhookRequestDtoAuth
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("secret_id")]
         [global::System.Text.Json.Serialization.JsonRequired]

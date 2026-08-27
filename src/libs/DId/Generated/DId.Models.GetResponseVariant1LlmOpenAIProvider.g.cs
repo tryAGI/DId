@@ -9,7 +9,7 @@ namespace DId
     public enum GetResponseVariant1LlmOpenAIProvider
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Openai,
     }

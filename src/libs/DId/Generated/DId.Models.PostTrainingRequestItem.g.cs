@@ -4,33 +4,33 @@
 namespace DId
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class PostTrainingRequestItem
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("manifest_url")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string ManifestUrl { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("avatar_name")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string AvatarName { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("display_name")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string DisplayName { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("owner_id")]
         [global::System.Text.Json.Serialization.JsonRequired]
@@ -44,7 +44,7 @@ namespace DId
         public required global::DId.PostTrainingRequestItemSentiments Sentiments { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("I_know_I_am_going_to_make_this_avatar_public_for_everyone_and_this_is_the_manifest_url_again")]
         public string? IKnowIAmGoingToMakeThisAvatarPublicForEveryoneAndThisIsTheManifestUrlAgain { get; set; }

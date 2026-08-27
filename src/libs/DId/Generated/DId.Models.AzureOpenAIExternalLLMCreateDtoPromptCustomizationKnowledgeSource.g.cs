@@ -12,7 +12,7 @@ namespace DId
     public enum AzureOpenAIExternalLLMCreateDtoPromptCustomizationKnowledgeSource
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         BaseKnowledge,
         /// <summary>

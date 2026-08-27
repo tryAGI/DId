@@ -12,7 +12,7 @@ namespace DId
     public enum ListMyAgentsResponseAgentVariant1LlmVariant3PromptCustomizationKnowledgeSource
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         BaseKnowledge,
         /// <summary>

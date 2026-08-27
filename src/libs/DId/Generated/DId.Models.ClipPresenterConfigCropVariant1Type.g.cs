@@ -9,7 +9,7 @@ namespace DId
     public enum ClipPresenterConfigCropVariant1Type
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Wide,
     }

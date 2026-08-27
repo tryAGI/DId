@@ -12,7 +12,7 @@ namespace DId
     public enum CreateRequestLlmVariant1PromptCustomizationKnowledgeSource
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         BaseKnowledge,
         /// <summary>

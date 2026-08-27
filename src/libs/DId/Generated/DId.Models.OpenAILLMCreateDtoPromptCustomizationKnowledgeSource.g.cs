@@ -12,7 +12,7 @@ namespace DId
     public enum OpenAILLMCreateDtoPromptCustomizationKnowledgeSource
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         BaseKnowledge,
         /// <summary>

@@ -9,7 +9,7 @@ namespace DId
     public enum AgentProvider
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DIdAgents,
     }

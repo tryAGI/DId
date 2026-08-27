@@ -9,7 +9,7 @@ namespace DId
     public sealed partial class CreateClipStreamRequestConfig2
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("logo")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::DId.JsonConverters.AnyOfJsonConverter<global::DId.CreateClipStreamRequestConfigLogo2, bool?>))]

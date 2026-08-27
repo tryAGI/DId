@@ -9,23 +9,23 @@ namespace DId
     public enum GetGroupResponseStatus2
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Created,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Done,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Error,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         PartialDone,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Validating,
     }

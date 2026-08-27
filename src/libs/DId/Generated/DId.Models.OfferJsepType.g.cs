@@ -9,7 +9,7 @@ namespace DId
     public enum OfferJsepType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Offer,
     }

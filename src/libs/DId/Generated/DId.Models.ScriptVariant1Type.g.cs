@@ -9,7 +9,7 @@ namespace DId
     public enum ScriptVariant1Type
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Text,
     }

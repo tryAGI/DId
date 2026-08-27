@@ -9,7 +9,7 @@ namespace DId
     public enum TextScriptType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Text,
     }

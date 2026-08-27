@@ -9,7 +9,7 @@ namespace DId
     public enum PartialExpressiveAgentPresenterType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Expressive,
     }

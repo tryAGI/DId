@@ -4,12 +4,12 @@
 namespace DId
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum AgentCreateDtoLlmVariant2CustomBasicType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Basic,
     }

@@ -9,11 +9,11 @@ namespace DId
     public enum OmitTalksConfigLogoOrDriverExpressionsResultFormat
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Mov,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Mp4,
     }

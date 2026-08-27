@@ -4,12 +4,12 @@
 namespace DId
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum CustomLLMCreateDtoCustomOAuth2Type
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Oauth2,
     }

@@ -20,7 +20,7 @@ namespace DId.JsonConverters
                     {
                         return global::DId.GetExpressiveAvatarDtoVariant2SentimentVariant1SentimentExtensions.ToEnum(stringValue) ?? default;
                     }
-                    
+
                     break;
                 }
                 case global::System.Text.Json.JsonTokenType.Number:

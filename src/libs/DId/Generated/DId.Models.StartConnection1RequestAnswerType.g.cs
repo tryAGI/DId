@@ -10,7 +10,7 @@ namespace DId
     public enum StartConnection1RequestAnswerType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Answer,
     }

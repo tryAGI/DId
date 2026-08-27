@@ -9,11 +9,11 @@ namespace DId
     public enum AssetCloudProvider
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Aws,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Azure,
     }

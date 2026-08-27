@@ -4,12 +4,12 @@
 namespace DId
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum ToolResultOutputVariant2Type
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Json,
     }

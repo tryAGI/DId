@@ -12,7 +12,7 @@ namespace DId
     public enum CreateStream1RequestCompatibilityMode
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Auto,
         /// <summary>

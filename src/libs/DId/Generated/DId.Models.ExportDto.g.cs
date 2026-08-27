@@ -5,12 +5,12 @@
 namespace DId
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public readonly partial struct ExportDto : global::System.IEquatable<ExportDto>
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::DId.ExportDtoVariant1? ExportDtoVariant1 { get; init; }
@@ -19,7 +19,7 @@ namespace DId
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(ExportDtoVariant1))]
@@ -27,7 +27,7 @@ namespace DId
         public bool IsExportDtoVariant1 => ExportDtoVariant1 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickExportDtoVariant1(
 #if NET6_0_OR_GREATER
@@ -40,14 +40,14 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::DId.ExportDtoVariant1 PickExportDtoVariant1() => IsExportDtoVariant1
             ? ExportDtoVariant1!
             : throw new global::System.InvalidOperationException($"Expected union variant 'ExportDtoVariant1' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::DId.ExportDtoVariant2? ExportDtoVariant2 { get; init; }
@@ -56,7 +56,7 @@ namespace DId
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(ExportDtoVariant2))]
@@ -64,7 +64,7 @@ namespace DId
         public bool IsExportDtoVariant2 => ExportDtoVariant2 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickExportDtoVariant2(
 #if NET6_0_OR_GREATER
@@ -77,23 +77,23 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::DId.ExportDtoVariant2 PickExportDtoVariant2() => IsExportDtoVariant2
             ? ExportDtoVariant2!
             : throw new global::System.InvalidOperationException($"Expected union variant 'ExportDtoVariant2' but the value was {ToString()}.");
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator ExportDto(global::DId.ExportDtoVariant1 value) => new ExportDto((global::DId.ExportDtoVariant1?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::DId.ExportDtoVariant1?(ExportDto @this) => @this.ExportDtoVariant1;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ExportDto(global::DId.ExportDtoVariant1? value)
         {
@@ -101,22 +101,22 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static ExportDto FromExportDtoVariant1(global::DId.ExportDtoVariant1? value) => new ExportDto(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator ExportDto(global::DId.ExportDtoVariant2 value) => new ExportDto((global::DId.ExportDtoVariant2?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::DId.ExportDtoVariant2?(ExportDto @this) => @this.ExportDtoVariant2;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ExportDto(global::DId.ExportDtoVariant2? value)
         {
@@ -124,12 +124,12 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static ExportDto FromExportDtoVariant2(global::DId.ExportDtoVariant2? value) => new ExportDto(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ExportDto(
             global::DId.ExportDtoVariant1? exportDtoVariant1,
@@ -141,23 +141,23 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public object? Object =>
             ExportDtoVariant2 as object ??
-            ExportDtoVariant1 as object 
+            ExportDtoVariant1 as object
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override string? ToString() =>
             ExportDtoVariant1?.ToString() ??
-            ExportDtoVariant2?.ToString() 
+            ExportDtoVariant2?.ToString()
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Validate()
         {
@@ -165,7 +165,7 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TResult? Match<TResult>(
             global::System.Func<global::DId.ExportDtoVariant1, TResult>? exportDtoVariant1 = null,
@@ -190,7 +190,7 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Match(
             global::System.Action<global::DId.ExportDtoVariant1>? exportDtoVariant1 = null,
@@ -214,7 +214,7 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Switch(
             global::System.Action<global::DId.ExportDtoVariant1>? exportDtoVariant1 = null,
@@ -237,7 +237,7 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override int GetHashCode()
         {
@@ -258,18 +258,18 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Equals(ExportDto other)
         {
             return
                 global::System.Collections.Generic.EqualityComparer<global::DId.ExportDtoVariant1?>.Default.Equals(ExportDtoVariant1, other.ExportDtoVariant1) &&
-                global::System.Collections.Generic.EqualityComparer<global::DId.ExportDtoVariant2?>.Default.Equals(ExportDtoVariant2, other.ExportDtoVariant2) 
+                global::System.Collections.Generic.EqualityComparer<global::DId.ExportDtoVariant2?>.Default.Equals(ExportDtoVariant2, other.ExportDtoVariant2)
                 ;
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator ==(ExportDto obj1, ExportDto obj2)
         {
@@ -277,7 +277,7 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator !=(ExportDto obj1, ExportDto obj2)
         {
@@ -285,7 +285,7 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override bool Equals(object? obj)
         {

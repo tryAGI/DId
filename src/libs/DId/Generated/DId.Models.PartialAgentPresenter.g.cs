@@ -5,7 +5,7 @@
 namespace DId
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public readonly partial struct PartialAgentPresenter : global::System.IEquatable<PartialAgentPresenter>
     {
@@ -19,7 +19,7 @@ namespace DId
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(PhotoAvatar))]
@@ -27,7 +27,7 @@ namespace DId
         public bool IsPhotoAvatar => PhotoAvatar != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickPhotoAvatar(
 #if NET6_0_OR_GREATER
@@ -40,7 +40,7 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::DId.PartialAgentPresenterPhotoAvatar PickPhotoAvatar() => IsPhotoAvatar
             ? PhotoAvatar!
@@ -56,7 +56,7 @@ namespace DId
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(VideoAvatar))]
@@ -64,7 +64,7 @@ namespace DId
         public bool IsVideoAvatar => VideoAvatar != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickVideoAvatar(
 #if NET6_0_OR_GREATER
@@ -77,23 +77,23 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::DId.PartialAgentPresenterVideoAvatar PickVideoAvatar() => IsVideoAvatar
             ? VideoAvatar!
             : throw new global::System.InvalidOperationException($"Expected union variant 'VideoAvatar' but the value was {ToString()}.");
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator PartialAgentPresenter(global::DId.PartialAgentPresenterPhotoAvatar value) => new PartialAgentPresenter((global::DId.PartialAgentPresenterPhotoAvatar?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::DId.PartialAgentPresenterPhotoAvatar?(PartialAgentPresenter @this) => @this.PhotoAvatar;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public PartialAgentPresenter(global::DId.PartialAgentPresenterPhotoAvatar? value)
         {
@@ -101,22 +101,22 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static PartialAgentPresenter FromPhotoAvatar(global::DId.PartialAgentPresenterPhotoAvatar? value) => new PartialAgentPresenter(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator PartialAgentPresenter(global::DId.PartialAgentPresenterVideoAvatar value) => new PartialAgentPresenter((global::DId.PartialAgentPresenterVideoAvatar?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::DId.PartialAgentPresenterVideoAvatar?(PartialAgentPresenter @this) => @this.VideoAvatar;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public PartialAgentPresenter(global::DId.PartialAgentPresenterVideoAvatar? value)
         {
@@ -124,12 +124,12 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static PartialAgentPresenter FromVideoAvatar(global::DId.PartialAgentPresenterVideoAvatar? value) => new PartialAgentPresenter(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public PartialAgentPresenter(
             global::DId.PartialAgentPresenterPhotoAvatar? photoAvatar,
@@ -141,23 +141,23 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public object? Object =>
             VideoAvatar as object ??
-            PhotoAvatar as object 
+            PhotoAvatar as object
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override string? ToString() =>
             PhotoAvatar?.ToString() ??
-            VideoAvatar?.ToString() 
+            VideoAvatar?.ToString()
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Validate()
         {
@@ -165,7 +165,7 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TResult? Match<TResult>(
             global::System.Func<global::DId.PartialAgentPresenterPhotoAvatar, TResult>? photoAvatar = null,
@@ -190,7 +190,7 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Match(
             global::System.Action<global::DId.PartialAgentPresenterPhotoAvatar>? photoAvatar = null,
@@ -214,7 +214,7 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Switch(
             global::System.Action<global::DId.PartialAgentPresenterPhotoAvatar>? photoAvatar = null,
@@ -237,7 +237,7 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override int GetHashCode()
         {
@@ -258,18 +258,18 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Equals(PartialAgentPresenter other)
         {
             return
                 global::System.Collections.Generic.EqualityComparer<global::DId.PartialAgentPresenterPhotoAvatar?>.Default.Equals(PhotoAvatar, other.PhotoAvatar) &&
-                global::System.Collections.Generic.EqualityComparer<global::DId.PartialAgentPresenterVideoAvatar?>.Default.Equals(VideoAvatar, other.VideoAvatar) 
+                global::System.Collections.Generic.EqualityComparer<global::DId.PartialAgentPresenterVideoAvatar?>.Default.Equals(VideoAvatar, other.VideoAvatar)
                 ;
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator ==(PartialAgentPresenter obj1, PartialAgentPresenter obj2)
         {
@@ -277,7 +277,7 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator !=(PartialAgentPresenter obj1, PartialAgentPresenter obj2)
         {
@@ -285,7 +285,7 @@ namespace DId
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override bool Equals(object? obj)
         {

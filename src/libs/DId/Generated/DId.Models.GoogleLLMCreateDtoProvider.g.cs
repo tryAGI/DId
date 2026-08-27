@@ -9,7 +9,7 @@ namespace DId
     public enum GoogleLLMCreateDtoProvider
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Google,
     }

@@ -9,7 +9,7 @@ namespace DId
     public enum AgentResponseDtoVariant1LlmDIdModel
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         GptOss120b,
     }

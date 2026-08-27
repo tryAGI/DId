@@ -12,7 +12,7 @@ namespace DId
     public enum OpenAIExternalLLMCreateDtoPromptCustomizationKnowledgeSource
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         BaseKnowledge,
         /// <summary>

@@ -9,11 +9,11 @@ namespace DId
     public enum CreateTalkRequestConfigResultFormat
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Mov,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Mp4,
     }
