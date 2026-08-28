@@ -3772,7 +3772,7 @@ namespace DId
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::DId.JSONValue>? Type936 { get; set; }
+        public global::System.Collections.Generic.IList<global::DId.JSONValue?>? Type936 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -13337,7 +13337,7 @@ namespace DId
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::DId.JSONValue>? ListType33 { get; set; }
+        public global::System.Collections.Generic.List<global::DId.JSONValue?>? ListType33 { get; set; }
         /// <summary>
         ///
         /// </summary>

@@ -62,7 +62,7 @@ namespace DId.JsonConverters
             }
             var __score3 = 0;
             {
-                var __ti = typeInfoResolver.GetTypeInfo(typeof(global::System.Collections.Generic.IList<global::DId.JSONValue>), options);
+                var __ti = typeInfoResolver.GetTypeInfo(typeof(global::System.Collections.Generic.IList<global::DId.JSONValue?>), options);
                 if (__ti != null && __ti.Kind == global::System.Text.Json.Serialization.Metadata.JsonTypeInfoKind.Object)
                 {
                     foreach (var __prop in __ti.Properties)
@@ -93,7 +93,7 @@ namespace DId.JsonConverters
             string? jSONValueVariant1 = default;
             double? jSONValueVariant2 = default;
             bool? jSONValueVariant3 = default;
-            global::System.Collections.Generic.IList<global::DId.JSONValue>? jSONValueVariant4 = default;
+            global::System.Collections.Generic.IList<global::DId.JSONValue?>? jSONValueVariant4 = default;
             global::System.Collections.Generic.Dictionary<string, global::DId.JSONValue?>? jSONValueVariant5 = default;
             if (__bestIndex >= 0)
             {
@@ -153,8 +153,8 @@ namespace DId.JsonConverters
                     try
                     {
 
-                        var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::System.Collections.Generic.IList<global::DId.JSONValue>), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::System.Collections.Generic.IList<global::DId.JSONValue>> ??
-                                       throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::System.Collections.Generic.IList<global::DId.JSONValue>).Name}");
+                        var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::System.Collections.Generic.IList<global::DId.JSONValue?>), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::System.Collections.Generic.IList<global::DId.JSONValue?>> ??
+                                       throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::System.Collections.Generic.IList<global::DId.JSONValue?>).Name}");
                         jSONValueVariant4 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
                     }
                     catch (global::System.Text.Json.JsonException)
@@ -239,8 +239,8 @@ namespace DId.JsonConverters
                 try
                 {
 
-                    var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::System.Collections.Generic.IList<global::DId.JSONValue>), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::System.Collections.Generic.IList<global::DId.JSONValue>> ??
-                                   throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::System.Collections.Generic.IList<global::DId.JSONValue>).Name}");
+                    var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::System.Collections.Generic.IList<global::DId.JSONValue?>), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::System.Collections.Generic.IList<global::DId.JSONValue?>> ??
+                                   throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::System.Collections.Generic.IList<global::DId.JSONValue?>).Name}");
                     jSONValueVariant4 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
                 }
                 catch (global::System.Text.Json.JsonException)
@@ -312,8 +312,8 @@ namespace DId.JsonConverters
             }
             else if (value.IsJSONValueVariant4)
             {
-                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::System.Collections.Generic.IList<global::DId.JSONValue>), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::System.Collections.Generic.IList<global::DId.JSONValue>?> ??
-                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::System.Collections.Generic.IList<global::DId.JSONValue>).Name}");
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::System.Collections.Generic.IList<global::DId.JSONValue?>), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::System.Collections.Generic.IList<global::DId.JSONValue?>?> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::System.Collections.Generic.IList<global::DId.JSONValue?>).Name}");
                 global::System.Text.Json.JsonSerializer.Serialize(writer, value.JSONValueVariant4!, typeInfo);
             }
             else if (value.IsJSONValueVariant5)
