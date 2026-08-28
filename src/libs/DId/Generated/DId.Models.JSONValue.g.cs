@@ -124,9 +124,9 @@ namespace DId
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::System.Collections.Generic.IList<global::DId.JSONValue>? JSONValueVariant4 { get; init; }
+        public global::System.Collections.Generic.IList<global::DId.JSONValue?>? JSONValueVariant4 { get; init; }
 #else
-        public global::System.Collections.Generic.IList<global::DId.JSONValue>? JSONValueVariant4 { get; }
+        public global::System.Collections.Generic.IList<global::DId.JSONValue?>? JSONValueVariant4 { get; }
 #endif
 
         /// <summary>
@@ -144,7 +144,7 @@ namespace DId
 #if NET6_0_OR_GREATER
             [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
 #endif
-            out global::System.Collections.Generic.IList<global::DId.JSONValue>? value)
+            out global::System.Collections.Generic.IList<global::DId.JSONValue?>? value)
         {
             value = JSONValueVariant4;
             return IsJSONValueVariant4;
@@ -153,7 +153,7 @@ namespace DId
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::DId.JSONValue> PickJSONValueVariant4() => IsJSONValueVariant4
+        public global::System.Collections.Generic.IList<global::DId.JSONValue?> PickJSONValueVariant4() => IsJSONValueVariant4
             ? JSONValueVariant4!
             : throw new global::System.InvalidOperationException($"Expected union variant 'JSONValueVariant4' but the value was {ToString()}.");
 
@@ -292,7 +292,7 @@ namespace DId
             string? jSONValueVariant1,
             double? jSONValueVariant2,
             bool? jSONValueVariant3,
-            global::System.Collections.Generic.IList<global::DId.JSONValue>? jSONValueVariant4,
+            global::System.Collections.Generic.IList<global::DId.JSONValue?>? jSONValueVariant4,
             global::System.Collections.Generic.Dictionary<string, global::DId.JSONValue?>? jSONValueVariant5
             )
         {
@@ -340,7 +340,7 @@ namespace DId
             global::System.Func<string, TResult>? jSONValueVariant1 = null,
             global::System.Func<double?, TResult>? jSONValueVariant2 = null,
             global::System.Func<bool?, TResult>? jSONValueVariant3 = null,
-            global::System.Func<global::System.Collections.Generic.IList<global::DId.JSONValue>, TResult>? jSONValueVariant4 = null,
+            global::System.Func<global::System.Collections.Generic.IList<global::DId.JSONValue?>, TResult>? jSONValueVariant4 = null,
             global::System.Func<global::System.Collections.Generic.Dictionary<string, global::DId.JSONValue?>, TResult>? jSONValueVariant5 = null,
             bool validate = true)
         {
@@ -383,7 +383,7 @@ namespace DId
 
             global::System.Action<bool?>? jSONValueVariant3 = null,
 
-            global::System.Action<global::System.Collections.Generic.IList<global::DId.JSONValue>>? jSONValueVariant4 = null,
+            global::System.Action<global::System.Collections.Generic.IList<global::DId.JSONValue?>>? jSONValueVariant4 = null,
 
             global::System.Action<global::System.Collections.Generic.Dictionary<string, global::DId.JSONValue?>>? jSONValueVariant5 = null,
             bool validate = true)
@@ -422,7 +422,7 @@ namespace DId
             global::System.Action<string>? jSONValueVariant1 = null,
             global::System.Action<double?>? jSONValueVariant2 = null,
             global::System.Action<bool?>? jSONValueVariant3 = null,
-            global::System.Action<global::System.Collections.Generic.IList<global::DId.JSONValue>>? jSONValueVariant4 = null,
+            global::System.Action<global::System.Collections.Generic.IList<global::DId.JSONValue?>>? jSONValueVariant4 = null,
             global::System.Action<global::System.Collections.Generic.Dictionary<string, global::DId.JSONValue?>>? jSONValueVariant5 = null,
             bool validate = true)
         {
@@ -467,7 +467,7 @@ namespace DId
                 JSONValueVariant3,
                 typeof(bool),
                 JSONValueVariant4,
-                typeof(global::System.Collections.Generic.IList<global::DId.JSONValue>),
+                typeof(global::System.Collections.Generic.IList<global::DId.JSONValue?>),
                 JSONValueVariant5,
                 typeof(global::System.Collections.Generic.Dictionary<string, global::DId.JSONValue?>),
             };
@@ -489,7 +489,7 @@ namespace DId
                 global::System.Collections.Generic.EqualityComparer<string?>.Default.Equals(JSONValueVariant1, other.JSONValueVariant1) &&
                 global::System.Collections.Generic.EqualityComparer<double?>.Default.Equals(JSONValueVariant2, other.JSONValueVariant2) &&
                 global::System.Collections.Generic.EqualityComparer<bool?>.Default.Equals(JSONValueVariant3, other.JSONValueVariant3) &&
-                global::System.Collections.Generic.EqualityComparer<global::System.Collections.Generic.IList<global::DId.JSONValue>?>.Default.Equals(JSONValueVariant4, other.JSONValueVariant4) &&
+                global::System.Collections.Generic.EqualityComparer<global::System.Collections.Generic.IList<global::DId.JSONValue?>?>.Default.Equals(JSONValueVariant4, other.JSONValueVariant4) &&
                 global::System.Collections.Generic.EqualityComparer<global::System.Collections.Generic.Dictionary<string, global::DId.JSONValue?>?>.Default.Equals(JSONValueVariant5, other.JSONValueVariant5)
                 ;
         }
