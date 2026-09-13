@@ -34,7 +34,7 @@ namespace DId
         /// <inheritdoc/>
         public global::DId.AutoSDKClientOptions Options { get; }
 
-        internal global::System.Lazy<global::System.Text.Json.Serialization.JsonSerializerContext> JsonSerializerContextProvider { get; set; } = new(() => global::DId.SourceGenerationContext.Default);
+        internal global::System.Lazy<global::System.Text.Json.Serialization.JsonSerializerContext> JsonSerializerContextProvider { get; set; } = new(() => global::DId.ChatsExportSourceGenerationContext.Default);
 
         /// <summary>
         ///
