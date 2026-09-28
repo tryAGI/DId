@@ -1,19 +1,14 @@
 
 #nullable enable
 
-#pragma warning disable CS0618 // Type or member is obsolete
-#pragma warning disable CS3016 // Arrays as attribute arguments is not CLS-compliant
-
 namespace DId
 {
     /// <summary>
     ///
     /// </summary>
     [global::System.Text.Json.Serialization.JsonSourceGenerationOptions(
-        DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull,
-        Converters = new global::System.Type[]
-        {
-        })]
+        DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull
+    )]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.AnyOf<global::DId.CreateTalkRequestScriptVariant1ProviderMicrosoft2, global::DId.CreateTalkRequestScriptVariant1ProviderElevenLabs2, global::DId.CreateTalkRequestScriptVariant1ProviderAmazon2, global::DId.CreateTalkRequestScriptVariant1ProviderGoogle2, global::DId.CreateTalkRequestScriptVariant1ProviderOpenAI2>), TypeInfoPropertyName = "CreateTalkRequestScriptVariant1ProviderOpenAI2_d1bfc0f36c9e6ce2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.AnyOf<global::DId.CreateTalkRequestScriptVariant1ProviderMicrosoft2, global::DId.CreateTalkRequestScriptVariant1ProviderElevenLabs2, global::DId.CreateTalkRequestScriptVariant1ProviderAmazon2, global::DId.CreateTalkRequestScriptVariant1ProviderGoogle2, global::DId.CreateTalkRequestScriptVariant1ProviderOpenAI2>?), TypeInfoPropertyName = "CreateTalkRequestScriptVariant1ProviderOpenAI2_73f40d67641cba2a")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.Dictionary<string, string>))]
