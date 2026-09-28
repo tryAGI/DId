@@ -42,8 +42,8 @@ namespace DId
         /// <summary>
         ///
         /// </summary>
-        public global::DId.CustomAuthConfigBasic PickBasic() => IsBasic
-            ? Basic!
+        public global::DId.CustomAuthConfigBasic PickBasic() => Basic is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'Basic' but the value was {ToString()}.");
 
         /// <summary>
@@ -79,8 +79,8 @@ namespace DId
         /// <summary>
         ///
         /// </summary>
-        public global::DId.CustomAuthConfigOAuth2 PickOAuth2() => IsOAuth2
-            ? OAuth2!
+        public global::DId.CustomAuthConfigOAuth2 PickOAuth2() => OAuth2 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'OAuth2' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -177,13 +177,13 @@ namespace DId
                 Validate();
             }
 
-            if (IsBasic && basic != null)
+            if (Basic is { } __value0 && basic != null)
             {
-                return basic(Basic!);
+                return basic(__value0);
             }
-            else if (IsOAuth2 && oAuth2 != null)
+            else if (OAuth2 is { } __value1 && oAuth2 != null)
             {
-                return oAuth2(OAuth2!);
+                return oAuth2(__value1);
             }
 
             return default(TResult);
@@ -203,13 +203,13 @@ namespace DId
                 Validate();
             }
 
-            if (IsBasic)
+            if (Basic is { } __value0)
             {
-                basic?.Invoke(Basic!);
+                basic?.Invoke(__value0);
             }
-            else if (IsOAuth2)
+            else if (OAuth2 is { } __value1)
             {
-                oAuth2?.Invoke(OAuth2!);
+                oAuth2?.Invoke(__value1);
             }
         }
 
@@ -226,13 +226,13 @@ namespace DId
                 Validate();
             }
 
-            if (IsBasic)
+            if (Basic is { } __value0)
             {
-                basic?.Invoke(Basic!);
+                basic?.Invoke(__value0);
             }
-            else if (IsOAuth2)
+            else if (OAuth2 is { } __value1)
             {
-                oAuth2?.Invoke(OAuth2!);
+                oAuth2?.Invoke(__value1);
             }
         }
 

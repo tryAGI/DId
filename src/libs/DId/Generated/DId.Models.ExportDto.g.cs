@@ -42,8 +42,8 @@ namespace DId
         /// <summary>
         ///
         /// </summary>
-        public global::DId.ExportDtoVariant1 PickExportDtoVariant1() => IsExportDtoVariant1
-            ? ExportDtoVariant1!
+        public global::DId.ExportDtoVariant1 PickExportDtoVariant1() => ExportDtoVariant1 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'ExportDtoVariant1' but the value was {ToString()}.");
 
         /// <summary>
@@ -79,8 +79,8 @@ namespace DId
         /// <summary>
         ///
         /// </summary>
-        public global::DId.ExportDtoVariant2 PickExportDtoVariant2() => IsExportDtoVariant2
-            ? ExportDtoVariant2!
+        public global::DId.ExportDtoVariant2 PickExportDtoVariant2() => ExportDtoVariant2 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'ExportDtoVariant2' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -177,13 +177,13 @@ namespace DId
                 Validate();
             }
 
-            if (IsExportDtoVariant1 && exportDtoVariant1 != null)
+            if (ExportDtoVariant1 is { } __value0 && exportDtoVariant1 != null)
             {
-                return exportDtoVariant1(ExportDtoVariant1!);
+                return exportDtoVariant1(__value0);
             }
-            else if (IsExportDtoVariant2 && exportDtoVariant2 != null)
+            else if (ExportDtoVariant2 is { } __value1 && exportDtoVariant2 != null)
             {
-                return exportDtoVariant2(ExportDtoVariant2!);
+                return exportDtoVariant2(__value1);
             }
 
             return default(TResult);
@@ -203,13 +203,13 @@ namespace DId
                 Validate();
             }
 
-            if (IsExportDtoVariant1)
+            if (ExportDtoVariant1 is { } __value0)
             {
-                exportDtoVariant1?.Invoke(ExportDtoVariant1!);
+                exportDtoVariant1?.Invoke(__value0);
             }
-            else if (IsExportDtoVariant2)
+            else if (ExportDtoVariant2 is { } __value1)
             {
-                exportDtoVariant2?.Invoke(ExportDtoVariant2!);
+                exportDtoVariant2?.Invoke(__value1);
             }
         }
 
@@ -226,13 +226,13 @@ namespace DId
                 Validate();
             }
 
-            if (IsExportDtoVariant1)
+            if (ExportDtoVariant1 is { } __value0)
             {
-                exportDtoVariant1?.Invoke(ExportDtoVariant1!);
+                exportDtoVariant1?.Invoke(__value0);
             }
-            else if (IsExportDtoVariant2)
+            else if (ExportDtoVariant2 is { } __value1)
             {
-                exportDtoVariant2?.Invoke(ExportDtoVariant2!);
+                exportDtoVariant2?.Invoke(__value1);
             }
         }
 

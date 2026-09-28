@@ -130,13 +130,13 @@ namespace DId.JsonConverters
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::DId.ExpressiveVideoBackgroundVariant1), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::DId.ExpressiveVideoBackgroundVariant1?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::DId.ExpressiveVideoBackgroundVariant1).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.ExpressiveVideoBackgroundVariant1!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickExpressiveVideoBackgroundVariant1(), typeInfo);
             }
             else if (value.IsExpressiveVideoBackgroundVariant2)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::DId.ExpressiveVideoBackgroundVariant2), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::DId.ExpressiveVideoBackgroundVariant2?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::DId.ExpressiveVideoBackgroundVariant2).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.ExpressiveVideoBackgroundVariant2!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickExpressiveVideoBackgroundVariant2(), typeInfo);
             }
         }
     }

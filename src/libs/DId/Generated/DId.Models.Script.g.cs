@@ -42,8 +42,8 @@ namespace DId
         /// <summary>
         ///
         /// </summary>
-        public global::DId.ScriptVariant1 PickScriptVariant1() => IsScriptVariant1
-            ? ScriptVariant1!
+        public global::DId.ScriptVariant1 PickScriptVariant1() => ScriptVariant1 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'ScriptVariant1' but the value was {ToString()}.");
 
         /// <summary>
@@ -79,8 +79,8 @@ namespace DId
         /// <summary>
         ///
         /// </summary>
-        public global::DId.ScriptVariant2 PickScriptVariant2() => IsScriptVariant2
-            ? ScriptVariant2!
+        public global::DId.ScriptVariant2 PickScriptVariant2() => ScriptVariant2 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'ScriptVariant2' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -177,13 +177,13 @@ namespace DId
                 Validate();
             }
 
-            if (IsScriptVariant1 && scriptVariant1 != null)
+            if (ScriptVariant1 is { } __value0 && scriptVariant1 != null)
             {
-                return scriptVariant1(ScriptVariant1!);
+                return scriptVariant1(__value0);
             }
-            else if (IsScriptVariant2 && scriptVariant2 != null)
+            else if (ScriptVariant2 is { } __value1 && scriptVariant2 != null)
             {
-                return scriptVariant2(ScriptVariant2!);
+                return scriptVariant2(__value1);
             }
 
             return default(TResult);
@@ -203,13 +203,13 @@ namespace DId
                 Validate();
             }
 
-            if (IsScriptVariant1)
+            if (ScriptVariant1 is { } __value0)
             {
-                scriptVariant1?.Invoke(ScriptVariant1!);
+                scriptVariant1?.Invoke(__value0);
             }
-            else if (IsScriptVariant2)
+            else if (ScriptVariant2 is { } __value1)
             {
-                scriptVariant2?.Invoke(ScriptVariant2!);
+                scriptVariant2?.Invoke(__value1);
             }
         }
 
@@ -226,13 +226,13 @@ namespace DId
                 Validate();
             }
 
-            if (IsScriptVariant1)
+            if (ScriptVariant1 is { } __value0)
             {
-                scriptVariant1?.Invoke(ScriptVariant1!);
+                scriptVariant1?.Invoke(__value0);
             }
-            else if (IsScriptVariant2)
+            else if (ScriptVariant2 is { } __value1)
             {
-                scriptVariant2?.Invoke(ScriptVariant2!);
+                scriptVariant2?.Invoke(__value1);
             }
         }
 

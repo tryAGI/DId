@@ -42,8 +42,8 @@ namespace DId
         /// <summary>
         ///
         /// </summary>
-        public global::DId.CreateExpressiveResponseDtoVariant1 PickCreateExpressiveResponseDtoVariant1() => IsCreateExpressiveResponseDtoVariant1
-            ? CreateExpressiveResponseDtoVariant1!
+        public global::DId.CreateExpressiveResponseDtoVariant1 PickCreateExpressiveResponseDtoVariant1() => CreateExpressiveResponseDtoVariant1 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'CreateExpressiveResponseDtoVariant1' but the value was {ToString()}.");
 
         /// <summary>
@@ -79,8 +79,8 @@ namespace DId
         /// <summary>
         ///
         /// </summary>
-        public global::DId.CreateExpressiveResponseDtoVariant2 PickCreateExpressiveResponseDtoVariant2() => IsCreateExpressiveResponseDtoVariant2
-            ? CreateExpressiveResponseDtoVariant2!
+        public global::DId.CreateExpressiveResponseDtoVariant2 PickCreateExpressiveResponseDtoVariant2() => CreateExpressiveResponseDtoVariant2 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'CreateExpressiveResponseDtoVariant2' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -177,13 +177,13 @@ namespace DId
                 Validate();
             }
 
-            if (IsCreateExpressiveResponseDtoVariant1 && createExpressiveResponseDtoVariant1 != null)
+            if (CreateExpressiveResponseDtoVariant1 is { } __value0 && createExpressiveResponseDtoVariant1 != null)
             {
-                return createExpressiveResponseDtoVariant1(CreateExpressiveResponseDtoVariant1!);
+                return createExpressiveResponseDtoVariant1(__value0);
             }
-            else if (IsCreateExpressiveResponseDtoVariant2 && createExpressiveResponseDtoVariant2 != null)
+            else if (CreateExpressiveResponseDtoVariant2 is { } __value1 && createExpressiveResponseDtoVariant2 != null)
             {
-                return createExpressiveResponseDtoVariant2(CreateExpressiveResponseDtoVariant2!);
+                return createExpressiveResponseDtoVariant2(__value1);
             }
 
             return default(TResult);
@@ -203,13 +203,13 @@ namespace DId
                 Validate();
             }
 
-            if (IsCreateExpressiveResponseDtoVariant1)
+            if (CreateExpressiveResponseDtoVariant1 is { } __value0)
             {
-                createExpressiveResponseDtoVariant1?.Invoke(CreateExpressiveResponseDtoVariant1!);
+                createExpressiveResponseDtoVariant1?.Invoke(__value0);
             }
-            else if (IsCreateExpressiveResponseDtoVariant2)
+            else if (CreateExpressiveResponseDtoVariant2 is { } __value1)
             {
-                createExpressiveResponseDtoVariant2?.Invoke(CreateExpressiveResponseDtoVariant2!);
+                createExpressiveResponseDtoVariant2?.Invoke(__value1);
             }
         }
 
@@ -226,13 +226,13 @@ namespace DId
                 Validate();
             }
 
-            if (IsCreateExpressiveResponseDtoVariant1)
+            if (CreateExpressiveResponseDtoVariant1 is { } __value0)
             {
-                createExpressiveResponseDtoVariant1?.Invoke(CreateExpressiveResponseDtoVariant1!);
+                createExpressiveResponseDtoVariant1?.Invoke(__value0);
             }
-            else if (IsCreateExpressiveResponseDtoVariant2)
+            else if (CreateExpressiveResponseDtoVariant2 is { } __value1)
             {
-                createExpressiveResponseDtoVariant2?.Invoke(CreateExpressiveResponseDtoVariant2!);
+                createExpressiveResponseDtoVariant2?.Invoke(__value1);
             }
         }
 

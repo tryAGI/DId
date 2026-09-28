@@ -42,8 +42,8 @@ namespace DId
         /// <summary>
         ///
         /// </summary>
-        public global::DId.ChatEndEventData PickChatEnd() => IsChatEnd
-            ? ChatEnd!
+        public global::DId.ChatEndEventData PickChatEnd() => ChatEnd is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'ChatEnd' but the value was {ToString()}.");
 
         /// <summary>
@@ -79,8 +79,8 @@ namespace DId
         /// <summary>
         ///
         /// </summary>
-        public global::DId.TriggerEventDataVariant2 PickTriggerEventDataVariant2() => IsTriggerEventDataVariant2
-            ? TriggerEventDataVariant2!
+        public global::DId.TriggerEventDataVariant2 PickTriggerEventDataVariant2() => TriggerEventDataVariant2 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'TriggerEventDataVariant2' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -177,13 +177,13 @@ namespace DId
                 Validate();
             }
 
-            if (IsChatEnd && chatEnd != null)
+            if (ChatEnd is { } __value0 && chatEnd != null)
             {
-                return chatEnd(ChatEnd!);
+                return chatEnd(__value0);
             }
-            else if (IsTriggerEventDataVariant2 && triggerEventDataVariant2 != null)
+            else if (TriggerEventDataVariant2 is { } __value1 && triggerEventDataVariant2 != null)
             {
-                return triggerEventDataVariant2(TriggerEventDataVariant2!);
+                return triggerEventDataVariant2(__value1);
             }
 
             return default(TResult);
@@ -203,13 +203,13 @@ namespace DId
                 Validate();
             }
 
-            if (IsChatEnd)
+            if (ChatEnd is { } __value0)
             {
-                chatEnd?.Invoke(ChatEnd!);
+                chatEnd?.Invoke(__value0);
             }
-            else if (IsTriggerEventDataVariant2)
+            else if (TriggerEventDataVariant2 is { } __value1)
             {
-                triggerEventDataVariant2?.Invoke(TriggerEventDataVariant2!);
+                triggerEventDataVariant2?.Invoke(__value1);
             }
         }
 
@@ -226,13 +226,13 @@ namespace DId
                 Validate();
             }
 
-            if (IsChatEnd)
+            if (ChatEnd is { } __value0)
             {
-                chatEnd?.Invoke(ChatEnd!);
+                chatEnd?.Invoke(__value0);
             }
-            else if (IsTriggerEventDataVariant2)
+            else if (TriggerEventDataVariant2 is { } __value1)
             {
-                triggerEventDataVariant2?.Invoke(TriggerEventDataVariant2!);
+                triggerEventDataVariant2?.Invoke(__value1);
             }
         }
 

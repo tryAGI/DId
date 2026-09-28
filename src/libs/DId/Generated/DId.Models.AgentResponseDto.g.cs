@@ -42,8 +42,8 @@ namespace DId
         /// <summary>
         ///
         /// </summary>
-        public global::DId.AgentResponseDtoVariant1 PickAgentResponseDtoVariant1() => IsAgentResponseDtoVariant1
-            ? AgentResponseDtoVariant1!
+        public global::DId.AgentResponseDtoVariant1 PickAgentResponseDtoVariant1() => AgentResponseDtoVariant1 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'AgentResponseDtoVariant1' but the value was {ToString()}.");
 
         /// <summary>
@@ -79,8 +79,8 @@ namespace DId
         /// <summary>
         ///
         /// </summary>
-        public global::DId.AgentResponseDtoVariant2 PickAgentResponseDtoVariant2() => IsAgentResponseDtoVariant2
-            ? AgentResponseDtoVariant2!
+        public global::DId.AgentResponseDtoVariant2 PickAgentResponseDtoVariant2() => AgentResponseDtoVariant2 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'AgentResponseDtoVariant2' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -177,13 +177,13 @@ namespace DId
                 Validate();
             }
 
-            if (IsAgentResponseDtoVariant1 && agentResponseDtoVariant1 != null)
+            if (AgentResponseDtoVariant1 is { } __value0 && agentResponseDtoVariant1 != null)
             {
-                return agentResponseDtoVariant1(AgentResponseDtoVariant1!);
+                return agentResponseDtoVariant1(__value0);
             }
-            else if (IsAgentResponseDtoVariant2 && agentResponseDtoVariant2 != null)
+            else if (AgentResponseDtoVariant2 is { } __value1 && agentResponseDtoVariant2 != null)
             {
-                return agentResponseDtoVariant2(AgentResponseDtoVariant2!);
+                return agentResponseDtoVariant2(__value1);
             }
 
             return default(TResult);
@@ -203,13 +203,13 @@ namespace DId
                 Validate();
             }
 
-            if (IsAgentResponseDtoVariant1)
+            if (AgentResponseDtoVariant1 is { } __value0)
             {
-                agentResponseDtoVariant1?.Invoke(AgentResponseDtoVariant1!);
+                agentResponseDtoVariant1?.Invoke(__value0);
             }
-            else if (IsAgentResponseDtoVariant2)
+            else if (AgentResponseDtoVariant2 is { } __value1)
             {
-                agentResponseDtoVariant2?.Invoke(AgentResponseDtoVariant2!);
+                agentResponseDtoVariant2?.Invoke(__value1);
             }
         }
 
@@ -226,13 +226,13 @@ namespace DId
                 Validate();
             }
 
-            if (IsAgentResponseDtoVariant1)
+            if (AgentResponseDtoVariant1 is { } __value0)
             {
-                agentResponseDtoVariant1?.Invoke(AgentResponseDtoVariant1!);
+                agentResponseDtoVariant1?.Invoke(__value0);
             }
-            else if (IsAgentResponseDtoVariant2)
+            else if (AgentResponseDtoVariant2 is { } __value1)
             {
-                agentResponseDtoVariant2?.Invoke(AgentResponseDtoVariant2!);
+                agentResponseDtoVariant2?.Invoke(__value1);
             }
         }
 

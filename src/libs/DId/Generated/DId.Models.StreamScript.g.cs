@@ -42,8 +42,8 @@ namespace DId
         /// <summary>
         ///
         /// </summary>
-        public global::DId.StreamScriptVariant1 PickStreamScriptVariant1() => IsStreamScriptVariant1
-            ? StreamScriptVariant1!
+        public global::DId.StreamScriptVariant1 PickStreamScriptVariant1() => StreamScriptVariant1 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StreamScriptVariant1' but the value was {ToString()}.");
 
         /// <summary>
@@ -79,8 +79,8 @@ namespace DId
         /// <summary>
         ///
         /// </summary>
-        public global::DId.StreamScriptVariant2 PickStreamScriptVariant2() => IsStreamScriptVariant2
-            ? StreamScriptVariant2!
+        public global::DId.StreamScriptVariant2 PickStreamScriptVariant2() => StreamScriptVariant2 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StreamScriptVariant2' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -177,13 +177,13 @@ namespace DId
                 Validate();
             }
 
-            if (IsStreamScriptVariant1 && streamScriptVariant1 != null)
+            if (StreamScriptVariant1 is { } __value0 && streamScriptVariant1 != null)
             {
-                return streamScriptVariant1(StreamScriptVariant1!);
+                return streamScriptVariant1(__value0);
             }
-            else if (IsStreamScriptVariant2 && streamScriptVariant2 != null)
+            else if (StreamScriptVariant2 is { } __value1 && streamScriptVariant2 != null)
             {
-                return streamScriptVariant2(StreamScriptVariant2!);
+                return streamScriptVariant2(__value1);
             }
 
             return default(TResult);
@@ -203,13 +203,13 @@ namespace DId
                 Validate();
             }
 
-            if (IsStreamScriptVariant1)
+            if (StreamScriptVariant1 is { } __value0)
             {
-                streamScriptVariant1?.Invoke(StreamScriptVariant1!);
+                streamScriptVariant1?.Invoke(__value0);
             }
-            else if (IsStreamScriptVariant2)
+            else if (StreamScriptVariant2 is { } __value1)
             {
-                streamScriptVariant2?.Invoke(StreamScriptVariant2!);
+                streamScriptVariant2?.Invoke(__value1);
             }
         }
 
@@ -226,13 +226,13 @@ namespace DId
                 Validate();
             }
 
-            if (IsStreamScriptVariant1)
+            if (StreamScriptVariant1 is { } __value0)
             {
-                streamScriptVariant1?.Invoke(StreamScriptVariant1!);
+                streamScriptVariant1?.Invoke(__value0);
             }
-            else if (IsStreamScriptVariant2)
+            else if (StreamScriptVariant2 is { } __value1)
             {
-                streamScriptVariant2?.Invoke(StreamScriptVariant2!);
+                streamScriptVariant2?.Invoke(__value1);
             }
         }
 

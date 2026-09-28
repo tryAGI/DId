@@ -42,8 +42,8 @@ namespace DId
         /// <summary>
         ///
         /// </summary>
-        public global::DId.AgentPresenterPhotoAvatar PickPhotoAvatar() => IsPhotoAvatar
-            ? PhotoAvatar!
+        public global::DId.AgentPresenterPhotoAvatar PickPhotoAvatar() => PhotoAvatar is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'PhotoAvatar' but the value was {ToString()}.");
 
         /// <summary>
@@ -79,8 +79,8 @@ namespace DId
         /// <summary>
         ///
         /// </summary>
-        public global::DId.AgentPresenterVideoAvatar PickVideoAvatar() => IsVideoAvatar
-            ? VideoAvatar!
+        public global::DId.AgentPresenterVideoAvatar PickVideoAvatar() => VideoAvatar is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'VideoAvatar' but the value was {ToString()}.");
 
         /// <summary>
@@ -116,8 +116,8 @@ namespace DId
         /// <summary>
         ///
         /// </summary>
-        public global::DId.AgentPresenterExpressiveAvatar PickExpressiveAvatar() => IsExpressiveAvatar
-            ? ExpressiveAvatar!
+        public global::DId.AgentPresenterExpressiveAvatar PickExpressiveAvatar() => ExpressiveAvatar is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'ExpressiveAvatar' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -242,17 +242,17 @@ namespace DId
                 Validate();
             }
 
-            if (IsPhotoAvatar && photoAvatar != null)
+            if (PhotoAvatar is { } __value0 && photoAvatar != null)
             {
-                return photoAvatar(PhotoAvatar!);
+                return photoAvatar(__value0);
             }
-            else if (IsVideoAvatar && videoAvatar != null)
+            else if (VideoAvatar is { } __value1 && videoAvatar != null)
             {
-                return videoAvatar(VideoAvatar!);
+                return videoAvatar(__value1);
             }
-            else if (IsExpressiveAvatar && expressiveAvatar != null)
+            else if (ExpressiveAvatar is { } __value2 && expressiveAvatar != null)
             {
-                return expressiveAvatar(ExpressiveAvatar!);
+                return expressiveAvatar(__value2);
             }
 
             return default(TResult);
@@ -274,17 +274,17 @@ namespace DId
                 Validate();
             }
 
-            if (IsPhotoAvatar)
+            if (PhotoAvatar is { } __value0)
             {
-                photoAvatar?.Invoke(PhotoAvatar!);
+                photoAvatar?.Invoke(__value0);
             }
-            else if (IsVideoAvatar)
+            else if (VideoAvatar is { } __value1)
             {
-                videoAvatar?.Invoke(VideoAvatar!);
+                videoAvatar?.Invoke(__value1);
             }
-            else if (IsExpressiveAvatar)
+            else if (ExpressiveAvatar is { } __value2)
             {
-                expressiveAvatar?.Invoke(ExpressiveAvatar!);
+                expressiveAvatar?.Invoke(__value2);
             }
         }
 
@@ -302,17 +302,17 @@ namespace DId
                 Validate();
             }
 
-            if (IsPhotoAvatar)
+            if (PhotoAvatar is { } __value0)
             {
-                photoAvatar?.Invoke(PhotoAvatar!);
+                photoAvatar?.Invoke(__value0);
             }
-            else if (IsVideoAvatar)
+            else if (VideoAvatar is { } __value1)
             {
-                videoAvatar?.Invoke(VideoAvatar!);
+                videoAvatar?.Invoke(__value1);
             }
-            else if (IsExpressiveAvatar)
+            else if (ExpressiveAvatar is { } __value2)
             {
-                expressiveAvatar?.Invoke(ExpressiveAvatar!);
+                expressiveAvatar?.Invoke(__value2);
             }
         }
 

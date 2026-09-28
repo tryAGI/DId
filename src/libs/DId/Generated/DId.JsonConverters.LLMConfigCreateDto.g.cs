@@ -351,37 +351,37 @@ namespace DId.JsonConverters
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::DId.LLMConfigCreateDtoVariant1), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::DId.LLMConfigCreateDtoVariant1?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::DId.LLMConfigCreateDtoVariant1).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.LLMConfigCreateDtoVariant1!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickLLMConfigCreateDtoVariant1(), typeInfo);
             }
             else if (value.IsLLMConfigCreateDtoVariant2)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::DId.LLMConfigCreateDtoVariant2), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::DId.LLMConfigCreateDtoVariant2?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::DId.LLMConfigCreateDtoVariant2).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.LLMConfigCreateDtoVariant2!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickLLMConfigCreateDtoVariant2(), typeInfo);
             }
             else if (value.IsLLMConfigCreateDtoVariant3)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::DId.LLMConfigCreateDtoVariant3), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::DId.LLMConfigCreateDtoVariant3?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::DId.LLMConfigCreateDtoVariant3).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.LLMConfigCreateDtoVariant3!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickLLMConfigCreateDtoVariant3(), typeInfo);
             }
             else if (value.IsLLMConfigCreateDtoVariant4)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::DId.LLMConfigCreateDtoVariant4), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::DId.LLMConfigCreateDtoVariant4?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::DId.LLMConfigCreateDtoVariant4).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.LLMConfigCreateDtoVariant4!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickLLMConfigCreateDtoVariant4(), typeInfo);
             }
             else if (value.IsLLMConfigCreateDtoVariant5)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::DId.LLMConfigCreateDtoVariant5), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::DId.LLMConfigCreateDtoVariant5?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::DId.LLMConfigCreateDtoVariant5).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.LLMConfigCreateDtoVariant5!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickLLMConfigCreateDtoVariant5(), typeInfo);
             }
             else if (value.IsLLMConfigCreateDtoVariant6)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::DId.LLMConfigCreateDtoVariant6), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::DId.LLMConfigCreateDtoVariant6?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::DId.LLMConfigCreateDtoVariant6).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.LLMConfigCreateDtoVariant6!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickLLMConfigCreateDtoVariant6(), typeInfo);
             }
         }
     }

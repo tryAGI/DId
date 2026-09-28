@@ -42,8 +42,8 @@ namespace DId
         /// <summary>
         ///
         /// </summary>
-        public global::DId.AgentsTextToSpeechProvidersMicrosoft PickMicrosoft() => IsMicrosoft
-            ? Microsoft!
+        public global::DId.AgentsTextToSpeechProvidersMicrosoft PickMicrosoft() => Microsoft is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'Microsoft' but the value was {ToString()}.");
 
         /// <summary>
@@ -79,8 +79,8 @@ namespace DId
         /// <summary>
         ///
         /// </summary>
-        public global::DId.AgentsTextToSpeechProvidersElevenLabs PickElevenLabs() => IsElevenLabs
-            ? ElevenLabs!
+        public global::DId.AgentsTextToSpeechProvidersElevenLabs PickElevenLabs() => ElevenLabs is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'ElevenLabs' but the value was {ToString()}.");
 
         /// <summary>
@@ -116,8 +116,8 @@ namespace DId
         /// <summary>
         ///
         /// </summary>
-        public global::DId.AgentsTextToSpeechProvidersOpenAI PickOpenAI() => IsOpenAI
-            ? OpenAI!
+        public global::DId.AgentsTextToSpeechProvidersOpenAI PickOpenAI() => OpenAI is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'OpenAI' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -242,17 +242,17 @@ namespace DId
                 Validate();
             }
 
-            if (IsMicrosoft && microsoft != null)
+            if (Microsoft is { } __value0 && microsoft != null)
             {
-                return microsoft(Microsoft!);
+                return microsoft(__value0);
             }
-            else if (IsElevenLabs && elevenLabs != null)
+            else if (ElevenLabs is { } __value1 && elevenLabs != null)
             {
-                return elevenLabs(ElevenLabs!);
+                return elevenLabs(__value1);
             }
-            else if (IsOpenAI && openAI != null)
+            else if (OpenAI is { } __value2 && openAI != null)
             {
-                return openAI(OpenAI!);
+                return openAI(__value2);
             }
 
             return default(TResult);
@@ -274,17 +274,17 @@ namespace DId
                 Validate();
             }
 
-            if (IsMicrosoft)
+            if (Microsoft is { } __value0)
             {
-                microsoft?.Invoke(Microsoft!);
+                microsoft?.Invoke(__value0);
             }
-            else if (IsElevenLabs)
+            else if (ElevenLabs is { } __value1)
             {
-                elevenLabs?.Invoke(ElevenLabs!);
+                elevenLabs?.Invoke(__value1);
             }
-            else if (IsOpenAI)
+            else if (OpenAI is { } __value2)
             {
-                openAI?.Invoke(OpenAI!);
+                openAI?.Invoke(__value2);
             }
         }
 
@@ -302,17 +302,17 @@ namespace DId
                 Validate();
             }
 
-            if (IsMicrosoft)
+            if (Microsoft is { } __value0)
             {
-                microsoft?.Invoke(Microsoft!);
+                microsoft?.Invoke(__value0);
             }
-            else if (IsElevenLabs)
+            else if (ElevenLabs is { } __value1)
             {
-                elevenLabs?.Invoke(ElevenLabs!);
+                elevenLabs?.Invoke(__value1);
             }
-            else if (IsOpenAI)
+            else if (OpenAI is { } __value2)
             {
-                openAI?.Invoke(OpenAI!);
+                openAI?.Invoke(__value2);
             }
         }
 
