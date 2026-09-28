@@ -42,8 +42,8 @@ namespace DId
         /// <summary>
         ///
         /// </summary>
-        public global::DId.UpdateAuthSecretRequestDtoBasicAuthentication PickBasicAuthentication() => IsBasicAuthentication
-            ? BasicAuthentication!
+        public global::DId.UpdateAuthSecretRequestDtoBasicAuthentication PickBasicAuthentication() => BasicAuthentication is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'BasicAuthentication' but the value was {ToString()}.");
 
         /// <summary>
@@ -79,8 +79,8 @@ namespace DId
         /// <summary>
         ///
         /// </summary>
-        public global::DId.UpdateAuthSecretRequestDtoBearerToken PickBearerToken() => IsBearerToken
-            ? BearerToken!
+        public global::DId.UpdateAuthSecretRequestDtoBearerToken PickBearerToken() => BearerToken is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'BearerToken' but the value was {ToString()}.");
 
         /// <summary>
@@ -116,8 +116,8 @@ namespace DId
         /// <summary>
         ///
         /// </summary>
-        public global::DId.UpdateAuthSecretRequestDtoApiKey PickApiKey() => IsApiKey
-            ? ApiKey!
+        public global::DId.UpdateAuthSecretRequestDtoApiKey PickApiKey() => ApiKey is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'ApiKey' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -242,17 +242,17 @@ namespace DId
                 Validate();
             }
 
-            if (IsBasicAuthentication && basicAuthentication != null)
+            if (BasicAuthentication is { } __value0 && basicAuthentication != null)
             {
-                return basicAuthentication(BasicAuthentication!);
+                return basicAuthentication(__value0);
             }
-            else if (IsBearerToken && bearerToken != null)
+            else if (BearerToken is { } __value1 && bearerToken != null)
             {
-                return bearerToken(BearerToken!);
+                return bearerToken(__value1);
             }
-            else if (IsApiKey && apiKey != null)
+            else if (ApiKey is { } __value2 && apiKey != null)
             {
-                return apiKey(ApiKey!);
+                return apiKey(__value2);
             }
 
             return default(TResult);
@@ -274,17 +274,17 @@ namespace DId
                 Validate();
             }
 
-            if (IsBasicAuthentication)
+            if (BasicAuthentication is { } __value0)
             {
-                basicAuthentication?.Invoke(BasicAuthentication!);
+                basicAuthentication?.Invoke(__value0);
             }
-            else if (IsBearerToken)
+            else if (BearerToken is { } __value1)
             {
-                bearerToken?.Invoke(BearerToken!);
+                bearerToken?.Invoke(__value1);
             }
-            else if (IsApiKey)
+            else if (ApiKey is { } __value2)
             {
-                apiKey?.Invoke(ApiKey!);
+                apiKey?.Invoke(__value2);
             }
         }
 
@@ -302,17 +302,17 @@ namespace DId
                 Validate();
             }
 
-            if (IsBasicAuthentication)
+            if (BasicAuthentication is { } __value0)
             {
-                basicAuthentication?.Invoke(BasicAuthentication!);
+                basicAuthentication?.Invoke(__value0);
             }
-            else if (IsBearerToken)
+            else if (BearerToken is { } __value1)
             {
-                bearerToken?.Invoke(BearerToken!);
+                bearerToken?.Invoke(__value1);
             }
-            else if (IsApiKey)
+            else if (ApiKey is { } __value2)
             {
-                apiKey?.Invoke(ApiKey!);
+                apiKey?.Invoke(__value2);
             }
         }
 

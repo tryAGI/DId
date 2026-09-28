@@ -140,13 +140,13 @@ namespace DId.JsonConverters
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::DId.CropVariant1), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::DId.CropVariant1?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::DId.CropVariant1).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.CropVariant1!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickCropVariant1(), typeInfo);
             }
             else if (value.IsCropVariant2)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::DId.CropVariant2), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::DId.CropVariant2?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::DId.CropVariant2).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.CropVariant2!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickCropVariant2(), typeInfo);
             }
         }
     }

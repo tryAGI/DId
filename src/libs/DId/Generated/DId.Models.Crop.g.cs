@@ -42,8 +42,8 @@ namespace DId
         /// <summary>
         ///
         /// </summary>
-        public global::DId.CropVariant1 PickCropVariant1() => IsCropVariant1
-            ? CropVariant1!
+        public global::DId.CropVariant1 PickCropVariant1() => CropVariant1 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'CropVariant1' but the value was {ToString()}.");
 
         /// <summary>
@@ -79,8 +79,8 @@ namespace DId
         /// <summary>
         ///
         /// </summary>
-        public global::DId.CropVariant2 PickCropVariant2() => IsCropVariant2
-            ? CropVariant2!
+        public global::DId.CropVariant2 PickCropVariant2() => CropVariant2 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'CropVariant2' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -177,13 +177,13 @@ namespace DId
                 Validate();
             }
 
-            if (IsCropVariant1 && cropVariant1 != null)
+            if (CropVariant1 is { } __value0 && cropVariant1 != null)
             {
-                return cropVariant1(CropVariant1!);
+                return cropVariant1(__value0);
             }
-            else if (IsCropVariant2 && cropVariant2 != null)
+            else if (CropVariant2 is { } __value1 && cropVariant2 != null)
             {
-                return cropVariant2(CropVariant2!);
+                return cropVariant2(__value1);
             }
 
             return default(TResult);
@@ -203,13 +203,13 @@ namespace DId
                 Validate();
             }
 
-            if (IsCropVariant1)
+            if (CropVariant1 is { } __value0)
             {
-                cropVariant1?.Invoke(CropVariant1!);
+                cropVariant1?.Invoke(__value0);
             }
-            else if (IsCropVariant2)
+            else if (CropVariant2 is { } __value1)
             {
-                cropVariant2?.Invoke(CropVariant2!);
+                cropVariant2?.Invoke(__value1);
             }
         }
 
@@ -226,13 +226,13 @@ namespace DId
                 Validate();
             }
 
-            if (IsCropVariant1)
+            if (CropVariant1 is { } __value0)
             {
-                cropVariant1?.Invoke(CropVariant1!);
+                cropVariant1?.Invoke(__value0);
             }
-            else if (IsCropVariant2)
+            else if (CropVariant2 is { } __value1)
             {
-                cropVariant2?.Invoke(CropVariant2!);
+                cropVariant2?.Invoke(__value1);
             }
         }
 

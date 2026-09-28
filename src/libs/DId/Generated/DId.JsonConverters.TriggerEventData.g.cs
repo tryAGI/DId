@@ -133,13 +133,13 @@ namespace DId.JsonConverters
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::DId.ChatEndEventData), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::DId.ChatEndEventData?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::DId.ChatEndEventData).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.ChatEnd!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickChatEnd(), typeInfo);
             }
             else if (value.IsTriggerEventDataVariant2)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::DId.TriggerEventDataVariant2), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::DId.TriggerEventDataVariant2?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::DId.TriggerEventDataVariant2).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.TriggerEventDataVariant2!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickTriggerEventDataVariant2(), typeInfo);
             }
         }
     }

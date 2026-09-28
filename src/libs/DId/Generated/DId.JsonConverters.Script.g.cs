@@ -134,13 +134,13 @@ namespace DId.JsonConverters
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::DId.ScriptVariant1), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::DId.ScriptVariant1?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::DId.ScriptVariant1).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.ScriptVariant1!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickScriptVariant1(), typeInfo);
             }
             else if (value.IsScriptVariant2)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::DId.ScriptVariant2), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::DId.ScriptVariant2?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::DId.ScriptVariant2).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.ScriptVariant2!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickScriptVariant2(), typeInfo);
             }
         }
     }

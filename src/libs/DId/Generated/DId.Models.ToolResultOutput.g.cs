@@ -42,8 +42,8 @@ namespace DId
         /// <summary>
         ///
         /// </summary>
-        public global::DId.ToolResultOutputVariant1 PickToolResultOutputVariant1() => IsToolResultOutputVariant1
-            ? ToolResultOutputVariant1!
+        public global::DId.ToolResultOutputVariant1 PickToolResultOutputVariant1() => ToolResultOutputVariant1 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'ToolResultOutputVariant1' but the value was {ToString()}.");
 
         /// <summary>
@@ -79,8 +79,8 @@ namespace DId
         /// <summary>
         ///
         /// </summary>
-        public global::DId.ToolResultOutputVariant2 PickToolResultOutputVariant2() => IsToolResultOutputVariant2
-            ? ToolResultOutputVariant2!
+        public global::DId.ToolResultOutputVariant2 PickToolResultOutputVariant2() => ToolResultOutputVariant2 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'ToolResultOutputVariant2' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -177,13 +177,13 @@ namespace DId
                 Validate();
             }
 
-            if (IsToolResultOutputVariant1 && toolResultOutputVariant1 != null)
+            if (ToolResultOutputVariant1 is { } __value0 && toolResultOutputVariant1 != null)
             {
-                return toolResultOutputVariant1(ToolResultOutputVariant1!);
+                return toolResultOutputVariant1(__value0);
             }
-            else if (IsToolResultOutputVariant2 && toolResultOutputVariant2 != null)
+            else if (ToolResultOutputVariant2 is { } __value1 && toolResultOutputVariant2 != null)
             {
-                return toolResultOutputVariant2(ToolResultOutputVariant2!);
+                return toolResultOutputVariant2(__value1);
             }
 
             return default(TResult);
@@ -203,13 +203,13 @@ namespace DId
                 Validate();
             }
 
-            if (IsToolResultOutputVariant1)
+            if (ToolResultOutputVariant1 is { } __value0)
             {
-                toolResultOutputVariant1?.Invoke(ToolResultOutputVariant1!);
+                toolResultOutputVariant1?.Invoke(__value0);
             }
-            else if (IsToolResultOutputVariant2)
+            else if (ToolResultOutputVariant2 is { } __value1)
             {
-                toolResultOutputVariant2?.Invoke(ToolResultOutputVariant2!);
+                toolResultOutputVariant2?.Invoke(__value1);
             }
         }
 
@@ -226,13 +226,13 @@ namespace DId
                 Validate();
             }
 
-            if (IsToolResultOutputVariant1)
+            if (ToolResultOutputVariant1 is { } __value0)
             {
-                toolResultOutputVariant1?.Invoke(ToolResultOutputVariant1!);
+                toolResultOutputVariant1?.Invoke(__value0);
             }
-            else if (IsToolResultOutputVariant2)
+            else if (ToolResultOutputVariant2 is { } __value1)
             {
-                toolResultOutputVariant2?.Invoke(ToolResultOutputVariant2!);
+                toolResultOutputVariant2?.Invoke(__value1);
             }
         }
 

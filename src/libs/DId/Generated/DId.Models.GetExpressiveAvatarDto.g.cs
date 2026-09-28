@@ -42,8 +42,8 @@ namespace DId
         /// <summary>
         ///
         /// </summary>
-        public global::DId.AllOf<global::DId.GetExpressiveAvatarDtoVariant1Variant1, object> PickGetExpressiveAvatarDtoVariant1() => IsGetExpressiveAvatarDtoVariant1
-            ? GetExpressiveAvatarDtoVariant1!.Value
+        public global::DId.AllOf<global::DId.GetExpressiveAvatarDtoVariant1Variant1, object> PickGetExpressiveAvatarDtoVariant1() => GetExpressiveAvatarDtoVariant1 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'GetExpressiveAvatarDtoVariant1' but the value was {ToString()}.");
 
         /// <summary>
@@ -79,8 +79,8 @@ namespace DId
         /// <summary>
         ///
         /// </summary>
-        public global::DId.GetExpressiveAvatarDtoVariant2 PickGetExpressiveAvatarDtoVariant2() => IsGetExpressiveAvatarDtoVariant2
-            ? GetExpressiveAvatarDtoVariant2!
+        public global::DId.GetExpressiveAvatarDtoVariant2 PickGetExpressiveAvatarDtoVariant2() => GetExpressiveAvatarDtoVariant2 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'GetExpressiveAvatarDtoVariant2' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -177,13 +177,13 @@ namespace DId
                 Validate();
             }
 
-            if (IsGetExpressiveAvatarDtoVariant1 && getExpressiveAvatarDtoVariant1 != null)
+            if (GetExpressiveAvatarDtoVariant1 is { } __value0 && getExpressiveAvatarDtoVariant1 != null)
             {
-                return getExpressiveAvatarDtoVariant1(GetExpressiveAvatarDtoVariant1!);
+                return getExpressiveAvatarDtoVariant1(__value0);
             }
-            else if (IsGetExpressiveAvatarDtoVariant2 && getExpressiveAvatarDtoVariant2 != null)
+            else if (GetExpressiveAvatarDtoVariant2 is { } __value1 && getExpressiveAvatarDtoVariant2 != null)
             {
-                return getExpressiveAvatarDtoVariant2(GetExpressiveAvatarDtoVariant2!);
+                return getExpressiveAvatarDtoVariant2(__value1);
             }
 
             return default(TResult);
@@ -203,13 +203,13 @@ namespace DId
                 Validate();
             }
 
-            if (IsGetExpressiveAvatarDtoVariant1)
+            if (GetExpressiveAvatarDtoVariant1 is { } __value0)
             {
-                getExpressiveAvatarDtoVariant1?.Invoke(GetExpressiveAvatarDtoVariant1!);
+                getExpressiveAvatarDtoVariant1?.Invoke(__value0);
             }
-            else if (IsGetExpressiveAvatarDtoVariant2)
+            else if (GetExpressiveAvatarDtoVariant2 is { } __value1)
             {
-                getExpressiveAvatarDtoVariant2?.Invoke(GetExpressiveAvatarDtoVariant2!);
+                getExpressiveAvatarDtoVariant2?.Invoke(__value1);
             }
         }
 
@@ -226,13 +226,13 @@ namespace DId
                 Validate();
             }
 
-            if (IsGetExpressiveAvatarDtoVariant1)
+            if (GetExpressiveAvatarDtoVariant1 is { } __value0)
             {
-                getExpressiveAvatarDtoVariant1?.Invoke(GetExpressiveAvatarDtoVariant1!);
+                getExpressiveAvatarDtoVariant1?.Invoke(__value0);
             }
-            else if (IsGetExpressiveAvatarDtoVariant2)
+            else if (GetExpressiveAvatarDtoVariant2 is { } __value1)
             {
-                getExpressiveAvatarDtoVariant2?.Invoke(GetExpressiveAvatarDtoVariant2!);
+                getExpressiveAvatarDtoVariant2?.Invoke(__value1);
             }
         }
 

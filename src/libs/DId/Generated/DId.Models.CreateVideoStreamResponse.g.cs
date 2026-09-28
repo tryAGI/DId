@@ -42,8 +42,8 @@ namespace DId
         /// <summary>
         ///
         /// </summary>
-        public global::DId.CreateVideoStreamResponseVariant1 PickCreateVideoStreamResponseVariant1() => IsCreateVideoStreamResponseVariant1
-            ? CreateVideoStreamResponseVariant1!
+        public global::DId.CreateVideoStreamResponseVariant1 PickCreateVideoStreamResponseVariant1() => CreateVideoStreamResponseVariant1 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'CreateVideoStreamResponseVariant1' but the value was {ToString()}.");
 
         /// <summary>
@@ -79,8 +79,8 @@ namespace DId
         /// <summary>
         ///
         /// </summary>
-        public global::DId.CreateVideoStreamResponseVariant2 PickCreateVideoStreamResponseVariant2() => IsCreateVideoStreamResponseVariant2
-            ? CreateVideoStreamResponseVariant2!
+        public global::DId.CreateVideoStreamResponseVariant2 PickCreateVideoStreamResponseVariant2() => CreateVideoStreamResponseVariant2 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'CreateVideoStreamResponseVariant2' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -177,13 +177,13 @@ namespace DId
                 Validate();
             }
 
-            if (IsCreateVideoStreamResponseVariant1 && createVideoStreamResponseVariant1 != null)
+            if (CreateVideoStreamResponseVariant1 is { } __value0 && createVideoStreamResponseVariant1 != null)
             {
-                return createVideoStreamResponseVariant1(CreateVideoStreamResponseVariant1!);
+                return createVideoStreamResponseVariant1(__value0);
             }
-            else if (IsCreateVideoStreamResponseVariant2 && createVideoStreamResponseVariant2 != null)
+            else if (CreateVideoStreamResponseVariant2 is { } __value1 && createVideoStreamResponseVariant2 != null)
             {
-                return createVideoStreamResponseVariant2(CreateVideoStreamResponseVariant2!);
+                return createVideoStreamResponseVariant2(__value1);
             }
 
             return default(TResult);
@@ -203,13 +203,13 @@ namespace DId
                 Validate();
             }
 
-            if (IsCreateVideoStreamResponseVariant1)
+            if (CreateVideoStreamResponseVariant1 is { } __value0)
             {
-                createVideoStreamResponseVariant1?.Invoke(CreateVideoStreamResponseVariant1!);
+                createVideoStreamResponseVariant1?.Invoke(__value0);
             }
-            else if (IsCreateVideoStreamResponseVariant2)
+            else if (CreateVideoStreamResponseVariant2 is { } __value1)
             {
-                createVideoStreamResponseVariant2?.Invoke(CreateVideoStreamResponseVariant2!);
+                createVideoStreamResponseVariant2?.Invoke(__value1);
             }
         }
 
@@ -226,13 +226,13 @@ namespace DId
                 Validate();
             }
 
-            if (IsCreateVideoStreamResponseVariant1)
+            if (CreateVideoStreamResponseVariant1 is { } __value0)
             {
-                createVideoStreamResponseVariant1?.Invoke(CreateVideoStreamResponseVariant1!);
+                createVideoStreamResponseVariant1?.Invoke(__value0);
             }
-            else if (IsCreateVideoStreamResponseVariant2)
+            else if (CreateVideoStreamResponseVariant2 is { } __value1)
             {
-                createVideoStreamResponseVariant2?.Invoke(CreateVideoStreamResponseVariant2!);
+                createVideoStreamResponseVariant2?.Invoke(__value1);
             }
         }
 

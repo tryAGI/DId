@@ -42,8 +42,8 @@ namespace DId
         /// <summary>
         ///
         /// </summary>
-        public global::DId.AssetDtoVariant1 PickAssetDtoVariant1() => IsAssetDtoVariant1
-            ? AssetDtoVariant1!
+        public global::DId.AssetDtoVariant1 PickAssetDtoVariant1() => AssetDtoVariant1 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'AssetDtoVariant1' but the value was {ToString()}.");
 
         /// <summary>
@@ -79,8 +79,8 @@ namespace DId
         /// <summary>
         ///
         /// </summary>
-        public global::DId.AssetDtoVariant2 PickAssetDtoVariant2() => IsAssetDtoVariant2
-            ? AssetDtoVariant2!
+        public global::DId.AssetDtoVariant2 PickAssetDtoVariant2() => AssetDtoVariant2 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'AssetDtoVariant2' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -177,13 +177,13 @@ namespace DId
                 Validate();
             }
 
-            if (IsAssetDtoVariant1 && assetDtoVariant1 != null)
+            if (AssetDtoVariant1 is { } __value0 && assetDtoVariant1 != null)
             {
-                return assetDtoVariant1(AssetDtoVariant1!);
+                return assetDtoVariant1(__value0);
             }
-            else if (IsAssetDtoVariant2 && assetDtoVariant2 != null)
+            else if (AssetDtoVariant2 is { } __value1 && assetDtoVariant2 != null)
             {
-                return assetDtoVariant2(AssetDtoVariant2!);
+                return assetDtoVariant2(__value1);
             }
 
             return default(TResult);
@@ -203,13 +203,13 @@ namespace DId
                 Validate();
             }
 
-            if (IsAssetDtoVariant1)
+            if (AssetDtoVariant1 is { } __value0)
             {
-                assetDtoVariant1?.Invoke(AssetDtoVariant1!);
+                assetDtoVariant1?.Invoke(__value0);
             }
-            else if (IsAssetDtoVariant2)
+            else if (AssetDtoVariant2 is { } __value1)
             {
-                assetDtoVariant2?.Invoke(AssetDtoVariant2!);
+                assetDtoVariant2?.Invoke(__value1);
             }
         }
 
@@ -226,13 +226,13 @@ namespace DId
                 Validate();
             }
 
-            if (IsAssetDtoVariant1)
+            if (AssetDtoVariant1 is { } __value0)
             {
-                assetDtoVariant1?.Invoke(AssetDtoVariant1!);
+                assetDtoVariant1?.Invoke(__value0);
             }
-            else if (IsAssetDtoVariant2)
+            else if (AssetDtoVariant2 is { } __value1)
             {
-                assetDtoVariant2?.Invoke(AssetDtoVariant2!);
+                assetDtoVariant2?.Invoke(__value1);
             }
         }
 

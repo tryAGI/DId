@@ -42,8 +42,8 @@ namespace DId
         /// <summary>
         ///
         /// </summary>
-        public global::DId.LogoDtoVariant1 PickLogoDtoVariant1() => IsLogoDtoVariant1
-            ? LogoDtoVariant1!
+        public global::DId.LogoDtoVariant1 PickLogoDtoVariant1() => LogoDtoVariant1 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'LogoDtoVariant1' but the value was {ToString()}.");
 
         /// <summary>
@@ -79,8 +79,8 @@ namespace DId
         /// <summary>
         ///
         /// </summary>
-        public bool PickLogoDtoVariant2() => IsLogoDtoVariant2
-            ? LogoDtoVariant2!.Value
+        public bool PickLogoDtoVariant2() => LogoDtoVariant2 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'LogoDtoVariant2' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -177,13 +177,13 @@ namespace DId
                 Validate();
             }
 
-            if (IsLogoDtoVariant1 && logoDtoVariant1 != null)
+            if (LogoDtoVariant1 is { } __value0 && logoDtoVariant1 != null)
             {
-                return logoDtoVariant1(LogoDtoVariant1!);
+                return logoDtoVariant1(__value0);
             }
-            else if (IsLogoDtoVariant2 && logoDtoVariant2 != null)
+            else if (LogoDtoVariant2 is { } __value1 && logoDtoVariant2 != null)
             {
-                return logoDtoVariant2(LogoDtoVariant2!);
+                return logoDtoVariant2(__value1);
             }
 
             return default(TResult);
@@ -203,13 +203,13 @@ namespace DId
                 Validate();
             }
 
-            if (IsLogoDtoVariant1)
+            if (LogoDtoVariant1 is { } __value0)
             {
-                logoDtoVariant1?.Invoke(LogoDtoVariant1!);
+                logoDtoVariant1?.Invoke(__value0);
             }
-            else if (IsLogoDtoVariant2)
+            else if (LogoDtoVariant2 is { } __value1)
             {
-                logoDtoVariant2?.Invoke(LogoDtoVariant2!);
+                logoDtoVariant2?.Invoke(__value1);
             }
         }
 
@@ -226,13 +226,13 @@ namespace DId
                 Validate();
             }
 
-            if (IsLogoDtoVariant1)
+            if (LogoDtoVariant1 is { } __value0)
             {
-                logoDtoVariant1?.Invoke(LogoDtoVariant1!);
+                logoDtoVariant1?.Invoke(__value0);
             }
-            else if (IsLogoDtoVariant2)
+            else if (LogoDtoVariant2 is { } __value1)
             {
-                logoDtoVariant2?.Invoke(LogoDtoVariant2!);
+                logoDtoVariant2?.Invoke(__value1);
             }
         }
 

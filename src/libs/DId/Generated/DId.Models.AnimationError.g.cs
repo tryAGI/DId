@@ -42,8 +42,8 @@ namespace DId
         /// <summary>
         ///
         /// </summary>
-        public global::DId.AnimationErrorVariant1 PickAnimationErrorVariant1() => IsAnimationErrorVariant1
-            ? AnimationErrorVariant1!
+        public global::DId.AnimationErrorVariant1 PickAnimationErrorVariant1() => AnimationErrorVariant1 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'AnimationErrorVariant1' but the value was {ToString()}.");
 
         /// <summary>
@@ -79,8 +79,8 @@ namespace DId
         /// <summary>
         ///
         /// </summary>
-        public global::DId.AnimationErrorVariant2 PickAnimationErrorVariant2() => IsAnimationErrorVariant2
-            ? AnimationErrorVariant2!
+        public global::DId.AnimationErrorVariant2 PickAnimationErrorVariant2() => AnimationErrorVariant2 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'AnimationErrorVariant2' but the value was {ToString()}.");
 
         /// <summary>
@@ -116,8 +116,8 @@ namespace DId
         /// <summary>
         ///
         /// </summary>
-        public global::DId.AnimationErrorVariant3 PickAnimationErrorVariant3() => IsAnimationErrorVariant3
-            ? AnimationErrorVariant3!
+        public global::DId.AnimationErrorVariant3 PickAnimationErrorVariant3() => AnimationErrorVariant3 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'AnimationErrorVariant3' but the value was {ToString()}.");
 
         /// <summary>
@@ -153,8 +153,8 @@ namespace DId
         /// <summary>
         ///
         /// </summary>
-        public global::DId.AnimationErrorVariant4 PickAnimationErrorVariant4() => IsAnimationErrorVariant4
-            ? AnimationErrorVariant4!
+        public global::DId.AnimationErrorVariant4 PickAnimationErrorVariant4() => AnimationErrorVariant4 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'AnimationErrorVariant4' but the value was {ToString()}.");
 
         /// <summary>
@@ -190,8 +190,8 @@ namespace DId
         /// <summary>
         ///
         /// </summary>
-        public global::DId.AnimationErrorVariant5 PickAnimationErrorVariant5() => IsAnimationErrorVariant5
-            ? AnimationErrorVariant5!
+        public global::DId.AnimationErrorVariant5 PickAnimationErrorVariant5() => AnimationErrorVariant5 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'AnimationErrorVariant5' but the value was {ToString()}.");
 
         /// <summary>
@@ -227,8 +227,8 @@ namespace DId
         /// <summary>
         ///
         /// </summary>
-        public global::DId.AnimationErrorVariant6 PickAnimationErrorVariant6() => IsAnimationErrorVariant6
-            ? AnimationErrorVariant6!
+        public global::DId.AnimationErrorVariant6 PickAnimationErrorVariant6() => AnimationErrorVariant6 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'AnimationErrorVariant6' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -437,29 +437,29 @@ namespace DId
                 Validate();
             }
 
-            if (IsAnimationErrorVariant1 && animationErrorVariant1 != null)
+            if (AnimationErrorVariant1 is { } __value0 && animationErrorVariant1 != null)
             {
-                return animationErrorVariant1(AnimationErrorVariant1!);
+                return animationErrorVariant1(__value0);
             }
-            else if (IsAnimationErrorVariant2 && animationErrorVariant2 != null)
+            else if (AnimationErrorVariant2 is { } __value1 && animationErrorVariant2 != null)
             {
-                return animationErrorVariant2(AnimationErrorVariant2!);
+                return animationErrorVariant2(__value1);
             }
-            else if (IsAnimationErrorVariant3 && animationErrorVariant3 != null)
+            else if (AnimationErrorVariant3 is { } __value2 && animationErrorVariant3 != null)
             {
-                return animationErrorVariant3(AnimationErrorVariant3!);
+                return animationErrorVariant3(__value2);
             }
-            else if (IsAnimationErrorVariant4 && animationErrorVariant4 != null)
+            else if (AnimationErrorVariant4 is { } __value3 && animationErrorVariant4 != null)
             {
-                return animationErrorVariant4(AnimationErrorVariant4!);
+                return animationErrorVariant4(__value3);
             }
-            else if (IsAnimationErrorVariant5 && animationErrorVariant5 != null)
+            else if (AnimationErrorVariant5 is { } __value4 && animationErrorVariant5 != null)
             {
-                return animationErrorVariant5(AnimationErrorVariant5!);
+                return animationErrorVariant5(__value4);
             }
-            else if (IsAnimationErrorVariant6 && animationErrorVariant6 != null)
+            else if (AnimationErrorVariant6 is { } __value5 && animationErrorVariant6 != null)
             {
-                return animationErrorVariant6(AnimationErrorVariant6!);
+                return animationErrorVariant6(__value5);
             }
 
             return default(TResult);
@@ -487,29 +487,29 @@ namespace DId
                 Validate();
             }
 
-            if (IsAnimationErrorVariant1)
+            if (AnimationErrorVariant1 is { } __value0)
             {
-                animationErrorVariant1?.Invoke(AnimationErrorVariant1!);
+                animationErrorVariant1?.Invoke(__value0);
             }
-            else if (IsAnimationErrorVariant2)
+            else if (AnimationErrorVariant2 is { } __value1)
             {
-                animationErrorVariant2?.Invoke(AnimationErrorVariant2!);
+                animationErrorVariant2?.Invoke(__value1);
             }
-            else if (IsAnimationErrorVariant3)
+            else if (AnimationErrorVariant3 is { } __value2)
             {
-                animationErrorVariant3?.Invoke(AnimationErrorVariant3!);
+                animationErrorVariant3?.Invoke(__value2);
             }
-            else if (IsAnimationErrorVariant4)
+            else if (AnimationErrorVariant4 is { } __value3)
             {
-                animationErrorVariant4?.Invoke(AnimationErrorVariant4!);
+                animationErrorVariant4?.Invoke(__value3);
             }
-            else if (IsAnimationErrorVariant5)
+            else if (AnimationErrorVariant5 is { } __value4)
             {
-                animationErrorVariant5?.Invoke(AnimationErrorVariant5!);
+                animationErrorVariant5?.Invoke(__value4);
             }
-            else if (IsAnimationErrorVariant6)
+            else if (AnimationErrorVariant6 is { } __value5)
             {
-                animationErrorVariant6?.Invoke(AnimationErrorVariant6!);
+                animationErrorVariant6?.Invoke(__value5);
             }
         }
 
@@ -530,29 +530,29 @@ namespace DId
                 Validate();
             }
 
-            if (IsAnimationErrorVariant1)
+            if (AnimationErrorVariant1 is { } __value0)
             {
-                animationErrorVariant1?.Invoke(AnimationErrorVariant1!);
+                animationErrorVariant1?.Invoke(__value0);
             }
-            else if (IsAnimationErrorVariant2)
+            else if (AnimationErrorVariant2 is { } __value1)
             {
-                animationErrorVariant2?.Invoke(AnimationErrorVariant2!);
+                animationErrorVariant2?.Invoke(__value1);
             }
-            else if (IsAnimationErrorVariant3)
+            else if (AnimationErrorVariant3 is { } __value2)
             {
-                animationErrorVariant3?.Invoke(AnimationErrorVariant3!);
+                animationErrorVariant3?.Invoke(__value2);
             }
-            else if (IsAnimationErrorVariant4)
+            else if (AnimationErrorVariant4 is { } __value3)
             {
-                animationErrorVariant4?.Invoke(AnimationErrorVariant4!);
+                animationErrorVariant4?.Invoke(__value3);
             }
-            else if (IsAnimationErrorVariant5)
+            else if (AnimationErrorVariant5 is { } __value4)
             {
-                animationErrorVariant5?.Invoke(AnimationErrorVariant5!);
+                animationErrorVariant5?.Invoke(__value4);
             }
-            else if (IsAnimationErrorVariant6)
+            else if (AnimationErrorVariant6 is { } __value5)
             {
-                animationErrorVariant6?.Invoke(AnimationErrorVariant6!);
+                animationErrorVariant6?.Invoke(__value5);
             }
         }
 

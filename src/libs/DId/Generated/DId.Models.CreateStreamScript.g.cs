@@ -42,8 +42,8 @@ namespace DId
         /// <summary>
         ///
         /// </summary>
-        public global::DId.CreateStreamScriptText PickText() => IsText
-            ? Text!
+        public global::DId.CreateStreamScriptText PickText() => Text is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'Text' but the value was {ToString()}.");
 
         /// <summary>
@@ -79,8 +79,8 @@ namespace DId
         /// <summary>
         ///
         /// </summary>
-        public global::DId.CreateStreamScriptAudio PickAudio() => IsAudio
-            ? Audio!
+        public global::DId.CreateStreamScriptAudio PickAudio() => Audio is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'Audio' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -177,13 +177,13 @@ namespace DId
                 Validate();
             }
 
-            if (IsText && text != null)
+            if (Text is { } __value0 && text != null)
             {
-                return text(Text!);
+                return text(__value0);
             }
-            else if (IsAudio && audio != null)
+            else if (Audio is { } __value1 && audio != null)
             {
-                return audio(Audio!);
+                return audio(__value1);
             }
 
             return default(TResult);
@@ -203,13 +203,13 @@ namespace DId
                 Validate();
             }
 
-            if (IsText)
+            if (Text is { } __value0)
             {
-                text?.Invoke(Text!);
+                text?.Invoke(__value0);
             }
-            else if (IsAudio)
+            else if (Audio is { } __value1)
             {
-                audio?.Invoke(Audio!);
+                audio?.Invoke(__value1);
             }
         }
 
@@ -226,13 +226,13 @@ namespace DId
                 Validate();
             }
 
-            if (IsText)
+            if (Text is { } __value0)
             {
-                text?.Invoke(Text!);
+                text?.Invoke(__value0);
             }
-            else if (IsAudio)
+            else if (Audio is { } __value1)
             {
-                audio?.Invoke(Audio!);
+                audio?.Invoke(__value1);
             }
         }
 
