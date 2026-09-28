@@ -1,19 +1,14 @@
 
 #nullable enable
 
-#pragma warning disable CS0618 // Type or member is obsolete
-#pragma warning disable CS3016 // Arrays as attribute arguments is not CLS-compliant
-
 namespace DId
 {
     /// <summary>
     ///
     /// </summary>
     [global::System.Text.Json.Serialization.JsonSourceGenerationOptions(
-        DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull,
-        Converters = new global::System.Type[]
-        {
-        })]
+        DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull
+    )]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.AllOf<global::DId.UpdatePresenterAttributesRequestVariant1, global::DId.UpdatePresenterAttributesRequestVariant2, global::DId.UpdatePresenterAttributesRequestVariant3>), TypeInfoPropertyName = "UpdatePresenterAttributesRequestVariant3_de92958beee90120")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.AnyOf<global::DId.UpdatePresenterAttributesRequestVariant1VoiceMicrosoft, global::DId.UpdatePresenterAttributesRequestVariant1VoiceElevenLabs, global::DId.UpdatePresenterAttributesRequestVariant1VoiceAmazon, global::DId.UpdatePresenterAttributesRequestVariant1VoiceGoogle, global::DId.UpdatePresenterAttributesRequestVariant1VoiceOpenAI>), TypeInfoPropertyName = "UpdatePresenterAttributesRequestVariant1VoiceOpenAI_fdc04604aa004c08")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.AnyOf<global::DId.CreateClipRequestScriptVariant1ProviderMicrosoft2, global::DId.CreateClipRequestScriptVariant1ProviderElevenLabs2, global::DId.CreateClipRequestScriptVariant1ProviderAmazon2, global::DId.CreateClipRequestScriptVariant1ProviderGoogle2, global::DId.CreateClipRequestScriptVariant1ProviderOpenAI2>), TypeInfoPropertyName = "CreateClipRequestScriptVariant1ProviderOpenAI2_7f4eeef038007d57")]

@@ -1,19 +1,14 @@
 
 #nullable enable
 
-#pragma warning disable CS0618 // Type or member is obsolete
-#pragma warning disable CS3016 // Arrays as attribute arguments is not CLS-compliant
-
 namespace DId
 {
     /// <summary>
     ///
     /// </summary>
     [global::System.Text.Json.Serialization.JsonSourceGenerationOptions(
-        DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull,
-        Converters = new global::System.Type[]
-        {
-        })]
+        DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull
+    )]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.AnyOf<global::DId.CreateVideoStreamRequestScriptTextProviderMicrosoft2, global::DId.CreateVideoStreamRequestScriptTextProviderElevenLabs2, global::DId.CreateVideoStreamRequestScriptTextProviderOpenAI2>), TypeInfoPropertyName = "CreateVideoStreamRequestScriptTextProviderOpenAI2_11089aa6e237c3a7")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.AnyOf<global::DId.CreateVideoStreamRequestScriptTextProviderMicrosoft2, global::DId.CreateVideoStreamRequestScriptTextProviderElevenLabs2, global::DId.CreateVideoStreamRequestScriptTextProviderOpenAI2>?), TypeInfoPropertyName = "CreateVideoStreamRequestScriptTextProviderOpenAI2_5891966cb53d7dbd")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.Dictionary<string, string>))]
@@ -57,7 +52,9 @@ namespace DId
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::DId.ChatRequestMessage>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.ChatRequestMessage))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.ChatRequestMessageRole), TypeInfoPropertyName = "ChatRequestMessageRole2")]
+    #pragma warning disable CS0618 // This registration names a deprecated API model.
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.ChatRequestChatMode), TypeInfoPropertyName = "ChatRequestChatMode2")]
+    #pragma warning restore CS0618
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.CreateStreamResponse))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.CreateStreamResponseJsep))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.CreateStreamResponseJsepType), TypeInfoPropertyName = "CreateStreamResponseJsepType2")]
@@ -100,7 +97,9 @@ namespace DId
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.CreateVideoStreamRequestScriptTextProviderOpenAIType2?), TypeInfoPropertyName = "NullableCreateVideoStreamRequestScriptTextProviderOpenAIType22")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.CreateVideoStreamRequestScriptAudioType2?), TypeInfoPropertyName = "NullableCreateVideoStreamRequestScriptAudioType22")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.ChatRequestMessageRole?), TypeInfoPropertyName = "NullableChatRequestMessageRole2")]
+    #pragma warning disable CS0618 // This registration names a deprecated API model.
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.ChatRequestChatMode?), TypeInfoPropertyName = "NullableChatRequestChatMode2")]
+    #pragma warning restore CS0618
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.CreateStreamResponseJsepType?), TypeInfoPropertyName = "NullableCreateStreamResponseJsepType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.AllOf<global::DId.CreateVideoStreamResponseVariant12, global::DId.CreateVideoStreamResponseVariant22>?), TypeInfoPropertyName = "NullableAllOfCreateVideoStreamResponseVariant12CreateVideoStreamResponseVariant222")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.ChatResponseChatMode2?), TypeInfoPropertyName = "NullableChatResponseChatMode22")]

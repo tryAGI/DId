@@ -1,19 +1,14 @@
 
 #nullable enable
 
-#pragma warning disable CS0618 // Type or member is obsolete
-#pragma warning disable CS3016 // Arrays as attribute arguments is not CLS-compliant
-
 namespace DId
 {
     /// <summary>
     ///
     /// </summary>
     [global::System.Text.Json.Serialization.JsonSourceGenerationOptions(
-        DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull,
-        Converters = new global::System.Type[]
-        {
-        })]
+        DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull
+    )]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.AnyOf<global::DId.TextScriptProviderMicrosoft, global::DId.TextScriptProviderElevenLabs, global::DId.TextScriptProviderAmazon, global::DId.TextScriptProviderGoogle, global::DId.TextScriptProviderOpenAI>), TypeInfoPropertyName = "TextScriptProviderOpenAI_ea107a157d4d5713")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.AnyOf<global::DId.ScriptVariant1ProviderMicrosoft, global::DId.ScriptVariant1ProviderElevenLabs, global::DId.ScriptVariant1ProviderAmazon, global::DId.ScriptVariant1ProviderGoogle, global::DId.ScriptVariant1ProviderOpenAI>), TypeInfoPropertyName = "ScriptVariant1ProviderOpenAI_3c0adac1dbfb1751")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.AnyOf<global::DId.CreateTalkRequestScriptVariant1ProviderMicrosoft, global::DId.CreateTalkRequestScriptVariant1ProviderElevenLabs, global::DId.CreateTalkRequestScriptVariant1ProviderAmazon, global::DId.CreateTalkRequestScriptVariant1ProviderGoogle, global::DId.CreateTalkRequestScriptVariant1ProviderOpenAI>), TypeInfoPropertyName = "CreateTalkRequestScriptVariant1ProviderOpenAI_d068d24cb8fb0634")]
@@ -522,10 +517,8 @@ namespace DId
     ///
     /// </summary>
     [global::System.Text.Json.Serialization.JsonSourceGenerationOptions(
-        DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull,
-        Converters = new global::System.Type[]
-        {
-        })]
+        DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull
+    )]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.AnyOf<global::DId.TextScriptProviderMicrosoft, global::DId.TextScriptProviderElevenLabs, global::DId.TextScriptProviderAmazon, global::DId.TextScriptProviderGoogle, global::DId.TextScriptProviderOpenAI>), TypeInfoPropertyName = "TextScriptProviderOpenAI_ea107a157d4d5713")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.AnyOf<global::DId.ScriptVariant1ProviderMicrosoft, global::DId.ScriptVariant1ProviderElevenLabs, global::DId.ScriptVariant1ProviderAmazon, global::DId.ScriptVariant1ProviderGoogle, global::DId.ScriptVariant1ProviderOpenAI>), TypeInfoPropertyName = "ScriptVariant1ProviderOpenAI_3c0adac1dbfb1751")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.AnyOf<global::DId.CreateTalkRequestScriptVariant1ProviderMicrosoft, global::DId.CreateTalkRequestScriptVariant1ProviderElevenLabs, global::DId.CreateTalkRequestScriptVariant1ProviderAmazon, global::DId.CreateTalkRequestScriptVariant1ProviderGoogle, global::DId.CreateTalkRequestScriptVariant1ProviderOpenAI>), TypeInfoPropertyName = "CreateTalkRequestScriptVariant1ProviderOpenAI_d068d24cb8fb0634")]
@@ -1034,10 +1027,8 @@ namespace DId
     ///
     /// </summary>
     [global::System.Text.Json.Serialization.JsonSourceGenerationOptions(
-        DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull,
-        Converters = new global::System.Type[]
-        {
-        })]
+        DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull
+    )]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.AnyOf<global::DId.TextScriptProviderMicrosoft, global::DId.TextScriptProviderElevenLabs, global::DId.TextScriptProviderAmazon, global::DId.TextScriptProviderGoogle, global::DId.TextScriptProviderOpenAI>), TypeInfoPropertyName = "TextScriptProviderOpenAI_ea107a157d4d5713")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.AnyOf<global::DId.ScriptVariant1ProviderMicrosoft, global::DId.ScriptVariant1ProviderElevenLabs, global::DId.ScriptVariant1ProviderAmazon, global::DId.ScriptVariant1ProviderGoogle, global::DId.ScriptVariant1ProviderOpenAI>), TypeInfoPropertyName = "ScriptVariant1ProviderOpenAI_3c0adac1dbfb1751")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.AnyOf<global::DId.CreateTalkRequestScriptVariant1ProviderMicrosoft, global::DId.CreateTalkRequestScriptVariant1ProviderElevenLabs, global::DId.CreateTalkRequestScriptVariant1ProviderAmazon, global::DId.CreateTalkRequestScriptVariant1ProviderGoogle, global::DId.CreateTalkRequestScriptVariant1ProviderOpenAI>), TypeInfoPropertyName = "CreateTalkRequestScriptVariant1ProviderOpenAI_d068d24cb8fb0634")]
@@ -1546,10 +1537,8 @@ namespace DId
     ///
     /// </summary>
     [global::System.Text.Json.Serialization.JsonSourceGenerationOptions(
-        DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull,
-        Converters = new global::System.Type[]
-        {
-        })]
+        DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull
+    )]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.AnyOf<global::DId.TextScriptProviderMicrosoft, global::DId.TextScriptProviderElevenLabs, global::DId.TextScriptProviderAmazon, global::DId.TextScriptProviderGoogle, global::DId.TextScriptProviderOpenAI>), TypeInfoPropertyName = "TextScriptProviderOpenAI_ea107a157d4d5713")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.AnyOf<global::DId.ScriptVariant1ProviderMicrosoft, global::DId.ScriptVariant1ProviderElevenLabs, global::DId.ScriptVariant1ProviderAmazon, global::DId.ScriptVariant1ProviderGoogle, global::DId.ScriptVariant1ProviderOpenAI>), TypeInfoPropertyName = "ScriptVariant1ProviderOpenAI_3c0adac1dbfb1751")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.AnyOf<global::DId.CreateTalkRequestScriptVariant1ProviderMicrosoft, global::DId.CreateTalkRequestScriptVariant1ProviderElevenLabs, global::DId.CreateTalkRequestScriptVariant1ProviderAmazon, global::DId.CreateTalkRequestScriptVariant1ProviderGoogle, global::DId.CreateTalkRequestScriptVariant1ProviderOpenAI>), TypeInfoPropertyName = "CreateTalkRequestScriptVariant1ProviderOpenAI_d068d24cb8fb0634")]
@@ -2058,10 +2047,8 @@ namespace DId
     ///
     /// </summary>
     [global::System.Text.Json.Serialization.JsonSourceGenerationOptions(
-        DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull,
-        Converters = new global::System.Type[]
-        {
-        })]
+        DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull
+    )]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.AnyOf<global::DId.TextScriptProviderMicrosoft, global::DId.TextScriptProviderElevenLabs, global::DId.TextScriptProviderAmazon, global::DId.TextScriptProviderGoogle, global::DId.TextScriptProviderOpenAI>), TypeInfoPropertyName = "TextScriptProviderOpenAI_ea107a157d4d5713")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.AnyOf<global::DId.ScriptVariant1ProviderMicrosoft, global::DId.ScriptVariant1ProviderElevenLabs, global::DId.ScriptVariant1ProviderAmazon, global::DId.ScriptVariant1ProviderGoogle, global::DId.ScriptVariant1ProviderOpenAI>), TypeInfoPropertyName = "ScriptVariant1ProviderOpenAI_3c0adac1dbfb1751")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.AnyOf<global::DId.CreateTalkRequestScriptVariant1ProviderMicrosoft, global::DId.CreateTalkRequestScriptVariant1ProviderElevenLabs, global::DId.CreateTalkRequestScriptVariant1ProviderAmazon, global::DId.CreateTalkRequestScriptVariant1ProviderGoogle, global::DId.CreateTalkRequestScriptVariant1ProviderOpenAI>), TypeInfoPropertyName = "CreateTalkRequestScriptVariant1ProviderOpenAI_d068d24cb8fb0634")]
@@ -2570,10 +2557,8 @@ namespace DId
     ///
     /// </summary>
     [global::System.Text.Json.Serialization.JsonSourceGenerationOptions(
-        DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull,
-        Converters = new global::System.Type[]
-        {
-        })]
+        DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull
+    )]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.AnyOf<global::DId.TextScriptProviderMicrosoft, global::DId.TextScriptProviderElevenLabs, global::DId.TextScriptProviderAmazon, global::DId.TextScriptProviderGoogle, global::DId.TextScriptProviderOpenAI>), TypeInfoPropertyName = "TextScriptProviderOpenAI_ea107a157d4d5713")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.AnyOf<global::DId.ScriptVariant1ProviderMicrosoft, global::DId.ScriptVariant1ProviderElevenLabs, global::DId.ScriptVariant1ProviderAmazon, global::DId.ScriptVariant1ProviderGoogle, global::DId.ScriptVariant1ProviderOpenAI>), TypeInfoPropertyName = "ScriptVariant1ProviderOpenAI_3c0adac1dbfb1751")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.AnyOf<global::DId.CreateTalkRequestScriptVariant1ProviderMicrosoft, global::DId.CreateTalkRequestScriptVariant1ProviderElevenLabs, global::DId.CreateTalkRequestScriptVariant1ProviderAmazon, global::DId.CreateTalkRequestScriptVariant1ProviderGoogle, global::DId.CreateTalkRequestScriptVariant1ProviderOpenAI>), TypeInfoPropertyName = "CreateTalkRequestScriptVariant1ProviderOpenAI_d068d24cb8fb0634")]
@@ -3082,10 +3067,8 @@ namespace DId
     ///
     /// </summary>
     [global::System.Text.Json.Serialization.JsonSourceGenerationOptions(
-        DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull,
-        Converters = new global::System.Type[]
-        {
-        })]
+        DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull
+    )]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.AnyOf<global::DId.TextScriptProviderMicrosoft, global::DId.TextScriptProviderElevenLabs, global::DId.TextScriptProviderAmazon, global::DId.TextScriptProviderGoogle, global::DId.TextScriptProviderOpenAI>), TypeInfoPropertyName = "TextScriptProviderOpenAI_ea107a157d4d5713")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.AnyOf<global::DId.ScriptVariant1ProviderMicrosoft, global::DId.ScriptVariant1ProviderElevenLabs, global::DId.ScriptVariant1ProviderAmazon, global::DId.ScriptVariant1ProviderGoogle, global::DId.ScriptVariant1ProviderOpenAI>), TypeInfoPropertyName = "ScriptVariant1ProviderOpenAI_3c0adac1dbfb1751")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.AnyOf<global::DId.CreateTalkRequestScriptVariant1ProviderMicrosoft, global::DId.CreateTalkRequestScriptVariant1ProviderElevenLabs, global::DId.CreateTalkRequestScriptVariant1ProviderAmazon, global::DId.CreateTalkRequestScriptVariant1ProviderGoogle, global::DId.CreateTalkRequestScriptVariant1ProviderOpenAI>), TypeInfoPropertyName = "CreateTalkRequestScriptVariant1ProviderOpenAI_d068d24cb8fb0634")]
@@ -3594,10 +3577,8 @@ namespace DId
     ///
     /// </summary>
     [global::System.Text.Json.Serialization.JsonSourceGenerationOptions(
-        DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull,
-        Converters = new global::System.Type[]
-        {
-        })]
+        DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull
+    )]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.AnyOf<global::DId.TextScriptProviderMicrosoft, global::DId.TextScriptProviderElevenLabs, global::DId.TextScriptProviderAmazon, global::DId.TextScriptProviderGoogle, global::DId.TextScriptProviderOpenAI>), TypeInfoPropertyName = "TextScriptProviderOpenAI_ea107a157d4d5713")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.AnyOf<global::DId.ScriptVariant1ProviderMicrosoft, global::DId.ScriptVariant1ProviderElevenLabs, global::DId.ScriptVariant1ProviderAmazon, global::DId.ScriptVariant1ProviderGoogle, global::DId.ScriptVariant1ProviderOpenAI>), TypeInfoPropertyName = "ScriptVariant1ProviderOpenAI_3c0adac1dbfb1751")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.AnyOf<global::DId.CreateTalkRequestScriptVariant1ProviderMicrosoft, global::DId.CreateTalkRequestScriptVariant1ProviderElevenLabs, global::DId.CreateTalkRequestScriptVariant1ProviderAmazon, global::DId.CreateTalkRequestScriptVariant1ProviderGoogle, global::DId.CreateTalkRequestScriptVariant1ProviderOpenAI>), TypeInfoPropertyName = "CreateTalkRequestScriptVariant1ProviderOpenAI_d068d24cb8fb0634")]
@@ -4053,7 +4034,9 @@ namespace DId
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::DId.IChatPayloadMessage>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.IChatPayloadMessage))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.IChatPayloadMessageRole), TypeInfoPropertyName = "IChatPayloadMessageRole2")]
+    #pragma warning disable CS0618 // This registration names a deprecated API model.
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.IChatPayloadChatMode), TypeInfoPropertyName = "IChatPayloadChatMode2")]
+    #pragma warning restore CS0618
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.TransportProvider), TypeInfoPropertyName = "TransportProvider2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.TransportProviderLiveKit), TypeInfoPropertyName = "TransportProviderLiveKit2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.InitLiveKitRoomTransport))]
@@ -4106,10 +4089,8 @@ namespace DId
     ///
     /// </summary>
     [global::System.Text.Json.Serialization.JsonSourceGenerationOptions(
-        DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull,
-        Converters = new global::System.Type[]
-        {
-        })]
+        DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull
+    )]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.AnyOf<global::DId.TextScriptProviderMicrosoft, global::DId.TextScriptProviderElevenLabs, global::DId.TextScriptProviderAmazon, global::DId.TextScriptProviderGoogle, global::DId.TextScriptProviderOpenAI>), TypeInfoPropertyName = "TextScriptProviderOpenAI_ea107a157d4d5713")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.AnyOf<global::DId.ScriptVariant1ProviderMicrosoft, global::DId.ScriptVariant1ProviderElevenLabs, global::DId.ScriptVariant1ProviderAmazon, global::DId.ScriptVariant1ProviderGoogle, global::DId.ScriptVariant1ProviderOpenAI>), TypeInfoPropertyName = "ScriptVariant1ProviderOpenAI_3c0adac1dbfb1751")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.AnyOf<global::DId.CreateTalkRequestScriptVariant1ProviderMicrosoft, global::DId.CreateTalkRequestScriptVariant1ProviderElevenLabs, global::DId.CreateTalkRequestScriptVariant1ProviderAmazon, global::DId.CreateTalkRequestScriptVariant1ProviderGoogle, global::DId.CreateTalkRequestScriptVariant1ProviderOpenAI>), TypeInfoPropertyName = "CreateTalkRequestScriptVariant1ProviderOpenAI_d068d24cb8fb0634")]
@@ -4618,10 +4599,8 @@ namespace DId
     ///
     /// </summary>
     [global::System.Text.Json.Serialization.JsonSourceGenerationOptions(
-        DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull,
-        Converters = new global::System.Type[]
-        {
-        })]
+        DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull
+    )]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.AnyOf<global::DId.TextScriptProviderMicrosoft, global::DId.TextScriptProviderElevenLabs, global::DId.TextScriptProviderAmazon, global::DId.TextScriptProviderGoogle, global::DId.TextScriptProviderOpenAI>), TypeInfoPropertyName = "TextScriptProviderOpenAI_ea107a157d4d5713")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.AnyOf<global::DId.ScriptVariant1ProviderMicrosoft, global::DId.ScriptVariant1ProviderElevenLabs, global::DId.ScriptVariant1ProviderAmazon, global::DId.ScriptVariant1ProviderGoogle, global::DId.ScriptVariant1ProviderOpenAI>), TypeInfoPropertyName = "ScriptVariant1ProviderOpenAI_3c0adac1dbfb1751")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.AnyOf<global::DId.CreateTalkRequestScriptVariant1ProviderMicrosoft, global::DId.CreateTalkRequestScriptVariant1ProviderElevenLabs, global::DId.CreateTalkRequestScriptVariant1ProviderAmazon, global::DId.CreateTalkRequestScriptVariant1ProviderGoogle, global::DId.CreateTalkRequestScriptVariant1ProviderOpenAI>), TypeInfoPropertyName = "CreateTalkRequestScriptVariant1ProviderOpenAI_d068d24cb8fb0634")]
@@ -4936,7 +4915,9 @@ namespace DId
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.CreateClipStreamRequestPresenterConfigCropVariant2))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.CreateClipStreamRequestPresenterConfigCropVariant2Type), TypeInfoPropertyName = "CreateClipStreamRequestPresenterConfigCropVariant2Type2_3")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.CreateClipStreamRequestPresenterConfigCropVariant2Rectangle))]
+    #pragma warning disable CS0618 // This registration names a deprecated API model.
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.CreateClipStreamRequestBackground))]
+    #pragma warning restore CS0618
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.CreateTalkRequest2))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.AnyOf<global::DId.CreateTalkRequestScriptVariant12, global::DId.CreateTalkRequestScriptVariant22>), TypeInfoPropertyName = "AnyOfCreateTalkRequestScriptVariant12CreateTalkRequestScriptVariant222")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.CreateTalkRequestScriptVariant12))]
@@ -5130,10 +5111,8 @@ namespace DId
     ///
     /// </summary>
     [global::System.Text.Json.Serialization.JsonSourceGenerationOptions(
-        DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull,
-        Converters = new global::System.Type[]
-        {
-        })]
+        DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull
+    )]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.AnyOf<global::DId.TextScriptProviderMicrosoft, global::DId.TextScriptProviderElevenLabs, global::DId.TextScriptProviderAmazon, global::DId.TextScriptProviderGoogle, global::DId.TextScriptProviderOpenAI>), TypeInfoPropertyName = "TextScriptProviderOpenAI_ea107a157d4d5713")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.AnyOf<global::DId.ScriptVariant1ProviderMicrosoft, global::DId.ScriptVariant1ProviderElevenLabs, global::DId.ScriptVariant1ProviderAmazon, global::DId.ScriptVariant1ProviderGoogle, global::DId.ScriptVariant1ProviderOpenAI>), TypeInfoPropertyName = "ScriptVariant1ProviderOpenAI_3c0adac1dbfb1751")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.AnyOf<global::DId.CreateTalkRequestScriptVariant1ProviderMicrosoft, global::DId.CreateTalkRequestScriptVariant1ProviderElevenLabs, global::DId.CreateTalkRequestScriptVariant1ProviderAmazon, global::DId.CreateTalkRequestScriptVariant1ProviderGoogle, global::DId.CreateTalkRequestScriptVariant1ProviderOpenAI>), TypeInfoPropertyName = "CreateTalkRequestScriptVariant1ProviderOpenAI_d068d24cb8fb0634")]
@@ -5555,7 +5534,9 @@ namespace DId
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::DId.ChatRequestMessage>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.ChatRequestMessage))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.ChatRequestMessageRole), TypeInfoPropertyName = "ChatRequestMessageRole2")]
+    #pragma warning disable CS0618 // This registration names a deprecated API model.
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.ChatRequestChatMode), TypeInfoPropertyName = "ChatRequestChatMode2")]
+    #pragma warning restore CS0618
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.AllOf<global::DId.CreateChatLogsRequestVariant1, global::DId.CreateChatLogsRequestVariant2>), TypeInfoPropertyName = "AllOfCreateChatLogsRequestVariant1CreateChatLogsRequestVariant22")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.CreateChatLogsRequestVariant1))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.CreateChatLogsRequestVariant2))]
@@ -5642,10 +5623,8 @@ namespace DId
     ///
     /// </summary>
     [global::System.Text.Json.Serialization.JsonSourceGenerationOptions(
-        DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull,
-        Converters = new global::System.Type[]
-        {
-        })]
+        DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull
+    )]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.AnyOf<global::DId.TextScriptProviderMicrosoft, global::DId.TextScriptProviderElevenLabs, global::DId.TextScriptProviderAmazon, global::DId.TextScriptProviderGoogle, global::DId.TextScriptProviderOpenAI>), TypeInfoPropertyName = "TextScriptProviderOpenAI_ea107a157d4d5713")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.AnyOf<global::DId.ScriptVariant1ProviderMicrosoft, global::DId.ScriptVariant1ProviderElevenLabs, global::DId.ScriptVariant1ProviderAmazon, global::DId.ScriptVariant1ProviderGoogle, global::DId.ScriptVariant1ProviderOpenAI>), TypeInfoPropertyName = "ScriptVariant1ProviderOpenAI_3c0adac1dbfb1751")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.AnyOf<global::DId.CreateTalkRequestScriptVariant1ProviderMicrosoft, global::DId.CreateTalkRequestScriptVariant1ProviderElevenLabs, global::DId.CreateTalkRequestScriptVariant1ProviderAmazon, global::DId.CreateTalkRequestScriptVariant1ProviderGoogle, global::DId.CreateTalkRequestScriptVariant1ProviderOpenAI>), TypeInfoPropertyName = "CreateTalkRequestScriptVariant1ProviderOpenAI_d068d24cb8fb0634")]
@@ -5977,7 +5956,9 @@ namespace DId
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.CreateClipStreamRequestPresenterConfigCropVariant22))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.CreateClipStreamRequestPresenterConfigCropVariant2Type2), TypeInfoPropertyName = "CreateClipStreamRequestPresenterConfigCropVariant2Type22")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.CreateClipStreamRequestPresenterConfigCropVariant2Rectangle2))]
+    #pragma warning disable CS0618 // This registration names a deprecated API model.
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.CreateClipStreamRequestBackground2))]
+    #pragma warning restore CS0618
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.DeleteStream1Request))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.ListMyAgentsSortBy), TypeInfoPropertyName = "ListMyAgentsSortBy2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.ListMyAgentsOrder), TypeInfoPropertyName = "ListMyAgentsOrder2")]
@@ -6154,10 +6135,8 @@ namespace DId
     ///
     /// </summary>
     [global::System.Text.Json.Serialization.JsonSourceGenerationOptions(
-        DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull,
-        Converters = new global::System.Type[]
-        {
-        })]
+        DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull
+    )]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.AnyOf<global::DId.TextScriptProviderMicrosoft, global::DId.TextScriptProviderElevenLabs, global::DId.TextScriptProviderAmazon, global::DId.TextScriptProviderGoogle, global::DId.TextScriptProviderOpenAI>), TypeInfoPropertyName = "TextScriptProviderOpenAI_ea107a157d4d5713")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.AnyOf<global::DId.ScriptVariant1ProviderMicrosoft, global::DId.ScriptVariant1ProviderElevenLabs, global::DId.ScriptVariant1ProviderAmazon, global::DId.ScriptVariant1ProviderGoogle, global::DId.ScriptVariant1ProviderOpenAI>), TypeInfoPropertyName = "ScriptVariant1ProviderOpenAI_3c0adac1dbfb1751")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.AnyOf<global::DId.CreateTalkRequestScriptVariant1ProviderMicrosoft, global::DId.CreateTalkRequestScriptVariant1ProviderElevenLabs, global::DId.CreateTalkRequestScriptVariant1ProviderAmazon, global::DId.CreateTalkRequestScriptVariant1ProviderGoogle, global::DId.CreateTalkRequestScriptVariant1ProviderOpenAI>), TypeInfoPropertyName = "CreateTalkRequestScriptVariant1ProviderOpenAI_d068d24cb8fb0634")]
@@ -6666,10 +6645,8 @@ namespace DId
     ///
     /// </summary>
     [global::System.Text.Json.Serialization.JsonSourceGenerationOptions(
-        DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull,
-        Converters = new global::System.Type[]
-        {
-        })]
+        DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull
+    )]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.AnyOf<global::DId.TextScriptProviderMicrosoft, global::DId.TextScriptProviderElevenLabs, global::DId.TextScriptProviderAmazon, global::DId.TextScriptProviderGoogle, global::DId.TextScriptProviderOpenAI>), TypeInfoPropertyName = "TextScriptProviderOpenAI_ea107a157d4d5713")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.AnyOf<global::DId.ScriptVariant1ProviderMicrosoft, global::DId.ScriptVariant1ProviderElevenLabs, global::DId.ScriptVariant1ProviderAmazon, global::DId.ScriptVariant1ProviderGoogle, global::DId.ScriptVariant1ProviderOpenAI>), TypeInfoPropertyName = "ScriptVariant1ProviderOpenAI_3c0adac1dbfb1751")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.AnyOf<global::DId.CreateTalkRequestScriptVariant1ProviderMicrosoft, global::DId.CreateTalkRequestScriptVariant1ProviderElevenLabs, global::DId.CreateTalkRequestScriptVariant1ProviderAmazon, global::DId.CreateTalkRequestScriptVariant1ProviderGoogle, global::DId.CreateTalkRequestScriptVariant1ProviderOpenAI>), TypeInfoPropertyName = "CreateTalkRequestScriptVariant1ProviderOpenAI_d068d24cb8fb0634")]
@@ -7178,10 +7155,8 @@ namespace DId
     ///
     /// </summary>
     [global::System.Text.Json.Serialization.JsonSourceGenerationOptions(
-        DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull,
-        Converters = new global::System.Type[]
-        {
-        })]
+        DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull
+    )]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.AnyOf<global::DId.TextScriptProviderMicrosoft, global::DId.TextScriptProviderElevenLabs, global::DId.TextScriptProviderAmazon, global::DId.TextScriptProviderGoogle, global::DId.TextScriptProviderOpenAI>), TypeInfoPropertyName = "TextScriptProviderOpenAI_ea107a157d4d5713")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.AnyOf<global::DId.ScriptVariant1ProviderMicrosoft, global::DId.ScriptVariant1ProviderElevenLabs, global::DId.ScriptVariant1ProviderAmazon, global::DId.ScriptVariant1ProviderGoogle, global::DId.ScriptVariant1ProviderOpenAI>), TypeInfoPropertyName = "ScriptVariant1ProviderOpenAI_3c0adac1dbfb1751")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.AnyOf<global::DId.CreateTalkRequestScriptVariant1ProviderMicrosoft, global::DId.CreateTalkRequestScriptVariant1ProviderElevenLabs, global::DId.CreateTalkRequestScriptVariant1ProviderAmazon, global::DId.CreateTalkRequestScriptVariant1ProviderGoogle, global::DId.CreateTalkRequestScriptVariant1ProviderOpenAI>), TypeInfoPropertyName = "CreateTalkRequestScriptVariant1ProviderOpenAI_d068d24cb8fb0634")]
@@ -7690,10 +7665,8 @@ namespace DId
     ///
     /// </summary>
     [global::System.Text.Json.Serialization.JsonSourceGenerationOptions(
-        DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull,
-        Converters = new global::System.Type[]
-        {
-        })]
+        DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull
+    )]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.AnyOf<global::DId.TextScriptProviderMicrosoft, global::DId.TextScriptProviderElevenLabs, global::DId.TextScriptProviderAmazon, global::DId.TextScriptProviderGoogle, global::DId.TextScriptProviderOpenAI>), TypeInfoPropertyName = "TextScriptProviderOpenAI_ea107a157d4d5713")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.AnyOf<global::DId.ScriptVariant1ProviderMicrosoft, global::DId.ScriptVariant1ProviderElevenLabs, global::DId.ScriptVariant1ProviderAmazon, global::DId.ScriptVariant1ProviderGoogle, global::DId.ScriptVariant1ProviderOpenAI>), TypeInfoPropertyName = "ScriptVariant1ProviderOpenAI_3c0adac1dbfb1751")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.AnyOf<global::DId.CreateTalkRequestScriptVariant1ProviderMicrosoft, global::DId.CreateTalkRequestScriptVariant1ProviderElevenLabs, global::DId.CreateTalkRequestScriptVariant1ProviderAmazon, global::DId.CreateTalkRequestScriptVariant1ProviderGoogle, global::DId.CreateTalkRequestScriptVariant1ProviderOpenAI>), TypeInfoPropertyName = "CreateTalkRequestScriptVariant1ProviderOpenAI_d068d24cb8fb0634")]
@@ -8202,10 +8175,8 @@ namespace DId
     ///
     /// </summary>
     [global::System.Text.Json.Serialization.JsonSourceGenerationOptions(
-        DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull,
-        Converters = new global::System.Type[]
-        {
-        })]
+        DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull
+    )]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.AnyOf<global::DId.TextScriptProviderMicrosoft, global::DId.TextScriptProviderElevenLabs, global::DId.TextScriptProviderAmazon, global::DId.TextScriptProviderGoogle, global::DId.TextScriptProviderOpenAI>), TypeInfoPropertyName = "TextScriptProviderOpenAI_ea107a157d4d5713")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.AnyOf<global::DId.ScriptVariant1ProviderMicrosoft, global::DId.ScriptVariant1ProviderElevenLabs, global::DId.ScriptVariant1ProviderAmazon, global::DId.ScriptVariant1ProviderGoogle, global::DId.ScriptVariant1ProviderOpenAI>), TypeInfoPropertyName = "ScriptVariant1ProviderOpenAI_3c0adac1dbfb1751")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.AnyOf<global::DId.CreateTalkRequestScriptVariant1ProviderMicrosoft, global::DId.CreateTalkRequestScriptVariant1ProviderElevenLabs, global::DId.CreateTalkRequestScriptVariant1ProviderAmazon, global::DId.CreateTalkRequestScriptVariant1ProviderGoogle, global::DId.CreateTalkRequestScriptVariant1ProviderOpenAI>), TypeInfoPropertyName = "CreateTalkRequestScriptVariant1ProviderOpenAI_d068d24cb8fb0634")]
@@ -8714,10 +8685,8 @@ namespace DId
     ///
     /// </summary>
     [global::System.Text.Json.Serialization.JsonSourceGenerationOptions(
-        DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull,
-        Converters = new global::System.Type[]
-        {
-        })]
+        DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull
+    )]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.AnyOf<global::DId.TextScriptProviderMicrosoft, global::DId.TextScriptProviderElevenLabs, global::DId.TextScriptProviderAmazon, global::DId.TextScriptProviderGoogle, global::DId.TextScriptProviderOpenAI>), TypeInfoPropertyName = "TextScriptProviderOpenAI_ea107a157d4d5713")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.AnyOf<global::DId.ScriptVariant1ProviderMicrosoft, global::DId.ScriptVariant1ProviderElevenLabs, global::DId.ScriptVariant1ProviderAmazon, global::DId.ScriptVariant1ProviderGoogle, global::DId.ScriptVariant1ProviderOpenAI>), TypeInfoPropertyName = "ScriptVariant1ProviderOpenAI_3c0adac1dbfb1751")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.AnyOf<global::DId.CreateTalkRequestScriptVariant1ProviderMicrosoft, global::DId.CreateTalkRequestScriptVariant1ProviderElevenLabs, global::DId.CreateTalkRequestScriptVariant1ProviderAmazon, global::DId.CreateTalkRequestScriptVariant1ProviderGoogle, global::DId.CreateTalkRequestScriptVariant1ProviderOpenAI>), TypeInfoPropertyName = "CreateTalkRequestScriptVariant1ProviderOpenAI_d068d24cb8fb0634")]
@@ -9226,10 +9195,8 @@ namespace DId
     ///
     /// </summary>
     [global::System.Text.Json.Serialization.JsonSourceGenerationOptions(
-        DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull,
-        Converters = new global::System.Type[]
-        {
-        })]
+        DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull
+    )]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.AnyOf<global::DId.TextScriptProviderMicrosoft, global::DId.TextScriptProviderElevenLabs, global::DId.TextScriptProviderAmazon, global::DId.TextScriptProviderGoogle, global::DId.TextScriptProviderOpenAI>), TypeInfoPropertyName = "TextScriptProviderOpenAI_ea107a157d4d5713")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.AnyOf<global::DId.ScriptVariant1ProviderMicrosoft, global::DId.ScriptVariant1ProviderElevenLabs, global::DId.ScriptVariant1ProviderAmazon, global::DId.ScriptVariant1ProviderGoogle, global::DId.ScriptVariant1ProviderOpenAI>), TypeInfoPropertyName = "ScriptVariant1ProviderOpenAI_3c0adac1dbfb1751")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.AnyOf<global::DId.CreateTalkRequestScriptVariant1ProviderMicrosoft, global::DId.CreateTalkRequestScriptVariant1ProviderElevenLabs, global::DId.CreateTalkRequestScriptVariant1ProviderAmazon, global::DId.CreateTalkRequestScriptVariant1ProviderGoogle, global::DId.CreateTalkRequestScriptVariant1ProviderOpenAI>), TypeInfoPropertyName = "CreateTalkRequestScriptVariant1ProviderOpenAI_d068d24cb8fb0634")]
@@ -9738,10 +9705,8 @@ namespace DId
     ///
     /// </summary>
     [global::System.Text.Json.Serialization.JsonSourceGenerationOptions(
-        DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull,
-        Converters = new global::System.Type[]
-        {
-        })]
+        DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull
+    )]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.AnyOf<global::DId.TextScriptProviderMicrosoft, global::DId.TextScriptProviderElevenLabs, global::DId.TextScriptProviderAmazon, global::DId.TextScriptProviderGoogle, global::DId.TextScriptProviderOpenAI>), TypeInfoPropertyName = "TextScriptProviderOpenAI_ea107a157d4d5713")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.AnyOf<global::DId.ScriptVariant1ProviderMicrosoft, global::DId.ScriptVariant1ProviderElevenLabs, global::DId.ScriptVariant1ProviderAmazon, global::DId.ScriptVariant1ProviderGoogle, global::DId.ScriptVariant1ProviderOpenAI>), TypeInfoPropertyName = "ScriptVariant1ProviderOpenAI_3c0adac1dbfb1751")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.AnyOf<global::DId.CreateTalkRequestScriptVariant1ProviderMicrosoft, global::DId.CreateTalkRequestScriptVariant1ProviderElevenLabs, global::DId.CreateTalkRequestScriptVariant1ProviderAmazon, global::DId.CreateTalkRequestScriptVariant1ProviderGoogle, global::DId.CreateTalkRequestScriptVariant1ProviderOpenAI>), TypeInfoPropertyName = "CreateTalkRequestScriptVariant1ProviderOpenAI_d068d24cb8fb0634")]
@@ -10064,7 +10029,9 @@ namespace DId
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.ChatMode?), TypeInfoPropertyName = "NullableChatMode2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.ChatResponseChatMode?), TypeInfoPropertyName = "NullableChatResponseChatMode2_3")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.IChatPayloadMessageRole?), TypeInfoPropertyName = "NullableIChatPayloadMessageRole2")]
+    #pragma warning disable CS0618 // This registration names a deprecated API model.
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.IChatPayloadChatMode?), TypeInfoPropertyName = "NullableIChatPayloadChatMode2")]
+    #pragma warning restore CS0618
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.TransportProvider?), TypeInfoPropertyName = "NullableTransportProvider2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.TransportProviderLiveKit?), TypeInfoPropertyName = "NullableTransportProviderLiveKit2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.InitLiveKitRoomTransportProvider?), TypeInfoPropertyName = "NullableInitLiveKitRoomTransportProvider2")]
@@ -10250,10 +10217,8 @@ namespace DId
     ///
     /// </summary>
     [global::System.Text.Json.Serialization.JsonSourceGenerationOptions(
-        DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull,
-        Converters = new global::System.Type[]
-        {
-        })]
+        DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull
+    )]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.AnyOf<global::DId.TextScriptProviderMicrosoft, global::DId.TextScriptProviderElevenLabs, global::DId.TextScriptProviderAmazon, global::DId.TextScriptProviderGoogle, global::DId.TextScriptProviderOpenAI>), TypeInfoPropertyName = "TextScriptProviderOpenAI_ea107a157d4d5713")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.AnyOf<global::DId.ScriptVariant1ProviderMicrosoft, global::DId.ScriptVariant1ProviderElevenLabs, global::DId.ScriptVariant1ProviderAmazon, global::DId.ScriptVariant1ProviderGoogle, global::DId.ScriptVariant1ProviderOpenAI>), TypeInfoPropertyName = "ScriptVariant1ProviderOpenAI_3c0adac1dbfb1751")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.AnyOf<global::DId.CreateTalkRequestScriptVariant1ProviderMicrosoft, global::DId.CreateTalkRequestScriptVariant1ProviderElevenLabs, global::DId.CreateTalkRequestScriptVariant1ProviderAmazon, global::DId.CreateTalkRequestScriptVariant1ProviderGoogle, global::DId.CreateTalkRequestScriptVariant1ProviderOpenAI>), TypeInfoPropertyName = "CreateTalkRequestScriptVariant1ProviderOpenAI_d068d24cb8fb0634")]
@@ -10605,7 +10570,9 @@ namespace DId
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.CreateVideoStreamRequestScriptTextProviderOpenAIType2?), TypeInfoPropertyName = "NullableCreateVideoStreamRequestScriptTextProviderOpenAIType22")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.CreateVideoStreamRequestScriptAudioType2?), TypeInfoPropertyName = "NullableCreateVideoStreamRequestScriptAudioType22")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.ChatRequestMessageRole?), TypeInfoPropertyName = "NullableChatRequestMessageRole2")]
+    #pragma warning disable CS0618 // This registration names a deprecated API model.
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.ChatRequestChatMode?), TypeInfoPropertyName = "NullableChatRequestChatMode2")]
+    #pragma warning restore CS0618
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.AllOf<global::DId.CreateChatLogsRequestVariant1, global::DId.CreateChatLogsRequestVariant2>?), TypeInfoPropertyName = "NullableAllOfCreateChatLogsRequestVariant1CreateChatLogsRequestVariant22")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.AllOf<global::DId.CreateDocumentRequestVariant1, global::DId.CreateDocumentRequestVariant2>?), TypeInfoPropertyName = "NullableAllOfCreateDocumentRequestVariant1CreateDocumentRequestVariant22")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.CreateDocumentRequestVariant1DocumentType?), TypeInfoPropertyName = "NullableCreateDocumentRequestVariant1DocumentType2")]
@@ -10762,10 +10729,8 @@ namespace DId
     ///
     /// </summary>
     [global::System.Text.Json.Serialization.JsonSourceGenerationOptions(
-        DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull,
-        Converters = new global::System.Type[]
-        {
-        })]
+        DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull
+    )]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.AnyOf<global::DId.TextScriptProviderMicrosoft, global::DId.TextScriptProviderElevenLabs, global::DId.TextScriptProviderAmazon, global::DId.TextScriptProviderGoogle, global::DId.TextScriptProviderOpenAI>), TypeInfoPropertyName = "TextScriptProviderOpenAI_ea107a157d4d5713")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.AnyOf<global::DId.ScriptVariant1ProviderMicrosoft, global::DId.ScriptVariant1ProviderElevenLabs, global::DId.ScriptVariant1ProviderAmazon, global::DId.ScriptVariant1ProviderGoogle, global::DId.ScriptVariant1ProviderOpenAI>), TypeInfoPropertyName = "ScriptVariant1ProviderOpenAI_3c0adac1dbfb1751")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.AnyOf<global::DId.CreateTalkRequestScriptVariant1ProviderMicrosoft, global::DId.CreateTalkRequestScriptVariant1ProviderElevenLabs, global::DId.CreateTalkRequestScriptVariant1ProviderAmazon, global::DId.CreateTalkRequestScriptVariant1ProviderGoogle, global::DId.CreateTalkRequestScriptVariant1ProviderOpenAI>), TypeInfoPropertyName = "CreateTalkRequestScriptVariant1ProviderOpenAI_d068d24cb8fb0634")]
@@ -11274,10 +11239,8 @@ namespace DId
     ///
     /// </summary>
     [global::System.Text.Json.Serialization.JsonSourceGenerationOptions(
-        DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull,
-        Converters = new global::System.Type[]
-        {
-        })]
+        DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull
+    )]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.AnyOf<global::DId.TextScriptProviderMicrosoft, global::DId.TextScriptProviderElevenLabs, global::DId.TextScriptProviderAmazon, global::DId.TextScriptProviderGoogle, global::DId.TextScriptProviderOpenAI>), TypeInfoPropertyName = "TextScriptProviderOpenAI_ea107a157d4d5713")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.AnyOf<global::DId.ScriptVariant1ProviderMicrosoft, global::DId.ScriptVariant1ProviderElevenLabs, global::DId.ScriptVariant1ProviderAmazon, global::DId.ScriptVariant1ProviderGoogle, global::DId.ScriptVariant1ProviderOpenAI>), TypeInfoPropertyName = "ScriptVariant1ProviderOpenAI_3c0adac1dbfb1751")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.AnyOf<global::DId.CreateTalkRequestScriptVariant1ProviderMicrosoft, global::DId.CreateTalkRequestScriptVariant1ProviderElevenLabs, global::DId.CreateTalkRequestScriptVariant1ProviderAmazon, global::DId.CreateTalkRequestScriptVariant1ProviderGoogle, global::DId.CreateTalkRequestScriptVariant1ProviderOpenAI>), TypeInfoPropertyName = "CreateTalkRequestScriptVariant1ProviderOpenAI_d068d24cb8fb0634")]

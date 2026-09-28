@@ -1,19 +1,14 @@
 
 #nullable enable
 
-#pragma warning disable CS0618 // Type or member is obsolete
-#pragma warning disable CS3016 // Arrays as attribute arguments is not CLS-compliant
-
 namespace DId
 {
     /// <summary>
     ///
     /// </summary>
     [global::System.Text.Json.Serialization.JsonSourceGenerationOptions(
-        DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull,
-        Converters = new global::System.Type[]
-        {
-        })]
+        DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull
+    )]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.AnyOf<global::DId.CreateRequestPresenterPhotoAvatarVoiceMicrosoft, global::DId.CreateRequestPresenterPhotoAvatarVoiceElevenLabs, global::DId.CreateRequestPresenterPhotoAvatarVoiceOpenAI>), TypeInfoPropertyName = "CreateRequestPresenterPhotoAvatarVoiceOpenAI_d4d9abbdbe86a41f")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.AnyOf<global::DId.CreateRequestPresenterVideoAvatarVoiceMicrosoft, global::DId.CreateRequestPresenterVideoAvatarVoiceElevenLabs, global::DId.CreateRequestPresenterVideoAvatarVoiceOpenAI>), TypeInfoPropertyName = "CreateRequestPresenterVideoAvatarVoiceOpenAI_e131a922bef8293f")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.AnyOf<global::DId.CreateRequestPresenterExpressiveAvatarVoiceMicrosoft, global::DId.CreateRequestPresenterExpressiveAvatarVoiceElevenLabs, global::DId.CreateRequestPresenterExpressiveAvatarVoiceOpenAI>), TypeInfoPropertyName = "CreateRequestPresenterExpressiveAvatarVoiceOpenAI_21e79600dd34b970")]
@@ -522,10 +517,8 @@ namespace DId
     ///
     /// </summary>
     [global::System.Text.Json.Serialization.JsonSourceGenerationOptions(
-        DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull,
-        Converters = new global::System.Type[]
-        {
-        })]
+        DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull
+    )]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.AnyOf<global::DId.CreateRequestPresenterPhotoAvatarVoiceMicrosoft, global::DId.CreateRequestPresenterPhotoAvatarVoiceElevenLabs, global::DId.CreateRequestPresenterPhotoAvatarVoiceOpenAI>), TypeInfoPropertyName = "CreateRequestPresenterPhotoAvatarVoiceOpenAI_d4d9abbdbe86a41f")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.AnyOf<global::DId.CreateRequestPresenterVideoAvatarVoiceMicrosoft, global::DId.CreateRequestPresenterVideoAvatarVoiceElevenLabs, global::DId.CreateRequestPresenterVideoAvatarVoiceOpenAI>), TypeInfoPropertyName = "CreateRequestPresenterVideoAvatarVoiceOpenAI_e131a922bef8293f")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.AnyOf<global::DId.CreateRequestPresenterExpressiveAvatarVoiceMicrosoft, global::DId.CreateRequestPresenterExpressiveAvatarVoiceElevenLabs, global::DId.CreateRequestPresenterExpressiveAvatarVoiceOpenAI>), TypeInfoPropertyName = "CreateRequestPresenterExpressiveAvatarVoiceOpenAI_21e79600dd34b970")]
