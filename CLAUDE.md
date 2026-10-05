@@ -14,7 +14,7 @@ dotnet test src/tests/IntegrationTests/
 
 ## Auth
 
-Bearer token auth (Base64-encoded API key):
+HTTP Basic auth using the D-ID `API_USERNAME:API_PASSWORD` API key:
 
 ```csharp
 var client = new DIdClient(apiKey); // DID_API_KEY env var
@@ -34,7 +34,7 @@ var client = new DIdClient(apiKey); // DID_API_KEY env var
 - **No stable public OpenAPI spec** — extracted from `docs.d-id.com/reference` embedded data
 - 4 specs merged into one: videos, realtime, resources, legacy
 - 42 schema names normalized (dots/hyphens replaced)
-- `--security-scheme Http:Header:Bearer` handles top-level auth (overrides per-operation security blocks)
+- `--security-scheme Http:Header:Basic` handles top-level auth (overrides per-operation security blocks)
 - Uses `--exclude-deprecated-operations` flag
 
 ## Sub-client Pattern

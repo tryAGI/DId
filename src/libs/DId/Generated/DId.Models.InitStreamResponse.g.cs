@@ -24,9 +24,9 @@ namespace DId
         /// <summary>
         /// Jsep offer object used to create a peer connection
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("jsep")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("offer")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::DId.InitStreamResponseJsep Jsep { get; set; }
+        public required global::DId.InitStreamResponseOffer Offer { get; set; }
 
         /// <summary>
         /// ICE servers used to create a peer connection
@@ -47,7 +47,7 @@ namespace DId
         /// <param name="id">
         /// Id of the stream - should be returned as *path parameter* in all streaming request to the same stream
         /// </param>
-        /// <param name="jsep">
+        /// <param name="offer">
         /// Jsep offer object used to create a peer connection
         /// </param>
         /// <param name="iceServers">
@@ -59,13 +59,13 @@ namespace DId
 #endif
         public InitStreamResponse(
             string id,
-            global::DId.InitStreamResponseJsep jsep,
+            global::DId.InitStreamResponseOffer offer,
             global::System.Collections.Generic.IList<global::DId.InitStreamResponseIceServer> iceServers,
             string? sessionId)
         {
             this.SessionId = sessionId;
             this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
-            this.Jsep = jsep ?? throw new global::System.ArgumentNullException(nameof(jsep));
+            this.Offer = offer ?? throw new global::System.ArgumentNullException(nameof(offer));
             this.IceServers = iceServers ?? throw new global::System.ArgumentNullException(nameof(iceServers));
         }
 

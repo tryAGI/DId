@@ -19,28 +19,23 @@ public partial class Tests
                 ? key
                 : throw new AssertInconclusiveException("DID_API_KEY environment variable is not found.");
 
-        var agentId =
-            Environment.GetEnvironmentVariable("DID_AGENT_ID") is { Length: > 0 } id
-                ? id
-                : throw new AssertInconclusiveException("DID_AGENT_ID environment variable is not found.");
-
         var client = new DIdClient(apiKey);
+        var agentId = await GetAgentIdAsync(client);
 
-        //// Create and connect via the unified interface
+        //// Create and connect via the unified interface. Success requires secure WebRTC establishment.
         await using var avatar = await DIdRealtimeAvatarClient.ConnectAsync(
-            client, agentId);
+            client, agentId, streamWarmup: true);
 
         //// Verify the adapter implements IRealtimeAvatarClient
         tryAGI.RealtimeAvatar.IRealtimeAvatarClient realtimeClient = avatar;
         realtimeClient.Should().NotBeNull();
+        avatar.IsConnected.Should().BeTrue();
 
         //// SendAudioAsync should throw NotSupportedException (D-ID is text-only)
         Func<Task> sendAudio = () => avatar.SendAudioAsync(ReadOnlyMemory<byte>.Empty);
         await sendAudio.Should().ThrowAsync<NotSupportedException>();
 
-        //// Send text and receive at least one video frame
-        await avatar.SendTextAsync("Hello, this is a test.");
-
+        //// Warmup media verifies the receive path without consuming speak credits.
         using var cts = new CancellationTokenSource(TimeSpan.FromSeconds(30));
         var receivedVideo = false;
         var receivedAudio = false;

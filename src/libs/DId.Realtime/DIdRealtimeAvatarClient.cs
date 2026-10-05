@@ -3,15 +3,15 @@
 #pragma warning disable CA2000 // Dispose objects before losing scope — ownership is transferred to the adapter
 
 using System.Runtime.CompilerServices;
-using SIPSorcery.Net;
 using tryAGI.RealtimeAvatar;
+using tryAGI.WebRTC;
 
 namespace DId;
 
 /// <summary>
 /// Adapter that wraps <see cref="DIdRealtimeSession"/> to implement <see cref="IRealtimeAvatarClient"/>.
 /// D-ID provides full WebRTC streaming with video and audio frames from the avatar,
-/// driven by text input (the agent responds via TTS + lip-synced video).
+/// driven by text input rendered directly through the presenter's TTS + lip-synced video.
 /// </summary>
 public sealed class DIdRealtimeAvatarClient : IRealtimeAvatarClient
 {
@@ -61,12 +61,12 @@ public sealed class DIdRealtimeAvatarClient : IRealtimeAvatarClient
     }
 
     /// <inheritdoc />
-    public bool IsConnected => _session.IceConnectionState == RTCIceConnectionState.connected;
+    public bool IsConnected => _session.ConnectionState == PeerConnectionState.Connected;
 
     /// <inheritdoc />
     public async Task SendTextAsync(string text, CancellationToken cancellationToken = default)
     {
-        await _session.SendMessageAsync(text, cancellationToken: cancellationToken).ConfigureAwait(false);
+        await _session.SpeakAsync(text, cancellationToken).ConfigureAwait(false);
     }
 
     /// <inheritdoc />
@@ -86,7 +86,7 @@ public sealed class DIdRealtimeAvatarClient : IRealtimeAvatarClient
         {
             yield return new AvatarVideoFrame(
                 Data: frame.EncodedData,
-                Codec: frame.Format.FormatName ?? "H264",
+                Codec: frame.Format,
                 Timestamp: frame.Timestamp);
         }
     }
@@ -99,7 +99,7 @@ public sealed class DIdRealtimeAvatarClient : IRealtimeAvatarClient
         {
             yield return new AvatarAudioFrame(
                 Data: frame.EncodedData,
-                Codec: frame.Format.FormatName ?? "OPUS",
+                Codec: frame.Format,
                 DurationMs: frame.DurationMs);
         }
     }

@@ -14,11 +14,11 @@ rm -rf Generated
 # merged into a single openapi.json file stored locally in this directory.
 # The specs are extracted from https://docs.d-id.com/reference/ embedded data.
 
-# Auth: --security-scheme overrides the spec's per-operation security with top-level HTTP bearer.
+# Auth: D-ID API keys are API_USERNAME:API_PASSWORD credentials sent via HTTP Basic.
 autosdk generate openapi.json \
   --namespace DId \
   --clientClassName DIdClient \
   --targetFramework net10.0 \
   --output Generated \
   --exclude-deprecated-operations \
-  --security-scheme Http:Header:Bearer
+  --security-scheme Http:Header:Basic

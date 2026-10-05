@@ -16,10 +16,10 @@ namespace DId
                 {                    new global::DId.EndPointAuthorizationRequirement
                     {
                         Type = "Http",
-                        SchemeId = "HttpBearer",
+                        SchemeId = "HttpBasic",
                         Location = "Header",
-                        Name = "Bearer",
-                        FriendlyName = "Bearer",
+                        Name = "Basic",
+                        FriendlyName = "Basic",
                     },
                 },
             };

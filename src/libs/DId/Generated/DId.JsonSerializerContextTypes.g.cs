@@ -6125,11 +6125,11 @@ namespace DId
         /// <summary>
         ///
         /// </summary>
-        public global::DId.InitStreamResponseJsep? Type1523 { get; set; }
+        public global::DId.InitStreamResponseOffer? Type1523 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::DId.InitStreamResponseJsepType? Type1524 { get; set; }
+        public global::DId.InitStreamResponseOfferType? Type1524 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -12165,11 +12165,11 @@ namespace DId
         /// <summary>
         ///
         /// </summary>
-        public global::DId.CreateStreamResponseJsep? Type3033 { get; set; }
+        public global::DId.CreateStreamResponseOffer? Type3033 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::DId.CreateStreamResponseJsepType? Type3034 { get; set; }
+        public global::DId.CreateStreamResponseOfferType? Type3034 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -13057,11 +13057,11 @@ namespace DId
         /// <summary>
         ///
         /// </summary>
-        public global::DId.CreateStreamResponseJsep2? Type3256 { get; set; }
+        public global::DId.CreateStreamResponseOffer2? Type3256 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::DId.CreateStreamResponseJsepType2? Type3257 { get; set; }
+        public global::DId.CreateStreamResponseOfferType2? Type3257 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -13133,11 +13133,11 @@ namespace DId
         /// <summary>
         ///
         /// </summary>
-        public global::DId.CreateStream1ResponseJsep? Type3275 { get; set; }
+        public global::DId.CreateStream1ResponseOffer? Type3275 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::DId.CreateStream1ResponseJsepType? Type3276 { get; set; }
+        public global::DId.CreateStream1ResponseOfferType? Type3276 { get; set; }
         /// <summary>
         ///
         /// </summary>

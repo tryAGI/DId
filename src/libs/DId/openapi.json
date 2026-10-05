@@ -22102,7 +22102,7 @@
                       "type": "string",
                       "description": "Id of the stream - should be returned as *path parameter* in all streaming request to the same stream"
                     },
-                    "jsep": {
+                    "offer": {
                       "description": "Jsep offer object used to create a peer connection",
                       "properties": {
                         "type": {
@@ -22165,7 +22165,7 @@
                   },
                   "required": [
                     "id",
-                    "jsep",
+                    "offer",
                     "ice_servers"
                   ],
                   "type": "object",
@@ -31730,7 +31730,7 @@
                       "type": "string",
                       "description": "Id of the stream - should be returned as *path parameter* in all streaming request to the same stream"
                     },
-                    "jsep": {
+                    "offer": {
                       "description": "Jsep offer object used to create a peer connection",
                       "properties": {
                         "type": {
@@ -31793,7 +31793,7 @@
                   },
                   "required": [
                     "id",
-                    "jsep",
+                    "offer",
                     "ice_servers"
                   ],
                   "type": "object",
@@ -33081,7 +33081,7 @@
                       "type": "string",
                       "description": "Id of the stream - should be returned as *path parameter* in all streaming request to the same stream"
                     },
-                    "jsep": {
+                    "offer": {
                       "description": "Jsep offer object used to create a peer connection",
                       "properties": {
                         "type": {
@@ -33144,7 +33144,7 @@
                   },
                   "required": [
                     "id",
-                    "jsep",
+                    "offer",
                     "ice_servers"
                   ],
                   "type": "object",
@@ -63256,7 +63256,7 @@
             "type": "string",
             "description": "Id of the stream - should be returned as *path parameter* in all streaming request to the same stream"
           },
-          "jsep": {
+          "offer": {
             "description": "Jsep offer object used to create a peer connection",
             "properties": {
               "type": {
@@ -63319,7 +63319,7 @@
         },
         "required": [
           "id",
-          "jsep",
+          "offer",
           "ice_servers"
         ],
         "type": "object",

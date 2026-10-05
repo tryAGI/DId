@@ -14,14 +14,11 @@ public partial class Tests
     public async Task Example_RealtimeSession()
     {
         //// Connect to a D-ID agent using a realtime WebRTC session.
-        //// This creates a live streaming connection via SIPSorcery's RTCPeerConnection
+        //// This creates a live streaming connection via tryAGI.WebRTC
         //// and the D-ID REST signaling endpoints (CreateStream, StartConnection, AddIceCandidate).
         using var client = GetAuthenticatedClient();
 
-        var agentId =
-            Environment.GetEnvironmentVariable("DID_AGENT_ID") is { Length: > 0 } agentIdValue
-                ? agentIdValue
-                : throw new AssertInconclusiveException("DID_AGENT_ID environment variable is not found.");
+        var agentId = await GetAgentIdAsync(client);
 
         //// Create a realtime session with the agent. The ConnectAsync method handles
         //// the full SDP/ICE negotiation — creating a stream, exchanging SDP offer/answer,

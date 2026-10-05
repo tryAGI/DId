@@ -56,8 +56,8 @@ namespace DId
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.ChatRequestChatMode), TypeInfoPropertyName = "ChatRequestChatMode2")]
     #pragma warning restore CS0618
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.CreateStreamResponse))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.CreateStreamResponseJsep))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.CreateStreamResponseJsepType), TypeInfoPropertyName = "CreateStreamResponseJsepType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.CreateStreamResponseOffer))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.CreateStreamResponseOfferType), TypeInfoPropertyName = "CreateStreamResponseOfferType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::DId.CreateStreamResponseIceServer>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.CreateStreamResponseIceServer))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.CreateStreamResponse2))]
@@ -100,7 +100,7 @@ namespace DId
     #pragma warning disable CS0618 // This registration names a deprecated API model.
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.ChatRequestChatMode?), TypeInfoPropertyName = "NullableChatRequestChatMode2")]
     #pragma warning restore CS0618
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.CreateStreamResponseJsepType?), TypeInfoPropertyName = "NullableCreateStreamResponseJsepType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.CreateStreamResponseOfferType?), TypeInfoPropertyName = "NullableCreateStreamResponseOfferType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.AllOf<global::DId.CreateVideoStreamResponseVariant12, global::DId.CreateVideoStreamResponseVariant22>?), TypeInfoPropertyName = "NullableAllOfCreateVideoStreamResponseVariant12CreateVideoStreamResponseVariant222")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.ChatResponseChatMode2?), TypeInfoPropertyName = "NullableChatResponseChatMode22")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.AnyOf<global::System.Collections.Generic.List<string>, string>))]
@@ -237,9 +237,9 @@ namespace DId
 
                     || typeToConvert == typeof(global::DId.ChatRequestChatMode?)
 
-                    || typeToConvert == typeof(global::DId.CreateStreamResponseJsepType)
+                    || typeToConvert == typeof(global::DId.CreateStreamResponseOfferType)
 
-                    || typeToConvert == typeof(global::DId.CreateStreamResponseJsepType?)
+                    || typeToConvert == typeof(global::DId.CreateStreamResponseOfferType?)
 
                     || typeToConvert == typeof(global::DId.ChatResponseChatMode2)
 
@@ -350,14 +350,14 @@ namespace DId
                     return new global::DId.JsonConverters.ChatRequestChatModeNullableJsonConverter();
                 }
 
-                if (typeToConvert == typeof(global::DId.CreateStreamResponseJsepType))
+                if (typeToConvert == typeof(global::DId.CreateStreamResponseOfferType))
                 {
-                    return new global::DId.JsonConverters.CreateStreamResponseJsepTypeJsonConverter();
+                    return new global::DId.JsonConverters.CreateStreamResponseOfferTypeJsonConverter();
                 }
 
-                if (typeToConvert == typeof(global::DId.CreateStreamResponseJsepType?))
+                if (typeToConvert == typeof(global::DId.CreateStreamResponseOfferType?))
                 {
-                    return new global::DId.JsonConverters.CreateStreamResponseJsepTypeNullableJsonConverter();
+                    return new global::DId.JsonConverters.CreateStreamResponseOfferTypeNullableJsonConverter();
                 }
 
                 if (typeToConvert == typeof(global::DId.ChatResponseChatMode2))

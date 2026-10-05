@@ -3942,8 +3942,8 @@ namespace DId
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.OmitRatingPayloadAgentIdOrChatId))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.PartialRatingPayload))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.InitStreamResponse))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.InitStreamResponseJsep))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.InitStreamResponseJsepType), TypeInfoPropertyName = "InitStreamResponseJsepType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.InitStreamResponseOffer))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.InitStreamResponseOfferType), TypeInfoPropertyName = "InitStreamResponseOfferType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::DId.InitStreamResponseIceServer>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.InitStreamResponseIceServer))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.InitVideoStreamRequest))]
@@ -7563,8 +7563,8 @@ namespace DId
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.DeleteRatingResponse))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.DeleteRatingResponse2))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.CreateStreamResponse))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.CreateStreamResponseJsep))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.CreateStreamResponseJsepType), TypeInfoPropertyName = "CreateStreamResponseJsepType2_3")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.CreateStreamResponseOffer))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.CreateStreamResponseOfferType), TypeInfoPropertyName = "CreateStreamResponseOfferType2_3")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::DId.CreateStreamResponseIceServer>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.CreateStreamResponseIceServer))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.CreateStreamResponse2))]
@@ -8086,8 +8086,8 @@ namespace DId
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.DeleteAnimationResponse3))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.DeleteAnimationResponse4))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.CreateStreamResponse3))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.CreateStreamResponseJsep2))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.CreateStreamResponseJsepType2), TypeInfoPropertyName = "CreateStreamResponseJsepType22")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.CreateStreamResponseOffer2))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.CreateStreamResponseOfferType2), TypeInfoPropertyName = "CreateStreamResponseOfferType22")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::DId.CreateStreamResponseIceServer2>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.CreateStreamResponseIceServer2))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.CreateStreamResponse4))]
@@ -8105,8 +8105,8 @@ namespace DId
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.DeleteStreamResponse7))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.DeleteStreamResponse8))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.CreateStream1Response))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.CreateStream1ResponseJsep))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.CreateStream1ResponseJsepType), TypeInfoPropertyName = "CreateStream1ResponseJsepType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.CreateStream1ResponseOffer))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.CreateStream1ResponseOfferType), TypeInfoPropertyName = "CreateStream1ResponseOfferType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::DId.CreateStream1ResponseIceServer>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.CreateStream1ResponseIceServer))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.CreateStream1Response2))]
@@ -9693,7 +9693,7 @@ namespace DId
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.AgentUpdateDtoLlmGoogleTemplate?), TypeInfoPropertyName = "NullableAgentUpdateDtoLlmGoogleTemplate2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.AgentUpdateDtoLlmGooglePromptCustomizationKnowledgeSource?), TypeInfoPropertyName = "NullableAgentUpdateDtoLlmGooglePromptCustomizationKnowledgeSource2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.AgentUpdateDtoLlmGoogleModel?), TypeInfoPropertyName = "NullableAgentUpdateDtoLlmGoogleModel2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.InitStreamResponseJsepType?), TypeInfoPropertyName = "NullableInitStreamResponseJsepType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.InitStreamResponseOfferType?), TypeInfoPropertyName = "NullableInitStreamResponseOfferType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.InitVideoStreamRequestCompatibilityMode?), TypeInfoPropertyName = "NullableInitVideoStreamRequestCompatibilityMode2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.CreateStartStreamRequestAnswerType?), TypeInfoPropertyName = "NullableCreateStartStreamRequestAnswerType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.CreateIceCandidateStreamRequest?), TypeInfoPropertyName = "NullableCreateIceCandidateStreamRequest2")]
@@ -11172,7 +11172,7 @@ namespace DId
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.DeleteResponseVariant1LlmGoogleModel?), TypeInfoPropertyName = "NullableDeleteResponseVariant1LlmGoogleModel2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.DeleteResponseVariant1Provider?), TypeInfoPropertyName = "NullableDeleteResponseVariant1Provider2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.DeleteResponseVariant1KnowledgeProvider?), TypeInfoPropertyName = "NullableDeleteResponseVariant1KnowledgeProvider2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.CreateStreamResponseJsepType?), TypeInfoPropertyName = "NullableCreateStreamResponseJsepType2_3")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.CreateStreamResponseOfferType?), TypeInfoPropertyName = "NullableCreateStreamResponseOfferType2_3")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.AllOf<global::DId.CreateVideoStreamResponseVariant12, global::DId.CreateVideoStreamResponseVariant22>?), TypeInfoPropertyName = "NullableAllOfCreateVideoStreamResponseVariant12CreateVideoStreamResponseVariant222")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.ChatResponseChatMode2?), TypeInfoPropertyName = "NullableChatResponseChatMode22")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.GetChatLogsResponseStatus?), TypeInfoPropertyName = "NullableGetChatLogsResponseStatus2")]
@@ -11214,8 +11214,8 @@ namespace DId
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.DeleteAnimationResponseStatus?), TypeInfoPropertyName = "NullableDeleteAnimationResponseStatus2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.AnyOf<global::DId.DeleteAnimationResponseConfigLogo, bool?>?), TypeInfoPropertyName = "NullableAnyOfDeleteAnimationResponseConfigLogoBoolean2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.DeleteAnimationResponseConfigResultFormat?), TypeInfoPropertyName = "NullableDeleteAnimationResponseConfigResultFormat2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.CreateStreamResponseJsepType2?), TypeInfoPropertyName = "NullableCreateStreamResponseJsepType22")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.CreateStream1ResponseJsepType?), TypeInfoPropertyName = "NullableCreateStream1ResponseJsepType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.CreateStreamResponseOfferType2?), TypeInfoPropertyName = "NullableCreateStreamResponseOfferType22")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.CreateStream1ResponseOfferType?), TypeInfoPropertyName = "NullableCreateStream1ResponseOfferType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<int>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::DId.ExpressionConfigExpression>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::DId.TalksConfigDriverExpressionsExpression>))]
@@ -14476,9 +14476,9 @@ namespace DId
 
                     || typeToConvert == typeof(global::DId.AgentUpdateDtoLlmGoogleModel?)
 
-                    || typeToConvert == typeof(global::DId.InitStreamResponseJsepType)
+                    || typeToConvert == typeof(global::DId.InitStreamResponseOfferType)
 
-                    || typeToConvert == typeof(global::DId.InitStreamResponseJsepType?)
+                    || typeToConvert == typeof(global::DId.InitStreamResponseOfferType?)
 
                     || typeToConvert == typeof(global::DId.InitVideoStreamRequestCompatibilityMode)
 
@@ -16528,9 +16528,9 @@ namespace DId
 
                     || typeToConvert == typeof(global::DId.DeleteResponseVariant1KnowledgeProvider?)
 
-                    || typeToConvert == typeof(global::DId.CreateStreamResponseJsepType)
+                    || typeToConvert == typeof(global::DId.CreateStreamResponseOfferType)
 
-                    || typeToConvert == typeof(global::DId.CreateStreamResponseJsepType?)
+                    || typeToConvert == typeof(global::DId.CreateStreamResponseOfferType?)
 
                     || typeToConvert == typeof(global::DId.ChatResponseChatMode2)
 
@@ -16680,13 +16680,13 @@ namespace DId
 
                     || typeToConvert == typeof(global::DId.DeleteAnimationResponseConfigResultFormat?)
 
-                    || typeToConvert == typeof(global::DId.CreateStreamResponseJsepType2)
+                    || typeToConvert == typeof(global::DId.CreateStreamResponseOfferType2)
 
-                    || typeToConvert == typeof(global::DId.CreateStreamResponseJsepType2?)
+                    || typeToConvert == typeof(global::DId.CreateStreamResponseOfferType2?)
 
-                    || typeToConvert == typeof(global::DId.CreateStream1ResponseJsepType)
+                    || typeToConvert == typeof(global::DId.CreateStream1ResponseOfferType)
 
-                    || typeToConvert == typeof(global::DId.CreateStream1ResponseJsepType?);
+                    || typeToConvert == typeof(global::DId.CreateStream1ResponseOfferType?);
             }
 
             public override global::System.Text.Json.Serialization.JsonConverter CreateConverter(
@@ -23083,14 +23083,14 @@ namespace DId
                     return new global::DId.JsonConverters.AgentUpdateDtoLlmGoogleModelNullableJsonConverter();
                 }
 
-                if (typeToConvert == typeof(global::DId.InitStreamResponseJsepType))
+                if (typeToConvert == typeof(global::DId.InitStreamResponseOfferType))
                 {
-                    return new global::DId.JsonConverters.InitStreamResponseJsepTypeJsonConverter();
+                    return new global::DId.JsonConverters.InitStreamResponseOfferTypeJsonConverter();
                 }
 
-                if (typeToConvert == typeof(global::DId.InitStreamResponseJsepType?))
+                if (typeToConvert == typeof(global::DId.InitStreamResponseOfferType?))
                 {
-                    return new global::DId.JsonConverters.InitStreamResponseJsepTypeNullableJsonConverter();
+                    return new global::DId.JsonConverters.InitStreamResponseOfferTypeNullableJsonConverter();
                 }
 
                 if (typeToConvert == typeof(global::DId.InitVideoStreamRequestCompatibilityMode))
@@ -28213,14 +28213,14 @@ namespace DId
                     return new global::DId.JsonConverters.DeleteResponseVariant1KnowledgeProviderNullableJsonConverter();
                 }
 
-                if (typeToConvert == typeof(global::DId.CreateStreamResponseJsepType))
+                if (typeToConvert == typeof(global::DId.CreateStreamResponseOfferType))
                 {
-                    return new global::DId.JsonConverters.CreateStreamResponseJsepTypeJsonConverter();
+                    return new global::DId.JsonConverters.CreateStreamResponseOfferTypeJsonConverter();
                 }
 
-                if (typeToConvert == typeof(global::DId.CreateStreamResponseJsepType?))
+                if (typeToConvert == typeof(global::DId.CreateStreamResponseOfferType?))
                 {
-                    return new global::DId.JsonConverters.CreateStreamResponseJsepTypeNullableJsonConverter();
+                    return new global::DId.JsonConverters.CreateStreamResponseOfferTypeNullableJsonConverter();
                 }
 
                 if (typeToConvert == typeof(global::DId.ChatResponseChatMode2))
@@ -28593,24 +28593,24 @@ namespace DId
                     return new global::DId.JsonConverters.DeleteAnimationResponseConfigResultFormatNullableJsonConverter();
                 }
 
-                if (typeToConvert == typeof(global::DId.CreateStreamResponseJsepType2))
+                if (typeToConvert == typeof(global::DId.CreateStreamResponseOfferType2))
                 {
-                    return new global::DId.JsonConverters.CreateStreamResponseJsepType2JsonConverter();
+                    return new global::DId.JsonConverters.CreateStreamResponseOfferType2JsonConverter();
                 }
 
-                if (typeToConvert == typeof(global::DId.CreateStreamResponseJsepType2?))
+                if (typeToConvert == typeof(global::DId.CreateStreamResponseOfferType2?))
                 {
-                    return new global::DId.JsonConverters.CreateStreamResponseJsepType2NullableJsonConverter();
+                    return new global::DId.JsonConverters.CreateStreamResponseOfferType2NullableJsonConverter();
                 }
 
-                if (typeToConvert == typeof(global::DId.CreateStream1ResponseJsepType))
+                if (typeToConvert == typeof(global::DId.CreateStream1ResponseOfferType))
                 {
-                    return new global::DId.JsonConverters.CreateStream1ResponseJsepTypeJsonConverter();
+                    return new global::DId.JsonConverters.CreateStream1ResponseOfferTypeJsonConverter();
                 }
 
-                if (typeToConvert == typeof(global::DId.CreateStream1ResponseJsepType?))
+                if (typeToConvert == typeof(global::DId.CreateStream1ResponseOfferType?))
                 {
-                    return new global::DId.JsonConverters.CreateStream1ResponseJsepTypeNullableJsonConverter();
+                    return new global::DId.JsonConverters.CreateStream1ResponseOfferTypeNullableJsonConverter();
                 }
                 throw new global::System.NotSupportedException($"No generated enum converter is registered for '{typeToConvert}'.");
             }

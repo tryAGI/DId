@@ -3,12 +3,13 @@
 #pragma warning disable CS3003 // Type is not CLS-compliant
 #pragma warning disable CA1819 // Properties should not return arrays
 #pragma warning disable CA1031 // Do not catch general exception types
+#pragma warning disable CA2000 // Peer ownership is transferred to the returned session
 
 using System.Net;
+using System.Net.Sockets;
 using System.Runtime.CompilerServices;
 using System.Threading.Channels;
-using SIPSorcery.Net;
-using SIPSorceryMedia.Abstractions;
+using tryAGI.WebRTC;
 
 namespace DId;
 
@@ -18,7 +19,7 @@ namespace DId;
 /// <param name="Timestamp">The RTP timestamp of the frame.</param>
 /// <param name="EncodedData">The encoded video frame payload (H.264 or VP8).</param>
 /// <param name="Format">The video format/codec of the frame.</param>
-public sealed record VideoFrame(uint Timestamp, byte[] EncodedData, VideoFormat Format);
+public sealed record VideoFrame(uint Timestamp, byte[] EncodedData, string Format);
 
 /// <summary>
 /// Represents a received audio frame from the D-ID avatar stream.
@@ -26,16 +27,16 @@ public sealed record VideoFrame(uint Timestamp, byte[] EncodedData, VideoFormat 
 /// <param name="EncodedData">The encoded audio payload.</param>
 /// <param name="Format">The audio format/codec of the frame.</param>
 /// <param name="DurationMs">Duration of the audio frame in milliseconds.</param>
-public sealed record AudioFrame(byte[] EncodedData, AudioFormat Format, uint DurationMs);
+public sealed record AudioFrame(byte[] EncodedData, string Format, uint DurationMs);
 
 /// <summary>
 /// Represents a realtime WebRTC session with a D-ID agent.
-/// Handles SDP/ICE negotiation using SIPSorcery and the D-ID REST signaling endpoints.
+/// Handles SDP/ICE negotiation using tryAGI.WebRTC and the D-ID REST signaling endpoints.
 /// </summary>
 public sealed class DIdRealtimeSession : IAsyncDisposable
 {
     private readonly DIdClient _client;
-    private readonly RTCPeerConnection _peerConnection;
+    private readonly PeerConnection _peerConnection;
     private readonly string _agentId;
     private readonly string _streamId;
     private readonly string? _sessionId;
@@ -60,12 +61,12 @@ public sealed class DIdRealtimeSession : IAsyncDisposable
             SingleReader = true,
             SingleWriter = true,
         });
-    private RTCDataChannel? _dataChannel;
+    private readonly CancellationTokenSource _lifetime = new();
     private bool _disposed;
 
     private DIdRealtimeSession(
         DIdClient client,
-        RTCPeerConnection peerConnection,
+        PeerConnection peerConnection,
         string agentId,
         string streamId,
         string? sessionId)
@@ -90,7 +91,7 @@ public sealed class DIdRealtimeSession : IAsyncDisposable
     /// <summary>
     /// Gets the current ICE connection state.
     /// </summary>
-    public RTCIceConnectionState IceConnectionState => _peerConnection.iceConnectionState;
+    public PeerConnectionState ConnectionState => _peerConnection.State;
 
     /// <summary>
     /// Creates and connects a realtime WebRTC session with a D-ID agent.
@@ -116,7 +117,7 @@ public sealed class DIdRealtimeSession : IAsyncDisposable
         // 1. Create stream — get SDP offer + ICE servers from D-ID
         var createResponse = await client.AgentsStreams.CreateStreamAsync(
             agentId: agentId,
-            compatibilityMode: compatibilityMode,
+            compatibilityMode: compatibilityMode ?? CreateStreamRequestCompatibilityMode.Off,
             streamWarmup: streamWarmup,
             sessionTimeout: sessionTimeout,
             cancellationToken: cancellationToken).ConfigureAwait(false);
@@ -124,119 +125,240 @@ public sealed class DIdRealtimeSession : IAsyncDisposable
         var streamId = createResponse.Id;
         var sessionId = createResponse.SessionId;
 
-        // 2. Configure ICE servers from D-ID response
-        var iceServers = new List<RTCIceServer>();
-        foreach (var server in createResponse.IceServers)
+        // 2. Create an answerer on the interface used for Internet traffic.
+        using var routeProbe = new Socket(AddressFamily.InterNetwork, SocketType.Dgram, ProtocolType.Udp);
+        routeProbe.Connect(new IPEndPoint(IPAddress.Parse("1.1.1.1"), 53));
+        var localAddress = ((IPEndPoint)routeProbe.LocalEndPoint!).Address;
+        var pc = new PeerConnection(new PeerConnectionOptions
         {
-            var urls = server.Urls.Value1 is { Count: > 0 }
-                ? server.Urls.Value1.ToArray()
-                : server.Urls.Value2 is { Length: > 0 }
-                    ? [server.Urls.Value2]
-                    : Array.Empty<string>();
-
-            if (urls.Length > 0)
-            {
-                iceServers.Add(new RTCIceServer
+            LocalEndPoint = new IPEndPoint(localAddress, 0),
+            AudioDirection = SdpDirection.ReceiveOnly,
+            VideoDirection = SdpDirection.ReceiveOnly,
+            VideoCodecs =
+            [
+                new()
                 {
-                    urls = string.Join(",", urls),
-                    username = server.Username,
-                    credential = server.Credential,
-                });
-            }
-        }
-
-        // 3. Create SIPSorcery peer connection
-        var config = new RTCConfiguration
-        {
-            iceServers = iceServers,
-        };
-        var pc = new RTCPeerConnection(config);
+                    Codec = VideoCodec.H264,
+                    PayloadType = 102,
+                    // D-ID omits H264 fmtp in its offer, which means RFC6184 defaults:
+                    // Baseline Level 1, packetization-mode 0, no level asymmetry.
+                    H264ProfileLevelId = "42000a",
+                    H264PacketizationMode = 0,
+                    H264LevelAsymmetryAllowed = false,
+                },
+            ],
+        });
 
         var session = new DIdRealtimeSession(client, pc, agentId, streamId, sessionId);
 
-        // 4. Wire up reconstructed video frame receiver
-        pc.OnVideoFrameReceived += (IPEndPoint _, uint timestamp, byte[] encodedData, VideoFormat format) =>
-        {
-            session._videoFrames.Writer.TryWrite(new VideoFrame(timestamp, encodedData, format));
-        };
+        _ = PumpMediaAsync(session, pc, session._lifetime.Token);
+        _ = PumpDataChannelsAsync(session, pc, session._lifetime.Token);
 
-        // 5. Wire up reconstructed audio frame receiver
-        pc.OnAudioFrameReceived += (EncodedAudioFrame frame) =>
-        {
-            session._audioFrames.Writer.TryWrite(new AudioFrame(
-                frame.EncodedAudio, frame.AudioFormat, frame.DurationMilliSeconds));
-        };
+        // 3. Accept D-ID's offer. H264 is requested explicitly for deterministic output.
+        _ = pc.CreateAnswer(createResponse.Offer.Sdp);
 
-        // 6. Wire up data channel
-        pc.ondatachannel += dc =>
-        {
-            session._dataChannel = dc;
-            dc.onmessage += (_, _, data) =>
-            {
-                var msg = System.Text.Encoding.UTF8.GetString(data);
-                session._dataMessages.Writer.TryWrite(msg);
-            };
-        };
-
-        // 7. Set remote SDP offer from D-ID
-        var remoteOffer = new RTCSessionDescriptionInit
-        {
-            type = RTCSdpType.offer,
-            sdp = createResponse.Jsep.Sdp,
-        };
-        pc.setRemoteDescription(remoteOffer);
-
-        // 8. Create SDP answer
-        var answer = pc.createAnswer();
-        await pc.setLocalDescription(answer).ConfigureAwait(false);
-
-        // 9. Send SDP answer back to D-ID
+        // 4. Publish the initial answer before gathering, matching browser trickle ICE flow.
         await client.AgentsStreams.StartConnectionAsync(
             agentId: agentId,
             streamId: streamId,
             answer: new StartConnectionRequestAnswer
             {
                 Type = StartConnectionRequestAnswerType.Answer,
-                Sdp = answer.sdp,
+                Sdp = pc.LocalDescription!,
             },
             sessionId: sessionId,
             cancellationToken: cancellationToken).ConfigureAwait(false);
 
-        // 10. Send ICE candidates as they are gathered
-        pc.onicecandidate += async candidate =>
+        var resolution = new IceServerResolutionOptions
         {
-            try
-            {
-                var iceRequest = new AllOf<AnyOf<AddIceCandidateRequestVariant12, object>?, AddIceCandidateRequest2>
-                {
-                    Value1 = new AnyOf<AddIceCandidateRequestVariant12, object>?
-                    (
-                        new AnyOf<AddIceCandidateRequestVariant12, object>(
-                            new AddIceCandidateRequestVariant12
-                            {
-                                Candidate = candidate.ToString() ?? string.Empty,
-                                SdpMid = candidate.sdpMid ?? "0",
-                                SdpMLineIndex = candidate.sdpMLineIndex,
-                            })
-                    ),
-                    Value2 = new AddIceCandidateRequest2
-                    {
-                        SessionId = sessionId,
-                    },
-                };
+            EndpointFilter = endpoint => IsAllowedIceEndpoint(endpoint.Address),
+            MaximumAddresses = 2,
+            ResolveTimeout = TimeSpan.FromSeconds(2),
+            GatherTimeout = TimeSpan.FromSeconds(5),
+        };
+        foreach (var server in createResponse.IceServers)
+        {
+            var urls = server.Urls.Value1 is { Count: > 0 }
+                ? server.Urls.Value1
+                : server.Urls.Value2 is { Length: > 0 }
+                    ? [server.Urls.Value2]
+                    : [];
 
-                await client.AgentsStreams.AddIceCandidateAsync(
-                    agentId: agentId,
-                    streamId: streamId,
-                    request: iceRequest).ConfigureAwait(false);
-            }
-            catch
+            foreach (var url in urls)
             {
-                // ICE candidate submission failures are non-fatal
+                if (pc.GetLocalCandidates().Count >= 4)
+                {
+                    break;
+                }
+
+                try
+                {
+                    var iceServer = IceServerUri.Parse(url);
+                    if (iceServer.IsTurn)
+                    {
+                        if (iceServer.Transport != TurnServerTransport.Udp ||
+                            string.IsNullOrWhiteSpace(server.Username) || string.IsNullOrWhiteSpace(server.Credential))
+                        {
+                            continue;
+                        }
+
+                        await pc.GatherRelayCandidateAsync(
+                            iceServer,
+                            new TurnCredentials(server.Username, server.Credential),
+                            resolution,
+                            cancellationToken: cancellationToken).ConfigureAwait(false);
+                    }
+                    else
+                    {
+                        await pc.GatherServerReflexiveCandidateAsync(
+                            iceServer,
+                            resolution,
+                            cancellationToken: cancellationToken).ConfigureAwait(false);
+                    }
+                }
+                catch (Exception) when (!cancellationToken.IsCancellationRequested)
+                {
+                    // D-ID can return redundant ICE servers; continue with another admitted path.
+                }
             }
+        }
+        pc.CompleteGathering();
+
+        // 5. Mirror the complete local candidate set through D-ID's trickle endpoint.
+        foreach (var candidate in pc.GetLocalCandidates())
+        {
+            await SubmitIceCandidateAsync(
+                client, agentId, streamId, sessionId, candidate, cancellationToken).ConfigureAwait(false);
+        }
+
+        try
+        {
+            // ConnectAsync returns only after the negotiated secure transports are ready.
+            await pc.ConnectAsync(cancellationToken).ConfigureAwait(false);
+            return session;
+        }
+        catch
+        {
+            await session.DisposeAsync().ConfigureAwait(false);
+            throw;
+        }
+    }
+
+    private static async Task SubmitIceCandidateAsync(
+        DIdClient client,
+        string agentId,
+        string streamId,
+        string? sessionId,
+        tryAGI.WebRTC.IceCandidate candidate,
+        CancellationToken cancellationToken)
+    {
+        var iceRequest = new AllOf<AnyOf<AddIceCandidateRequestVariant12, object>?, AddIceCandidateRequest2>
+        {
+            Value1 = new AnyOf<AddIceCandidateRequestVariant12, object>?
+            (
+                new AnyOf<AddIceCandidateRequestVariant12, object>(
+                    new AddIceCandidateRequestVariant12
+                    {
+                        Candidate = "candidate:" + candidate.ToSdpAttribute(),
+                        SdpMid = "0",
+                        SdpMLineIndex = 0,
+                    })
+            ),
+            Value2 = new AddIceCandidateRequest2
+            {
+                SessionId = sessionId,
+            },
         };
 
-        return session;
+        await client.AgentsStreams.AddIceCandidateAsync(
+            agentId: agentId,
+            streamId: streamId,
+            request: iceRequest,
+            cancellationToken: cancellationToken).ConfigureAwait(false);
+    }
+
+    private static async Task PumpMediaAsync(
+        DIdRealtimeSession session,
+        PeerConnection peer,
+        CancellationToken cancellationToken)
+    {
+        var audio = Task.Run(async () =>
+        {
+            await foreach (var packet in peer.ReceiveAudioAsync(cancellationToken).ConfigureAwait(false))
+            {
+                session._audioFrames.Writer.TryWrite(new AudioFrame(packet.Payload, "OPUS", 20));
+            }
+        }, cancellationToken);
+        var video = Task.Run(async () =>
+        {
+            await foreach (var frame in peer.ReceiveVideoAsync(cancellationToken).ConfigureAwait(false))
+            {
+                session._videoFrames.Writer.TryWrite(new VideoFrame(
+                    frame.Timestamp, frame.Payload, frame.Codec.ToString().ToUpperInvariant()));
+            }
+        }, cancellationToken);
+        await Task.WhenAll(audio, video).ConfigureAwait(false);
+    }
+
+    private static async Task PumpDataChannelsAsync(
+        DIdRealtimeSession session,
+        PeerConnection peer,
+        CancellationToken cancellationToken)
+    {
+        await foreach (var channel in peer.AcceptDataChannelsAsync(cancellationToken).ConfigureAwait(false))
+        {
+            await using (channel.ConfigureAwait(false))
+            {
+                await foreach (var message in channel.ReceiveMessagesAsync(cancellationToken).ConfigureAwait(false))
+                {
+                    if (message.Kind == DataChannelMessageKind.Text)
+                    {
+                        session._dataMessages.Writer.TryWrite(message.GetText());
+                    }
+                }
+            }
+        }
+    }
+
+    private static bool IsAllowedIceEndpoint(IPAddress address)
+    {
+        if (IPAddress.IsLoopback(address) || address.Equals(IPAddress.Any) || address.Equals(IPAddress.IPv6Any) ||
+            address.IsIPv6LinkLocal || address.IsIPv6Multicast || address.IsIPv6SiteLocal)
+        {
+            return false;
+        }
+
+        if (address.AddressFamily != AddressFamily.InterNetwork)
+        {
+            return true;
+        }
+
+        var bytes = address.GetAddressBytes();
+        return bytes[0] is not (0 or 10 or 127) &&
+            !(bytes[0] == 169 && bytes[1] == 254) &&
+            !(bytes[0] == 172 && bytes[1] is >= 16 and <= 31) &&
+            !(bytes[0] == 192 && bytes[1] == 168) &&
+            bytes[0] < 224;
+    }
+
+    /// <summary>
+    /// Streams the supplied text verbatim through the agent presenter.
+    /// </summary>
+    public async Task SpeakAsync(string text, CancellationToken cancellationToken = default)
+    {
+        ObjectDisposedException.ThrowIf(_disposed, this);
+        ArgumentException.ThrowIfNullOrWhiteSpace(text);
+
+        await _client.AgentsStreams.CreateVideoStreamAsync(
+            agentId: _agentId,
+            streamId: _streamId,
+            script: new CreateVideoStreamRequestScriptText2
+            {
+                Type = CreateVideoStreamRequestScriptTextType2.Text,
+                Input = text,
+            },
+            sessionId: _sessionId,
+            cancellationToken: cancellationToken).ConfigureAwait(false);
     }
 
     /// <summary>
@@ -325,13 +447,13 @@ public sealed class DIdRealtimeSession : IAsyncDisposable
 
         _disposed = true;
 
-        _peerConnection.close();
-        _peerConnection.Dispose();
+        await _lifetime.CancelAsync().ConfigureAwait(false);
+        await _peerConnection.DisposeAsync().ConfigureAwait(false);
+        _lifetime.Dispose();
 
         _videoFrames.Writer.TryComplete();
         _audioFrames.Writer.TryComplete();
         _dataMessages.Writer.TryComplete();
 
-        await Task.CompletedTask.ConfigureAwait(false);
     }
 }
