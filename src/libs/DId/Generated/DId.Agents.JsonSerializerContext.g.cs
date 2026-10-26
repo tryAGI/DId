@@ -75,6 +75,7 @@ namespace DId
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.Dictionary<string, string>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.Dictionary<string, object>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<object>), TypeInfoPropertyName = "SystemCollectionsGeneric_ObjectList")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(string[]))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Text.Json.JsonElement?))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(string))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(object))]
@@ -508,7 +509,6 @@ namespace DId
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.UpdateResponseVariant1PresenterVideoAvatarType), TypeInfoPropertyName = "UpdateResponseVariant1PresenterVideoAvatarType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.UpdateResponseVariant1PresenterVideoAvatarVoiceMicrosoft))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.UpdateResponseVariant1PresenterVideoAvatarVoiceMicrosoftType), TypeInfoPropertyName = "UpdateResponseVariant1PresenterVideoAvatarVoiceMicrosoftType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.UpdateResponseVariant1PresenterVideoAvatarVoiceMicrosoftVoiceConfig))]
     internal sealed partial class AgentsSourceGenerationContextChunk0 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }
@@ -582,6 +582,7 @@ namespace DId
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.AnyOf<global::DId.DeleteResponseVariant1PresenterVideoAvatarVoiceMicrosoft, global::DId.DeleteResponseVariant1PresenterVideoAvatarVoiceElevenLabs, global::DId.DeleteResponseVariant1PresenterVideoAvatarVoiceOpenAI>?), TypeInfoPropertyName = "DeleteResponseVariant1PresenterVideoAvatarVoiceOpenAI_06812a1a8a5a282f")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.AnyOf<global::DId.DeleteResponseVariant1PresenterExpressiveAvatarVoiceMicrosoft, global::DId.DeleteResponseVariant1PresenterExpressiveAvatarVoiceElevenLabs, global::DId.DeleteResponseVariant1PresenterExpressiveAvatarVoiceOpenAI>?), TypeInfoPropertyName = "DeleteResponseVariant1PresenterExpressiveAvatarVoiceOpenAI_2021cb313d88f460")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.AnyOf<global::DId.DeleteResponseVariant1LlmOpenAI, global::DId.DeleteResponseVariant1LlmVariant2, global::DId.DeleteResponseVariant1LlmVariant3, global::DId.DeleteResponseVariant1LlmDId, global::DId.DeleteResponseVariant1LlmGoogle>?), TypeInfoPropertyName = "DeleteResponseVariant1LlmGoogle_4b1a4b9c1a31bd1b")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.UpdateResponseVariant1PresenterVideoAvatarVoiceMicrosoftVoiceConfig))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.UpdateResponseVariant1PresenterVideoAvatarVoiceElevenLabs))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.UpdateResponseVariant1PresenterVideoAvatarVoiceElevenLabsType), TypeInfoPropertyName = "UpdateResponseVariant1PresenterVideoAvatarVoiceElevenLabsType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.UpdateResponseVariant1PresenterVideoAvatarVoiceElevenLabsVoiceConfig))]

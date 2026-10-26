@@ -302,6 +302,7 @@ namespace DId
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.Dictionary<string, string>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.Dictionary<string, object>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<object>), TypeInfoPropertyName = "SystemCollectionsGeneric_ObjectList")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(string[]))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Text.Json.JsonElement?))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.TalkStatus), TypeInfoPropertyName = "TalkStatus2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.CreateTalkResponseDto))]
@@ -508,7 +509,6 @@ namespace DId
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.ClipAgentPresenterVoiceOpenAIVoiceConfig))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.ClipAgentPresenterVoiceOpenAIType), TypeInfoPropertyName = "ClipAgentPresenterVoiceOpenAIType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.ClipAgentPresenterBackground))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.PickExpressiveAvatarExpressionIdOrSentiment))]
     internal sealed partial class SourceGenerationContextChunk0 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }
@@ -809,6 +809,7 @@ namespace DId
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.AnyOf<global::DId.GetAnimationResponseErrorVariant1, global::DId.GetAnimationResponseErrorVariant2, global::DId.GetAnimationResponseErrorVariant3, global::DId.GetAnimationResponseErrorVariant4, global::DId.GetAnimationResponseErrorVariant5, global::DId.GetAnimationResponseErrorVariant6>?), TypeInfoPropertyName = "GetAnimationResponseErrorVariant6_fd423e7d6c799e63")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.AnyOf<global::DId.DeleteAnimationResponseErrorVariant1, global::DId.DeleteAnimationResponseErrorVariant2, global::DId.DeleteAnimationResponseErrorVariant3, global::DId.DeleteAnimationResponseErrorVariant4, global::DId.DeleteAnimationResponseErrorVariant5, global::DId.DeleteAnimationResponseErrorVariant6>?), TypeInfoPropertyName = "DeleteAnimationResponseErrorVariant6_11f2a1c51fbdc385")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::DId.PickTranslationIdOrStatusOrGeneratedAtOrModifiedAtOrProofreadingOrLocaleOrLanguageOrCustomVoiceIdOrTranscriptionsTranscription>), TypeInfoPropertyName = "PickTranslationIdOrStatusOrGeneratedAtOrModifiedAtOrProofreadingOrLocaleOrLanguageOrCustomVoiceIdOrTran_5bf2aeaa72e081f2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.PickExpressiveAvatarExpressionIdOrSentiment))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.PickExpressiveAvatarExpressionIdOrSentimentSentiment), TypeInfoPropertyName = "PickExpressiveAvatarExpressionIdOrSentimentSentiment2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.ExpressiveAgentSentiment))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.ExpressiveAgentSentimentSentiment), TypeInfoPropertyName = "ExpressiveAgentSentimentSentiment2")]
@@ -1018,7 +1019,6 @@ namespace DId
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.AgentLlmVariant2PromptCustomization))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.AgentLlmVariant2PromptCustomizationKnowledgeSource), TypeInfoPropertyName = "AgentLlmVariant2PromptCustomizationKnowledgeSource2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.AgentLlmVariant3))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.AgentLlmVariant3Template), TypeInfoPropertyName = "AgentLlmVariant3Template2")]
     internal sealed partial class SourceGenerationContextChunk1 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }
@@ -1319,6 +1319,7 @@ namespace DId
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.AnyOf<global::DId.GetAnimationResponseErrorVariant1, global::DId.GetAnimationResponseErrorVariant2, global::DId.GetAnimationResponseErrorVariant3, global::DId.GetAnimationResponseErrorVariant4, global::DId.GetAnimationResponseErrorVariant5, global::DId.GetAnimationResponseErrorVariant6>?), TypeInfoPropertyName = "GetAnimationResponseErrorVariant6_fd423e7d6c799e63")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.AnyOf<global::DId.DeleteAnimationResponseErrorVariant1, global::DId.DeleteAnimationResponseErrorVariant2, global::DId.DeleteAnimationResponseErrorVariant3, global::DId.DeleteAnimationResponseErrorVariant4, global::DId.DeleteAnimationResponseErrorVariant5, global::DId.DeleteAnimationResponseErrorVariant6>?), TypeInfoPropertyName = "DeleteAnimationResponseErrorVariant6_11f2a1c51fbdc385")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::DId.PickTranslationIdOrStatusOrGeneratedAtOrModifiedAtOrProofreadingOrLocaleOrLanguageOrCustomVoiceIdOrTranscriptionsTranscription>), TypeInfoPropertyName = "PickTranslationIdOrStatusOrGeneratedAtOrModifiedAtOrProofreadingOrLocaleOrLanguageOrCustomVoiceIdOrTran_5bf2aeaa72e081f2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.AgentLlmVariant3Template), TypeInfoPropertyName = "AgentLlmVariant3Template2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.AgentLlmVariant3PromptCustomization))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.AgentLlmVariant3PromptCustomizationKnowledgeSource), TypeInfoPropertyName = "AgentLlmVariant3PromptCustomizationKnowledgeSource2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.AgentLlmDId))]
@@ -1528,7 +1529,6 @@ namespace DId
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.GetClipsResponseClipConfigResultFormat), TypeInfoPropertyName = "GetClipsResponseClipConfigResultFormat2_3")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.GetClipsResponseClipStatus), TypeInfoPropertyName = "GetClipsResponseClipStatus2_3")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.PickStreamVideoConfigExcludeKeyofStreamVideoConfigResolution))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.PickStreamVideoConfigExcludeKeyofStreamVideoConfigResolutionBackground))]
     internal sealed partial class SourceGenerationContextChunk2 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }
@@ -1829,6 +1829,7 @@ namespace DId
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.AnyOf<global::DId.GetAnimationResponseErrorVariant1, global::DId.GetAnimationResponseErrorVariant2, global::DId.GetAnimationResponseErrorVariant3, global::DId.GetAnimationResponseErrorVariant4, global::DId.GetAnimationResponseErrorVariant5, global::DId.GetAnimationResponseErrorVariant6>?), TypeInfoPropertyName = "GetAnimationResponseErrorVariant6_fd423e7d6c799e63")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.AnyOf<global::DId.DeleteAnimationResponseErrorVariant1, global::DId.DeleteAnimationResponseErrorVariant2, global::DId.DeleteAnimationResponseErrorVariant3, global::DId.DeleteAnimationResponseErrorVariant4, global::DId.DeleteAnimationResponseErrorVariant5, global::DId.DeleteAnimationResponseErrorVariant6>?), TypeInfoPropertyName = "DeleteAnimationResponseErrorVariant6_11f2a1c51fbdc385")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::DId.PickTranslationIdOrStatusOrGeneratedAtOrModifiedAtOrProofreadingOrLocaleOrLanguageOrCustomVoiceIdOrTranscriptionsTranscription>), TypeInfoPropertyName = "PickTranslationIdOrStatusOrGeneratedAtOrModifiedAtOrProofreadingOrLocaleOrLanguageOrCustomVoiceIdOrTran_5bf2aeaa72e081f2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.PickStreamVideoConfigExcludeKeyofStreamVideoConfigResolutionBackground))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.OmitStreamVideoConfigResolution))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.OmitStreamVideoConfigResolutionBackground))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.ClipStreamConfig))]
@@ -2038,7 +2039,6 @@ namespace DId
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.GetExpressiveAvatarsDtoAvatarSentimentVariant1VoiceMicrosoft))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.GetExpressiveAvatarsDtoAvatarSentimentVariant1VoiceMicrosoftType), TypeInfoPropertyName = "GetExpressiveAvatarsDtoAvatarSentimentVariant1VoiceMicrosoftType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.GetExpressiveAvatarsDtoAvatarSentimentVariant1VoiceMicrosoftVoiceConfig))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.GetExpressiveAvatarsDtoAvatarSentimentVariant1VoiceElevenLabs))]
     internal sealed partial class SourceGenerationContextChunk3 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }
@@ -2339,6 +2339,7 @@ namespace DId
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.AnyOf<global::DId.GetAnimationResponseErrorVariant1, global::DId.GetAnimationResponseErrorVariant2, global::DId.GetAnimationResponseErrorVariant3, global::DId.GetAnimationResponseErrorVariant4, global::DId.GetAnimationResponseErrorVariant5, global::DId.GetAnimationResponseErrorVariant6>?), TypeInfoPropertyName = "GetAnimationResponseErrorVariant6_fd423e7d6c799e63")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.AnyOf<global::DId.DeleteAnimationResponseErrorVariant1, global::DId.DeleteAnimationResponseErrorVariant2, global::DId.DeleteAnimationResponseErrorVariant3, global::DId.DeleteAnimationResponseErrorVariant4, global::DId.DeleteAnimationResponseErrorVariant5, global::DId.DeleteAnimationResponseErrorVariant6>?), TypeInfoPropertyName = "DeleteAnimationResponseErrorVariant6_11f2a1c51fbdc385")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::DId.PickTranslationIdOrStatusOrGeneratedAtOrModifiedAtOrProofreadingOrLocaleOrLanguageOrCustomVoiceIdOrTranscriptionsTranscription>), TypeInfoPropertyName = "PickTranslationIdOrStatusOrGeneratedAtOrModifiedAtOrProofreadingOrLocaleOrLanguageOrCustomVoiceIdOrTran_5bf2aeaa72e081f2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.GetExpressiveAvatarsDtoAvatarSentimentVariant1VoiceElevenLabs))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.GetExpressiveAvatarsDtoAvatarSentimentVariant1VoiceElevenLabsType), TypeInfoPropertyName = "GetExpressiveAvatarsDtoAvatarSentimentVariant1VoiceElevenLabsType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.GetExpressiveAvatarsDtoAvatarSentimentVariant1VoiceElevenLabsVoiceConfig))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.GetExpressiveAvatarsDtoAvatarSentimentVariant1VoiceAmazon))]
@@ -2548,7 +2549,6 @@ namespace DId
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.PickAgentExcludeKeyofAgentUserDataOrAdvancedSettingsOrEmbedOrAssetsTriggers))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.PickAgentExcludeKeyofAgentUserDataOrAdvancedSettingsOrEmbedOrAssetsTriggersChatEnd))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::DId.PickAgentExcludeKeyofAgentUserDataOrAdvancedSettingsOrEmbedOrAssetsTriggersChatEndWebhook>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.PickAgentExcludeKeyofAgentUserDataOrAdvancedSettingsOrEmbedOrAssetsTriggersChatEndWebhook))]
     internal sealed partial class SourceGenerationContextChunk4 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }
@@ -2849,6 +2849,7 @@ namespace DId
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.AnyOf<global::DId.GetAnimationResponseErrorVariant1, global::DId.GetAnimationResponseErrorVariant2, global::DId.GetAnimationResponseErrorVariant3, global::DId.GetAnimationResponseErrorVariant4, global::DId.GetAnimationResponseErrorVariant5, global::DId.GetAnimationResponseErrorVariant6>?), TypeInfoPropertyName = "GetAnimationResponseErrorVariant6_fd423e7d6c799e63")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.AnyOf<global::DId.DeleteAnimationResponseErrorVariant1, global::DId.DeleteAnimationResponseErrorVariant2, global::DId.DeleteAnimationResponseErrorVariant3, global::DId.DeleteAnimationResponseErrorVariant4, global::DId.DeleteAnimationResponseErrorVariant5, global::DId.DeleteAnimationResponseErrorVariant6>?), TypeInfoPropertyName = "DeleteAnimationResponseErrorVariant6_11f2a1c51fbdc385")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::DId.PickTranslationIdOrStatusOrGeneratedAtOrModifiedAtOrProofreadingOrLocaleOrLanguageOrCustomVoiceIdOrTranscriptionsTranscription>), TypeInfoPropertyName = "PickTranslationIdOrStatusOrGeneratedAtOrModifiedAtOrProofreadingOrLocaleOrLanguageOrCustomVoiceIdOrTran_5bf2aeaa72e081f2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.PickAgentExcludeKeyofAgentUserDataOrAdvancedSettingsOrEmbedOrAssetsTriggersChatEndWebhook))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.PickAgentExcludeKeyofAgentUserDataOrAdvancedSettingsOrEmbedOrAssetsTriggersChatEndWebhookAuth))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.OmitAgentUserDataOrAdvancedSettingsOrEmbedOrAssets))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.OmitAgentUserDataOrAdvancedSettingsOrEmbedOrAssetsPresenterPhotoAvatar))]
@@ -3058,7 +3059,6 @@ namespace DId
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.LLMConfigCreateDtoVariant2CustomBasic))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.LLMConfigCreateDtoVariant2CustomBasicType), TypeInfoPropertyName = "LLMConfigCreateDtoVariant2CustomBasicType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.LLMConfigCreateDtoVariant2CustomOAuth2))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.LLMConfigCreateDtoVariant2CustomOAuth2Type), TypeInfoPropertyName = "LLMConfigCreateDtoVariant2CustomOAuth2Type2")]
     internal sealed partial class SourceGenerationContextChunk5 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }
@@ -3359,6 +3359,7 @@ namespace DId
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.AnyOf<global::DId.GetAnimationResponseErrorVariant1, global::DId.GetAnimationResponseErrorVariant2, global::DId.GetAnimationResponseErrorVariant3, global::DId.GetAnimationResponseErrorVariant4, global::DId.GetAnimationResponseErrorVariant5, global::DId.GetAnimationResponseErrorVariant6>?), TypeInfoPropertyName = "GetAnimationResponseErrorVariant6_fd423e7d6c799e63")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.AnyOf<global::DId.DeleteAnimationResponseErrorVariant1, global::DId.DeleteAnimationResponseErrorVariant2, global::DId.DeleteAnimationResponseErrorVariant3, global::DId.DeleteAnimationResponseErrorVariant4, global::DId.DeleteAnimationResponseErrorVariant5, global::DId.DeleteAnimationResponseErrorVariant6>?), TypeInfoPropertyName = "DeleteAnimationResponseErrorVariant6_11f2a1c51fbdc385")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::DId.PickTranslationIdOrStatusOrGeneratedAtOrModifiedAtOrProofreadingOrLocaleOrLanguageOrCustomVoiceIdOrTranscriptionsTranscription>), TypeInfoPropertyName = "PickTranslationIdOrStatusOrGeneratedAtOrModifiedAtOrProofreadingOrLocaleOrLanguageOrCustomVoiceIdOrTran_5bf2aeaa72e081f2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.LLMConfigCreateDtoVariant2CustomOAuth2Type), TypeInfoPropertyName = "LLMConfigCreateDtoVariant2CustomOAuth2Type2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.LLMConfigCreateDtoVariant3))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.LLMConfigCreateDtoVariant3Template), TypeInfoPropertyName = "LLMConfigCreateDtoVariant3Template2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.LLMConfigCreateDtoVariant3PromptCustomization))]
@@ -3568,7 +3569,6 @@ namespace DId
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.PartialAgentPresenterVideoAvatar))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.PartialAgentPresenterVideoAvatarType), TypeInfoPropertyName = "PartialAgentPresenterVideoAvatarType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.PartialAgentPresenterVideoAvatarBackground))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.PartialAgentPresenterVideoAvatarVoiceMicrosoft))]
     internal sealed partial class SourceGenerationContextChunk6 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }
@@ -3869,6 +3869,7 @@ namespace DId
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.AnyOf<global::DId.GetAnimationResponseErrorVariant1, global::DId.GetAnimationResponseErrorVariant2, global::DId.GetAnimationResponseErrorVariant3, global::DId.GetAnimationResponseErrorVariant4, global::DId.GetAnimationResponseErrorVariant5, global::DId.GetAnimationResponseErrorVariant6>?), TypeInfoPropertyName = "GetAnimationResponseErrorVariant6_fd423e7d6c799e63")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.AnyOf<global::DId.DeleteAnimationResponseErrorVariant1, global::DId.DeleteAnimationResponseErrorVariant2, global::DId.DeleteAnimationResponseErrorVariant3, global::DId.DeleteAnimationResponseErrorVariant4, global::DId.DeleteAnimationResponseErrorVariant5, global::DId.DeleteAnimationResponseErrorVariant6>?), TypeInfoPropertyName = "DeleteAnimationResponseErrorVariant6_11f2a1c51fbdc385")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::DId.PickTranslationIdOrStatusOrGeneratedAtOrModifiedAtOrProofreadingOrLocaleOrLanguageOrCustomVoiceIdOrTranscriptionsTranscription>), TypeInfoPropertyName = "PickTranslationIdOrStatusOrGeneratedAtOrModifiedAtOrProofreadingOrLocaleOrLanguageOrCustomVoiceIdOrTran_5bf2aeaa72e081f2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.PartialAgentPresenterVideoAvatarVoiceMicrosoft))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.PartialAgentPresenterVideoAvatarVoiceMicrosoftType), TypeInfoPropertyName = "PartialAgentPresenterVideoAvatarVoiceMicrosoftType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.PartialAgentPresenterVideoAvatarVoiceMicrosoftVoiceConfig))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.PartialAgentPresenterVideoAvatarVoiceElevenLabs))]
@@ -4080,7 +4081,6 @@ namespace DId
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.ILogicalDocumentType), TypeInfoPropertyName = "ILogicalDocumentType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.ILogicalDocumentStatus), TypeInfoPropertyName = "ILogicalDocumentStatus2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.SupportedDocumentType), TypeInfoPropertyName = "SupportedDocumentType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.PickDocumentDataExcludeKeyofDocumentDataCreatedByOrParsedUrlOrStatusOrTypeOrErrorOrDocumentType))]
     internal sealed partial class SourceGenerationContextChunk7 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }
@@ -4381,6 +4381,7 @@ namespace DId
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.AnyOf<global::DId.GetAnimationResponseErrorVariant1, global::DId.GetAnimationResponseErrorVariant2, global::DId.GetAnimationResponseErrorVariant3, global::DId.GetAnimationResponseErrorVariant4, global::DId.GetAnimationResponseErrorVariant5, global::DId.GetAnimationResponseErrorVariant6>?), TypeInfoPropertyName = "GetAnimationResponseErrorVariant6_fd423e7d6c799e63")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.AnyOf<global::DId.DeleteAnimationResponseErrorVariant1, global::DId.DeleteAnimationResponseErrorVariant2, global::DId.DeleteAnimationResponseErrorVariant3, global::DId.DeleteAnimationResponseErrorVariant4, global::DId.DeleteAnimationResponseErrorVariant5, global::DId.DeleteAnimationResponseErrorVariant6>?), TypeInfoPropertyName = "DeleteAnimationResponseErrorVariant6_11f2a1c51fbdc385")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::DId.PickTranslationIdOrStatusOrGeneratedAtOrModifiedAtOrProofreadingOrLocaleOrLanguageOrCustomVoiceIdOrTranscriptionsTranscription>), TypeInfoPropertyName = "PickTranslationIdOrStatusOrGeneratedAtOrModifiedAtOrProofreadingOrLocaleOrLanguageOrCustomVoiceIdOrTran_5bf2aeaa72e081f2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.PickDocumentDataExcludeKeyofDocumentDataCreatedByOrParsedUrlOrStatusOrTypeOrErrorOrDocumentType))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.OmitDocumentDataCreatedByOrParsedUrlOrStatusOrTypeOrErrorOrDocumentType))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.CreateDocumentDto), TypeInfoPropertyName = "CreateDocumentDto2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.CreateDocumentDtoVariant1))]
@@ -4590,7 +4591,6 @@ namespace DId
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.InitClipStreamRequestCompatibilityMode), TypeInfoPropertyName = "InitClipStreamRequestCompatibilityMode2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.CreateClipStreamRequest))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.AnyOf<global::DId.CreateClipStreamRequestScriptVariant1, global::DId.CreateClipStreamRequestScriptVariant2>), TypeInfoPropertyName = "AnyOfCreateClipStreamRequestScriptVariant1CreateClipStreamRequestScriptVariant22")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.CreateClipStreamRequestScriptVariant1))]
     internal sealed partial class SourceGenerationContextChunk8 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }
@@ -4891,6 +4891,7 @@ namespace DId
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.AnyOf<global::DId.GetAnimationResponseErrorVariant1, global::DId.GetAnimationResponseErrorVariant2, global::DId.GetAnimationResponseErrorVariant3, global::DId.GetAnimationResponseErrorVariant4, global::DId.GetAnimationResponseErrorVariant5, global::DId.GetAnimationResponseErrorVariant6>?), TypeInfoPropertyName = "GetAnimationResponseErrorVariant6_fd423e7d6c799e63")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.AnyOf<global::DId.DeleteAnimationResponseErrorVariant1, global::DId.DeleteAnimationResponseErrorVariant2, global::DId.DeleteAnimationResponseErrorVariant3, global::DId.DeleteAnimationResponseErrorVariant4, global::DId.DeleteAnimationResponseErrorVariant5, global::DId.DeleteAnimationResponseErrorVariant6>?), TypeInfoPropertyName = "DeleteAnimationResponseErrorVariant6_11f2a1c51fbdc385")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::DId.PickTranslationIdOrStatusOrGeneratedAtOrModifiedAtOrProofreadingOrLocaleOrLanguageOrCustomVoiceIdOrTranscriptionsTranscription>), TypeInfoPropertyName = "PickTranslationIdOrStatusOrGeneratedAtOrModifiedAtOrProofreadingOrLocaleOrLanguageOrCustomVoiceIdOrTran_5bf2aeaa72e081f2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.CreateClipStreamRequestScriptVariant1))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.CreateClipStreamRequestScriptVariant1Type), TypeInfoPropertyName = "CreateClipStreamRequestScriptVariant1Type2_3")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.CreateClipStreamRequestScriptVariant1ProviderMicrosoft))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.CreateClipStreamRequestScriptVariant1ProviderMicrosoftType), TypeInfoPropertyName = "CreateClipStreamRequestScriptVariant1ProviderMicrosoftType2_3")]
@@ -5102,7 +5103,6 @@ namespace DId
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.CreateRequestLlmVariant1))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.CreateRequestLlmVariant1Provider), TypeInfoPropertyName = "CreateRequestLlmVariant1Provider2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.CreateRequestLlmVariant1Template), TypeInfoPropertyName = "CreateRequestLlmVariant1Template2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.CreateRequestLlmVariant1PromptCustomization))]
     internal sealed partial class SourceGenerationContextChunk9 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }
@@ -5403,6 +5403,7 @@ namespace DId
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.AnyOf<global::DId.GetAnimationResponseErrorVariant1, global::DId.GetAnimationResponseErrorVariant2, global::DId.GetAnimationResponseErrorVariant3, global::DId.GetAnimationResponseErrorVariant4, global::DId.GetAnimationResponseErrorVariant5, global::DId.GetAnimationResponseErrorVariant6>?), TypeInfoPropertyName = "GetAnimationResponseErrorVariant6_fd423e7d6c799e63")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.AnyOf<global::DId.DeleteAnimationResponseErrorVariant1, global::DId.DeleteAnimationResponseErrorVariant2, global::DId.DeleteAnimationResponseErrorVariant3, global::DId.DeleteAnimationResponseErrorVariant4, global::DId.DeleteAnimationResponseErrorVariant5, global::DId.DeleteAnimationResponseErrorVariant6>?), TypeInfoPropertyName = "DeleteAnimationResponseErrorVariant6_11f2a1c51fbdc385")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::DId.PickTranslationIdOrStatusOrGeneratedAtOrModifiedAtOrProofreadingOrLocaleOrLanguageOrCustomVoiceIdOrTranscriptionsTranscription>), TypeInfoPropertyName = "PickTranslationIdOrStatusOrGeneratedAtOrModifiedAtOrProofreadingOrLocaleOrLanguageOrCustomVoiceIdOrTran_5bf2aeaa72e081f2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.CreateRequestLlmVariant1PromptCustomization))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.CreateRequestLlmVariant1PromptCustomizationKnowledgeSource), TypeInfoPropertyName = "CreateRequestLlmVariant1PromptCustomizationKnowledgeSource2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.CreateRequestLlmVariant1Model), TypeInfoPropertyName = "CreateRequestLlmVariant1Model2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.CreateRequestLlmVariant2))]
@@ -5614,7 +5615,6 @@ namespace DId
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.CreateTalkStreamRequestScriptVariant1ProviderOpenAIVoiceConfig2))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.CreateTalkStreamRequestScriptVariant1ProviderOpenAIType2), TypeInfoPropertyName = "CreateTalkStreamRequestScriptVariant1ProviderOpenAIType22")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.CreateTalkStreamRequestScriptVariant22))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.CreateTalkStreamRequestScriptVariant2Type2), TypeInfoPropertyName = "CreateTalkStreamRequestScriptVariant2Type22")]
     internal sealed partial class SourceGenerationContextChunk10 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }
@@ -5915,6 +5915,7 @@ namespace DId
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.AnyOf<global::DId.GetAnimationResponseErrorVariant1, global::DId.GetAnimationResponseErrorVariant2, global::DId.GetAnimationResponseErrorVariant3, global::DId.GetAnimationResponseErrorVariant4, global::DId.GetAnimationResponseErrorVariant5, global::DId.GetAnimationResponseErrorVariant6>?), TypeInfoPropertyName = "GetAnimationResponseErrorVariant6_fd423e7d6c799e63")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.AnyOf<global::DId.DeleteAnimationResponseErrorVariant1, global::DId.DeleteAnimationResponseErrorVariant2, global::DId.DeleteAnimationResponseErrorVariant3, global::DId.DeleteAnimationResponseErrorVariant4, global::DId.DeleteAnimationResponseErrorVariant5, global::DId.DeleteAnimationResponseErrorVariant6>?), TypeInfoPropertyName = "DeleteAnimationResponseErrorVariant6_11f2a1c51fbdc385")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::DId.PickTranslationIdOrStatusOrGeneratedAtOrModifiedAtOrProofreadingOrLocaleOrLanguageOrCustomVoiceIdOrTranscriptionsTranscription>), TypeInfoPropertyName = "PickTranslationIdOrStatusOrGeneratedAtOrModifiedAtOrProofreadingOrLocaleOrLanguageOrCustomVoiceIdOrTran_5bf2aeaa72e081f2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.CreateTalkStreamRequestScriptVariant2Type2), TypeInfoPropertyName = "CreateTalkStreamRequestScriptVariant2Type22")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.AllOf<global::DId.CreateTalkStreamRequestConfigVariant12, global::DId.CreateTalkStreamRequestConfigVariant22>), TypeInfoPropertyName = "AllOfCreateTalkStreamRequestConfigVariant12CreateTalkStreamRequestConfigVariant222")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.CreateTalkStreamRequestConfigVariant12))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.CreateTalkStreamRequestConfigVariant1ResultFormat2), TypeInfoPropertyName = "CreateTalkStreamRequestConfigVariant1ResultFormat22")]
@@ -6126,7 +6127,6 @@ namespace DId
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.DeleteResponse3))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.Create1Response))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.Create1ResponseStatus), TypeInfoPropertyName = "Create1ResponseStatus2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.Create1ResponseObject), TypeInfoPropertyName = "Create1ResponseObject2")]
     internal sealed partial class SourceGenerationContextChunk11 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }
@@ -6427,6 +6427,7 @@ namespace DId
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.AnyOf<global::DId.GetAnimationResponseErrorVariant1, global::DId.GetAnimationResponseErrorVariant2, global::DId.GetAnimationResponseErrorVariant3, global::DId.GetAnimationResponseErrorVariant4, global::DId.GetAnimationResponseErrorVariant5, global::DId.GetAnimationResponseErrorVariant6>?), TypeInfoPropertyName = "GetAnimationResponseErrorVariant6_fd423e7d6c799e63")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.AnyOf<global::DId.DeleteAnimationResponseErrorVariant1, global::DId.DeleteAnimationResponseErrorVariant2, global::DId.DeleteAnimationResponseErrorVariant3, global::DId.DeleteAnimationResponseErrorVariant4, global::DId.DeleteAnimationResponseErrorVariant5, global::DId.DeleteAnimationResponseErrorVariant6>?), TypeInfoPropertyName = "DeleteAnimationResponseErrorVariant6_11f2a1c51fbdc385")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::DId.PickTranslationIdOrStatusOrGeneratedAtOrModifiedAtOrProofreadingOrLocaleOrLanguageOrCustomVoiceIdOrTranscriptionsTranscription>), TypeInfoPropertyName = "PickTranslationIdOrStatusOrGeneratedAtOrModifiedAtOrProofreadingOrLocaleOrLanguageOrCustomVoiceIdOrTran_5bf2aeaa72e081f2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.Create1ResponseObject), TypeInfoPropertyName = "Create1ResponseObject2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.Create1Response2))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.Create1Response3))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.Create1Response4))]
@@ -6636,7 +6637,6 @@ namespace DId
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.CreateResponseVariant1Triggers))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.CreateResponseVariant1TriggersChatEnd))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::DId.CreateResponseVariant1TriggersChatEndWebhook>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.CreateResponseVariant1TriggersChatEndWebhook))]
     internal sealed partial class SourceGenerationContextChunk12 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }
@@ -6937,6 +6937,7 @@ namespace DId
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.AnyOf<global::DId.GetAnimationResponseErrorVariant1, global::DId.GetAnimationResponseErrorVariant2, global::DId.GetAnimationResponseErrorVariant3, global::DId.GetAnimationResponseErrorVariant4, global::DId.GetAnimationResponseErrorVariant5, global::DId.GetAnimationResponseErrorVariant6>?), TypeInfoPropertyName = "GetAnimationResponseErrorVariant6_fd423e7d6c799e63")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.AnyOf<global::DId.DeleteAnimationResponseErrorVariant1, global::DId.DeleteAnimationResponseErrorVariant2, global::DId.DeleteAnimationResponseErrorVariant3, global::DId.DeleteAnimationResponseErrorVariant4, global::DId.DeleteAnimationResponseErrorVariant5, global::DId.DeleteAnimationResponseErrorVariant6>?), TypeInfoPropertyName = "DeleteAnimationResponseErrorVariant6_11f2a1c51fbdc385")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::DId.PickTranslationIdOrStatusOrGeneratedAtOrModifiedAtOrProofreadingOrLocaleOrLanguageOrCustomVoiceIdOrTranscriptionsTranscription>), TypeInfoPropertyName = "PickTranslationIdOrStatusOrGeneratedAtOrModifiedAtOrProofreadingOrLocaleOrLanguageOrCustomVoiceIdOrTran_5bf2aeaa72e081f2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.CreateResponseVariant1TriggersChatEndWebhook))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.CreateResponseVariant1TriggersChatEndWebhookAuth))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.CreateResponseVariant2))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.CreateResponseVariant2Metadata))]
@@ -7146,7 +7147,6 @@ namespace DId
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.UpdateResponseVariant1LlmOpenAIPromptCustomization))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.UpdateResponseVariant1LlmOpenAIPromptCustomizationKnowledgeSource), TypeInfoPropertyName = "UpdateResponseVariant1LlmOpenAIPromptCustomizationKnowledgeSource2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.UpdateResponseVariant1LlmOpenAIModel), TypeInfoPropertyName = "UpdateResponseVariant1LlmOpenAIModel2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.UpdateResponseVariant1LlmVariant2))]
     internal sealed partial class SourceGenerationContextChunk13 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }
@@ -7447,6 +7447,7 @@ namespace DId
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.AnyOf<global::DId.GetAnimationResponseErrorVariant1, global::DId.GetAnimationResponseErrorVariant2, global::DId.GetAnimationResponseErrorVariant3, global::DId.GetAnimationResponseErrorVariant4, global::DId.GetAnimationResponseErrorVariant5, global::DId.GetAnimationResponseErrorVariant6>?), TypeInfoPropertyName = "GetAnimationResponseErrorVariant6_fd423e7d6c799e63")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.AnyOf<global::DId.DeleteAnimationResponseErrorVariant1, global::DId.DeleteAnimationResponseErrorVariant2, global::DId.DeleteAnimationResponseErrorVariant3, global::DId.DeleteAnimationResponseErrorVariant4, global::DId.DeleteAnimationResponseErrorVariant5, global::DId.DeleteAnimationResponseErrorVariant6>?), TypeInfoPropertyName = "DeleteAnimationResponseErrorVariant6_11f2a1c51fbdc385")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::DId.PickTranslationIdOrStatusOrGeneratedAtOrModifiedAtOrProofreadingOrLocaleOrLanguageOrCustomVoiceIdOrTranscriptionsTranscription>), TypeInfoPropertyName = "PickTranslationIdOrStatusOrGeneratedAtOrModifiedAtOrProofreadingOrLocaleOrLanguageOrCustomVoiceIdOrTran_5bf2aeaa72e081f2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.UpdateResponseVariant1LlmVariant2))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.UpdateResponseVariant1LlmVariant2Template), TypeInfoPropertyName = "UpdateResponseVariant1LlmVariant2Template2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.UpdateResponseVariant1LlmVariant2PromptCustomization))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.UpdateResponseVariant1LlmVariant2PromptCustomizationKnowledgeSource), TypeInfoPropertyName = "UpdateResponseVariant1LlmVariant2PromptCustomizationKnowledgeSource2")]
@@ -7656,7 +7657,6 @@ namespace DId
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.UploadAnImageResponseFaceDetection))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.UploadAnImageResponse2))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.UploadAnImageResponse3))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.UploadAnImageResponse4))]
     internal sealed partial class SourceGenerationContextChunk14 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }
@@ -7957,6 +7957,7 @@ namespace DId
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.AnyOf<global::DId.GetAnimationResponseErrorVariant1, global::DId.GetAnimationResponseErrorVariant2, global::DId.GetAnimationResponseErrorVariant3, global::DId.GetAnimationResponseErrorVariant4, global::DId.GetAnimationResponseErrorVariant5, global::DId.GetAnimationResponseErrorVariant6>?), TypeInfoPropertyName = "GetAnimationResponseErrorVariant6_fd423e7d6c799e63")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.AnyOf<global::DId.DeleteAnimationResponseErrorVariant1, global::DId.DeleteAnimationResponseErrorVariant2, global::DId.DeleteAnimationResponseErrorVariant3, global::DId.DeleteAnimationResponseErrorVariant4, global::DId.DeleteAnimationResponseErrorVariant5, global::DId.DeleteAnimationResponseErrorVariant6>?), TypeInfoPropertyName = "DeleteAnimationResponseErrorVariant6_11f2a1c51fbdc385")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::DId.PickTranslationIdOrStatusOrGeneratedAtOrModifiedAtOrProofreadingOrLocaleOrLanguageOrCustomVoiceIdOrTranscriptionsTranscription>), TypeInfoPropertyName = "PickTranslationIdOrStatusOrGeneratedAtOrModifiedAtOrProofreadingOrLocaleOrLanguageOrCustomVoiceIdOrTran_5bf2aeaa72e081f2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.UploadAnImageResponse4))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.UploadAnImageResponse5))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.UploadAnImageResponse6))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.DeleteImageResponse))]
@@ -8166,7 +8167,6 @@ namespace DId
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.ScriptVariant2Type?), TypeInfoPropertyName = "NullableScriptVariant2Type2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(int?))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.ResultFormat?), TypeInfoPropertyName = "NullableResultFormat2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.Expression?), TypeInfoPropertyName = "NullableExpression2")]
     internal sealed partial class SourceGenerationContextChunk15 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }
@@ -8467,6 +8467,7 @@ namespace DId
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.AnyOf<global::DId.GetAnimationResponseErrorVariant1, global::DId.GetAnimationResponseErrorVariant2, global::DId.GetAnimationResponseErrorVariant3, global::DId.GetAnimationResponseErrorVariant4, global::DId.GetAnimationResponseErrorVariant5, global::DId.GetAnimationResponseErrorVariant6>?), TypeInfoPropertyName = "GetAnimationResponseErrorVariant6_fd423e7d6c799e63")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.AnyOf<global::DId.DeleteAnimationResponseErrorVariant1, global::DId.DeleteAnimationResponseErrorVariant2, global::DId.DeleteAnimationResponseErrorVariant3, global::DId.DeleteAnimationResponseErrorVariant4, global::DId.DeleteAnimationResponseErrorVariant5, global::DId.DeleteAnimationResponseErrorVariant6>?), TypeInfoPropertyName = "DeleteAnimationResponseErrorVariant6_11f2a1c51fbdc385")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::DId.PickTranslationIdOrStatusOrGeneratedAtOrModifiedAtOrProofreadingOrLocaleOrLanguageOrCustomVoiceIdOrTranscriptionsTranscription>), TypeInfoPropertyName = "PickTranslationIdOrStatusOrGeneratedAtOrModifiedAtOrProofreadingOrLocaleOrLanguageOrCustomVoiceIdOrTran_5bf2aeaa72e081f2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.Expression?), TypeInfoPropertyName = "NullableExpression2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.TimedExpressionExpression?), TypeInfoPropertyName = "NullableTimedExpressionExpression2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.ExpressionConfigExpressionExpression?), TypeInfoPropertyName = "NullableExpressionConfigExpressionExpression2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.TalksConfigResultFormat?), TypeInfoPropertyName = "NullableTalksConfigResultFormat2")]
@@ -8676,7 +8677,6 @@ namespace DId
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.ClipConfigResultFormat?), TypeInfoPropertyName = "NullableClipConfigResultFormat2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.WideCropType?), TypeInfoPropertyName = "NullableWideCropType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.RectangleCropType?), TypeInfoPropertyName = "NullableRectangleCropType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.Crop?), TypeInfoPropertyName = "NullableCrop2")]
     internal sealed partial class SourceGenerationContextChunk16 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }
@@ -8977,6 +8977,7 @@ namespace DId
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.AnyOf<global::DId.GetAnimationResponseErrorVariant1, global::DId.GetAnimationResponseErrorVariant2, global::DId.GetAnimationResponseErrorVariant3, global::DId.GetAnimationResponseErrorVariant4, global::DId.GetAnimationResponseErrorVariant5, global::DId.GetAnimationResponseErrorVariant6>?), TypeInfoPropertyName = "GetAnimationResponseErrorVariant6_fd423e7d6c799e63")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.AnyOf<global::DId.DeleteAnimationResponseErrorVariant1, global::DId.DeleteAnimationResponseErrorVariant2, global::DId.DeleteAnimationResponseErrorVariant3, global::DId.DeleteAnimationResponseErrorVariant4, global::DId.DeleteAnimationResponseErrorVariant5, global::DId.DeleteAnimationResponseErrorVariant6>?), TypeInfoPropertyName = "DeleteAnimationResponseErrorVariant6_11f2a1c51fbdc385")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::DId.PickTranslationIdOrStatusOrGeneratedAtOrModifiedAtOrProofreadingOrLocaleOrLanguageOrCustomVoiceIdOrTranscriptionsTranscription>), TypeInfoPropertyName = "PickTranslationIdOrStatusOrGeneratedAtOrModifiedAtOrProofreadingOrLocaleOrLanguageOrCustomVoiceIdOrTran_5bf2aeaa72e081f2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.Crop?), TypeInfoPropertyName = "NullableCrop2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.CropVariant1Type?), TypeInfoPropertyName = "NullableCropVariant1Type2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.CropVariant2Type?), TypeInfoPropertyName = "NullableCropVariant2Type2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.AnyOf<global::DId.ClipPresenterConfigCropVariant1, global::DId.ClipPresenterConfigCropVariant2>?), TypeInfoPropertyName = "NullableAnyOfClipPresenterConfigCropVariant1ClipPresenterConfigCropVariant22")]
@@ -9186,7 +9187,6 @@ namespace DId
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.OmitAgentUserDataOrAdvancedSettingsOrEmbedOrAssetsPresenterExpressiveAvatarVoiceElevenLabsType?), TypeInfoPropertyName = "NullableOmitAgentUserDataOrAdvancedSettingsOrEmbedOrAssetsPresenterExpressiveAvatarVoiceElevenLabsType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.OmitAgentUserDataOrAdvancedSettingsOrEmbedOrAssetsPresenterExpressiveAvatarVoiceElevenLabsAccess?), TypeInfoPropertyName = "NullableOmitAgentUserDataOrAdvancedSettingsOrEmbedOrAssetsPresenterExpressiveAvatarVoiceElevenLabsAccess2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.OmitAgentUserDataOrAdvancedSettingsOrEmbedOrAssetsPresenterExpressiveAvatarVoiceOpenAIType?), TypeInfoPropertyName = "NullableOmitAgentUserDataOrAdvancedSettingsOrEmbedOrAssetsPresenterExpressiveAvatarVoiceOpenAIType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.OmitAgentUserDataOrAdvancedSettingsOrEmbedOrAssetsLlmOpenAIProvider?), TypeInfoPropertyName = "NullableOmitAgentUserDataOrAdvancedSettingsOrEmbedOrAssetsLlmOpenAIProvider2")]
     internal sealed partial class SourceGenerationContextChunk17 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }
@@ -9487,6 +9487,7 @@ namespace DId
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.AnyOf<global::DId.GetAnimationResponseErrorVariant1, global::DId.GetAnimationResponseErrorVariant2, global::DId.GetAnimationResponseErrorVariant3, global::DId.GetAnimationResponseErrorVariant4, global::DId.GetAnimationResponseErrorVariant5, global::DId.GetAnimationResponseErrorVariant6>?), TypeInfoPropertyName = "GetAnimationResponseErrorVariant6_fd423e7d6c799e63")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.AnyOf<global::DId.DeleteAnimationResponseErrorVariant1, global::DId.DeleteAnimationResponseErrorVariant2, global::DId.DeleteAnimationResponseErrorVariant3, global::DId.DeleteAnimationResponseErrorVariant4, global::DId.DeleteAnimationResponseErrorVariant5, global::DId.DeleteAnimationResponseErrorVariant6>?), TypeInfoPropertyName = "DeleteAnimationResponseErrorVariant6_11f2a1c51fbdc385")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::DId.PickTranslationIdOrStatusOrGeneratedAtOrModifiedAtOrProofreadingOrLocaleOrLanguageOrCustomVoiceIdOrTranscriptionsTranscription>), TypeInfoPropertyName = "PickTranslationIdOrStatusOrGeneratedAtOrModifiedAtOrProofreadingOrLocaleOrLanguageOrCustomVoiceIdOrTran_5bf2aeaa72e081f2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.OmitAgentUserDataOrAdvancedSettingsOrEmbedOrAssetsLlmOpenAIProvider?), TypeInfoPropertyName = "NullableOmitAgentUserDataOrAdvancedSettingsOrEmbedOrAssetsLlmOpenAIProvider2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.OmitAgentUserDataOrAdvancedSettingsOrEmbedOrAssetsLlmOpenAITemplate?), TypeInfoPropertyName = "NullableOmitAgentUserDataOrAdvancedSettingsOrEmbedOrAssetsLlmOpenAITemplate2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.OmitAgentUserDataOrAdvancedSettingsOrEmbedOrAssetsLlmOpenAIPromptCustomizationKnowledgeSource?), TypeInfoPropertyName = "NullableOmitAgentUserDataOrAdvancedSettingsOrEmbedOrAssetsLlmOpenAIPromptCustomizationKnowledgeSource2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.OmitAgentUserDataOrAdvancedSettingsOrEmbedOrAssetsLlmOpenAIModel?), TypeInfoPropertyName = "NullableOmitAgentUserDataOrAdvancedSettingsOrEmbedOrAssetsLlmOpenAIModel2")]
@@ -9696,7 +9697,6 @@ namespace DId
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.InitStreamResponseOfferType?), TypeInfoPropertyName = "NullableInitStreamResponseOfferType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.InitVideoStreamRequestCompatibilityMode?), TypeInfoPropertyName = "NullableInitVideoStreamRequestCompatibilityMode2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.CreateStartStreamRequestAnswerType?), TypeInfoPropertyName = "NullableCreateStartStreamRequestAnswerType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.CreateIceCandidateStreamRequest?), TypeInfoPropertyName = "NullableCreateIceCandidateStreamRequest2")]
     internal sealed partial class SourceGenerationContextChunk18 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }
@@ -9997,6 +9997,7 @@ namespace DId
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.AnyOf<global::DId.GetAnimationResponseErrorVariant1, global::DId.GetAnimationResponseErrorVariant2, global::DId.GetAnimationResponseErrorVariant3, global::DId.GetAnimationResponseErrorVariant4, global::DId.GetAnimationResponseErrorVariant5, global::DId.GetAnimationResponseErrorVariant6>?), TypeInfoPropertyName = "GetAnimationResponseErrorVariant6_fd423e7d6c799e63")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.AnyOf<global::DId.DeleteAnimationResponseErrorVariant1, global::DId.DeleteAnimationResponseErrorVariant2, global::DId.DeleteAnimationResponseErrorVariant3, global::DId.DeleteAnimationResponseErrorVariant4, global::DId.DeleteAnimationResponseErrorVariant5, global::DId.DeleteAnimationResponseErrorVariant6>?), TypeInfoPropertyName = "DeleteAnimationResponseErrorVariant6_11f2a1c51fbdc385")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::DId.PickTranslationIdOrStatusOrGeneratedAtOrModifiedAtOrProofreadingOrLocaleOrLanguageOrCustomVoiceIdOrTranscriptionsTranscription>), TypeInfoPropertyName = "PickTranslationIdOrStatusOrGeneratedAtOrModifiedAtOrProofreadingOrLocaleOrLanguageOrCustomVoiceIdOrTran_5bf2aeaa72e081f2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.CreateIceCandidateStreamRequest?), TypeInfoPropertyName = "NullableCreateIceCandidateStreamRequest2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.AnyOf<global::DId.CreateIceCandidateStreamRequestVariant1Variant1, object>?), TypeInfoPropertyName = "NullableAnyOfCreateIceCandidateStreamRequestVariant1Variant1Object2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.CreateVideoStreamResponse?), TypeInfoPropertyName = "NullableCreateVideoStreamResponse2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.CreateStreamTextScriptType?), TypeInfoPropertyName = "NullableCreateStreamTextScriptType2")]
@@ -10208,7 +10209,6 @@ namespace DId
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.CreateRequestPresenterExpressiveAvatarVoiceMicrosoftType?), TypeInfoPropertyName = "NullableCreateRequestPresenterExpressiveAvatarVoiceMicrosoftType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.CreateRequestPresenterExpressiveAvatarVoiceElevenLabsType?), TypeInfoPropertyName = "NullableCreateRequestPresenterExpressiveAvatarVoiceElevenLabsType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.CreateRequestPresenterExpressiveAvatarVoiceElevenLabsAccess?), TypeInfoPropertyName = "NullableCreateRequestPresenterExpressiveAvatarVoiceElevenLabsAccess2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.CreateRequestPresenterExpressiveAvatarVoiceOpenAIType?), TypeInfoPropertyName = "NullableCreateRequestPresenterExpressiveAvatarVoiceOpenAIType2")]
     internal sealed partial class SourceGenerationContextChunk19 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }
@@ -10509,6 +10509,7 @@ namespace DId
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.AnyOf<global::DId.GetAnimationResponseErrorVariant1, global::DId.GetAnimationResponseErrorVariant2, global::DId.GetAnimationResponseErrorVariant3, global::DId.GetAnimationResponseErrorVariant4, global::DId.GetAnimationResponseErrorVariant5, global::DId.GetAnimationResponseErrorVariant6>?), TypeInfoPropertyName = "GetAnimationResponseErrorVariant6_fd423e7d6c799e63")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.AnyOf<global::DId.DeleteAnimationResponseErrorVariant1, global::DId.DeleteAnimationResponseErrorVariant2, global::DId.DeleteAnimationResponseErrorVariant3, global::DId.DeleteAnimationResponseErrorVariant4, global::DId.DeleteAnimationResponseErrorVariant5, global::DId.DeleteAnimationResponseErrorVariant6>?), TypeInfoPropertyName = "DeleteAnimationResponseErrorVariant6_11f2a1c51fbdc385")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::DId.PickTranslationIdOrStatusOrGeneratedAtOrModifiedAtOrProofreadingOrLocaleOrLanguageOrCustomVoiceIdOrTranscriptionsTranscription>), TypeInfoPropertyName = "PickTranslationIdOrStatusOrGeneratedAtOrModifiedAtOrProofreadingOrLocaleOrLanguageOrCustomVoiceIdOrTran_5bf2aeaa72e081f2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.CreateRequestPresenterExpressiveAvatarVoiceOpenAIType?), TypeInfoPropertyName = "NullableCreateRequestPresenterExpressiveAvatarVoiceOpenAIType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.CreateRequestLlmVariant1Provider?), TypeInfoPropertyName = "NullableCreateRequestLlmVariant1Provider2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.CreateRequestLlmVariant1Template?), TypeInfoPropertyName = "NullableCreateRequestLlmVariant1Template2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.CreateRequestLlmVariant1PromptCustomizationKnowledgeSource?), TypeInfoPropertyName = "NullableCreateRequestLlmVariant1PromptCustomizationKnowledgeSource2")]
@@ -10720,7 +10721,6 @@ namespace DId
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.CreateResponseVariant1PresenterExpressiveAvatarVoiceOpenAIType?), TypeInfoPropertyName = "NullableCreateResponseVariant1PresenterExpressiveAvatarVoiceOpenAIType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.CreateResponseVariant1LlmOpenAIProvider?), TypeInfoPropertyName = "NullableCreateResponseVariant1LlmOpenAIProvider2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.CreateResponseVariant1LlmOpenAITemplate?), TypeInfoPropertyName = "NullableCreateResponseVariant1LlmOpenAITemplate2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.CreateResponseVariant1LlmOpenAIPromptCustomizationKnowledgeSource?), TypeInfoPropertyName = "NullableCreateResponseVariant1LlmOpenAIPromptCustomizationKnowledgeSource2")]
     internal sealed partial class SourceGenerationContextChunk20 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }
@@ -11021,6 +11021,7 @@ namespace DId
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.AnyOf<global::DId.GetAnimationResponseErrorVariant1, global::DId.GetAnimationResponseErrorVariant2, global::DId.GetAnimationResponseErrorVariant3, global::DId.GetAnimationResponseErrorVariant4, global::DId.GetAnimationResponseErrorVariant5, global::DId.GetAnimationResponseErrorVariant6>?), TypeInfoPropertyName = "GetAnimationResponseErrorVariant6_fd423e7d6c799e63")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.AnyOf<global::DId.DeleteAnimationResponseErrorVariant1, global::DId.DeleteAnimationResponseErrorVariant2, global::DId.DeleteAnimationResponseErrorVariant3, global::DId.DeleteAnimationResponseErrorVariant4, global::DId.DeleteAnimationResponseErrorVariant5, global::DId.DeleteAnimationResponseErrorVariant6>?), TypeInfoPropertyName = "DeleteAnimationResponseErrorVariant6_11f2a1c51fbdc385")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::DId.PickTranslationIdOrStatusOrGeneratedAtOrModifiedAtOrProofreadingOrLocaleOrLanguageOrCustomVoiceIdOrTranscriptionsTranscription>), TypeInfoPropertyName = "PickTranslationIdOrStatusOrGeneratedAtOrModifiedAtOrProofreadingOrLocaleOrLanguageOrCustomVoiceIdOrTran_5bf2aeaa72e081f2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.CreateResponseVariant1LlmOpenAIPromptCustomizationKnowledgeSource?), TypeInfoPropertyName = "NullableCreateResponseVariant1LlmOpenAIPromptCustomizationKnowledgeSource2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.CreateResponseVariant1LlmOpenAIModel?), TypeInfoPropertyName = "NullableCreateResponseVariant1LlmOpenAIModel2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.CreateResponseVariant1LlmVariant2Template?), TypeInfoPropertyName = "NullableCreateResponseVariant1LlmVariant2Template2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.CreateResponseVariant1LlmVariant2PromptCustomizationKnowledgeSource?), TypeInfoPropertyName = "NullableCreateResponseVariant1LlmVariant2PromptCustomizationKnowledgeSource2")]
@@ -11230,7 +11231,6 @@ namespace DId
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::DId.AgentTriggersConfigChatEndWebhook>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::DId.AgentTriggersChatEndWebhook>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::DId.GetClipsPresentersResponsePresenter>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::DId.GetClipsDriversResponseClipsDriver>))]
     internal sealed partial class SourceGenerationContextChunk21 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }
@@ -11531,6 +11531,7 @@ namespace DId
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.AnyOf<global::DId.GetAnimationResponseErrorVariant1, global::DId.GetAnimationResponseErrorVariant2, global::DId.GetAnimationResponseErrorVariant3, global::DId.GetAnimationResponseErrorVariant4, global::DId.GetAnimationResponseErrorVariant5, global::DId.GetAnimationResponseErrorVariant6>?), TypeInfoPropertyName = "GetAnimationResponseErrorVariant6_fd423e7d6c799e63")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.AnyOf<global::DId.DeleteAnimationResponseErrorVariant1, global::DId.DeleteAnimationResponseErrorVariant2, global::DId.DeleteAnimationResponseErrorVariant3, global::DId.DeleteAnimationResponseErrorVariant4, global::DId.DeleteAnimationResponseErrorVariant5, global::DId.DeleteAnimationResponseErrorVariant6>?), TypeInfoPropertyName = "DeleteAnimationResponseErrorVariant6_11f2a1c51fbdc385")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::DId.PickTranslationIdOrStatusOrGeneratedAtOrModifiedAtOrProofreadingOrLocaleOrLanguageOrCustomVoiceIdOrTranscriptionsTranscription>), TypeInfoPropertyName = "PickTranslationIdOrStatusOrGeneratedAtOrModifiedAtOrProofreadingOrLocaleOrLanguageOrCustomVoiceIdOrTran_5bf2aeaa72e081f2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::DId.GetClipsDriversResponseClipsDriver>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::DId.GetClipsResponseClip>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::DId.GetTranslationResponseTranscription>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::DId.CreateTranslationResponseDtoTranslation>))]
