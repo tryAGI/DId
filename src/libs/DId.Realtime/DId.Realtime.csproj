@@ -11,7 +11,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\DId\DId.csproj" />
-    <PackageReference Include="tryAGI.WebRTC" Version="0.2.8" />
+    <PackageReference Include="tryAGI.WebRTC" Version="0.2.9" />
   </ItemGroup>
 
 </Project>
