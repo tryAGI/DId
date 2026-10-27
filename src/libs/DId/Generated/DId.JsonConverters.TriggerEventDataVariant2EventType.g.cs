@@ -18,7 +18,7 @@ namespace DId.JsonConverters
                     var stringValue = reader.GetString();
                     if (stringValue != null)
                     {
-                        return global::DId.TriggerEventDataVariant2EventTypeExtensions.ToEnum(stringValue) ?? default;
+                        return global::DId.TriggerEventDataVariant2EventTypeExtensions.ToEnum(stringValue) ?? throw new global::System.Text.Json.JsonException($"Unknown discriminator value '{stringValue}' for global::DId.TriggerEventDataVariant2EventType.");
                     }
 
                     break;

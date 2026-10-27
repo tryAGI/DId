@@ -12,8 +12,7 @@ namespace DId
         {
             return global::System.Text.Json.JsonSerializer.Serialize(
                 this,
-                this.GetType(),
-                jsonSerializerContext);
+                jsonSerializerContext.Options.GetTypeInfo(this.GetType()));
         }
 
         /// <summary>
@@ -21,7 +20,7 @@ namespace DId
         /// </summary>
         public string ToJson()
         {
-            return ToJson(global::DId.SourceGenerationContext.Default);
+            return ToJson(global::DId.SourceGenerationContextComponent_866A7AF6982A3AE8.Default);
         }
 
         /// <summary>
@@ -36,7 +35,7 @@ namespace DId
         {
             if (jsonSerializerOptions is null)
             {
-                return ToJson(global::DId.SourceGenerationContext.Default);
+                return ToJson(global::DId.SourceGenerationContextComponent_866A7AF6982A3AE8.Default);
             }
 
             return global::System.Text.Json.JsonSerializer.Serialize(
@@ -53,8 +52,7 @@ namespace DId
         {
             return global::System.Text.Json.JsonSerializer.Deserialize(
                 json,
-                typeof(global::DId.GetResponseVariant1Error),
-                jsonSerializerContext) as global::DId.GetResponseVariant1Error;
+                jsonSerializerContext.Options.GetTypeInfo(typeof(global::DId.GetResponseVariant1Error))) as global::DId.GetResponseVariant1Error;
         }
 
         /// <summary>
@@ -65,7 +63,7 @@ namespace DId
         {
             return FromJson(
                 json,
-                global::DId.SourceGenerationContext.Default);
+                global::DId.SourceGenerationContextComponent_866A7AF6982A3AE8.Default);
         }
 
         /// <summary>
@@ -83,7 +81,7 @@ namespace DId
             {
                 return FromJson(
                     json,
-                    global::DId.SourceGenerationContext.Default);
+                    global::DId.SourceGenerationContextComponent_866A7AF6982A3AE8.Default);
             }
 
             return global::System.Text.Json.JsonSerializer.Deserialize<global::DId.GetResponseVariant1Error>(
@@ -100,8 +98,7 @@ namespace DId
         {
             return (await global::System.Text.Json.JsonSerializer.DeserializeAsync(
                 jsonStream,
-                typeof(global::DId.GetResponseVariant1Error),
-                jsonSerializerContext).ConfigureAwait(false)) as global::DId.GetResponseVariant1Error;
+                jsonSerializerContext.Options.GetTypeInfo(typeof(global::DId.GetResponseVariant1Error))).ConfigureAwait(false)) as global::DId.GetResponseVariant1Error;
         }
 
         /// <summary>
@@ -112,7 +109,7 @@ namespace DId
         {
             return FromJsonStreamAsync(
                 jsonStream,
-                global::DId.SourceGenerationContext.Default);
+                global::DId.SourceGenerationContextComponent_866A7AF6982A3AE8.Default);
         }
 
         /// <summary>
@@ -130,7 +127,7 @@ namespace DId
             {
                 return FromJsonStreamAsync(
                     jsonStream,
-                    global::DId.SourceGenerationContext.Default);
+                    global::DId.SourceGenerationContextComponent_866A7AF6982A3AE8.Default);
             }
 
             return global::System.Text.Json.JsonSerializer.DeserializeAsync<global::DId.GetResponseVariant1Error?>(

@@ -84,6 +84,8 @@ namespace DId
             global::DId.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
+            var JsonSerializerContext = JsonSerializerContextProvider?.Value ??
+                global::DId.SourceGenerationContextOperation_9961BA41F1FD49FA.Default;
             PrepareArguments(
                 client: HttpClient);
             PrepareGetTalksArguments(

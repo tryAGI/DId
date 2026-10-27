@@ -12,8 +12,7 @@ namespace DId
         {
             return global::System.Text.Json.JsonSerializer.Serialize(
                 this,
-                this.GetType(),
-                jsonSerializerContext);
+                jsonSerializerContext.Options.GetTypeInfo(this.GetType()));
         }
 
         /// <summary>
@@ -53,8 +52,7 @@ namespace DId
         {
             return global::System.Text.Json.JsonSerializer.Deserialize(
                 json,
-                typeof(global::DId.AnyOf<T1, T2, T3, T4, T5, T6>),
-                jsonSerializerContext) as global::DId.AnyOf<T1, T2, T3, T4, T5, T6>?;
+                jsonSerializerContext.Options.GetTypeInfo(typeof(global::DId.AnyOf<T1, T2, T3, T4, T5, T6>))) as global::DId.AnyOf<T1, T2, T3, T4, T5, T6>?;
         }
 
         /// <summary>
@@ -100,8 +98,7 @@ namespace DId
         {
             return (await global::System.Text.Json.JsonSerializer.DeserializeAsync(
                 jsonStream,
-                typeof(global::DId.AnyOf<T1, T2, T3, T4, T5, T6>),
-                jsonSerializerContext).ConfigureAwait(false)) as global::DId.AnyOf<T1, T2, T3, T4, T5, T6>?;
+                jsonSerializerContext.Options.GetTypeInfo(typeof(global::DId.AnyOf<T1, T2, T3, T4, T5, T6>))).ConfigureAwait(false)) as global::DId.AnyOf<T1, T2, T3, T4, T5, T6>?;
         }
 
         /// <summary>

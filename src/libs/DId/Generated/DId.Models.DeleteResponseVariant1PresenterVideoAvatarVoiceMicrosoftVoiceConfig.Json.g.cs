@@ -12,8 +12,7 @@ namespace DId
         {
             return global::System.Text.Json.JsonSerializer.Serialize(
                 this,
-                this.GetType(),
-                jsonSerializerContext);
+                jsonSerializerContext.Options.GetTypeInfo(this.GetType()));
         }
 
         /// <summary>
@@ -21,7 +20,7 @@ namespace DId
         /// </summary>
         public string ToJson()
         {
-            return ToJson(global::DId.SourceGenerationContext.Default);
+            return ToJson(global::DId.SourceGenerationContextComponent_A814B725D429479B.Default);
         }
 
         /// <summary>
@@ -36,7 +35,7 @@ namespace DId
         {
             if (jsonSerializerOptions is null)
             {
-                return ToJson(global::DId.SourceGenerationContext.Default);
+                return ToJson(global::DId.SourceGenerationContextComponent_A814B725D429479B.Default);
             }
 
             return global::System.Text.Json.JsonSerializer.Serialize(
@@ -53,8 +52,7 @@ namespace DId
         {
             return global::System.Text.Json.JsonSerializer.Deserialize(
                 json,
-                typeof(global::DId.DeleteResponseVariant1PresenterVideoAvatarVoiceMicrosoftVoiceConfig),
-                jsonSerializerContext) as global::DId.DeleteResponseVariant1PresenterVideoAvatarVoiceMicrosoftVoiceConfig;
+                jsonSerializerContext.Options.GetTypeInfo(typeof(global::DId.DeleteResponseVariant1PresenterVideoAvatarVoiceMicrosoftVoiceConfig))) as global::DId.DeleteResponseVariant1PresenterVideoAvatarVoiceMicrosoftVoiceConfig;
         }
 
         /// <summary>
@@ -65,7 +63,7 @@ namespace DId
         {
             return FromJson(
                 json,
-                global::DId.SourceGenerationContext.Default);
+                global::DId.SourceGenerationContextComponent_A814B725D429479B.Default);
         }
 
         /// <summary>
@@ -83,7 +81,7 @@ namespace DId
             {
                 return FromJson(
                     json,
-                    global::DId.SourceGenerationContext.Default);
+                    global::DId.SourceGenerationContextComponent_A814B725D429479B.Default);
             }
 
             return global::System.Text.Json.JsonSerializer.Deserialize<global::DId.DeleteResponseVariant1PresenterVideoAvatarVoiceMicrosoftVoiceConfig>(
@@ -100,8 +98,7 @@ namespace DId
         {
             return (await global::System.Text.Json.JsonSerializer.DeserializeAsync(
                 jsonStream,
-                typeof(global::DId.DeleteResponseVariant1PresenterVideoAvatarVoiceMicrosoftVoiceConfig),
-                jsonSerializerContext).ConfigureAwait(false)) as global::DId.DeleteResponseVariant1PresenterVideoAvatarVoiceMicrosoftVoiceConfig;
+                jsonSerializerContext.Options.GetTypeInfo(typeof(global::DId.DeleteResponseVariant1PresenterVideoAvatarVoiceMicrosoftVoiceConfig))).ConfigureAwait(false)) as global::DId.DeleteResponseVariant1PresenterVideoAvatarVoiceMicrosoftVoiceConfig;
         }
 
         /// <summary>
@@ -112,7 +109,7 @@ namespace DId
         {
             return FromJsonStreamAsync(
                 jsonStream,
-                global::DId.SourceGenerationContext.Default);
+                global::DId.SourceGenerationContextComponent_A814B725D429479B.Default);
         }
 
         /// <summary>
@@ -130,7 +127,7 @@ namespace DId
             {
                 return FromJsonStreamAsync(
                     jsonStream,
-                    global::DId.SourceGenerationContext.Default);
+                    global::DId.SourceGenerationContextComponent_A814B725D429479B.Default);
             }
 
             return global::System.Text.Json.JsonSerializer.DeserializeAsync<global::DId.DeleteResponseVariant1PresenterVideoAvatarVoiceMicrosoftVoiceConfig?>(

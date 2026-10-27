@@ -1,237 +1,38 @@
 
 #nullable enable
-
 namespace DId
 {
-    /// <summary>
-    ///
-    /// </summary>
-    [global::System.Text.Json.Serialization.JsonSourceGenerationOptions(
-        DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull
-    )]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.Dictionary<string, string>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.Dictionary<string, object>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<object>), TypeInfoPropertyName = "SystemCollectionsGeneric_ObjectList")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(string[]))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Text.Json.JsonElement?))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(string))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(object))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(bool))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<string>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.CloneVoiceRequest))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(byte[]))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.VoicesProvider), TypeInfoPropertyName = "VoicesProvider2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::DId.VoicesResponseItem>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.VoicesResponseItem))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.VoicesResponseItemAccess), TypeInfoPropertyName = "VoicesResponseItemAccess2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.VoicesResponseItemConfig))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.VoicesResponseItemProvider), TypeInfoPropertyName = "VoicesResponseItemProvider2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::DId.VoicesResponseItemLanguage>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.VoicesResponseItemLanguage))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.VoicesResponseItemVoiceType), TypeInfoPropertyName = "VoicesResponseItemVoiceType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.VoicesResponse))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.CloneVoiceResponse))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.CloneVoiceResponse2))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.DeleteResponse6))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(bool?))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.VoicesProvider?), TypeInfoPropertyName = "NullableVoicesProvider2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.VoicesResponseItemAccess?), TypeInfoPropertyName = "NullableVoicesResponseItemAccess2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.VoicesResponseItemProvider?), TypeInfoPropertyName = "NullableVoicesResponseItemProvider2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.VoicesResponseItemVoiceType?), TypeInfoPropertyName = "NullableVoicesResponseItemVoiceType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<string>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::DId.VoicesResponseItem>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::DId.VoicesResponseItemLanguage>))]
-    internal sealed partial class VoicesSourceGenerationContextChunk0 : global::System.Text.Json.Serialization.JsonSerializerContext
-    {
-    }
-    /// <summary>
-    ///
-    /// </summary>
+    /// <summary>Source-generated JSON metadata for this scope.</summary>
     public sealed partial class VoicesSourceGenerationContext : global::System.Text.Json.Serialization.JsonSerializerContext
     {
-        private static readonly global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver Resolver = new LazyChunkResolver();
 
-        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
-        internal static global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver TypeInfoResolver => Resolver;
-
-
-        private static readonly global::System.Text.Json.JsonSerializerOptions DefaultOptions = CreateDefaultOptions();
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static VoicesSourceGenerationContext Default { get; } = new(DefaultOptions);
-
-        private VoicesSourceGenerationContext(global::System.Text.Json.JsonSerializerOptions options)
-            : base(options)
+        internal static global::DId.SourceGenerationContextMetadataScope MetadataScope => ScopeHolder.Value;
+        internal static global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver TypeInfoResolver => MetadataScope;
+        private static class ScopeHolder
         {
+            internal static readonly global::DId.SourceGenerationContextMetadataScope Value = new(
+                null,
+                new global::System.Func<global::DId.SourceGenerationContextMetadataScope>[] {
+                    static () => global::DId.SourceGenerationContextComponent_AE91A419726E46A4.MetadataScope,                    static () => global::DId.SourceGenerationContextComponent_2FCEEEA289CA198B.MetadataScope,                    static () => global::DId.SourceGenerationContextComponent_27CDCF40751D8981.MetadataScope,                    static () => global::DId.SourceGenerationContextComponent_473287F8298DBA71.MetadataScope,                    static () => global::DId.SourceGenerationContextComponent_C5D3DBFC94759AD2.MetadataScope,                    static () => global::DId.SourceGenerationContextComponent_BD7B9E59CE9A30D1.MetadataScope,                    static () => global::DId.SourceGenerationContextComponent_579F5B887E850947.MetadataScope,                    static () => global::DId.SourceGenerationContextComponent_D10EC2B735AC6213.MetadataScope,                    static () => global::DId.SourceGenerationContextComponent_6AA5CAA430FAB95A.MetadataScope,                    static () => global::DId.SourceGenerationContextComponent_0DCD4FC9A07B29A3.MetadataScope,                    static () => global::DId.SourceGenerationContextComponent_89BCD3C7FAF0222D.MetadataScope,                    static () => global::DId.SourceGenerationContextComponent_DD1AE1F5085B8504.MetadataScope,                    static () => global::DId.SourceGenerationContextComponent_1D3A95697196FE13.MetadataScope,                    static () => global::DId.SourceGenerationContextComponent_1009FDE6F5704FB4.MetadataScope,
+                }, null);
         }
-
+        private static class DefaultHolder
+        {
+            internal static readonly global::System.Text.Json.JsonSerializerOptions Options = MetadataScope.CreateOptions();
+            internal static readonly VoicesSourceGenerationContext Instance = new(Options);
+        }
+        /// <summary>The default context for this scope.</summary>
+        public static VoicesSourceGenerationContext Default => DefaultHolder.Instance;
+        private VoicesSourceGenerationContext(global::System.Text.Json.JsonSerializerOptions options) : base(options) { }
         /// <inheritdoc />
-        protected override global::System.Text.Json.JsonSerializerOptions? GeneratedSerializerOptions => DefaultOptions;
-
+        protected override global::System.Text.Json.JsonSerializerOptions? GeneratedSerializerOptions => DefaultHolder.Options;
         /// <inheritdoc />
-        public override global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? GetTypeInfo(global::System.Type type)
-        {
-            return Resolver.GetTypeInfo(type, Options);
-        }
+        public override global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? GetTypeInfo(global::System.Type type) =>
+            MetadataScope.GetTypeInfo(type, Options);
 
-        /// <summary>
-        /// Adds this package's converters to <paramref name="options"/>.
-        /// </summary>
-        /// <remarks>
-        /// A converter has to be on the options a chained resolver builds its JsonTypeInfo against,
-        /// and a context resolves types from every package below it. Each package contributes only
-        /// what it owns and calls down the chain for the rest, so the family's converter table is
-        /// written once rather than copied into all of them.
-        /// </remarks>
+        /// <summary>Adds converters required by this scope.</summary>
         [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
-        public static void AddConverters(global::System.Text.Json.JsonSerializerOptions options)
-        {
-            options.Converters.Add(new global::DId.JsonConverters.AnyOfJsonConverter<global::System.Collections.Generic.IList<string>, string>());
-            options.Converters.Add(new global::DId.JsonConverters.AnyOfJsonConverter<string, bool?>());
-            options.Converters.Add(new global::DId.JsonConverters.AnyOfJsonConverter<string, bool?>());
-            options.Converters.Add(new global::DId.JsonConverters.AnyOfJsonConverter<string, bool?>());
-            options.Converters.Add(new global::DId.JsonConverters.AnyOfJsonConverter<string, bool?>());
-            options.Converters.Add(new global::DId.JsonConverters.AnyOfJsonConverter<string, bool?>());
-            options.Converters.Add(new global::DId.JsonConverters.AnyOfJsonConverter<string, bool?>());
-            options.Converters.Add(new global::DId.JsonConverters.AnyOfJsonConverter<global::System.Collections.Generic.IList<string>, string>());
-            options.Converters.Add(new global::DId.JsonConverters.AnyOfJsonConverter<string, bool?>());
-            options.Converters.Add(new global::DId.JsonConverters.AnyOfJsonConverter<string, bool?>());
-            options.Converters.Add(new global::DId.JsonConverters.AnyOfJsonConverter<string, bool?>());
-            options.Converters.Add(new global::DId.JsonConverters.AnyOfJsonConverter<string, bool?>());
-            options.Converters.Add(new global::DId.JsonConverters.AnyOfJsonConverter<global::System.Collections.Generic.IList<string>, string>());
-            options.Converters.Add(new global::DId.JsonConverters.AnyOfJsonConverter<global::System.Collections.Generic.IList<string>, string>());
-            options.Converters.Add(new global::DId.JsonConverters.AnyOfJsonConverter<global::System.Collections.Generic.IList<string>, string>());
-            options.Converters.Add(new global::DId.JsonConverters.UnixTimestampJsonConverter());
-            options.Converters.Add(new LazyEnumJsonConverterFactory());
-        }
+        public static void AddConverters(global::System.Text.Json.JsonSerializerOptions options) => MetadataScope.AddConverters(options);
 
-        private static global::System.Text.Json.JsonSerializerOptions CreateDefaultOptions()
-        {
-            var options = new global::System.Text.Json.JsonSerializerOptions
-            {
-                DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull,
-                TypeInfoResolver = Resolver,
-            };
-            AddConverters(options);
-
-            return options;
-        }
-
-
-        private sealed class LazyEnumJsonConverterFactory : global::System.Text.Json.Serialization.JsonConverterFactory
-        {
-            public override bool CanConvert(global::System.Type typeToConvert)
-            {
-                return
-                    typeToConvert == typeof(global::DId.VoicesProvider)
-
-                    || typeToConvert == typeof(global::DId.VoicesProvider?)
-
-                    || typeToConvert == typeof(global::DId.VoicesResponseItemAccess)
-
-                    || typeToConvert == typeof(global::DId.VoicesResponseItemAccess?)
-
-                    || typeToConvert == typeof(global::DId.VoicesResponseItemProvider)
-
-                    || typeToConvert == typeof(global::DId.VoicesResponseItemProvider?)
-
-                    || typeToConvert == typeof(global::DId.VoicesResponseItemVoiceType)
-
-                    || typeToConvert == typeof(global::DId.VoicesResponseItemVoiceType?);
-            }
-
-            public override global::System.Text.Json.Serialization.JsonConverter CreateConverter(
-                global::System.Type typeToConvert,
-                global::System.Text.Json.JsonSerializerOptions options)
-            {
-                if (typeToConvert == typeof(global::DId.VoicesProvider))
-                {
-                    return new global::DId.JsonConverters.VoicesProviderJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::DId.VoicesProvider?))
-                {
-                    return new global::DId.JsonConverters.VoicesProviderNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::DId.VoicesResponseItemAccess))
-                {
-                    return new global::DId.JsonConverters.VoicesResponseItemAccessJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::DId.VoicesResponseItemAccess?))
-                {
-                    return new global::DId.JsonConverters.VoicesResponseItemAccessNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::DId.VoicesResponseItemProvider))
-                {
-                    return new global::DId.JsonConverters.VoicesResponseItemProviderJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::DId.VoicesResponseItemProvider?))
-                {
-                    return new global::DId.JsonConverters.VoicesResponseItemProviderNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::DId.VoicesResponseItemVoiceType))
-                {
-                    return new global::DId.JsonConverters.VoicesResponseItemVoiceTypeJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::DId.VoicesResponseItemVoiceType?))
-                {
-                    return new global::DId.JsonConverters.VoicesResponseItemVoiceTypeNullableJsonConverter();
-                }
-                throw new global::System.NotSupportedException($"No generated enum converter is registered for '{typeToConvert}'.");
-            }
-        }
-
-        private sealed class LazyChunkResolver : global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver
-        {
-            private readonly object _gate = new();
-            private readonly global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver?[] _resolvers = new global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver?[1];
-
-            public global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? GetTypeInfo(
-                global::System.Type type,
-                global::System.Text.Json.JsonSerializerOptions options)
-            {
-                for (var index = 0; index < _resolvers.Length; index++)
-                {
-                    var typeInfo = GetResolver(index).GetTypeInfo(type, options);
-                    if (typeInfo is not null)
-                    {
-                        return typeInfo;
-                    }
-                }
-
-                return null;
-            }
-
-            private global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver GetResolver(int index)
-            {
-                var resolver = global::System.Threading.Volatile.Read(ref _resolvers[index]);
-                if (resolver is not null)
-                {
-                    return resolver;
-                }
-
-                lock (_gate)
-                {
-                    return _resolvers[index] ??= CreateResolver(index);
-                }
-            }
-
-            private static global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver CreateResolver(int index)
-            {
-                return index switch
-                {
-                    0 => new VoicesSourceGenerationContextChunk0(new global::System.Text.Json.JsonSerializerOptions()),
-                    _ => throw new global::System.ArgumentOutOfRangeException(nameof(index)),
-                };
-            }
-        }
     }
 }

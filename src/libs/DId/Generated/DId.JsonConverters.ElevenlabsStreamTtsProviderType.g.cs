@@ -18,7 +18,7 @@ namespace DId.JsonConverters
                     var stringValue = reader.GetString();
                     if (stringValue != null)
                     {
-                        return global::DId.ElevenlabsStreamTtsProviderTypeExtensions.ToEnum(stringValue) ?? default;
+                        return global::DId.ElevenlabsStreamTtsProviderTypeExtensions.ToEnum(stringValue) ?? throw new global::System.Text.Json.JsonException($"Unknown discriminator value '{stringValue}' for global::DId.ElevenlabsStreamTtsProviderType.");
                     }
 
                     break;

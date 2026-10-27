@@ -12,8 +12,7 @@ namespace DId
         {
             return global::System.Text.Json.JsonSerializer.Serialize(
                 this,
-                this.GetType(),
-                jsonSerializerContext);
+                jsonSerializerContext.Options.GetTypeInfo(this.GetType()));
         }
 
         /// <summary>
@@ -21,7 +20,7 @@ namespace DId
         /// </summary>
         public string ToJson()
         {
-            return ToJson(global::DId.SourceGenerationContext.Default);
+            return ToJson(global::DId.SourceGenerationContextComponent_5C29C5BB3A8180B9.Default);
         }
 
         /// <summary>
@@ -36,7 +35,7 @@ namespace DId
         {
             if (jsonSerializerOptions is null)
             {
-                return ToJson(global::DId.SourceGenerationContext.Default);
+                return ToJson(global::DId.SourceGenerationContextComponent_5C29C5BB3A8180B9.Default);
             }
 
             return global::System.Text.Json.JsonSerializer.Serialize(
@@ -53,8 +52,7 @@ namespace DId
         {
             return global::System.Text.Json.JsonSerializer.Deserialize(
                 json,
-                typeof(global::DId.AgentCreateDtoLlmVariant3PromptCustomization),
-                jsonSerializerContext) as global::DId.AgentCreateDtoLlmVariant3PromptCustomization;
+                jsonSerializerContext.Options.GetTypeInfo(typeof(global::DId.AgentCreateDtoLlmVariant3PromptCustomization))) as global::DId.AgentCreateDtoLlmVariant3PromptCustomization;
         }
 
         /// <summary>
@@ -65,7 +63,7 @@ namespace DId
         {
             return FromJson(
                 json,
-                global::DId.SourceGenerationContext.Default);
+                global::DId.SourceGenerationContextComponent_5C29C5BB3A8180B9.Default);
         }
 
         /// <summary>
@@ -83,7 +81,7 @@ namespace DId
             {
                 return FromJson(
                     json,
-                    global::DId.SourceGenerationContext.Default);
+                    global::DId.SourceGenerationContextComponent_5C29C5BB3A8180B9.Default);
             }
 
             return global::System.Text.Json.JsonSerializer.Deserialize<global::DId.AgentCreateDtoLlmVariant3PromptCustomization>(
@@ -100,8 +98,7 @@ namespace DId
         {
             return (await global::System.Text.Json.JsonSerializer.DeserializeAsync(
                 jsonStream,
-                typeof(global::DId.AgentCreateDtoLlmVariant3PromptCustomization),
-                jsonSerializerContext).ConfigureAwait(false)) as global::DId.AgentCreateDtoLlmVariant3PromptCustomization;
+                jsonSerializerContext.Options.GetTypeInfo(typeof(global::DId.AgentCreateDtoLlmVariant3PromptCustomization))).ConfigureAwait(false)) as global::DId.AgentCreateDtoLlmVariant3PromptCustomization;
         }
 
         /// <summary>
@@ -112,7 +109,7 @@ namespace DId
         {
             return FromJsonStreamAsync(
                 jsonStream,
-                global::DId.SourceGenerationContext.Default);
+                global::DId.SourceGenerationContextComponent_5C29C5BB3A8180B9.Default);
         }
 
         /// <summary>
@@ -130,7 +127,7 @@ namespace DId
             {
                 return FromJsonStreamAsync(
                     jsonStream,
-                    global::DId.SourceGenerationContext.Default);
+                    global::DId.SourceGenerationContextComponent_5C29C5BB3A8180B9.Default);
             }
 
             return global::System.Text.Json.JsonSerializer.DeserializeAsync<global::DId.AgentCreateDtoLlmVariant3PromptCustomization?>(

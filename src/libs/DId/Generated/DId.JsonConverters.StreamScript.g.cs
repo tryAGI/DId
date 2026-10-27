@@ -14,6 +14,7 @@ namespace DId.JsonConverters
         {
             options = options ?? throw new global::System.ArgumentNullException(nameof(options));
             var typeInfoResolver = options.TypeInfoResolver ?? throw new global::System.InvalidOperationException("TypeInfoResolver is not set.");
+            typeInfoResolver = global::DId.AutoSDKJsonMetadataCachedResolver.Instance;
 
             using var __jsonDocument = global::System.Text.Json.JsonDocument.ParseValue(ref reader);
             var __rawJson = __jsonDocument.RootElement.GetRawText();
@@ -132,6 +133,11 @@ namespace DId.JsonConverters
                 streamScriptVariant2
                 );
 
+            if (!__value.Validate())
+            {
+                throw new global::System.Text.Json.JsonException($"Invalid JSON format for AnyOf<{typeof(global::DId.StreamScriptVariant1).Name}, {typeof(global::DId.StreamScriptVariant2).Name}>");
+            }
+
             return __value;
         }
 
@@ -143,6 +149,13 @@ namespace DId.JsonConverters
         {
             options = options ?? throw new global::System.ArgumentNullException(nameof(options));
             var typeInfoResolver = options.TypeInfoResolver ?? throw new global::System.InvalidOperationException("TypeInfoResolver is not set.");
+            typeInfoResolver = global::DId.AutoSDKJsonMetadataCachedResolver.Instance;
+
+
+            if (!value.Validate())
+            {
+                throw new global::System.Text.Json.JsonException($"Invalid AnyOf<{typeof(global::DId.StreamScriptVariant1).Name}, {typeof(global::DId.StreamScriptVariant2).Name}> object.");
+            }
 
             if (value.IsStreamScriptVariant1)
             {

@@ -1,204 +1,38 @@
 
 #nullable enable
-
 namespace DId
 {
-    /// <summary>
-    ///
-    /// </summary>
-    [global::System.Text.Json.Serialization.JsonSourceGenerationOptions(
-        DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull
-    )]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.Dictionary<string, string>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.Dictionary<string, object>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<object>), TypeInfoPropertyName = "SystemCollectionsGeneric_ObjectList")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(string[]))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Text.Json.JsonElement?))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(string))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(object))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(double))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(bool))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(int))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<double>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(byte[]))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.UploadAnImageRequest))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.GetFaceDetectionRequest))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.UploadAnImageResponse))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::DId.UploadAnImageResponseFace>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.UploadAnImageResponseFace))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.UploadAnImageResponseFaceOverlap), TypeInfoPropertyName = "UploadAnImageResponseFaceOverlap2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.UploadAnImageResponseFaceDetection))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.UploadAnImageResponse2))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.UploadAnImageResponse3))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.UploadAnImageResponse4))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.UploadAnImageResponse5))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.UploadAnImageResponse6))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.DeleteImageResponse))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.DeleteImageResponse2))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.GetFaceDetectionResponse))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::DId.GetFaceDetectionResponseFaceCrop>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.GetFaceDetectionResponseFaceCrop))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.GetFaceDetectionResponseMetadata))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.GetFaceDetectionResponse2))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.GetFaceDetectionResponse3))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.GetFaceDetectionResponse4))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.GetFaceDetectionResponse5))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(double?))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(bool?))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(int?))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.UploadAnImageResponseFaceOverlap?), TypeInfoPropertyName = "NullableUploadAnImageResponseFaceOverlap2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<double>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::DId.UploadAnImageResponseFace>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::DId.GetFaceDetectionResponseFaceCrop>))]
-    internal sealed partial class ImagesSourceGenerationContextChunk0 : global::System.Text.Json.Serialization.JsonSerializerContext
-    {
-    }
-    /// <summary>
-    ///
-    /// </summary>
+    /// <summary>Source-generated JSON metadata for this scope.</summary>
     public sealed partial class ImagesSourceGenerationContext : global::System.Text.Json.Serialization.JsonSerializerContext
     {
-        private static readonly global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver Resolver = new LazyChunkResolver();
 
-        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
-        internal static global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver TypeInfoResolver => Resolver;
-
-
-        private static readonly global::System.Text.Json.JsonSerializerOptions DefaultOptions = CreateDefaultOptions();
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static ImagesSourceGenerationContext Default { get; } = new(DefaultOptions);
-
-        private ImagesSourceGenerationContext(global::System.Text.Json.JsonSerializerOptions options)
-            : base(options)
+        internal static global::DId.SourceGenerationContextMetadataScope MetadataScope => ScopeHolder.Value;
+        internal static global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver TypeInfoResolver => MetadataScope;
+        private static class ScopeHolder
         {
+            internal static readonly global::DId.SourceGenerationContextMetadataScope Value = new(
+                null,
+                new global::System.Func<global::DId.SourceGenerationContextMetadataScope>[] {
+                    static () => global::DId.SourceGenerationContextComponent_AEFF44D41C5D7389.MetadataScope,                    static () => global::DId.SourceGenerationContextComponent_C00A942176F93990.MetadataScope,                    static () => global::DId.SourceGenerationContextComponent_473287F8298DBA71.MetadataScope,                    static () => global::DId.SourceGenerationContextComponent_7C26E0A8A91CD395.MetadataScope,                    static () => global::DId.SourceGenerationContextComponent_F2E1B4CC5204C9FE.MetadataScope,                    static () => global::DId.SourceGenerationContextComponent_854BF01D26E20A83.MetadataScope,                    static () => global::DId.SourceGenerationContextComponent_B17BED07C1CF4E43.MetadataScope,                    static () => global::DId.SourceGenerationContextComponent_F0E896F175D6CE24.MetadataScope,                    static () => global::DId.SourceGenerationContextComponent_9C4491C31D6CF1F8.MetadataScope,                    static () => global::DId.SourceGenerationContextComponent_B760F44FA5965C24.MetadataScope,                    static () => global::DId.SourceGenerationContextComponent_BACD3B38483E62E3.MetadataScope,                    static () => global::DId.SourceGenerationContextComponent_44F48C4AA3A6FEE9.MetadataScope,                    static () => global::DId.SourceGenerationContextComponent_08F6D671F9A2BBE4.MetadataScope,                    static () => global::DId.SourceGenerationContextComponent_A5A2E33B44C518A7.MetadataScope,                    static () => global::DId.SourceGenerationContextComponent_A3377EC0AB668086.MetadataScope,                    static () => global::DId.SourceGenerationContextComponent_8BC03DD89368D6C8.MetadataScope,                    static () => global::DId.SourceGenerationContextComponent_CCC2080C5806F50F.MetadataScope,                    static () => global::DId.SourceGenerationContextComponent_C5D3DBFC94759AD2.MetadataScope,
+                }, null);
         }
-
+        private static class DefaultHolder
+        {
+            internal static readonly global::System.Text.Json.JsonSerializerOptions Options = MetadataScope.CreateOptions();
+            internal static readonly ImagesSourceGenerationContext Instance = new(Options);
+        }
+        /// <summary>The default context for this scope.</summary>
+        public static ImagesSourceGenerationContext Default => DefaultHolder.Instance;
+        private ImagesSourceGenerationContext(global::System.Text.Json.JsonSerializerOptions options) : base(options) { }
         /// <inheritdoc />
-        protected override global::System.Text.Json.JsonSerializerOptions? GeneratedSerializerOptions => DefaultOptions;
-
+        protected override global::System.Text.Json.JsonSerializerOptions? GeneratedSerializerOptions => DefaultHolder.Options;
         /// <inheritdoc />
-        public override global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? GetTypeInfo(global::System.Type type)
-        {
-            return Resolver.GetTypeInfo(type, Options);
-        }
+        public override global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? GetTypeInfo(global::System.Type type) =>
+            MetadataScope.GetTypeInfo(type, Options);
 
-        /// <summary>
-        /// Adds this package's converters to <paramref name="options"/>.
-        /// </summary>
-        /// <remarks>
-        /// A converter has to be on the options a chained resolver builds its JsonTypeInfo against,
-        /// and a context resolves types from every package below it. Each package contributes only
-        /// what it owns and calls down the chain for the rest, so the family's converter table is
-        /// written once rather than copied into all of them.
-        /// </remarks>
+        /// <summary>Adds converters required by this scope.</summary>
         [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
-        public static void AddConverters(global::System.Text.Json.JsonSerializerOptions options)
-        {
-            options.Converters.Add(new global::DId.JsonConverters.AnyOfJsonConverter<global::System.Collections.Generic.IList<string>, string>());
-            options.Converters.Add(new global::DId.JsonConverters.AnyOfJsonConverter<string, bool?>());
-            options.Converters.Add(new global::DId.JsonConverters.AnyOfJsonConverter<string, bool?>());
-            options.Converters.Add(new global::DId.JsonConverters.AnyOfJsonConverter<string, bool?>());
-            options.Converters.Add(new global::DId.JsonConverters.AnyOfJsonConverter<string, bool?>());
-            options.Converters.Add(new global::DId.JsonConverters.AnyOfJsonConverter<string, bool?>());
-            options.Converters.Add(new global::DId.JsonConverters.AnyOfJsonConverter<string, bool?>());
-            options.Converters.Add(new global::DId.JsonConverters.AnyOfJsonConverter<global::System.Collections.Generic.IList<string>, string>());
-            options.Converters.Add(new global::DId.JsonConverters.AnyOfJsonConverter<string, bool?>());
-            options.Converters.Add(new global::DId.JsonConverters.AnyOfJsonConverter<string, bool?>());
-            options.Converters.Add(new global::DId.JsonConverters.AnyOfJsonConverter<string, bool?>());
-            options.Converters.Add(new global::DId.JsonConverters.AnyOfJsonConverter<string, bool?>());
-            options.Converters.Add(new global::DId.JsonConverters.AnyOfJsonConverter<global::System.Collections.Generic.IList<string>, string>());
-            options.Converters.Add(new global::DId.JsonConverters.AnyOfJsonConverter<global::System.Collections.Generic.IList<string>, string>());
-            options.Converters.Add(new global::DId.JsonConverters.AnyOfJsonConverter<global::System.Collections.Generic.IList<string>, string>());
-            options.Converters.Add(new global::DId.JsonConverters.UnixTimestampJsonConverter());
-            options.Converters.Add(new LazyEnumJsonConverterFactory());
-        }
+        public static void AddConverters(global::System.Text.Json.JsonSerializerOptions options) => MetadataScope.AddConverters(options);
 
-        private static global::System.Text.Json.JsonSerializerOptions CreateDefaultOptions()
-        {
-            var options = new global::System.Text.Json.JsonSerializerOptions
-            {
-                DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull,
-                TypeInfoResolver = Resolver,
-            };
-            AddConverters(options);
-
-            return options;
-        }
-
-
-        private sealed class LazyEnumJsonConverterFactory : global::System.Text.Json.Serialization.JsonConverterFactory
-        {
-            public override bool CanConvert(global::System.Type typeToConvert)
-            {
-                return
-                    typeToConvert == typeof(global::DId.UploadAnImageResponseFaceOverlap)
-
-                    || typeToConvert == typeof(global::DId.UploadAnImageResponseFaceOverlap?);
-            }
-
-            public override global::System.Text.Json.Serialization.JsonConverter CreateConverter(
-                global::System.Type typeToConvert,
-                global::System.Text.Json.JsonSerializerOptions options)
-            {
-                if (typeToConvert == typeof(global::DId.UploadAnImageResponseFaceOverlap))
-                {
-                    return new global::DId.JsonConverters.UploadAnImageResponseFaceOverlapJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::DId.UploadAnImageResponseFaceOverlap?))
-                {
-                    return new global::DId.JsonConverters.UploadAnImageResponseFaceOverlapNullableJsonConverter();
-                }
-                throw new global::System.NotSupportedException($"No generated enum converter is registered for '{typeToConvert}'.");
-            }
-        }
-
-        private sealed class LazyChunkResolver : global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver
-        {
-            private readonly object _gate = new();
-            private readonly global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver?[] _resolvers = new global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver?[1];
-
-            public global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? GetTypeInfo(
-                global::System.Type type,
-                global::System.Text.Json.JsonSerializerOptions options)
-            {
-                for (var index = 0; index < _resolvers.Length; index++)
-                {
-                    var typeInfo = GetResolver(index).GetTypeInfo(type, options);
-                    if (typeInfo is not null)
-                    {
-                        return typeInfo;
-                    }
-                }
-
-                return null;
-            }
-
-            private global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver GetResolver(int index)
-            {
-                var resolver = global::System.Threading.Volatile.Read(ref _resolvers[index]);
-                if (resolver is not null)
-                {
-                    return resolver;
-                }
-
-                lock (_gate)
-                {
-                    return _resolvers[index] ??= CreateResolver(index);
-                }
-            }
-
-            private static global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver CreateResolver(int index)
-            {
-                return index switch
-                {
-                    0 => new ImagesSourceGenerationContextChunk0(new global::System.Text.Json.JsonSerializerOptions()),
-                    _ => throw new global::System.ArgumentOutOfRangeException(nameof(index)),
-                };
-            }
-        }
     }
 }

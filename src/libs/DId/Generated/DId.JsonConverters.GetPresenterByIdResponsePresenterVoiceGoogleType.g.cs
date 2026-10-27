@@ -18,7 +18,7 @@ namespace DId.JsonConverters
                     var stringValue = reader.GetString();
                     if (stringValue != null)
                     {
-                        return global::DId.GetPresenterByIdResponsePresenterVoiceGoogleTypeExtensions.ToEnum(stringValue) ?? default;
+                        return global::DId.GetPresenterByIdResponsePresenterVoiceGoogleTypeExtensions.ToEnum(stringValue) ?? throw new global::System.Text.Json.JsonException($"Unknown discriminator value '{stringValue}' for global::DId.GetPresenterByIdResponsePresenterVoiceGoogleType.");
                     }
 
                     break;

@@ -1,151 +1,38 @@
 
 #nullable enable
-
 namespace DId
 {
-    /// <summary>
-    ///
-    /// </summary>
-    [global::System.Text.Json.Serialization.JsonSourceGenerationOptions(
-        DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull
-    )]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.Dictionary<string, string>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.Dictionary<string, object>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<object>), TypeInfoPropertyName = "SystemCollectionsGeneric_ObjectList")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(string[]))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Text.Json.JsonElement?))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(string))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(object))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(double))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.CreateRatingRequest))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.UpdateRatingRequest))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.CreateRatingResponse))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.CreateRatingResponse2))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.UpdateRatingResponse))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.UpdateRatingResponse2))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.DeleteRatingResponse))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::DId.DeleteRatingResponse2))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(double?))]
-    internal sealed partial class RatingsSourceGenerationContextChunk0 : global::System.Text.Json.Serialization.JsonSerializerContext
-    {
-    }
-    /// <summary>
-    ///
-    /// </summary>
+    /// <summary>Source-generated JSON metadata for this scope.</summary>
     public sealed partial class RatingsSourceGenerationContext : global::System.Text.Json.Serialization.JsonSerializerContext
     {
-        private static readonly global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver Resolver = new LazyChunkResolver();
 
-        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
-        internal static global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver TypeInfoResolver => Resolver;
-
-
-        private static readonly global::System.Text.Json.JsonSerializerOptions DefaultOptions = CreateDefaultOptions();
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static RatingsSourceGenerationContext Default { get; } = new(DefaultOptions);
-
-        private RatingsSourceGenerationContext(global::System.Text.Json.JsonSerializerOptions options)
-            : base(options)
+        internal static global::DId.SourceGenerationContextMetadataScope MetadataScope => ScopeHolder.Value;
+        internal static global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver TypeInfoResolver => MetadataScope;
+        private static class ScopeHolder
         {
+            internal static readonly global::DId.SourceGenerationContextMetadataScope Value = new(
+                null,
+                new global::System.Func<global::DId.SourceGenerationContextMetadataScope>[] {
+                    static () => global::DId.SourceGenerationContextComponent_5F691ECFB47A8770.MetadataScope,                    static () => global::DId.SourceGenerationContextComponent_6FDD1BBF2E6D8BD1.MetadataScope,                    static () => global::DId.SourceGenerationContextComponent_312506C4D77BE8E7.MetadataScope,                    static () => global::DId.SourceGenerationContextComponent_473287F8298DBA71.MetadataScope,                    static () => global::DId.SourceGenerationContextComponent_2CE06A9E7F8C3E6B.MetadataScope,                    static () => global::DId.SourceGenerationContextComponent_18B8F4CCFB807FA7.MetadataScope,                    static () => global::DId.SourceGenerationContextComponent_FF6CEDA043DC4248.MetadataScope,                    static () => global::DId.SourceGenerationContextComponent_55BBD7DBAC2956DF.MetadataScope,                    static () => global::DId.SourceGenerationContextComponent_EF3E58C20AA381DA.MetadataScope,                    static () => global::DId.SourceGenerationContextComponent_74751457FA09B3D4.MetadataScope,
+                }, null);
         }
-
+        private static class DefaultHolder
+        {
+            internal static readonly global::System.Text.Json.JsonSerializerOptions Options = MetadataScope.CreateOptions();
+            internal static readonly RatingsSourceGenerationContext Instance = new(Options);
+        }
+        /// <summary>The default context for this scope.</summary>
+        public static RatingsSourceGenerationContext Default => DefaultHolder.Instance;
+        private RatingsSourceGenerationContext(global::System.Text.Json.JsonSerializerOptions options) : base(options) { }
         /// <inheritdoc />
-        protected override global::System.Text.Json.JsonSerializerOptions? GeneratedSerializerOptions => DefaultOptions;
-
+        protected override global::System.Text.Json.JsonSerializerOptions? GeneratedSerializerOptions => DefaultHolder.Options;
         /// <inheritdoc />
-        public override global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? GetTypeInfo(global::System.Type type)
-        {
-            return Resolver.GetTypeInfo(type, Options);
-        }
+        public override global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? GetTypeInfo(global::System.Type type) =>
+            MetadataScope.GetTypeInfo(type, Options);
 
-        /// <summary>
-        /// Adds this package's converters to <paramref name="options"/>.
-        /// </summary>
-        /// <remarks>
-        /// A converter has to be on the options a chained resolver builds its JsonTypeInfo against,
-        /// and a context resolves types from every package below it. Each package contributes only
-        /// what it owns and calls down the chain for the rest, so the family's converter table is
-        /// written once rather than copied into all of them.
-        /// </remarks>
+        /// <summary>Adds converters required by this scope.</summary>
         [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
-        public static void AddConverters(global::System.Text.Json.JsonSerializerOptions options)
-        {
-            options.Converters.Add(new global::DId.JsonConverters.AnyOfJsonConverter<global::System.Collections.Generic.IList<string>, string>());
-            options.Converters.Add(new global::DId.JsonConverters.AnyOfJsonConverter<string, bool?>());
-            options.Converters.Add(new global::DId.JsonConverters.AnyOfJsonConverter<string, bool?>());
-            options.Converters.Add(new global::DId.JsonConverters.AnyOfJsonConverter<string, bool?>());
-            options.Converters.Add(new global::DId.JsonConverters.AnyOfJsonConverter<string, bool?>());
-            options.Converters.Add(new global::DId.JsonConverters.AnyOfJsonConverter<string, bool?>());
-            options.Converters.Add(new global::DId.JsonConverters.AnyOfJsonConverter<string, bool?>());
-            options.Converters.Add(new global::DId.JsonConverters.AnyOfJsonConverter<global::System.Collections.Generic.IList<string>, string>());
-            options.Converters.Add(new global::DId.JsonConverters.AnyOfJsonConverter<string, bool?>());
-            options.Converters.Add(new global::DId.JsonConverters.AnyOfJsonConverter<string, bool?>());
-            options.Converters.Add(new global::DId.JsonConverters.AnyOfJsonConverter<string, bool?>());
-            options.Converters.Add(new global::DId.JsonConverters.AnyOfJsonConverter<string, bool?>());
-            options.Converters.Add(new global::DId.JsonConverters.AnyOfJsonConverter<global::System.Collections.Generic.IList<string>, string>());
-            options.Converters.Add(new global::DId.JsonConverters.AnyOfJsonConverter<global::System.Collections.Generic.IList<string>, string>());
-            options.Converters.Add(new global::DId.JsonConverters.AnyOfJsonConverter<global::System.Collections.Generic.IList<string>, string>());
-            options.Converters.Add(new global::DId.JsonConverters.UnixTimestampJsonConverter());
-        }
+        public static void AddConverters(global::System.Text.Json.JsonSerializerOptions options) => MetadataScope.AddConverters(options);
 
-        private static global::System.Text.Json.JsonSerializerOptions CreateDefaultOptions()
-        {
-            var options = new global::System.Text.Json.JsonSerializerOptions
-            {
-                DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull,
-                TypeInfoResolver = Resolver,
-            };
-            AddConverters(options);
-
-            return options;
-        }
-
-        private sealed class LazyChunkResolver : global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver
-        {
-            private readonly object _gate = new();
-            private readonly global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver?[] _resolvers = new global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver?[1];
-
-            public global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? GetTypeInfo(
-                global::System.Type type,
-                global::System.Text.Json.JsonSerializerOptions options)
-            {
-                for (var index = 0; index < _resolvers.Length; index++)
-                {
-                    var typeInfo = GetResolver(index).GetTypeInfo(type, options);
-                    if (typeInfo is not null)
-                    {
-                        return typeInfo;
-                    }
-                }
-
-                return null;
-            }
-
-            private global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver GetResolver(int index)
-            {
-                var resolver = global::System.Threading.Volatile.Read(ref _resolvers[index]);
-                if (resolver is not null)
-                {
-                    return resolver;
-                }
-
-                lock (_gate)
-                {
-                    return _resolvers[index] ??= CreateResolver(index);
-                }
-            }
-
-            private static global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver CreateResolver(int index)
-            {
-                return index switch
-                {
-                    0 => new RatingsSourceGenerationContextChunk0(new global::System.Text.Json.JsonSerializerOptions()),
-                    _ => throw new global::System.ArgumentOutOfRangeException(nameof(index)),
-                };
-            }
-        }
     }
 }

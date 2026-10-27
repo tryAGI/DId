@@ -14,6 +14,7 @@ namespace DId.JsonConverters
         {
             options = options ?? throw new global::System.ArgumentNullException(nameof(options));
             var typeInfoResolver = options.TypeInfoResolver ?? throw new global::System.InvalidOperationException("TypeInfoResolver is not set.");
+            typeInfoResolver = global::DId.AutoSDKJsonMetadataCachedResolver.Instance;
 
 
             using var __jsonDocument = global::System.Text.Json.JsonDocument.ParseValue(ref reader);
@@ -320,6 +321,11 @@ namespace DId.JsonConverters
                 jSONValueVariant5
                 );
 
+            if (!__value.Validate())
+            {
+                throw new global::System.Text.Json.JsonException($"Invalid JSON format for AnyOf<{typeof(string).Name}, {typeof(double).Name}, {typeof(bool).Name}, {typeof(global::System.Collections.Generic.IList<global::DId.JSONValue?>).Name}, {typeof(global::System.Collections.Generic.Dictionary<string, global::DId.JSONValue?>).Name}>");
+            }
+
             return __value;
         }
 
@@ -331,6 +337,13 @@ namespace DId.JsonConverters
         {
             options = options ?? throw new global::System.ArgumentNullException(nameof(options));
             var typeInfoResolver = options.TypeInfoResolver ?? throw new global::System.InvalidOperationException("TypeInfoResolver is not set.");
+            typeInfoResolver = global::DId.AutoSDKJsonMetadataCachedResolver.Instance;
+
+
+            if (!value.Validate())
+            {
+                throw new global::System.Text.Json.JsonException($"Invalid AnyOf<{typeof(string).Name}, {typeof(double).Name}, {typeof(bool).Name}, {typeof(global::System.Collections.Generic.IList<global::DId.JSONValue?>).Name}, {typeof(global::System.Collections.Generic.Dictionary<string, global::DId.JSONValue?>).Name}> object.");
+            }
 
             if (value.IsJSONValueVariant1)
             {

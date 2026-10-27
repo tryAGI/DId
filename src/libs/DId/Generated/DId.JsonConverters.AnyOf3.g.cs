@@ -13,6 +13,7 @@ namespace DId.JsonConverters
         {
             options = options ?? throw new global::System.ArgumentNullException(nameof(options));
             var typeInfoResolver = options.TypeInfoResolver ?? throw new global::System.InvalidOperationException("TypeInfoResolver is not set.");
+            typeInfoResolver = global::DId.AutoSDKJsonMetadataCachedResolver.Instance;
 
 
             using var __jsonDocument = global::System.Text.Json.JsonDocument.ParseValue(ref reader);
@@ -205,6 +206,11 @@ namespace DId.JsonConverters
                 value3
                 );
 
+            if (!__value.Validate())
+            {
+                throw new global::System.Text.Json.JsonException($"Invalid JSON format for AnyOf<{typeof(T1).Name}, {typeof(T2).Name}, {typeof(T3).Name}>");
+            }
+
             return __value;
         }
 
@@ -216,6 +222,13 @@ namespace DId.JsonConverters
         {
             options = options ?? throw new global::System.ArgumentNullException(nameof(options));
             var typeInfoResolver = options.TypeInfoResolver ?? throw new global::System.InvalidOperationException("TypeInfoResolver is not set.");
+            typeInfoResolver = global::DId.AutoSDKJsonMetadataCachedResolver.Instance;
+
+
+            if (!value.Validate())
+            {
+                throw new global::System.Text.Json.JsonException($"Invalid AnyOf<{typeof(T1).Name}, {typeof(T2).Name}, {typeof(T3).Name}> object.");
+            }
 
             if (value.IsValue1)
             {

@@ -1,0 +1,52 @@
+
+#nullable enable
+namespace DId
+{
+    /// <summary>Source-generated JSON metadata for this scope.</summary>
+    internal static partial class SourceGenerationContextComponent_CA8F0049EAF25A6C
+    {
+
+        internal static readonly global::DId.SourceGenerationContextMetadataScope MetadataScope = new(
+                new SharedMetadataResolver(),
+                new global::System.Func<global::DId.SourceGenerationContextMetadataScope>[] {
+                }, ContributeConverters);
+        internal static global::System.Text.Json.Serialization.JsonSerializerContext Default => MetadataScope.Default;
+
+        /// <summary>Adds converters required by this scope.</summary>
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
+        public static void AddConverters(global::System.Text.Json.JsonSerializerOptions options) => MetadataScope.AddConverters(options);
+
+        #pragma warning disable CS0612, CS0618 // Generated converters may target deprecated API models.
+        private static void ContributeConverters(global::DId.SourceGenerationContextMetadataScope.ConverterCollector collector)
+        {
+            collector.AddEnum(typeof(global::DId.DeleteAnimationResponseStatus), static () => new global::DId.JsonConverters.DeleteAnimationResponseStatusJsonConverter());
+            collector.AddEnum(typeof(global::DId.DeleteAnimationResponseStatus?), static () => new global::DId.JsonConverters.DeleteAnimationResponseStatusNullableJsonConverter());
+            collector.AddEager<global::DId.JsonConverters.UnixTimestampJsonConverter>(static () => new global::DId.JsonConverters.UnixTimestampJsonConverter());
+        }
+        #pragma warning restore CS0612, CS0618
+
+        private sealed partial class SharedMetadataResolver : global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver
+        {
+            public global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? GetTypeInfo(
+                global::System.Type type, global::System.Text.Json.JsonSerializerOptions options)
+            {
+                if (type == typeof(global::DId.DeleteAnimationResponseStatus))
+                {
+                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0087.Create_DeleteAnimationResponseStatus2(options);
+                }
+                if (type == typeof(global::DId.DeleteAnimationResponseStatus?))
+                {
+                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0191.Create_NullableDeleteAnimationResponseStatus2(options);
+                }
+                global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
+                ResolveAdditionalTypeInfo(type, options, ref additional);
+                return additional;
+            }
+
+            static partial void ResolveAdditionalTypeInfo(
+                global::System.Type type, global::System.Text.Json.JsonSerializerOptions options,
+                ref global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? result);
+        }
+
+    }
+}

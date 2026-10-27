@@ -18,7 +18,7 @@ namespace DId.JsonConverters
                     var stringValue = reader.GetString();
                     if (stringValue != null)
                     {
-                        return global::DId.UpdateSecretExternalLLMRequestDtoOpenAIConfigurationProviderExtensions.ToEnum(stringValue) ?? default;
+                        return global::DId.UpdateSecretExternalLLMRequestDtoOpenAIConfigurationProviderExtensions.ToEnum(stringValue) ?? throw new global::System.Text.Json.JsonException($"Unknown discriminator value '{stringValue}' for global::DId.UpdateSecretExternalLLMRequestDtoOpenAIConfigurationProvider.");
                     }
 
                     break;

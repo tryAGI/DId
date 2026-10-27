@@ -12,8 +12,7 @@ namespace DId
         {
             return global::System.Text.Json.JsonSerializer.Serialize(
                 this,
-                this.GetType(),
-                jsonSerializerContext);
+                jsonSerializerContext.Options.GetTypeInfo(this.GetType()));
         }
 
         /// <summary>
@@ -21,7 +20,7 @@ namespace DId
         /// </summary>
         public string ToJson()
         {
-            return ToJson(global::DId.SourceGenerationContext.Default);
+            return ToJson(global::DId.SourceGenerationContextComponent_E248BB24F2058220.Default);
         }
 
         /// <summary>
@@ -36,7 +35,7 @@ namespace DId
         {
             if (jsonSerializerOptions is null)
             {
-                return ToJson(global::DId.SourceGenerationContext.Default);
+                return ToJson(global::DId.SourceGenerationContextComponent_E248BB24F2058220.Default);
             }
 
             return global::System.Text.Json.JsonSerializer.Serialize(
@@ -53,8 +52,7 @@ namespace DId
         {
             return global::System.Text.Json.JsonSerializer.Deserialize(
                 json,
-                typeof(global::DId.UpdateLogoResponse3),
-                jsonSerializerContext) as global::DId.UpdateLogoResponse3;
+                jsonSerializerContext.Options.GetTypeInfo(typeof(global::DId.UpdateLogoResponse3))) as global::DId.UpdateLogoResponse3;
         }
 
         /// <summary>
@@ -65,7 +63,7 @@ namespace DId
         {
             return FromJson(
                 json,
-                global::DId.SourceGenerationContext.Default);
+                global::DId.SourceGenerationContextComponent_E248BB24F2058220.Default);
         }
 
         /// <summary>
@@ -83,7 +81,7 @@ namespace DId
             {
                 return FromJson(
                     json,
-                    global::DId.SourceGenerationContext.Default);
+                    global::DId.SourceGenerationContextComponent_E248BB24F2058220.Default);
             }
 
             return global::System.Text.Json.JsonSerializer.Deserialize<global::DId.UpdateLogoResponse3>(
@@ -100,8 +98,7 @@ namespace DId
         {
             return (await global::System.Text.Json.JsonSerializer.DeserializeAsync(
                 jsonStream,
-                typeof(global::DId.UpdateLogoResponse3),
-                jsonSerializerContext).ConfigureAwait(false)) as global::DId.UpdateLogoResponse3;
+                jsonSerializerContext.Options.GetTypeInfo(typeof(global::DId.UpdateLogoResponse3))).ConfigureAwait(false)) as global::DId.UpdateLogoResponse3;
         }
 
         /// <summary>
@@ -112,7 +109,7 @@ namespace DId
         {
             return FromJsonStreamAsync(
                 jsonStream,
-                global::DId.SourceGenerationContext.Default);
+                global::DId.SourceGenerationContextComponent_E248BB24F2058220.Default);
         }
 
         /// <summary>
@@ -130,7 +127,7 @@ namespace DId
             {
                 return FromJsonStreamAsync(
                     jsonStream,
-                    global::DId.SourceGenerationContext.Default);
+                    global::DId.SourceGenerationContextComponent_E248BB24F2058220.Default);
             }
 
             return global::System.Text.Json.JsonSerializer.DeserializeAsync<global::DId.UpdateLogoResponse3?>(

@@ -14,6 +14,7 @@ namespace DId.JsonConverters
         {
             options = options ?? throw new global::System.ArgumentNullException(nameof(options));
             var typeInfoResolver = options.TypeInfoResolver ?? throw new global::System.InvalidOperationException("TypeInfoResolver is not set.");
+            typeInfoResolver = global::DId.AutoSDKJsonMetadataCachedResolver.Instance;
 
             using var __jsonDocument = global::System.Text.Json.JsonDocument.ParseValue(ref reader);
             var __rawJson = __jsonDocument.RootElement.GetRawText();
@@ -182,6 +183,11 @@ namespace DId.JsonConverters
                 apiKey
                 );
 
+            if (!__value.Validate())
+            {
+                throw new global::System.Text.Json.JsonException($"Invalid JSON format for AnyOf<{typeof(global::DId.CreateSecretRequestDtoBasicAuthentication).Name}, {typeof(global::DId.CreateSecretRequestDtoBearerToken).Name}, {typeof(global::DId.CreateSecretRequestDtoApiKey).Name}>");
+            }
+
             return __value;
         }
 
@@ -193,6 +199,13 @@ namespace DId.JsonConverters
         {
             options = options ?? throw new global::System.ArgumentNullException(nameof(options));
             var typeInfoResolver = options.TypeInfoResolver ?? throw new global::System.InvalidOperationException("TypeInfoResolver is not set.");
+            typeInfoResolver = global::DId.AutoSDKJsonMetadataCachedResolver.Instance;
+
+
+            if (!value.Validate())
+            {
+                throw new global::System.Text.Json.JsonException($"Invalid AnyOf<{typeof(global::DId.CreateSecretRequestDtoBasicAuthentication).Name}, {typeof(global::DId.CreateSecretRequestDtoBearerToken).Name}, {typeof(global::DId.CreateSecretRequestDtoApiKey).Name}> object.");
+            }
 
             if (value.IsBasicAuthentication)
             {

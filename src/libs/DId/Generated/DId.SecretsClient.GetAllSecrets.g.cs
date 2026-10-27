@@ -70,6 +70,8 @@ namespace DId
             global::DId.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
+            var JsonSerializerContext = JsonSerializerContextProvider?.Value ??
+                global::DId.SourceGenerationContextComponent_B579E50655735C34.Default;
             PrepareArguments(
                 client: HttpClient);
             PrepareGetAllSecretsArguments(
@@ -341,7 +343,7 @@ namespace DId
                                 {
                                     __response.EnsureSuccessStatusCode();
 
-                                    var __value = (global::System.Collections.Generic.IList<global::DId.GetAllSecretsResponseItem>?)global::System.Text.Json.JsonSerializer.Deserialize(__content, typeof(global::System.Collections.Generic.IList<global::DId.GetAllSecretsResponseItem>), JsonSerializerContext) ??
+                                    var __value = (global::System.Collections.Generic.IList<global::DId.GetAllSecretsResponseItem>?)global::System.Text.Json.JsonSerializer.Deserialize(__content, JsonSerializerContext.Options.GetTypeInfo(typeof(global::System.Collections.Generic.IList<global::DId.GetAllSecretsResponseItem>))) ??
                                         throw new global::System.InvalidOperationException($"Response deserialization failed for \"{__content}\" ");
                                     return new global::DId.AutoSDKHttpResponse<global::System.Collections.Generic.IList<global::DId.GetAllSecretsResponseItem>>(
                                         statusCode: __response.StatusCode,
@@ -373,7 +375,7 @@ namespace DId
                 #endif
                                     ).ConfigureAwait(false);
 
-                                    var __value = (global::System.Collections.Generic.IList<global::DId.GetAllSecretsResponseItem>?)await global::System.Text.Json.JsonSerializer.DeserializeAsync(__content, typeof(global::System.Collections.Generic.IList<global::DId.GetAllSecretsResponseItem>), JsonSerializerContext).ConfigureAwait(false) ??
+                                    var __value = (global::System.Collections.Generic.IList<global::DId.GetAllSecretsResponseItem>?)await global::System.Text.Json.JsonSerializer.DeserializeAsync(__content, JsonSerializerContext.Options.GetTypeInfo(typeof(global::System.Collections.Generic.IList<global::DId.GetAllSecretsResponseItem>))).ConfigureAwait(false) ??
                                         throw new global::System.InvalidOperationException("Response deserialization failed.");
                                     return new global::DId.AutoSDKHttpResponse<global::System.Collections.Generic.IList<global::DId.GetAllSecretsResponseItem>>(
                                         statusCode: __response.StatusCode,

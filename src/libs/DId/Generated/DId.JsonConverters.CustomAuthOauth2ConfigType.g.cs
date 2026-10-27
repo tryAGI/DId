@@ -18,7 +18,7 @@ namespace DId.JsonConverters
                     var stringValue = reader.GetString();
                     if (stringValue != null)
                     {
-                        return global::DId.CustomAuthOauth2ConfigTypeExtensions.ToEnum(stringValue) ?? default;
+                        return global::DId.CustomAuthOauth2ConfigTypeExtensions.ToEnum(stringValue) ?? throw new global::System.Text.Json.JsonException($"Unknown discriminator value '{stringValue}' for global::DId.CustomAuthOauth2ConfigType.");
                     }
 
                     break;

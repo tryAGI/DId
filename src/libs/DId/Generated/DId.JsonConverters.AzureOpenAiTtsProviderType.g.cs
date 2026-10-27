@@ -18,7 +18,7 @@ namespace DId.JsonConverters
                     var stringValue = reader.GetString();
                     if (stringValue != null)
                     {
-                        return global::DId.AzureOpenAiTtsProviderTypeExtensions.ToEnum(stringValue) ?? default;
+                        return global::DId.AzureOpenAiTtsProviderTypeExtensions.ToEnum(stringValue) ?? throw new global::System.Text.Json.JsonException($"Unknown discriminator value '{stringValue}' for global::DId.AzureOpenAiTtsProviderType.");
                     }
 
                     break;

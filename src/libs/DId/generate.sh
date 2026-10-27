@@ -7,7 +7,11 @@ install_autosdk_cli() {
 }
 
 # OpenAPI spec: locally maintained, extracted from https://docs.d-id.com/reference/ (multiple specs merged)
-install_autosdk_cli
+if [[ -n "${AUTOSDK_EXECUTABLE:-}" ]]; then
+  autosdk() { "$AUTOSDK_EXECUTABLE" "$@"; }
+else
+  install_autosdk_cli
+fi
 rm -rf Generated
 
 # D-ID uses multiple API specs (realtime, videos, resources, legacy) that are
@@ -16,6 +20,8 @@ rm -rf Generated
 
 # Auth: D-ID API keys are API_USERNAME:API_PASSWORD credentials sent via HTTP Basic.
 autosdk generate openapi.json \
+  --shared-json-metadata \
+  --validate-any-ofs \
   --namespace DId \
   --clientClassName DIdClient \
   --targetFramework net10.0 \

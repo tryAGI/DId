@@ -75,6 +75,8 @@ namespace DId
             global::DId.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
+            var JsonSerializerContext = JsonSerializerContextProvider?.Value ??
+                global::DId.SourceGenerationContextOperation_4EE8823149B07EDE.Default;
             PrepareArguments(
                 client: HttpClient);
             PrepareListResourceClientKeysArguments(
@@ -422,7 +424,7 @@ namespace DId
                                 {
                                     __response.EnsureSuccessStatusCode();
 
-                                    var __value = (global::System.Collections.Generic.IList<global::DId.ListResourceClientKeysResponseItem>?)global::System.Text.Json.JsonSerializer.Deserialize(__content, typeof(global::System.Collections.Generic.IList<global::DId.ListResourceClientKeysResponseItem>), JsonSerializerContext) ??
+                                    var __value = (global::System.Collections.Generic.IList<global::DId.ListResourceClientKeysResponseItem>?)global::System.Text.Json.JsonSerializer.Deserialize(__content, JsonSerializerContext.Options.GetTypeInfo(typeof(global::System.Collections.Generic.IList<global::DId.ListResourceClientKeysResponseItem>))) ??
                                         throw new global::System.InvalidOperationException($"Response deserialization failed for \"{__content}\" ");
                                     return new global::DId.AutoSDKHttpResponse<global::System.Collections.Generic.IList<global::DId.ListResourceClientKeysResponseItem>>(
                                         statusCode: __response.StatusCode,
@@ -454,7 +456,7 @@ namespace DId
                 #endif
                                     ).ConfigureAwait(false);
 
-                                    var __value = (global::System.Collections.Generic.IList<global::DId.ListResourceClientKeysResponseItem>?)await global::System.Text.Json.JsonSerializer.DeserializeAsync(__content, typeof(global::System.Collections.Generic.IList<global::DId.ListResourceClientKeysResponseItem>), JsonSerializerContext).ConfigureAwait(false) ??
+                                    var __value = (global::System.Collections.Generic.IList<global::DId.ListResourceClientKeysResponseItem>?)await global::System.Text.Json.JsonSerializer.DeserializeAsync(__content, JsonSerializerContext.Options.GetTypeInfo(typeof(global::System.Collections.Generic.IList<global::DId.ListResourceClientKeysResponseItem>))).ConfigureAwait(false) ??
                                         throw new global::System.InvalidOperationException("Response deserialization failed.");
                                     return new global::DId.AutoSDKHttpResponse<global::System.Collections.Generic.IList<global::DId.ListResourceClientKeysResponseItem>>(
                                         statusCode: __response.StatusCode,

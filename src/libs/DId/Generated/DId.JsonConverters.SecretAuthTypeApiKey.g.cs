@@ -18,7 +18,7 @@ namespace DId.JsonConverters
                     var stringValue = reader.GetString();
                     if (stringValue != null)
                     {
-                        return global::DId.SecretAuthTypeApiKeyExtensions.ToEnum(stringValue) ?? default;
+                        return global::DId.SecretAuthTypeApiKeyExtensions.ToEnum(stringValue) ?? throw new global::System.Text.Json.JsonException($"Unknown discriminator value '{stringValue}' for global::DId.SecretAuthTypeApiKey.");
                     }
 
                     break;

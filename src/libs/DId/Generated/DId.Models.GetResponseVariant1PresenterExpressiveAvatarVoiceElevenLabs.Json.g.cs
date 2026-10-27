@@ -12,8 +12,7 @@ namespace DId
         {
             return global::System.Text.Json.JsonSerializer.Serialize(
                 this,
-                this.GetType(),
-                jsonSerializerContext);
+                jsonSerializerContext.Options.GetTypeInfo(this.GetType()));
         }
 
         /// <summary>
@@ -21,7 +20,7 @@ namespace DId
         /// </summary>
         public string ToJson()
         {
-            return ToJson(global::DId.SourceGenerationContext.Default);
+            return ToJson(global::DId.SourceGenerationContextComponent_5D5AE8B7B4B7F94A.Default);
         }
 
         /// <summary>
@@ -36,7 +35,7 @@ namespace DId
         {
             if (jsonSerializerOptions is null)
             {
-                return ToJson(global::DId.SourceGenerationContext.Default);
+                return ToJson(global::DId.SourceGenerationContextComponent_5D5AE8B7B4B7F94A.Default);
             }
 
             return global::System.Text.Json.JsonSerializer.Serialize(
@@ -53,8 +52,7 @@ namespace DId
         {
             return global::System.Text.Json.JsonSerializer.Deserialize(
                 json,
-                typeof(global::DId.GetResponseVariant1PresenterExpressiveAvatarVoiceElevenLabs),
-                jsonSerializerContext) as global::DId.GetResponseVariant1PresenterExpressiveAvatarVoiceElevenLabs;
+                jsonSerializerContext.Options.GetTypeInfo(typeof(global::DId.GetResponseVariant1PresenterExpressiveAvatarVoiceElevenLabs))) as global::DId.GetResponseVariant1PresenterExpressiveAvatarVoiceElevenLabs;
         }
 
         /// <summary>
@@ -65,7 +63,7 @@ namespace DId
         {
             return FromJson(
                 json,
-                global::DId.SourceGenerationContext.Default);
+                global::DId.SourceGenerationContextComponent_5D5AE8B7B4B7F94A.Default);
         }
 
         /// <summary>
@@ -83,7 +81,7 @@ namespace DId
             {
                 return FromJson(
                     json,
-                    global::DId.SourceGenerationContext.Default);
+                    global::DId.SourceGenerationContextComponent_5D5AE8B7B4B7F94A.Default);
             }
 
             return global::System.Text.Json.JsonSerializer.Deserialize<global::DId.GetResponseVariant1PresenterExpressiveAvatarVoiceElevenLabs>(
@@ -100,8 +98,7 @@ namespace DId
         {
             return (await global::System.Text.Json.JsonSerializer.DeserializeAsync(
                 jsonStream,
-                typeof(global::DId.GetResponseVariant1PresenterExpressiveAvatarVoiceElevenLabs),
-                jsonSerializerContext).ConfigureAwait(false)) as global::DId.GetResponseVariant1PresenterExpressiveAvatarVoiceElevenLabs;
+                jsonSerializerContext.Options.GetTypeInfo(typeof(global::DId.GetResponseVariant1PresenterExpressiveAvatarVoiceElevenLabs))).ConfigureAwait(false)) as global::DId.GetResponseVariant1PresenterExpressiveAvatarVoiceElevenLabs;
         }
 
         /// <summary>
@@ -112,7 +109,7 @@ namespace DId
         {
             return FromJsonStreamAsync(
                 jsonStream,
-                global::DId.SourceGenerationContext.Default);
+                global::DId.SourceGenerationContextComponent_5D5AE8B7B4B7F94A.Default);
         }
 
         /// <summary>
@@ -130,7 +127,7 @@ namespace DId
             {
                 return FromJsonStreamAsync(
                     jsonStream,
-                    global::DId.SourceGenerationContext.Default);
+                    global::DId.SourceGenerationContextComponent_5D5AE8B7B4B7F94A.Default);
             }
 
             return global::System.Text.Json.JsonSerializer.DeserializeAsync<global::DId.GetResponseVariant1PresenterExpressiveAvatarVoiceElevenLabs?>(
