@@ -18,7 +18,7 @@ namespace DId.JsonConverters
                     var stringValue = reader.GetString();
                     if (stringValue != null)
                     {
-                        return global::DId.JoinLivekitRoomRequestTransportProviderExtensions.ToEnum(stringValue) ?? throw new global::System.Text.Json.JsonException($"Unknown discriminator value '{stringValue}' for global::DId.JoinLivekitRoomRequestTransportProvider.");
+                        return global::DId.JoinLivekitRoomRequestTransportProviderExtensions.ToEnum(stringValue) ?? throw new global::System.Text.Json.JsonException($"Unknown value '{stringValue}' for global::DId.JoinLivekitRoomRequestTransportProvider.");
                     }
 
                     break;

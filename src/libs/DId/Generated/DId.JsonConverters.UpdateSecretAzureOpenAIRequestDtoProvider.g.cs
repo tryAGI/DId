@@ -18,7 +18,7 @@ namespace DId.JsonConverters
                     var stringValue = reader.GetString();
                     if (stringValue != null)
                     {
-                        return global::DId.UpdateSecretAzureOpenAIRequestDtoProviderExtensions.ToEnum(stringValue) ?? throw new global::System.Text.Json.JsonException($"Unknown discriminator value '{stringValue}' for global::DId.UpdateSecretAzureOpenAIRequestDtoProvider.");
+                        return global::DId.UpdateSecretAzureOpenAIRequestDtoProviderExtensions.ToEnum(stringValue) ?? throw new global::System.Text.Json.JsonException($"Unknown value '{stringValue}' for global::DId.UpdateSecretAzureOpenAIRequestDtoProvider.");
                     }
 
                     break;

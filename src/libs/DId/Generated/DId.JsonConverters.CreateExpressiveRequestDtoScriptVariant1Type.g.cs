@@ -18,7 +18,7 @@ namespace DId.JsonConverters
                     var stringValue = reader.GetString();
                     if (stringValue != null)
                     {
-                        return global::DId.CreateExpressiveRequestDtoScriptVariant1TypeExtensions.ToEnum(stringValue) ?? throw new global::System.Text.Json.JsonException($"Unknown discriminator value '{stringValue}' for global::DId.CreateExpressiveRequestDtoScriptVariant1Type.");
+                        return global::DId.CreateExpressiveRequestDtoScriptVariant1TypeExtensions.ToEnum(stringValue) ?? throw new global::System.Text.Json.JsonException($"Unknown value '{stringValue}' for global::DId.CreateExpressiveRequestDtoScriptVariant1Type.");
                     }
 
                     break;

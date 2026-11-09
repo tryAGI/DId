@@ -18,7 +18,7 @@ namespace DId.JsonConverters
                     var stringValue = reader.GetString();
                     if (stringValue != null)
                     {
-                        return global::DId.CreateSceneRequestDtoScriptAudioTypeExtensions.ToEnum(stringValue) ?? throw new global::System.Text.Json.JsonException($"Unknown discriminator value '{stringValue}' for global::DId.CreateSceneRequestDtoScriptAudioType.");
+                        return global::DId.CreateSceneRequestDtoScriptAudioTypeExtensions.ToEnum(stringValue) ?? throw new global::System.Text.Json.JsonException($"Unknown value '{stringValue}' for global::DId.CreateSceneRequestDtoScriptAudioType.");
                     }
 
                     break;
