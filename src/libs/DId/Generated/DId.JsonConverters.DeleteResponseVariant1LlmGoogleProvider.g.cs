@@ -18,7 +18,7 @@ namespace DId.JsonConverters
                     var stringValue = reader.GetString();
                     if (stringValue != null)
                     {
-                        return global::DId.DeleteResponseVariant1LlmGoogleProviderExtensions.ToEnum(stringValue) ?? throw new global::System.Text.Json.JsonException($"Unknown discriminator value '{stringValue}' for global::DId.DeleteResponseVariant1LlmGoogleProvider.");
+                        return global::DId.DeleteResponseVariant1LlmGoogleProviderExtensions.ToEnum(stringValue) ?? throw new global::System.Text.Json.JsonException($"Unknown value '{stringValue}' for global::DId.DeleteResponseVariant1LlmGoogleProvider.");
                     }
 
                     break;
