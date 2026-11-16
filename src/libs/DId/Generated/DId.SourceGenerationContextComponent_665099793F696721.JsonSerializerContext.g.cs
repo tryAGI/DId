@@ -36,7 +36,7 @@ namespace DId
                 }
                 if (type == typeof(global::DId.GetAvatarResponseDtoStatus?))
                 {
-                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0198.Create_NullableGetAvatarResponseDtoStatus2(options);
+                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0197.Create_NullableGetAvatarResponseDtoStatus2(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

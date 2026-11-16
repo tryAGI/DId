@@ -32,7 +32,7 @@ namespace DId
             {
                 if (type == typeof(global::DId.LLMConfigVariant3Template))
                 {
-                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0153.Create_LLMConfigVariant3Template2(options);
+                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0152.Create_LLMConfigVariant3Template2(options);
                 }
                 if (type == typeof(global::DId.LLMConfigVariant3Template?))
                 {

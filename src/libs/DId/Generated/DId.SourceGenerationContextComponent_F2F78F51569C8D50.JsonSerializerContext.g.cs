@@ -32,7 +32,7 @@ namespace DId
             {
                 if (type == typeof(global::DId.SecretAuthTypeBasic))
                 {
-                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0260.Create_SecretAuthTypeBasic2(options);
+                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0259.Create_SecretAuthTypeBasic2(options);
                 }
                 if (type == typeof(global::DId.SecretAuthTypeBasic?))
                 {

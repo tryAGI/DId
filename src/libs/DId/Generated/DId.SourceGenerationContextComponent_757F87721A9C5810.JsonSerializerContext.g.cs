@@ -32,7 +32,7 @@ namespace DId
             {
                 if (type == typeof(global::DId.SanitizedSecretDtoType))
                 {
-                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0258.Create_SanitizedSecretDtoType2(options);
+                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0257.Create_SanitizedSecretDtoType2(options);
                 }
                 if (type == typeof(global::DId.SanitizedSecretDtoType?))
                 {

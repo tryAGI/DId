@@ -39,7 +39,7 @@ namespace DId
                 #pragma warning disable CS0618 // Metadata references a deprecated API model.
                 if (type == typeof(global::DId.IChatPayloadChatMode?))
                 {
-                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0207.Create_NullableIChatPayloadChatMode2(options);
+                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0206.Create_NullableIChatPayloadChatMode2(options);
                 }
                 #pragma warning restore CS0618
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;

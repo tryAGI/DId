@@ -32,7 +32,7 @@ namespace DId
             {
                 if (type == typeof(global::DId.PartialClipAgentPresenterType))
                 {
-                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0245.Create_PartialClipAgentPresenterType2(options);
+                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0244.Create_PartialClipAgentPresenterType2(options);
                 }
                 if (type == typeof(global::DId.PartialClipAgentPresenterType?))
                 {

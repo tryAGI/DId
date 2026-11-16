@@ -31,7 +31,7 @@ namespace DId
             {
                 if (type == typeof(global::DId.GetPresenterDriversByIdResponse))
                 {
-                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0129.Create_GetPresenterDriversByIdResponse(options);
+                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0128.Create_GetPresenterDriversByIdResponse(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

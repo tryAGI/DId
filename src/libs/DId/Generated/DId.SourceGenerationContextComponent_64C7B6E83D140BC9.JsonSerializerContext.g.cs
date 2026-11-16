@@ -32,7 +32,7 @@ namespace DId
             {
                 if (type == typeof(global::DId.OpenAIExternalLLMTemplate))
                 {
-                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0241.Create_OpenAIExternalLLMTemplate2(options);
+                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0240.Create_OpenAIExternalLLMTemplate2(options);
                 }
                 if (type == typeof(global::DId.OpenAIExternalLLMTemplate?))
                 {

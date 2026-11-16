@@ -36,7 +36,7 @@ namespace DId
                 }
                 if (type == typeof(global::DId.AgentPresenterPhotoAvatarType?))
                 {
-                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0164.Create_NullableAgentPresenterPhotoAvatarType2_3(options);
+                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0163.Create_NullableAgentPresenterPhotoAvatarType2_3(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

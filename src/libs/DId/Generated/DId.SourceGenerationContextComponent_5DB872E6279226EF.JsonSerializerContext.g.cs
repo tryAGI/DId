@@ -36,7 +36,7 @@ namespace DId
                 }
                 if (type == typeof(global::DId.CreateTalkRequestConfigResultFormat2?))
                 {
-                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0187.Create_NullableCreateTalkRequestConfigResultFormat22(options);
+                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0186.Create_NullableCreateTalkRequestConfigResultFormat22(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

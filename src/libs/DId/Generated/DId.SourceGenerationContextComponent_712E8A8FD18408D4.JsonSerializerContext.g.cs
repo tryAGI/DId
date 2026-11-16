@@ -32,11 +32,11 @@ namespace DId
             {
                 if (type == typeof(global::DId.UserCreditsCreditProductBillingInterval))
                 {
-                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0329.Create_UserCreditsCreditProductBillingInterval2(options);
+                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0326.Create_UserCreditsCreditProductBillingInterval2(options);
                 }
                 if (type == typeof(global::DId.UserCreditsCreditProductBillingInterval?))
                 {
-                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0234.Create_NullableUserCreditsCreditProductBillingInterval2(options);
+                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0233.Create_NullableUserCreditsCreditProductBillingInterval2(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

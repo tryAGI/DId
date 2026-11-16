@@ -32,7 +32,7 @@ namespace DId
             {
                 if (type == typeof(global::DId.ListMyAgentsResponseAgentVariant1PresenterExpressiveAvatarType))
                 {
-                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0155.Create_ListMyAgentsResponseAgentVariant1PresenterExpressiveAvatarType2(options);
+                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0154.Create_ListMyAgentsResponseAgentVariant1PresenterExpressiveAvatarType2(options);
                 }
                 if (type == typeof(global::DId.ListMyAgentsResponseAgentVariant1PresenterExpressiveAvatarType?))
                 {

@@ -31,7 +31,7 @@ namespace DId
             {
                 if (type == typeof(global::DId.PresenterBackground))
                 {
-                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0257.Create_PresenterBackground(options);
+                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0256.Create_PresenterBackground(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

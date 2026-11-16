@@ -36,7 +36,7 @@ namespace DId
                 }
                 if (type == typeof(global::DId.ExpressiveImageBackgroundType?))
                 {
-                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0196.Create_NullableExpressiveImageBackgroundType2(options);
+                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0195.Create_NullableExpressiveImageBackgroundType2(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

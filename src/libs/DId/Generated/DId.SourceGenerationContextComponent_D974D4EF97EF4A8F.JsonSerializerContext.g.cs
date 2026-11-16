@@ -31,7 +31,7 @@ namespace DId
             {
                 if (type == typeof(global::DId.OmitAgentUserDataOrAdvancedSettingsOrEmbedOrAssets))
                 {
-                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0235.Create_OmitAgentUserDataOrAdvancedSettingsOrEmbedOrAssets(options);
+                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0234.Create_OmitAgentUserDataOrAdvancedSettingsOrEmbedOrAssets(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

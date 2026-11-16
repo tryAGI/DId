@@ -30,7 +30,7 @@ namespace DId
             {
                 if (type == typeof(global::DId.UploadVideoResponseDetails2))
                 {
-                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0328.Create_UploadVideoResponseDetails2(options);
+                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0326.Create_UploadVideoResponseDetails2(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

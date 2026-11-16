@@ -32,11 +32,11 @@ namespace DId
             {
                 if (type == typeof(global::DId.AnyOf<global::DId.CreateTalkStreamRequestScriptVariant1ProviderMicrosoft2, global::DId.CreateTalkStreamRequestScriptVariant1ProviderElevenLabs2, global::DId.CreateTalkStreamRequestScriptVariant1ProviderOpenAI2>))
                 {
-                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0286.Create_SourceGenerationContextMetadataType_AAA2E2607CF21F3E(options);
+                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0284.Create_SourceGenerationContextMetadataType_AAA2E2607CF21F3E(options);
                 }
                 if (type == typeof(global::DId.AnyOf<global::DId.CreateTalkStreamRequestScriptVariant1ProviderMicrosoft2, global::DId.CreateTalkStreamRequestScriptVariant1ProviderElevenLabs2, global::DId.CreateTalkStreamRequestScriptVariant1ProviderOpenAI2>?))
                 {
-                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0282.Create_SourceGenerationContextMetadataType_8FEEE3BE3EB62D62(options);
+                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0281.Create_SourceGenerationContextMetadataType_8FEEE3BE3EB62D62(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

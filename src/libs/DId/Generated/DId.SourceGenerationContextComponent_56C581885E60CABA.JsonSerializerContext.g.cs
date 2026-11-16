@@ -31,7 +31,7 @@ namespace DId
             {
                 if (type == typeof(global::DId.TextToSpeechProvidersAmazon))
                 {
-                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0307.Create_TextToSpeechProvidersAmazon(options);
+                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0305.Create_TextToSpeechProvidersAmazon(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

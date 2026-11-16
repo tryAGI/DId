@@ -36,7 +36,7 @@ namespace DId
                 }
                 if (type == typeof(global::DId.CreateClipStreamRequestScriptVariant1ProviderOpenAIType?))
                 {
-                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0178.Create_NullableCreateClipStreamRequestScriptVariant1ProviderOpenAIType2_3(options);
+                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0177.Create_NullableCreateClipStreamRequestScriptVariant1ProviderOpenAIType2_3(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

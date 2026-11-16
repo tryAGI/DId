@@ -31,7 +31,7 @@ namespace DId
             {
                 if (type == typeof(global::DId.PickIPineconeQueryConfigExcludeKeyofIPineconeQueryConfigNamespace))
                 {
-                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0256.Create_PickIPineconeQueryConfigExcludeKeyofIPineconeQueryConfigNamespace(options);
+                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0255.Create_PickIPineconeQueryConfigExcludeKeyofIPineconeQueryConfigNamespace(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

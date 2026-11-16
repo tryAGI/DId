@@ -36,7 +36,7 @@ namespace DId
                 }
                 if (type == typeof(global::DId.CreateClipStreamRequestConfigResultFormat?))
                 {
-                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0177.Create_NullableCreateClipStreamRequestConfigResultFormat2_3(options);
+                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0176.Create_NullableCreateClipStreamRequestConfigResultFormat2_3(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

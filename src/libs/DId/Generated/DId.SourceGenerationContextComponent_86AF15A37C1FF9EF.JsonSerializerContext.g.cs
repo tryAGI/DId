@@ -36,7 +36,7 @@ namespace DId
                 }
                 if (type == typeof(global::DId.GetCreditsResponseCreditProductBillingInterval?))
                 {
-                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0200.Create_NullableGetCreditsResponseCreditProductBillingInterval2(options);
+                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0199.Create_NullableGetCreditsResponseCreditProductBillingInterval2(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

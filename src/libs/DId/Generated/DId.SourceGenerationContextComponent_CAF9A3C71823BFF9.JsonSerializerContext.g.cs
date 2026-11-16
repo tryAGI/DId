@@ -31,7 +31,7 @@ namespace DId
             {
                 if (type == typeof(global::DId.StreamTextScriptProviderMicrosoft))
                 {
-                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0302.Create_StreamTextScriptProviderMicrosoft(options);
+                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0301.Create_StreamTextScriptProviderMicrosoft(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

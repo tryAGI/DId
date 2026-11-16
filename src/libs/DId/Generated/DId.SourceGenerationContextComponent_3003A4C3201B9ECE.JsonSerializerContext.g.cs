@@ -32,7 +32,7 @@ namespace DId
             {
                 if (type == typeof(global::DId.ILogicalDocumentStatus))
                 {
-                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0145.Create_ILogicalDocumentStatus2(options);
+                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0144.Create_ILogicalDocumentStatus2(options);
                 }
                 if (type == typeof(global::DId.ILogicalDocumentStatus?))
                 {

@@ -36,7 +36,7 @@ namespace DId
                 }
                 if (type == typeof(global::DId.ElevenlabsStreamTtsProviderAccess?))
                 {
-                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0194.Create_NullableElevenlabsStreamTtsProviderAccess2(options);
+                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0193.Create_NullableElevenlabsStreamTtsProviderAccess2(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

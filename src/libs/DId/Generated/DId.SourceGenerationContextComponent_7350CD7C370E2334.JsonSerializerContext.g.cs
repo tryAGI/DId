@@ -36,7 +36,7 @@ namespace DId
                 }
                 if (type == typeof(global::DId.GetTranslationResponseTranscriptionVersion2?))
                 {
-                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0206.Create_NullableGetTranslationResponseTranscriptionVersion22(options);
+                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0205.Create_NullableGetTranslationResponseTranscriptionVersion22(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

@@ -32,7 +32,7 @@ namespace DId
             {
                 if (type == typeof(global::DId.ScriptVariant2Type))
                 {
-                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0260.Create_ScriptVariant2Type2(options);
+                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0259.Create_ScriptVariant2Type2(options);
                 }
                 if (type == typeof(global::DId.ScriptVariant2Type?))
                 {

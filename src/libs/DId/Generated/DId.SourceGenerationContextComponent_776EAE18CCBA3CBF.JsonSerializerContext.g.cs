@@ -31,7 +31,7 @@ namespace DId
             {
                 if (type == typeof(global::DId.TextScriptProviderGoogle))
                 {
-                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0306.Create_TextScriptProviderGoogle(options);
+                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0304.Create_TextScriptProviderGoogle(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

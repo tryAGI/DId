@@ -36,7 +36,7 @@ namespace DId
                 }
                 if (type == typeof(global::DId.CreateApiKeyAuthSecretRequestDtoType?))
                 {
-                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0175.Create_NullableCreateApiKeyAuthSecretRequestDtoType2(options);
+                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0174.Create_NullableCreateApiKeyAuthSecretRequestDtoType2(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

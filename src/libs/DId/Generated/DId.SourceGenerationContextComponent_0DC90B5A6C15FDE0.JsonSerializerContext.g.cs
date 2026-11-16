@@ -36,7 +36,7 @@ namespace DId
                 }
                 if (type == typeof(global::DId.GetClipsPresentersResponsePresenterVoiceAmazonVoiceId?))
                 {
-                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0199.Create_NullableGetClipsPresentersResponsePresenterVoiceAmazonVoiceId2(options);
+                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0198.Create_NullableGetClipsPresentersResponsePresenterVoiceAmazonVoiceId2(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

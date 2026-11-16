@@ -13,11 +13,11 @@ namespace DId
             {
                 if (type == typeof(string))
                 {
-                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0302.Create_String(options);
+                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0301.Create_String(options);
                 }
                 if (type == typeof(object))
                 {
-                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0235.Create_Object(options);
+                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0234.Create_Object(options);
                 }
                 if (type == typeof(bool))
                 {
@@ -41,27 +41,27 @@ namespace DId
                 }
                 if (type == typeof(global::System.Text.Json.JsonElement))
                 {
-                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0148.Create_JsonElement(options);
+                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0147.Create_JsonElement(options);
                 }
                 if (type == typeof(global::System.Text.Json.JsonElement?))
                 {
-                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0209.Create_NullableJsonElement(options);
+                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0208.Create_NullableJsonElement(options);
                 }
                 if (type == typeof(global::System.Collections.Generic.Dictionary<string, string>))
                 {
-                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0298.Create_SourceGenerationContextMetadataType_FC0ACBA26C044EC8(options);
+                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0297.Create_SourceGenerationContextMetadataType_FC0ACBA26C044EC8(options);
                 }
                 if (type == typeof(global::System.Collections.Generic.Dictionary<string, object>))
                 {
-                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0280.Create_SourceGenerationContextMetadataType_8219E7AD6AEFA4B4(options);
+                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0279.Create_SourceGenerationContextMetadataType_8219E7AD6AEFA4B4(options);
                 }
                 if (type == typeof(global::System.Collections.Generic.IDictionary<string, object>))
                 {
-                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0278.Create_SourceGenerationContextMetadataType_7024F6984ED20EB8(options);
+                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0277.Create_SourceGenerationContextMetadataType_7024F6984ED20EB8(options);
                 }
                 if (type == typeof(global::System.Collections.Generic.List<object>))
                 {
-                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0283.Create_SourceGenerationContextMetadataType_92E1ACA86984772C(options);
+                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0281.Create_SourceGenerationContextMetadataType_92E1ACA86984772C(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

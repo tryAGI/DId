@@ -36,7 +36,7 @@ namespace DId
                 }
                 if (type == typeof(global::DId.LLMConfigOpenAIProvider?))
                 {
-                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0211.Create_NullableLLMConfigOpenAIProvider2(options);
+                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0210.Create_NullableLLMConfigOpenAIProvider2(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

@@ -36,7 +36,7 @@ namespace DId
                 }
                 if (type == typeof(global::DId.CreateExpressiveResponseDtoVariant2Object?))
                 {
-                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0179.Create_NullableCreateExpressiveResponseDtoVariant2Object2(options);
+                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0178.Create_NullableCreateExpressiveResponseDtoVariant2Object2(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

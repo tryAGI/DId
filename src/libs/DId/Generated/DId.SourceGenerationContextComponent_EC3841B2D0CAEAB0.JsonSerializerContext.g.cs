@@ -36,7 +36,7 @@ namespace DId
                 }
                 if (type == typeof(global::DId.ConsentStatus?))
                 {
-                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0173.Create_NullableConsentStatus2(options);
+                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0172.Create_NullableConsentStatus2(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

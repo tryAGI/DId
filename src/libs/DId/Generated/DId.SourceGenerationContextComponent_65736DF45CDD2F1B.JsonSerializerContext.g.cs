@@ -32,7 +32,7 @@ namespace DId
             {
                 if (type == typeof(global::DId.StreamScriptVariant1ProviderOpenAIType))
                 {
-                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0301.Create_StreamScriptVariant1ProviderOpenAIType2(options);
+                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0300.Create_StreamScriptVariant1ProviderOpenAIType2(options);
                 }
                 if (type == typeof(global::DId.StreamScriptVariant1ProviderOpenAIType?))
                 {

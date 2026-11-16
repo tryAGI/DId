@@ -32,7 +32,7 @@ namespace DId
             {
                 if (type == typeof(global::DId.PickExpressiveAvatarExpressionExpressionPublicAllowedAttributesVoiceMicrosoftType))
                 {
-                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0255.Create_PickExpressiveAvatarExpressionExpressionPublicAllowedAttributesVoiceMicrosoftType2(options);
+                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0254.Create_PickExpressiveAvatarExpressionExpressionPublicAllowedAttributesVoiceMicrosoftType2(options);
                 }
                 if (type == typeof(global::DId.PickExpressiveAvatarExpressionExpressionPublicAllowedAttributesVoiceMicrosoftType?))
                 {

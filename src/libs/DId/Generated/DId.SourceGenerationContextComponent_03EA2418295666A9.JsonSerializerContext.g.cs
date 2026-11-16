@@ -36,7 +36,7 @@ namespace DId
                 }
                 if (type == typeof(global::DId.DIdLLMCreateDtoPromptCustomizationKnowledgeSource?))
                 {
-                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0191.Create_NullableDIdLLMCreateDtoPromptCustomizationKnowledgeSource2(options);
+                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0190.Create_NullableDIdLLMCreateDtoPromptCustomizationKnowledgeSource2(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

@@ -32,7 +32,7 @@ namespace DId
             {
                 if (type == typeof(global::DId.OpenAILLMCreateDtoTemplate))
                 {
-                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0241.Create_OpenAILLMCreateDtoTemplate2(options);
+                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0240.Create_OpenAILLMCreateDtoTemplate2(options);
                 }
                 if (type == typeof(global::DId.OpenAILLMCreateDtoTemplate?))
                 {

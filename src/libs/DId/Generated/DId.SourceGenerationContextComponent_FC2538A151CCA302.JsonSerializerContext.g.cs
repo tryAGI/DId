@@ -31,7 +31,7 @@ namespace DId
             {
                 if (type == typeof(global::DId.UnifiedCreateVideoStreamRequestScriptText))
                 {
-                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0310.Create_UnifiedCreateVideoStreamRequestScriptText(options);
+                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0307.Create_UnifiedCreateVideoStreamRequestScriptText(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

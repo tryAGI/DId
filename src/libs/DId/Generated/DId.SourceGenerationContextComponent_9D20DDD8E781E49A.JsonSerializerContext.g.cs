@@ -32,7 +32,7 @@ namespace DId
             {
                 if (type == typeof(global::DId.PartialAgentPresenterPhotoAvatarVoiceElevenLabsType))
                 {
-                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0243.Create_PartialAgentPresenterPhotoAvatarVoiceElevenLabsType2(options);
+                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0242.Create_PartialAgentPresenterPhotoAvatarVoiceElevenLabsType2(options);
                 }
                 if (type == typeof(global::DId.PartialAgentPresenterPhotoAvatarVoiceElevenLabsType?))
                 {

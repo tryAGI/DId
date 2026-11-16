@@ -36,7 +36,7 @@ namespace DId
                 }
                 if (type == typeof(global::DId.Get1ResponseStatus?))
                 {
-                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0197.Create_NullableGet1ResponseStatus2(options);
+                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0196.Create_NullableGet1ResponseStatus2(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

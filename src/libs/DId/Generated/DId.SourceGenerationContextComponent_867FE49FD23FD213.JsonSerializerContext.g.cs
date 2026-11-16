@@ -32,7 +32,7 @@ namespace DId
             {
                 if (type == typeof(global::DId.StreamScriptVariant1ProviderMicrosoftType))
                 {
-                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0301.Create_StreamScriptVariant1ProviderMicrosoftType2(options);
+                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0300.Create_StreamScriptVariant1ProviderMicrosoftType2(options);
                 }
                 if (type == typeof(global::DId.StreamScriptVariant1ProviderMicrosoftType?))
                 {

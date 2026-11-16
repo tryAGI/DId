@@ -31,7 +31,7 @@ namespace DId
             {
                 if (type == typeof(global::DId.PickExpressiveVideoIdOrStatusOrCreatedAt))
                 {
-                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0256.Create_PickExpressiveVideoIdOrStatusOrCreatedAt(options);
+                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0254.Create_PickExpressiveVideoIdOrStatusOrCreatedAt(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

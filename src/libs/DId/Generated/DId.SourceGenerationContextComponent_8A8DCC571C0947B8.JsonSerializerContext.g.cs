@@ -32,11 +32,11 @@ namespace DId
             {
                 if (type == typeof(global::DId.AnyOf<global::DId.DeleteAnimationResponseErrorVariant1, global::DId.DeleteAnimationResponseErrorVariant2, global::DId.DeleteAnimationResponseErrorVariant3, global::DId.DeleteAnimationResponseErrorVariant4, global::DId.DeleteAnimationResponseErrorVariant5, global::DId.DeleteAnimationResponseErrorVariant6>))
                 {
-                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0281.Create_SourceGenerationContextMetadataType_8A8DCC571C0947B8(options);
+                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0280.Create_SourceGenerationContextMetadataType_8A8DCC571C0947B8(options);
                 }
                 if (type == typeof(global::DId.AnyOf<global::DId.DeleteAnimationResponseErrorVariant1, global::DId.DeleteAnimationResponseErrorVariant2, global::DId.DeleteAnimationResponseErrorVariant3, global::DId.DeleteAnimationResponseErrorVariant4, global::DId.DeleteAnimationResponseErrorVariant5, global::DId.DeleteAnimationResponseErrorVariant6>?))
                 {
-                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0286.Create_SourceGenerationContextMetadataType_AC318DFD7DC5AAB0(options);
+                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0285.Create_SourceGenerationContextMetadataType_AC318DFD7DC5AAB0(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

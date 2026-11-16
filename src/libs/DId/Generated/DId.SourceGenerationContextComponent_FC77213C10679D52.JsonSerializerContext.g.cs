@@ -31,7 +31,7 @@ namespace DId
             {
                 if (type == typeof(global::DId.OmitIPineconeQueryConfigNamespace))
                 {
-                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0240.Create_OmitIPineconeQueryConfigNamespace(options);
+                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0239.Create_OmitIPineconeQueryConfigNamespace(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

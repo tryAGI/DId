@@ -36,7 +36,7 @@ namespace DId
                 }
                 if (type == typeof(global::DId.InitSessionTransportProvider?))
                 {
-                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0208.Create_NullableInitSessionTransportProvider2(options);
+                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0207.Create_NullableInitSessionTransportProvider2(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

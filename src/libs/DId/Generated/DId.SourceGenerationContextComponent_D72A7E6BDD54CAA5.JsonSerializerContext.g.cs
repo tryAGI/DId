@@ -32,11 +32,11 @@ namespace DId
             {
                 if (type == typeof(global::DId.AnyOf<global::DId.GetAvatarByIdResponseSentimentVariant1VoiceMicrosoft, global::DId.GetAvatarByIdResponseSentimentVariant1VoiceElevenLabs, global::DId.GetAvatarByIdResponseSentimentVariant1VoiceAmazon, global::DId.GetAvatarByIdResponseSentimentVariant1VoiceGoogle, global::DId.GetAvatarByIdResponseSentimentVariant1VoiceOpenAI>))
                 {
-                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0292.Create_SourceGenerationContextMetadataType_D72A7E6BDD54CAA5(options);
+                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0291.Create_SourceGenerationContextMetadataType_D72A7E6BDD54CAA5(options);
                 }
                 if (type == typeof(global::DId.AnyOf<global::DId.GetAvatarByIdResponseSentimentVariant1VoiceMicrosoft, global::DId.GetAvatarByIdResponseSentimentVariant1VoiceElevenLabs, global::DId.GetAvatarByIdResponseSentimentVariant1VoiceAmazon, global::DId.GetAvatarByIdResponseSentimentVariant1VoiceGoogle, global::DId.GetAvatarByIdResponseSentimentVariant1VoiceOpenAI>?))
                 {
-                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0274.Create_SourceGenerationContextMetadataType_5D5F0810F9BF92FB(options);
+                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0273.Create_SourceGenerationContextMetadataType_5D5F0810F9BF92FB(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

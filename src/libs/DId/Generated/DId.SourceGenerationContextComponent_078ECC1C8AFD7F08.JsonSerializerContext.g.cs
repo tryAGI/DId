@@ -36,7 +36,7 @@ namespace DId
                 }
                 if (type == typeof(global::DId.CreateSecretRequestDto?))
                 {
-                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0185.Create_NullableCreateSecretRequestDto2(options);
+                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0184.Create_NullableCreateSecretRequestDto2(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

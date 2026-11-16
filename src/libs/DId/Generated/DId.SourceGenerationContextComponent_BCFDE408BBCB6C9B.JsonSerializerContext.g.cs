@@ -36,7 +36,7 @@ namespace DId
                 }
                 if (type == typeof(global::DId.GoogleLLMModel?))
                 {
-                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0207.Create_NullableGoogleLLMModel2_3(options);
+                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0206.Create_NullableGoogleLLMModel2_3(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

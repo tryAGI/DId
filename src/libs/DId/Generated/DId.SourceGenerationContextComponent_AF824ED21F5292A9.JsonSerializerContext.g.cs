@@ -36,7 +36,7 @@ namespace DId
                 }
                 if (type == typeof(global::DId.CreateVideoStreamRequestScriptTextProviderElevenLabsAccess2?))
                 {
-                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0189.Create_NullableCreateVideoStreamRequestScriptTextProviderElevenLabsAccess22(options);
+                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0188.Create_NullableCreateVideoStreamRequestScriptTextProviderElevenLabsAccess22(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

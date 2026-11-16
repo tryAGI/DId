@@ -36,7 +36,7 @@ namespace DId
                 }
                 if (type == typeof(global::DId.KnowledgeEmbedderProvider?))
                 {
-                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0209.Create_NullableKnowledgeEmbedderProvider2(options);
+                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0208.Create_NullableKnowledgeEmbedderProvider2(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

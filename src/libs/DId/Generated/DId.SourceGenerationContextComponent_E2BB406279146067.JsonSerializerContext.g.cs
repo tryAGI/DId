@@ -31,7 +31,7 @@ namespace DId
             {
                 if (type == typeof(global::DId.OpenAILLMPromptCustomization))
                 {
-                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0241.Create_OpenAILLMPromptCustomization(options);
+                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0240.Create_OpenAILLMPromptCustomization(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

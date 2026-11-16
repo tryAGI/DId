@@ -32,7 +32,7 @@ namespace DId
             {
                 if (type == typeof(global::DId.OpenAILLMCreateDtoPromptCustomizationKnowledgeSource))
                 {
-                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0241.Create_OpenAILLMCreateDtoPromptCustomizationKnowledgeSource2(options);
+                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0240.Create_OpenAILLMCreateDtoPromptCustomizationKnowledgeSource2(options);
                 }
                 if (type == typeof(global::DId.OpenAILLMCreateDtoPromptCustomizationKnowledgeSource?))
                 {

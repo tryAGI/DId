@@ -36,7 +36,7 @@ namespace DId
                 }
                 if (type == typeof(global::DId.CreateStreamScriptTextProviderMicrosoftType?))
                 {
-                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0186.Create_NullableCreateStreamScriptTextProviderMicrosoftType2(options);
+                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0185.Create_NullableCreateStreamScriptTextProviderMicrosoftType2(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

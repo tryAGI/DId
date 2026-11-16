@@ -30,7 +30,7 @@ namespace DId
             {
                 if (type == typeof(global::DId.PartialOmitExpressiveAvatarInternalDtoKeyofExpressiveAvatarPublicDto))
                 {
-                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0247.Create_PartialOmitExpressiveAvatarInternalDtoKeyofExpressiveAvatarPublicDto(options);
+                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0246.Create_PartialOmitExpressiveAvatarInternalDtoKeyofExpressiveAvatarPublicDto(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

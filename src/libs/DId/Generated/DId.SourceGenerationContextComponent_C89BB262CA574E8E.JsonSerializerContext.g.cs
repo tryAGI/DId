@@ -36,7 +36,7 @@ namespace DId
                 }
                 if (type == typeof(global::DId.GetAvatarByIdResponseSentimentVariant1VoiceMicrosoftType?))
                 {
-                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0198.Create_NullableGetAvatarByIdResponseSentimentVariant1VoiceMicrosoftType2(options);
+                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0197.Create_NullableGetAvatarByIdResponseSentimentVariant1VoiceMicrosoftType2(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

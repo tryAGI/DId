@@ -36,7 +36,7 @@ namespace DId
                 }
                 if (type == typeof(global::DId.CustomAuthOauth2ConfigType?))
                 {
-                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0190.Create_NullableCustomAuthOauth2ConfigType2(options);
+                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0189.Create_NullableCustomAuthOauth2ConfigType2(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

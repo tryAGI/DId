@@ -36,7 +36,7 @@ namespace DId
                 }
                 if (type == typeof(global::DId.AgentCreateDtoLlmVariant1Provider?))
                 {
-                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0160.Create_NullableAgentCreateDtoLlmVariant1Provider2(options);
+                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0159.Create_NullableAgentCreateDtoLlmVariant1Provider2(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

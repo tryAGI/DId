@@ -36,7 +36,7 @@ namespace DId
                 }
                 if (type == typeof(global::DId.DeleteResponseVariant1PresenterExpressiveAvatarVoiceOpenAIType?))
                 {
-                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0193.Create_NullableDeleteResponseVariant1PresenterExpressiveAvatarVoiceOpenAIType2(options);
+                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0192.Create_NullableDeleteResponseVariant1PresenterExpressiveAvatarVoiceOpenAIType2(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

@@ -32,7 +32,7 @@ namespace DId
             {
                 if (type == typeof(global::DId.CreateResponseVariant1PresenterPhotoAvatarVoiceOpenAIType))
                 {
-                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0063.Create_CreateResponseVariant1PresenterPhotoAvatarVoiceOpenAIType2(options);
+                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0062.Create_CreateResponseVariant1PresenterPhotoAvatarVoiceOpenAIType2(options);
                 }
                 if (type == typeof(global::DId.CreateResponseVariant1PresenterPhotoAvatarVoiceOpenAIType?))
                 {

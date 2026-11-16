@@ -32,7 +32,7 @@ namespace DId
             {
                 if (type == typeof(global::DId.CreateRequestLlmVariant6Model))
                 {
-                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0055.Create_CreateRequestLlmVariant6Model2(options);
+                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0054.Create_CreateRequestLlmVariant6Model2(options);
                 }
                 if (type == typeof(global::DId.CreateRequestLlmVariant6Model?))
                 {

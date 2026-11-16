@@ -36,7 +36,7 @@ namespace DId
                 }
                 if (type == typeof(global::DId.GetAnimationResponseConfigResultFormat?))
                 {
-                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0197.Create_NullableGetAnimationResponseConfigResultFormat2(options);
+                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0196.Create_NullableGetAnimationResponseConfigResultFormat2(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

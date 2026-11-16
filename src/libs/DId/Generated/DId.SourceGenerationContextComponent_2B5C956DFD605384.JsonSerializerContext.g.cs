@@ -36,7 +36,7 @@ namespace DId
                 }
                 if (type == typeof(global::DId.GetSecretByIdResponseType?))
                 {
-                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0205.Create_NullableGetSecretByIdResponseType2(options);
+                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0204.Create_NullableGetSecretByIdResponseType2(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

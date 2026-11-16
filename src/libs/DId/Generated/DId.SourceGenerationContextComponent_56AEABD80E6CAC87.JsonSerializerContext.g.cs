@@ -32,7 +32,7 @@ namespace DId
             {
                 if (type == typeof(global::DId.ResultFormat))
                 {
-                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0258.Create_ResultFormat2(options);
+                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0257.Create_ResultFormat2(options);
                 }
                 if (type == typeof(global::DId.ResultFormat?))
                 {

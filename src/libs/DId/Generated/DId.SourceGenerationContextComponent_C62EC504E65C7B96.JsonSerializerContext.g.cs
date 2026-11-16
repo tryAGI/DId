@@ -36,7 +36,7 @@ namespace DId
                 }
                 if (type == typeof(global::DId.ColorBackgroundType?))
                 {
-                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0173.Create_NullableColorBackgroundType2(options);
+                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0172.Create_NullableColorBackgroundType2(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

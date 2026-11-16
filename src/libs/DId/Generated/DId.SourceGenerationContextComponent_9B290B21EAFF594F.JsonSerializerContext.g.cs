@@ -32,7 +32,7 @@ namespace DId
             {
                 if (type == typeof(global::DId.JoinLivekitRoomRequestTransportProvider))
                 {
-                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0148.Create_JoinLivekitRoomRequestTransportProvider2(options);
+                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0147.Create_JoinLivekitRoomRequestTransportProvider2(options);
                 }
                 if (type == typeof(global::DId.JoinLivekitRoomRequestTransportProvider?))
                 {

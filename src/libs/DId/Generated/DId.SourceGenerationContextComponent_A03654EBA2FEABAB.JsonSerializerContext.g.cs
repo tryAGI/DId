@@ -30,7 +30,7 @@ namespace DId
             {
                 if (type == typeof(global::DId.RecordStringAny))
                 {
-                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0258.Create_RecordStringAny(options);
+                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0256.Create_RecordStringAny(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

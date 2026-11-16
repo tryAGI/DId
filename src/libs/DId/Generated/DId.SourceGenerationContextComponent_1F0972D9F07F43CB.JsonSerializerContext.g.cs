@@ -36,7 +36,7 @@ namespace DId
                 }
                 if (type == typeof(global::DId.AnimationError?))
                 {
-                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0170.Create_NullableAnimationError2(options);
+                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0169.Create_NullableAnimationError2(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

@@ -34,7 +34,7 @@ namespace DId
                 }
                 if (type == typeof(bool?))
                 {
-                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0171.Create_NullableBoolean(options);
+                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0170.Create_NullableBoolean(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

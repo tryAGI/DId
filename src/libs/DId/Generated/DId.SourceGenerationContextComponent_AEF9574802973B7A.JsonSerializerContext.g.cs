@@ -36,7 +36,7 @@ namespace DId
                 }
                 if (type == typeof(global::DId.AgentResponseDto?))
                 {
-                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0165.Create_NullableAgentResponseDto2(options);
+                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0164.Create_NullableAgentResponseDto2(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

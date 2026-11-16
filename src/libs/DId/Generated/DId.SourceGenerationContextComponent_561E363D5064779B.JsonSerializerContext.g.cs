@@ -32,7 +32,7 @@ namespace DId
             {
                 if (type == typeof(global::DId.OpenAILLMCreateDtoProvider))
                 {
-                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0241.Create_OpenAILLMCreateDtoProvider2(options);
+                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0240.Create_OpenAILLMCreateDtoProvider2(options);
                 }
                 if (type == typeof(global::DId.OpenAILLMCreateDtoProvider?))
                 {

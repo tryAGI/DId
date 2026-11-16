@@ -32,11 +32,11 @@ namespace DId
             {
                 if (type == typeof(global::DId.UpdateSecretAzureOpenAIRequestDtoProvider))
                 {
-                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0324.Create_UpdateSecretAzureOpenAIRequestDtoProvider2(options);
+                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0322.Create_UpdateSecretAzureOpenAIRequestDtoProvider2(options);
                 }
                 if (type == typeof(global::DId.UpdateSecretAzureOpenAIRequestDtoProvider?))
                 {
-                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0234.Create_NullableUpdateSecretAzureOpenAIRequestDtoProvider2(options);
+                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0232.Create_NullableUpdateSecretAzureOpenAIRequestDtoProvider2(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

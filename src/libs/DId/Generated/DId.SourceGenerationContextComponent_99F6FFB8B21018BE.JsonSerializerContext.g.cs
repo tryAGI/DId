@@ -32,7 +32,7 @@ namespace DId
             {
                 if (type == typeof(global::DId.GetClipsResponseClipConfigResultFormat))
                 {
-                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0121.Create_GetClipsResponseClipConfigResultFormat2_3(options);
+                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0120.Create_GetClipsResponseClipConfigResultFormat2_3(options);
                 }
                 if (type == typeof(global::DId.GetClipsResponseClipConfigResultFormat?))
                 {

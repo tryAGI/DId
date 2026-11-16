@@ -31,7 +31,7 @@ namespace DId
             {
                 if (type == typeof(global::DId.PartialExpressiveAgentPresenterVoiceOpenAIVoiceConfig))
                 {
-                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0247.Create_PartialExpressiveAgentPresenterVoiceOpenAIVoiceConfig(options);
+                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0246.Create_PartialExpressiveAgentPresenterVoiceOpenAIVoiceConfig(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

@@ -36,7 +36,7 @@ namespace DId
                 }
                 if (type == typeof(global::DId.ExpressiveAvatarExpressionPublicDtoVoiceOpenAIType?))
                 {
-                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0196.Create_NullableExpressiveAvatarExpressionPublicDtoVoiceOpenAIType2(options);
+                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0195.Create_NullableExpressiveAvatarExpressionPublicDtoVoiceOpenAIType2(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

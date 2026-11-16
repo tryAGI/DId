@@ -32,7 +32,7 @@ namespace DId
             {
                 if (type == typeof(global::DId.DeleteResponseVariant1PresenterVideoAvatarVoiceElevenLabsAccess))
                 {
-                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0094.Create_DeleteResponseVariant1PresenterVideoAvatarVoiceElevenLabsAccess2(options);
+                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0093.Create_DeleteResponseVariant1PresenterVideoAvatarVoiceElevenLabsAccess2(options);
                 }
                 if (type == typeof(global::DId.DeleteResponseVariant1PresenterVideoAvatarVoiceElevenLabsAccess?))
                 {

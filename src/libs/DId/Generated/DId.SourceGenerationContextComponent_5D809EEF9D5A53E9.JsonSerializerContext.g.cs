@@ -32,11 +32,11 @@ namespace DId
             {
                 if (type == typeof(global::DId.VoiceIdsAmazon))
                 {
-                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0329.Create_VoiceIdsAmazon2(options);
+                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0327.Create_VoiceIdsAmazon2(options);
                 }
                 if (type == typeof(global::DId.VoiceIdsAmazon?))
                 {
-                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0235.Create_NullableVoiceIdsAmazon2(options);
+                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0233.Create_NullableVoiceIdsAmazon2(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

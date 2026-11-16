@@ -32,7 +32,7 @@ namespace DId
             {
                 if (type == typeof(global::DId.CreateSecretAzureOpenAIRequestDtoProvider))
                 {
-                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0066.Create_CreateSecretAzureOpenAIRequestDtoProvider2(options);
+                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0065.Create_CreateSecretAzureOpenAIRequestDtoProvider2(options);
                 }
                 if (type == typeof(global::DId.CreateSecretAzureOpenAIRequestDtoProvider?))
                 {

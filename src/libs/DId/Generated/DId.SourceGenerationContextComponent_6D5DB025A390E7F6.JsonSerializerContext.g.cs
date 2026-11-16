@@ -32,7 +32,7 @@ namespace DId
             {
                 if (type == typeof(global::DId.TalksConfigResultFormat))
                 {
-                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0304.Create_TalksConfigResultFormat2(options);
+                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0303.Create_TalksConfigResultFormat2(options);
                 }
                 if (type == typeof(global::DId.TalksConfigResultFormat?))
                 {

@@ -31,7 +31,7 @@ namespace DId
             {
                 if (type == typeof(global::DId.TrainClipRequestConfig))
                 {
-                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0308.Create_TrainClipRequestConfig(options);
+                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0306.Create_TrainClipRequestConfig(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

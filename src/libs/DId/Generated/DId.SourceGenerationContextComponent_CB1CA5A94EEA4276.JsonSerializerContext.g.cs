@@ -30,7 +30,7 @@ namespace DId
             {
                 if (type == typeof(global::DId.PickExpressiveVideoExpressivePublicAllowedAttributesErrorDetails))
                 {
-                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0255.Create_PickExpressiveVideoExpressivePublicAllowedAttributesErrorDetails(options);
+                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0254.Create_PickExpressiveVideoExpressivePublicAllowedAttributesErrorDetails(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

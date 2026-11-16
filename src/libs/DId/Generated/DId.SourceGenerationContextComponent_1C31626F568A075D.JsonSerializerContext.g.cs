@@ -34,7 +34,7 @@ namespace DId
                 }
                 if (type == typeof(byte?))
                 {
-                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0171.Create_NullableByte(options);
+                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0170.Create_NullableByte(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

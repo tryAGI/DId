@@ -31,7 +31,7 @@ namespace DId
             {
                 if (type == typeof(global::DId.CreateSecretAzureOpenAIRequestDto))
                 {
-                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0066.Create_CreateSecretAzureOpenAIRequestDto(options);
+                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0065.Create_CreateSecretAzureOpenAIRequestDto(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

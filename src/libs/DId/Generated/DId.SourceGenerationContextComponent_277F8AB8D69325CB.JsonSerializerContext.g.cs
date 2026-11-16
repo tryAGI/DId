@@ -32,7 +32,7 @@ namespace DId
             {
                 if (type == typeof(global::DId.PartialAgentClipPresenterVoiceOpenAIType))
                 {
-                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0243.Create_PartialAgentClipPresenterVoiceOpenAIType2(options);
+                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0241.Create_PartialAgentClipPresenterVoiceOpenAIType2(options);
                 }
                 if (type == typeof(global::DId.PartialAgentClipPresenterVoiceOpenAIType?))
                 {

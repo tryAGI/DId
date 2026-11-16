@@ -32,7 +32,7 @@ namespace DId
             {
                 if (type == typeof(global::DId.ListMyAgentsResponseAgentVariant1LlmVariant2Template))
                 {
-                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0155.Create_ListMyAgentsResponseAgentVariant1LlmVariant2Template2(options);
+                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0154.Create_ListMyAgentsResponseAgentVariant1LlmVariant2Template2(options);
                 }
                 if (type == typeof(global::DId.ListMyAgentsResponseAgentVariant1LlmVariant2Template?))
                 {

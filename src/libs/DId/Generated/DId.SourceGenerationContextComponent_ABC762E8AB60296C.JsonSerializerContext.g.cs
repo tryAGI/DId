@@ -32,11 +32,11 @@ namespace DId
             {
                 if (type == typeof(global::DId.OrderBy))
                 {
-                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0242.Create_OrderBy2(options);
+                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0241.Create_OrderBy2(options);
                 }
                 if (type == typeof(global::DId.OrderBy?))
                 {
-                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0217.Create_NullableOrderBy2(options);
+                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0216.Create_NullableOrderBy2(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

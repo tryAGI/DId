@@ -32,7 +32,7 @@ namespace DId
             {
                 if (type == typeof(global::DId.CreateVideoStreamRequestScriptTextProviderMicrosoftType))
                 {
-                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0080.Create_CreateVideoStreamRequestScriptTextProviderMicrosoftType2_3(options);
+                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0079.Create_CreateVideoStreamRequestScriptTextProviderMicrosoftType2_3(options);
                 }
                 if (type == typeof(global::DId.CreateVideoStreamRequestScriptTextProviderMicrosoftType?))
                 {
