@@ -21,7 +21,12 @@ rm -rf Generated
 # The upstream extraction deduplicates by appending an index, so the merged document declares the
 # same shape several times: JsonError through JsonError4, plus TextScript3 and AudioScript3. These
 # are not AutoSDK name collisions - the names genuinely differ, so nothing merges them and the SDK
-# ships five identical error types. Collapse them here, repointing every $ref at one survivor.
+# ships five identical error types.
+#
+# All six are orphans: measured on the document, not one of them is the target of a $ref anywhere.
+# AutoSDK emits a type per component regardless of reachability, so collapsing them removes dead
+# public types and changes no operation's wire contract. The repointing below is therefore a
+# safeguard for a future document that does reference them, not something today's spec needs.
 #
 # The groups are listed by name on purpose. Merging components merely because they share a shape is
 # unsafe in general: measured across the workspace, 3506 component pairs share a shape and almost
