@@ -31,7 +31,7 @@ namespace DId
             {
                 if (type == typeof(global::DId.PartialRatingPayload))
                 {
-                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0247.Create_PartialRatingPayload(options);
+                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0223.Create_PartialRatingPayload(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

@@ -31,7 +31,7 @@ namespace DId
             {
                 if (type == typeof(global::DId.CustomBasicKeyConfig))
                 {
-                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0082.Create_CustomBasicKeyConfig(options);
+                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0069.Create_CustomBasicKeyConfig(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

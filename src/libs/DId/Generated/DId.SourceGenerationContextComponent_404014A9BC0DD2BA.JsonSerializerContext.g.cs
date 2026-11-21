@@ -32,11 +32,11 @@ namespace DId
             {
                 if (type == typeof(global::DId.AmazonTtsProviderType))
                 {
-                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0024.Create_AmazonTtsProviderType2(options);
+                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0021.Create_AmazonTtsProviderType2(options);
                 }
                 if (type == typeof(global::DId.AmazonTtsProviderType?))
                 {
-                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0169.Create_NullableAmazonTtsProviderType2(options);
+                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0149.Create_NullableAmazonTtsProviderType2(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

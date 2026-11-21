@@ -9,7 +9,7 @@ namespace DId
         internal static readonly global::DId.SourceGenerationContextMetadataScope MetadataScope = new(
                 null,
                 new global::System.Func<global::DId.SourceGenerationContextMetadataScope>[] {
-                    static () => global::DId.SourceGenerationContextComponent_FC7C63322F6BD6A5.MetadataScope,                    static () => global::DId.SourceGenerationContextComponent_8726CF31652B9250.MetadataScope,                    static () => global::DId.SourceGenerationContextComponent_EF1765803EE1D3E5.MetadataScope,                    static () => global::DId.SourceGenerationContextComponent_E248BB24F2058220.MetadataScope,                    static () => global::DId.SourceGenerationContextComponent_C5D3DBFC94759AD2.MetadataScope,                    static () => global::DId.SourceGenerationContextComponent_473287F8298DBA71.MetadataScope,
+                    static () => global::DId.SourceGenerationContextComponent_FC7C63322F6BD6A5.MetadataScope,                    static () => global::DId.SourceGenerationContextComponent_8726CF31652B9250.MetadataScope,                    static () => global::DId.SourceGenerationContextComponent_C5D3DBFC94759AD2.MetadataScope,                    static () => global::DId.SourceGenerationContextComponent_473287F8298DBA71.MetadataScope,
                 }, null);
         internal static global::System.Text.Json.Serialization.JsonSerializerContext Default => MetadataScope.Default;
 

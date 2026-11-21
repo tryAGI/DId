@@ -31,7 +31,7 @@ namespace DId
             {
                 if (type == typeof(global::DId.OmitStreamVideoConfigResolution))
                 {
-                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0239.Create_OmitStreamVideoConfigResolution(options);
+                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0215.Create_OmitStreamVideoConfigResolution(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

@@ -15,15 +15,7 @@ namespace DId
         /// <summary>
         ///
         /// </summary>
-        Function,
-        /// <summary>
-        ///
-        /// </summary>
         System,
-        /// <summary>
-        ///
-        /// </summary>
-        Tool,
         /// <summary>
         ///
         /// </summary>
@@ -43,9 +35,7 @@ namespace DId
             return value switch
             {
                 MessageRole2.Assistant => "assistant",
-                MessageRole2.Function => "function",
                 MessageRole2.System => "system",
-                MessageRole2.Tool => "tool",
                 MessageRole2.User => "user",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
             };
@@ -58,9 +48,7 @@ namespace DId
             return value switch
             {
                 "assistant" => MessageRole2.Assistant,
-                "function" => MessageRole2.Function,
                 "system" => MessageRole2.System,
-                "tool" => MessageRole2.Tool,
                 "user" => MessageRole2.User,
                 _ => null,
             };

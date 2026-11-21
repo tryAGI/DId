@@ -30,7 +30,7 @@ namespace DId
             {
                 if (type == typeof(global::DId.DeleteTalkResponseDetails))
                 {
-                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0097.Create_DeleteTalkResponseDetails(options);
+                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0081.Create_DeleteTalkResponseDetails(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

@@ -29,13 +29,13 @@ namespace DId
             global::System.Net.Http.HttpClient httpClient,
             ref string agentId,
             ref string streamId,
-            global::DId.DeleteStreamRequest2 request);
+            global::DId.DeleteStreamRequest request);
         partial void PrepareDeleteStreamRequest(
             global::System.Net.Http.HttpClient httpClient,
             global::System.Net.Http.HttpRequestMessage httpRequestMessage,
             string agentId,
             string streamId,
-            global::DId.DeleteStreamRequest2 request);
+            global::DId.DeleteStreamRequest request);
         partial void ProcessDeleteStreamResponse(
             global::System.Net.Http.HttpClient httpClient,
             global::System.Net.Http.HttpResponseMessage httpResponseMessage);
@@ -54,11 +54,11 @@ namespace DId
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::DId.ApiException"></exception>
-        public async global::System.Threading.Tasks.Task<global::DId.DeleteStreamResponse> DeleteStreamAsync(
+        public async global::System.Threading.Tasks.Task<global::DId.DeleteStreamResponse5> DeleteStreamAsync(
             string agentId,
             string streamId,
 
-            global::DId.DeleteStreamRequest2 request,
+            global::DId.DeleteStreamRequest request,
             global::DId.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
@@ -82,11 +82,11 @@ namespace DId
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::DId.ApiException"></exception>
-        public async global::System.Threading.Tasks.Task<global::DId.AutoSDKHttpResponse<global::DId.DeleteStreamResponse>> DeleteStreamAsResponseAsync(
+        public async global::System.Threading.Tasks.Task<global::DId.AutoSDKHttpResponse<global::DId.DeleteStreamResponse5>> DeleteStreamAsResponseAsync(
             string agentId,
             string streamId,
 
-            global::DId.DeleteStreamRequest2 request,
+            global::DId.DeleteStreamRequest request,
             global::DId.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
@@ -360,19 +360,19 @@ namespace DId
                             {
                                 string? __content_400 = null;
                                 global::System.Exception? __exception_400 = null;
-                                global::DId.DeleteStreamResponse2? __value_400 = null;
+                                global::DId.DeleteStreamResponse6? __value_400 = null;
                                 try
                                 {
                                     if (__effectiveReadResponseAsString)
                                     {
                                         __content_400 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
-                                        __value_400 = global::DId.DeleteStreamResponse2.FromJson(__content_400, JsonSerializerContext);
+                                        __value_400 = __content_400 is not { Length: > 0 } ? null : global::DId.DeleteStreamResponse6.FromJson(__content_400, JsonSerializerContext);
                                     }
                                     else
                                     {
                                         __content_400 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
 
-                                        __value_400 = global::DId.DeleteStreamResponse2.FromJson(__content_400, JsonSerializerContext);
+                                        __value_400 = __content_400 is not { Length: > 0 } ? null : global::DId.DeleteStreamResponse6.FromJson(__content_400, JsonSerializerContext);
                                     }
                                 }
                                 catch (global::System.Exception __ex)
@@ -381,9 +381,9 @@ namespace DId
                                 }
 
 
-                                throw global::DId.ApiException<global::DId.DeleteStreamResponse2>.Create(
+                                throw global::DId.ApiException<global::DId.DeleteStreamResponse6>.Create(
                                     statusCode: __response.StatusCode,
-                                    message: __content_400 ?? __response.ReasonPhrase ?? string.Empty,
+                                    message: __content_400 is { Length: > 0 } ? __content_400 : __response.ReasonPhrase ?? string.Empty,
                                     innerException: __exception_400,
                                     responseBody: __content_400,
                                     responseObject: __value_400,
@@ -397,19 +397,19 @@ namespace DId
                             {
                                 string? __content_401 = null;
                                 global::System.Exception? __exception_401 = null;
-                                global::DId.DeleteStreamResponse3? __value_401 = null;
+                                global::DId.DeleteStreamResponse7? __value_401 = null;
                                 try
                                 {
                                     if (__effectiveReadResponseAsString)
                                     {
                                         __content_401 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
-                                        __value_401 = global::DId.DeleteStreamResponse3.FromJson(__content_401, JsonSerializerContext);
+                                        __value_401 = __content_401 is not { Length: > 0 } ? null : global::DId.DeleteStreamResponse7.FromJson(__content_401, JsonSerializerContext);
                                     }
                                     else
                                     {
                                         __content_401 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
 
-                                        __value_401 = global::DId.DeleteStreamResponse3.FromJson(__content_401, JsonSerializerContext);
+                                        __value_401 = __content_401 is not { Length: > 0 } ? null : global::DId.DeleteStreamResponse7.FromJson(__content_401, JsonSerializerContext);
                                     }
                                 }
                                 catch (global::System.Exception __ex)
@@ -418,9 +418,9 @@ namespace DId
                                 }
 
 
-                                throw global::DId.ApiException<global::DId.DeleteStreamResponse3>.Create(
+                                throw global::DId.ApiException<global::DId.DeleteStreamResponse7>.Create(
                                     statusCode: __response.StatusCode,
-                                    message: __content_401 ?? __response.ReasonPhrase ?? string.Empty,
+                                    message: __content_401 is { Length: > 0 } ? __content_401 : __response.ReasonPhrase ?? string.Empty,
                                     innerException: __exception_401,
                                     responseBody: __content_401,
                                     responseObject: __value_401,
@@ -434,19 +434,19 @@ namespace DId
                             {
                                 string? __content_404 = null;
                                 global::System.Exception? __exception_404 = null;
-                                global::DId.DeleteStreamResponse4? __value_404 = null;
+                                global::DId.DeleteStreamResponse8? __value_404 = null;
                                 try
                                 {
                                     if (__effectiveReadResponseAsString)
                                     {
                                         __content_404 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
-                                        __value_404 = global::DId.DeleteStreamResponse4.FromJson(__content_404, JsonSerializerContext);
+                                        __value_404 = __content_404 is not { Length: > 0 } ? null : global::DId.DeleteStreamResponse8.FromJson(__content_404, JsonSerializerContext);
                                     }
                                     else
                                     {
                                         __content_404 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
 
-                                        __value_404 = global::DId.DeleteStreamResponse4.FromJson(__content_404, JsonSerializerContext);
+                                        __value_404 = __content_404 is not { Length: > 0 } ? null : global::DId.DeleteStreamResponse8.FromJson(__content_404, JsonSerializerContext);
                                     }
                                 }
                                 catch (global::System.Exception __ex)
@@ -455,9 +455,9 @@ namespace DId
                                 }
 
 
-                                throw global::DId.ApiException<global::DId.DeleteStreamResponse4>.Create(
+                                throw global::DId.ApiException<global::DId.DeleteStreamResponse8>.Create(
                                     statusCode: __response.StatusCode,
-                                    message: __content_404 ?? __response.ReasonPhrase ?? string.Empty,
+                                    message: __content_404 is { Length: > 0 } ? __content_404 : __response.ReasonPhrase ?? string.Empty,
                                     innerException: __exception_404,
                                     responseBody: __content_404,
                                     responseObject: __value_404,
@@ -488,9 +488,9 @@ namespace DId
                                 {
                                     __response.EnsureSuccessStatusCode();
 
-                                    var __value = global::DId.DeleteStreamResponse.FromJson(__content, JsonSerializerContext) ??
+                                    var __value = global::DId.DeleteStreamResponse5.FromJson(__content, JsonSerializerContext) ??
                                         throw new global::System.InvalidOperationException($"Response deserialization failed for \"{__content}\" ");
-                                    return new global::DId.AutoSDKHttpResponse<global::DId.DeleteStreamResponse>(
+                                    return new global::DId.AutoSDKHttpResponse<global::DId.DeleteStreamResponse5>(
                                         statusCode: __response.StatusCode,
                                         headers: global::DId.AutoSDKHttpResponse.CreateHeaders(__response),
                                         requestUri: __response.RequestMessage?.RequestUri,
@@ -500,7 +500,7 @@ namespace DId
                                 {
                                     throw global::DId.ApiException.Create(
                                         statusCode: __response.StatusCode,
-                                        message: __content ?? __response.ReasonPhrase ?? string.Empty,
+                                        message: __content is { Length: > 0 } ? __content : __response.ReasonPhrase ?? string.Empty,
                                         innerException: __ex,
                                         responseBody: __content,
                                         responseHeaders: global::System.Linq.Enumerable.ToDictionary(
@@ -520,9 +520,9 @@ namespace DId
                 #endif
                                     ).ConfigureAwait(false);
 
-                                    var __value = await global::DId.DeleteStreamResponse.FromJsonStreamAsync(__content, JsonSerializerContext).ConfigureAwait(false) ??
+                                    var __value = await global::DId.DeleteStreamResponse5.FromJsonStreamAsync(__content, JsonSerializerContext).ConfigureAwait(false) ??
                                         throw new global::System.InvalidOperationException("Response deserialization failed.");
-                                    return new global::DId.AutoSDKHttpResponse<global::DId.DeleteStreamResponse>(
+                                    return new global::DId.AutoSDKHttpResponse<global::DId.DeleteStreamResponse5>(
                                         statusCode: __response.StatusCode,
                                         headers: global::DId.AutoSDKHttpResponse.CreateHeaders(__response),
                                         requestUri: __response.RequestMessage?.RequestUri,
@@ -545,7 +545,7 @@ namespace DId
 
                                     throw global::DId.ApiException.Create(
                                         statusCode: __response.StatusCode,
-                                        message: __content ?? __response.ReasonPhrase ?? string.Empty,
+                                        message: __content is { Length: > 0 } ? __content : __response.ReasonPhrase ?? string.Empty,
                                         innerException: __ex,
                                         responseBody: __content,
                                         responseHeaders: global::System.Linq.Enumerable.ToDictionary(
@@ -571,14 +571,14 @@ namespace DId
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
-        public async global::System.Threading.Tasks.Task<global::DId.DeleteStreamResponse> DeleteStreamAsync(
+        public async global::System.Threading.Tasks.Task<global::DId.DeleteStreamResponse5> DeleteStreamAsync(
             string agentId,
             string streamId,
             string? sessionId = default,
             global::DId.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
-            var __request = new global::DId.DeleteStreamRequest2
+            var __request = new global::DId.DeleteStreamRequest
             {
                 SessionId = sessionId,
             };

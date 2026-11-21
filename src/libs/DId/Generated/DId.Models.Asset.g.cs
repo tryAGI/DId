@@ -66,8 +66,8 @@ namespace DId
         /// Current status for this asset lifecycle
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("status")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::DId.JsonConverters.AssetStatus2JsonConverter))]
-        public global::DId.AssetStatus2? Status { get; set; }
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::DId.JsonConverters.AssetStatusJsonConverter))]
+        public global::DId.AssetStatus? Status { get; set; }
 
         /// <summary>
         /// Moderation error details when status is error
@@ -126,7 +126,7 @@ namespace DId
             string? name,
             global::System.Collections.Generic.IList<string>? tags,
             string? thumbnailUrl,
-            global::DId.AssetStatus2? status,
+            global::DId.AssetStatus? status,
             global::DId.AssetError? error)
         {
             this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));

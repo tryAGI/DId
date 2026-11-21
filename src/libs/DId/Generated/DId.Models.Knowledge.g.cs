@@ -21,8 +21,8 @@ namespace DId
         /// The provider of the knowledge base
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("provider")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::DId.JsonConverters.KnowledgeProvider2JsonConverter))]
-        public global::DId.KnowledgeProvider2? Provider { get; set; }
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::DId.JsonConverters.KnowledgeProviderJsonConverter))]
+        public global::DId.KnowledgeProvider? Provider { get; set; }
 
         /// <summary>
         /// List of messages to be showen as chat starter questions for the user to ask
@@ -56,7 +56,7 @@ namespace DId
 #endif
         public Knowledge(
             string id,
-            global::DId.KnowledgeProvider2? provider)
+            global::DId.KnowledgeProvider? provider)
         {
             this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
             this.Provider = provider;

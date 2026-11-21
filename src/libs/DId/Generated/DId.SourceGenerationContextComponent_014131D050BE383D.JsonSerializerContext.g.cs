@@ -31,7 +31,7 @@ namespace DId
             {
                 if (type == typeof(global::DId.Delete3Response))
                 {
-                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0085.Create_Delete3Response(options);
+                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0071.Create_Delete3Response(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

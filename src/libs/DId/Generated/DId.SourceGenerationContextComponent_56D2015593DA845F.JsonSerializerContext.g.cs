@@ -31,7 +31,7 @@ namespace DId
             {
                 if (type == typeof(global::DId.CreateTranslationResponseDtoTranslation))
                 {
-                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0078.Create_CreateTranslationResponseDtoTranslation(options);
+                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0066.Create_CreateTranslationResponseDtoTranslation(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

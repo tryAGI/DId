@@ -31,7 +31,7 @@ namespace DId
             {
                 if (type == typeof(global::DId.GetAnimationResponseDtoErrorVariant4))
                 {
-                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0109.Create_GetAnimationResponseDtoErrorVariant4(options);
+                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0093.Create_GetAnimationResponseDtoErrorVariant4(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

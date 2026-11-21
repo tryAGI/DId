@@ -31,7 +31,7 @@ namespace DId
             {
                 if (type == typeof(global::DId.JoinLivekitRoomRequest))
                 {
-                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0147.Create_JoinLivekitRoomRequest(options);
+                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0128.Create_JoinLivekitRoomRequest(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

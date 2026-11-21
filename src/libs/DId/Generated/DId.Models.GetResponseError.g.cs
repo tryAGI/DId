@@ -4,7 +4,7 @@
 namespace DId
 {
     /// <summary>
-    /// The error that failed the training process.
+    ///
     /// </summary>
     public sealed partial class GetResponseError
     {

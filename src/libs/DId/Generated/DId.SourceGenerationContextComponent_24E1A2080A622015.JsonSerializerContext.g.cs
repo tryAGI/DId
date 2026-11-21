@@ -30,7 +30,7 @@ namespace DId
             {
                 if (type == typeof(global::DId.CreationNotesWorkerErrorDetails))
                 {
-                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0081.Create_CreationNotesWorkerErrorDetails(options);
+                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0068.Create_CreationNotesWorkerErrorDetails(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

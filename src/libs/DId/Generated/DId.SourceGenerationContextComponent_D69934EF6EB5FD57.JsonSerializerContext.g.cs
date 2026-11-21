@@ -31,7 +31,7 @@ namespace DId
             {
                 if (type == typeof(global::DId.DeleteTalkResponseConfig))
                 {
-                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0097.Create_DeleteTalkResponseConfig(options);
+                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0081.Create_DeleteTalkResponseConfig(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

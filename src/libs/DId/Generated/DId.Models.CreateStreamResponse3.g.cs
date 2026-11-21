@@ -11,29 +11,28 @@ namespace DId
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("session_id")]
-        public string? SessionId { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("kind")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string Kind { get; set; }
 
         /// <summary>
-        /// Id of the stream - should be returned as *path parameter* in all streaming request to the same stream
+        ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("id")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("description")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Id { get; set; }
+        public required string Description { get; set; }
 
         /// <summary>
-        /// Jsep offer object used to create a peer connection
+        ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("offer")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::DId.CreateStreamResponseOffer2 Offer { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("details")]
+        public object? Details { get; set; }
 
         /// <summary>
-        /// ICE servers used to create a peer connection
+        ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("ice_servers")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::System.Collections.Generic.IList<global::DId.CreateStreamResponseIceServer2> IceServers { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("internal")]
+        public string? Internal { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -44,29 +43,23 @@ namespace DId
         /// <summary>
         /// Initializes a new instance of the <see cref="CreateStreamResponse3" /> class.
         /// </summary>
-        /// <param name="id">
-        /// Id of the stream - should be returned as *path parameter* in all streaming request to the same stream
-        /// </param>
-        /// <param name="offer">
-        /// Jsep offer object used to create a peer connection
-        /// </param>
-        /// <param name="iceServers">
-        /// ICE servers used to create a peer connection
-        /// </param>
-        /// <param name="sessionId"></param>
+        /// <param name="kind"></param>
+        /// <param name="description"></param>
+        /// <param name="details"></param>
+        /// <param name="internal"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public CreateStreamResponse3(
-            string id,
-            global::DId.CreateStreamResponseOffer2 offer,
-            global::System.Collections.Generic.IList<global::DId.CreateStreamResponseIceServer2> iceServers,
-            string? sessionId)
+            string kind,
+            string description,
+            object? details,
+            string? @internal)
         {
-            this.SessionId = sessionId;
-            this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
-            this.Offer = offer ?? throw new global::System.ArgumentNullException(nameof(offer));
-            this.IceServers = iceServers ?? throw new global::System.ArgumentNullException(nameof(iceServers));
+            this.Kind = kind ?? throw new global::System.ArgumentNullException(nameof(kind));
+            this.Description = description ?? throw new global::System.ArgumentNullException(nameof(description));
+            this.Details = details;
+            this.Internal = @internal;
         }
 
         /// <summary>

@@ -31,7 +31,7 @@ namespace DId
             {
                 if (type == typeof(global::DId.SessionInsightsDto))
                 {
-                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0259.Create_SessionInsightsDto(options);
+                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0235.Create_SessionInsightsDto(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

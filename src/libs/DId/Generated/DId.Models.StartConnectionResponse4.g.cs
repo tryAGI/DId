@@ -12,8 +12,7 @@ namespace DId
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("status")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Status { get; set; }
+        public string? Status { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -29,9 +28,9 @@ namespace DId
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public StartConnectionResponse4(
-            string status)
+            string? status)
         {
-            this.Status = status ?? throw new global::System.ArgumentNullException(nameof(status));
+            this.Status = status;
         }
 
         /// <summary>

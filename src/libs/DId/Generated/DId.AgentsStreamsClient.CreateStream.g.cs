@@ -28,12 +28,12 @@ namespace DId
         partial void PrepareCreateStreamArguments(
             global::System.Net.Http.HttpClient httpClient,
             ref string agentId,
-            global::DId.CreateStreamRequest request);
+            global::DId.CreateStreamRequest2 request);
         partial void PrepareCreateStreamRequest(
             global::System.Net.Http.HttpClient httpClient,
             global::System.Net.Http.HttpRequestMessage httpRequestMessage,
             string agentId,
-            global::DId.CreateStreamRequest request);
+            global::DId.CreateStreamRequest2 request);
         partial void ProcessCreateStreamResponse(
             global::System.Net.Http.HttpClient httpClient,
             global::System.Net.Http.HttpResponseMessage httpResponseMessage);
@@ -55,7 +55,7 @@ namespace DId
         public async global::System.Threading.Tasks.Task<global::DId.CreateStreamResponse> CreateStreamAsync(
             string agentId,
 
-            global::DId.CreateStreamRequest request,
+            global::DId.CreateStreamRequest2 request,
             global::DId.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
@@ -81,7 +81,7 @@ namespace DId
         public async global::System.Threading.Tasks.Task<global::DId.AutoSDKHttpResponse<global::DId.CreateStreamResponse>> CreateStreamAsResponseAsync(
             string agentId,
 
-            global::DId.CreateStreamRequest request,
+            global::DId.CreateStreamRequest2 request,
             global::DId.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
@@ -353,19 +353,19 @@ namespace DId
                             {
                                 string? __content_401 = null;
                                 global::System.Exception? __exception_401 = null;
-                                global::DId.CreateStreamResponse2? __value_401 = null;
+                                global::DId.CreateStreamResponse3? __value_401 = null;
                                 try
                                 {
                                     if (__effectiveReadResponseAsString)
                                     {
                                         __content_401 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
-                                        __value_401 = global::DId.CreateStreamResponse2.FromJson(__content_401, JsonSerializerContext);
+                                        __value_401 = __content_401 is not { Length: > 0 } ? null : global::DId.CreateStreamResponse3.FromJson(__content_401, JsonSerializerContext);
                                     }
                                     else
                                     {
                                         __content_401 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
 
-                                        __value_401 = global::DId.CreateStreamResponse2.FromJson(__content_401, JsonSerializerContext);
+                                        __value_401 = __content_401 is not { Length: > 0 } ? null : global::DId.CreateStreamResponse3.FromJson(__content_401, JsonSerializerContext);
                                     }
                                 }
                                 catch (global::System.Exception __ex)
@@ -374,9 +374,9 @@ namespace DId
                                 }
 
 
-                                throw global::DId.ApiException<global::DId.CreateStreamResponse2>.Create(
+                                throw global::DId.ApiException<global::DId.CreateStreamResponse3>.Create(
                                     statusCode: __response.StatusCode,
-                                    message: __content_401 ?? __response.ReasonPhrase ?? string.Empty,
+                                    message: __content_401 is { Length: > 0 } ? __content_401 : __response.ReasonPhrase ?? string.Empty,
                                     innerException: __exception_401,
                                     responseBody: __content_401,
                                     responseObject: __value_401,
@@ -419,7 +419,7 @@ namespace DId
                                 {
                                     throw global::DId.ApiException.Create(
                                         statusCode: __response.StatusCode,
-                                        message: __content ?? __response.ReasonPhrase ?? string.Empty,
+                                        message: __content is { Length: > 0 } ? __content : __response.ReasonPhrase ?? string.Empty,
                                         innerException: __ex,
                                         responseBody: __content,
                                         responseHeaders: global::System.Linq.Enumerable.ToDictionary(
@@ -464,7 +464,7 @@ namespace DId
 
                                     throw global::DId.ApiException.Create(
                                         statusCode: __response.StatusCode,
-                                        message: __content ?? __response.ReasonPhrase ?? string.Empty,
+                                        message: __content is { Length: > 0 } ? __content : __response.ReasonPhrase ?? string.Empty,
                                         innerException: __ex,
                                         responseBody: __content,
                                         responseHeaders: global::System.Linq.Enumerable.ToDictionary(
@@ -519,7 +519,7 @@ namespace DId
             global::DId.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
-            var __request = new global::DId.CreateStreamRequest
+            var __request = new global::DId.CreateStreamRequest2
             {
                 Fluent = fluent,
                 SessionTimeout = sessionTimeout,

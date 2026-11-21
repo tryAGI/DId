@@ -30,7 +30,7 @@ namespace DId
             {
                 if (type == typeof(global::DId.GetExpressiveResponseDtoErrorDetails))
                 {
-                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0125.Create_GetExpressiveResponseDtoErrorDetails(options);
+                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0107.Create_GetExpressiveResponseDtoErrorDetails(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

@@ -32,11 +32,11 @@ namespace DId
             {
                 if (type == typeof(global::DId.JoinLiveKitRoomTransportProvider))
                 {
-                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0147.Create_JoinLiveKitRoomTransportProvider2(options);
+                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0128.Create_JoinLiveKitRoomTransportProvider2(options);
                 }
                 if (type == typeof(global::DId.JoinLiveKitRoomTransportProvider?))
                 {
-                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0208.Create_NullableJoinLiveKitRoomTransportProvider2(options);
+                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0184.Create_NullableJoinLiveKitRoomTransportProvider2(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

@@ -9,7 +9,7 @@ namespace DId
         internal static readonly global::DId.SourceGenerationContextMetadataScope MetadataScope = new(
                 new SharedMetadataResolver(),
                 new global::System.Func<global::DId.SourceGenerationContextMetadataScope>[] {
-                    static () => global::DId.SourceGenerationContextComponent_05BF36C073875770.MetadataScope,                    static () => global::DId.SourceGenerationContextComponent_473287F8298DBA71.MetadataScope,                    static () => global::DId.SourceGenerationContextComponent_5E23C808BA1CDB75.MetadataScope,                    static () => global::DId.SourceGenerationContextComponent_906333562543D0D3.MetadataScope,                    static () => global::DId.SourceGenerationContextComponent_A2E6ED6F0343E6B7.MetadataScope,
+                    static () => global::DId.SourceGenerationContextComponent_05BF36C073875770.MetadataScope,                    static () => global::DId.SourceGenerationContextComponent_31F1E425D03D9A2F.MetadataScope,                    static () => global::DId.SourceGenerationContextComponent_473287F8298DBA71.MetadataScope,                    static () => global::DId.SourceGenerationContextComponent_906333562543D0D3.MetadataScope,                    static () => global::DId.SourceGenerationContextComponent_A2E6ED6F0343E6B7.MetadataScope,
                 }, ContributeConverters);
         internal static global::System.Text.Json.Serialization.JsonSerializerContext Default => MetadataScope.Default;
 
@@ -31,7 +31,7 @@ namespace DId
             {
                 if (type == typeof(global::DId.Asset))
                 {
-                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0025.Create_Asset(options);
+                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0022.Create_Asset(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

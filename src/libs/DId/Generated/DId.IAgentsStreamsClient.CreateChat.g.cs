@@ -16,7 +16,7 @@ namespace DId
         global::System.Threading.Tasks.Task<string> CreateChatAsync(
             string agentId,
 
-            global::DId.CreateChatRequest2 request,
+            global::DId.CreateChatRequest request,
             global::DId.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
@@ -31,7 +31,7 @@ namespace DId
         global::System.Threading.Tasks.Task<global::DId.AutoSDKHttpResponse<string>> CreateChatAsResponseAsync(
             string agentId,
 
-            global::DId.CreateChatRequest2 request,
+            global::DId.CreateChatRequest request,
             global::DId.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>

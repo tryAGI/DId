@@ -31,7 +31,7 @@ namespace DId
             {
                 if (type == typeof(global::DId.CreditsItem))
                 {
-                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0081.Create_CreditsItem(options);
+                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0068.Create_CreditsItem(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

@@ -32,11 +32,11 @@ namespace DId
             {
                 if (type == typeof(global::DId.DeleteChatLogsResponseStatus))
                 {
-                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0087.Create_DeleteChatLogsResponseStatus2(options);
+                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0073.Create_DeleteChatLogsResponseStatus2(options);
                 }
                 if (type == typeof(global::DId.DeleteChatLogsResponseStatus?))
                 {
-                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0191.Create_NullableDeleteChatLogsResponseStatus2(options);
+                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0167.Create_NullableDeleteChatLogsResponseStatus2(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

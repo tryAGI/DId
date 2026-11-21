@@ -31,7 +31,7 @@ namespace DId
             {
                 if (type == typeof(global::DId.GreenscreenConfig))
                 {
-                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0143.Create_GreenscreenConfig(options);
+                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0124.Create_GreenscreenConfig(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

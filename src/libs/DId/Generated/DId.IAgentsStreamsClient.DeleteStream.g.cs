@@ -13,11 +13,11 @@ namespace DId
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::DId.ApiException"></exception>
-        global::System.Threading.Tasks.Task<global::DId.DeleteStreamResponse> DeleteStreamAsync(
+        global::System.Threading.Tasks.Task<global::DId.DeleteStreamResponse5> DeleteStreamAsync(
             string agentId,
             string streamId,
 
-            global::DId.DeleteStreamRequest2 request,
+            global::DId.DeleteStreamRequest request,
             global::DId.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
@@ -29,11 +29,11 @@ namespace DId
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::DId.ApiException"></exception>
-        global::System.Threading.Tasks.Task<global::DId.AutoSDKHttpResponse<global::DId.DeleteStreamResponse>> DeleteStreamAsResponseAsync(
+        global::System.Threading.Tasks.Task<global::DId.AutoSDKHttpResponse<global::DId.DeleteStreamResponse5>> DeleteStreamAsResponseAsync(
             string agentId,
             string streamId,
 
-            global::DId.DeleteStreamRequest2 request,
+            global::DId.DeleteStreamRequest request,
             global::DId.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
@@ -45,7 +45,7 @@ namespace DId
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
-        global::System.Threading.Tasks.Task<global::DId.DeleteStreamResponse> DeleteStreamAsync(
+        global::System.Threading.Tasks.Task<global::DId.DeleteStreamResponse5> DeleteStreamAsync(
             string agentId,
             string streamId,
             string? sessionId = default,

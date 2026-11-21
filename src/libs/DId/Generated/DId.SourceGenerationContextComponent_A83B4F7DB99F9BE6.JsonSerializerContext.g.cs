@@ -31,7 +31,7 @@ namespace DId
             {
                 if (type == typeof(global::DId.ListMyAgentsResponseAgentVariant1TriggersChatEndWebhookAuth))
                 {
-                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0157.Create_ListMyAgentsResponseAgentVariant1TriggersChatEndWebhookAuth(options);
+                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0138.Create_ListMyAgentsResponseAgentVariant1TriggersChatEndWebhookAuth(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

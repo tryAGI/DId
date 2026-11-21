@@ -14,7 +14,7 @@ namespace DId
         /// <exception cref="global::DId.ApiException"></exception>
         global::System.Threading.Tasks.Task<global::DId.CreateTalkResponse> CreateTalkAsync(
 
-            global::DId.CreateTalkRequest2 request,
+            global::DId.CreateTalkRequest request,
             string? xApiKeyExternal = default,
             global::DId.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
@@ -28,7 +28,7 @@ namespace DId
         /// <exception cref="global::DId.ApiException"></exception>
         global::System.Threading.Tasks.Task<global::DId.AutoSDKHttpResponse<global::DId.CreateTalkResponse>> CreateTalkAsResponseAsync(
 
-            global::DId.CreateTalkRequest2 request,
+            global::DId.CreateTalkRequest request,
             string? xApiKeyExternal = default,
             global::DId.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
@@ -65,10 +65,10 @@ namespace DId
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
         global::System.Threading.Tasks.Task<global::DId.CreateTalkResponse> CreateTalkAsync(
-            global::DId.AnyOf<global::DId.CreateTalkRequestScriptVariant12, global::DId.CreateTalkRequestScriptVariant22> script,
+            global::DId.AnyOf<global::DId.CreateTalkRequestScriptVariant1, global::DId.CreateTalkRequestScriptVariant2> script,
             string? xApiKeyExternal = default,
             string? sourceUrl = default,
-            global::DId.CreateTalkRequestConfig2? config = default,
+            global::DId.CreateTalkRequestConfig? config = default,
             string? userData = default,
             string? name = default,
             string? webhook = default,

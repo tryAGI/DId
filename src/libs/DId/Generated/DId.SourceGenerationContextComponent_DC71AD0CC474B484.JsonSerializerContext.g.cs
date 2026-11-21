@@ -31,7 +31,7 @@ namespace DId
             {
                 if (type == typeof(global::DId.GetTalkResponse))
                 {
-                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0139.Create_GetTalkResponse(options);
+                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0120.Create_GetTalkResponse(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

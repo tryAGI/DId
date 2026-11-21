@@ -30,7 +30,7 @@ namespace DId
             {
                 if (type == typeof(global::DId.CustomAuthConfigBasicHeaders))
                 {
-                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0082.Create_CustomAuthConfigBasicHeaders(options);
+                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0069.Create_CustomAuthConfigBasicHeaders(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

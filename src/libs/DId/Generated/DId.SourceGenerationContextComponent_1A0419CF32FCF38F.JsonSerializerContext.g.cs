@@ -31,7 +31,7 @@ namespace DId
             {
                 if (type == typeof(global::DId.AvatarsSettings))
                 {
-                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0026.Create_AvatarsSettings(options);
+                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0023.Create_AvatarsSettings(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);
