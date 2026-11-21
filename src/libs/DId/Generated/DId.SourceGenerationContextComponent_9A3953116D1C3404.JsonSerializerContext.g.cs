@@ -31,7 +31,7 @@ namespace DId
             {
                 if (type == typeof(global::DId.PickAgentExcludeKeyofAgentUserDataOrAdvancedSettingsOrEmbedOrAssetsPresenterExpressiveAvatarBackground))
                 {
-                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0250.Create_PickAgentExcludeKeyofAgentUserDataOrAdvancedSettingsOrEmbedOrAssetsPresenterExpressiveAvatarBackground(options);
+                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0226.Create_PickAgentExcludeKeyofAgentUserDataOrAdvancedSettingsOrEmbedOrAssetsPresenterExpressiveAvatarBackground(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

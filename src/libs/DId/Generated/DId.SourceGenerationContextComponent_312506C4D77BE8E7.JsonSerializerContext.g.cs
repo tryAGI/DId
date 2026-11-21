@@ -31,7 +31,7 @@ namespace DId
             {
                 if (type == typeof(global::DId.CreateRatingResponse2))
                 {
-                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0052.Create_CreateRatingResponse2(options);
+                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0044.Create_CreateRatingResponse2(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

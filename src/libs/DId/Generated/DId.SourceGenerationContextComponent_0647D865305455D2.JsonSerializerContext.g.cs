@@ -31,7 +31,7 @@ namespace DId
             {
                 if (type == typeof(global::DId.CreateSceneRequestDto))
                 {
-                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0064.Create_CreateSceneRequestDto(options);
+                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0056.Create_CreateSceneRequestDto(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

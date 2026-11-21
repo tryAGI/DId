@@ -31,7 +31,7 @@ namespace DId
             {
                 if (type == typeof(global::DId.PartialAgentClipPresenter))
                 {
-                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0241.Create_PartialAgentClipPresenter(options);
+                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0217.Create_PartialAgentClipPresenter(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

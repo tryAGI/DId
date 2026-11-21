@@ -32,11 +32,11 @@ namespace DId
             {
                 if (type == typeof(global::DId.CloudProvider))
                 {
-                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0031.Create_CloudProvider2(options);
+                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0028.Create_CloudProvider2(options);
                 }
                 if (type == typeof(global::DId.CloudProvider?))
                 {
-                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0172.Create_NullableCloudProvider2(options);
+                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0152.Create_NullableCloudProvider2(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

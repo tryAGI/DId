@@ -31,7 +31,7 @@ namespace DId
             {
                 if (type == typeof(global::DId.AgentsSettings))
                 {
-                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0023.Create_AgentsSettings(options);
+                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0020.Create_AgentsSettings(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

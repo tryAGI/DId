@@ -31,7 +31,7 @@ namespace DId
             {
                 if (type == typeof(global::DId.ChatEndEventData))
                 {
-                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0027.Create_ChatEndEventData(options);
+                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0024.Create_ChatEndEventData(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

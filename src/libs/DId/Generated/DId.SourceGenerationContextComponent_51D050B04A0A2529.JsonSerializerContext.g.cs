@@ -31,7 +31,7 @@ namespace DId
             {
                 if (type == typeof(global::DId.MemoryItemDto))
                 {
-                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0159.Create_MemoryItemDto(options);
+                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0139.Create_MemoryItemDto(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

@@ -31,7 +31,7 @@ namespace DId
             {
                 if (type == typeof(global::DId.PartialOmitPresenterOwnerIdOrPresenterIdOrCreatedAtOrCreatedByOrCreatedByCreatedAtOrCreatedByModifiedAtOrEntityCreatedAtVoiceOpenAI))
                 {
-                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0246.Create_PartialOmitPresenterOwnerIdOrPresenterIdOrCreatedAtOrCreatedByOrCreatedByCreatedAtOrCreatedByModifiedAt_69688b35cbc3a5da(options);
+                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0222.Create_PartialOmitPresenterOwnerIdOrPresenterIdOrCreatedAtOrCreatedByOrCreatedByCreatedAtOrCreatedByModifiedAt_69688b35cbc3a5da(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

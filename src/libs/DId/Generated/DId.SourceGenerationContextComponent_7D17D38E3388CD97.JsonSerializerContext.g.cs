@@ -31,7 +31,7 @@ namespace DId
             {
                 if (type == typeof(global::DId.GetTalkDtoConfigDriverExpressionsExpression))
                 {
-                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0138.Create_GetTalkDtoConfigDriverExpressionsExpression(options);
+                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0120.Create_GetTalkDtoConfigDriverExpressionsExpression(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

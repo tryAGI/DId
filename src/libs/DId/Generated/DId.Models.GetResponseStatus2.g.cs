@@ -4,7 +4,7 @@
 namespace DId
 {
     /// <summary>
-    ///
+    /// The status of the avatar
     /// </summary>
     public enum GetResponseStatus2
     {
@@ -19,7 +19,23 @@ namespace DId
         /// <summary>
         ///
         /// </summary>
+        Draft,
+        /// <summary>
+        ///
+        /// </summary>
         Error,
+        /// <summary>
+        ///
+        /// </summary>
+        Rejected,
+        /// <summary>
+        ///
+        /// </summary>
+        Started,
+        /// <summary>
+        ///
+        /// </summary>
+        TrainingStarted,
         /// <summary>
         ///
         /// </summary>
@@ -40,7 +56,11 @@ namespace DId
             {
                 GetResponseStatus2.Created => "created",
                 GetResponseStatus2.Done => "done",
+                GetResponseStatus2.Draft => "draft",
                 GetResponseStatus2.Error => "error",
+                GetResponseStatus2.Rejected => "rejected",
+                GetResponseStatus2.Started => "started",
+                GetResponseStatus2.TrainingStarted => "training-started",
                 GetResponseStatus2.Validating => "validating",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
             };
@@ -54,7 +74,11 @@ namespace DId
             {
                 "created" => GetResponseStatus2.Created,
                 "done" => GetResponseStatus2.Done,
+                "draft" => GetResponseStatus2.Draft,
                 "error" => GetResponseStatus2.Error,
+                "rejected" => GetResponseStatus2.Rejected,
+                "started" => GetResponseStatus2.Started,
+                "training-started" => GetResponseStatus2.TrainingStarted,
                 "validating" => GetResponseStatus2.Validating,
                 _ => null,
             };

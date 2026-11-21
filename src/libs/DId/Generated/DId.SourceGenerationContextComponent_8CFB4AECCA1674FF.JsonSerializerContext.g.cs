@@ -32,11 +32,11 @@ namespace DId
             {
                 if (type == typeof(global::DId.ExpressiveImageBackgroundType))
                 {
-                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0103.Create_ExpressiveImageBackgroundType2(options);
+                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0087.Create_ExpressiveImageBackgroundType2(options);
                 }
                 if (type == typeof(global::DId.ExpressiveImageBackgroundType?))
                 {
-                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0195.Create_NullableExpressiveImageBackgroundType2(options);
+                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0172.Create_NullableExpressiveImageBackgroundType2(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

@@ -33,13 +33,13 @@ namespace DId
                 #pragma warning disable CS0618 // Metadata references a deprecated API model.
                 if (type == typeof(global::DId.ChatRequestChatMode))
                 {
-                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0027.Create_ChatRequestChatMode2(options);
+                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0025.Create_ChatRequestChatMode2(options);
                 }
                 #pragma warning restore CS0618
                 #pragma warning disable CS0618 // Metadata references a deprecated API model.
                 if (type == typeof(global::DId.ChatRequestChatMode?))
                 {
-                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0170.Create_NullableChatRequestChatMode2(options);
+                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0150.Create_NullableChatRequestChatMode2(options);
                 }
                 #pragma warning restore CS0618
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;

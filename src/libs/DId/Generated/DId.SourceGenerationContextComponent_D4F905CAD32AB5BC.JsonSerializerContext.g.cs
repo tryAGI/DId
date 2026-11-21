@@ -32,11 +32,11 @@ namespace DId
             {
                 if (type == typeof(global::DId.AnyOf<global::DId.TalkAgentPresenterVoiceMicrosoft, global::DId.TalkAgentPresenterVoiceElevenLabs, global::DId.TalkAgentPresenterVoiceOpenAI>))
                 {
-                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0291.Create_SourceGenerationContextMetadataType_D4F905CAD32AB5BC(options);
+                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0264.Create_SourceGenerationContextMetadataType_D4F905CAD32AB5BC(options);
                 }
                 if (type == typeof(global::DId.AnyOf<global::DId.TalkAgentPresenterVoiceMicrosoft, global::DId.TalkAgentPresenterVoiceElevenLabs, global::DId.TalkAgentPresenterVoiceOpenAI>?))
                 {
-                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0267.Create_SourceGenerationContextMetadataType_363AA89390DA80F8(options);
+                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0242.Create_SourceGenerationContextMetadataType_363AA89390DA80F8(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

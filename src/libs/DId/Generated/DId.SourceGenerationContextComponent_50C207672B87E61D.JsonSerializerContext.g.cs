@@ -32,11 +32,11 @@ namespace DId
             {
                 if (type == typeof(global::DId.PartialAgentPresenterVideoAvatarVoiceOpenAIType))
                 {
-                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0243.Create_PartialAgentPresenterVideoAvatarVoiceOpenAIType2(options);
+                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0219.Create_PartialAgentPresenterVideoAvatarVoiceOpenAIType2(options);
                 }
                 if (type == typeof(global::DId.PartialAgentPresenterVideoAvatarVoiceOpenAIType?))
                 {
-                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0217.Create_NullablePartialAgentPresenterVideoAvatarVoiceOpenAIType2(options);
+                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0193.Create_NullablePartialAgentPresenterVideoAvatarVoiceOpenAIType2(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

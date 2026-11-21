@@ -28,12 +28,12 @@ namespace DId
         partial void PrepareCreateChatArguments(
             global::System.Net.Http.HttpClient httpClient,
             ref string agentId,
-            global::DId.CreateChatRequest2 request);
+            global::DId.CreateChatRequest request);
         partial void PrepareCreateChatRequest(
             global::System.Net.Http.HttpClient httpClient,
             global::System.Net.Http.HttpRequestMessage httpRequestMessage,
             string agentId,
-            global::DId.CreateChatRequest2 request);
+            global::DId.CreateChatRequest request);
         partial void ProcessCreateChatResponse(
             global::System.Net.Http.HttpClient httpClient,
             global::System.Net.Http.HttpResponseMessage httpResponseMessage);
@@ -55,7 +55,7 @@ namespace DId
         public async global::System.Threading.Tasks.Task<string> CreateChatAsync(
             string agentId,
 
-            global::DId.CreateChatRequest2 request,
+            global::DId.CreateChatRequest request,
             global::DId.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
@@ -81,7 +81,7 @@ namespace DId
         public async global::System.Threading.Tasks.Task<global::DId.AutoSDKHttpResponse<string>> CreateChatAsResponseAsync(
             string agentId,
 
-            global::DId.CreateChatRequest2 request,
+            global::DId.CreateChatRequest request,
             global::DId.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
@@ -359,13 +359,13 @@ namespace DId
                                     if (__effectiveReadResponseAsString)
                                     {
                                         __content_401 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
-                                        __value_401 = global::DId.CreateChatResponse2.FromJson(__content_401, JsonSerializerContext);
+                                        __value_401 = __content_401 is not { Length: > 0 } ? null : global::DId.CreateChatResponse2.FromJson(__content_401, JsonSerializerContext);
                                     }
                                     else
                                     {
                                         __content_401 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
 
-                                        __value_401 = global::DId.CreateChatResponse2.FromJson(__content_401, JsonSerializerContext);
+                                        __value_401 = __content_401 is not { Length: > 0 } ? null : global::DId.CreateChatResponse2.FromJson(__content_401, JsonSerializerContext);
                                     }
                                 }
                                 catch (global::System.Exception __ex)
@@ -376,7 +376,7 @@ namespace DId
 
                                 throw global::DId.ApiException<global::DId.CreateChatResponse2>.Create(
                                     statusCode: __response.StatusCode,
-                                    message: __content_401 ?? __response.ReasonPhrase ?? string.Empty,
+                                    message: __content_401 is { Length: > 0 } ? __content_401 : __response.ReasonPhrase ?? string.Empty,
                                     innerException: __exception_401,
                                     responseBody: __content_401,
                                     responseObject: __value_401,
@@ -417,7 +417,7 @@ namespace DId
                                 {
                                     throw global::DId.ApiException.Create(
                                         statusCode: __response.StatusCode,
-                                        message: __content ?? __response.ReasonPhrase ?? string.Empty,
+                                        message: __content is { Length: > 0 } ? __content : __response.ReasonPhrase ?? string.Empty,
                                         innerException: __ex,
                                         responseBody: __content,
                                         responseHeaders: global::System.Linq.Enumerable.ToDictionary(
@@ -460,7 +460,7 @@ namespace DId
 
                                     throw global::DId.ApiException.Create(
                                         statusCode: __response.StatusCode,
-                                        message: __content ?? __response.ReasonPhrase ?? string.Empty,
+                                        message: __content is { Length: > 0 } ? __content : __response.ReasonPhrase ?? string.Empty,
                                         innerException: __ex,
                                         responseBody: __content,
                                         responseHeaders: global::System.Linq.Enumerable.ToDictionary(
@@ -495,7 +495,7 @@ namespace DId
             global::DId.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
-            var __request = new global::DId.CreateChatRequest2
+            var __request = new global::DId.CreateChatRequest
             {
                 Persist = persist,
             };

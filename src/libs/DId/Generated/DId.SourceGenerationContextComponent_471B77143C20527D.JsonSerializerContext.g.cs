@@ -36,7 +36,7 @@ namespace DId
                 }
                 if (type == typeof(global::DId.AgentCreateDtoPresenterExpressiveAvatarVoiceMicrosoftType?))
                 {
-                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0161.Create_NullableAgentCreateDtoPresenterExpressiveAvatarVoiceMicrosoftType2(options);
+                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0141.Create_NullableAgentCreateDtoPresenterExpressiveAvatarVoiceMicrosoftType2(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

@@ -31,7 +31,7 @@ namespace DId
             {
                 if (type == typeof(global::DId.CreateClipStreamResponse))
                 {
-                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0048.Create_CreateClipStreamResponse(options);
+                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0041.Create_CreateClipStreamResponse(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

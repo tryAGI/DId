@@ -31,7 +31,7 @@ namespace DId
             {
                 if (type == typeof(global::DId.SanitizedSecretDto))
                 {
-                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0257.Create_SanitizedSecretDto(options);
+                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0233.Create_SanitizedSecretDto(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

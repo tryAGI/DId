@@ -13,11 +13,11 @@ namespace DId
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::DId.ApiException"></exception>
-        global::System.Threading.Tasks.Task<global::DId.AllOf<global::DId.CreateVideoStreamResponseVariant12, global::DId.CreateVideoStreamResponseVariant22>> CreateVideoStreamAsync(
+        global::System.Threading.Tasks.Task<global::DId.AllOf<global::DId.CreateVideoStreamResponseVariant1, global::DId.CreateVideoStreamResponseVariant2>> CreateVideoStreamAsync(
             string agentId,
             string streamId,
 
-            global::DId.CreateVideoStreamRequest2 request,
+            global::DId.CreateVideoStreamRequest request,
             global::DId.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
@@ -29,11 +29,11 @@ namespace DId
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::DId.ApiException"></exception>
-        global::System.Threading.Tasks.Task<global::DId.AutoSDKHttpResponse<global::DId.AllOf<global::DId.CreateVideoStreamResponseVariant12, global::DId.CreateVideoStreamResponseVariant22>>> CreateVideoStreamAsResponseAsync(
+        global::System.Threading.Tasks.Task<global::DId.AutoSDKHttpResponse<global::DId.AllOf<global::DId.CreateVideoStreamResponseVariant1, global::DId.CreateVideoStreamResponseVariant2>>> CreateVideoStreamAsResponseAsync(
             string agentId,
             string streamId,
 
-            global::DId.CreateVideoStreamRequest2 request,
+            global::DId.CreateVideoStreamRequest request,
             global::DId.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
@@ -46,10 +46,10 @@ namespace DId
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
-        global::System.Threading.Tasks.Task<global::DId.AllOf<global::DId.CreateVideoStreamResponseVariant12, global::DId.CreateVideoStreamResponseVariant22>> CreateVideoStreamAsync(
+        global::System.Threading.Tasks.Task<global::DId.AllOf<global::DId.CreateVideoStreamResponseVariant1, global::DId.CreateVideoStreamResponseVariant2>> CreateVideoStreamAsync(
             string agentId,
             string streamId,
-            global::DId.AnyOf<global::DId.CreateVideoStreamRequestScriptText2, global::DId.CreateVideoStreamRequestScriptAudio2> script,
+            global::DId.AnyOf<global::DId.CreateVideoStreamRequestScriptText, global::DId.CreateVideoStreamRequestScriptAudio> script,
             string? sessionId = default,
             global::DId.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);

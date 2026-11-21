@@ -31,7 +31,7 @@ namespace DId
             {
                 if (type == typeof(global::DId.ListMyAgentsResponseAgentVariant1LlmOpenAIPromptCustomization))
                 {
-                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0154.Create_ListMyAgentsResponseAgentVariant1LlmOpenAIPromptCustomization(options);
+                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0134.Create_ListMyAgentsResponseAgentVariant1LlmOpenAIPromptCustomization(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

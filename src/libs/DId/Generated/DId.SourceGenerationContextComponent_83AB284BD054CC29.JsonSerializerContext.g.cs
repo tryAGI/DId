@@ -31,11 +31,11 @@ namespace DId
             {
                 if (type == typeof(global::System.Collections.Generic.IList<global::DId.OmitAgentUserDataOrAdvancedSettingsOrEmbedOrAssetsTriggersChatEndWebhook>))
                 {
-                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0279.Create_SourceGenerationContextMetadataType_83AB284BD054CC29(options);
+                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0253.Create_SourceGenerationContextMetadataType_83AB284BD054CC29(options);
                 }
                 if (type == typeof(global::System.Collections.Generic.List<global::DId.OmitAgentUserDataOrAdvancedSettingsOrEmbedOrAssetsTriggersChatEndWebhook>))
                 {
-                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0275.Create_SourceGenerationContextMetadataType_69FDB0377A0BA523(options);
+                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0250.Create_SourceGenerationContextMetadataType_69FDB0377A0BA523(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

@@ -31,7 +31,7 @@ namespace DId
             {
                 if (type == typeof(global::DId.CustomLLMCreateDtoCustomBasic))
                 {
-                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0082.Create_CustomLLMCreateDtoCustomBasic(options);
+                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0069.Create_CustomLLMCreateDtoCustomBasic(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

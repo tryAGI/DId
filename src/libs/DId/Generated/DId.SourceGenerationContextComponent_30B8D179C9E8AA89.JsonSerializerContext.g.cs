@@ -32,11 +32,11 @@ namespace DId
             {
                 if (type == typeof(global::DId.CreateResponseVariant1LlmVariant2PromptCustomizationKnowledgeSource))
                 {
-                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0061.Create_CreateResponseVariant1LlmVariant2PromptCustomizationKnowledgeSource2(options);
+                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0052.Create_CreateResponseVariant1LlmVariant2PromptCustomizationKnowledgeSource2(options);
                 }
                 if (type == typeof(global::DId.CreateResponseVariant1LlmVariant2PromptCustomizationKnowledgeSource?))
                 {
-                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0182.Create_NullableCreateResponseVariant1LlmVariant2PromptCustomizationKnowledgeSource2(options);
+                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0160.Create_NullableCreateResponseVariant1LlmVariant2PromptCustomizationKnowledgeSource2(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

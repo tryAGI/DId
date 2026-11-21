@@ -31,7 +31,7 @@ namespace DId
             {
                 if (type == typeof(global::DId.CreateBasicAuthSecretRequestDto))
                 {
-                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0039.Create_CreateBasicAuthSecretRequestDto(options);
+                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0035.Create_CreateBasicAuthSecretRequestDto(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

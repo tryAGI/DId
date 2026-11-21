@@ -9,33 +9,30 @@ namespace DId
     public sealed partial class CreateClipResponse2
     {
         /// <summary>
-        /// The ID of the clip
+        ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("id")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("kind")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Id { get; set; }
+        public required string Kind { get; set; }
 
         /// <summary>
-        /// An identifier of this clip
+        ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("object")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::DId.JsonConverters.CreateClipResponseObject2JsonConverter))]
-        public global::DId.CreateClipResponseObject2 Object { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("description")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string Description { get; set; }
 
         /// <summary>
-        /// Clip creation time as iso-8601 string
+        ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("created_at")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string CreatedAt { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("details")]
+        public object? Details { get; set; }
 
         /// <summary>
-        /// The status of the clip
+        ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("status")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::DId.JsonConverters.CreateClipResponseStatus2JsonConverter))]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::DId.CreateClipResponseStatus2 Status { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("internal")]
+        public string? Internal { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -46,31 +43,23 @@ namespace DId
         /// <summary>
         /// Initializes a new instance of the <see cref="CreateClipResponse2" /> class.
         /// </summary>
-        /// <param name="id">
-        /// The ID of the clip
-        /// </param>
-        /// <param name="createdAt">
-        /// Clip creation time as iso-8601 string
-        /// </param>
-        /// <param name="status">
-        /// The status of the clip
-        /// </param>
-        /// <param name="object">
-        /// An identifier of this clip
-        /// </param>
+        /// <param name="kind"></param>
+        /// <param name="description"></param>
+        /// <param name="details"></param>
+        /// <param name="internal"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public CreateClipResponse2(
-            string id,
-            string createdAt,
-            global::DId.CreateClipResponseStatus2 status,
-            global::DId.CreateClipResponseObject2 @object)
+            string kind,
+            string description,
+            object? details,
+            string? @internal)
         {
-            this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
-            this.Object = @object;
-            this.CreatedAt = createdAt ?? throw new global::System.ArgumentNullException(nameof(createdAt));
-            this.Status = status;
+            this.Kind = kind ?? throw new global::System.ArgumentNullException(nameof(kind));
+            this.Description = description ?? throw new global::System.ArgumentNullException(nameof(description));
+            this.Details = details;
+            this.Internal = @internal;
         }
 
         /// <summary>

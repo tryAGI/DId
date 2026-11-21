@@ -32,11 +32,11 @@ namespace DId
             {
                 if (type == typeof(global::DId.FaceSquareOverlap))
                 {
-                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0104.Create_FaceSquareOverlap2(options);
+                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0089.Create_FaceSquareOverlap2(options);
                 }
                 if (type == typeof(global::DId.FaceSquareOverlap?))
                 {
-                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0196.Create_NullableFaceSquareOverlap2(options);
+                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0172.Create_NullableFaceSquareOverlap2(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

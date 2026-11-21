@@ -32,11 +32,11 @@ namespace DId
             {
                 if (type == typeof(global::DId.Role))
                 {
-                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0257.Create_Role2(options);
+                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0233.Create_Role2(options);
                 }
                 if (type == typeof(global::DId.Role?))
                 {
-                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0222.Create_NullableRole2(options);
+                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0198.Create_NullableRole2(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

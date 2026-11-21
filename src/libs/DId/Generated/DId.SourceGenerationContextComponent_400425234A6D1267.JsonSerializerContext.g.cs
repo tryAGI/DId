@@ -31,7 +31,7 @@ namespace DId
             {
                 if (type == typeof(global::DId.ListResourceClientKeysResponseItem))
                 {
-                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0158.Create_ListResourceClientKeysResponseItem(options);
+                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0138.Create_ListResourceClientKeysResponseItem(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);
