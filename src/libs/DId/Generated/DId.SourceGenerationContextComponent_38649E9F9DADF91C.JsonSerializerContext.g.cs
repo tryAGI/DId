@@ -30,7 +30,7 @@ namespace DId
             {
                 if (type == typeof(global::DId.CreateChatResponseDetails))
                 {
-                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0040.Create_CreateChatResponseDetails(options);
+                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0036.Create_CreateChatResponseDetails(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

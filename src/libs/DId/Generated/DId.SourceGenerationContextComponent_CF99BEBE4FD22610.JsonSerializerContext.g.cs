@@ -36,7 +36,7 @@ namespace DId
                 }
                 if (type == typeof(global::DId.AgentLlmGoogleModel?))
                 {
-                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0162.Create_NullableAgentLlmGoogleModel2(options);
+                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0142.Create_NullableAgentLlmGoogleModel2(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

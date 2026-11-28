@@ -31,7 +31,7 @@ namespace DId
             {
                 if (type == typeof(global::DId.AssetResponseDtoModerationError))
                 {
-                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0025.Create_AssetResponseDtoModerationError(options);
+                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0023.Create_AssetResponseDtoModerationError(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

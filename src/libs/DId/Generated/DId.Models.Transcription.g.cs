@@ -19,9 +19,9 @@ namespace DId
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("version")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::DId.JsonConverters.TranscriptionVersion2JsonConverter))]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::DId.JsonConverters.TranscriptionVersionJsonConverter))]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::DId.TranscriptionVersion2 Version { get; set; }
+        public required global::DId.TranscriptionVersion Version { get; set; }
 
         /// <summary>
         ///
@@ -46,7 +46,7 @@ namespace DId
 #endif
         public Transcription(
             string url,
-            global::DId.TranscriptionVersion2 version,
+            global::DId.TranscriptionVersion version,
             bool? selected)
         {
             this.Url = url ?? throw new global::System.ArgumentNullException(nameof(url));

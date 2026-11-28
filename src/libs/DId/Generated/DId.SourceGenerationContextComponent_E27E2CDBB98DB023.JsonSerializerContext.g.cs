@@ -31,7 +31,7 @@ namespace DId
             {
                 if (type == typeof(global::DId.CreateStreamScriptAudio))
                 {
-                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0070.Create_CreateStreamScriptAudio(options);
+                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0061.Create_CreateStreamScriptAudio(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

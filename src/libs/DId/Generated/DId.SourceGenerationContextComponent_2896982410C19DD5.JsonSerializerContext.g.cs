@@ -31,7 +31,7 @@ namespace DId
             {
                 if (type == typeof(global::DId.PartialTalkAgentPresenterVoiceElevenLabsVoiceConfig))
                 {
-                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0248.Create_PartialTalkAgentPresenterVoiceElevenLabsVoiceConfig(options);
+                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0224.Create_PartialTalkAgentPresenterVoiceElevenLabsVoiceConfig(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

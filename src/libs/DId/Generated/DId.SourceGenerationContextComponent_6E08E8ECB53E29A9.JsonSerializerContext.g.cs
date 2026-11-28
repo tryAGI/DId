@@ -31,7 +31,7 @@ namespace DId
             {
                 if (type == typeof(global::DId.ClipPresenterDto))
                 {
-                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0030.Create_ClipPresenterDto(options);
+                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0027.Create_ClipPresenterDto(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

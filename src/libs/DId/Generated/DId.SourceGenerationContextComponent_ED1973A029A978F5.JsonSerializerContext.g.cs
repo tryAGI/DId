@@ -9,7 +9,7 @@ namespace DId
         internal static readonly global::DId.SourceGenerationContextMetadataScope MetadataScope = new(
                 new SharedMetadataResolver(),
                 new global::System.Func<global::DId.SourceGenerationContextMetadataScope>[] {
-                    static () => global::DId.SourceGenerationContextComponent_05BF36C073875770.MetadataScope,                    static () => global::DId.SourceGenerationContextComponent_1764B38D7C56F533.MetadataScope,                    static () => global::DId.SourceGenerationContextComponent_473287F8298DBA71.MetadataScope,                    static () => global::DId.SourceGenerationContextComponent_67AAB28DC186CC0C.MetadataScope,
+                    static () => global::DId.SourceGenerationContextComponent_2958D416D08AA5A4.MetadataScope,                    static () => global::DId.SourceGenerationContextComponent_473287F8298DBA71.MetadataScope,
                 }, ContributeConverters);
         internal static global::System.Text.Json.Serialization.JsonSerializerContext Default => MetadataScope.Default;
 
@@ -31,7 +31,7 @@ namespace DId
             {
                 if (type == typeof(global::DId.ChatResponse2))
                 {
-                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0028.Create_ChatResponse2(options);
+                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0025.Create_ChatResponse2(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

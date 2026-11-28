@@ -31,7 +31,7 @@ namespace DId
             {
                 if (type == typeof(global::DId.AzureOpenAiTtsProviderVoiceConfig))
                 {
-                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0027.Create_AzureOpenAiTtsProviderVoiceConfig(options);
+                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0024.Create_AzureOpenAiTtsProviderVoiceConfig(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

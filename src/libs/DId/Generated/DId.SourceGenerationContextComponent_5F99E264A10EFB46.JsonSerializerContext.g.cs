@@ -30,7 +30,7 @@ namespace DId
             {
                 if (type == typeof(global::DId.LLMConfigCreateDtoVariant2CustomBasicHeaders))
                 {
-                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0149.Create_LLMConfigCreateDtoVariant2CustomBasicHeaders(options);
+                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0130.Create_LLMConfigCreateDtoVariant2CustomBasicHeaders(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

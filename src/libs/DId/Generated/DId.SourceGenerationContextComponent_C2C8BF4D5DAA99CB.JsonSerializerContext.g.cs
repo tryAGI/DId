@@ -31,7 +31,7 @@ namespace DId
             {
                 if (type == typeof(global::DId.CreateSceneRequestDtoScriptTextProviderMicrosoftVoiceConfig))
                 {
-                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0065.Create_CreateSceneRequestDtoScriptTextProviderMicrosoftVoiceConfig(options);
+                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0057.Create_CreateSceneRequestDtoScriptTextProviderMicrosoftVoiceConfig(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

@@ -31,7 +31,7 @@ namespace DId
             {
                 if (type == typeof(global::DId.TalksConfigLogo))
                 {
-                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0302.Create_TalksConfigLogo(options);
+                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0275.Create_TalksConfigLogo(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

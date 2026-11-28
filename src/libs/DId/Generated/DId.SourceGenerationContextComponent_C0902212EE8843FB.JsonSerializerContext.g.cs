@@ -30,7 +30,7 @@ namespace DId
             {
                 if (type == typeof(global::DId.DeprecatedTalksConfig))
                 {
-                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0097.Create_DeprecatedTalksConfig(options);
+                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0082.Create_DeprecatedTalksConfig(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

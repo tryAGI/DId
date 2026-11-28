@@ -9,7 +9,7 @@ namespace DId
         internal static readonly global::DId.SourceGenerationContextMetadataScope MetadataScope = new(
                 null,
                 new global::System.Func<global::DId.SourceGenerationContextMetadataScope>[] {
-                    static () => global::DId.SourceGenerationContextComponent_23DE3D64E94A431F.MetadataScope,                    static () => global::DId.SourceGenerationContextComponent_6683F19EA3E85ADA.MetadataScope,                    static () => global::DId.SourceGenerationContextComponent_B8D2A5402B3E660A.MetadataScope,                    static () => global::DId.SourceGenerationContextComponent_8663671385A6B9DA.MetadataScope,                    static () => global::DId.SourceGenerationContextComponent_473287F8298DBA71.MetadataScope,                    static () => global::DId.SourceGenerationContextComponent_FE52996806874339.MetadataScope,
+                    static () => global::DId.SourceGenerationContextComponent_23DE3D64E94A431F.MetadataScope,                    static () => global::DId.SourceGenerationContextComponent_00FF51CD4D4DD6E9.MetadataScope,                    static () => global::DId.SourceGenerationContextComponent_C118943447D88AC0.MetadataScope,                    static () => global::DId.SourceGenerationContextComponent_36C925831E5DD6A7.MetadataScope,                    static () => global::DId.SourceGenerationContextComponent_473287F8298DBA71.MetadataScope,                    static () => global::DId.SourceGenerationContextComponent_FE52996806874339.MetadataScope,
                 }, null);
         internal static global::System.Text.Json.Serialization.JsonSerializerContext Default => MetadataScope.Default;
 

@@ -31,7 +31,7 @@ namespace DId
             {
                 if (type == typeof(global::DId.RectangleCrop))
                 {
-                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0257.Create_RectangleCrop(options);
+                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0232.Create_RectangleCrop(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

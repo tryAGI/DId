@@ -32,11 +32,11 @@ namespace DId
             {
                 if (type == typeof(global::DId.FlattenPickExpressiveVideoAvatarIdOrSentimentIdOrNameOrConfigOrBackgroundOrUserDataOrPersistOrResultUrlOrWebhookOrInternalCallConfigAndScriptScriptBackgroundVariant1Type))
                 {
-                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0105.Create_FlattenPickExpressiveVideoAvatarIdOrSentimentIdOrNameOrConfigOrBackgroundOrUserDataOrPersistOrResultUrl_0744525dbb39f742(options);
+                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0089.Create_FlattenPickExpressiveVideoAvatarIdOrSentimentIdOrNameOrConfigOrBackgroundOrUserDataOrPersistOrResultUrl_0744525dbb39f742(options);
                 }
                 if (type == typeof(global::DId.FlattenPickExpressiveVideoAvatarIdOrSentimentIdOrNameOrConfigOrBackgroundOrUserDataOrPersistOrResultUrlOrWebhookOrInternalCallConfigAndScriptScriptBackgroundVariant1Type?))
                 {
-                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0106.Create_FlattenPickExpressiveVideoAvatarIdOrSentimentIdOrNameOrConfigOrBackgroundOrUserDataOrPersistOrResultUrl_9ee51f263b0cb1b0(options);
+                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0090.Create_FlattenPickExpressiveVideoAvatarIdOrSentimentIdOrNameOrConfigOrBackgroundOrUserDataOrPersistOrResultUrl_9ee51f263b0cb1b0(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

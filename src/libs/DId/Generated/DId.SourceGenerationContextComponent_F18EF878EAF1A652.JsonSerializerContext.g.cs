@@ -32,11 +32,11 @@ namespace DId
             {
                 if (type == typeof(global::DId.CreateSecretRequestDtoBasicAuthenticationType))
                 {
-                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0067.Create_CreateSecretRequestDtoBasicAuthenticationType2(options);
+                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0058.Create_CreateSecretRequestDtoBasicAuthenticationType2(options);
                 }
                 if (type == typeof(global::DId.CreateSecretRequestDtoBasicAuthenticationType?))
                 {
-                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0184.Create_NullableCreateSecretRequestDtoBasicAuthenticationType2(options);
+                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0163.Create_NullableCreateSecretRequestDtoBasicAuthenticationType2(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

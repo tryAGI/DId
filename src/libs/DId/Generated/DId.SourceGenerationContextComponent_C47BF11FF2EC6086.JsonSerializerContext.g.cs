@@ -31,7 +31,7 @@ namespace DId
             {
                 if (type == typeof(global::DId.UpdateSecretRequestUpdateSecretRequest1ApiKey))
                 {
-                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0322.Create_UpdateSecretRequestUpdateSecretRequest1ApiKey(options);
+                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0294.Create_UpdateSecretRequestUpdateSecretRequest1ApiKey(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

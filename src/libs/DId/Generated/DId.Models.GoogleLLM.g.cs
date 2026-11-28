@@ -51,8 +51,8 @@ namespace DId
         /// The model to use
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("model")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::DId.JsonConverters.GoogleLLMModel2JsonConverter))]
-        public global::DId.GoogleLLMModel2? Model { get; set; }
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::DId.JsonConverters.GoogleLLMModelJsonConverter))]
+        public global::DId.GoogleLLMModel? Model { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -97,7 +97,7 @@ namespace DId
             global::DId.GoogleLLMTemplate? template,
             global::DId.GoogleLLMPromptCustomization? promptCustomization,
             double? temperature,
-            global::DId.GoogleLLMModel2? model)
+            global::DId.GoogleLLMModel? model)
         {
             this.Provider = provider;
             this.Instructions = instructions;

@@ -31,7 +31,7 @@ namespace DId
             {
                 if (type == typeof(global::DId.VoiceLanguage))
                 {
-                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0327.Create_VoiceLanguage(options);
+                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0298.Create_VoiceLanguage(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

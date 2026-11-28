@@ -31,7 +31,7 @@ namespace DId
             {
                 if (type == typeof(global::DId.GetExpressiveAvatarsDtoAvatarSentimentVariant1VoiceMicrosoft))
                 {
-                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0124.Create_GetExpressiveAvatarsDtoAvatarSentimentVariant1VoiceMicrosoft(options);
+                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0107.Create_GetExpressiveAvatarsDtoAvatarSentimentVariant1VoiceMicrosoft(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

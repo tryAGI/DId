@@ -32,11 +32,11 @@ namespace DId
             {
                 if (type == typeof(global::DId.LLMConfigDIdTemplate))
                 {
-                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0151.Create_LLMConfigDIdTemplate2(options);
+                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0132.Create_LLMConfigDIdTemplate2(options);
                 }
                 if (type == typeof(global::DId.LLMConfigDIdTemplate?))
                 {
-                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0210.Create_NullableLLMConfigDIdTemplate2(options);
+                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0186.Create_NullableLLMConfigDIdTemplate2(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

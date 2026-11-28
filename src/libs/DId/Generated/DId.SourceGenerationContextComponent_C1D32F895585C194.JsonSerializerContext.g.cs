@@ -31,7 +31,7 @@ namespace DId
             {
                 if (type == typeof(global::DId.CreateExpressiveRequestDtoScriptVariant1ProviderAmazon))
                 {
-                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0050.Create_CreateExpressiveRequestDtoScriptVariant1ProviderAmazon(options);
+                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0043.Create_CreateExpressiveRequestDtoScriptVariant1ProviderAmazon(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

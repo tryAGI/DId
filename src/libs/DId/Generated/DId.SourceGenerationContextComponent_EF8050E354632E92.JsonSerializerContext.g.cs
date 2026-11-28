@@ -31,7 +31,7 @@ namespace DId
             {
                 if (type == typeof(global::DId.DriverError))
                 {
-                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0098.Create_DriverError(options);
+                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0082.Create_DriverError(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

@@ -31,7 +31,7 @@ namespace DId
             {
                 if (type == typeof(global::DId.FlattenPickExpressiveVideoAvatarIdOrSentimentIdOrNameOrConfigOrBackgroundOrUserDataOrPersistOrResultUrlOrWebhookOrInternalCallConfigAndScriptScriptBackgroundVariant2))
                 {
-                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0105.Create_FlattenPickExpressiveVideoAvatarIdOrSentimentIdOrNameOrConfigOrBackgroundOrUserDataOrPersistOrResultUrl_5316607c4674621d(options);
+                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0090.Create_FlattenPickExpressiveVideoAvatarIdOrSentimentIdOrNameOrConfigOrBackgroundOrUserDataOrPersistOrResultUrl_5316607c4674621d(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

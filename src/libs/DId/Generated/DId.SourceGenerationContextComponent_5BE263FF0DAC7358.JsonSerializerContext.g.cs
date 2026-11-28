@@ -31,7 +31,7 @@ namespace DId
             {
                 if (type == typeof(global::DId.Create2RequestScriptTextProviderOpenAI))
                 {
-                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0034.Create_Create2RequestScriptTextProviderOpenAI(options);
+                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0031.Create_Create2RequestScriptTextProviderOpenAI(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

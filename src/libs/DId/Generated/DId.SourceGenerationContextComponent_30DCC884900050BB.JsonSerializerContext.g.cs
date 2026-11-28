@@ -31,7 +31,7 @@ namespace DId
             {
                 if (type == typeof(global::DId.PartialExpressiveAgentPresenterBackground))
                 {
-                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0245.Create_PartialExpressiveAgentPresenterBackground(options);
+                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0221.Create_PartialExpressiveAgentPresenterBackground(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

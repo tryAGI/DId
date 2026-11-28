@@ -32,11 +32,11 @@ namespace DId
             {
                 if (type == typeof(global::DId.ExpressiveInferenceMode))
                 {
-                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0103.Create_ExpressiveInferenceMode2(options);
+                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0087.Create_ExpressiveInferenceMode2(options);
                 }
                 if (type == typeof(global::DId.ExpressiveInferenceMode?))
                 {
-                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0195.Create_NullableExpressiveInferenceMode2(options);
+                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0172.Create_NullableExpressiveInferenceMode2(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

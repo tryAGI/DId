@@ -11,9 +11,9 @@ namespace DId
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::DId.ApiException"></exception>
-        global::System.Threading.Tasks.Task<global::DId.Create1Response> Create1Async(
+        global::System.Threading.Tasks.Task<global::DId.Create1Response3> Create1Async(
 
-            global::DId.Create1Request request,
+            global::DId.Create1Request2 request,
             global::DId.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
@@ -23,9 +23,9 @@ namespace DId
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::DId.ApiException"></exception>
-        global::System.Threading.Tasks.Task<global::DId.AutoSDKHttpResponse<global::DId.Create1Response>> Create1AsResponseAsync(
+        global::System.Threading.Tasks.Task<global::DId.AutoSDKHttpResponse<global::DId.Create1Response3>> Create1AsResponseAsync(
 
-            global::DId.Create1Request request,
+            global::DId.Create1Request2 request,
             global::DId.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
@@ -55,7 +55,7 @@ namespace DId
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
-        global::System.Threading.Tasks.Task<global::DId.Create1Response> Create1Async(
+        global::System.Threading.Tasks.Task<global::DId.Create1Response3> Create1Async(
             string sourceUrl,
             string? consentId = default,
             string? name = default,

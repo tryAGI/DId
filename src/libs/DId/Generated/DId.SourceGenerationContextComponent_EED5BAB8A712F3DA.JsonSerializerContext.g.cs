@@ -31,7 +31,7 @@ namespace DId
             {
                 if (type == typeof(global::DId.EventTriggerConfig))
                 {
-                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0098.Create_EventTriggerConfig(options);
+                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0083.Create_EventTriggerConfig(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

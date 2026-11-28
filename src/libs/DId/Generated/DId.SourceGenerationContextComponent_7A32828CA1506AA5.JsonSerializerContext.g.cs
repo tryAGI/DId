@@ -31,7 +31,7 @@ namespace DId
             {
                 if (type == typeof(global::DId.DeleteClipResponseConfigLogo))
                 {
-                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0088.Create_DeleteClipResponseConfigLogo(options);
+                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0073.Create_DeleteClipResponseConfigLogo(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

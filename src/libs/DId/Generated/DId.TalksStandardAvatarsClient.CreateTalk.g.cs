@@ -28,12 +28,12 @@ namespace DId
         partial void PrepareCreateTalkArguments(
             global::System.Net.Http.HttpClient httpClient,
             ref string? xApiKeyExternal,
-            global::DId.CreateTalkRequest2 request);
+            global::DId.CreateTalkRequest request);
         partial void PrepareCreateTalkRequest(
             global::System.Net.Http.HttpClient httpClient,
             global::System.Net.Http.HttpRequestMessage httpRequestMessage,
             string? xApiKeyExternal,
-            global::DId.CreateTalkRequest2 request);
+            global::DId.CreateTalkRequest request);
         partial void ProcessCreateTalkResponse(
             global::System.Net.Http.HttpClient httpClient,
             global::System.Net.Http.HttpResponseMessage httpResponseMessage);
@@ -53,7 +53,7 @@ namespace DId
         /// <exception cref="global::DId.ApiException"></exception>
         public async global::System.Threading.Tasks.Task<global::DId.CreateTalkResponse> CreateTalkAsync(
 
-            global::DId.CreateTalkRequest2 request,
+            global::DId.CreateTalkRequest request,
             string? xApiKeyExternal = default,
             global::DId.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
@@ -78,7 +78,7 @@ namespace DId
         /// <exception cref="global::DId.ApiException"></exception>
         public async global::System.Threading.Tasks.Task<global::DId.AutoSDKHttpResponse<global::DId.CreateTalkResponse>> CreateTalkAsResponseAsync(
 
-            global::DId.CreateTalkRequest2 request,
+            global::DId.CreateTalkRequest request,
             string? xApiKeyExternal = default,
             global::DId.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
@@ -363,13 +363,13 @@ namespace DId
                                     if (__effectiveReadResponseAsString)
                                     {
                                         __content_400 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
-                                        __value_400 = global::DId.CreateTalkResponse2.FromJson(__content_400, JsonSerializerContext);
+                                        __value_400 = __content_400 is not { Length: > 0 } ? null : global::DId.CreateTalkResponse2.FromJson(__content_400, JsonSerializerContext);
                                     }
                                     else
                                     {
                                         __content_400 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
 
-                                        __value_400 = global::DId.CreateTalkResponse2.FromJson(__content_400, JsonSerializerContext);
+                                        __value_400 = __content_400 is not { Length: > 0 } ? null : global::DId.CreateTalkResponse2.FromJson(__content_400, JsonSerializerContext);
                                     }
                                 }
                                 catch (global::System.Exception __ex)
@@ -380,7 +380,7 @@ namespace DId
 
                                 throw global::DId.ApiException<global::DId.CreateTalkResponse2>.Create(
                                     statusCode: __response.StatusCode,
-                                    message: __content_400 ?? __response.ReasonPhrase ?? string.Empty,
+                                    message: __content_400 is { Length: > 0 } ? __content_400 : __response.ReasonPhrase ?? string.Empty,
                                     innerException: __exception_400,
                                     responseBody: __content_400,
                                     responseObject: __value_400,
@@ -400,13 +400,13 @@ namespace DId
                                     if (__effectiveReadResponseAsString)
                                     {
                                         __content_401 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
-                                        __value_401 = global::DId.CreateTalkResponse3.FromJson(__content_401, JsonSerializerContext);
+                                        __value_401 = __content_401 is not { Length: > 0 } ? null : global::DId.CreateTalkResponse3.FromJson(__content_401, JsonSerializerContext);
                                     }
                                     else
                                     {
                                         __content_401 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
 
-                                        __value_401 = global::DId.CreateTalkResponse3.FromJson(__content_401, JsonSerializerContext);
+                                        __value_401 = __content_401 is not { Length: > 0 } ? null : global::DId.CreateTalkResponse3.FromJson(__content_401, JsonSerializerContext);
                                     }
                                 }
                                 catch (global::System.Exception __ex)
@@ -417,7 +417,7 @@ namespace DId
 
                                 throw global::DId.ApiException<global::DId.CreateTalkResponse3>.Create(
                                     statusCode: __response.StatusCode,
-                                    message: __content_401 ?? __response.ReasonPhrase ?? string.Empty,
+                                    message: __content_401 is { Length: > 0 } ? __content_401 : __response.ReasonPhrase ?? string.Empty,
                                     innerException: __exception_401,
                                     responseBody: __content_401,
                                     responseObject: __value_401,
@@ -437,13 +437,13 @@ namespace DId
                                     if (__effectiveReadResponseAsString)
                                     {
                                         __content_402 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
-                                        __value_402 = global::DId.CreateTalkResponse4.FromJson(__content_402, JsonSerializerContext);
+                                        __value_402 = __content_402 is not { Length: > 0 } ? null : global::DId.CreateTalkResponse4.FromJson(__content_402, JsonSerializerContext);
                                     }
                                     else
                                     {
                                         __content_402 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
 
-                                        __value_402 = global::DId.CreateTalkResponse4.FromJson(__content_402, JsonSerializerContext);
+                                        __value_402 = __content_402 is not { Length: > 0 } ? null : global::DId.CreateTalkResponse4.FromJson(__content_402, JsonSerializerContext);
                                     }
                                 }
                                 catch (global::System.Exception __ex)
@@ -454,7 +454,7 @@ namespace DId
 
                                 throw global::DId.ApiException<global::DId.CreateTalkResponse4>.Create(
                                     statusCode: __response.StatusCode,
-                                    message: __content_402 ?? __response.ReasonPhrase ?? string.Empty,
+                                    message: __content_402 is { Length: > 0 } ? __content_402 : __response.ReasonPhrase ?? string.Empty,
                                     innerException: __exception_402,
                                     responseBody: __content_402,
                                     responseObject: __value_402,
@@ -474,13 +474,13 @@ namespace DId
                                     if (__effectiveReadResponseAsString)
                                     {
                                         __content_403 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
-                                        __value_403 = global::DId.CreateTalkResponse5.FromJson(__content_403, JsonSerializerContext);
+                                        __value_403 = __content_403 is not { Length: > 0 } ? null : global::DId.CreateTalkResponse5.FromJson(__content_403, JsonSerializerContext);
                                     }
                                     else
                                     {
                                         __content_403 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
 
-                                        __value_403 = global::DId.CreateTalkResponse5.FromJson(__content_403, JsonSerializerContext);
+                                        __value_403 = __content_403 is not { Length: > 0 } ? null : global::DId.CreateTalkResponse5.FromJson(__content_403, JsonSerializerContext);
                                     }
                                 }
                                 catch (global::System.Exception __ex)
@@ -491,7 +491,7 @@ namespace DId
 
                                 throw global::DId.ApiException<global::DId.CreateTalkResponse5>.Create(
                                     statusCode: __response.StatusCode,
-                                    message: __content_403 ?? __response.ReasonPhrase ?? string.Empty,
+                                    message: __content_403 is { Length: > 0 } ? __content_403 : __response.ReasonPhrase ?? string.Empty,
                                     innerException: __exception_403,
                                     responseBody: __content_403,
                                     responseObject: __value_403,
@@ -511,13 +511,13 @@ namespace DId
                                     if (__effectiveReadResponseAsString)
                                     {
                                         __content_451 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
-                                        __value_451 = global::DId.CreateTalkResponse6.FromJson(__content_451, JsonSerializerContext);
+                                        __value_451 = __content_451 is not { Length: > 0 } ? null : global::DId.CreateTalkResponse6.FromJson(__content_451, JsonSerializerContext);
                                     }
                                     else
                                     {
                                         __content_451 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
 
-                                        __value_451 = global::DId.CreateTalkResponse6.FromJson(__content_451, JsonSerializerContext);
+                                        __value_451 = __content_451 is not { Length: > 0 } ? null : global::DId.CreateTalkResponse6.FromJson(__content_451, JsonSerializerContext);
                                     }
                                 }
                                 catch (global::System.Exception __ex)
@@ -528,7 +528,7 @@ namespace DId
 
                                 throw global::DId.ApiException<global::DId.CreateTalkResponse6>.Create(
                                     statusCode: __response.StatusCode,
-                                    message: __content_451 ?? __response.ReasonPhrase ?? string.Empty,
+                                    message: __content_451 is { Length: > 0 } ? __content_451 : __response.ReasonPhrase ?? string.Empty,
                                     innerException: __exception_451,
                                     responseBody: __content_451,
                                     responseObject: __value_451,
@@ -571,7 +571,7 @@ namespace DId
                                 {
                                     throw global::DId.ApiException.Create(
                                         statusCode: __response.StatusCode,
-                                        message: __content ?? __response.ReasonPhrase ?? string.Empty,
+                                        message: __content is { Length: > 0 } ? __content : __response.ReasonPhrase ?? string.Empty,
                                         innerException: __ex,
                                         responseBody: __content,
                                         responseHeaders: global::System.Linq.Enumerable.ToDictionary(
@@ -616,7 +616,7 @@ namespace DId
 
                                     throw global::DId.ApiException.Create(
                                         statusCode: __response.StatusCode,
-                                        message: __content ?? __response.ReasonPhrase ?? string.Empty,
+                                        message: __content is { Length: > 0 } ? __content : __response.ReasonPhrase ?? string.Empty,
                                         innerException: __ex,
                                         responseBody: __content,
                                         responseHeaders: global::System.Linq.Enumerable.ToDictionary(
@@ -666,10 +666,10 @@ namespace DId
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
         public async global::System.Threading.Tasks.Task<global::DId.CreateTalkResponse> CreateTalkAsync(
-            global::DId.AnyOf<global::DId.CreateTalkRequestScriptVariant12, global::DId.CreateTalkRequestScriptVariant22> script,
+            global::DId.AnyOf<global::DId.CreateTalkRequestScriptVariant1, global::DId.CreateTalkRequestScriptVariant2> script,
             string? xApiKeyExternal = default,
             string? sourceUrl = default,
-            global::DId.CreateTalkRequestConfig2? config = default,
+            global::DId.CreateTalkRequestConfig? config = default,
             string? userData = default,
             string? name = default,
             string? webhook = default,
@@ -677,7 +677,7 @@ namespace DId
             global::DId.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
-            var __request = new global::DId.CreateTalkRequest2
+            var __request = new global::DId.CreateTalkRequest
             {
                 SourceUrl = sourceUrl,
                 Script = script,

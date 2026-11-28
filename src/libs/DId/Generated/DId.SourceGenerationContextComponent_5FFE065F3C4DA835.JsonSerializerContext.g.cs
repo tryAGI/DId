@@ -31,7 +31,7 @@ namespace DId
             {
                 if (type == typeof(global::DId.CreateClipRequestConfigLogo))
                 {
-                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0041.Create_CreateClipRequestConfigLogo(options);
+                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0037.Create_CreateClipRequestConfigLogo(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

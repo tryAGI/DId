@@ -31,7 +31,7 @@ namespace DId
             {
                 if (type == typeof(global::DId.DeleteResponseVariant1LlmDIdPromptCustomization))
                 {
-                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0090.Create_DeleteResponseVariant1LlmDIdPromptCustomization(options);
+                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0075.Create_DeleteResponseVariant1LlmDIdPromptCustomization(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

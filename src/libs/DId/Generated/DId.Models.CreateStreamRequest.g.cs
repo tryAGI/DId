@@ -9,29 +9,23 @@ namespace DId
     public sealed partial class CreateStreamRequest
     {
         /// <summary>
-        /// Whether to request a fluent stream.<br/>
-        /// Default Value: false
+        /// URL to a photo you wish to animate in the stream
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("fluent")]
-        public bool? Fluent { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("source_url")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string SourceUrl { get; set; }
 
         /// <summary>
-        /// Maximum duration (in seconds) between messages before session times out.<br/>
-        /// Can only be used with proper permissions<br/>
-        /// Example: 180
+        /// the face to animate - otherwise detects the dominant face
         /// </summary>
-        /// <example>180</example>
-        [global::System.Text.Json.Serialization.JsonPropertyName("session_timeout")]
-        public double? SessionTimeout { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("face")]
+        public global::DId.CreateStreamRequestFace? Face { get; set; }
 
         /// <summary>
-        /// Whether to stream wamrup video on the connection.<br/>
-        /// If set to true, will stream a warmup video when connection is established.<br/>
-        /// At the end of the warmup video, a message containing "stream/ready" will be sent on the data channel.<br/>
-        /// Default Value: false
+        /// Advanced configuration options.
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("stream_warmup")]
-        public bool? StreamWarmup { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("config")]
+        public global::DId.CreateStreamRequestConfig? Config { get; set; }
 
         /// <summary>
         /// Defines the video codec to be used in the stream.<br/>
@@ -44,6 +38,34 @@ namespace DId
         public global::DId.CreateStreamRequestCompatibilityMode? CompatibilityMode { get; set; }
 
         /// <summary>
+        /// Whether to stream wamrup video on the connection.<br/>
+        /// If set to true, will stream a warmup video when connection is established.<br/>
+        /// At the end of the warmup video, a message containing "stream/ready" will be sent on the data channel.<br/>
+        /// Default Value: false
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("stream_warmup")]
+        public bool? StreamWarmup { get; set; }
+
+        /// <summary>
+        /// Maximum duration (in seconds) between messages before session times out.<br/>
+        /// Can only be used with proper permissions<br/>
+        /// Example: 180
+        /// </summary>
+        /// <example>180</example>
+        [global::System.Text.Json.Serialization.JsonPropertyName("session_timeout")]
+        public double? SessionTimeout { get; set; }
+
+        /// <summary>
+        /// The output resolution sets the maximum height or width of the streamed video.<br/>
+        /// The aspect ratio is preserved from the source image.<br/>
+        /// When resolution is not configured, it defaults to the agent output resolution.<br/>
+        /// Example: 512
+        /// </summary>
+        /// <example>512</example>
+        [global::System.Text.Json.Serialization.JsonPropertyName("output_resolution")]
+        public double? OutputResolution { get; set; }
+
+        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -52,20 +74,14 @@ namespace DId
         /// <summary>
         /// Initializes a new instance of the <see cref="CreateStreamRequest" /> class.
         /// </summary>
-        /// <param name="fluent">
-        /// Whether to request a fluent stream.<br/>
-        /// Default Value: false
+        /// <param name="sourceUrl">
+        /// URL to a photo you wish to animate in the stream
         /// </param>
-        /// <param name="sessionTimeout">
-        /// Maximum duration (in seconds) between messages before session times out.<br/>
-        /// Can only be used with proper permissions<br/>
-        /// Example: 180
+        /// <param name="face">
+        /// the face to animate - otherwise detects the dominant face
         /// </param>
-        /// <param name="streamWarmup">
-        /// Whether to stream wamrup video on the connection.<br/>
-        /// If set to true, will stream a warmup video when connection is established.<br/>
-        /// At the end of the warmup video, a message containing "stream/ready" will be sent on the data channel.<br/>
-        /// Default Value: false
+        /// <param name="config">
+        /// Advanced configuration options.
         /// </param>
         /// <param name="compatibilityMode">
         /// Defines the video codec to be used in the stream.<br/>
@@ -73,19 +89,42 @@ namespace DId
         /// When set to off: H264 will be used<br/>
         /// When set to auto the codec will be selected according to the browser.
         /// </param>
+        /// <param name="streamWarmup">
+        /// Whether to stream wamrup video on the connection.<br/>
+        /// If set to true, will stream a warmup video when connection is established.<br/>
+        /// At the end of the warmup video, a message containing "stream/ready" will be sent on the data channel.<br/>
+        /// Default Value: false
+        /// </param>
+        /// <param name="sessionTimeout">
+        /// Maximum duration (in seconds) between messages before session times out.<br/>
+        /// Can only be used with proper permissions<br/>
+        /// Example: 180
+        /// </param>
+        /// <param name="outputResolution">
+        /// The output resolution sets the maximum height or width of the streamed video.<br/>
+        /// The aspect ratio is preserved from the source image.<br/>
+        /// When resolution is not configured, it defaults to the agent output resolution.<br/>
+        /// Example: 512
+        /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public CreateStreamRequest(
-            bool? fluent,
-            double? sessionTimeout,
+            string sourceUrl,
+            global::DId.CreateStreamRequestFace? face,
+            global::DId.CreateStreamRequestConfig? config,
+            global::DId.CreateStreamRequestCompatibilityMode? compatibilityMode,
             bool? streamWarmup,
-            global::DId.CreateStreamRequestCompatibilityMode? compatibilityMode)
+            double? sessionTimeout,
+            double? outputResolution)
         {
-            this.Fluent = fluent;
-            this.SessionTimeout = sessionTimeout;
-            this.StreamWarmup = streamWarmup;
+            this.SourceUrl = sourceUrl ?? throw new global::System.ArgumentNullException(nameof(sourceUrl));
+            this.Face = face;
+            this.Config = config;
             this.CompatibilityMode = compatibilityMode;
+            this.StreamWarmup = streamWarmup;
+            this.SessionTimeout = sessionTimeout;
+            this.OutputResolution = outputResolution;
         }
 
         /// <summary>

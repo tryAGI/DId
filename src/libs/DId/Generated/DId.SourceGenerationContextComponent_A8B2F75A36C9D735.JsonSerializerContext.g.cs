@@ -30,7 +30,7 @@ namespace DId
             {
                 if (type == typeof(global::DId.GetAvatarsResponseDtoAvatarCreationNotesWorkerErrorDetails))
                 {
-                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0116.Create_GetAvatarsResponseDtoAvatarCreationNotesWorkerErrorDetails(options);
+                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0100.Create_GetAvatarsResponseDtoAvatarCreationNotesWorkerErrorDetails(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

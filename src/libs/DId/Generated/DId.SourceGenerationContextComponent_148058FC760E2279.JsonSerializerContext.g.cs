@@ -9,7 +9,7 @@ namespace DId
         internal static readonly global::DId.SourceGenerationContextMetadataScope MetadataScope = new(
                 new SharedMetadataResolver(),
                 new global::System.Func<global::DId.SourceGenerationContextMetadataScope>[] {
-                    static () => global::DId.SourceGenerationContextComponent_1589866C58148DC4.MetadataScope,                    static () => global::DId.SourceGenerationContextComponent_2CE06A9E7F8C3E6B.MetadataScope,                    static () => global::DId.SourceGenerationContextComponent_473287F8298DBA71.MetadataScope,                    static () => global::DId.SourceGenerationContextComponent_8D503DF8953AF8FA.MetadataScope,                    static () => global::DId.SourceGenerationContextComponent_94357D8A9CA7632B.MetadataScope,                    static () => global::DId.SourceGenerationContextComponent_DB0078810EA520CA.MetadataScope,
+                    static () => global::DId.SourceGenerationContextComponent_2CE06A9E7F8C3E6B.MetadataScope,                    static () => global::DId.SourceGenerationContextComponent_473287F8298DBA71.MetadataScope,                    static () => global::DId.SourceGenerationContextComponent_8D503DF8953AF8FA.MetadataScope,                    static () => global::DId.SourceGenerationContextComponent_94357D8A9CA7632B.MetadataScope,                    static () => global::DId.SourceGenerationContextComponent_BCFDE408BBCB6C9B.MetadataScope,                    static () => global::DId.SourceGenerationContextComponent_DB0078810EA520CA.MetadataScope,
                 }, ContributeConverters);
         internal static global::System.Text.Json.Serialization.JsonSerializerContext Default => MetadataScope.Default;
 
@@ -31,7 +31,7 @@ namespace DId
             {
                 if (type == typeof(global::DId.GoogleLLM))
                 {
-                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0142.Create_GoogleLLM(options);
+                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0123.Create_GoogleLLM(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

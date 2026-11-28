@@ -30,7 +30,7 @@ namespace DId
             {
                 if (type == typeof(global::DId.RecordStringSentimentConfig))
                 {
-                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0257.Create_RecordStringSentimentConfig(options);
+                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0232.Create_RecordStringSentimentConfig(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);
