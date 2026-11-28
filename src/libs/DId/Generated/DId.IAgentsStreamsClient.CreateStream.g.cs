@@ -16,7 +16,7 @@ namespace DId
         global::System.Threading.Tasks.Task<global::DId.CreateStreamResponse> CreateStreamAsync(
             string agentId,
 
-            global::DId.CreateStreamRequest request,
+            global::DId.CreateStreamRequest2 request,
             global::DId.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
@@ -31,7 +31,7 @@ namespace DId
         global::System.Threading.Tasks.Task<global::DId.AutoSDKHttpResponse<global::DId.CreateStreamResponse>> CreateStreamAsResponseAsync(
             string agentId,
 
-            global::DId.CreateStreamRequest request,
+            global::DId.CreateStreamRequest2 request,
             global::DId.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>

@@ -32,11 +32,11 @@ namespace DId
             {
                 if (type == typeof(global::DId.CustomBasicKeyConfigType))
                 {
-                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0082.Create_CustomBasicKeyConfigType2(options);
+                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0069.Create_CustomBasicKeyConfigType2(options);
                 }
                 if (type == typeof(global::DId.CustomBasicKeyConfigType?))
                 {
-                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0190.Create_NullableCustomBasicKeyConfigType2(options);
+                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0166.Create_NullableCustomBasicKeyConfigType2(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

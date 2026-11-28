@@ -31,7 +31,7 @@ namespace DId
             {
                 if (type == typeof(global::DId.CreateExpressiveRequestDtoScriptVariant1ProviderMicrosoftVoiceConfig))
                 {
-                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0051.Create_CreateExpressiveRequestDtoScriptVariant1ProviderMicrosoftVoiceConfig(options);
+                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0043.Create_CreateExpressiveRequestDtoScriptVariant1ProviderMicrosoftVoiceConfig(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

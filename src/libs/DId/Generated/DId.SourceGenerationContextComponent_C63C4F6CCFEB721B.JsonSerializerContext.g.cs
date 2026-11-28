@@ -31,7 +31,7 @@ namespace DId
             {
                 if (type == typeof(global::DId.UploadConsentRequestBodyDto))
                 {
-                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0325.Create_UploadConsentRequestBodyDto(options);
+                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0297.Create_UploadConsentRequestBodyDto(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

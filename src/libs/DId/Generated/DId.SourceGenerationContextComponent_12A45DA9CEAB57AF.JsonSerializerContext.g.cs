@@ -31,7 +31,7 @@ namespace DId
             {
                 if (type == typeof(global::DId.PromptCustomization))
                 {
-                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0256.Create_PromptCustomization(options);
+                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0232.Create_PromptCustomization(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

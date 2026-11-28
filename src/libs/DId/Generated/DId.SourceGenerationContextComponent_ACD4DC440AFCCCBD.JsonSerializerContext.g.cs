@@ -32,11 +32,11 @@ namespace DId
             {
                 if (type == typeof(global::DId.AnyOf<global::DId.GetAnimationResponseDtoErrorVariant1, global::DId.GetAnimationResponseDtoErrorVariant2, global::DId.GetAnimationResponseDtoErrorVariant3, global::DId.GetAnimationResponseDtoErrorVariant4, global::DId.GetAnimationResponseDtoErrorVariant5, global::DId.GetAnimationResponseDtoErrorVariant6>))
                 {
-                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0285.Create_SourceGenerationContextMetadataType_ACD4DC440AFCCCBD(options);
+                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0258.Create_SourceGenerationContextMetadataType_ACD4DC440AFCCCBD(options);
                 }
                 if (type == typeof(global::DId.AnyOf<global::DId.GetAnimationResponseDtoErrorVariant1, global::DId.GetAnimationResponseDtoErrorVariant2, global::DId.GetAnimationResponseDtoErrorVariant3, global::DId.GetAnimationResponseDtoErrorVariant4, global::DId.GetAnimationResponseDtoErrorVariant5, global::DId.GetAnimationResponseDtoErrorVariant6>?))
                 {
-                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0261.Create_SourceGenerationContextMetadataType_03E263DEA590E4FC(options);
+                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0236.Create_SourceGenerationContextMetadataType_03E263DEA590E4FC(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

@@ -31,7 +31,7 @@ namespace DId
             {
                 if (type == typeof(global::DId.UploadAudioResponseDto))
                 {
-                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0325.Create_UploadAudioResponseDto(options);
+                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0296.Create_UploadAudioResponseDto(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

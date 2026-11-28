@@ -14,7 +14,7 @@ namespace DId
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::DId.ApiException"></exception>
-        global::System.Threading.Tasks.Task<global::DId.GetClipsResponse2> GetClipsAsync(
+        global::System.Threading.Tasks.Task<global::DId.GetClipsResponse> GetClipsAsync(
             double? limit = default,
             string? token = default,
             global::DId.AutoSDKRequestOptions? requestOptions = default,
@@ -29,7 +29,7 @@ namespace DId
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::DId.ApiException"></exception>
-        global::System.Threading.Tasks.Task<global::DId.AutoSDKHttpResponse<global::DId.GetClipsResponse2>> GetClipsAsResponseAsync(
+        global::System.Threading.Tasks.Task<global::DId.AutoSDKHttpResponse<global::DId.GetClipsResponse>> GetClipsAsResponseAsync(
             double? limit = default,
             string? token = default,
             global::DId.AutoSDKRequestOptions? requestOptions = default,

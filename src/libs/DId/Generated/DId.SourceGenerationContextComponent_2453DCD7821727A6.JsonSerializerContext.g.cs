@@ -31,7 +31,7 @@ namespace DId
             {
                 if (type == typeof(global::DId.VoicesResponseItemConfig))
                 {
-                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0327.Create_VoicesResponseItemConfig(options);
+                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0298.Create_VoicesResponseItemConfig(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

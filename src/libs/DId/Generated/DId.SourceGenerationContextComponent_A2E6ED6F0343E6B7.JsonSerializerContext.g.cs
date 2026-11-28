@@ -32,11 +32,11 @@ namespace DId
             {
                 if (type == typeof(global::DId.AssetCloudProvider))
                 {
-                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0025.Create_AssetCloudProvider2(options);
+                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0022.Create_AssetCloudProvider2(options);
                 }
                 if (type == typeof(global::DId.AssetCloudProvider?))
                 {
-                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0169.Create_NullableAssetCloudProvider2(options);
+                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0149.Create_NullableAssetCloudProvider2(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

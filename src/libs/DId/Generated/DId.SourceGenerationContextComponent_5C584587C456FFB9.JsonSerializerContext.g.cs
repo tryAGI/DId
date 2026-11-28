@@ -31,7 +31,7 @@ namespace DId
             {
                 if (type == typeof(global::DId.CreateSecretRequestCreateSecretRequest1BearerToken))
                 {
-                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0066.Create_CreateSecretRequestCreateSecretRequest1BearerToken(options);
+                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0058.Create_CreateSecretRequestCreateSecretRequest1BearerToken(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

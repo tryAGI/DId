@@ -31,7 +31,7 @@ namespace DId
             {
                 if (type == typeof(global::DId.CreateExpressiveRequestDtoScriptVariant1ProviderElevenLabs))
                 {
-                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0050.Create_CreateExpressiveRequestDtoScriptVariant1ProviderElevenLabs(options);
+                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0043.Create_CreateExpressiveRequestDtoScriptVariant1ProviderElevenLabs(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

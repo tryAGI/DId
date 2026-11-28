@@ -31,7 +31,7 @@ namespace DId
             {
                 if (type == typeof(global::DId.AzureOpenAIExternalLLM))
                 {
-                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0026.Create_AzureOpenAIExternalLLM(options);
+                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0023.Create_AzureOpenAIExternalLLM(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

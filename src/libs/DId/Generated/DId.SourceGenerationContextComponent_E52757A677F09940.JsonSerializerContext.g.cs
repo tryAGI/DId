@@ -30,7 +30,7 @@ namespace DId
             {
                 if (type == typeof(global::DId.TestWebhookResponseDtoResponseData))
                 {
-                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0303.Create_TestWebhookResponseDtoResponseData(options);
+                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0275.Create_TestWebhookResponseDtoResponseData(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

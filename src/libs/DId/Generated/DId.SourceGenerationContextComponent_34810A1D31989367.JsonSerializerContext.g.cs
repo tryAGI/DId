@@ -31,7 +31,7 @@ namespace DId
             {
                 if (type == typeof(global::DId.PartialPickGetTranslationResponseName))
                 {
-                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0247.Create_PartialPickGetTranslationResponseName(options);
+                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0223.Create_PartialPickGetTranslationResponseName(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

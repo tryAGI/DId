@@ -31,7 +31,7 @@ namespace DId
             {
                 if (type == typeof(global::DId.AnimateConfigDto))
                 {
-                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0024.Create_AnimateConfigDto(options);
+                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0021.Create_AnimateConfigDto(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

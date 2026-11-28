@@ -32,7 +32,7 @@ namespace DId
                 #pragma warning disable CS0618 // Metadata references a deprecated API model.
                 if (type == typeof(global::DId.CreateClipStreamRequestBackground))
                 {
-                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0045.Create_CreateClipStreamRequestBackground(options);
+                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0039.Create_CreateClipStreamRequestBackground(options);
                 }
                 #pragma warning restore CS0618
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;

@@ -31,7 +31,7 @@ namespace DId
             {
                 if (type == typeof(global::DId.PartialKnowledgeDto))
                 {
-                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0246.Create_PartialKnowledgeDto(options);
+                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0221.Create_PartialKnowledgeDto(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

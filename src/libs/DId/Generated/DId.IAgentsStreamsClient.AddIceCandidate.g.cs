@@ -14,11 +14,11 @@ namespace DId
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::DId.ApiException"></exception>
-        global::System.Threading.Tasks.Task<global::DId.AddIceCandidateResponse> AddIceCandidateAsync(
+        global::System.Threading.Tasks.Task<global::DId.AddIceCandidateResponse4> AddIceCandidateAsync(
             string agentId,
             string streamId,
 
-            global::DId.AllOf<global::DId.AnyOf<global::DId.AddIceCandidateRequestVariant12, object>?, global::DId.AddIceCandidateRequest2> request,
+            global::DId.AllOf<global::DId.AnyOf<global::DId.AddIceCandidateRequestVariant14, object>?, global::DId.AddIceCandidateRequest4> request,
             global::DId.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
@@ -31,11 +31,11 @@ namespace DId
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::DId.ApiException"></exception>
-        global::System.Threading.Tasks.Task<global::DId.AutoSDKHttpResponse<global::DId.AddIceCandidateResponse>> AddIceCandidateAsResponseAsync(
+        global::System.Threading.Tasks.Task<global::DId.AutoSDKHttpResponse<global::DId.AddIceCandidateResponse4>> AddIceCandidateAsResponseAsync(
             string agentId,
             string streamId,
 
-            global::DId.AllOf<global::DId.AnyOf<global::DId.AddIceCandidateRequestVariant12, object>?, global::DId.AddIceCandidateRequest2> request,
+            global::DId.AllOf<global::DId.AnyOf<global::DId.AddIceCandidateRequestVariant14, object>?, global::DId.AddIceCandidateRequest4> request,
             global::DId.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
@@ -47,7 +47,7 @@ namespace DId
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
-        global::System.Threading.Tasks.Task<global::DId.AddIceCandidateResponse> AddIceCandidateAsync(
+        global::System.Threading.Tasks.Task<global::DId.AddIceCandidateResponse4> AddIceCandidateAsync(
             string agentId,
             string streamId,
             global::DId.AutoSDKRequestOptions? requestOptions = default,

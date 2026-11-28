@@ -9,7 +9,7 @@ namespace DId
         internal static readonly global::DId.SourceGenerationContextMetadataScope MetadataScope = new(
                 new SharedMetadataResolver(),
                 new global::System.Func<global::DId.SourceGenerationContextMetadataScope>[] {
-                    static () => global::DId.SourceGenerationContextComponent_2CE06A9E7F8C3E6B.MetadataScope,                    static () => global::DId.SourceGenerationContextComponent_3ED2C044E7AD5F54.MetadataScope,                    static () => global::DId.SourceGenerationContextComponent_473287F8298DBA71.MetadataScope,                    static () => global::DId.SourceGenerationContextComponent_65952FFACB06A817.MetadataScope,                    static () => global::DId.SourceGenerationContextComponent_873F898BDA736F65.MetadataScope,                    static () => global::DId.SourceGenerationContextComponent_D7C54CCD58AD8F2B.MetadataScope,
+                    static () => global::DId.SourceGenerationContextComponent_061EF58409D17540.MetadataScope,                    static () => global::DId.SourceGenerationContextComponent_2CE06A9E7F8C3E6B.MetadataScope,                    static () => global::DId.SourceGenerationContextComponent_3ED2C044E7AD5F54.MetadataScope,                    static () => global::DId.SourceGenerationContextComponent_473287F8298DBA71.MetadataScope,                    static () => global::DId.SourceGenerationContextComponent_65952FFACB06A817.MetadataScope,                    static () => global::DId.SourceGenerationContextComponent_D7C54CCD58AD8F2B.MetadataScope,
                 }, ContributeConverters);
         internal static global::System.Text.Json.Serialization.JsonSerializerContext Default => MetadataScope.Default;
 
@@ -31,7 +31,7 @@ namespace DId
             {
                 if (type == typeof(global::DId.DIdLLM))
                 {
-                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0083.Create_DIdLLM(options);
+                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0070.Create_DIdLLM(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

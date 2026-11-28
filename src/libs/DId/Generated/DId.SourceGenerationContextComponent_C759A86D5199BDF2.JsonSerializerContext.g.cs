@@ -31,7 +31,7 @@ namespace DId
             {
                 if (type == typeof(global::DId.UpdateSecretExternalLLMRequestDtoVariant2))
                 {
-                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0322.Create_UpdateSecretExternalLLMRequestDtoVariant2(options);
+                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0293.Create_UpdateSecretExternalLLMRequestDtoVariant2(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

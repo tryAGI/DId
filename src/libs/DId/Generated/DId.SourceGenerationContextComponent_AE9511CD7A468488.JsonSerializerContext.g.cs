@@ -30,7 +30,7 @@ namespace DId
             {
                 if (type == typeof(global::DId.GetAvatars1ResponseAvatarVariant2))
                 {
-                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0115.Create_GetAvatars1ResponseAvatarVariant2(options);
+                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0099.Create_GetAvatars1ResponseAvatarVariant2(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

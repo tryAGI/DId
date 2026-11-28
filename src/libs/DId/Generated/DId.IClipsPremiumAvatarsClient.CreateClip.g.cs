@@ -12,9 +12,9 @@ namespace DId
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::DId.ApiException"></exception>
-        global::System.Threading.Tasks.Task<global::DId.CreateClipResponse2> CreateClipAsync(
+        global::System.Threading.Tasks.Task<global::DId.CreateClipResponse> CreateClipAsync(
 
-            global::DId.CreateClipRequest2 request,
+            global::DId.CreateClipRequest request,
             string? xApiKeyExternal = default,
             global::DId.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
@@ -26,9 +26,9 @@ namespace DId
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::DId.ApiException"></exception>
-        global::System.Threading.Tasks.Task<global::DId.AutoSDKHttpResponse<global::DId.CreateClipResponse2>> CreateClipAsResponseAsync(
+        global::System.Threading.Tasks.Task<global::DId.AutoSDKHttpResponse<global::DId.CreateClipResponse>> CreateClipAsResponseAsync(
 
-            global::DId.CreateClipRequest2 request,
+            global::DId.CreateClipRequest request,
             string? xApiKeyExternal = default,
             global::DId.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
@@ -74,14 +74,14 @@ namespace DId
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
-        global::System.Threading.Tasks.Task<global::DId.CreateClipResponse2> CreateClipAsync(
-            global::DId.AnyOf<global::DId.CreateClipRequestScriptVariant12, global::DId.CreateClipRequestScriptVariant22> script,
+        global::System.Threading.Tasks.Task<global::DId.CreateClipResponse> CreateClipAsync(
+            global::DId.AnyOf<global::DId.CreateClipRequestScriptVariant1, global::DId.CreateClipRequestScriptVariant2> script,
             string? xApiKeyExternal = default,
             string? presenterId = default,
             string? driverId = default,
-            global::DId.CreateClipRequestConfig2? config = default,
-            global::DId.CreateClipRequestPresenterConfig2? presenterConfig = default,
-            global::DId.CreateClipRequestBackground2? background = default,
+            global::DId.CreateClipRequestConfig? config = default,
+            global::DId.CreateClipRequestPresenterConfig? presenterConfig = default,
+            global::DId.CreateClipRequestBackground? background = default,
             string? userData = default,
             string? name = default,
             string? webhook = default,

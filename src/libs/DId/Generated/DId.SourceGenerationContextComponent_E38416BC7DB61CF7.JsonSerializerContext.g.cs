@@ -31,7 +31,7 @@ namespace DId
             {
                 if (type == typeof(global::DId.AgentResponseDtoVariant1PresenterVideoAvatar))
                 {
-                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0017.Create_AgentResponseDtoVariant1PresenterVideoAvatar(options);
+                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0014.Create_AgentResponseDtoVariant1PresenterVideoAvatar(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

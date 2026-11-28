@@ -32,11 +32,11 @@ namespace DId
             {
                 if (type == typeof(global::DId.AnyOf<global::DId.OmitAgentUserDataOrAdvancedSettingsOrEmbedOrAssetsLlmOpenAI, global::DId.OmitAgentUserDataOrAdvancedSettingsOrEmbedOrAssetsLlmVariant2, global::DId.OmitAgentUserDataOrAdvancedSettingsOrEmbedOrAssetsLlmVariant3, global::DId.OmitAgentUserDataOrAdvancedSettingsOrEmbedOrAssetsLlmDId, global::DId.OmitAgentUserDataOrAdvancedSettingsOrEmbedOrAssetsLlmGoogle>))
                 {
-                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0267.Create_SourceGenerationContextMetadataType_32726F3E294F1EFB(options);
+                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0242.Create_SourceGenerationContextMetadataType_32726F3E294F1EFB(options);
                 }
                 if (type == typeof(global::DId.AnyOf<global::DId.OmitAgentUserDataOrAdvancedSettingsOrEmbedOrAssetsLlmOpenAI, global::DId.OmitAgentUserDataOrAdvancedSettingsOrEmbedOrAssetsLlmVariant2, global::DId.OmitAgentUserDataOrAdvancedSettingsOrEmbedOrAssetsLlmVariant3, global::DId.OmitAgentUserDataOrAdvancedSettingsOrEmbedOrAssetsLlmDId, global::DId.OmitAgentUserDataOrAdvancedSettingsOrEmbedOrAssetsLlmGoogle>?))
                 {
-                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0261.Create_SourceGenerationContextMetadataType_075D78DF2DFB42A4(options);
+                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0237.Create_SourceGenerationContextMetadataType_075D78DF2DFB42A4(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

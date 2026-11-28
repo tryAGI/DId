@@ -32,11 +32,11 @@ namespace DId
             {
                 if (type == typeof(global::DId.PickTalksConfigExcludeKeyofTalksConfigLogoOrDriverExpressionsResultFormat))
                 {
-                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0255.Create_PickTalksConfigExcludeKeyofTalksConfigLogoOrDriverExpressionsResultFormat2(options);
+                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0231.Create_PickTalksConfigExcludeKeyofTalksConfigLogoOrDriverExpressionsResultFormat2(options);
                 }
                 if (type == typeof(global::DId.PickTalksConfigExcludeKeyofTalksConfigLogoOrDriverExpressionsResultFormat?))
                 {
-                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0221.Create_NullablePickTalksConfigExcludeKeyofTalksConfigLogoOrDriverExpressionsResultFormat2(options);
+                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0197.Create_NullablePickTalksConfigExcludeKeyofTalksConfigLogoOrDriverExpressionsResultFormat2(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

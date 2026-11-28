@@ -12,9 +12,9 @@ namespace DId
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("role")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::DId.JsonConverters.MessageRoleJsonConverter))]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::DId.JsonConverters.MessageRole2JsonConverter))]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::DId.MessageRole Role { get; set; }
+        public required global::DId.MessageRole2 Role { get; set; }
 
         /// <summary>
         ///
@@ -46,7 +46,7 @@ namespace DId
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public Message(
-            global::DId.MessageRole role,
+            global::DId.MessageRole2 role,
             string content,
             string createdAt)
         {

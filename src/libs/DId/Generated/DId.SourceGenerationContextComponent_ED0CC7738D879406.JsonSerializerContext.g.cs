@@ -30,7 +30,7 @@ namespace DId
             {
                 if (type == typeof(global::DId.AgentTriggersConfigDtoChatEndWebhookHeaders))
                 {
-                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0019.Create_AgentTriggersConfigDtoChatEndWebhookHeaders(options);
+                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0016.Create_AgentTriggersConfigDtoChatEndWebhookHeaders(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

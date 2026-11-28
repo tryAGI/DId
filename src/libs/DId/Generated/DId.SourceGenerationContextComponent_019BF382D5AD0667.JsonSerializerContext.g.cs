@@ -31,7 +31,7 @@ namespace DId
             {
                 if (type == typeof(global::DId.UpdateSecretExternalLLMRequestDtoOpenAIConfiguration))
                 {
-                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0322.Create_UpdateSecretExternalLLMRequestDtoOpenAIConfiguration(options);
+                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0293.Create_UpdateSecretExternalLLMRequestDtoOpenAIConfiguration(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

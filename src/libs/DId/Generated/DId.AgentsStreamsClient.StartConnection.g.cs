@@ -55,7 +55,7 @@ namespace DId
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::DId.ApiException"></exception>
-        public async global::System.Threading.Tasks.Task<global::DId.StartConnectionResponse> StartConnectionAsync(
+        public async global::System.Threading.Tasks.Task<global::DId.StartConnectionResponse4> StartConnectionAsync(
             string agentId,
             string streamId,
 
@@ -84,7 +84,7 @@ namespace DId
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::DId.ApiException"></exception>
-        public async global::System.Threading.Tasks.Task<global::DId.AutoSDKHttpResponse<global::DId.StartConnectionResponse>> StartConnectionAsResponseAsync(
+        public async global::System.Threading.Tasks.Task<global::DId.AutoSDKHttpResponse<global::DId.StartConnectionResponse4>> StartConnectionAsResponseAsync(
             string agentId,
             string streamId,
 
@@ -362,19 +362,19 @@ namespace DId
                             {
                                 string? __content_400 = null;
                                 global::System.Exception? __exception_400 = null;
-                                global::DId.StartConnectionResponse2? __value_400 = null;
+                                global::DId.StartConnectionResponse5? __value_400 = null;
                                 try
                                 {
                                     if (__effectiveReadResponseAsString)
                                     {
                                         __content_400 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
-                                        __value_400 = global::DId.StartConnectionResponse2.FromJson(__content_400, JsonSerializerContext);
+                                        __value_400 = __content_400 is not { Length: > 0 } ? null : global::DId.StartConnectionResponse5.FromJson(__content_400, JsonSerializerContext);
                                     }
                                     else
                                     {
                                         __content_400 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
 
-                                        __value_400 = global::DId.StartConnectionResponse2.FromJson(__content_400, JsonSerializerContext);
+                                        __value_400 = __content_400 is not { Length: > 0 } ? null : global::DId.StartConnectionResponse5.FromJson(__content_400, JsonSerializerContext);
                                     }
                                 }
                                 catch (global::System.Exception __ex)
@@ -383,9 +383,9 @@ namespace DId
                                 }
 
 
-                                throw global::DId.ApiException<global::DId.StartConnectionResponse2>.Create(
+                                throw global::DId.ApiException<global::DId.StartConnectionResponse5>.Create(
                                     statusCode: __response.StatusCode,
-                                    message: __content_400 ?? __response.ReasonPhrase ?? string.Empty,
+                                    message: __content_400 is { Length: > 0 } ? __content_400 : __response.ReasonPhrase ?? string.Empty,
                                     innerException: __exception_400,
                                     responseBody: __content_400,
                                     responseObject: __value_400,
@@ -399,19 +399,19 @@ namespace DId
                             {
                                 string? __content_401 = null;
                                 global::System.Exception? __exception_401 = null;
-                                global::DId.StartConnectionResponse3? __value_401 = null;
+                                global::DId.StartConnectionResponse6? __value_401 = null;
                                 try
                                 {
                                     if (__effectiveReadResponseAsString)
                                     {
                                         __content_401 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
-                                        __value_401 = global::DId.StartConnectionResponse3.FromJson(__content_401, JsonSerializerContext);
+                                        __value_401 = __content_401 is not { Length: > 0 } ? null : global::DId.StartConnectionResponse6.FromJson(__content_401, JsonSerializerContext);
                                     }
                                     else
                                     {
                                         __content_401 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
 
-                                        __value_401 = global::DId.StartConnectionResponse3.FromJson(__content_401, JsonSerializerContext);
+                                        __value_401 = __content_401 is not { Length: > 0 } ? null : global::DId.StartConnectionResponse6.FromJson(__content_401, JsonSerializerContext);
                                     }
                                 }
                                 catch (global::System.Exception __ex)
@@ -420,9 +420,9 @@ namespace DId
                                 }
 
 
-                                throw global::DId.ApiException<global::DId.StartConnectionResponse3>.Create(
+                                throw global::DId.ApiException<global::DId.StartConnectionResponse6>.Create(
                                     statusCode: __response.StatusCode,
-                                    message: __content_401 ?? __response.ReasonPhrase ?? string.Empty,
+                                    message: __content_401 is { Length: > 0 } ? __content_401 : __response.ReasonPhrase ?? string.Empty,
                                     innerException: __exception_401,
                                     responseBody: __content_401,
                                     responseObject: __value_401,
@@ -453,9 +453,9 @@ namespace DId
                                 {
                                     __response.EnsureSuccessStatusCode();
 
-                                    var __value = global::DId.StartConnectionResponse.FromJson(__content, JsonSerializerContext) ??
+                                    var __value = global::DId.StartConnectionResponse4.FromJson(__content, JsonSerializerContext) ??
                                         throw new global::System.InvalidOperationException($"Response deserialization failed for \"{__content}\" ");
-                                    return new global::DId.AutoSDKHttpResponse<global::DId.StartConnectionResponse>(
+                                    return new global::DId.AutoSDKHttpResponse<global::DId.StartConnectionResponse4>(
                                         statusCode: __response.StatusCode,
                                         headers: global::DId.AutoSDKHttpResponse.CreateHeaders(__response),
                                         requestUri: __response.RequestMessage?.RequestUri,
@@ -465,7 +465,7 @@ namespace DId
                                 {
                                     throw global::DId.ApiException.Create(
                                         statusCode: __response.StatusCode,
-                                        message: __content ?? __response.ReasonPhrase ?? string.Empty,
+                                        message: __content is { Length: > 0 } ? __content : __response.ReasonPhrase ?? string.Empty,
                                         innerException: __ex,
                                         responseBody: __content,
                                         responseHeaders: global::System.Linq.Enumerable.ToDictionary(
@@ -485,9 +485,9 @@ namespace DId
                 #endif
                                     ).ConfigureAwait(false);
 
-                                    var __value = await global::DId.StartConnectionResponse.FromJsonStreamAsync(__content, JsonSerializerContext).ConfigureAwait(false) ??
+                                    var __value = await global::DId.StartConnectionResponse4.FromJsonStreamAsync(__content, JsonSerializerContext).ConfigureAwait(false) ??
                                         throw new global::System.InvalidOperationException("Response deserialization failed.");
-                                    return new global::DId.AutoSDKHttpResponse<global::DId.StartConnectionResponse>(
+                                    return new global::DId.AutoSDKHttpResponse<global::DId.StartConnectionResponse4>(
                                         statusCode: __response.StatusCode,
                                         headers: global::DId.AutoSDKHttpResponse.CreateHeaders(__response),
                                         requestUri: __response.RequestMessage?.RequestUri,
@@ -510,7 +510,7 @@ namespace DId
 
                                     throw global::DId.ApiException.Create(
                                         statusCode: __response.StatusCode,
-                                        message: __content ?? __response.ReasonPhrase ?? string.Empty,
+                                        message: __content is { Length: > 0 } ? __content : __response.ReasonPhrase ?? string.Empty,
                                         innerException: __ex,
                                         responseBody: __content,
                                         responseHeaders: global::System.Linq.Enumerable.ToDictionary(
@@ -543,7 +543,7 @@ namespace DId
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
-        public async global::System.Threading.Tasks.Task<global::DId.StartConnectionResponse> StartConnectionAsync(
+        public async global::System.Threading.Tasks.Task<global::DId.StartConnectionResponse4> StartConnectionAsync(
             string agentId,
             string streamId,
             global::DId.StartConnectionRequestAnswer answer,

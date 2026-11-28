@@ -31,7 +31,7 @@ namespace DId
             {
                 if (type == typeof(global::DId.LLMConfigGoogle))
                 {
-                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0151.Create_LLMConfigGoogle(options);
+                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0132.Create_LLMConfigGoogle(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

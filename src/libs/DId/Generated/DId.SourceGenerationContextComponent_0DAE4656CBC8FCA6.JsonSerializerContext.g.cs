@@ -31,7 +31,7 @@ namespace DId
             {
                 if (type == typeof(global::DId.OpenAIExternalLLMCreateDto))
                 {
-                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0239.Create_OpenAIExternalLLMCreateDto(options);
+                    return global::DId.SourceGenerationContextMetadata0FactoryBatch0215.Create_OpenAIExternalLLMCreateDto(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

@@ -26,8 +26,8 @@ namespace DId
         /// Types of presenters below, you could choose 1 option
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("presenter")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::DId.JsonConverters.AnyOfJsonConverter<global::DId.AgentPresenterPhotoAvatar2, global::DId.AgentPresenterVideoAvatar2, global::DId.AgentPresenterExpressiveAvatar2>))]
-        public global::DId.AnyOf<global::DId.AgentPresenterPhotoAvatar2, global::DId.AgentPresenterVideoAvatar2, global::DId.AgentPresenterExpressiveAvatar2>? Presenter { get; set; }
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::DId.JsonConverters.AnyOfJsonConverter<global::DId.AgentPresenterPhotoAvatar, global::DId.AgentPresenterVideoAvatar, global::DId.AgentPresenterExpressiveAvatar>))]
+        public global::DId.AnyOf<global::DId.AgentPresenterPhotoAvatar, global::DId.AgentPresenterVideoAvatar, global::DId.AgentPresenterExpressiveAvatar>? Presenter { get; set; }
 
         /// <summary>
         /// Configuration for the Large Language Model used by the Agent to generate responses.
@@ -139,7 +139,7 @@ namespace DId
         public Agent(
             string id,
             string? previewDescription,
-            global::DId.AnyOf<global::DId.AgentPresenterPhotoAvatar2, global::DId.AgentPresenterVideoAvatar2, global::DId.AgentPresenterExpressiveAvatar2>? presenter,
+            global::DId.AnyOf<global::DId.AgentPresenterPhotoAvatar, global::DId.AgentPresenterVideoAvatar, global::DId.AgentPresenterExpressiveAvatar>? presenter,
             global::DId.AnyOf<global::DId.AgentLlmOpenAI, global::DId.AgentLlmVariant2, global::DId.AgentLlmVariant3, global::DId.AgentLlmDId, global::DId.AgentLlmGoogle>? llm,
             global::DId.AgentProvider? provider,
             global::DId.AgentKnowledge? knowledge,
